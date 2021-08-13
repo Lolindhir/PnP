@@ -30,6 +30,8 @@ Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the proje
 
 [Filter table](https://stackoverflow.com/questions/53642506/filter-table-in-angular)
 
+[Angular Material](https://material.angular.io/)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
