@@ -5,10 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SpellTableFilterPipe implements PipeTransform {
 
-  transform(list: any[], value: string) {
-  
+    transform(list: any[], filters: any) {
+        
+        const keys = Object.keys(filters).filter(key => filters[key]);
 
-    return value ? list.filter(item => item.gender === value) : list;
-  }
+        const filterUser = (user: { [x: string]: any; }) => keys.every(key => user[key] === filters[key]);
 
+        return keys.length ? list.filter(filterUser) : list;
+    }
 }

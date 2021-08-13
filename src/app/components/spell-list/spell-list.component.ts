@@ -23,6 +23,9 @@ export class SpellListComponent implements OnInit {
   }
 
   gender: string = '';
+  name: string = '';
+
+  names: string[] = ['Jack', 'Peter'];
 
   students: any[] = studentsData;
 }

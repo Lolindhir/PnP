@@ -2,33 +2,61 @@
 
     <h1> Zauberliste </h1>  
 
-    <div class="form-group">
+    <form novalidate #form="ngForm">
+
+        <div class="form-group">
         <strong>Gender</strong>
         <select class="form-control"
+                name="gender"
                 [(ngModel)]="gender">
+                <!-- (change)="name = ''">     Remove this if you want a continuous filter -->
             <option></option>      
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
-    </div> 
+        </div>  
 
-    <br/><br/>
+        <div class="form-group">
+        <strong>Name</strong>
+        <select class="form-control"
+                name="name"
+                [(ngModel)]="name">
+            <option></option>      
+            <option *ngFor="let name of names"
+                    [value]="name">{{ name }}</option>
+        </select>
+        </div>   
 
-    <table>  
-        <thead>    
-            <th>ID</th>  
-            <th>Name</th>  
-            <th>Email</th>  
-            <th>Gender</th>   
-        </thead>  
-        <tbody>  
-            <tr *ngFor="let student of students | spellTableFilter: gender">  
-                <td>{{ student.id }}</td>  
-                <td>{{ student.name }}</td>  
-                <td>{{ student.email }}</td>  
-                <td>{{ student.gender }}</td>  
-            </tr>  
-        </tbody>  
-    </table>
+
+        <!-- <div class="form-group">
+            <strong>Gender</strong>
+            <select class="form-control"
+                    [(ngModel)]="gender">
+                <option></option>      
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>  -->
+
+        <br/><br/>
+
+        <table>  
+            <thead>    
+                <th>ID</th>  
+                <th>Name</th>  
+                <th>Email</th>  
+                <th>Gender</th>   
+            </thead>  
+            <tbody>  
+                <tr *ngFor="let student of students | spellTableFilter: form.value">  
+                    <td>{{ student.id }}</td>  
+                    <td>{{ student.name }}</td>  
+                    <td>{{ student.email }}</td>  
+                    <td>{{ student.gender }}</td>  
+                </tr>  
+            </tbody>  
+        </table>
+
+    </form>
 
 </div>
