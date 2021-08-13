@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import studentsData from '../students.json'; 
+import { Component, NgModule, OnInit } from '@angular/core';
+import studentsData from '../../students.json'; 
+
 
 interface Student {  
   id: Number;  
@@ -21,5 +22,7 @@ export class SpellListComponent implements OnInit {
 
   }
 
-  students: Student[] = studentsData;
+  gender: string = '';
+
+  students: any[] = studentsData;
 }

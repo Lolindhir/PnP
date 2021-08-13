@@ -17,10 +17,16 @@ Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the proje
 ## Useful links
 
 [Set-Up Guide](https://medium.com/swlh/how-to-deploy-an-angular-app-to-github-pages-without-using-any-libraries-step-by-step-guide-cfe96fb0c879)
+
 [Angular Example from StackBlitz](https://stackblitz.com/angular/gqgalmavnrd?file=src%2Findex.html)
+
 [How to add FlexBox](https://indepth.dev/posts/1208/angular-flex-layout-flexbox-and-grid-layout-for-angular-component)
+
 [Flex-Layout demos with code](https://tburleson-layouts-demos.firebaseapp.com/#/docs)
+
 [Dynamic WebApps with Firebase](https://medium.com/pan-labs/dynamic-web-apps-on-github-pages-for-free-ffac2b776d45)
+
+[Fill table with JSON data](https://www.javatpoint.com/display-data-from-json-file-in-angular)
 
 ## Running unit tests
 

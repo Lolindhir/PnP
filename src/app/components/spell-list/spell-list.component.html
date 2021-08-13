@@ -1,0 +1,34 @@
+<div class="container">
+
+    <h1> Zauberliste </h1>  
+
+    <div class="form-group">
+        <strong>Gender</strong>
+        <select class="form-control"
+                [(ngModel)]="gender">
+            <option></option>      
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div> 
+
+    <br/><br/>
+
+    <table>  
+        <thead>    
+            <th>ID</th>  
+            <th>Name</th>  
+            <th>Email</th>  
+            <th>Gender</th>   
+        </thead>  
+        <tbody>  
+            <tr *ngFor="let student of students | spellTableFilter: gender">  
+                <td>{{ student.id }}</td>  
+                <td>{{ student.name }}</td>  
+                <td>{{ student.email }}</td>  
+                <td>{{ student.gender }}</td>  
+            </tr>  
+        </tbody>  
+    </table>
+
+</div>
