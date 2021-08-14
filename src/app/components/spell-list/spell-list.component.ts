@@ -1,13 +1,6 @@
 import { Component, NgModule, OnInit } from '@angular/core';
+import { Spell } from '../../models/spell.model';
 import studentsData from '../../students.json'; 
-
-
-interface Student {  
-  id: Number;  
-  name: String;  
-  email: String;  
-  gender: String;  
-} 
 
 @Component({
   selector: 'app-spell-list',
@@ -16,22 +9,21 @@ interface Student {
 })
 export class SpellListComponent implements OnInit {
 
-  gender: string = '';
-  name: string = '';
+  filterName: String = '';
+  filterGender: String = '';
 
-  names: string[] = ['Jack', 'Peter'];
-  students: any[] = studentsData;
+  students: Spell[] = studentsData;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
 
   }
 
   // onKey(event: any) {
-  
-  //   this.name = event.target.value;
-  
+  //   console.log(this.filter);  
   // }
   
 }

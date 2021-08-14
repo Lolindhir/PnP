@@ -6,7 +6,7 @@
 
     <div class="form-group">
       <strong>Gender</strong>
-      <select class="form-control" name="gender" [(ngModel)]="gender">
+      <select class="form-control" name="gender" [(ngModel)]="filterGender">
         <!-- (change)="name = ''">     Remove this if you want a continuous filter -->
         <option></option>
         <option value="male">Male</option>
@@ -22,17 +22,20 @@
       </select>
     </div> -->
 
-    <br /><br />
+    <br />
 
     <div class="form-group">
       <mat-form-field appearance="fill">
-        <input matInput placeholder="Namensfilter" name="name" [(ngModel)]="name">
+        <input matInput placeholder="Namensfilter" name="name" [(ngModel)]="filterName">
       </mat-form-field>
     </div>
 
     <mat-accordion>
 
-      <mat-expansion-panel *ngFor="let student of students | spellFilter: name">
+      <mat-expansion-panel *ngFor="let student of students | spellFilter
+      : filterName
+      : filterGender
+      ">
 
         <mat-expansion-panel-header>
           {{student.name}}
