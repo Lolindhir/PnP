@@ -7,12 +7,12 @@ import { Spell } from '@models/spell.model';
 })
 export class SpellFilterPipe implements PipeTransform {
 
-    transform(list: Spell[], nameFilter: String, genderFilter: String) : Spell[] {
+    transform(list: Spell[], nameFilter: String, sourceFilter: String) : Spell[] {
       
-      //console.log('Filter called with \nname: %s \ngender: %s', nameFilter, genderFilter );
+      console.log('Filter called with \nname: %s \nsource: %s', nameFilter, sourceFilter );
           
       //check if no filters are provided and if so return complete list
-      if(nameFilter === '' && genderFilter === ''){
+      if(nameFilter === '' && sourceFilter === ''){
         return list;
       }
 
@@ -29,7 +29,7 @@ export class SpellFilterPipe implements PipeTransform {
           addSpell = false;
         }
 
-        if(genderFilter != '' && spell.gender.toLowerCase() != genderFilter.toLowerCase()){
+        if(sourceFilter != '' && spell.source.toLowerCase() != sourceFilter.toLowerCase()){
           addSpell = false;
         }
 

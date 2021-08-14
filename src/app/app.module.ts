@@ -4,7 +4,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule} from '@angular/material/input'
+import { MatInputModule} from '@angular/material/input';
+import { MatDividerModule} from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
     MatExpansionModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

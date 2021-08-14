@@ -4,25 +4,15 @@
 
   <form novalidate #filterForm="ngForm">
 
-    <div class="form-group">
-      <strong>Gender</strong>
-      <select class="form-control" name="gender" [(ngModel)]="filterGender">
-        <!-- (change)="name = ''">     Remove this if you want a continuous filter -->
+    <!-- <div class="form-group">
+      <strong>Source</strong>
+      <select class="form-control" name="source" [(ngModel)]="filterSource">
         <option></option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
+        <option *ngFor="let source of optionsSource" [value]="source">{{ source }}</option>
       </select>
     </div>
 
-    <!-- <div class="form-group">
-      <strong>Name</strong>
-      <select class="form-control" name="name" [(ngModel)]="name">
-        <option></option>
-        <option *ngFor="let name of names" [value]="name">{{ name }}</option>
-      </select>
-    </div> -->
-
-    <br />
+    <br /> -->
 
     <div class="form-group">
       <mat-form-field appearance="fill">
@@ -32,19 +22,61 @@
 
     <mat-accordion>
 
-      <mat-expansion-panel *ngFor="let student of students | spellFilter
+      <mat-expansion-panel *ngFor="let spell of spells | spellFilter
       : filterName
-      : filterGender
+      : filterSource
       ">
 
         <mat-expansion-panel-header>
-          {{student.name}}
+
+          <div>
+            <div>
+              {{spell.name}}
+            </div>
+            <div style="font-size: small; font-style: italic; padding-left: 0.25rem;">
+              {{spell.levelSchoolDisplay}}
+            </div>
+          </div>
+
         </mat-expansion-panel-header>
-        ID: {{student.id}}
-        <br>
-        Mail: {{student.email}}
-        <br>
-        Geschlecht: {{student.gender}}
+
+        <div>
+
+          <div fxLayout="row" fxLayoutAlign="left">
+            <div class="spell-property-denotation">Casting time:</div>
+            <div class="spell-property-description">{{spell.castingTime}}</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="left">
+            <div class="spell-property-denotation">Range:</div>
+            <div class="spell-property-description">{{spell.range}}</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="left">
+            <div class="spell-property-denotation">Components:</div>
+            <div class="spell-property-description">{{spell.componentsDisplay}}</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="left">
+            <div class="spell-property-denotation">Duration:</div>
+            <div class="spell-property-description">{{spell.duration}}</div>
+          </div>
+
+          <div class="big-top-gap" [innerHTML]="spell.description"></div>
+
+          <div class="medium-top-gap">
+            <mat-divider></mat-divider>
+          </div>
+
+
+          <div class="big-top-gap" fxLayout="row" fxLayoutAlign="left">
+            <div class="spell-property-denotation">Classes:</div>
+            <div class="spell-property-description">{{spell.classesDisplay}}</div>
+          </div>
+
+          <div class="small-top-gap" style="font-style: italic;">{{spell.source}}</div>
+
+        </div>
 
       </mat-expansion-panel>
 
