@@ -16,16 +16,22 @@ interface Student {
 })
 export class SpellListComponent implements OnInit {
 
+  gender: string = '';
+  name: string = '';
+
+  names: string[] = ['Jack', 'Peter'];
+  students: any[] = studentsData;
+
   constructor() { }
 
   ngOnInit(): void {
 
   }
 
-  gender: string = '';
-  name: string = '';
-
-  names: string[] = ['Jack', 'Peter'];
-
-  students: any[] = studentsData;
+  // onKey(event: any) {
+  
+  //   this.name = event.target.value;
+  
+  // }
+  
 }
