@@ -1,6 +1,6 @@
 <div class="container">
 
-  <h1> Zauberliste </h1>
+  <!-- <h1> Zauberliste </h1> -->
 
   <form novalidate #filterForm="ngForm">
 
@@ -15,8 +15,9 @@
     <br /> -->
 
     <div class="form-group">
-      <mat-form-field appearance="fill">
-        <input matInput placeholder="Namensfilter" name="name" [(ngModel)]="filterName">
+      <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
+        <mat-label><mat-icon>search</mat-icon></mat-label>
+        <input matInput name="name" [(ngModel)]="filterName">
       </mat-form-field>
     </div>
 
