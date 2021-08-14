@@ -8,10 +8,10 @@ import { MatInputModule} from '@angular/material/input'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { MainHeaderComponent } from './components/main-header/main-header.component';
-import { MainBodyComponent } from './components/main-body/main-body.component';
-import { SpellListComponent } from './components/spell-list/spell-list.component';
-import { SpellFilterPipe } from './pipes/spell-filter.pipe';
+import { MainHeaderComponent } from '@components/main-header/main-header.component';
+import { MainBodyComponent } from '@components/main-body/main-body.component';
+import { SpellListComponent } from '@components/spell-list/spell-list.component';
+import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { SpellFilterPipe } from './pipes/spell-filter.pipe';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

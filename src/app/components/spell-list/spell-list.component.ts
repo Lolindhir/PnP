@@ -1,6 +1,6 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { Spell } from '../../models/spell.model';
-import studentsData from '../../students.json'; 
+import { Component, OnInit } from '@angular/core';
+import { Spell } from '@models/spell.model';
+import studentsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/students.json'; 
 
 @Component({
   selector: 'app-spell-list',

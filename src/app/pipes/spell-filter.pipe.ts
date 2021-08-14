@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Spell } from '../models/spell.model';
+import { Spell } from '@models/spell.model';
 
 
 @Pipe({
