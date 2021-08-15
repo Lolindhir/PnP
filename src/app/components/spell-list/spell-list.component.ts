@@ -16,12 +16,14 @@ export class SpellListComponent implements OnInit {
   //all options
   optionsSource: String[] = new Array();
 
+  //spells list
   spells: Spell[] = new Array();
 
   constructor() {
 
+    //fill spells with raw spell data from json
+    //and build sort options
     var rawSpells: RawSpell[] = spellsData;
-
     rawSpells.forEach(rawSpell => {
       
       //create spell
@@ -30,21 +32,23 @@ export class SpellListComponent implements OnInit {
       //build source options
       if(this.optionsSource.indexOf(rawSpell.source) < 0){
         this.optionsSource.push(rawSpell.source);
-        //Array absteigend sortieren
+        //sort array descending
         this.sortArrayDescending(this.optionsSource);
       }
 
-    });
-
+    });   
   }
 
   ngOnInit(): void {
+
   }
+
 
   private sortArrayDescending(array: String[]): void {
     array.sort((a, b) => (a < b ? -1 : 1));
   }
 
+  
   // onKey(event: any) {
   //   console.log(this.filter);  
   // }

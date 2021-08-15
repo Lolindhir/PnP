@@ -32,6 +32,8 @@ Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the proje
 
 [Angular Material](https://material.angular.io/)
 
+[Angular Material Paginator and Sort with Expansion Panel](https://stackblitz.com/edit/table-like-mat-accordion?file=app%2Fapp.component.html)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
