@@ -15,6 +15,7 @@
 
     <br /> -->
 
+
       <div class="form-group">
         <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
           <mat-label>
@@ -24,9 +25,11 @@
         </mat-form-field>
       </div>
 
-      <mat-accordion>
 
-        <mat-expansion-panel *ngFor="let spell of spells | spellFilter : filterName : filterSource">
+      <mat-accordion hideToggle="false">
+
+        <mat-expansion-panel
+          *cdkVirtualFor="let spell of spells | spellFilter : filterName : filterSource; templateCacheSize: 0">
 
           <mat-expansion-panel-header>
 
@@ -41,48 +44,52 @@
 
           </mat-expansion-panel-header>
 
-          <div>
+          <ng-template matExpansionPanelContent>
+            <div>
 
-            <div fxLayout="row" fxLayoutAlign="left">
-              <div class="spell-property-denotation">Casting time:</div>
-              <div class="spell-property-description">{{spell.castingTime}}</div>
+              <div fxLayout="row" fxLayoutAlign="left">
+                <div class="spell-property-denotation">Casting time:</div>
+                <div class="spell-property-description">{{spell.castingTime}}</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutAlign="left">
+                <div class="spell-property-denotation">Range:</div>
+                <div class="spell-property-description">{{spell.range}}</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutAlign="left">
+                <div class="spell-property-denotation">Components:</div>
+                <div class="spell-property-description">{{spell.componentsDisplay}}</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutAlign="left">
+                <div class="spell-property-denotation">Duration:</div>
+                <div class="spell-property-description">{{spell.duration}}</div>
+              </div>
+
+              <div class="big-top-gap" [innerHTML]="spell.description"></div>
+
+              <div class="medium-top-gap">
+                <mat-divider></mat-divider>
+              </div>
+
+
+              <div class="big-top-gap" fxLayout="row" fxLayoutAlign="left">
+                <div class="spell-property-denotation">Classes:</div>
+                <div class="spell-property-description">{{spell.classesDisplay}}</div>
+              </div>
+
+              <div class="small-top-gap" style="font-style: italic;">{{spell.source}}</div>
+
             </div>
-
-            <div fxLayout="row" fxLayoutAlign="left">
-              <div class="spell-property-denotation">Range:</div>
-              <div class="spell-property-description">{{spell.range}}</div>
-            </div>
-
-            <div fxLayout="row" fxLayoutAlign="left">
-              <div class="spell-property-denotation">Components:</div>
-              <div class="spell-property-description">{{spell.componentsDisplay}}</div>
-            </div>
-
-            <div fxLayout="row" fxLayoutAlign="left">
-              <div class="spell-property-denotation">Duration:</div>
-              <div class="spell-property-description">{{spell.duration}}</div>
-            </div>
-
-            <div class="big-top-gap" [innerHTML]="spell.description"></div>
-
-            <div class="medium-top-gap">
-              <mat-divider></mat-divider>
-            </div>
-
-
-            <div class="big-top-gap" fxLayout="row" fxLayoutAlign="left">
-              <div class="spell-property-denotation">Classes:</div>
-              <div class="spell-property-description">{{spell.classesDisplay}}</div>
-            </div>
-
-            <div class="small-top-gap" style="font-style: italic;">{{spell.source}}</div>
-
-          </div>
+          </ng-template>
 
         </mat-expansion-panel>
 
-      </mat-accordion>
 
+
+
+      </mat-accordion>
     </form>
 
   </div>
