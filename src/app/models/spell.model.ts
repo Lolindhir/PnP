@@ -73,7 +73,7 @@ export class Spell {
         this.classes.forEach(spellClass => {
             classesDisplay = classesDisplay === '' ? spellClass : classesDisplay + ', ' + spellClass;
         });
-        this.classesDisplay = classesDisplay;
+        this.classesDisplay = classesDisplay ? classesDisplay : 'unknown';
 
     }
 }
