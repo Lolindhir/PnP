@@ -34,6 +34,10 @@ Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the proje
 
 [Angular Material Paginator and Sort with Expansion Panel](https://stackblitz.com/edit/table-like-mat-accordion?file=app%2Fapp.component.html)
 
+[Interessante Snippets und Ideen für Menüs, Sortierung abhängig vom Device](https://code-maze.com/angular-material-table/)
+
+[Angular Material Scrolling](https://material.angular.io/cdk/scrolling/overview)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

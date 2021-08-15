@@ -21,15 +21,14 @@
           <mat-label>
             <mat-icon>search</mat-icon>
           </mat-label>
-          <input matInput name="name" [(ngModel)]="filterName">
+          <input matInput name="name" [(ngModel)]="filterName" (keyup)="onChange()">
         </mat-form-field>
       </div>
 
 
       <mat-accordion hideToggle="false">
 
-        <mat-expansion-panel
-          *cdkVirtualFor="let spell of spells | spellFilter : filterName : filterSource; templateCacheSize: 0">
+        <mat-expansion-panel *ngFor="let spell of spellsToShow">
 
           <mat-expansion-panel-header>
 
@@ -85,9 +84,6 @@
           </ng-template>
 
         </mat-expansion-panel>
-
-
-
 
       </mat-accordion>
     </form>
