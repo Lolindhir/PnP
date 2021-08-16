@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Spell, RawSpell } from '@models/spell.model';
+import { SpellService } from '@services/spell.service';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 
 @Component({
@@ -75,7 +76,7 @@ export class SpellListComponent implements OnInit {
   
   onChange() {
     
-    this.spellsFiltered = Spell.filterSpells(this.spells, this.filterName, this.filterSource);
+    this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filterSource);
     this.spellsToShow = new Array();
     this.fetchMore();
 

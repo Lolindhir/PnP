@@ -21,9 +21,10 @@
       "dom"
     ],
     "paths": {
-      "@components/*": ["./src/app/components/*"],
-      "@models/*": ["./src/app/models/*"],
-      "@pipes/*": ["./src/app/pipes/*"],
+      "@components/*": ["./src/app/*"],
+      "@models/*": ["./src/shared/models/*"],
+      "@services/*": ["./src/shared/services/*"],
+      "@pipes/*": ["./src/shared/pipes/*"],
     },
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true

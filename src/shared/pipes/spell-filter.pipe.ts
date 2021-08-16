@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Spell } from '@models/spell.model';
+import { SpellService } from '@services/spell.service';
 
 
 @Pipe({
@@ -9,6 +10,6 @@ export class SpellFilterPipe implements PipeTransform {
 
     transform(list: Spell[], nameFilter: String, sourceFilter: String) : Spell[] {
       
-      return Spell.filterSpells(list, nameFilter, sourceFilter);
+      return SpellService.filterSpells(list, nameFilter, sourceFilter);
     }
 }
