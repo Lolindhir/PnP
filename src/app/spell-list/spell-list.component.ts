@@ -1,7 +1,10 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
+import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
+import { SpellClass } from '@models/spell-class.model';
 
 @Component({
   selector: 'app-spell-list',
@@ -13,9 +16,13 @@ export class SpellListComponent implements OnInit {
   //all filters
   filterName: String = '';
   filterSource: String = '';
+  filterClass: SpellClass;
+  filterSubclass: SpellClass;
 
   //all options
   optionsSource: String[] = new Array();
+  optionsClasses: SpellClass[] = new Array();
+  optionsSubclasses: SpellClass[] = new Array();
 
   //spells lists
   spells: Spell[] = new Array();
@@ -23,15 +30,25 @@ export class SpellListComponent implements OnInit {
   private spellReloadAmount: number = 30;
   spellsToShow: Spell[] = new Array();
 
+
+
   constructor() {
+
+    //get spell properties
+    var spellProperties: SpellProperties = spellPropertiesData;
 
     //fill spells with raw spell data from json
     //and build sort options
     var rawSpells: RawSpell[] = spellsData;
     rawSpells.forEach(rawSpell => {
       
+      //only allowed spells
+      if(!rawSpell.allowed){
+        return;
+      }
+
       //create spell
-      this.spells.push(new Spell(rawSpell))
+      this.spells.push(new Spell(rawSpell, spellProperties))
 
       //build source options
       if(this.optionsSource.indexOf(rawSpell.source) < 0){
@@ -39,7 +56,16 @@ export class SpellListComponent implements OnInit {
         //sort array descending
         this.sortArrayDescending(this.optionsSource);
       }
+    });
 
+    //build class options
+    spellProperties.allowedClasses.forEach(spellClass => {
+      this.optionsClasses.push(new SpellClass(spellClass, false, true));
+    });
+
+    //build subclass options
+    spellProperties.allowedSubclasses.forEach(spellSubclass => {
+      this.optionsSubclasses.push(new SpellClass(spellSubclass, true, true));
     });
 
     //fill filtered spells with all spells, because nothing is yet filtered

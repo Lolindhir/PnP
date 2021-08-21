@@ -1,3 +1,6 @@
+import { SpellClass } from "@models/spell-class.model";
+import { SpellProperties } from "@models/spell-properties.model";
+
 export interface RawSpell {  
   level: Number;  
   name: String;  
@@ -13,6 +16,8 @@ export interface RawSpell {
   description: String;
   source: String;
   classes: String[];  
+  subclasses: String[];  
+  allowed: Boolean;  
 }
 
 export interface Spell {
@@ -29,13 +34,16 @@ export interface Spell {
   concentration: Boolean;
   description: String;
   source: String;
-  classes: String[];
+  classes: SpellClass[];
   classesDisplay: String;
+  subclasses: SpellClass[];
+  subclassesDisplay: String;
+  allowed: Boolean;
 }
 
 export class Spell implements Spell {  
 
-  constructor(rawSpell: RawSpell){
+  constructor(rawSpell: RawSpell, spellProperties: SpellProperties){
       
     //take straight raw values
     this.level = rawSpell.level;
@@ -49,7 +57,7 @@ export class Spell implements Spell {
     this.concentration = rawSpell.concentration;
     this.description = rawSpell.description;
     this.source = rawSpell.source;
-    this.classes = rawSpell.classes;
+    this.allowed = rawSpell.allowed;
 
     //build level school display
     var levelSchoolDisplay: String = rawSpell.levelSchool;
@@ -71,12 +79,35 @@ export class Spell implements Spell {
     }
     this.componentsDisplay = componentsDisplay;
 
-    //build classes display
+    //build classes and classes dispaly
+    var classes : SpellClass[] = new Array();
     var classesDisplay : String = '';
-    this.classes.forEach(spellClass => {
-        classesDisplay = classesDisplay === '' ? spellClass : classesDisplay + ', ' + spellClass;
+    rawSpell.classes.forEach(spellClass => {
+        
+        if(spellProperties.allowedClasses.includes(spellClass)){
+          
+          classes.push(new SpellClass(spellClass, false, true))
+          classesDisplay = classesDisplay === '' ? spellClass : classesDisplay + ', ' + spellClass;
+
+        }
     });
+    this.classes = classes;
     this.classesDisplay = classesDisplay ? classesDisplay : 'unknown';
+
+    //build subclasses amd subclasses display
+    var subclasses : SpellClass[] = new Array();
+    var subclassesDisplay : String = '';
+    rawSpell.subclasses.forEach(spellClass => {
+        
+        if(spellProperties.allowedSubclasses.includes(spellClass)){
+          
+          subclasses.push(new SpellClass(spellClass, true, true))
+          subclassesDisplay = subclassesDisplay === '' ? spellClass : subclassesDisplay + ', ' + spellClass;
+
+        }
+    });
+    this.subclasses = subclasses;
+    this.subclassesDisplay = subclassesDisplay ? subclassesDisplay : '-';
 
   }    
 }
