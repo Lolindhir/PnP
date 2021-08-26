@@ -2,9 +2,10 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
+import { SpellClass } from '@models/spell-class.model';
+import { SpellFilter } from '@models/spell-filter.model';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
-import { SpellClass } from '@models/spell-class.model';
 
 @Component({
   selector: 'app-spell-list',
@@ -14,6 +15,7 @@ import { SpellClass } from '@models/spell-class.model';
 export class SpellListComponent implements OnInit {
 
   //all filters
+  filters: SpellFilter[] = new Array();
   filterName: String = '';
   filterSource: String = '';
   filterClass: SpellClass;
@@ -102,7 +104,7 @@ export class SpellListComponent implements OnInit {
   
   onChange() {
     
-    this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filterSource);
+    this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
     this.spellsToShow = new Array();
     this.fetchMore();
 

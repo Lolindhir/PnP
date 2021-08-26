@@ -97,18 +97,19 @@
               <span class="spell-property-description">{{spell.classesDisplay}}</span> -->
             </div>
 
-            <div *ngIf="spell.subclasses.length">
+            <div class="medium-top-gap" *ngIf="spell.subclasses.length">
               <div class="spell-property-denotation">Subclasses:</div>
               <mat-chip-list>
-                <mat-chip class="spell-class-chip" *ngFor="let spellSubclass of spell.subclasses">
+                <mat-chip class="spell-class-chip" *ngFor="let spellSubclass of spell.subclasses" [selectable]=false [removable]=true>
                   {{spellSubclass.name}}
+                  <mat-icon matChipRemove>cancel</mat-icon>
                 </mat-chip>
               </mat-chip-list> 
               <!-- <span class="spell-property-denotation">Subclasses:</span> -->
               <!-- <span class="spell-property-description">{{spell.subclassesDisplay}}</span> -->
             </div>
 
-            <div class="small-top-gap" style="font-style: italic;">{{spell.source}}</div>
+            <div class="big-top-gap" style="font-style: italic;">{{spell.source}}</div>
 
           </div>
         </ng-template>

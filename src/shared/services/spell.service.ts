@@ -1,13 +1,14 @@
-import { Spell, RawSpell } from "@models/spell.model";
+import { Spell } from "@models/spell.model";
+import { SpellFilter } from "@models/spell-filter.model";
 
 export class SpellService {  
 
-    public static filterSpells(list: Spell[], nameFilter: String, sourceFilter: String) : Spell[] {
+    public static filterSpells(list: Spell[], nameFilter: String, filters: SpellFilter[]) : Spell[] {
       
         //console.log('Filter called with \nname: %s \nsource: %s', nameFilter, sourceFilter );
             
         //check if no filters are provided and if so return complete list
-        if(nameFilter === '' && sourceFilter === ''){
+        if(nameFilter === '' && filters == null){
           return list;
         }
   
@@ -20,13 +21,13 @@ export class SpellService {
   
           var addSpell: boolean = true;
   
-          if(nameFilter != '' && spell.name.toLowerCase().indexOf(nameFilter.toLowerCase()) < 0 ){
+          if(nameFilter != '' && spell.name.toLowerCase().indexOf(nameFilter.toLowerCase()) < 0){
             addSpell = false;
           }
   
-          if(sourceFilter != '' && spell.source.toLowerCase() != sourceFilter.toLowerCase()){
-            addSpell = false;
-          }
+          // if(sourceFilter != '' && spell.source.toLowerCase() != sourceFilter.toLowerCase()){
+          //   addSpell = false;
+          // }
   
           if(addSpell){
             returnList.push(spell);
