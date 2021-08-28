@@ -1,12 +1,12 @@
 export interface SpellClass{
-    name: String;
-    subclass: Boolean;
-    allowed: Boolean;
+    name: string;
+    subclass: boolean;
+    allowed: boolean;
 }
 
 export class SpellClass implements SpellClass {
 
-    constructor(name: String, subclass: Boolean, allowed: Boolean){
+    constructor(name: string, subclass: boolean, allowed: boolean){
         this.name = name;
         this.subclass = subclass;
         this.allowed = allowed;

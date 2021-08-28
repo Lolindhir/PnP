@@ -1,44 +1,45 @@
 import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
+import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 
 export interface RawSpell {  
-  level: Number;  
-  name: String;  
-  school: String;  
-  levelSchool: String;
-  ritual: Boolean;
-  castingTime: String;
-  range: String;
-  components: String[];
-  materials: String;
-  duration: String;
-  concentration: Boolean;
-  description: String;
-  source: String;
-  classes: String[];  
-  subclasses: String[];  
-  allowed: Boolean;  
+  level: number;  
+  name: string;  
+  school: string;  
+  levelSchool: string;
+  ritual: boolean;
+  castingTime: string;
+  range: string;
+  components: string[];
+  materials: string;
+  duration: string;
+  concentration: boolean;
+  description: string;
+  source: string;
+  classes: string[];  
+  subclasses: string[];  
+  allowed: boolean;  
 }
 
 export interface Spell {
-  level: Number;  
-  name: String;  
-  school: String;  
-  levelSchoolDisplay: String;
-  ritual: Boolean;
-  castingTime: String;
-  range: String;
-  components: String[];
-  componentsDisplay: String;
-  duration: String;
-  concentration: Boolean;
-  description: String;
-  source: String;
+  level: number;  
+  name: string;  
+  school: string;  
+  levelSchoolDisplay: string;
+  ritual: boolean;
+  castingTime: string;
+  range: string;
+  components: string[];
+  componentsDisplay: string;
+  duration: string;
+  concentration: boolean;
+  description: string;
+  source: string;
   classes: SpellClass[];
-  classesDisplay: String;
+  classesDisplay: string;
   subclasses: SpellClass[];
-  subclassesDisplay: String;
-  allowed: Boolean;
+  subclassesDisplay: string;
+  allowed: boolean;
 }
 
 export class Spell implements Spell {  
@@ -60,7 +61,7 @@ export class Spell implements Spell {
     this.allowed = rawSpell.allowed;
 
     //build level school display
-    var levelSchoolDisplay: String = rawSpell.levelSchool;
+    var levelSchoolDisplay: string = rawSpell.levelSchool;
     if(rawSpell.ritual){
         levelSchoolDisplay = levelSchoolDisplay + ' (ritual)';
     }
@@ -70,7 +71,7 @@ export class Spell implements Spell {
     this.levelSchoolDisplay = levelSchoolDisplay;
     
     //build components display
-    var componentsDisplay : String = '';
+    var componentsDisplay : string = '';
     this.components.forEach(component => {
         componentsDisplay = componentsDisplay === '' ? component : componentsDisplay + ', ' + component;
     });
@@ -81,7 +82,7 @@ export class Spell implements Spell {
 
     //build classes and classes dispaly
     var classes : SpellClass[] = new Array();
-    var classesDisplay : String = '';
+    var classesDisplay : string = '';
     rawSpell.classes.forEach(spellClass => {
         
         if(spellProperties.allowedClasses.includes(spellClass)){
@@ -96,7 +97,7 @@ export class Spell implements Spell {
 
     //build subclasses amd subclasses display
     var subclasses : SpellClass[] = new Array();
-    var subclassesDisplay : String = '';
+    var subclassesDisplay : string = '';
     rawSpell.subclasses.forEach(spellClass => {
         
         if(spellProperties.allowedSubclasses.includes(spellClass)){
@@ -110,4 +111,82 @@ export class Spell implements Spell {
     this.subclassesDisplay = subclassesDisplay ? subclassesDisplay : '-';
 
   }    
+
+  public filter(nameFilter: string, filters: SpellFilter[]) : boolean{
+  
+    if(nameFilter != '' && this.name.toLowerCase().indexOf(nameFilter.toLowerCase()) < 0){
+      return false;
+    }
+
+    var filtersMatch: boolean = true;
+
+    Object.keys(SpellFilterType).forEach(typeAsString => {
+      var type: SpellFilterType = typeAsString as SpellFilterType;
+      if(filtersMatch === true){
+        filtersMatch = this.filterMatches(type, filters.filter(filter => filter.type === type));
+      }
+    })
+
+    return filtersMatch;
+
+  }
+
+  private filterMatches(filterType: SpellFilterType, filters: SpellFilter[]): boolean{
+
+    if(filterType == null){
+      return true;
+    }
+
+    if(filters == null || filters.length == 0){
+      return true;
+    }
+
+    for(var i = 0; i < filters.length; i++){
+
+      var filter: SpellFilter | undefined = filters[i];
+
+      if(filter === undefined){
+        continue;
+      }
+
+      switch(filterType) { 
+        case SpellFilterType.Level: { 
+          var level: number = filter.value as number;
+          if(this.level === level){
+            return true;
+          } 
+          break; 
+        }
+        case SpellFilterType.Class: {             
+          var spellClass: SpellClass = filter.value as SpellClass;
+          if(spellClass === null || this.classes.includes(spellClass)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Subclass: {             
+          var spellClass: SpellClass = filter.value as SpellClass;
+          if(spellClass === null || this.subclasses.includes(spellClass)){
+            return true;
+          }          
+          break; 
+        } 
+        case SpellFilterType.Source: {             
+          var source: string = filter.value as string;
+          if(source === '' || this.source.toLowerCase() === source.toLowerCase()){
+            return true;
+          }          
+          break; 
+        }          
+        default: { 
+          console.log('Unknown filter type: ' + filter.type)
+          return true;
+        } 
+      }
+
+    }
+
+    return false;
+  }
+
 }

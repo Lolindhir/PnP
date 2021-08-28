@@ -26,6 +26,7 @@
       "@models/*": ["./src/shared/models/*"],
       "@services/*": ["./src/shared/services/*"],
       "@pipes/*": ["./src/shared/pipes/*"],
+      "@utilities/*": ["./src/shared/utilities/*"],
     },
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true

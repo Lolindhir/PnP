@@ -3,7 +3,8 @@ import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
-import { SpellFilter } from '@models/spell-filter.model';
+import { SpellFilter, SpellFilterType } from '@models/spell-filter.model';
+import { ArrayUtilities } from '@utilities/array.utilities';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 
@@ -14,24 +15,25 @@ import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber
 })
 export class SpellListComponent implements OnInit {
 
-  //all filters
+  //filter stuff
   filters: SpellFilter[] = new Array();
-  filterName: String = '';
-  filterSource: String = '';
-  filterClass: SpellClass;
-  filterSubclass: SpellClass;
+  filterName: string = '';
+  selectedFilter: SpellFilter;
+  // filterSource: string = '';
+  // filterClass: SpellClass;
+  // filterSubclass: SpellClass;
 
-  //all options
-  optionsSource: String[] = new Array();
+  //all filter options
+  optionsLevel: SpellFilter[] = new Array();
+  optionsSource: SpellFilter[] = new Array();
   optionsClasses: SpellClass[] = new Array();
   optionsSubclasses: SpellClass[] = new Array();
 
-  //spells lists
+  //spell related stuff
   spells: Spell[] = new Array();
   spellsFiltered: Spell[] = new Array();
-  private spellReloadAmount: number = 30;
   spellsToShow: Spell[] = new Array();
-
+  private spellReloadAmount: number = 30;
 
 
   constructor() {
@@ -52,13 +54,16 @@ export class SpellListComponent implements OnInit {
       //create spell
       this.spells.push(new Spell(rawSpell, spellProperties))
 
-      //build source options
-      if(this.optionsSource.indexOf(rawSpell.source) < 0){
-        this.optionsSource.push(rawSpell.source);
-        //sort array descending
-        this.sortArrayDescending(this.optionsSource);
-      }
+      // if(this.optionsSource.indexOf(rawSpell.source) < 0){
+      //   this.optionsSource.push(rawSpell.source);
+      //   //sort array descending
+      //   ArrayUtilities.sortStringArrayDescending(this.optionsSource);
+      // }
     });
+
+    //build options
+    this.optionsLevel = SpellService.getLevelFilterOptions();
+    this.optionsSource = SpellService.getSourceFilterOptions(this.spells);
 
     //build class options
     spellProperties.allowedClasses.forEach(spellClass => {
@@ -109,7 +114,52 @@ export class SpellListComponent implements OnInit {
     this.fetchMore();
 
   }
+
+  onFilterRemoved(removedFilter: SpellFilter){
+
+    ArrayUtilities.removeFromArray(this.filters, removedFilter);
+    
+    switch(removedFilter.type){
+      case SpellFilterType.Level: {
+        this.optionsLevel.push(removedFilter);
+        break;
+      }
+      case SpellFilterType.Source: {
+        this.optionsSource.push(removedFilter);
+        break;
+      }
+    }
+    
+    this.onChange();
+
+  }
   
+  // onSourceFilterChange(selectedSource: any) {
+
+  //   this.filters.push(selectedFilter);
+  //   ArrayUtilities.removeFromArray(this.optionsSource, selectedFilter);
+  //   this.onChange();
+
+  // }
+
+  addFilter() {
+    
+    this.filters.push(this.selectedFilter);
+
+    switch(this.selectedFilter.type){
+      case SpellFilterType.Level: {
+        ArrayUtilities.removeFromArray(this.optionsLevel, this.selectedFilter);
+        break;
+      }
+      case SpellFilterType.Source: {
+        ArrayUtilities.removeFromArray(this.optionsSource, this.selectedFilter);
+        break;
+      }
+    }
+    
+    this.onChange();
+  }
+
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
     
@@ -125,9 +175,4 @@ export class SpellListComponent implements OnInit {
     }
   }
 
-  private sortArrayDescending(array: String[]): void {
-
-    array.sort((a, b) => (a < b ? -1 : 1));
-
-  }
 }

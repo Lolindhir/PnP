@@ -1,6 +1,6 @@
 export interface SpellProperties{
-    classes: String[];
-    subclasses: String[];
-    allowedClasses: String[];
-    allowedSubclasses: String[];
+    classes: string[];
+    subclasses: string[];
+    allowedClasses: string[];
+    allowedSubclasses: string[];
 }

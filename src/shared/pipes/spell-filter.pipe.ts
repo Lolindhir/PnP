@@ -9,7 +9,7 @@ import { SpellService } from '@services/spell.service';
 })
 export class SpellFilterPipe implements PipeTransform {
 
-    transform(list: Spell[], nameFilter: String, filter: SpellFilter[]) : Spell[] {
+    transform(list: Spell[], nameFilter: string, filter: SpellFilter[]) : Spell[] {
       
       return SpellService.filterSpells(list, nameFilter, filter);
     }

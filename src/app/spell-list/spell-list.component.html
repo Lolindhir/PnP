@@ -27,6 +27,35 @@
       </select>
     </div> -->
 
+    <div>
+
+      <!-- <strong>Source</strong>
+      <select #selectedSource (change)="onSourceFilterChange(selectedSource.value)">
+        <option></option>
+        <option *ngFor="let source of optionsSource" [value]="source">{{source.displayTextList}}</option>
+      </select> -->
+
+      <strong>Level</strong>
+      <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
+        <option *ngFor="let filter of optionsLevel" [ngValue]="filter">{{filter.displayTextList}}</option>
+      </select>
+
+      <strong>Source</strong>
+      <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
+        <option *ngFor="let filter of optionsSource" [ngValue]="filter">{{filter.displayTextList}}</option>
+      </select>
+
+      
+
+      <mat-chip-list>
+        <mat-chip class="spell-class-chip" *ngFor="let filter of filters" [selectable]=false [removable]=true
+          (removed)="onFilterRemoved(filter)">
+          {{filter.displayText}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+      </mat-chip-list>
+
+    </div>
 
 
     <div>
@@ -92,7 +121,7 @@
                 <mat-chip class="spell-class-chip" *ngFor="let spellClass of spell.classes">
                   {{spellClass.name}}
                 </mat-chip>
-              </mat-chip-list>              
+              </mat-chip-list>
               <!-- <span class="spell-property-denotation">Classes:</span>
               <span class="spell-property-description">{{spell.classesDisplay}}</span> -->
             </div>
@@ -100,11 +129,10 @@
             <div class="medium-top-gap" *ngIf="spell.subclasses.length">
               <div class="spell-property-denotation">Subclasses:</div>
               <mat-chip-list>
-                <mat-chip class="spell-class-chip" *ngFor="let spellSubclass of spell.subclasses" [selectable]=false [removable]=true>
+                <mat-chip class="spell-class-chip" *ngFor="let spellSubclass of spell.subclasses" [selectable]=false>
                   {{spellSubclass.name}}
-                  <mat-icon matChipRemove>cancel</mat-icon>
                 </mat-chip>
-              </mat-chip-list> 
+              </mat-chip-list>
               <!-- <span class="spell-property-denotation">Subclasses:</span> -->
               <!-- <span class="spell-property-description">{{spell.subclassesDisplay}}</span> -->
             </div>
