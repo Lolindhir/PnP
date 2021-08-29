@@ -35,17 +35,45 @@
         <option *ngFor="let source of optionsSource" [value]="source">{{source.displayTextList}}</option>
       </select> -->
 
-      <strong>Level</strong>
+      <!-- <strong>School</strong>
       <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
-        <option *ngFor="let filter of optionsLevel" [ngValue]="filter">{{filter.displayTextList}}</option>
-      </select>
+        <option *ngFor="let filter of optionsSchool" [ngValue]="filter">{{filter.displayTextList}}</option>
+      </select> -->
 
-      <strong>Source</strong>
+      <!-- <strong>Source</strong>
       <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
         <option *ngFor="let filter of optionsSource" [ngValue]="filter">{{filter.displayTextList}}</option>
-      </select>
+      </select> -->
 
-      
+      <div fxLayout="row" fxLayoutAlign="left">
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <!-- <mat-label>Select a Level</mat-label> -->
+          <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
+            placeholder="Filter by Level">
+            <mat-option *ngFor="let filter of optionsLevel" [value]="filter" [disabled]="filter.choosen">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-select [(ngModel)]="selectedFilters" (ngModelChange)="addFilterMulti()" multiple="true"
+            placeholder="Filter by School">
+            <mat-option *ngFor="let filter of optionsSchool" [value]="filter" [disabled]="filter.choosen">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
+            placeholder="Filter by Source">
+            <mat-option *ngFor="let filter of optionsSource" [value]="filter" [disabled]="filter.choosen">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
 
       <mat-chip-list>
         <mat-chip class="spell-class-chip" *ngFor="let filter of filters" [selectable]=false [removable]=true
@@ -58,15 +86,25 @@
     </div>
 
 
-    <div>
-      <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
-        <mat-label>
-          <mat-icon>search</mat-icon>
-        </mat-label>
-        <input matInput name="name" [(ngModel)]="filterName" (keyup)="onChange()">
-      </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="space-between" style="margin-top:1rem">
+
+      <div>
+        <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
+          <mat-label>
+            <mat-icon>search</mat-icon>
+            Filter by Name
+          </mat-label>
+          <input matInput name="name" [(ngModel)]="filterName" (keyup)="onChange()">
+        </mat-form-field>
+      </div>
+
+      <div class="test">
+        <div class="content">{{spellsFiltered.length}} spells</div>
+      </div>
+
     </div>
 
+    <div *ngIf="spellsFiltered.length === 0">- no spells for this filter combination -</div>
 
     <mat-accordion hideToggle="false" multi="false">
 

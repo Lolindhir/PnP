@@ -4,6 +4,22 @@
   margin-right: 1rem;
 }
 
+.filter-select {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.test {
+  position: relative;
+  width: 4.5rem;
+}
+.test .content {
+  position:absolute;                 
+  padding: 0.25rem;
+  bottom:0;
+  right:0;                                    
+}
+
 .spell-property-denotation {
   font-weight: bold;
   min-width: max-content;

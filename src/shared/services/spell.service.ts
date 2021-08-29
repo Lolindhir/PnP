@@ -27,8 +27,22 @@ export class SpellService {
     for(var i = 0; i <= 9; i++){
       levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i));
     }
-    return levelFilterOptions;
+    return levelFilterOptions.sort(SpellFilter.compare);
+
+  }
+
+  public static getSchoolFilterOptions(): SpellFilter[] {
     
+    var schoolFilterOptions: SpellFilter[] = new Array();
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Abjuration'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Conjuration'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Divination'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Enchantment'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Evocation'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Illusion'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Necromancy'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Transmutation'));
+    return schoolFilterOptions.sort(SpellFilter.compare);
   }
 
   public static getSourceFilterOptions(spells: Spell[]): SpellFilter[] {
@@ -39,7 +53,7 @@ export class SpellService {
       if(!differentSources.includes(spell.source)){
         differentSources.push(spell.source);
         //sort array descending
-        ArrayUtilities.sortStringArrayAscending(differentSources);
+        differentSources.sort(ArrayUtilities.stringCompareAscending);
       }
 
     });   
@@ -51,6 +65,6 @@ export class SpellService {
 
     })
 
-    return sourceFilterOptions;
+    return sourceFilterOptions.sort(SpellFilter.compare);
   }
 }

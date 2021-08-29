@@ -19,12 +19,14 @@ export class SpellListComponent implements OnInit {
   filters: SpellFilter[] = new Array();
   filterName: string = '';
   selectedFilter: SpellFilter;
+  selectedFilters: SpellFilter[];
   // filterSource: string = '';
   // filterClass: SpellClass;
   // filterSubclass: SpellClass;
 
   //all filter options
   optionsLevel: SpellFilter[] = new Array();
+  optionsSchool: SpellFilter[] = new Array();
   optionsSource: SpellFilter[] = new Array();
   optionsClasses: SpellClass[] = new Array();
   optionsSubclasses: SpellClass[] = new Array();
@@ -63,6 +65,7 @@ export class SpellListComponent implements OnInit {
 
     //build options
     this.optionsLevel = SpellService.getLevelFilterOptions();
+    this.optionsSchool = SpellService.getSchoolFilterOptions();
     this.optionsSource = SpellService.getSourceFilterOptions(this.spells);
 
     //build class options
@@ -117,48 +120,104 @@ export class SpellListComponent implements OnInit {
 
   onFilterRemoved(removedFilter: SpellFilter){
 
+    removedFilter.choosen = false;
     ArrayUtilities.removeFromArray(this.filters, removedFilter);
-    
-    switch(removedFilter.type){
-      case SpellFilterType.Level: {
-        this.optionsLevel.push(removedFilter);
-        break;
-      }
-      case SpellFilterType.Source: {
-        this.optionsSource.push(removedFilter);
-        break;
-      }
+    this.filters.sort(SpellFilter.compare);
+
+    if(removedFilter.type === SpellFilterType.School){
+      
+      var newSelectedFilters : SpellFilter[] = new Array();
+      this.filters.forEach( filter => {
+        if(filter.type == SpellFilterType.School){
+          newSelectedFilters.push(filter);
+        }
+      })
+
+      //ArrayUtilities.removeFromArray(this.selectedFilters, removedFilter);
+      this.selectedFilters = newSelectedFilters;
+
     }
+
+    //get relevant array
+    var relevantFilterArray = this.getRelevantFilterArray(removedFilter);
     
+    //relevantFilterArray.push(removedFilter);
+    //relevantFilterArray.sort(SpellFilter.compare);
     this.onChange();
 
   }
-  
-  // onSourceFilterChange(selectedSource: any) {
-
-  //   this.filters.push(selectedFilter);
-  //   ArrayUtilities.removeFromArray(this.optionsSource, selectedFilter);
-  //   this.onChange();
-
-  // }
 
   addFilter() {
     
+    this.selectedFilter.choosen = true;
     this.filters.push(this.selectedFilter);
+    this.filters.sort(SpellFilter.compare);
 
-    switch(this.selectedFilter.type){
+    //get relevant array
+    var relevantFilterArray = this.getRelevantFilterArray(this.selectedFilter);
+    
+    //remove filter
+    //ArrayUtilities.removeFromArray(relevantFilterArray, this.selectedFilter);
+    this.onChange();
+    this.selectedFilter = new SpellFilter(SpellFilterType.None, '');
+  }
+
+
+  addFilterMulti() {
+    
+    console.log(this.selectedFilters);
+
+    this.optionsSchool.forEach(schoolFilter => {
+
+      if(!this.selectedFilters.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
+        return;
+      }
+
+      if(this.selectedFilters.includes(schoolFilter) && this.filters.includes(schoolFilter)){
+        return;
+      }
+
+      if(this.selectedFilters.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
+        this.filters.push(schoolFilter);
+        this.filters.sort(SpellFilter.compare);
+      }
+
+      if(!this.selectedFilters.includes(schoolFilter) && this.filters.includes(schoolFilter)){
+        ArrayUtilities.removeFromArray(this.filters, schoolFilter);
+        this.filters.sort(SpellFilter.compare);
+      }
+
+    });
+
+    //get relevant array
+    //var relevantFilterArray = this.getRelevantFilterArray(this.selectedFilter);
+    
+    //remove filter
+    //ArrayUtilities.removeFromArray(relevantFilterArray, this.selectedFilter);
+    this.onChange();
+  }
+
+
+  getRelevantFilterArray(filter: SpellFilter): SpellFilter[]{
+    var relevantFilterArray: SpellFilter[] = new Array();
+    switch(filter.type){
+      case SpellFilterType.School: {
+        var relevantFilterArray = this.optionsSchool;
+        break;
+      }
       case SpellFilterType.Level: {
-        ArrayUtilities.removeFromArray(this.optionsLevel, this.selectedFilter);
+        var relevantFilterArray = this.optionsLevel;
         break;
       }
       case SpellFilterType.Source: {
-        ArrayUtilities.removeFromArray(this.optionsSource, this.selectedFilter);
+        var relevantFilterArray = this.optionsSource
         break;
       }
     }
-    
-    this.onChange();
+    return relevantFilterArray;
   }
+
+
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {

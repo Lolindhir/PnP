@@ -120,7 +120,7 @@ export class Spell implements Spell {
 
     var filtersMatch: boolean = true;
 
-    Object.keys(SpellFilterType).forEach(typeAsString => {
+    Object.values(SpellFilterType).forEach(typeAsString => {
       var type: SpellFilterType = typeAsString as SpellFilterType;
       if(filtersMatch === true){
         filtersMatch = this.filterMatches(type, filters.filter(filter => filter.type === type));
@@ -153,6 +153,13 @@ export class Spell implements Spell {
         case SpellFilterType.Level: { 
           var level: number = filter.value as number;
           if(this.level === level){
+            return true;
+          } 
+          break; 
+        }
+        case SpellFilterType.School: { 
+          var school: string = filter.value as string;
+          if(this.school === school){
             return true;
           } 
           break; 
