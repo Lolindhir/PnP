@@ -5,7 +5,7 @@ export interface SpellFilter{
     value: any;
     displayText: string;
     displayTextList: string;
-    choosen: boolean;
+    selected: boolean;
 }
 
 export enum SpellFilterType{
@@ -22,7 +22,7 @@ export class SpellFilter implements SpellFilter {
     constructor(type: SpellFilterType, value: any){
         this.type = type;
         this.value = value;
-        this.choosen = false;
+        this.selected = false;
 
         var displayText: string = '';
         var displayTextList: string = '';

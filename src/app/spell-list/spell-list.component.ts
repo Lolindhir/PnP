@@ -16,10 +16,11 @@ import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber
 export class SpellListComponent implements OnInit {
 
   //filter stuff
+  advancedFiltersPanelOpen: boolean = false;
   filters: SpellFilter[] = new Array();
   filterName: string = '';
   selectedFilter: SpellFilter;
-  selectedFilters: SpellFilter[];
+  selectedFiltersSchool: SpellFilter[] = new Array();
   // filterSource: string = '';
   // filterClass: SpellClass;
   // filterSubclass: SpellClass;
@@ -37,6 +38,7 @@ export class SpellListComponent implements OnInit {
   spellsToShow: Spell[] = new Array();
   private spellReloadAmount: number = 30;
 
+  expandedPanelIndex: number = -1;
 
   constructor() {
 
@@ -112,6 +114,7 @@ export class SpellListComponent implements OnInit {
   
   onChange() {
     
+    this.expandedPanelIndex = -1;
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
     this.spellsToShow = new Array();
     this.fetchMore();
@@ -120,7 +123,7 @@ export class SpellListComponent implements OnInit {
 
   onFilterRemoved(removedFilter: SpellFilter){
 
-    removedFilter.choosen = false;
+    removedFilter.selected = false;
     ArrayUtilities.removeFromArray(this.filters, removedFilter);
     this.filters.sort(SpellFilter.compare);
 
@@ -134,7 +137,7 @@ export class SpellListComponent implements OnInit {
       })
 
       //ArrayUtilities.removeFromArray(this.selectedFilters, removedFilter);
-      this.selectedFilters = newSelectedFilters;
+      this.selectedFiltersSchool = newSelectedFilters;
 
     }
 
@@ -149,7 +152,7 @@ export class SpellListComponent implements OnInit {
 
   addFilter() {
     
-    this.selectedFilter.choosen = true;
+    this.selectedFilter.selected = true;
     this.filters.push(this.selectedFilter);
     this.filters.sort(SpellFilter.compare);
 
@@ -165,24 +168,24 @@ export class SpellListComponent implements OnInit {
 
   addFilterMulti() {
     
-    console.log(this.selectedFilters);
+    console.log(this.selectedFiltersSchool);
 
     this.optionsSchool.forEach(schoolFilter => {
 
-      if(!this.selectedFilters.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
+      if(!this.selectedFiltersSchool.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
         return;
       }
 
-      if(this.selectedFilters.includes(schoolFilter) && this.filters.includes(schoolFilter)){
+      if(this.selectedFiltersSchool.includes(schoolFilter) && this.filters.includes(schoolFilter)){
         return;
       }
 
-      if(this.selectedFilters.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
+      if(this.selectedFiltersSchool.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
         this.filters.push(schoolFilter);
         this.filters.sort(SpellFilter.compare);
       }
 
-      if(!this.selectedFilters.includes(schoolFilter) && this.filters.includes(schoolFilter)){
+      if(!this.selectedFiltersSchool.includes(schoolFilter) && this.filters.includes(schoolFilter)){
         ArrayUtilities.removeFromArray(this.filters, schoolFilter);
         this.filters.sort(SpellFilter.compare);
       }
@@ -218,6 +221,13 @@ export class SpellListComponent implements OnInit {
   }
 
 
+  onSpellExpansionPanelClosed(index: number){
+
+    if(this.expandedPanelIndex == index){
+      this.expandedPanelIndex = -1;
+    }
+
+  }
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {

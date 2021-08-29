@@ -9,11 +9,19 @@
   padding-right: 0.25rem;
 }
 
-.test {
+.spell-expansion-header {
+  padding-right: 0.1rem;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  width: max-content;
+}
+
+.spell-number {
   position: relative;
   width: 4.5rem;
 }
-.test .content {
+.spell-number .content {
   position:absolute;                 
   padding: 0.25rem;
   bottom:0;
@@ -30,15 +38,15 @@
 }
 
 .big-top-gap {
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .medium-top-gap {
-  padding-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .small-top-gap {
-  padding-top: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .spell-class-chip {
@@ -47,4 +55,5 @@
   padding-right: 0.5rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
+  margin-top: 1rem;
 }

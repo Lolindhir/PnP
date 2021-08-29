@@ -2,64 +2,32 @@
   <div class="container">
 
 
-
-    <!-- <div>
-      <strong>Source</strong>
-      <select name="source" [(ngModel)]="filterSource">
-        <option></option>
-        <option *ngFor="let source of optionsSource" [value]="source">{{source}}</option>
-      </select>
-    </div>
-
-    <div>
-      <strong>Class</strong>
-      <select name="class" [(ngModel)]="filterClass">
-        <option></option>
-        <option *ngFor="let class of optionsClasses" [value]="class">{{class.name}}</option>
-      </select>
-    </div>
-
-    <div>
-      <strong>Subclass</strong>
-      <select name="subclass" [(ngModel)]="filterSubclass">
-        <option></option>
-        <option *ngFor="let subclass of optionsSubclasses" [value]="subclass">{{subclass.name}}</option>
-      </select>
-    </div> -->
-
-    <div>
-
-      <!-- <strong>Source</strong>
-      <select #selectedSource (change)="onSourceFilterChange(selectedSource.value)">
-        <option></option>
-        <option *ngFor="let source of optionsSource" [value]="source">{{source.displayTextList}}</option>
-      </select> -->
-
-      <!-- <strong>School</strong>
-      <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
-        <option *ngFor="let filter of optionsSchool" [ngValue]="filter">{{filter.displayTextList}}</option>
-      </select> -->
-
-      <!-- <strong>Source</strong>
-      <select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()">
-        <option *ngFor="let filter of optionsSource" [ngValue]="filter">{{filter.displayTextList}}</option>
-      </select> -->
-
-      <div fxLayout="row" fxLayoutAlign="left">
+    <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
+      (closed)="advancedFiltersPanelOpen = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Filters
+        </mat-panel-title>
+        <mat-panel-description>
+          Press to {{advancedFiltersPanelOpen ? 'hide' : 'show'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div fxLayout="row wrap" fxLayoutAlign="left">
 
         <mat-form-field class="filter-select" appearance="fill">
           <!-- <mat-label>Select a Level</mat-label> -->
           <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
             placeholder="Filter by Level">
-            <mat-option *ngFor="let filter of optionsLevel" [value]="filter" [disabled]="filter.choosen">
+            <mat-option *ngFor="let filter of optionsLevel" [value]="filter" [disabled]="filter.selected">
               {{filter.displayTextList}}</mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="filter-select" appearance="fill">
-          <mat-select [(ngModel)]="selectedFilters" (ngModelChange)="addFilterMulti()" multiple="true"
+          <mat-label *ngIf="selectedFiltersSchool.length > 0">School</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersSchool" (ngModelChange)="addFilterMulti()" multiple="true"
             placeholder="Filter by School">
-            <mat-option *ngFor="let filter of optionsSchool" [value]="filter" [disabled]="filter.choosen">
+            <mat-option *ngFor="let filter of optionsSchool" [value]="filter">
               {{filter.displayTextList}}</mat-option>
           </mat-select>
         </mat-form-field>
@@ -67,13 +35,17 @@
         <mat-form-field class="filter-select" appearance="fill">
           <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
             placeholder="Filter by Source">
-            <mat-option *ngFor="let filter of optionsSource" [value]="filter" [disabled]="filter.choosen">
+            <mat-option *ngFor="let filter of optionsSource" [value]="filter" [disabled]="filter.selected">
               {{filter.displayTextList}}</mat-option>
           </mat-select>
         </mat-form-field>
 
       </div>
 
+    </mat-expansion-panel>
+
+
+    <div class="big-top-gap" *ngIf="filters.length > 0">
 
       <mat-chip-list>
         <mat-chip class="spell-class-chip" *ngFor="let filter of filters" [selectable]=false [removable]=true
@@ -86,37 +58,52 @@
     </div>
 
 
-    <div fxLayout="row" fxLayoutAlign="space-between" style="margin-top:1rem">
+
+    <div fxLayout="row" fxLayoutAlign="space-between" class="big-top-gap">
 
       <div>
         <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
           <mat-label>
             <mat-icon>search</mat-icon>
-            Filter by Name
+            <!-- Filter by Name -->
           </mat-label>
           <input matInput name="name" [(ngModel)]="filterName" (keyup)="onChange()">
         </mat-form-field>
       </div>
 
-      <div class="test">
-        <div class="content">{{spellsFiltered.length}} spells</div>
+      <div class="spell-number">
+        <div class="content">{{spellsFiltered.length}}
+          {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
       </div>
 
     </div>
 
-    <div *ngIf="spellsFiltered.length === 0">- no spells for this filter combination -</div>
+    <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
+      matching spells found. Check the filter settings. -</div>
 
     <mat-accordion hideToggle="false" multi="false">
 
-      <mat-expansion-panel *ngFor="let spell of spellsToShow">
+      <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index" [expanded]="i === expandedPanelIndex"
+        (opened)="expandedPanelIndex = i"
+        (closed)="onSpellExpansionPanelClosed(i)" >
 
         <mat-expansion-panel-header>
 
-          <div>
+          <div *ngIf="i != expandedPanelIndex" fxLayout="column" style="width: 10px">
+            <div class="spell-expansion-header" style="font-size: larger;">
+              {{spell.name}}
+            </div>
+            <div class="spell-expansion-header"
+              style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+              {{spell.levelSchoolDisplay}}
+            </div>
+          </div>
+
+          <div *ngIf="i === expandedPanelIndex">
             <div style="font-size: larger;">
               {{spell.name}}
             </div>
-            <div style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray">
+            <div style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
               {{spell.levelSchoolDisplay}}
             </div>
           </div>
