@@ -69,15 +69,15 @@ export class SpellListComponent implements OnInit {
     });
 
     //build options
-    this.optionsLevel = SpellService.getLevelFilterOptions();
-    this.optionsSchool = SpellService.getSchoolFilterOptions();
+    this.optionsLevel = SpellService.getLevelFilterOptions(spellProperties);
+    this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
     this.optionsClass = SpellService.getClassFilterOptions(spellProperties);
     this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
-    this.optionsSchool = SpellService.getSchoolFilterOptions();
-    this.optionsSource = SpellService.getSourceFilterOptions(this.spells);
-    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(this.spells);
-    this.optionsDuration = SpellService.getDurationFilterOptions(this.spells);
-    this.optionsDamageType = SpellService.getDamageTypeFilterOptions();
+    this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
+    this.optionsSource = SpellService.getSourceFilterOptions(this.spells, spellProperties);
+    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
+    this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
+    this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;

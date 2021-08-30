@@ -1,4 +1,5 @@
 import { SpellClass } from "./spell-class.model";
+import { SpellProperties } from "./spell-properties.model";
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -6,6 +7,7 @@ export interface SpellFilter{
     displayText: string;
     displayTextList: string;
     selected: boolean;
+    properties: SpellProperties;
 }
 
 export enum SpellFilterType{
@@ -21,10 +23,11 @@ export enum SpellFilterType{
 
 export class SpellFilter implements SpellFilter {
  
-    constructor(type: SpellFilterType, value: any){
+    constructor(type: SpellFilterType, value: any, properties: SpellProperties){
         this.type = type;
         this.value = value;
         this.selected = false;
+        this.properties = properties;
 
         var displayText: string = '';
         var displayTextList: string = '';
@@ -50,6 +53,16 @@ export class SpellFilter implements SpellFilter {
 
         else if(type === SpellFilterType.Source){
             displayText = 'Source: '  + value as string;
+            displayTextList = value as string;
+        }
+
+        else if(type === SpellFilterType.CastingTime){
+            displayText = 'Casting Time: '  + value as string;
+            displayTextList = value as string;
+        }
+
+        else if(type === SpellFilterType.Duration){
+            displayText = 'Duration: '  + value as string;
             displayTextList = value as string;
         }
 
@@ -79,12 +92,26 @@ export class SpellFilter implements SpellFilter {
         }
 
         //use the displayText for string compare
-        //but for the level use the int value
-        var compareA = a.displayText;
-        var compareB = b.displayText;
+        var compareA: any;
+        var compareB: any;
+        //for the level use the int value
         if (a.type === SpellFilterType.Level){
             compareA = a.value as string;
             compareB = b.value as string;
+        }
+        //for the casting time use the order from the properties
+        else if(a.type === SpellFilterType.CastingTime){
+            compareA = '' + a.properties.castingTimes.indexOf(a.value);
+            compareB = '' + b.properties.castingTimes.indexOf(b.value);
+        }
+        //for the duration use the order from the properties
+        else if(a.type === SpellFilterType.Duration){
+            compareA = a.properties.durations.indexOf(a.value);
+            compareB = b.properties.durations.indexOf(b.value);
+        }
+        else {
+            compareA = a.displayText;
+            compareB = b.displayText;
         }
 
         //compare the same type

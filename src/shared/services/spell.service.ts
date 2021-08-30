@@ -23,27 +23,27 @@ export class SpellService {
     return returnList;
   }
 
-  public static getLevelFilterOptions(): SpellFilter[] {  
+  public static getLevelFilterOptions(properties: SpellProperties): SpellFilter[] {  
 
     var levelFilterOptions: SpellFilter[] = new Array();
     for(var i = 0; i <= 9; i++){
-      levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i));
+      levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i, properties));
     }
     return levelFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSchoolFilterOptions(): SpellFilter[] {
+  public static getSchoolFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var schoolFilterOptions: SpellFilter[] = new Array();
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Abjuration'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Conjuration'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Divination'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Enchantment'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Evocation'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Illusion'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Necromancy'));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Transmutation'));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Abjuration', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Conjuration', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Divination', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Enchantment', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Evocation', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Illusion', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Necromancy', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Transmutation', properties));
     return schoolFilterOptions.sort(SpellFilter.compare);
   }
 
@@ -51,7 +51,7 @@ export class SpellService {
 
     var classFilterOptions: SpellFilter[] = new Array();
     properties.allowedClasses.forEach( spellClass => {
-      classFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellClass, false, true)));
+      classFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellClass, false, true), properties));
     })
     return classFilterOptions.sort(SpellFilter.compare);
 
@@ -61,83 +61,52 @@ export class SpellService {
 
     var subclassFilterOptions: SpellFilter[] = new Array();
     properties.allowedSubclasses.forEach( spellSubclass => {
-      subclassFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellSubclass, true, true)));
+      subclassFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellSubclass, true, true), properties));
     })
     return subclassFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getDamageTypeFilterOptions(): SpellFilter[] {
+  public static getDamageTypeFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var damageFilterOptions: SpellFilter[] = new Array();
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Bludgeoning'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Slashing'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Piercing'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Acid'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Cold'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Fire'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Force'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Lightning'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Necrotic'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Poison'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Psychic'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Radiant'));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Thunder'));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Bludgeoning', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Slashing', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Piercing', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Acid', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Cold', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Fire', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Force', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Lightning', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Necrotic', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Poison', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Psychic', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Radiant', properties));
+    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Thunder', properties));
     return damageFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getCastingTimeFilterOptions(spells: Spell[]): SpellFilter[] {
+  public static getCastingTimeFilterOptions(properties: SpellProperties): SpellFilter[] {
     
-    var differentTimes: string[] = new Array();
-    spells.forEach(spell => {
-
-      var spellTime = spell.castingTime;
-      if(spellTime.includes('reaction')){
-        spellTime = '1 reaction';
-      }
-
-      if(!differentTimes.includes(spellTime)){
-        differentTimes.push(spellTime);
-        //sort array descending
-        differentTimes.sort(ArrayUtilities.stringCompareAscending);
-      }
-
-    });   
-
     var castingTimeFilterOptions: SpellFilter[] = new Array();
-    differentTimes.forEach(castingTime => {
-
-      castingTimeFilterOptions.push(new SpellFilter(SpellFilterType.CastingTime, castingTime));
-
+    properties.castingTimes.forEach( castingTime => {
+      castingTimeFilterOptions.push(new SpellFilter(SpellFilterType.CastingTime, castingTime, properties));
     })
-
     return castingTimeFilterOptions.sort(SpellFilter.compare);
+
   }
 
-  public static getDurationFilterOptions(spells: Spell[]): SpellFilter[] {
+  public static getDurationFilterOptions(properties: SpellProperties): SpellFilter[] {
     
-    var differentDurations: string[] = new Array();
-    spells.forEach(spell => {
-
-      if(!differentDurations.includes(spell.duration)){
-        differentDurations.push(spell.duration);
-        //sort array descending
-        differentDurations.sort(ArrayUtilities.stringCompareAscending);
-      }
-
-    });   
-
     var durationFilterOptions: SpellFilter[] = new Array();
-    differentDurations.forEach(duration => {
-
-      durationFilterOptions.push(new SpellFilter(SpellFilterType.Duration, duration));
-
+    properties.durations.forEach( duration => {
+      durationFilterOptions.push(new SpellFilter(SpellFilterType.Duration, duration, properties));
     })
-
     return durationFilterOptions.sort(SpellFilter.compare);
+
   }
 
-  public static getSourceFilterOptions(spells: Spell[]): SpellFilter[] {
+  public static getSourceFilterOptions(spells: Spell[], properties: SpellProperties): SpellFilter[] {
     
     var differentSources: string[] = new Array();
     spells.forEach(spell => {
@@ -153,7 +122,7 @@ export class SpellService {
     var sourceFilterOptions: SpellFilter[] = new Array();
     differentSources.forEach(source => {
 
-      sourceFilterOptions.push(new SpellFilter(SpellFilterType.Source, source));
+      sourceFilterOptions.push(new SpellFilter(SpellFilterType.Source, source, properties));
 
     })
 

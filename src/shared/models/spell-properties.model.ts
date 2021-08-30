@@ -3,4 +3,6 @@ export interface SpellProperties{
     subclasses: string[];
     allowedClasses: string[];
     allowedSubclasses: string[];
+    castingTimes: string[];
+    durations: string[];
 }

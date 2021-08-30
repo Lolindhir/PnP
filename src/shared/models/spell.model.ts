@@ -188,7 +188,7 @@ export class Spell implements Spell {
         }
         case SpellFilterType.Duration: {             
           var duration: string = filter.value as string;
-          if(duration === '' || this.duration.toLowerCase() === duration.toLowerCase()){
+          if(duration === '' || this.duration.toLowerCase().includes(duration.toLowerCase())){
             return true;
           }          
           break; 
