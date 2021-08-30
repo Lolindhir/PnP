@@ -19,18 +19,24 @@ export class SpellListComponent implements OnInit {
   advancedFiltersPanelOpen: boolean = false;
   filters: SpellFilter[] = new Array();
   filterName: string = '';
-  selectedFilter: SpellFilter;
+  selectedFiltersLevel: SpellFilter[] = new Array();
   selectedFiltersSchool: SpellFilter[] = new Array();
-  // filterSource: string = '';
-  // filterClass: SpellClass;
-  // filterSubclass: SpellClass;
+  selectedFiltersClass: SpellFilter[] = new Array();
+  selectedFiltersSubclass: SpellFilter[] = new Array();
+  selectedFiltersCastingTime: SpellFilter[] = new Array();
+  selectedFiltersDuration: SpellFilter[] = new Array();
+  selectedFiltersDamageType: SpellFilter[] = new Array();
+  selectedFiltersSource: SpellFilter[] = new Array();
 
   //all filter options
   optionsLevel: SpellFilter[] = new Array();
   optionsSchool: SpellFilter[] = new Array();
   optionsSource: SpellFilter[] = new Array();
-  optionsClasses: SpellClass[] = new Array();
-  optionsSubclasses: SpellClass[] = new Array();
+  optionsClass: SpellFilter[] = new Array();
+  optionsSubclass: SpellFilter[] = new Array();
+  optionsCastingTime: SpellFilter[] = new Array();
+  optionsDuration: SpellFilter[] = new Array();
+  optionsDamageType: SpellFilter[] = new Array();
 
   //spell related stuff
   spells: Spell[] = new Array();
@@ -38,7 +44,9 @@ export class SpellListComponent implements OnInit {
   spellsToShow: Spell[] = new Array();
   private spellReloadAmount: number = 30;
 
+  //other global stuff
   expandedPanelIndex: number = -1;
+
 
   constructor() {
 
@@ -58,27 +66,18 @@ export class SpellListComponent implements OnInit {
       //create spell
       this.spells.push(new Spell(rawSpell, spellProperties))
 
-      // if(this.optionsSource.indexOf(rawSpell.source) < 0){
-      //   this.optionsSource.push(rawSpell.source);
-      //   //sort array descending
-      //   ArrayUtilities.sortStringArrayDescending(this.optionsSource);
-      // }
     });
 
     //build options
     this.optionsLevel = SpellService.getLevelFilterOptions();
     this.optionsSchool = SpellService.getSchoolFilterOptions();
+    this.optionsClass = SpellService.getClassFilterOptions(spellProperties);
+    this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
+    this.optionsSchool = SpellService.getSchoolFilterOptions();
     this.optionsSource = SpellService.getSourceFilterOptions(this.spells);
-
-    //build class options
-    spellProperties.allowedClasses.forEach(spellClass => {
-      this.optionsClasses.push(new SpellClass(spellClass, false, true));
-    });
-
-    //build subclass options
-    spellProperties.allowedSubclasses.forEach(spellSubclass => {
-      this.optionsSubclasses.push(new SpellClass(spellSubclass, true, true));
-    });
+    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(this.spells);
+    this.optionsDuration = SpellService.getDurationFilterOptions(this.spells);
+    this.optionsDamageType = SpellService.getDamageTypeFilterOptions();
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -126,99 +125,117 @@ export class SpellListComponent implements OnInit {
     removedFilter.selected = false;
     ArrayUtilities.removeFromArray(this.filters, removedFilter);
     this.filters.sort(SpellFilter.compare);
-
-    if(removedFilter.type === SpellFilterType.School){
       
-      var newSelectedFilters : SpellFilter[] = new Array();
-      this.filters.forEach( filter => {
-        if(filter.type == SpellFilterType.School){
-          newSelectedFilters.push(filter);
+    var newSelectedFilters : SpellFilter[] = new Array();
+    this.filters.forEach( filter => {
+      if(filter.type === removedFilter.type){
+        newSelectedFilters.push(filter);
+      }
+    })
+
+    switch(removedFilter.type){
+      case SpellFilterType.School: {
+        this.selectedFiltersSchool = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Level: {
+        this.selectedFiltersLevel = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Class: {
+        var spellClass = removedFilter.value as SpellClass;
+        if(!spellClass.subclass){
+          this.selectedFiltersClass = newSelectedFilters;
+          break;
         }
-      })
-
-      //ArrayUtilities.removeFromArray(this.selectedFilters, removedFilter);
-      this.selectedFiltersSchool = newSelectedFilters;
-
+        else{
+          this.selectedFiltersSubclass = newSelectedFilters;
+          break;
+        }  
+      }
+      case SpellFilterType.CastingTime: {
+        this.selectedFiltersCastingTime = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Duration: {
+        this.selectedFiltersDuration = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.DamageType: {
+        this.selectedFiltersDamageType = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Source: {
+        this.selectedFiltersSource = newSelectedFilters;
+        break;
+      }
     }
-
-    //get relevant array
-    var relevantFilterArray = this.getRelevantFilterArray(removedFilter);
     
-    //relevantFilterArray.push(removedFilter);
-    //relevantFilterArray.sort(SpellFilter.compare);
     this.onChange();
 
   }
 
-  addFilter() {
+
+  addFilterMulti(options: SpellFilter[], selectedFilters: SpellFilter[]) {
     
-    this.selectedFilter.selected = true;
-    this.filters.push(this.selectedFilter);
-    this.filters.sort(SpellFilter.compare);
+    options.forEach(optionFilter => {
 
-    //get relevant array
-    var relevantFilterArray = this.getRelevantFilterArray(this.selectedFilter);
-    
-    //remove filter
-    //ArrayUtilities.removeFromArray(relevantFilterArray, this.selectedFilter);
-    this.onChange();
-    this.selectedFilter = new SpellFilter(SpellFilterType.None, '');
-  }
-
-
-  addFilterMulti() {
-    
-    console.log(this.selectedFiltersSchool);
-
-    this.optionsSchool.forEach(schoolFilter => {
-
-      if(!this.selectedFiltersSchool.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
+      if(!selectedFilters.includes(optionFilter) && !this.filters.includes(optionFilter)){
         return;
       }
 
-      if(this.selectedFiltersSchool.includes(schoolFilter) && this.filters.includes(schoolFilter)){
+      if(selectedFilters.includes(optionFilter) && this.filters.includes(optionFilter)){
         return;
       }
 
-      if(this.selectedFiltersSchool.includes(schoolFilter) && !this.filters.includes(schoolFilter)){
-        this.filters.push(schoolFilter);
+      if(selectedFilters.includes(optionFilter) && !this.filters.includes(optionFilter)){
+        optionFilter.selected = true;
+        this.filters.push(optionFilter);
         this.filters.sort(SpellFilter.compare);
       }
 
-      if(!this.selectedFiltersSchool.includes(schoolFilter) && this.filters.includes(schoolFilter)){
-        ArrayUtilities.removeFromArray(this.filters, schoolFilter);
+      if(!selectedFilters.includes(optionFilter) && this.filters.includes(optionFilter)){
+        optionFilter.selected = false;
+        ArrayUtilities.removeFromArray(this.filters, optionFilter);
         this.filters.sort(SpellFilter.compare);
       }
 
     });
 
-    //get relevant array
-    //var relevantFilterArray = this.getRelevantFilterArray(this.selectedFilter);
-    
-    //remove filter
-    //ArrayUtilities.removeFromArray(relevantFilterArray, this.selectedFilter);
     this.onChange();
   }
 
 
-  getRelevantFilterArray(filter: SpellFilter): SpellFilter[]{
-    var relevantFilterArray: SpellFilter[] = new Array();
-    switch(filter.type){
-      case SpellFilterType.School: {
-        var relevantFilterArray = this.optionsSchool;
-        break;
-      }
-      case SpellFilterType.Level: {
-        var relevantFilterArray = this.optionsLevel;
-        break;
-      }
-      case SpellFilterType.Source: {
-        var relevantFilterArray = this.optionsSource
-        break;
-      }
-    }
-    return relevantFilterArray;
-  }
+  // getRelevantFilterArray(type: SpellFilterType): SpellFilter[]{
+  //   var relevantFilterArray: SpellFilter[] = new Array();
+  //   switch(type){
+  //     case SpellFilterType.School: {
+  //       var relevantFilterArray = this.selectedFiltersSchool;
+  //       break;
+  //     }
+  //     case SpellFilterType.Level: {
+  //       var relevantFilterArray = this.selectedFiltersLevel;
+  //       break;
+  //     }
+  //     case SpellFilterType.Source: {
+  //       var relevantFilterArray = this.selectedFiltersSource;
+  //       break;
+  //     }
+  //   }
+  //   return relevantFilterArray;
+  // }
+
+
+  // addFilterSingle() {
+    
+  //   this.selectedFilter.selected = true;
+  //   this.filters.push(this.selectedFilter);
+  //   this.filters.sort(SpellFilter.compare);
+    
+  //   //remove filter
+  //   this.onChange();
+  //   this.selectedFilter = new SpellFilter(SpellFilterType.None, '');
+  // }
 
 
   onSpellExpansionPanelClosed(index: number){

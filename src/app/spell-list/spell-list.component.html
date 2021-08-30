@@ -15,17 +15,17 @@
       <div fxLayout="row wrap" fxLayoutAlign="left">
 
         <mat-form-field class="filter-select" appearance="fill">
-          <!-- <mat-label>Select a Level</mat-label> -->
-          <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
+          <mat-label *ngIf="selectedFiltersLevel.length > 0">Level</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersLevel" (ngModelChange)="addFilterMulti(optionsLevel, selectedFiltersLevel)" multiple="true"
             placeholder="Filter by Level">
-            <mat-option *ngFor="let filter of optionsLevel" [value]="filter" [disabled]="filter.selected">
+            <mat-option *ngFor="let filter of optionsLevel" [value]="filter">
               {{filter.displayTextList}}</mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="filter-select" appearance="fill">
           <mat-label *ngIf="selectedFiltersSchool.length > 0">School</mat-label>
-          <mat-select [(ngModel)]="selectedFiltersSchool" (ngModelChange)="addFilterMulti()" multiple="true"
+          <mat-select [(ngModel)]="selectedFiltersSchool" (ngModelChange)="addFilterMulti(optionsSchool, selectedFiltersSchool)" multiple="true"
             placeholder="Filter by School">
             <mat-option *ngFor="let filter of optionsSchool" [value]="filter">
               {{filter.displayTextList}}</mat-option>
@@ -33,9 +33,55 @@
         </mat-form-field>
 
         <mat-form-field class="filter-select" appearance="fill">
-          <mat-select [(ngModel)]="selectedFilter" (ngModelChange)="addFilter()" multiple="false"
+          <mat-label *ngIf="selectedFiltersClass.length > 0">Class</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersClass" (ngModelChange)="addFilterMulti(optionsClass, selectedFiltersClass)" multiple="true"
+            placeholder="Filter by Class">
+            <mat-option *ngFor="let filter of optionsClass" [value]="filter">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-label *ngIf="selectedFiltersSubclass.length > 0">Subclass</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersSubclass" (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true"
+            placeholder="Filter by Subclass">
+            <mat-option *ngFor="let filter of optionsSubclass" [value]="filter">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-label *ngIf="selectedFiltersCastingTime.length > 0">Casting Time</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersCastingTime" (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true"
+            placeholder="Filter by Casting Time">
+            <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-label *ngIf="selectedFiltersDuration.length > 0">Duration</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersDuration" (ngModelChange)="addFilterMulti(optionsDuration, selectedFiltersDuration)" multiple="true"
+            placeholder="Filter by Duration">
+            <mat-option *ngFor="let filter of optionsDuration" [value]="filter">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-label *ngIf="selectedFiltersDamageType.length > 0">Damage Type</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersDamageType" (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true"
+            placeholder="Filter by Damage Type">
+            <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
+              {{filter.displayTextList}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="filter-select" appearance="fill">
+          <mat-label *ngIf="selectedFiltersSource.length > 0">Source</mat-label>
+          <mat-select [(ngModel)]="selectedFiltersSource" (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true"
             placeholder="Filter by Source">
-            <mat-option *ngFor="let filter of optionsSource" [value]="filter" [disabled]="filter.selected">
+            <mat-option *ngFor="let filter of optionsSource" [value]="filter">
               {{filter.displayTextList}}</mat-option>
           </mat-select>
         </mat-form-field>

@@ -166,18 +166,41 @@ export class Spell implements Spell {
         }
         case SpellFilterType.Class: {             
           var spellClass: SpellClass = filter.value as SpellClass;
-          if(spellClass === null || this.classes.includes(spellClass)){
+          if(!spellClass.subclass){
+            if(spellClass === null || this.classes.some(cla => cla.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }
+          else{
+            if(spellClass === null || this.subclasses.some(sub => sub.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }           
+        }
+        case SpellFilterType.CastingTime: {             
+          var castingTime: string = filter.value as string;
+          if(castingTime === '' || this.castingTime.toLowerCase().includes(castingTime.toLowerCase())){
             return true;
           }          
           break; 
         }
-        case SpellFilterType.Subclass: {             
-          var spellClass: SpellClass = filter.value as SpellClass;
-          if(spellClass === null || this.subclasses.includes(spellClass)){
+        case SpellFilterType.Duration: {             
+          var duration: string = filter.value as string;
+          if(duration === '' || this.duration.toLowerCase() === duration.toLowerCase()){
             return true;
           }          
           break; 
         } 
+        case SpellFilterType.DamageType: {             
+          var damageType: string = filter.value as string;
+          var damageText: string = damageType.toLowerCase();
+          if(damageType === '' || this.description.toLowerCase().includes(damageText)){
+            return true;
+          }          
+          break; 
+        }  
         case SpellFilterType.Source: {             
           var source: string = filter.value as string;
           if(source === '' || this.source.toLowerCase() === source.toLowerCase()){

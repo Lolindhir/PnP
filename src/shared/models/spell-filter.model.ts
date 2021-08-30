@@ -12,9 +12,11 @@ export enum SpellFilterType{
     Level = 1,
     School = 2,
     Class = 3,
-    Subclass = 4,
-    Source = 5,
-    None = 6,
+    CastingTime = 4,
+    Duration = 5,
+    DamageType = 6,
+    Source = 7,
+    None = 8,
 }
 
 export class SpellFilter implements SpellFilter {
@@ -51,7 +53,7 @@ export class SpellFilter implements SpellFilter {
             displayTextList = value as string;
         }
 
-        else if(type === SpellFilterType.Class || type === SpellFilterType.Subclass){
+        else if(type === SpellFilterType.Class){
             var spellClass = value as SpellClass;
             displayText = spellClass.name;
             displayTextList = displayText;
