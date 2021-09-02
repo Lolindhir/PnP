@@ -15,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ScrollingModule } from '@angular/cdk/scrolling'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatTooltipModule } from '@angular/material/tooltip'; 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
 import { MainBodyComponent } from '@components/main-body/main-body.component';
@@ -45,6 +46,7 @@ import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
     MatButtonModule,
     MatButtonToggleModule,
     MatMenuModule,
+    MatTooltipModule,
     ScrollingModule,
   ],
   providers: [],

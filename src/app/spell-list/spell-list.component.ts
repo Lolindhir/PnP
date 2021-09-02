@@ -27,6 +27,8 @@ export class SpellListComponent implements OnInit {
   selectedFiltersDuration: SpellFilter[] = new Array();
   selectedFiltersDamageType: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
+  selectedFiltersConcentration: string[] = new Array();
+  selectedFiltersRitual: string[] = new Array();
 
   //all filter options
   optionsLevel: SpellFilter[] = new Array();
@@ -37,6 +39,8 @@ export class SpellListComponent implements OnInit {
   optionsCastingTime: SpellFilter[] = new Array();
   optionsDuration: SpellFilter[] = new Array();
   optionsDamageType: SpellFilter[] = new Array();
+  optionsConcentration: SpellFilter[] = new Array();
+  optionsRitual: SpellFilter[] = new Array();
 
   //spell related stuff
   spells: Spell[] = new Array();
@@ -47,11 +51,10 @@ export class SpellListComponent implements OnInit {
   //other global stuff
   expandedPanelIndex: number = -1;
 
-
   constructor() {
 
     //get spell properties
-    var spellProperties: SpellProperties = spellPropertiesData;
+    var spellProperties = spellPropertiesData;
 
     //fill spells with raw spell data from json
     //and build sort options
@@ -78,6 +81,8 @@ export class SpellListComponent implements OnInit {
     this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
     this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
     this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
+    this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
+    this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -117,6 +122,15 @@ export class SpellListComponent implements OnInit {
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
     this.spellsToShow = new Array();
     this.fetchMore();
+
+  }
+
+  onAllFiltersRemoved(){
+
+    var i = this.filters.length
+    while (i--) {
+      this.onFilterRemoved(this.filters[i]);
+    }
 
   }
 
@@ -169,6 +183,36 @@ export class SpellListComponent implements OnInit {
         this.selectedFiltersSource = newSelectedFilters;
         break;
       }
+      case SpellFilterType.Concentration:{
+        var newSelectedStrings : string[] = new Array();
+        var containedFilter = this.filters.find(filter => filter.type === removedFilter.type);
+        if(containedFilter === undefined){
+          newSelectedFilters = [];
+        }
+        else if(containedFilter.value === true){
+          newSelectedStrings = ['true'];
+        }
+        else if(containedFilter.value === false){
+          newSelectedStrings = ['false'];
+        }
+        this.selectedFiltersConcentration = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.Ritual:{
+        var newSelectedStrings : string[] = new Array();
+        var containedFilter = this.filters.find(filter => filter.type === removedFilter.type);
+        if(containedFilter === undefined){
+          newSelectedFilters = [];
+        }
+        else if(containedFilter.value === true){
+          newSelectedStrings = ['true'];
+        }
+        else if(containedFilter.value === false){
+          newSelectedStrings = ['false'];
+        }
+        this.selectedFiltersRitual = newSelectedStrings;
+        break;
+      }
     }
     
     this.onChange();
@@ -203,6 +247,70 @@ export class SpellListComponent implements OnInit {
     });
 
     this.onChange();
+  }
+
+
+  addFilterConcentration(value: boolean){
+
+    var selectedFilter = this.optionsConcentration.find(filter => filter.value === value);
+    var oppositeFilter = this.optionsConcentration.find(filter => filter.value != value);
+
+    if(selectedFilter === undefined || oppositeFilter === undefined){
+      return;
+    }
+
+    //if selectedFilter is in filter list: remove it
+    if(this.filters.includes(selectedFilter)){
+      this.onFilterRemoved(selectedFilter);
+    }
+    //if selectedFilter is not in filter list
+    else{
+
+      //if no concentration filter is in filter list: add filter to list
+      if(this.filters.includes(oppositeFilter) == false){
+        this.filters.push(selectedFilter);
+      }
+      //if the other concentration filter is in filter list: remove the other filter, set the shownFilter to the selected and add selected filter
+      else{
+        this.filters.push(selectedFilter);
+        this.onFilterRemoved(oppositeFilter);
+      }
+
+      this.onChange();
+    }
+    
+  }
+
+
+  addFilterRitual(value: boolean){
+
+    var selectedFilter = this.optionsRitual.find(filter => filter.value === value);
+    var oppositeFilter = this.optionsRitual.find(filter => filter.value != value);
+
+    if(selectedFilter === undefined || oppositeFilter === undefined){
+      return;
+    }
+
+    //if selectedFilter is in filter list: remove it
+    if(this.filters.includes(selectedFilter)){
+      this.onFilterRemoved(selectedFilter);
+    }
+    //if selectedFilter is not in filter list
+    else{
+
+      //if no concentration filter is in filter list: add filter to list
+      if(this.filters.includes(oppositeFilter) == false){
+        this.filters.push(selectedFilter);
+      }
+      //if the other concentration filter is in filter list: remove the other filter, set the shownFilter to the selected and add selected filter
+      else{
+        this.filters.push(selectedFilter);
+        this.onFilterRemoved(oppositeFilter);
+      }
+
+      this.onChange();
+    }
+    
   }
 
 

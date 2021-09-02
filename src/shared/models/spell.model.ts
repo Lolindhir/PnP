@@ -192,7 +192,21 @@ export class Spell implements Spell {
             return true;
           }          
           break; 
-        } 
+        }
+        case SpellFilterType.Ritual: {             
+          var ritual: boolean = filter.value as boolean;
+          if(ritual === null || this.ritual === ritual){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Concentration: {             
+          var concentration: boolean = filter.value as boolean;
+          if(concentration === null || this.concentration === concentration){
+            return true;
+          }          
+          break; 
+        }  
         case SpellFilterType.DamageType: {             
           var damageType: string = filter.value as string;
           var damageText: string = damageType.toLowerCase();

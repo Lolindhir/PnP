@@ -7,27 +7,36 @@ export interface SpellFilter{
     displayText: string;
     displayTextList: string;
     selected: boolean;
+    orFilter: boolean;
     properties: SpellProperties;
+    color: string;
+    tooltip: string;
 }
 
 export enum SpellFilterType{
     Level = 1,
     School = 2,
     Class = 3,
-    CastingTime = 4,
-    Duration = 5,
-    DamageType = 6,
-    Source = 7,
-    None = 8,
+    Ritual = 4,
+    CastingTime = 5,
+    Concentration = 6,
+    Duration = 7,
+    DamageType = 8,
+    Source = 9,
+    None = 10,
 }
 
 export class SpellFilter implements SpellFilter {
- 
-    constructor(type: SpellFilterType, value: any, properties: SpellProperties){
+
+    
+    constructor(type: SpellFilterType, value: any, properties: SpellProperties, orFilter: boolean){
         this.type = type;
         this.value = value;
         this.selected = false;
+        this.orFilter = orFilter;
         this.properties = properties;
+        this.color = orFilter ? 'lightblue' : 'orange';
+        this.tooltip = orFilter ? 'And-Filter' : 'Or-Filter';
 
         var displayText: string = '';
         var displayTextList: string = '';
@@ -72,6 +81,26 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
+        else if(type === SpellFilterType.Ritual){
+            if(value === true){
+                displayText = 'Ritual';
+            }
+            else{
+                displayText = 'No Ritual';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.Concentration){
+            if(value === true){
+                displayText = 'Concentration';
+            }
+            else{
+                displayText = 'No Concentration';
+            }
+            displayTextList = displayText;
+        }
+
         else{
             displayText = value as string;
             displayTextList = value as string;
@@ -80,6 +109,7 @@ export class SpellFilter implements SpellFilter {
         this.displayText = displayText;
         this.displayTextList = displayTextList;
     }
+
 
     public static compare(a: SpellFilter, b: SpellFilter) {
         
@@ -108,6 +138,11 @@ export class SpellFilter implements SpellFilter {
         else if(a.type === SpellFilterType.Duration){
             compareA = a.properties.durations.indexOf(a.value);
             compareB = b.properties.durations.indexOf(b.value);
+        }
+        //for concentration and ritual, compare the boolean (true before false)
+        else if(a.type === SpellFilterType.Ritual || a.type === SpellFilterType.Concentration){
+            compareA = a.value as boolean ? 1 : 2;
+            compareB = b.value as boolean ? 1 : 2;
         }
         else {
             compareA = a.displayText;
