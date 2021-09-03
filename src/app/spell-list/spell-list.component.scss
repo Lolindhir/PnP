@@ -11,12 +11,28 @@
   width: 200px;
 }
 
+.filter-button-select {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  height: 80px;
+  width: 100px;
+}
+
 .spell-expansion-header {
   padding-right: 0.1rem;
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-  width: max-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 350px;
+}
+
+.spell-expansion-properties {
+  padding-top: 0.5rem;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 135px;
 }
 
 .spell-number {

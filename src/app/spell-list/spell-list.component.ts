@@ -50,6 +50,11 @@ export class SpellListComponent implements OnInit {
 
   //other global stuff
   expandedPanelIndex: number = -1;
+  screenWidth: number = -1;
+  screenSm: boolean = true;
+  screenMd: boolean = false;
+  screenLg: boolean = false;
+  screenXl: boolean = false;
 
   constructor() {
 
@@ -89,6 +94,10 @@ export class SpellListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    //get screen width
+    this.screenWidth = window.innerWidth;
+    this.setSize();
 
     //add first spells to show list
     this.fetchMore();
@@ -367,6 +376,18 @@ export class SpellListComponent implements OnInit {
     if((pos > max - 300) && (percentReached > 0.8)) {
       this.fetchMore();
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+    onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+    this.setSize();
+  }
+
+  setSize(){
+    this.screenMd = this.screenWidth >= 600 ? true: false;
+    this.screenLg = this.screenWidth >= 960 ? true: false;
+    this.screenXl = this.screenWidth >= 1280 ? true: false;
   }
 
 }

@@ -9,19 +9,18 @@ export interface SpellFilter{
     selected: boolean;
     orFilter: boolean;
     properties: SpellProperties;
-    color: string;
     tooltip: string;
 }
 
 export enum SpellFilterType{
     Level = 1,
     School = 2,
-    Class = 3,
-    Ritual = 4,
+    Ritual = 3,
+    Concentration = 4,
     CastingTime = 5,
-    Concentration = 6,
-    Duration = 7,
-    DamageType = 8,
+    Duration = 6,
+    DamageType = 7,
+    Class = 8,
     Source = 9,
     None = 10,
 }
@@ -35,8 +34,7 @@ export class SpellFilter implements SpellFilter {
         this.selected = false;
         this.orFilter = orFilter;
         this.properties = properties;
-        this.color = orFilter ? 'lightblue' : 'orange';
-        this.tooltip = orFilter ? 'And-Filter' : 'Or-Filter';
+        this.tooltip = orFilter ? 'All spells that match this filter or one of the other filters are shown.' : 'All spells that match this filter are shown.';
 
         var displayText: string = '';
         var displayTextList: string = '';

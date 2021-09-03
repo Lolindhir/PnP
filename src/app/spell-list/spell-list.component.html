@@ -1,7 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="center">
   <div class="container">
 
-
     <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
       (closed)="advancedFiltersPanelOpen = false">
       <mat-expansion-panel-header>
@@ -12,7 +11,7 @@
           Press to {{advancedFiltersPanelOpen ? 'hide' : 'show'}}
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <div fxLayout="row wrap" fxLayoutAlign="left" >
+      <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutAlign.lt-sm="center">
 
         <div fxLayout="column" class="filter-select">
           <div>Spell Level</div>
@@ -62,7 +61,7 @@
           </mat-form-field>
         </div>
 
-        <div fxLayout="column" class="filter-select">
+        <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Ritual</div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersRitual">
@@ -72,7 +71,7 @@
           </div>
         </div>
 
-        <div fxLayout="column" class="filter-select">
+        <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Concentration</div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersConcentration">
@@ -139,7 +138,7 @@
 
       <mat-chip-list>
         <mat-chip class="spell-class-chip" *ngFor="let filter of filters" [selectable]=false [removable]=true
-          (removed)="onFilterRemoved(filter)" [style.background-color]="filter.color" [matTooltip]="filter.tooltip">
+          (removed)="onFilterRemoved(filter)" [matTooltip]="filter.tooltip">
           {{filter.displayText}}
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>
@@ -181,9 +180,33 @@
 
         <mat-expansion-panel-header>
 
-          <div *ngIf="i != expandedPanelIndex" fxLayout="column" style="width: 10px">
-            <div class="spell-expansion-header" style="font-size: larger;">
+          <div *ngIf="i != expandedPanelIndex" fxLayout="row">
+
+            <div fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header" style="font-size: larger;">{{spell.name}}</div>
+              <div class="spell-expansion-header" style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+                {{spell.levelSchoolDisplay}}
+              </div>              
+            </div>
+            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 375px;">{{spell.castingTime}}</div>
+            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px;">{{spell.duration}}</div>
+            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px;">{{spell.range}}</div>
+          </div>
+
+
+          <div *ngIf="i === expandedPanelIndex">
+            <div style="font-size: larger;">
               {{spell.name}}
+            </div>
+            <div style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+              {{spell.levelSchoolDisplay}}
+            </div>
+          </div>
+
+          <!-- <div *ngIf="i != expandedPanelIndex" fxLayout="column" style="width: 10px">
+            <div class="spell-expansion-header" style="font-size: larger;" fxLayout="row">
+              <div style="width: 400px;">{{spell.name}}</div>
+              <div style="font-size: medium;">{{spell.castingTime}}</div>
             </div>
             <div class="spell-expansion-header"
               style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
@@ -198,7 +221,7 @@
             <div style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
               {{spell.levelSchoolDisplay}}
             </div>
-          </div>
+          </div> -->
 
         </mat-expansion-panel-header>
 
