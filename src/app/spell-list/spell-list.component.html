@@ -190,14 +190,15 @@
               </div>              
             </div>
             <div *ngIf="screenMd" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header" style="width: 350px; font-size: larger;">{{spell.name}}</div>
-              <div class="spell-expansion-header" style="width: 350px; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+              <div class="spell-expansion-header" style="width: 300px; font-size: larger;">{{spell.name}}</div>
+              <div class="spell-expansion-header" style="width: 300px; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
                 {{spell.levelSchoolDisplay}}
               </div>              
             </div>
-            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 375px;">{{spell.castingTime}}</div>
-            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px;">{{spell.duration}}</div>
-            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px;">{{spell.range}}</div>
+            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 350px; width: 85px;">{{spell.componentsDisplayList}}</div>
+            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px; width: 125px;">{{spell.castingTimeDisplayList}}</div>
+            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px; width: 125px;" >{{spell.durationDisplayList}}</div>
+            <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 50px; width: 150px;">{{spell.range}}</div>
           </div>
 
 

@@ -18,7 +18,7 @@ export interface RawSpell {
   source: string;
   classes: string[];  
   subclasses: string[];  
-  allowed: boolean;  
+  allowed: boolean;
 }
 
 export interface Spell {
@@ -28,10 +28,13 @@ export interface Spell {
   levelSchoolDisplay: string;
   ritual: boolean;
   castingTime: string;
+  castingTimeDisplayList: string;
   range: string;
   components: string[];
   componentsDisplay: string;
+  componentsDisplayList: string;
   duration: string;
+  durationDisplayList: string;
   concentration: boolean;
   description: string;
   source: string;
@@ -40,6 +43,7 @@ export interface Spell {
   subclasses: SpellClass[];
   subclassesDisplay: string;
   allowed: boolean;
+  upcastable: boolean;
 }
 
 export class Spell implements Spell {  
@@ -52,6 +56,7 @@ export class Spell implements Spell {
     this.school = rawSpell.school;
     this.ritual = rawSpell.ritual;
     this.castingTime = rawSpell.castingTime;
+    this.castingTimeDisplayList = rawSpell.castingTime.includes('reaction') ? '1 Reaction' : this.capitalizeWords(rawSpell.castingTime);
     this.range = rawSpell.range;
     this.components = rawSpell.components;
     this.duration = rawSpell.duration;
@@ -75,10 +80,15 @@ export class Spell implements Spell {
     this.components.forEach(component => {
         componentsDisplay = componentsDisplay === '' ? component : componentsDisplay + ', ' + component;
     });
+    this.componentsDisplayList = componentsDisplay;
     if(rawSpell.materials != ''){
         componentsDisplay += ' (' + rawSpell.materials + ')';
     }
     this.componentsDisplay = componentsDisplay;
+
+    //build duration display
+    var splitDuration: string[] = rawSpell.duration.toLowerCase().split('concentration, up to ');
+    this.durationDisplayList = splitDuration.length > 1 ? this.capitalizeWords(splitDuration[1]) : this.capitalizeWords(rawSpell.duration);
 
     //build classes and classes dispaly
     var classes : SpellClass[] = new Array();
@@ -232,5 +242,10 @@ export class Spell implements Spell {
 
     return false;
   }
+
+  //capitalize all words of a string. 
+  capitalizeWords(text: string) {
+    return text.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+  };
 
 }
