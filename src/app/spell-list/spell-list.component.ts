@@ -58,6 +58,10 @@ export class SpellListComponent implements OnInit {
 
   constructor() {
 
+    //get screen width
+    this.screenWidth = window.innerWidth;
+    this.setSize();
+
     //get spell properties
     var spellProperties = spellPropertiesData;
 
@@ -94,10 +98,6 @@ export class SpellListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    //get screen width
-    this.screenWidth = window.innerWidth;
-    this.setSize();
 
     //add first spells to show list
     this.fetchMore();
