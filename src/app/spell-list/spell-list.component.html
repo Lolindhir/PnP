@@ -172,9 +172,6 @@
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
 
-    
-    {{screenWidth}}
-
 
     <mat-accordion hideToggle="false" multi="false">
 
@@ -186,9 +183,15 @@
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row">
 
-            <div fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header" style="font-size: larger;">{{spell.name}}</div>
-              <div class="spell-expansion-header" style="font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+            <div *ngIf="!screenMd" fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header" style="width: max-content; font-size: larger;">{{spell.name}}</div>
+              <div class="spell-expansion-header" style="width: max-content; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+                {{spell.levelSchoolDisplay}}
+              </div>              
+            </div>
+            <div *ngIf="screenMd" fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header" style="width: 350px; font-size: larger;">{{spell.name}}</div>
+              <div class="spell-expansion-header" style="width: 350px; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
                 {{spell.levelSchoolDisplay}}
               </div>              
             </div>
