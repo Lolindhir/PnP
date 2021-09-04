@@ -18,6 +18,16 @@
   width: 100px;
 }
 
+.image {
+  max-height: 14px;
+  margin-right: 3px;
+}
+
+.mat-accordion .mat-expansion-panel:not(.mat-expanded),
+.mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
+   margin-bottom: 10px;
+}
+
 .spell-expansion-header {
   padding-right: 0.1rem;
   overflow: hidden;
@@ -27,7 +37,7 @@
 
 .spell-expansion-name {
   font-size: larger;
-  font-weight: 415;
+  font-weight: 400;
 }
 
 .spell-expansion-extra {
