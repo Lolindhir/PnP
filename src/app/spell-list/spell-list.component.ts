@@ -51,7 +51,7 @@ export class SpellListComponent implements OnInit {
   //other global stuff
   expandedPanelIndex: number = -1;
   screenWidth: number = -1;
-  screenSm: boolean = true;
+  screenSm: boolean = false;
   screenMd: boolean = false;
   screenLg: boolean = false;
   screenXl: boolean = false;
@@ -385,8 +385,9 @@ export class SpellListComponent implements OnInit {
   }
 
   setSize(){
-    this.screenMd = this.screenWidth >= 600 ? true: false;
-    this.screenLg = this.screenWidth >= 960 ? true: false;
+    this.screenSm = this.screenWidth >= 600 ? true: false;
+    this.screenMd = this.screenWidth >= 720 ? true: false;
+    this.screenLg = this.screenWidth >= 900 ? true: false;
     this.screenXl = this.screenWidth >= 1280 ? true: false;
   }
 

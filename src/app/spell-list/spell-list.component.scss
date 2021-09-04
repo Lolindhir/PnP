@@ -25,9 +25,21 @@
   text-overflow: ellipsis;
 }
 
+.spell-expansion-name {
+  font-size: larger;
+  font-weight: 415;
+}
+
+.spell-expansion-extra {
+  font-size: small;
+  font-style: italic;
+  padding-left: 0.25rem;
+  color:gray; 
+}
+
 .spell-expansion-properties {
   padding-top: 0.5rem;
-  font-size: 14.5px;
+  font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

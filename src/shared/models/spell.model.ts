@@ -23,6 +23,7 @@ export interface RawSpell {
 
 export interface Spell {
   level: number;  
+  levelDisplay: string;  
   name: string;  
   school: string;  
   levelSchoolDisplay: string;
@@ -31,6 +32,8 @@ export interface Spell {
   castingTimeDisplayList: string;
   range: string;
   components: string[];
+  componentsValue: boolean;
+  componentsConsumed: boolean;
   componentsDisplay: string;
   componentsDisplayList: string;
   duration: string;
@@ -62,8 +65,26 @@ export class Spell implements Spell {
     this.duration = rawSpell.duration;
     this.concentration = rawSpell.concentration;
     this.description = rawSpell.description;
+    this.upcastable = this.description.toLowerCase().includes('at higher levels');
     this.source = rawSpell.source;
     this.allowed = rawSpell.allowed;
+
+    //build level display
+    if(this.level === 0){
+      this.levelDisplay = 'Cantrip';
+    }
+    if(this.level === 1){
+      this.levelDisplay = '1st';
+    }
+    if(this.level === 2){
+      this.levelDisplay = '2nd';
+    }
+    if(this.level === 3){
+      this.levelDisplay = '3rd';
+    }
+    if(this.level >= 4){
+      this.levelDisplay = this.level + 'th';
+    }
 
     //build level school display
     var levelSchoolDisplay: string = rawSpell.levelSchool;
@@ -74,7 +95,7 @@ export class Spell implements Spell {
         levelSchoolDisplay = levelSchoolDisplay + ' (concentration)'
     }
     this.levelSchoolDisplay = levelSchoolDisplay;
-    
+
     //build components display
     var componentsDisplay : string = '';
     this.components.forEach(component => {
@@ -85,6 +106,10 @@ export class Spell implements Spell {
         componentsDisplay += ' (' + rawSpell.materials + ')';
     }
     this.componentsDisplay = componentsDisplay;
+
+    //get component material/consumed
+    this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp') ? true : false;
+    this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume') ? true : false;
 
     //build duration display
     var splitDuration: string[] = rawSpell.duration.toLowerCase().split('concentration, up to ');

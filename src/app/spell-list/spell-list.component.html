@@ -183,22 +183,23 @@
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row">
 
-            <div *ngIf="!screenMd" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header" style="width: max-content; font-size: larger;">{{spell.name}}</div>
-              <div class="spell-expansion-header" style="width: max-content; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
+            <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header, spell-expansion-name" style="width: max-content;">{{spell.name}}</div>
+              <div class="spell-expansion-header, spell-expansion-extra" style="width: max-content;">
                 {{spell.levelSchoolDisplay}}
               </div>              
             </div>
-            <div *ngIf="screenMd" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header" style="width: 300px; font-size: larger;">{{spell.name}}</div>
-              <div class="spell-expansion-header" style="width: 300px; font-size: small; font-style: italic; padding-left: 0.25rem; color:gray; ">
-                {{spell.levelSchoolDisplay}}
+            <div *ngIf="screenSm" fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header, spell-expansion-name" style="width: 300px;">{{spell.name}}</div>
+              <div class="spell-expansion-header, spell-expansion-extra" style="width: 300px;">
+                {{spell.school}}<span *ngIf="!screenMd && spell.ritual"> (ritual)</span><span *ngIf="!screenXl && spell.concentration"> (concentration)</span>
               </div>              
             </div>
-            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 350px; width: 85px;">{{spell.componentsDisplayList}}</div>
-            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px; width: 125px;">{{spell.castingTimeDisplayList}}</div>
-            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 50px; width: 125px;" >{{spell.durationDisplayList}}</div>
+            <div *ngIf="screenSm" class="spell-expansion-properties" style="margin-left: 345px; width: 75px;">{{spell.levelDisplay}}<span *ngIf="spell.upcastable"> *</span></div>
+            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 60px; width: 100px;">{{spell.castingTimeDisplayList}}<span *ngIf="spell.ritual"> *</span></div>
+            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 75px; width: 85px;">{{spell.componentsDisplayList}} <span *ngIf="spell.componentsValue">*</span><span *ngIf="spell.componentsConsumed">*</span></div>
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 50px; width: 150px;">{{spell.range}}</div>
+            <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;" ><span *ngIf="spell.concentration">* </span>{{spell.durationDisplayList}}</div>
           </div>
 
 
