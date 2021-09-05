@@ -7,7 +7,6 @@ export interface SpellFilter{
     displayText: string;
     displayTextList: string;
     selected: boolean;
-    orFilter: boolean;
     properties: SpellProperties;
     tooltip: string;
 }
@@ -17,27 +16,32 @@ export enum SpellFilterType{
     School = 2,
     Ritual = 3,
     Concentration = 4,
-    CastingTime = 5,
-    Duration = 6,
-    DamageType = 7,
-    Class = 8,
-    Source = 9,
-    None = 10,
+    Class = 5,
+    CastingTime = 6,
+    ComponentVerbal = 7,
+    ComponentSomantic = 8,
+    ComponentMaterial = 9,
+    MaterialValue = 10,
+    MaterialConsumed = 11,
+    Duration = 12,
+    Upcastable = 13,
+    DamageType = 14,
+    Source = 15,
+    None = 16,
 }
 
 export class SpellFilter implements SpellFilter {
 
     
-    constructor(type: SpellFilterType, value: any, properties: SpellProperties, orFilter: boolean){
+    constructor(type: SpellFilterType, value: any, properties: SpellProperties){
         this.type = type;
         this.value = value;
         this.selected = false;
-        this.orFilter = orFilter;
         this.properties = properties;
-        this.tooltip = orFilter ? 'All spells that match this filter or one of the other filters are shown.' : 'All spells that match this filter are shown.';
 
         var displayText: string = '';
         var displayTextList: string = '';
+        var tooltip = 'All spells that match this filter or one of the other filters are shown.';
 
         if(type === SpellFilterType.Level){
             if(value as number === 0){
@@ -56,6 +60,9 @@ export class SpellFilter implements SpellFilter {
                 displayText = value as string + 'th';
             }
             displayTextList = displayText;
+            
+            var levelText = value as number === 0 ? 'Cantrip' : displayText + ' level';
+            tooltip = `All ${levelText} spells and the other selected levels are shown.`
         }
 
         else if(type === SpellFilterType.Source){
@@ -99,6 +106,66 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
+        else if(type === SpellFilterType.ComponentVerbal){
+            if(value === true){
+                displayText = 'V';
+            }
+            else{
+                displayText = 'No V';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.ComponentSomantic){
+            if(value === true){
+                displayText = 'S';
+            }
+            else{
+                displayText = 'No S';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.ComponentMaterial){
+            if(value === true){
+                displayText = 'M';
+            }
+            else{
+                displayText = 'No M';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.MaterialValue){
+            if(value === true){
+                displayText = 'Material has value';
+            }
+            else{
+                displayText = 'Material has no value';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.MaterialConsumed){
+            if(value === true){
+                displayText = 'Material is consumed';
+            }
+            else{
+                displayText = 'Material not consumed';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.Upcastable){
+            if(value === true){
+                displayText = 'Upcastable';
+            }
+            else{
+                displayText = 'Not upcastable';
+            }
+            displayTextList = displayText;
+        }
+
         else{
             displayText = value as string;
             displayTextList = value as string;
@@ -106,6 +173,7 @@ export class SpellFilter implements SpellFilter {
 
         this.displayText = displayText;
         this.displayTextList = displayTextList;
+        this.tooltip = tooltip;
     }
 
 
@@ -138,7 +206,14 @@ export class SpellFilter implements SpellFilter {
             compareB = b.properties.durations.indexOf(b.value);
         }
         //for concentration and ritual, compare the boolean (true before false)
-        else if(a.type === SpellFilterType.Ritual || a.type === SpellFilterType.Concentration){
+        else if(a.type === SpellFilterType.Ritual 
+            || a.type === SpellFilterType.Concentration
+            || a.type === SpellFilterType.ComponentVerbal
+            || a.type === SpellFilterType.ComponentSomantic
+            || a.type === SpellFilterType.ComponentMaterial
+            || a.type === SpellFilterType.MaterialValue
+            || a.type === SpellFilterType.MaterialConsumed
+            || a.type === SpellFilterType.Upcastable){
             compareA = a.value as boolean ? 1 : 2;
             compareB = b.value as boolean ? 1 : 2;
         }

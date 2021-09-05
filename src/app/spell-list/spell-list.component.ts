@@ -29,6 +29,12 @@ export class SpellListComponent implements OnInit {
   selectedFiltersSource: SpellFilter[] = new Array();
   selectedFiltersConcentration: string[] = new Array();
   selectedFiltersRitual: string[] = new Array();
+  selectedFiltersComponentV: string[] = new Array();
+  selectedFiltersComponentS: string[] = new Array();
+  selectedFiltersComponentM: string[] = new Array();
+  selectedFiltersMaterialValue: string[] = new Array();
+  selectedFiltersMaterialConsumed: string[] = new Array();
+  selectedFiltersUpcastable: string[] = new Array();
 
   //all filter options
   optionsLevel: SpellFilter[] = new Array();
@@ -41,6 +47,12 @@ export class SpellListComponent implements OnInit {
   optionsDamageType: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
   optionsRitual: SpellFilter[] = new Array();
+  optionsComponentV: SpellFilter[] = new Array();
+  optionsComponentS: SpellFilter[] = new Array();
+  optionsComponentM: SpellFilter[] = new Array();
+  optionsMaterialValue: SpellFilter[] = new Array();
+  optionsMaterialConsumed: SpellFilter[] = new Array();
+  optionsUpcastable: SpellFilter[] = new Array();
 
   //spell related stuff
   spells: Spell[] = new Array();
@@ -50,6 +62,8 @@ export class SpellListComponent implements OnInit {
 
   //other global stuff
   expandedPanelIndex: number = -1;
+  showAdvancedFilters: boolean = false;
+  tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
   screenMd: boolean = false;
@@ -92,6 +106,12 @@ export class SpellListComponent implements OnInit {
     this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
+    this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
+    this.optionsComponentS = SpellService.getComponentSomanticFilterOptions(spellProperties);
+    this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(spellProperties);
+    this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(spellProperties);
+    this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(spellProperties);
+    this.optionsUpcastable = SpellService.getUpcastableFilterOptions(spellProperties);
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -156,6 +176,18 @@ export class SpellListComponent implements OnInit {
       }
     })
 
+    var newSelectedStrings : string[] = new Array();
+    var containedFilter = this.filters.find(filter => filter.type === removedFilter.type);
+    if(containedFilter === undefined){
+      newSelectedStrings = [];
+    }
+    else if(containedFilter.value === true){
+      newSelectedStrings = ['true'];
+    }
+    else if(containedFilter.value === false){
+      newSelectedStrings = ['false'];
+    }
+
     switch(removedFilter.type){
       case SpellFilterType.School: {
         this.selectedFiltersSchool = newSelectedFilters;
@@ -193,33 +225,35 @@ export class SpellListComponent implements OnInit {
         break;
       }
       case SpellFilterType.Concentration:{
-        var newSelectedStrings : string[] = new Array();
-        var containedFilter = this.filters.find(filter => filter.type === removedFilter.type);
-        if(containedFilter === undefined){
-          newSelectedFilters = [];
-        }
-        else if(containedFilter.value === true){
-          newSelectedStrings = ['true'];
-        }
-        else if(containedFilter.value === false){
-          newSelectedStrings = ['false'];
-        }
         this.selectedFiltersConcentration = newSelectedStrings;
         break;
       }
       case SpellFilterType.Ritual:{
-        var newSelectedStrings : string[] = new Array();
-        var containedFilter = this.filters.find(filter => filter.type === removedFilter.type);
-        if(containedFilter === undefined){
-          newSelectedFilters = [];
-        }
-        else if(containedFilter.value === true){
-          newSelectedStrings = ['true'];
-        }
-        else if(containedFilter.value === false){
-          newSelectedStrings = ['false'];
-        }
         this.selectedFiltersRitual = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.ComponentVerbal:{
+        this.selectedFiltersComponentV = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.ComponentSomantic:{
+        this.selectedFiltersComponentS = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.ComponentMaterial:{
+        this.selectedFiltersComponentM = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.MaterialValue:{
+        this.selectedFiltersMaterialValue = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.MaterialConsumed:{
+        this.selectedFiltersMaterialConsumed = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.Upcastable:{
+        this.selectedFiltersUpcastable = newSelectedStrings;
         break;
       }
     }
@@ -259,42 +293,10 @@ export class SpellListComponent implements OnInit {
   }
 
 
-  addFilterConcentration(value: boolean){
+  addFilterToggle(filterOptions: SpellFilter[], value: boolean){
 
-    var selectedFilter = this.optionsConcentration.find(filter => filter.value === value);
-    var oppositeFilter = this.optionsConcentration.find(filter => filter.value != value);
-
-    if(selectedFilter === undefined || oppositeFilter === undefined){
-      return;
-    }
-
-    //if selectedFilter is in filter list: remove it
-    if(this.filters.includes(selectedFilter)){
-      this.onFilterRemoved(selectedFilter);
-    }
-    //if selectedFilter is not in filter list
-    else{
-
-      //if no concentration filter is in filter list: add filter to list
-      if(this.filters.includes(oppositeFilter) == false){
-        this.filters.push(selectedFilter);
-      }
-      //if the other concentration filter is in filter list: remove the other filter, set the shownFilter to the selected and add selected filter
-      else{
-        this.filters.push(selectedFilter);
-        this.onFilterRemoved(oppositeFilter);
-      }
-
-      this.onChange();
-    }
-    
-  }
-
-
-  addFilterRitual(value: boolean){
-
-    var selectedFilter = this.optionsRitual.find(filter => filter.value === value);
-    var oppositeFilter = this.optionsRitual.find(filter => filter.value != value);
+    var selectedFilter = filterOptions.find(filter => filter.value === value);
+    var oppositeFilter = filterOptions.find(filter => filter.value != value);
 
     if(selectedFilter === undefined || oppositeFilter === undefined){
       return;
@@ -310,6 +312,7 @@ export class SpellListComponent implements OnInit {
       //if no concentration filter is in filter list: add filter to list
       if(this.filters.includes(oppositeFilter) == false){
         this.filters.push(selectedFilter);
+      this.filters.sort(SpellFilter.compare);
       }
       //if the other concentration filter is in filter list: remove the other filter, set the shownFilter to the selected and add selected filter
       else{
@@ -385,10 +388,11 @@ export class SpellListComponent implements OnInit {
   }
 
   setSize(){
-    this.screenSm = this.screenWidth >= 600 ? true: false;
-    this.screenMd = this.screenWidth >= 730 ? true: false;
-    this.screenLg = this.screenWidth >= 900 ? true: false;
-    this.screenXl = this.screenWidth >= 1280 ? true: false;
+    this.showAdvancedFilters = this.screenWidth >= 600 ? true : false;
+    this.screenSm = this.screenWidth >= 600 ? true : false;
+    this.screenMd = this.screenWidth >= 730 ? true : false;
+    this.screenLg = this.screenWidth >= 900 ? true : false;
+    this.screenXl = this.screenWidth >= 1280 ? true : false;
   }
 
 }

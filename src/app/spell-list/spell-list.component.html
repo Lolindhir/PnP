@@ -11,27 +11,15 @@
           Press to {{advancedFiltersPanelOpen ? 'hide' : 'show'}}
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutAlign.lt-sm="center">
+
+      <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutAlign.lt-sm="space-evenly center">
 
         <div fxLayout="column" class="filter-select">
           <div>Spell Level</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersLevel"
-              (ngModelChange)="addFilterMulti(optionsLevel, selectedFiltersLevel)" multiple="true"
-              placeholder="Select Level">
+              (ngModelChange)="addFilterMulti(optionsLevel, selectedFiltersLevel)" multiple="true">
               <mat-option *ngFor="let filter of optionsLevel" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Spell School</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSchool"
-              (ngModelChange)="addFilterMulti(optionsSchool, selectedFiltersSchool)" multiple="true"
-              placeholder="Select School">
-              <mat-option *ngFor="let filter of optionsSchool" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -41,8 +29,7 @@
           <div>Class</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersClass"
-              (ngModelChange)="addFilterMulti(optionsClass, selectedFiltersClass)" multiple="true"
-              placeholder="Select Class">
+              (ngModelChange)="addFilterMulti(optionsClass, selectedFiltersClass)" multiple="true">
               <mat-option *ngFor="let filter of optionsClass" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -53,8 +40,7 @@
           <div>Subclass</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSubclass"
-              (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true"
-              placeholder="Select Subclass">
+              (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true">
               <mat-option *ngFor="let filter of optionsSubclass" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -62,68 +48,163 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Ritual</div>
+          <div style="text-align: center;">Ritual <img class="image" src="assets/images/ritual.png"></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersRitual">
-              <mat-button-toggle value="true" (click)="addFilterRitual(true)">Yes</mat-button-toggle>
-              <mat-button-toggle value="false" (click)="addFilterRitual(false)">No</mat-button-toggle>
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsRitual, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsRitual, false)">No</mat-button-toggle>
             </mat-button-toggle-group>
           </div>
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Concentration</div>
+          <div style="text-align: center;">Concentration <img class="image" src="assets/images/concentration.png"></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersConcentration">
-              <mat-button-toggle value="true" (click)="addFilterConcentration(true)">Yes</mat-button-toggle>
-              <mat-button-toggle value="false" (click)="addFilterConcentration(false)">No</mat-button-toggle>
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsConcentration, true)">Yes
+              </mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsConcentration, false)">No
+              </mat-button-toggle>
             </mat-button-toggle-group>
           </div>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Casting Time</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersCastingTime"
-              (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true"
-              placeholder="Select Casting Time">
-              <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Duration</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersDuration"
-              (ngModelChange)="addFilterMulti(optionsDuration, selectedFiltersDuration)" multiple="true"
-              placeholder="Select Duration">
-              <mat-option *ngFor="let filter of optionsDuration" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Damage Type</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersDamageType"
-              (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true"
-              placeholder="Select Damage Type">
-              <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
         </div>
 
         <div fxLayout="column" class="filter-select">
           <div>Source</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSource"
-              (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true"
-              placeholder="Select Source">
+              (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true">
               <mat-option *ngFor="let filter of optionsSource" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+      </div>
+
+      <div *ngIf="screenSm" class="medium-gap">
+        <mat-divider></mat-divider>
+      </div>
+
+      <div *ngIf="!screenSm" class="big-gap" fxLayout="row" fxLayoutAlign="center">
+        <button mat-raised-button color="primary" style="vertical-align: center;"
+          (click)="showAdvancedFilters = !showAdvancedFilters">
+          <span *ngIf="showAdvancedFilters">Hide Advanced Filters</span>
+          <span *ngIf="!showAdvancedFilters">Show Advanced Filters</span>
+        </button>
+      </div>
+
+      <div *ngIf="showAdvancedFilters" fxLayout="row wrap" fxLayoutAlign="left"
+        fxLayoutAlign.lt-sm="space-evenly center">
+
+
+        <div fxLayout="column" class="filter-select">
+          <div>Spell School</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSchool"
+              (ngModelChange)="addFilterMulti(optionsSchool, selectedFiltersSchool)" multiple="true">
+              <mat-option *ngFor="let filter of optionsSchool" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Casting Time</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersCastingTime"
+              (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true">
+              <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Verbal (V)</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersComponentV">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsComponentV, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsComponentV, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Somantic (S)</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersComponentS">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsComponentS, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsComponentS, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Material (M)</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersComponentM">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsComponentM, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsComponentM, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Value <img class="image" src="assets/images/coins.png"></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersMaterialValue">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsMaterialValue, true)">Yes
+              </mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsMaterialValue, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">M consumed <img class="image" src="assets/images/coins.png"></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersMaterialConsumed">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsMaterialConsumed, true)">Yes
+              </mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsMaterialConsumed, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Duration</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersDuration"
+              (ngModelChange)="addFilterMulti(optionsDuration, selectedFiltersDuration)" multiple="true">
+              <mat-option *ngFor="let filter of optionsDuration" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Upcastable <img class="image" src="assets/images/arrow.png"></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpcastable">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpcastable, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsUpcastable, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Damage Type</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersDamageType"
+              (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true">
+              <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -186,9 +267,16 @@
             <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
               <div class="spell-expansion-header, spell-expansion-name" style="width: max-content;">
                 {{spell.name}}
-                <span><img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png"></span>
-                <span><img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png"></span>
-                <span><img *ngIf="spell.componentsValue || spell.componentsConsumed" class="image" src="assets/images/coins.png"></span>
+                <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
+                </span>
+                <span matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png">
+                </span>
+                <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+                  matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" src="assets/images/coins.png">
+                </span>
               </div>
               <div class="spell-expansion-header, spell-expansion-extra" style="width: max-content;">
                 {{spell.smallDisplay}}
@@ -197,9 +285,17 @@
 
             <div *ngIf="screenSm" fxLayout="column" style="width: 10px;">
               <div class="spell-expansion-header, spell-expansion-name" style="width: 300px;">
-                {{spell.name}}
-                <span><img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png"></span>
-                <span><img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png"></span>
+                <span style="width: 250px;">{{spell.name}}</span>
+                <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
+                </span>
+                <span matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png">
+                </span>
+                <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+                  matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" src="assets/images/coins.png">
+                </span>
               </div>
               <div class="spell-expansion-header, spell-expansion-extra" style="width: 300px;">
                 {{spell.school}}<span *ngIf="!screenLg"> - {{spell.componentsDisplayList}}</span>
@@ -208,21 +304,23 @@
 
             <div *ngIf="screenSm" class="spell-expansion-properties" style="margin-left: 345px; width: 75px;">
               {{spell.levelDisplay}}
-              <span *ngIf="spell.upcastable">
+              <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}"
+                matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" style="max-height: 10px;" src="assets/images/arrow.png">
               </span>
             </div>
 
             <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 60px; width: 115px;">
               {{spell.castingTimeDisplayList}}
-              <span *ngIf="spell.ritual">
+              <span *ngIf="spell.ritual" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src="assets/images/ritual.png">
               </span>
             </div>
 
             <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 60px; width: 85px;">
               {{spell.componentsDisplayList}}
-              <span *ngIf="spell.componentsValue || spell.componentsConsumed">
+              <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+                matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src="assets/images/coins.png">
               </span>
             </div>
@@ -232,7 +330,8 @@
             </div>
 
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;">
-              <span *ngIf="spell.concentration">
+              <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
+                matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src="assets/images/concentration.png">
               </span>
               {{spell.durationDisplayList}}

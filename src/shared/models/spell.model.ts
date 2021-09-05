@@ -28,6 +28,7 @@ export interface Spell {
   school: string;  
   levelSchoolDisplay: string;
   ritual: boolean;
+  ritualTooltip: string;
   castingTime: string;
   castingTimeDisplayList: string;
   range: string;
@@ -36,9 +37,11 @@ export interface Spell {
   componentsConsumed: boolean;
   componentsDisplay: string;
   componentsDisplayList: string;
+  materialTooltip: string;
   duration: string;
   durationDisplayList: string;
   concentration: boolean;
+  concentrationTooltip: string;
   description: string;
   source: string;
   classes: SpellClass[];
@@ -47,6 +50,7 @@ export interface Spell {
   subclassesDisplay: string;
   allowed: boolean;
   upcastable: boolean;
+  upcastableTooltip: string;
   smallDisplay: string;
 }
 
@@ -59,14 +63,17 @@ export class Spell implements Spell {
     this.name = rawSpell.name;
     this.school = rawSpell.school;
     this.ritual = rawSpell.ritual;
+    this.ritualTooltip = 'Castable as a ritual';
     this.castingTime = rawSpell.castingTime;
     this.castingTimeDisplayList = rawSpell.castingTime.includes('reaction') ? '1 Reaction' : this.capitalizeWords(rawSpell.castingTime);
     this.range = rawSpell.range;
     this.components = rawSpell.components;
     this.duration = rawSpell.duration;
     this.concentration = rawSpell.concentration;
+    this.concentrationTooltip = 'Requires concentration';
     this.description = rawSpell.description;
     this.upcastable = this.description.toLowerCase().includes('at higher levels');
+    this.upcastableTooltip = 'Upgrades when casted at a higher level';
     this.source = rawSpell.source;
     this.allowed = rawSpell.allowed;
 
@@ -92,9 +99,6 @@ export class Spell implements Spell {
     if(rawSpell.ritual){
         levelSchoolDisplay = levelSchoolDisplay + ' (ritual)';
     }
-    if(rawSpell.concentration){
-        levelSchoolDisplay = levelSchoolDisplay + ' (concentration)'
-    }
     this.levelSchoolDisplay = levelSchoolDisplay;
 
     //build components display
@@ -111,6 +115,17 @@ export class Spell implements Spell {
     //get component material/consumed
     this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp') ? true : false;
     this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume') ? true : false;
+    var materialTooltip = '';
+    if(this.componentsValue && this.componentsConsumed){
+      materialTooltip = 'Requires materials with gold value, which are consumed'; 
+    }
+    else if(this.componentsValue){
+      materialTooltip = 'Requires materials with gold value'; 
+    }
+    else{
+      materialTooltip = 'Requires materials, which are consumed'; 
+    }
+    this.materialTooltip = materialTooltip;
 
     //build small display
     var levelText: string = this.level === 0 ? this.levelDisplay : this.levelDisplay + ' level';
@@ -152,6 +167,9 @@ export class Spell implements Spell {
 
   }    
 
+
+
+
   public filter(nameFilter: string, filters: SpellFilter[]) : boolean{
   
     if(nameFilter != '' && this.name.toLowerCase().indexOf(nameFilter.toLowerCase()) < 0){
@@ -170,6 +188,9 @@ export class Spell implements Spell {
     return filtersMatch;
 
   }
+
+
+
 
   private filterMatches(filterType: SpellFilterType, filters: SpellFilter[]): boolean{
 
@@ -246,7 +267,49 @@ export class Spell implements Spell {
             return true;
           }          
           break; 
-        }  
+        }
+        case SpellFilterType.Upcastable: {             
+          var upcastable: boolean = filter.value as boolean;
+          if(upcastable === null || this.upcastable === upcastable){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.MaterialValue: {             
+          var matValue: boolean = filter.value as boolean;
+          if(matValue === null || this.componentsValue === matValue){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.MaterialConsumed: {             
+          var matConsumed: boolean = filter.value as boolean;
+          if(matConsumed === null || this.componentsConsumed === matConsumed){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.ComponentVerbal: {             
+          var verbal: boolean = filter.value as boolean;
+          if(verbal === null || this.components.includes('V') === verbal){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.ComponentSomantic: {             
+          var somantic: boolean = filter.value as boolean;
+          if(somantic === null || this.components.includes('S') === somantic){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.ComponentMaterial: {             
+          var material: boolean = filter.value as boolean;
+          if(material === null || this.components.includes('M') === material){
+            return true;
+          }          
+          break; 
+        }
         case SpellFilterType.DamageType: {             
           var damageType: string = filter.value as string;
           var damageText: string = damageType.toLowerCase();
@@ -272,6 +335,9 @@ export class Spell implements Spell {
 
     return false;
   }
+
+
+
 
   //capitalize all words of a string. 
   capitalizeWords(text: string) {
