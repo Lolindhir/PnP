@@ -47,6 +47,7 @@ export interface Spell {
   subclassesDisplay: string;
   allowed: boolean;
   upcastable: boolean;
+  smallDisplay: string;
 }
 
 export class Spell implements Spell {  
@@ -111,6 +112,10 @@ export class Spell implements Spell {
     this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp') ? true : false;
     this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume') ? true : false;
 
+    //build small display
+    var levelText: string = this.level === 0 ? this.levelDisplay : this.levelDisplay + ' level';
+    this.smallDisplay = levelText + ' ' + this.school + ' - ' + this.componentsDisplayList;
+
     //build duration display
     var splitDuration: string[] = rawSpell.duration.toLowerCase().split('concentration, up to ');
     this.durationDisplayList = splitDuration.length > 1 ? this.capitalizeWords(splitDuration[1]) : this.capitalizeWords(rawSpell.duration);
@@ -130,7 +135,7 @@ export class Spell implements Spell {
     this.classes = classes;
     this.classesDisplay = classesDisplay ? classesDisplay : 'unknown';
 
-    //build subclasses amd subclasses display
+    //build subclasses and subclasses display
     var subclasses : SpellClass[] = new Array();
     var subclassesDisplay : string = '';
     rawSpell.subclasses.forEach(spellClass => {

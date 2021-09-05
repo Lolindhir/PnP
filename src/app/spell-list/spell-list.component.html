@@ -173,13 +173,6 @@
       matching spells found. Check the filter settings. -</div>
 
 
-    <template id="welcome-msg">
-      <h1>Hello, World!</h1>
-      <p>And all who inhabit it</p>
-    </template>
-
-    welcome-msg
-
     <mat-accordion hideToggle="false" multi="false">
 
       <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index"
@@ -193,11 +186,15 @@
             <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
               <div class="spell-expansion-header, spell-expansion-name" style="width: max-content;">
                 {{spell.name}}
+                <span><img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png"></span>
+                <span><img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png"></span>
+                <span><img *ngIf="spell.componentsValue || spell.componentsConsumed" class="image" src="assets/images/coins.png"></span>
               </div>
               <div class="spell-expansion-header, spell-expansion-extra" style="width: max-content;">
-                {{spell.levelSchoolDisplay}}
+                {{spell.smallDisplay}}
               </div>
             </div>
+
             <div *ngIf="screenSm" fxLayout="column" style="width: 10px;">
               <div class="spell-expansion-header, spell-expansion-name" style="width: 300px;">
                 {{spell.name}}
@@ -205,32 +202,42 @@
                 <span><img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png"></span>
               </div>
               <div class="spell-expansion-header, spell-expansion-extra" style="width: 300px;">
-                {{spell.school}}<span *ngIf="!screenMd && spell.ritual"> (ritual)</span><span
-                  *ngIf="!screenXl && spell.concentration"> (concentration)</span>
+                {{spell.school}}<span *ngIf="!screenLg"> - {{spell.componentsDisplayList}}</span>
               </div>
             </div>
+
             <div *ngIf="screenSm" class="spell-expansion-properties" style="margin-left: 345px; width: 75px;">
-              {{spell.levelDisplay}}<span *ngIf="spell.upcastable"> *</span>
+              {{spell.levelDisplay}}
+              <span *ngIf="spell.upcastable">
+                <img class="image" style="max-height: 10px;" src="assets/images/arrow.png">
+              </span>
             </div>
+
             <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 60px; width: 115px;">
               {{spell.castingTimeDisplayList}}
               <span *ngIf="spell.ritual">
                 <img class="image" src="assets/images/ritual.png">
               </span>
             </div>
+
             <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 60px; width: 85px;">
-              {{spell.componentsDisplayList}} <span *ngIf="spell.componentsValue">*</span><span
-                *ngIf="spell.componentsConsumed">*</span>
+              {{spell.componentsDisplayList}}
+              <span *ngIf="spell.componentsValue || spell.componentsConsumed">
+                <img class="image" src="assets/images/coins.png">
+              </span>
             </div>
+
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 50px; width: 150px;">
               {{spell.range}}
             </div>
+
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;">
               <span *ngIf="spell.concentration">
                 <img class="image" src="assets/images/concentration.png">
               </span>
               {{spell.durationDisplayList}}
             </div>
+
           </div>
 
 
