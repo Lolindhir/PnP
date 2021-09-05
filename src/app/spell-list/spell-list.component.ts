@@ -388,7 +388,6 @@ export class SpellListComponent implements OnInit {
   }
 
   setSize(){
-    this.showAdvancedFilters = this.screenWidth >= 600 ? true : false;
     this.screenSm = this.screenWidth >= 600 ? true : false;
     this.screenMd = this.screenWidth >= 730 ? true : false;
     this.screenLg = this.screenWidth >= 900 ? true : false;

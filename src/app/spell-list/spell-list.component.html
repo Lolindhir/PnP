@@ -94,7 +94,7 @@
         </button>
       </div>
 
-      <div *ngIf="showAdvancedFilters" fxLayout="row wrap" fxLayoutAlign="left"
+      <div *ngIf="showAdvancedFilters || screenSm" fxLayout="row wrap" fxLayoutAlign="left"
         fxLayoutAlign.lt-sm="space-evenly center">
 
 
@@ -285,7 +285,7 @@
 
             <div *ngIf="screenSm" fxLayout="column" style="width: 10px;">
               <div class="spell-expansion-header, spell-expansion-name" style="width: 300px;">
-                <span style="width: 250px;">{{spell.name}}</span>
+                {{spell.name}}
                 <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                   <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
                 </span>
