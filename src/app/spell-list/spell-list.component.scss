@@ -33,7 +33,7 @@
 }
 
 .spell-expansion-header {
-  padding-right: 0.1rem;
+  margin-right: 3px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -41,13 +41,17 @@
 
 .spell-expansion-name {
   font-size: larger;
-  font-weight: 400;
+  font-weight: 415;
+}
+
+.spell-expansion-icon {
+  margin-left: 1px;
 }
 
 .spell-expansion-extra {
   font-size: small;
   font-style: italic;
-  padding-left: 0.25rem;
+  margin-left: 0.25rem;
   color:gray; 
 }
 

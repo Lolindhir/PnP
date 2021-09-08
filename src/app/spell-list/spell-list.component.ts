@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
@@ -13,7 +13,7 @@ import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber
   templateUrl: './spell-list.component.html',
   styleUrls: ['./spell-list.component.scss']
 })
-export class SpellListComponent implements OnInit {
+export class SpellListComponent implements OnInit, AfterViewInit {
 
   //filter stuff
   advancedFiltersPanelOpen: boolean = false;
@@ -62,6 +62,7 @@ export class SpellListComponent implements OnInit {
 
   //other global stuff
   expandedPanelIndex: number = -1;
+  expansionPanelWidth: number = 0;
   showAdvancedFilters: boolean = false;
   tooltipDelay = 500;
   screenWidth: number = -1;
@@ -69,6 +70,11 @@ export class SpellListComponent implements OnInit {
   screenMd: boolean = false;
   screenLg: boolean = false;
   screenXl: boolean = false;
+
+
+  @ViewChild('expansionAccordion')
+  expansionAccordion: ElementRef;
+
 
   constructor() {
 
@@ -124,6 +130,10 @@ export class SpellListComponent implements OnInit {
 
   }
 
+  ngAfterViewInit(): void {
+    this.setSize();
+    this.setPanelSize();
+  }
 
   fetchMore(): boolean {
     
@@ -151,6 +161,7 @@ export class SpellListComponent implements OnInit {
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
     this.spellsToShow = new Array();
     this.fetchMore();
+    this.setPanelSize();
 
   }
 
@@ -379,19 +390,39 @@ export class SpellListComponent implements OnInit {
     if((pos > max - 300) && (percentReached > 0.8)) {
       this.fetchMore();
     }
+
+    this.setSize();
+    this.setPanelSize();
   }
 
   @HostListener('window:resize', ['$event'])
     onResize(event: any) {
     this.screenWidth = window.innerWidth;
     this.setSize();
+    this.setPanelSize();
   }
 
-  setSize(){
+  setSize(){  
     this.screenSm = this.screenWidth >= 600 ? true : false;
     this.screenMd = this.screenWidth >= 730 ? true : false;
     this.screenLg = this.screenWidth >= 900 ? true : false;
     this.screenXl = this.screenWidth >= 1280 ? true : false;
+  }
+
+  async setPanelSize(){
+    
+    await this.delay(100);
+
+    if(this.expansionAccordion === undefined){
+      this.expansionPanelWidth = 100;
+    }
+    else {
+      this.expansionPanelWidth = this.expansionAccordion.nativeElement.offsetWidth;
+    }
+  }
+
+  private delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
   }
 
 }

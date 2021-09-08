@@ -253,8 +253,7 @@
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
 
-
-    <mat-accordion hideToggle="false" multi="false">
+    <mat-accordion #expansionAccordion hideToggle="false" multi="false">
 
       <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="expandedPanelIndex = i"
@@ -264,8 +263,8 @@
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row">
 
-            <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header, spell-expansion-name" style="width: max-content;">
+            <!-- <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
+              <div class="spell-expansion-header spell-expansion-name" style="width: max-content;">
                 {{spell.name}}
                 <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                   <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
@@ -278,27 +277,38 @@
                   <img class="image" src="assets/images/coins.png">
                 </span>
               </div>
-              <div class="spell-expansion-header, spell-expansion-extra" style="width: max-content;">
+              <div class="spell-expansion-header spell-expansion-extra" style="width: max-content;">
                 {{spell.smallDisplay}}
               </div>
-            </div>
+            </div> -->
 
-            <div *ngIf="screenSm" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header, spell-expansion-name" style="width: 300px;">
-                {{spell.name}}
-                <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
-                </span>
-                <span matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png">
-                </span>
-                <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+            <div fxLayout="column" style="width: 10px;">
+
+              <div fxLayout="row" [style.width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 75 : 325">
+                <div class="spell-expansion-header spell-expansion-name"
+                  [style.max-width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 100 : 300">
+                  {{spell.name}}
+                </div>
+                <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
                   matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" src="assets/images/ritual.png">
+                </div>
+                <div *ngIf="spell.concentration" class="spell-expansion-icon"
+                  matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" src="assets/images/concentration.png">
+                </div>
+                <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
+                  matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                   <img class="image" src="assets/images/coins.png">
-                </span>
+                </div>
               </div>
-              <div class="spell-expansion-header, spell-expansion-extra" style="width: 300px;">
-                {{spell.school}}<span *ngIf="!screenLg"> - {{spell.componentsDisplayList}}</span>
+              <div class="spell-expansion-header spell-expansion-extra"
+                [style.width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 50 : 350">
+                <div *ngIf="!screenSm">{{spell.smallDisplay}}</div>
+                <div *ngIf="screenSm">
+                  {{spell.school}}
+                  <span *ngIf="!screenLg"> - {{spell.componentsDisplayList}}</span>
+                </div>
               </div>
             </div>
 
