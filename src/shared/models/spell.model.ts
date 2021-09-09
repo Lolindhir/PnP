@@ -60,7 +60,6 @@ export class Spell implements Spell {
       
     //take straight raw values
     this.level = rawSpell.level;
-    this.name = rawSpell.name;
     this.school = rawSpell.school;
     this.ritual = rawSpell.ritual;
     this.ritualTooltip = 'Castable as a ritual';
@@ -76,6 +75,16 @@ export class Spell implements Spell {
     this.upcastableTooltip = 'Upgrades when casted at a higher level';
     this.source = rawSpell.source;
     this.allowed = rawSpell.allowed;
+
+    //cut names from spells
+    var name: string = rawSpell.name;
+    // name = name.replace('Leomund\'s ', '')
+    // name = name.replace('Mordenkainen\'s ', '')
+    // name = name.replace('Melf\'s ', '')
+    // name = name.replace('Tasha\'s ', '')
+    // name = name.replace('Abi-Dalzim\'s ', '')
+    // name = name.replace('Icingdeath\'s ', 'Icing ')
+    this.name = name;
 
     //build level display
     if(this.level === 0){
