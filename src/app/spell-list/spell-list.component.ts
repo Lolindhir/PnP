@@ -61,6 +61,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   private spellReloadAmount: number = 30;
 
   //other global stuff
+  nativeElement: any;
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
   showAdvancedFilters: boolean = false;
@@ -401,10 +402,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.setPanelSize();
   }
 
-  async setSize(){  
-    
-    await this.delay(5000);
-
+  setSize(){  
     this.screenWidth = window.innerWidth;
     this.screenSm = this.screenWidth >= 600 ? true : false;
     this.screenMd = this.screenWidth >= 730 ? true : false;
@@ -414,12 +412,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   async setPanelSize(){
     
-    await this.delay(5000);
+    await this.delay(100);
 
     if(this.expansionAccordion === undefined){
-      this.expansionPanelWidth = 100;
+      this.expansionPanelWidth = 0;
     }
     else {
+      this.nativeElement = this.expansionAccordion.nativeElement;
       this.expansionPanelWidth = this.expansionAccordion.nativeElement.offsetWidth;
     }
   }
