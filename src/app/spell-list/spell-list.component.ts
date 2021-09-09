@@ -3,10 +3,11 @@ import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
-import { SpellFilter, SpellFilterType } from '@models/spell-filter.model';
+import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
 import { ArrayUtilities } from '@utilities/array.utilities';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
+import { SelectionModel } from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-spell-list',
@@ -27,6 +28,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersDuration: SpellFilter[] = new Array();
   selectedFiltersDamageType: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
+  selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
   selectedFiltersConcentration: string[] = new Array();
   selectedFiltersRitual: string[] = new Array();
   selectedFiltersComponentV: string[] = new Array();
@@ -40,6 +42,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsLevel: SpellFilter[] = new Array();
   optionsSchool: SpellFilter[] = new Array();
   optionsSource: SpellFilter[] = new Array();
+  optionsSourceGroups: SpellFilterGroup[] = new Array();
   optionsClass: SpellFilter[] = new Array();
   optionsSubclass: SpellFilter[] = new Array();
   optionsCastingTime: SpellFilter[] = new Array();
@@ -107,6 +110,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
     this.optionsSource = SpellService.getSourceFilterOptions(this.spells, spellProperties);
+    this.optionsSourceGroups = SpellService.getSourceGroupFilterOptions(this.optionsSource, spellProperties);
     this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
     this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
     this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);

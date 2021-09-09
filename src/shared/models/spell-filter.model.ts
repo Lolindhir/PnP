@@ -30,6 +30,11 @@ export enum SpellFilterType{
     None = 16,
 }
 
+export interface SpellFilterGroup{
+    name: string;
+    filters: SpellFilter[];
+}
+
 export class SpellFilter implements SpellFilter {
 
     

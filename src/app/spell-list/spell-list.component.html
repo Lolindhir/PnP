@@ -19,6 +19,9 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersLevel"
               (ngModelChange)="addFilterMulti(optionsLevel, selectedFiltersLevel)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersLevel.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsLevel" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -30,22 +33,14 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersClass"
               (ngModelChange)="addFilterMulti(optionsClass, selectedFiltersClass)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersClass.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsClass" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Subclass</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSubclass"
-              (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true">
-              <mat-option *ngFor="let filter of optionsSubclass" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+        </div>        
 
         <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Ritual <img class="image" src="assets/images/ritual.png"></div>
@@ -70,21 +65,42 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
+          <div>Subclass</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSubclass"
+              (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSubclass.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsSubclass" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
           <div>Source</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSource"
               (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true">
-              <mat-option *ngFor="let filter of optionsSource" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSource.length}} selected</span>
+              </mat-select-trigger>
+              <mat-optgroup *ngFor="let group of optionsSourceGroups" [label]="group.name">
+                <mat-option *ngFor="let filter of group.filters" [value]="filter">
+                  {{filter.displayTextList}}</mat-option>
+              </mat-optgroup>
             </mat-select>
           </mat-form-field>
         </div>
 
       </div>
 
+
       <div *ngIf="screenSm" class="medium-gap">
         <mat-divider></mat-divider>
       </div>
+
 
       <div *ngIf="!screenSm" class="big-gap" fxLayout="row" fxLayoutAlign="center">
         <button mat-raised-button color="primary" style="vertical-align: center;"
@@ -103,6 +119,9 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSchool"
               (ngModelChange)="addFilterMulti(optionsSchool, selectedFiltersSchool)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSchool.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsSchool" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -114,6 +133,9 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersCastingTime"
               (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersCastingTime.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -182,6 +204,9 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersDuration"
               (ngModelChange)="addFilterMulti(optionsDuration, selectedFiltersDuration)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersDuration.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsDuration" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
@@ -204,6 +229,9 @@
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersDamageType"
               (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
+              </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>

@@ -1,5 +1,5 @@
 import { Spell } from "@models/spell.model";
-import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
+import { SpellFilter, SpellFilterType, SpellFilterGroup } from "@models/spell-filter.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { ArrayUtilities } from "@utilities/array.utilities";
 import { SpellClass } from "@models/spell-class.model";
@@ -200,4 +200,50 @@ export class SpellService {
 
     return sourceFilterOptions.sort(SpellFilter.compare);
   }
+
+  public static getSourceGroupFilterOptions(sourceFilterOptions: SpellFilter[], properties: SpellProperties): SpellFilterGroup[] {
+
+    var sourceFilterGroupOptions: SpellFilterGroup[] = new Array();
+
+    //core sources
+    var coreFilters: SpellFilter[] = this.addFiltersByStringValue(['Player', 'Xanathar', 'Tasha'], sourceFilterOptions);
+    sourceFilterGroupOptions.push({name: 'Official Core Books', filters: coreFilters});
+
+    //official others
+    var officialFilters: SpellFilter[] = this.addFiltersByStringValue(['Official', 'Unearthed'], sourceFilterOptions);
+    sourceFilterGroupOptions.push({name: 'Official Other Content', filters: officialFilters});
+
+    //third-party (all others)
+    var thirdPartyFilters: SpellFilter[] = new Array();
+    sourceFilterOptions.forEach( filter => {
+      if(!coreFilters.includes(filter) && !officialFilters.includes(filter)){
+        thirdPartyFilters.push(filter);
+      }
+    })
+    sourceFilterGroupOptions.push({name: 'Third-Party Content', filters: thirdPartyFilters});
+
+    return sourceFilterGroupOptions;
+  }
+
+  private static addFiltersByStringValue(relevantNames: string[], possibleFilters: SpellFilter[]): SpellFilter[]{
+
+    var returnList: SpellFilter[] = new Array();
+
+    possibleFilters.forEach( filter => {
+
+      var valueName = filter.value as string;
+
+      relevantNames.forEach( relevantName => {
+
+        if(valueName.includes(relevantName)){
+          returnList.push(filter);
+        }
+
+      })
+
+    })
+
+    return returnList;
+  } 
+
 }
