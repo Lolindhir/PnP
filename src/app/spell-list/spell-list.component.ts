@@ -397,12 +397,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:resize', ['$event'])
     onResize(event: any) {
-    this.screenWidth = window.innerWidth;
     this.setSize();
     this.setPanelSize();
   }
 
-  setSize(){  
+  async setSize(){  
+    
+    await this.delay(100);
+
+    this.screenWidth = window.innerWidth;
     this.screenSm = this.screenWidth >= 600 ? true : false;
     this.screenMd = this.screenWidth >= 730 ? true : false;
     this.screenLg = this.screenWidth >= 900 ? true : false;
