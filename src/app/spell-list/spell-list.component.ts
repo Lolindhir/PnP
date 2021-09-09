@@ -61,7 +61,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   private spellReloadAmount: number = 30;
 
   //other global stuff
-  nativeElement: any;
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
   showAdvancedFilters: boolean = false;
@@ -418,7 +417,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.expansionPanelWidth = 0;
     }
     else {
-      this.nativeElement = this.expansionAccordion.nativeElement;
       this.expansionPanelWidth = this.expansionAccordion.nativeElement.offsetWidth;
     }
   }

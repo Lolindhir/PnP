@@ -250,16 +250,10 @@
 
     </div>
 
-    {{screenWidth}}
-    <br>
-    {{expansionPanelWidth}}
-    <br>
-    {{nativeElement}}
-
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
 
-    <mat-accordion #expansionAccordion hideToggle="false" multi="false">
+    <mat-accordion #expansionAccordion hideToggle="false" multi="false" style="display: block;">
 
       <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="expandedPanelIndex = i"
