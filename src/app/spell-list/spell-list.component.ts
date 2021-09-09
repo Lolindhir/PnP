@@ -403,7 +403,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   async setSize(){  
     
-    await this.delay(100);
+    await this.delay(5000);
 
     this.screenWidth = window.innerWidth;
     this.screenSm = this.screenWidth >= 600 ? true : false;
@@ -414,7 +414,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   async setPanelSize(){
     
-    await this.delay(100);
+    await this.delay(5000);
 
     if(this.expansionAccordion === undefined){
       this.expansionPanelWidth = 100;
