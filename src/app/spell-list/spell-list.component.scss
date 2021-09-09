@@ -25,6 +25,9 @@
 .image {
   max-height: 14px;
   margin-right: 3px;
+  will-change: transform;
+  transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .mat-accordion .mat-expansion-panel:not(.mat-expanded),
