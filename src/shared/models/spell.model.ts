@@ -329,7 +329,7 @@ export class Spell implements Spell {
         }  
         case SpellFilterType.Source: {             
           var source: string = filter.value as string;
-          if(source === '' || this.source.toLowerCase() === source.toLowerCase()){
+          if(source === '' || this.source.toLowerCase().includes(source.toLowerCase())){
             return true;
           }          
           break; 

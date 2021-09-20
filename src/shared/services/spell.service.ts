@@ -183,8 +183,11 @@ export class SpellService {
     var differentSources: string[] = new Array();
     spells.forEach(spell => {
 
-      if(!differentSources.includes(spell.source)){
-        differentSources.push(spell.source);
+      //get spell source without addition in brackets
+      var spellSource = spell.source.split('(')[0].trim();
+
+      if(!differentSources.includes(spellSource)){
+        differentSources.push(spellSource);
         //sort array descending
         differentSources.sort(ArrayUtilities.stringCompareAscending);
       }
