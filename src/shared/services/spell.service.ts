@@ -133,12 +133,12 @@ export class SpellService {
 
   }
 
-  public static getComponentSomanticFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public static getComponentSomaticFilterOptions(properties: SpellProperties): SpellFilter[] {
     
-    var somanticFiltersOptions: SpellFilter[] = new Array();
-    somanticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomantic, true, properties));
-    somanticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomantic, false, properties));
-    return somanticFiltersOptions.sort(SpellFilter.compare);
+    var somaticFiltersOptions: SpellFilter[] = new Array();
+    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, true, properties));
+    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, false, properties));
+    return somaticFiltersOptions.sort(SpellFilter.compare);
 
   }
 

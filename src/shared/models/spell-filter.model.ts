@@ -19,7 +19,7 @@ export enum SpellFilterType{
     Class = 5,
     CastingTime = 6,
     ComponentVerbal = 7,
-    ComponentSomantic = 8,
+    ComponentSomatic = 8,
     ComponentMaterial = 9,
     MaterialValue = 10,
     MaterialConsumed = 11,
@@ -121,7 +121,7 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
-        else if(type === SpellFilterType.ComponentSomantic){
+        else if(type === SpellFilterType.ComponentSomatic){
             if(value === true){
                 displayText = 'S';
             }
@@ -214,7 +214,7 @@ export class SpellFilter implements SpellFilter {
         else if(a.type === SpellFilterType.Ritual 
             || a.type === SpellFilterType.Concentration
             || a.type === SpellFilterType.ComponentVerbal
-            || a.type === SpellFilterType.ComponentSomantic
+            || a.type === SpellFilterType.ComponentSomatic
             || a.type === SpellFilterType.ComponentMaterial
             || a.type === SpellFilterType.MaterialValue
             || a.type === SpellFilterType.MaterialConsumed

@@ -117,7 +117,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
     this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
-    this.optionsComponentS = SpellService.getComponentSomanticFilterOptions(spellProperties);
+    this.optionsComponentS = SpellService.getComponentSomaticFilterOptions(spellProperties);
     this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(spellProperties);
     this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(spellProperties);
     this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(spellProperties);
@@ -251,7 +251,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersComponentV = newSelectedStrings;
         break;
       }
-      case SpellFilterType.ComponentSomantic:{
+      case SpellFilterType.ComponentSomatic:{
         this.selectedFiltersComponentS = newSelectedStrings;
         break;
       }

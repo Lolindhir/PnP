@@ -305,9 +305,9 @@ export class Spell implements Spell {
           }          
           break; 
         }
-        case SpellFilterType.ComponentSomantic: {             
-          var somantic: boolean = filter.value as boolean;
-          if(somantic === null || this.components.includes('S') === somantic){
+        case SpellFilterType.ComponentSomatic: {             
+          var somatic: boolean = filter.value as boolean;
+          if(somatic === null || this.components.includes('S') === somatic){
             return true;
           }          
           break; 
