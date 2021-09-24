@@ -61,12 +61,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   spells: Spell[] = new Array();
   spellsFiltered: Spell[] = new Array();
   spellsToShow: Spell[] = new Array();
+  numberOfRandomSpells: number = 0;
+  stringOfRandomSpells: string = 'Random spells';
   private spellReloadAmount: number = 30;
 
   //other global stuff
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
   showAdvancedFilters: boolean = false;
+  showRandomControls: boolean = false;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
@@ -125,11 +128,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
+
+    this.onChange();
   }
 
   ngOnInit(): void {
 
     //add first spells to show list
+    this.onChange();
     this.fetchMore();
 
   }
@@ -163,9 +169,60 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     
     this.expandedPanelIndex = -1;
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
+
+    //reduce to random spells if wished
+    this.setNumberOfRandomFilteredSpells();
+
     this.spellsToShow = new Array();
     this.fetchMore();
     this.setPanelSize();
+
+  }
+
+  onRandomNumberChanged(random: number) {
+    this.numberOfRandomSpells = random;
+
+    if(random === 0){
+      this.stringOfRandomSpells = 'Random spells';
+    } else if(random === 1){
+      this.stringOfRandomSpells = '1 spell';
+    } else {
+      this.stringOfRandomSpells = random + ' spells';
+    }
+
+    this.onChange();
+  }
+
+  setNumberOfRandomFilteredSpells(){
+
+    if(this.numberOfRandomSpells <= 0){
+      return;
+    }
+    
+    var newFilteredSpells = new Array();
+    var randomIndexes: number[] = new Array();
+
+    for(var i = 1; i <= this.numberOfRandomSpells; i++){
+      //get random number and check if random number is already used
+      var randomIndexGenerated: boolean = false;
+      while(!randomIndexGenerated){
+
+        var randomIndex = Math.floor(Math.random() * this.spellsFiltered.length);
+
+        if(!randomIndexes.includes(randomIndex)){
+          randomIndexes.push(randomIndex);
+          randomIndexGenerated = true;
+        }
+      }
+    }
+    randomIndexes.sort(ArrayUtilities.numberCompareAscending);
+
+    //get the spells by the indexes
+    for(var i = 0; i < randomIndexes.length; i++){
+      newFilteredSpells.push(this.spellsFiltered[randomIndexes[i]]);
+    }
+
+    this.spellsFiltered = newFilteredSpells;
 
   }
 
