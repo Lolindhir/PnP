@@ -66,17 +66,6 @@
   text-overflow: ellipsis;
 }
 
-.spell-number {
-  position: relative;
-  width: 4.5rem;
-}
-.spell-number .content {
-  position:absolute;                 
-  padding: 0.25rem;
-  bottom:0;
-  right:0;                                    
-}
-
 .spell-property-denotation {
   font-weight: bold;
   min-width: max-content;
@@ -120,4 +109,12 @@
 .filter-selection-number {
   font-style: italic;
   opacity: 0.75;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

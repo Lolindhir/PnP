@@ -8,6 +8,7 @@ import { ArrayUtilities } from '@utilities/array.utilities';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 import { SelectionModel } from '@angular/cdk/collections';
+import { ReturnStatement } from '@angular/compiler';
 
 @Component({
   selector: 'app-spell-list',
@@ -179,15 +180,20 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  onNameFilterCleared() {
+    this.filterName = '';
+    this.onChange();
+  }
+
   onRandomNumberChanged(random: number) {
     this.numberOfRandomSpells = random;
 
     if(random === 0){
-      this.stringOfRandomSpells = 'Random spells';
+      this.stringOfRandomSpells = 'Random spells?';
     } else if(random === 1){
-      this.stringOfRandomSpells = '1 spell';
+      this.stringOfRandomSpells = 'Only 1 spell';
     } else {
-      this.stringOfRandomSpells = random + ' spells';
+      this.stringOfRandomSpells = 'Only ' + random + ' spells';
     }
 
     this.onChange();
@@ -199,6 +205,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return;
     }
     
+    if(this.numberOfRandomSpells >= this.spellsFiltered.length){
+      return;
+    }
+
     var newFilteredSpells = new Array();
     var randomIndexes: number[] = new Array();
 

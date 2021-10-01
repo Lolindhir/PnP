@@ -18,6 +18,8 @@ Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the proje
 
 [Set-Up Guide](https://medium.com/swlh/how-to-deploy-an-angular-app-to-github-pages-without-using-any-libraries-step-by-step-guide-cfe96fb0c879)
 
+[Icons](https://fonts.google.com/icons)
+
 [Angular Example from StackBlitz](https://stackblitz.com/angular/gqgalmavnrd?file=src%2Findex.html)
 
 [How to add FlexBox](https://indepth.dev/posts/1208/angular-flex-layout-flexbox-and-grid-layout-for-angular-component)
