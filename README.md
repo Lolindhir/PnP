@@ -12,11 +12,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build --base-href="https://lolindhir.github.io/PnP/"` to build the project. The build artifacts will be stored in the `docs` directory.
+Run `ng build --base-href="https://lolindhir.github.io/PnP/"; cp docs/index.html docs/404.html` to build the project. The build artifacts will be stored in the `docs` directory.
 
 ## Useful links
 
 [Set-Up Guide](https://medium.com/swlh/how-to-deploy-an-angular-app-to-github-pages-without-using-any-libraries-step-by-step-guide-cfe96fb0c879)
+
+[Fallback for Routing](https://angular.io/guide/deployment#fallback)
 
 [Icons](https://fonts.google.com/icons)
 
