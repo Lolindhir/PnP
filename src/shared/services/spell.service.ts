@@ -213,7 +213,7 @@ export class SpellService {
     sourceFilterGroupOptions.push({name: 'Official Core Books', filters: coreFilters});
 
     //official others
-    var officialFilters: SpellFilter[] = this.addFiltersByStringValue(['Official', 'Unearthed', 'Wildemount', 'Fizban'], sourceFilterOptions);
+    var officialFilters: SpellFilter[] = this.addFiltersByStringValue(['Official', 'Unearthed', 'Wildemount', 'Fizban', 'Strixhaven'], sourceFilterOptions);
     sourceFilterGroupOptions.push({name: 'Official Other Content', filters: officialFilters});
 
     //third-party (all others)
