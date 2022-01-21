@@ -38,6 +38,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersMaterialValue: string[] = new Array();
   selectedFiltersMaterialConsumed: string[] = new Array();
   selectedFiltersUpcastable: string[] = new Array();
+  selectedFiltersSpellMod: string[] = new Array();
 
   //all filter options
   optionsLevel: SpellFilter[] = new Array();
@@ -57,6 +58,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsMaterialValue: SpellFilter[] = new Array();
   optionsMaterialConsumed: SpellFilter[] = new Array();
   optionsUpcastable: SpellFilter[] = new Array();
+  optionsSpellMod: SpellFilter[] = new Array();
 
   //spell related stuff
   spells: Spell[] = new Array();
@@ -126,6 +128,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(spellProperties);
     this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(spellProperties);
     this.optionsUpcastable = SpellService.getUpcastableFilterOptions(spellProperties);
+    this.optionsSpellMod = SpellService.getSpellModFilterOptions(spellProperties);
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -336,6 +339,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.Upcastable:{
         this.selectedFiltersUpcastable = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.SpellMod:{
+        this.selectedFiltersSpellMod = newSelectedStrings;
         break;
       }
     }

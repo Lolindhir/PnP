@@ -224,6 +224,17 @@
           </div>
         </div>
 
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Casting Ability</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersSpellMod">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsSpellMod, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsSpellMod, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
         <div fxLayout="column" class="filter-select">
           <div>Damage Type</div>
           <mat-form-field appearance="fill">

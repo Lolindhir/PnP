@@ -326,6 +326,32 @@ export class Spell implements Spell {
             return true;
           }          
           break; 
+        }
+        case SpellFilterType.SpellMod: {             
+          var spellMod: boolean = filter.value as boolean;
+          
+          //check for occurrences
+          var spellModRequired = false;
+          if(this.description.toLowerCase().includes("spell attack")){
+            spellModRequired = true;
+          }
+          if(this.description.toLowerCase().includes("spell save dc")){
+            spellModRequired = true;
+          }
+          if(this.description.toLowerCase().includes("saving throw") 
+              && !this.description.toLowerCase().includes("target has advantage on any new saving throw")
+              && !this.description.toLowerCase().includes("target has advantage on saving throws against")
+              && !this.description.toLowerCase().includes("the target can roll")
+              && !this.description.toLowerCase().includes("it can roll")
+            ){
+            spellModRequired = true;
+          }
+
+          if(spellMod === null || spellMod === spellModRequired){
+            return true;
+          }  
+
+          break; 
         }  
         case SpellFilterType.Source: {             
           var source: string = filter.value as string;

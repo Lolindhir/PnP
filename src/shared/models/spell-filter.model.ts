@@ -25,9 +25,10 @@ export enum SpellFilterType{
     MaterialConsumed = 11,
     Duration = 12,
     Upcastable = 13,
-    DamageType = 14,
-    Source = 15,
-    None = 16,
+    SpellMod = 14,
+    DamageType = 15,
+    Source = 16,
+    None = 17,
 }
 
 export interface SpellFilterGroup{
@@ -167,6 +168,16 @@ export class SpellFilter implements SpellFilter {
             }
             else{
                 displayText = 'Not upcastable';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.SpellMod){
+            if(value === true){
+                displayText = 'Casting  Ability required';
+            }
+            else{
+                displayText = 'No Casting Ability required';
             }
             displayTextList = displayText;
         }

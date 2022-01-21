@@ -178,6 +178,15 @@ export class SpellService {
 
   }
 
+  public static getSpellModFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var spellModFiltersOptions: SpellFilter[] = new Array();
+    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, true, properties));
+    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, false, properties));
+    return spellModFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getSourceFilterOptions(spells: Spell[], properties: SpellProperties): SpellFilter[] {
     
     var differentSources: string[] = new Array();
