@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -39,6 +40,7 @@ import { FeatListComponent } from './feat-list/feat-list.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,

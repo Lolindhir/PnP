@@ -71,6 +71,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   //other global stuff
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
+  assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showRandomControls: boolean = false;
   tooltipDelay = 500;
@@ -452,6 +453,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(this.expandedPanelIndex == index){
       this.expandedPanelIndex = -1;
     }
+
+  }
+
+  spellAssetNotLoaded(index: number){
+
+    this.assetNotLoadedIndex = index;
 
   }
 

@@ -520,6 +520,15 @@
 
             <div class="big-top-gap" style="font-style: italic;">{{spell.source}}</div>
 
+            <div *ngIf="i === expandedPanelIndex" >
+              <div style="display: none;">
+                <img src={{spell.assetPath}} (error)="spellAssetNotLoaded(i)"/>
+              </div>
+              <div *ngIf="i != assetNotLoadedIndex" class="big-top-gap">
+                <img src={{spell.assetPath}} style="max-height: 90%; margin-right: 1rem;"/>
+              </div>
+            </div>          
+
           </div>
         </ng-template>
 

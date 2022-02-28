@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build --base-href="https://lolindhir.github.io/PnP/"; cp docs/index.html docs/404.html` to build the project. The build artifacts will be stored in the `docs` directory.
+Run `cp -Path "D:\OneDrive\D&D\Public\Quellen und Infos\Zauber\Spell Images\*" -Destination "src/assets/spellImages" -Force -Recurse; ng build --base-href="https://lolindhir.github.io/PnP/"; cp docs/index.html docs/404.html` to build the project. The build artifacts will be stored in the `docs` directory.
 
 ## Useful links
 

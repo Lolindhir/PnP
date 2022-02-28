@@ -52,6 +52,7 @@ export interface Spell {
   upcastable: boolean;
   upcastableTooltip: string;
   smallDisplay: string;
+  assetPath: string;
 }
 
 export class Spell implements Spell {  
@@ -173,6 +174,9 @@ export class Spell implements Spell {
     });
     this.subclasses = subclasses;
     this.subclassesDisplay = subclassesDisplay ? subclassesDisplay : '-';
+
+    //set asset path
+    this.assetPath = "assets/spellImages/" + this.name + ".png";
 
   }    
 
