@@ -176,7 +176,7 @@ export class Spell implements Spell {
     this.subclassesDisplay = subclassesDisplay ? subclassesDisplay : '-';
 
     //set asset path
-    this.assetPath = "assets/spellImages/" + this.name + ".png";
+    this.assetPath = "assets/spellImages/" + this.name + ".PNG";
 
   }    
 
