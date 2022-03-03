@@ -456,7 +456,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
-  spellAssetNotLoaded(index: number){
+  spellAssetNotLoaded(index: number, assetPath: string){
+
+    console.log(assetPath + " not found")
 
     this.assetNotLoadedIndex = index;
 
