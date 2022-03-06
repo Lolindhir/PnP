@@ -489,12 +489,30 @@
               <span class="spell-property-description">{{spell.duration}}</span>
             </div>
 
-            <div class="big-top-gap" [innerHTML]="spell.description"></div>
+            <div class="big-top-gap" [innerHTML]="spell.descriptionDisplay"></div>
 
-            <div class="medium-top-gap">
-              <mat-divider></mat-divider>
+            <div *ngIf="!spell.translatable" class="medium-top-gap">
+              <div class="source-style">
+                &#8226; {{spell.source}} &#8226;
+              </div>
+              <div class="medium-top-gap">
+                <mat-divider></mat-divider>
+              </div>
             </div>
 
+            <div *ngIf="spell.translatable">
+              <div fxLayout="row" fxLayoutAlign="space-between center">
+                <div class="source-style">&#8226; {{spell.source}} &#8226;</div>
+                <div>
+                  <button color="primary" mat-button (click)="onTranslation(spell)">
+                    <mat-icon>language</mat-icon>
+                  </button>
+                </div>              
+              </div>
+              <div>
+                <mat-divider></mat-divider>
+              </div>
+            </div>
 
             <div class="big-top-gap">
               <span class="spell-property-denotation">Classes:</span>
@@ -527,7 +545,6 @@
               </div>
             </div>
             
-            <div class="big-top-gap" style="font-style: italic;">{{spell.source}}</div>
 
           </div>
         </ng-template>

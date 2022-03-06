@@ -19,6 +19,13 @@ export interface RawSpell {
   classes: string[];  
   subclasses: string[];  
   allowed: boolean;
+  damageTypes: string[];
+  conditions: string[];
+  saves: string[];
+  attackTypes: string[];
+  castingAbility: string;
+  translation: string;
+  tags: string[];
 }
 
 export interface Spell {
@@ -49,6 +56,16 @@ export interface Spell {
   subclasses: SpellClass[];
   subclassesDisplay: string;
   allowed: boolean;
+  damageTypes: string[];
+  conditions: string[];
+  saves: string[];
+  attackTypes: string[];
+  castingAbility: string;
+  tags: string[];
+  translation: string;
+  translatable: boolean;
+  translated: boolean;
+  descriptionDisplay: string;
   upcastable: boolean;
   upcastableTooltip: string;
   smallDisplay: string;
@@ -76,6 +93,16 @@ export class Spell implements Spell {
     this.upcastableTooltip = 'Upgrades when casted at a higher level';
     this.source = rawSpell.source;
     this.allowed = rawSpell.allowed;
+    this.damageTypes = rawSpell.damageTypes;
+    this.conditions = rawSpell.conditions;
+    this.saves = rawSpell.saves;
+    this.attackTypes = rawSpell.attackTypes;
+    this.castingAbility = rawSpell.castingAbility;
+    this.tags = rawSpell.tags;
+    this.translation = rawSpell.translation;
+    this.descriptionDisplay = this.description;
+    this.translated = false;
+    this.translatable = this.translation != null && this.translation.length > 0 ? true : false;
 
     //cut names from spells
     var name: string = rawSpell.name;

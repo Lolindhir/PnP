@@ -456,6 +456,21 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  onTranslation(spell: Spell){
+
+    if(spell.translated){
+      spell.translated = false;
+      spell.descriptionDisplay = spell.description;
+    }
+    else{
+      if(spell.translatable){
+        spell.translated = true;
+        spell.descriptionDisplay = spell.translation;
+      }      
+    }
+
+  }
+
   spellAssetNotLoaded(index: number, assetPath: string){
 
     console.log(assetPath + " not found")

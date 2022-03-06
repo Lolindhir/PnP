@@ -35,6 +35,14 @@
    margin-bottom: 5px;
 }
 
+.source-style {
+  margin-right: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-style: italic;
+}
+
 .spell-expansion-header {
   margin-right: 3px;
   overflow: hidden;
