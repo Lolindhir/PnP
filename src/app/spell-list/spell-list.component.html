@@ -256,6 +256,15 @@
             </mat-slide-toggle>
           </div>
         </div>
+        
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Tags</div>
+          <div style="text-align: center;">
+            <mat-slide-toggle [(ngModel)]="showTags" color="primary">
+            </mat-slide-toggle>
+          </div>
+        </div>
+
       </div>
 
     </mat-expansion-panel>
@@ -332,8 +341,6 @@
       </div>
 
     </div>
-
-
 
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
@@ -534,7 +541,24 @@
               </mat-chip-list>
               <!-- <span class="spell-property-denotation">Subclasses:</span> -->
               <!-- <span class="spell-property-description">{{spell.subclassesDisplay}}</span> -->
-            </div>            
+            </div>
+                       
+
+            <div class="big-top-gap" *ngIf="showTags && spell.tags.length">
+              
+              <div>
+                <mat-divider></mat-divider>
+              </div>
+
+              <div class="medium-top-gap">
+                <mat-chip-list>
+                  <mat-chip class="spell-tag-chip" [style.background]="tagsColor" selectable="false" *ngFor="let spellTag of spell.tags" selected>
+                    {{spellTag}}
+                  </mat-chip>
+                </mat-chip-list>
+              </div>
+
+            </div>   
 
             <div *ngIf="i === expandedPanelIndex" >
               <div style="display: none;">

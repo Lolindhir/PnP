@@ -9,6 +9,7 @@ import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.j
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 import { SelectionModel } from '@angular/cdk/collections';
 import { ReturnStatement } from '@angular/compiler';
+import { getCurrencySymbol } from '@angular/common';
 
 @Component({
   selector: 'app-spell-list',
@@ -74,6 +75,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showRandomControls: boolean = false;
+  showTags: boolean = false;
+  tagsColor: string = "#d4af37";
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
