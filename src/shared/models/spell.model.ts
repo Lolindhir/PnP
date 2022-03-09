@@ -1,6 +1,7 @@
 import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
+import { SpellTag } from "@models/spell-tag";
 
 export interface RawSpell {  
   level: number;  
@@ -60,8 +61,9 @@ export interface Spell {
   conditions: string[];
   saves: string[];
   attackTypes: string[];
+  attacksSavesDisplay: string;
   castingAbility: string;
-  tags: string[];
+  tags: SpellTag[];
   translation: string;
   translatable: boolean;
   translated: boolean;
@@ -98,7 +100,6 @@ export class Spell implements Spell {
     this.saves = rawSpell.saves;
     this.attackTypes = rawSpell.attackTypes;
     this.castingAbility = rawSpell.castingAbility;
-    this.tags = rawSpell.tags;
     this.translation = rawSpell.translation;
     this.descriptionDisplay = this.description;
     this.translated = false;
@@ -201,6 +202,33 @@ export class Spell implements Spell {
     });
     this.subclasses = subclasses;
     this.subclassesDisplay = subclassesDisplay ? subclassesDisplay : '-';
+
+    //build display of saves and attack types
+    var savesAttacksDisplay : string = '';
+    this.attackTypes.forEach(attackType => {
+      savesAttacksDisplay = savesAttacksDisplay === '' ? attackType : savesAttacksDisplay + ', ' + attackType;
+    });
+    this.saves.forEach(save => {
+      var shortenedSave = save.substring(0, 3).toUpperCase() + ' Save';
+      savesAttacksDisplay = savesAttacksDisplay === '' ? shortenedSave : savesAttacksDisplay + ', ' + shortenedSave;
+    });
+    this.attacksSavesDisplay = savesAttacksDisplay === '' ? ' — ' : savesAttacksDisplay;
+
+    //build tags
+    var tags : SpellTag[] = new Array();
+    rawSpell.tags.forEach(rawTag => {
+        
+        //iterate all tags and add the tag if it equals the raw tag
+        spellProperties.tags.forEach(tag => {
+
+          if(tag.name === rawTag){
+            tags.push(tag)
+          }
+
+        })
+
+    });
+    this.tags = tags;
 
     //set asset path
     this.assetPath = "assets/spellImages/" + this.name + ".PNG";
@@ -352,36 +380,24 @@ export class Spell implements Spell {
         }
         case SpellFilterType.DamageType: {             
           var damageType: string = filter.value as string;
-          var damageText: string = damageType.toLowerCase();
-          if(damageType === '' || this.description.toLowerCase().includes(damageText)){
+          if(damageType === '' || this.damageTypes.includes(damageType)){
             return true;
           }          
           break; 
         }
         case SpellFilterType.SpellMod: {             
           var spellMod: boolean = filter.value as boolean;
-          
-          //check for occurrences
-          var spellModRequired = false;
-          if(this.description.toLowerCase().includes("spell attack")){
-            spellModRequired = true;
-          }
-          if(this.description.toLowerCase().includes("spell save dc")){
-            spellModRequired = true;
-          }
-          if(this.description.toLowerCase().includes("saving throw") 
-              && !this.description.toLowerCase().includes("target has advantage on any new saving throw")
-              && !this.description.toLowerCase().includes("target has advantage on saving throws against")
-              && !this.description.toLowerCase().includes("the target can roll")
-              && !this.description.toLowerCase().includes("it can roll")
-            ){
-            spellModRequired = true;
-          }
-
-          if(spellMod === null || spellMod === spellModRequired){
+          if(spellMod === null || this.castingAbility.toLowerCase() === 'both'){
             return true;
-          }  
-
+          }
+          //if yes, than true if spellMod true
+          if(this.castingAbility.toLowerCase() === 'yes' && spellMod){
+            return true;
+          }
+          //if no, than true if spellMod false
+          if(this.castingAbility.toLowerCase() === 'no' && !spellMod){
+            return true;
+          } 
           break; 
         }  
         case SpellFilterType.Source: {             

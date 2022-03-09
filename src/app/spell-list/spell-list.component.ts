@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { SpellProperties } from '@models/spell-properties.model';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
@@ -8,8 +7,6 @@ import { ArrayUtilities } from '@utilities/array.utilities';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 import { SelectionModel } from '@angular/cdk/collections';
-import { ReturnStatement } from '@angular/compiler';
-import { getCurrencySymbol } from '@angular/common';
 
 @Component({
   selector: 'app-spell-list',
@@ -76,7 +73,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   showAdvancedFilters: boolean = false;
   showRandomControls: boolean = false;
   showTags: boolean = false;
-  tagsColor: string = "#d4af37";
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;

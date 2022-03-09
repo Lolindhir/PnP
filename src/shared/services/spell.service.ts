@@ -70,19 +70,9 @@ export class SpellService {
   public static getDamageTypeFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var damageFilterOptions: SpellFilter[] = new Array();
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Bludgeoning', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Slashing', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Piercing', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Acid', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Cold', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Fire', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Force', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Lightning', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Necrotic', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Poison', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Psychic', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Radiant', properties));
-    damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, 'Thunder', properties));
+    properties.damageTypes.forEach( damageType => {
+      damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, damageType, properties))
+    })
     return damageFilterOptions.sort(SpellFilter.compare);
   }
 

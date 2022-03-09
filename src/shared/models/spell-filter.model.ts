@@ -1,5 +1,5 @@
-import { SpellClass } from "./spell-class.model";
-import { SpellProperties } from "./spell-properties.model";
+import { SpellClass } from "@models/spell-class.model";
+import { SpellProperties } from "@models/spell-properties.model";
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -220,6 +220,11 @@ export class SpellFilter implements SpellFilter {
         else if(a.type === SpellFilterType.Duration){
             compareA = a.properties.durations.indexOf(a.value);
             compareB = b.properties.durations.indexOf(b.value);
+        }
+        //for the damage type use the order from the properties
+        else if(a.type === SpellFilterType.DamageType){
+            compareA = a.properties.damageTypes.indexOf(a.value);
+            compareB = b.properties.damageTypes.indexOf(b.value);
         }
         //for concentration and ritual, compare the boolean (true before false)
         else if(a.type === SpellFilterType.Ritual 

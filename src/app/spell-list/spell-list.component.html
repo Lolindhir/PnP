@@ -496,6 +496,11 @@
               <span class="spell-property-description">{{spell.duration}}</span>
             </div>
 
+            <div *ngIf="spell.castingAbility.toLowerCase() != 'unknown'">
+              <span class="spell-property-denotation">Attack/Save:</span>
+              <span class="spell-property-description">{{spell.attacksSavesDisplay}}</span>
+            </div>
+
             <div class="big-top-gap" [innerHTML]="spell.descriptionDisplay"></div>
 
             <div *ngIf="!spell.translatable" class="medium-top-gap">
@@ -552,8 +557,9 @@
 
               <div class="medium-top-gap">
                 <mat-chip-list>
-                  <mat-chip class="spell-tag-chip" [style.background]="tagsColor" selectable="false" *ngFor="let spellTag of spell.tags" selected>
-                    {{spellTag}}
+                  <mat-chip class="spell-tag-chip" *ngFor="let spellTag of spell.tags" selectable="false" selected
+                    [style.background]="spellTag.colorCode" [style.color]="spellTag.fontColor" [matTooltip]="spellTag.description">
+                    {{spellTag.name}}
                   </mat-chip>
                 </mat-chip-list>
               </div>
