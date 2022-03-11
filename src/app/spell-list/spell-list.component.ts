@@ -7,6 +7,11 @@ import { ArrayUtilities } from '@utilities/array.utilities';
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 import { SelectionModel } from '@angular/cdk/collections';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
+import { retry, catchError } from 'rxjs/operators';
+import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
 
 @Component({
   selector: 'app-spell-list',
@@ -65,6 +70,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   numberOfRandomSpells: number = 0;
   stringOfRandomSpells: string = 'Random spells';
   private spellReloadAmount: number = 30;
+  spellPresetPath: string = './assets/spells.json';
+  test: RawSpell[] = new Array();
 
   //other global stuff
   expandedPanelIndex: number = -1;
@@ -80,12 +87,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   screenLg: boolean = false;
   screenXl: boolean = false;
 
-
   @ViewChild('expansionAccordion')
   expansionAccordion: ElementRef;
 
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
+
+    this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
     //get screen width
     this.screenWidth = window.innerWidth;
@@ -457,6 +465,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   onTranslation(spell: Spell){
 
+    this.test.forEach(rawSpell => {
+      console.log(rawSpell.name);
+    });
+
     if(spell.translated){
       spell.translated = false;
       spell.descriptionDisplay = spell.description;
@@ -524,6 +536,34 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   private delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+
+  file:any;
+  fileChanged(e: any) {
+    if(e != null){
+      this.file = e.target.files[0];
+    }
+    let fileReader = new FileReader();
+    fileReader.onload = (e) => {
+      console.log(fileReader.result);
+    }
+    console.log(fileReader.readAsText(this.file));
+  }
+
+  // Error handling
+  handleError(error: any) {
+    let errorMessage = '';
+    if (error.error instanceof ErrorEvent) {
+      // Get client-side error
+      errorMessage = error.error.message;
+    } else {
+      // Get server-side error
+      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+    }
+    window.alert(errorMessage);
+    return throwError(() => {
+      return errorMessage;
+    });
   }
 
 }

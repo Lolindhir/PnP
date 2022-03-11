@@ -265,6 +265,11 @@
           </div>
         </div>
 
+        <div class="Block">
+          <label id="lbl">Test </label>
+          <input type='file' (change)="fileChanged($event)">    
+        </div>
+
       </div>
 
     </mat-expansion-panel>
@@ -282,8 +287,7 @@
 
       <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters</button>
 
-    </div>
-
+    </div>    
 
 
     <div fxLayout="row wrap" fxLayoutAlign="left" class="big-top-gap">

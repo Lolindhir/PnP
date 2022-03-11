@@ -42,6 +42,9 @@ Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Public\Quellen un
 
 [Angular Material Scrolling](https://material.angular.io/cdk/scrolling/overview)
 
+[Angular Get Local File I](https://www.positronx.io/angular-httpclient-http-service/),
+[Angular Get Local File II](https://www.techiediaries.com/angular-local-json-files/)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
