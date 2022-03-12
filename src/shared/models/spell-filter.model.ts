@@ -187,8 +187,14 @@ export class SpellFilter implements SpellFilter {
         }
 
         else if(type === SpellFilterType.Tag){
-            displayText = value.name;
-            displayTextList = displayText;
+            if(value.name === 'Illusion'){
+                displayText = 'Illusion (Category)';
+                displayTextList = value.name;
+            }
+            else {
+                displayText = value.name;
+                displayTextList = displayText;
+            }
             tooltip = value.description;
         }
 

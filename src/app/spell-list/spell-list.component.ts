@@ -547,6 +547,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   async setPanelSize(){
     
+    //needed for turning of mobile devices
     await this.delay(100);
 
     if(this.expansionAccordion === undefined){
