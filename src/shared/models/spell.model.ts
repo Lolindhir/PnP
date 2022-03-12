@@ -27,6 +27,7 @@ export interface RawSpell {
   castingAbility: string;
   translation: string;
   tags: string[];
+  asset: boolean;
 }
 
 export interface Spell {
@@ -71,6 +72,7 @@ export interface Spell {
   upcastable: boolean;
   upcastableTooltip: string;
   smallDisplay: string;
+  asset: boolean;
   assetPath: string;
 }
 
@@ -231,6 +233,7 @@ export class Spell implements Spell {
     this.tags = tags;
 
     //set asset path
+    this.asset = rawSpell.asset;
     this.assetPath = "assets/spellImages/" + this.name + ".PNG";
 
   }    
@@ -381,6 +384,34 @@ export class Spell implements Spell {
         case SpellFilterType.DamageType: {             
           var damageType: string = filter.value as string;
           if(damageType === '' || this.damageTypes.includes(damageType)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Condition: {             
+          var condition: string = filter.value as string;
+          if(condition === '' || this.conditions.includes(condition)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Save: {             
+          var save: string = filter.value as string;
+          if(save === '' || this.saves.includes(save)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.AttackType: {             
+          var attackType: string = filter.value as string;
+          if(attackType === '' || this.attackTypes.includes(attackType)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Tag: {             
+          var tag: SpellTag = filter.value as SpellTag;
+          if(tag === null || this.tags.includes(tag)){
             return true;
           }          
           break; 

@@ -17,18 +17,22 @@ export enum SpellFilterType{
     Ritual = 3,
     Concentration = 4,
     Class = 5,
-    CastingTime = 6,
-    ComponentVerbal = 7,
-    ComponentSomatic = 8,
-    ComponentMaterial = 9,
-    MaterialValue = 10,
-    MaterialConsumed = 11,
-    Duration = 12,
-    Upcastable = 13,
-    SpellMod = 14,
-    DamageType = 15,
-    Source = 16,
-    None = 17,
+    Tag = 6,
+    CastingTime = 7,
+    ComponentVerbal = 8,
+    ComponentSomatic = 9,
+    ComponentMaterial = 10,
+    MaterialValue = 11,
+    MaterialConsumed = 12,
+    Duration = 13,
+    Upcastable = 14,
+    SpellMod = 15,
+    DamageType = 16,
+    Condition = 17,
+    Save = 18,
+    AttackType = 19,
+    Source = 20,
+    None = 21,
 }
 
 export interface SpellFilterGroup{
@@ -182,6 +186,12 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
+        else if(type === SpellFilterType.Tag){
+            displayText = value.name;
+            displayTextList = displayText;
+            tooltip = value.description;
+        }
+
         else{
             displayText = value as string;
             displayTextList = value as string;
@@ -225,6 +235,26 @@ export class SpellFilter implements SpellFilter {
         else if(a.type === SpellFilterType.DamageType){
             compareA = a.properties.damageTypes.indexOf(a.value);
             compareB = b.properties.damageTypes.indexOf(b.value);
+        }
+        //for the condition use the order from the properties
+        else if(a.type === SpellFilterType.Condition){
+            compareA = a.properties.conditions.indexOf(a.value);
+            compareB = b.properties.conditions.indexOf(b.value);
+        }
+        //for the save use the order from the properties
+        else if(a.type === SpellFilterType.Save){
+            compareA = a.properties.saves.indexOf(a.value);
+            compareB = b.properties.saves.indexOf(b.value);
+        }
+        //for the attack type use the order from the properties
+        else if(a.type === SpellFilterType.AttackType){
+            compareA = a.properties.attackTypes.indexOf(a.value);
+            compareB = b.properties.attackTypes.indexOf(b.value);
+        }
+        //for the tag use the order from the properties
+        else if(a.type === SpellFilterType.Tag){
+            compareA = a.properties.tags.indexOf(a.value);
+            compareB = b.properties.tags.indexOf(b.value);
         }
         //for concentration and ritual, compare the boolean (true before false)
         else if(a.type === SpellFilterType.Ritual 

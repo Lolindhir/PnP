@@ -42,6 +42,34 @@
           </mat-form-field>
         </div>
 
+        <div fxLayout="column" class="filter-select">
+          <div>Category</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersTag"
+              (ngModelChange)="addFilterMulti(optionsTag, selectedFiltersTag)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersTag.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsTag" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Casting Time</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersCastingTime"
+              (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersCastingTime.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
         <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Ritual <img class="image" src="assets/images/ritual.png"></div>
           <div style="text-align: center;">
@@ -129,17 +157,67 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
-          <div>Casting Time</div>
+          <div>Damage Type</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersCastingTime"
-              (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true">
+            <mat-select [(ngModel)]="selectedFiltersDamageType"
+              (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true">
               <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersCastingTime.length}} selected</span>
+                <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
               </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
+              <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Required Save</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSave"
+              (ngModelChange)="addFilterMulti(optionsSave, selectedFiltersSave)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSave.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsSave" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Attack Type</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersAttackType"
+              (ngModelChange)="addFilterMulti(optionsAttackType, selectedFiltersAttackType)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersAttackType.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsAttackType" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Casting Ability</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersSpellMod">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsSpellMod, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsSpellMod, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Upcastable <img class="image" src="assets/images/arrow.png"></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpcastable">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpcastable, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsUpcastable, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
         </div>
 
         <div fxLayout="column" class="filter-button-select">
@@ -213,37 +291,15 @@
           </mat-form-field>
         </div>
 
-        <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Upcastable <img class="image" src="assets/images/arrow.png"></div>
-          <div style="text-align: center;">
-            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpcastable">
-              <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpcastable, true)">Yes</mat-button-toggle>
-              <mat-button-toggle value="false" (click)="addFilterToggle(optionsUpcastable, false)">No
-              </mat-button-toggle>
-            </mat-button-toggle-group>
-          </div>
-        </div>
-
-        <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Casting Ability</div>
-          <div style="text-align: center;">
-            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersSpellMod">
-              <mat-button-toggle value="true" (click)="addFilterToggle(optionsSpellMod, true)">Yes</mat-button-toggle>
-              <mat-button-toggle value="false" (click)="addFilterToggle(optionsSpellMod, false)">No
-              </mat-button-toggle>
-            </mat-button-toggle-group>
-          </div>
-        </div>
-
         <div fxLayout="column" class="filter-select">
-          <div>Damage Type</div>
+          <div>Condition</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersDamageType"
-              (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true">
+            <mat-select [(ngModel)]="selectedFiltersCondition"
+              (ngModelChange)="addFilterMulti(optionsCondition, selectedFiltersCondition)" multiple="true">
               <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
+                <span class="filter-selection-number">{{selectedFiltersCondition.length}} selected</span>
               </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
+              <mat-option *ngFor="let filter of optionsCondition" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -257,7 +313,8 @@
           </div>
         </div>
         
-        <div fxLayout="column" class="filter-button-select">
+
+        <!-- <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Tags</div>
           <div style="text-align: center;">
             <mat-slide-toggle [(ngModel)]="showTags" color="primary">
@@ -268,7 +325,7 @@
         <div class="Block">
           <label id="lbl">Test </label>
           <input type='file' (change)="fileChanged($event)">    
-        </div>
+        </div> -->
 
       </div>
 
@@ -570,14 +627,17 @@
 
             </div>   
 
-            <div *ngIf="i === expandedPanelIndex" >
+            <div *ngIf="spell.asset" class="big-top-gap">
+              <img src={{spell.assetPath}} style="max-width: 100%; margin-right: 1rem;"/>
+            </div>
+            <!-- <div *ngIf="spell.asset" >
               <div style="display: none;">
                 <img src={{spell.assetPath}} (error)="spellAssetNotLoaded(i, spell.assetPath)"/>
               </div>
               <div *ngIf="i != assetNotLoadedIndex" class="big-top-gap">
                 <img src={{spell.assetPath}} style="max-width: 100%; margin-right: 1rem;"/>
               </div>
-            </div>
+            </div> -->
             
 
           </div>

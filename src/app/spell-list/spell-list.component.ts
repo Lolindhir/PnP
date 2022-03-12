@@ -31,6 +31,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersCastingTime: SpellFilter[] = new Array();
   selectedFiltersDuration: SpellFilter[] = new Array();
   selectedFiltersDamageType: SpellFilter[] = new Array();
+  selectedFiltersCondition: SpellFilter[] = new Array();
+  selectedFiltersSave: SpellFilter[] = new Array();
+  selectedFiltersAttackType: SpellFilter[] = new Array();
+  selectedFiltersTag: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
   selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
   selectedFiltersConcentration: string[] = new Array();
@@ -53,6 +57,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsCastingTime: SpellFilter[] = new Array();
   optionsDuration: SpellFilter[] = new Array();
   optionsDamageType: SpellFilter[] = new Array();
+  optionsCondition: SpellFilter[] = new Array();
+  optionsSave: SpellFilter[] = new Array();
+  optionsAttackType: SpellFilter[] = new Array();
+  optionsTag: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
   optionsRitual: SpellFilter[] = new Array();
   optionsComponentV: SpellFilter[] = new Array();
@@ -70,8 +78,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   numberOfRandomSpells: number = 0;
   stringOfRandomSpells: string = 'Random spells';
   private spellReloadAmount: number = 30;
-  spellPresetPath: string = './assets/spells.json';
-  test: RawSpell[] = new Array();
 
   //other global stuff
   expandedPanelIndex: number = -1;
@@ -79,7 +85,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showRandomControls: boolean = false;
-  showTags: boolean = false;
+  showTags: boolean = true;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
@@ -93,7 +99,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   constructor(private httpClient: HttpClient) {
 
-    this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
+    //test for read of local file
+    //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
     //get screen width
     this.screenWidth = window.innerWidth;
@@ -128,6 +135,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
     this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
     this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
+    this.optionsCondition = SpellService.getConditionFilterOptions(spellProperties);
+    this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
+    this.optionsAttackType = SpellService.getAttackTypeFilterOptions(spellProperties);
+    this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
     this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
@@ -313,6 +324,22 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersDamageType = newSelectedFilters;
         break;
       }
+      case SpellFilterType.Condition: {
+        this.selectedFiltersCondition = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Save: {
+        this.selectedFiltersSave = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.AttackType: {
+        this.selectedFiltersAttackType = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Tag: {
+        this.selectedFiltersTag = newSelectedFilters;
+        break;
+      }
       case SpellFilterType.Source: {
         this.selectedFiltersSource = newSelectedFilters;
         break;
@@ -464,10 +491,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   onTranslation(spell: Spell){
-
-    this.test.forEach(rawSpell => {
-      console.log(rawSpell.name);
-    });
 
     if(spell.translated){
       spell.translated = false;

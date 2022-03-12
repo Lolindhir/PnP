@@ -45,6 +45,8 @@ Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Public\Quellen un
 [Angular Get Local File I](https://www.positronx.io/angular-httpclient-http-service/),
 [Angular Get Local File II](https://www.techiediaries.com/angular-local-json-files/)
 
+[Load Local File](https://stackoverflow.com/questions/47581687/read-a-file-and-parse-its-content)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

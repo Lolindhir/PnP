@@ -76,6 +76,42 @@ export class SpellService {
     return damageFilterOptions.sort(SpellFilter.compare);
   }
 
+  public static getConditionFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var conditionFilterOptions: SpellFilter[] = new Array();
+    properties.conditions.forEach( condition => {
+      conditionFilterOptions.push(new SpellFilter(SpellFilterType.Condition, condition, properties))
+    })
+    return conditionFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getSaveFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var saveFilterOptions: SpellFilter[] = new Array();
+    properties.saves.forEach( save => {
+      saveFilterOptions.push(new SpellFilter(SpellFilterType.Save, save, properties))
+    })
+    return saveFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getAttackTypeFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var attackTypeFilterOptions: SpellFilter[] = new Array();
+    properties.attackTypes.forEach( attackType => {
+      attackTypeFilterOptions.push(new SpellFilter(SpellFilterType.AttackType, attackType, properties))
+    })
+    return attackTypeFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var tagFilterOptions: SpellFilter[] = new Array();
+    properties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.Tag, tag, properties))
+    })
+    return tagFilterOptions.sort(SpellFilter.compare);
+  }
+
   public static getCastingTimeFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var castingTimeFilterOptions: SpellFilter[] = new Array();
