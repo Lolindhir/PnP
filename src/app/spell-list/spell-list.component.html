@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="center">
-  <div class="container">
+  <div *ngIf="!loading" class="container">
 
     <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
       (closed)="advancedFiltersPanelOpen = false">

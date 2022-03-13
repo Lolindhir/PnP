@@ -80,6 +80,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   private spellReloadAmount: number = 30;
 
   //other global stuff
+  loading: boolean = true;
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
   assetNotLoadedIndex: number = -1;
@@ -157,6 +158,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
 
+    console.log("ngOnInit called");    
+
     //add first spells to show list
     this.onChange();
     this.fetchMore();
@@ -164,8 +167,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    
+    console.log("ngAfterViewInit called");
+
     this.setSize();
     this.setPanelSize();
+
+    //show content because everything is set up
+    this.loading = false;
   }
 
   fetchMore(): boolean {
@@ -531,8 +540,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.setPanelSize();
   }
 
-  @HostListener('window:resize', ['$event'])
-    onResize(event: any) {
+  @HostListener('window:resize', ['$event']) onResize(event: any) {
+
     this.setSize();
     this.setPanelSize();
   }
@@ -556,6 +565,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     else {
       this.expansionPanelWidth = this.expansionAccordion.nativeElement.offsetWidth;
     }
+
+    this.loading = false;
   }
 
   private delay(ms: number) {
