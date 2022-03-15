@@ -141,6 +141,19 @@
       <div *ngIf="showAdvancedFilters || screenSm" fxLayout="row wrap" fxLayoutAlign="left"
         fxLayoutAlign.lt-sm="space-evenly center">
 
+        <div fxLayout="column" class="filter-select">
+          <div>Preset</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersPreset"
+              (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsPreset" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
 
         <div fxLayout="column" class="filter-select">
           <div>Spell School</div>

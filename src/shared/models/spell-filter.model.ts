@@ -12,6 +12,7 @@ export interface SpellFilter{
 }
 
 export enum SpellFilterType{
+    Preset = 0,
     Level = 1,
     School = 2,
     Ritual = 3,
@@ -196,6 +197,11 @@ export class SpellFilter implements SpellFilter {
                 displayTextList = displayText;
             }
             tooltip = value.description;
+        }
+
+        else if(type === SpellFilterType.Preset){
+            displayText = 'Preset: ' + value.name;
+            displayTextList = value.name;
         }
 
         else{

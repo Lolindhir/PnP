@@ -112,6 +112,15 @@ export class SpellService {
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
+  public static getPresetFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var presetFilterOptions: SpellFilter[] = new Array();
+    properties.presets.forEach( preset => {
+      presetFilterOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+    })
+    return presetFilterOptions.sort(SpellFilter.compare);
+  }
+
   public static getCastingTimeFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var castingTimeFilterOptions: SpellFilter[] = new Array();

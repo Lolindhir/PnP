@@ -1,7 +1,9 @@
 import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
-import { SpellTag } from "@models/spell-tag";
+import { SpellTag } from "@models/spell-tag.model";
+import { Preset } from "@models/preset.model";
+import { of } from "rxjs";
 
 export interface RawSpell {  
   level: number;  
@@ -429,6 +431,31 @@ export class Spell implements Spell {
           if(this.castingAbility.toLowerCase() === 'no' && !spellMod){
             return true;
           } 
+          break; 
+        }
+        case SpellFilterType.Preset: {             
+          var preset: Preset = filter.value as Preset;
+          if(preset === null){
+            return true;
+          }
+          //check single name, which overrides every other condition
+          if(preset.spells.includes(this.name)){
+            return true;
+          }
+          //check classes and corresponding level
+          if(preset.classes.length === 0 && preset.subclasses.length === 0 && preset.levels.includes(this.level)){
+            return true;
+          }
+          for (var mainClass of preset.classes) {
+            if(this.classes.filter(mainclass => mainclass.name === mainClass).length > 0 && preset.levels.includes(this.level)){
+              return true;
+            }
+          }
+          for (var subClass of preset.subclasses) {
+            if(this.subclasses.filter(subclass => subclass.name === subClass).length > 0 && preset.levels.includes(this.level)){
+              return true;
+            }
+          }                  
           break; 
         }  
         case SpellFilterType.Source: {             

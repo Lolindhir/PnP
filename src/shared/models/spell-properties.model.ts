@@ -1,4 +1,5 @@
-import { SpellTag } from "@models/spell-tag";
+import { SpellTag } from "@models/spell-tag.model";
+import { Preset } from "@models/preset.model";
 
 export interface SpellProperties{
     classes: string[];
@@ -12,4 +13,5 @@ export interface SpellProperties{
     saves: string[];
     attackTypes: string[];
     tags: SpellTag[];
+    presets: Preset[];
 }

@@ -35,6 +35,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSave: SpellFilter[] = new Array();
   selectedFiltersAttackType: SpellFilter[] = new Array();
   selectedFiltersTag: SpellFilter[] = new Array();
+  selectedFiltersPreset: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
   selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
   selectedFiltersConcentration: string[] = new Array();
@@ -61,6 +62,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSave: SpellFilter[] = new Array();
   optionsAttackType: SpellFilter[] = new Array();
   optionsTag: SpellFilter[] = new Array();
+  optionsPreset: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
   optionsRitual: SpellFilter[] = new Array();
   optionsComponentV: SpellFilter[] = new Array();
@@ -140,6 +142,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
     this.optionsAttackType = SpellService.getAttackTypeFilterOptions(spellProperties);
     this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
+    this.optionsPreset = SpellService.getPresetFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
     this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
@@ -347,6 +350,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.Tag: {
         this.selectedFiltersTag = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Preset: {
+        this.selectedFiltersPreset = newSelectedFilters;
         break;
       }
       case SpellFilterType.Source: {
