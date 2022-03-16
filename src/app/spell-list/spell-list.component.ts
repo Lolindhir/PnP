@@ -27,6 +27,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersLevel: SpellFilter[] = new Array();
   selectedFiltersSchool: SpellFilter[] = new Array();
   selectedFiltersClass: SpellFilter[] = new Array();
+  selectedFiltersSingleClass: SpellFilter[] = new Array();
   selectedFiltersSubclass: SpellFilter[] = new Array();
   selectedFiltersCastingTime: SpellFilter[] = new Array();
   selectedFiltersDuration: SpellFilter[] = new Array();
@@ -34,7 +35,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersCondition: SpellFilter[] = new Array();
   selectedFiltersSave: SpellFilter[] = new Array();
   selectedFiltersAttackType: SpellFilter[] = new Array();
+  selectedFiltersAttackSave: SpellFilter[] = new Array();
   selectedFiltersTag: SpellFilter[] = new Array();
+  selectedFiltersSingleTag: SpellFilter[] = new Array();
   selectedFiltersPreset: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
   selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
@@ -54,6 +57,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSource: SpellFilter[] = new Array();
   optionsSourceGroups: SpellFilterGroup[] = new Array();
   optionsClass: SpellFilter[] = new Array();
+  optionsSingleClass: SpellFilter[] = new Array();
   optionsSubclass: SpellFilter[] = new Array();
   optionsCastingTime: SpellFilter[] = new Array();
   optionsDuration: SpellFilter[] = new Array();
@@ -61,7 +65,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsCondition: SpellFilter[] = new Array();
   optionsSave: SpellFilter[] = new Array();
   optionsAttackType: SpellFilter[] = new Array();
+  optionsAttackSave: SpellFilter[] = new Array();
   optionsTag: SpellFilter[] = new Array();
+  optionsSingleTag: SpellFilter[] = new Array();
   optionsPreset: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
   optionsRitual: SpellFilter[] = new Array();
@@ -131,6 +137,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsLevel = SpellService.getLevelFilterOptions(spellProperties);
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
     this.optionsClass = SpellService.getClassFilterOptions(spellProperties);
+    this.optionsSingleClass = SpellService.getSingleClassFilterOptions(spellProperties);
     this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
     this.optionsSource = SpellService.getSourceFilterOptions(this.spells, spellProperties);
@@ -141,7 +148,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsCondition = SpellService.getConditionFilterOptions(spellProperties);
     this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
     this.optionsAttackType = SpellService.getAttackTypeFilterOptions(spellProperties);
+    this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(spellProperties);
     this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
+    this.optionsSingleTag = SpellService.getSingleTagFilterOptions(spellProperties);
     this.optionsPreset = SpellService.getPresetFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
@@ -324,6 +333,18 @@ export class SpellListComponent implements OnInit, AfterViewInit {
           break;
         }  
       }
+      case SpellFilterType.SingleClass: {
+        var spellClass = removedFilter.value as SpellClass;
+        if(!spellClass.subclass){
+          this.selectedFiltersSingleClass = newSelectedFilters;
+          break;
+        }
+        // else{
+        //   this.selectedFiltersSubclass = newSelectedFilters;
+        //   break;
+        // }
+        break; 
+      }
       case SpellFilterType.CastingTime: {
         this.selectedFiltersCastingTime = newSelectedFilters;
         break;
@@ -348,7 +369,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersAttackType = newSelectedFilters;
         break;
       }
+      case SpellFilterType.AttackSave: {
+        this.selectedFiltersAttackSave = newSelectedFilters;
+        break;
+      }
       case SpellFilterType.Tag: {
+        this.selectedFiltersTag = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.SingleTag: {
         this.selectedFiltersTag = newSelectedFilters;
         break;
       }

@@ -57,6 +57,16 @@ export class SpellService {
 
   }
 
+  public static getSingleClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+
+    var classFilterOptions: SpellFilter[] = new Array();
+    properties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.SingleClass, new SpellClass(spellClass, false, true), properties));
+    })
+    return classFilterOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getSubclassFilterOptions(properties: SpellProperties): SpellFilter[] {  
 
     var subclassFilterOptions: SpellFilter[] = new Array();
@@ -98,9 +108,21 @@ export class SpellService {
     
     var attackTypeFilterOptions: SpellFilter[] = new Array();
     properties.attackTypes.forEach( attackType => {
-      attackTypeFilterOptions.push(new SpellFilter(SpellFilterType.AttackType, attackType, properties))
+      if(attackType != 'Ability Check'){
+        attackTypeFilterOptions.push(new SpellFilter(SpellFilterType.AttackType, attackType, properties))
+      }
     })
     return attackTypeFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getAttackSaveFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var attackSaveFilterOptions: SpellFilter[] = new Array();
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Attack', properties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Save', properties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Ability Check', properties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'None', properties));
+    return attackSaveFilterOptions.sort(SpellFilter.compare);
   }
 
   public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {
@@ -108,6 +130,15 @@ export class SpellService {
     var tagFilterOptions: SpellFilter[] = new Array();
     properties.tags.forEach( tag => {
       tagFilterOptions.push(new SpellFilter(SpellFilterType.Tag, tag, properties))
+    })
+    return tagFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getSingleTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var tagFilterOptions: SpellFilter[] = new Array();
+    properties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.SingleTag, tag, properties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }

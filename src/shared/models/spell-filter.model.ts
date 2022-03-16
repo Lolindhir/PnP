@@ -18,22 +18,25 @@ export enum SpellFilterType{
     Ritual = 3,
     Concentration = 4,
     Class = 5,
-    Tag = 6,
-    CastingTime = 7,
-    ComponentVerbal = 8,
-    ComponentSomatic = 9,
-    ComponentMaterial = 10,
-    MaterialValue = 11,
-    MaterialConsumed = 12,
-    Duration = 13,
-    Upcastable = 14,
-    SpellMod = 15,
-    DamageType = 16,
-    Condition = 17,
-    Save = 18,
-    AttackType = 19,
-    Source = 20,
-    None = 21,
+    SingleClass = 6,
+    Tag = 7,
+    SingleTag = 8,
+    CastingTime = 9,
+    AttackSave = 10,
+    Save = 11,
+    AttackType = 12,
+    ComponentVerbal = 13,
+    ComponentSomatic = 14,
+    ComponentMaterial = 15,
+    MaterialValue = 16,
+    MaterialConsumed = 17,
+    Duration = 18,
+    Upcastable = 19,
+    SpellMod = 20,
+    DamageType = 21,
+    Condition = 22,
+    Source = 22,
+    None = 23,
 }
 
 export interface SpellFilterGroup{
@@ -45,6 +48,7 @@ export class SpellFilter implements SpellFilter {
 
     
     constructor(type: SpellFilterType, value: any, properties: SpellProperties){
+
         this.type = type;
         this.value = value;
         this.selected = false;
@@ -95,6 +99,12 @@ export class SpellFilter implements SpellFilter {
             var spellClass = value as SpellClass;
             displayText = spellClass.name;
             displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.SingleClass){
+            var spellClass = value as SpellClass;
+            displayText = 'Only ' + spellClass.name;
+            displayTextList = spellClass.name;
         }
 
         else if(type === SpellFilterType.Ritual){
@@ -199,9 +209,26 @@ export class SpellFilter implements SpellFilter {
             tooltip = value.description;
         }
 
+        else if(type === SpellFilterType.SingleTag){
+            if(value.name === 'Illusion'){
+                displayText = 'Only Illusion (Category)';
+                displayTextList = value.name;
+            }
+            else {
+                displayText = 'Only ' + value.name;
+                displayTextList = value.name;
+            }
+            tooltip = value.description;
+        }
+
         else if(type === SpellFilterType.Preset){
             displayText = 'Preset: ' + value.name;
             displayTextList = value.name;
+        }
+        
+        else if(type === SpellFilterType.AttackSave){
+            displayText = 'Requires ' + value as string;
+            displayTextList = value as string;
         }
 
         else{
@@ -264,7 +291,7 @@ export class SpellFilter implements SpellFilter {
             compareB = b.properties.attackTypes.indexOf(b.value);
         }
         //for the tag use the order from the properties
-        else if(a.type === SpellFilterType.Tag){
+        else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.SingleTag){
             compareA = a.properties.tags.indexOf(a.value);
             compareB = b.properties.tags.indexOf(b.value);
         }
@@ -279,6 +306,52 @@ export class SpellFilter implements SpellFilter {
             || a.type === SpellFilterType.Upcastable){
             compareA = a.value as boolean ? 1 : 2;
             compareB = b.value as boolean ? 1 : 2;
+        }
+        else if(a.type === SpellFilterType.AttackSave){
+            switch(a.value as string){
+                case 'Attack':{
+                    compareA = 1;
+                    break;
+                }
+                case 'Save':{
+                    compareA = 2;
+                    break
+                }
+                case 'Ability Check':{
+                    compareA = 3;
+                    break
+                }
+                case 'None':{
+                    compareA = 4;
+                    break
+                }
+                default: {
+                    compareA = 5;
+                    break
+                }
+            }                      
+            switch(b.value as string){
+                case 'Attack':{
+                    compareB = 1;
+                    break;
+                }
+                case 'Save':{
+                    compareB = 2;
+                    break
+                }
+                case 'Ability Check':{
+                    compareB = 3;
+                    break
+                }
+                case 'None':{
+                    compareB = 4;
+                    break
+                }
+                default: {
+                    compareB = 5;
+                    break
+                }
+            }  
         }
         else {
             compareA = a.displayText;

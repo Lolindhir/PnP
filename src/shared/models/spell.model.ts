@@ -313,6 +313,24 @@ export class Spell implements Spell {
             break;
           }           
         }
+        case SpellFilterType.SingleClass: {             
+          var spellClass: SpellClass = filter.value as SpellClass;
+          if(spellClass === null){
+            return true;
+          }
+          if(!spellClass.subclass){
+            if(this.classes.length === 1 && this.classes.some(cla => cla.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }
+          else{
+            if(this.subclasses.length === 1 && this.subclasses.some(sub => sub.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }           
+        }
         case SpellFilterType.CastingTime: {             
           var castingTime: string = filter.value as string;
           if(castingTime === '' || this.castingTime.toLowerCase().includes(castingTime.toLowerCase())){
@@ -397,6 +415,25 @@ export class Spell implements Spell {
           }          
           break; 
         }
+        case SpellFilterType.AttackSave: {             
+          var attackSave: string = filter.value as string;
+          if(attackSave === ''){
+            return true;
+          }        
+          if(attackSave.toLowerCase() === 'save' && this.saves.length > 0){
+            return true;
+          }
+          for(var attack of this.attackTypes){
+            console.log(attack as string);
+            if(attack.toLowerCase().includes(attackSave.toLowerCase())){
+              return true;
+            }
+          }
+          if(attackSave.toLowerCase() === 'none' && this.saves.length === 0 && this.attackTypes.length === 0){
+            return true;
+          }
+          break; 
+        }
         case SpellFilterType.Save: {             
           var save: string = filter.value as string;
           if(save === '' || this.saves.includes(save)){
@@ -414,6 +451,13 @@ export class Spell implements Spell {
         case SpellFilterType.Tag: {             
           var tag: SpellTag = filter.value as SpellTag;
           if(tag === null || this.tags.includes(tag)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.SingleTag: {             
+          var tag: SpellTag = filter.value as SpellTag;
+          if(tag === null || (this.tags.includes(tag) && this.tags.length === 1)){
             return true;
           }          
           break; 

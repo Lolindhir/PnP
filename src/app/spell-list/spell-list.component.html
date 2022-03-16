@@ -57,6 +57,20 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
+          <div>Preset</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersPreset"
+              (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsPreset" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
           <div>Casting Time</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersCastingTime"
@@ -65,6 +79,20 @@
                 <span class="filter-selection-number">{{selectedFiltersCastingTime.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsCastingTime" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Attack\Save</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersAttackSave"
+              (ngModelChange)="addFilterMulti(optionsAttackSave, selectedFiltersAttackSave)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersAttackSave.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsAttackSave" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -142,20 +170,6 @@
         fxLayoutAlign.lt-sm="space-evenly center">
 
         <div fxLayout="column" class="filter-select">
-          <div>Preset</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersPreset"
-              (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
-              <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
-              </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsPreset" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
           <div>Spell School</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSchool"
@@ -178,34 +192,6 @@
                 <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Required Save</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSave"
-              (ngModelChange)="addFilterMulti(optionsSave, selectedFiltersSave)" multiple="true">
-              <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersSave.length}} selected</span>
-              </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsSave" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Attack Type</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersAttackType"
-              (ngModelChange)="addFilterMulti(optionsAttackType, selectedFiltersAttackType)" multiple="true">
-              <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersAttackType.length}} selected</span>
-              </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsAttackType" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -291,6 +277,34 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
+          <div>Required Save</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSave"
+              (ngModelChange)="addFilterMulti(optionsSave, selectedFiltersSave)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSave.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsSave" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Attack Type</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersAttackType"
+              (ngModelChange)="addFilterMulti(optionsAttackType, selectedFiltersAttackType)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersAttackType.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsAttackType" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
           <div>Duration</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersDuration"
@@ -313,6 +327,34 @@
                 <span class="filter-selection-number">{{selectedFiltersCondition.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsCondition" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Single Class</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSingleClass"
+              (ngModelChange)="addFilterMulti(optionsSingleClass, selectedFiltersSingleClass)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSingleClass.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsSingleClass" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Single Tag</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersSingleTag"
+              (ngModelChange)="addFilterMulti(optionsSingleTag, selectedFiltersSingleTag)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersSingleTag.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsSingleTag" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
