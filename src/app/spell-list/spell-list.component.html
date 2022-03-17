@@ -347,7 +347,21 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
-          <div>Single Tag</div>
+          <div>Not this Class</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersNotClass"
+              (ngModelChange)="addFilterMulti(optionsNotClass, selectedFiltersNotClass)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersNotClass.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsNotClass" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Single Category</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSingleTag"
               (ngModelChange)="addFilterMulti(optionsSingleTag, selectedFiltersSingleTag)" multiple="true">
@@ -355,6 +369,20 @@
                 <span class="filter-selection-number">{{selectedFiltersSingleTag.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsSingleTag" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Not this Category</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersNotTag"
+              (ngModelChange)="addFilterMulti(optionsNotTag, selectedFiltersNotTag)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersNotTag.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsNotTag" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>

@@ -313,7 +313,7 @@ export class Spell implements Spell {
             break;
           }           
         }
-        case SpellFilterType.SingleClass: {             
+        case SpellFilterType.ClassSingle: {             
           var spellClass: SpellClass = filter.value as SpellClass;
           if(spellClass === null){
             return true;
@@ -326,6 +326,24 @@ export class Spell implements Spell {
           }
           else{
             if(this.subclasses.length === 1 && this.subclasses.some(sub => sub.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }           
+        }
+        case SpellFilterType.ClassNot: {             
+          var spellClass: SpellClass = filter.value as SpellClass;
+          if(spellClass === null){
+            return true;
+          }
+          if(!spellClass.subclass){
+            if(!this.classes.some(cla => cla.name === spellClass.name)){
+              return true;
+            }          
+            break;
+          }
+          else{
+            if(!this.subclasses.some(sub => sub.name === spellClass.name)){
               return true;
             }          
             break;
@@ -455,9 +473,16 @@ export class Spell implements Spell {
           }          
           break; 
         }
-        case SpellFilterType.SingleTag: {             
+        case SpellFilterType.TagSingle: {             
           var tag: SpellTag = filter.value as SpellTag;
           if(tag === null || (this.tags.includes(tag) && this.tags.length === 1)){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.TagNot: {             
+          var tag: SpellTag = filter.value as SpellTag;
+          if(tag === null || !this.tags.includes(tag)){
             return true;
           }          
           break; 

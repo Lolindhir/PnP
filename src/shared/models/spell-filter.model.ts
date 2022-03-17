@@ -18,25 +18,27 @@ export enum SpellFilterType{
     Ritual = 3,
     Concentration = 4,
     Class = 5,
-    SingleClass = 6,
-    Tag = 7,
-    SingleTag = 8,
-    CastingTime = 9,
-    AttackSave = 10,
-    Save = 11,
-    AttackType = 12,
-    ComponentVerbal = 13,
-    ComponentSomatic = 14,
-    ComponentMaterial = 15,
-    MaterialValue = 16,
-    MaterialConsumed = 17,
-    Duration = 18,
-    Upcastable = 19,
-    SpellMod = 20,
-    DamageType = 21,
-    Condition = 22,
-    Source = 22,
-    None = 23,
+    ClassSingle = 6,
+    ClassNot = 7,
+    Tag = 8,
+    TagSingle = 9,
+    TagNot = 10,
+    CastingTime = 11,
+    AttackSave = 12,
+    Save = 13,
+    AttackType = 14,
+    ComponentVerbal = 15,
+    ComponentSomatic = 16,
+    ComponentMaterial = 17,
+    MaterialValue = 18,
+    MaterialConsumed = 19,
+    Duration = 20,
+    Upcastable = 21,
+    SpellMod = 22,
+    DamageType = 23,
+    Condition = 24,
+    Source = 25,
+    None = 26,
 }
 
 export interface SpellFilterGroup{
@@ -101,9 +103,15 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
-        else if(type === SpellFilterType.SingleClass){
+        else if(type === SpellFilterType.ClassSingle){
             var spellClass = value as SpellClass;
             displayText = 'Only ' + spellClass.name;
+            displayTextList = spellClass.name;
+        }
+
+        else if(type === SpellFilterType.ClassNot){
+            var spellClass = value as SpellClass;
+            displayText = 'No ' + spellClass.name;
             displayTextList = spellClass.name;
         }
 
@@ -209,13 +217,25 @@ export class SpellFilter implements SpellFilter {
             tooltip = value.description;
         }
 
-        else if(type === SpellFilterType.SingleTag){
+        else if(type === SpellFilterType.TagSingle){
             if(value.name === 'Illusion'){
                 displayText = 'Only Illusion (Category)';
                 displayTextList = value.name;
             }
             else {
                 displayText = 'Only ' + value.name;
+                displayTextList = value.name;
+            }
+            tooltip = value.description;
+        }
+
+        else if(type === SpellFilterType.TagNot){
+            if(value.name === 'Illusion'){
+                displayText = 'No Illusion (Category)';
+                displayTextList = value.name;
+            }
+            else {
+                displayText = 'No ' + value.name;
                 displayTextList = value.name;
             }
             tooltip = value.description;
@@ -291,7 +311,7 @@ export class SpellFilter implements SpellFilter {
             compareB = b.properties.attackTypes.indexOf(b.value);
         }
         //for the tag use the order from the properties
-        else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.SingleTag){
+        else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagNot){
             compareA = a.properties.tags.indexOf(a.value);
             compareB = b.properties.tags.indexOf(b.value);
         }
