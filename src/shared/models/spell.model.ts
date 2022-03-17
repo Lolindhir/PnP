@@ -267,11 +267,11 @@ export class Spell implements Spell {
 
   private filterMatches(filterType: SpellFilterType, filters: SpellFilter[]): boolean{
 
-    if(filterType == null){
+    if(filterType === null){
       return true;
     }
 
-    if(filters == null || filters.length == 0){
+    if(filters === null || filters.length === 0){
       return true;
     }
 
@@ -337,14 +337,14 @@ export class Spell implements Spell {
             return true;
           }
           if(!spellClass.subclass){
-            if(!this.classes.some(cla => cla.name === spellClass.name)){
-              return true;
+            if(this.classes.some(cla => cla.name === spellClass.name)){
+              return false;
             }          
             break;
           }
           else{
-            if(!this.subclasses.some(sub => sub.name === spellClass.name)){
-              return true;
+            if(this.subclasses.some(sub => sub.name === spellClass.name)){
+              return false;
             }          
             break;
           }           
@@ -482,9 +482,13 @@ export class Spell implements Spell {
         }
         case SpellFilterType.TagNot: {             
           var tag: SpellTag = filter.value as SpellTag;
-          if(tag === null || !this.tags.includes(tag)){
+          console.log(this.name);;
+          if(tag === null){
             return true;
-          }          
+          }
+          if(this.tags.includes(tag)){
+            return false;
+          }
           break; 
         }
         case SpellFilterType.SpellMod: {             
@@ -540,6 +544,11 @@ export class Spell implements Spell {
         } 
       }
 
+    }
+
+    //not filter have to return true, if not triggered
+    if(filterType === SpellFilterType.TagNot || filterType === SpellFilterType.ClassNot){
+      return true;
     }
 
     return false;
