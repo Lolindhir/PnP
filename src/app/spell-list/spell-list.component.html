@@ -1,6 +1,14 @@
 <div fxLayout="row" fxLayoutAlign="center">
   <div *ngIf="!loading" class="container">
 
+    <div div fxLayout="row" fxLayoutAlign="end center">
+      <div></div>
+      <button color="primary" mat-button (click)="onTranslateAll()"
+        matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
+        {{translateAll ? 'English' : 'Deutsch'}} <mat-icon>translate</mat-icon>
+      </button>
+    </div>
+
     <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
       (closed)="advancedFiltersPanelOpen = false">
       <mat-expansion-panel-header>

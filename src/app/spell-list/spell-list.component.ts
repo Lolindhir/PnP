@@ -92,6 +92,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   private spellReloadAmount: number = 30;
 
   //other global stuff
+  translateAll: boolean = false;
   loading: boolean = true;
   expandedPanelIndex: number = -1;
   expansionPanelWidth: number = 0;
@@ -569,6 +570,27 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         spell.descriptionDisplay = spell.translation;
       }      
     }
+
+  }
+
+  onTranslateAll(){
+
+    //change global variable
+    this.translateAll = !this.translateAll;
+
+    for(var spell of this.spells){
+
+      if(this.translateAll && spell.translatable && !spell.translated){
+        spell.translated = true;
+        spell.descriptionDisplay = spell.translation;
+      }
+
+      if(!this.translateAll && spell.translated){
+        spell.translated = false;
+        spell.descriptionDisplay = spell.description;
+      }
+
+    }    
 
   }
 
