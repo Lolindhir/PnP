@@ -19,26 +19,28 @@ export enum SpellFilterType{
     Concentration = 4,
     Class = 5,
     ClassSingle = 6,
-    ClassNot = 7,
-    Tag = 8,
-    TagSingle = 9,
-    TagNot = 10,
-    CastingTime = 11,
-    AttackSave = 12,
-    Save = 13,
-    AttackType = 14,
-    ComponentVerbal = 15,
-    ComponentSomatic = 16,
-    ComponentMaterial = 17,
-    MaterialValue = 18,
-    MaterialConsumed = 19,
-    Duration = 20,
-    Upcastable = 21,
-    SpellMod = 22,
-    DamageType = 23,
-    Condition = 24,
-    Source = 25,
-    None = 26,
+    ClassMust = 7,
+    ClassNot = 8,
+    Tag = 9,
+    TagSingle = 10,
+    TagMust = 11,
+    TagNot = 12,
+    CastingTime = 13,
+    AttackSave = 14,
+    Save = 15,
+    AttackType = 16,
+    ComponentVerbal = 17,
+    ComponentSomatic = 18,
+    ComponentMaterial = 19,
+    MaterialValue = 20,
+    MaterialConsumed = 21,
+    Duration = 22,
+    Upcastable = 23,
+    SpellMod = 24,
+    DamageType = 25,
+    Condition = 26,
+    Source = 27,
+    None = 28,
 }
 
 export interface SpellFilterGroup{
@@ -106,6 +108,12 @@ export class SpellFilter implements SpellFilter {
         else if(type === SpellFilterType.ClassSingle){
             var spellClass = value as SpellClass;
             displayText = 'Only ' + spellClass.name;
+            displayTextList = spellClass.name;
+        }
+
+        else if(type === SpellFilterType.ClassMust){
+            var spellClass = value as SpellClass;
+            displayText = 'Must belong to ' + spellClass.name;
             displayTextList = spellClass.name;
         }
 
@@ -229,6 +237,18 @@ export class SpellFilter implements SpellFilter {
             tooltip = value.description;
         }
 
+        else if(type === SpellFilterType.TagMust){
+            if(value.name === 'Illusion'){
+                displayText = 'Must be Illusion (Category)';
+                displayTextList = value.name;
+            }
+            else {
+                displayText = 'Must be ' + value.name;
+                displayTextList = value.name;
+            }
+            tooltip = value.description;
+        }
+
         else if(type === SpellFilterType.TagNot){
             if(value.name === 'Illusion'){
                 displayText = 'No Illusion (Category)';
@@ -311,7 +331,7 @@ export class SpellFilter implements SpellFilter {
             compareB = b.properties.attackTypes.indexOf(b.value);
         }
         //for the tag use the order from the properties
-        else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagNot){
+        else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagMust || a.type === SpellFilterType.TagNot){
             compareA = a.properties.tags.indexOf(a.value);
             compareB = b.properties.tags.indexOf(b.value);
         }

@@ -28,6 +28,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSchool: SpellFilter[] = new Array();
   selectedFiltersClass: SpellFilter[] = new Array();
   selectedFiltersSingleClass: SpellFilter[] = new Array();
+  selectedFiltersMustClass: SpellFilter[] = new Array();
   selectedFiltersNotClass: SpellFilter[] = new Array();
   selectedFiltersSubclass: SpellFilter[] = new Array();
   selectedFiltersCastingTime: SpellFilter[] = new Array();
@@ -39,6 +40,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersAttackSave: SpellFilter[] = new Array();
   selectedFiltersTag: SpellFilter[] = new Array();
   selectedFiltersSingleTag: SpellFilter[] = new Array();
+  selectedFiltersMustTag: SpellFilter[] = new Array();
   selectedFiltersNotTag: SpellFilter[] = new Array();
   selectedFiltersPreset: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
@@ -60,6 +62,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSourceGroups: SpellFilterGroup[] = new Array();
   optionsClass: SpellFilter[] = new Array();
   optionsSingleClass: SpellFilter[] = new Array();
+  optionsMustClass: SpellFilter[] = new Array();
   optionsNotClass: SpellFilter[] = new Array();
   optionsSubclass: SpellFilter[] = new Array();
   optionsCastingTime: SpellFilter[] = new Array();
@@ -71,6 +74,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsAttackSave: SpellFilter[] = new Array();
   optionsTag: SpellFilter[] = new Array();
   optionsSingleTag: SpellFilter[] = new Array();
+  optionsMustTag: SpellFilter[] = new Array();
   optionsNotTag: SpellFilter[] = new Array();
   optionsPreset: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
@@ -143,6 +147,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
     this.optionsClass = SpellService.getClassFilterOptions(spellProperties);
     this.optionsSingleClass = SpellService.getSingleClassFilterOptions(spellProperties);
+    this.optionsMustClass = SpellService.getMustClassFilterOptions(spellProperties);
     this.optionsNotClass = SpellService.getNotClassFilterOptions(spellProperties);
     this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
@@ -157,6 +162,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(spellProperties);
     this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
     this.optionsSingleTag = SpellService.getSingleTagFilterOptions(spellProperties);
+    this.optionsMustTag = SpellService.getMustTagFilterOptions(spellProperties);
     this.optionsNotTag = SpellService.getNotTagFilterOptions(spellProperties);
     this.optionsPreset = SpellService.getPresetFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
@@ -352,16 +358,20 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         // }
         break; 
       }
+      case SpellFilterType.ClassMust: {
+        var spellClass = removedFilter.value as SpellClass;
+        if(!spellClass.subclass){
+          this.selectedFiltersMustClass = newSelectedFilters;
+          break;
+        }
+        break; 
+      }
       case SpellFilterType.ClassNot: {
         var spellClass = removedFilter.value as SpellClass;
         if(!spellClass.subclass){
           this.selectedFiltersNotClass = newSelectedFilters;
           break;
         }
-        // else{
-        //   this.selectedFiltersSubclass = newSelectedFilters;
-        //   break;
-        // }
         break; 
       }
       case SpellFilterType.CastingTime: {
@@ -398,6 +408,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.TagSingle: {
         this.selectedFiltersSingleTag = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.TagMust: {
+        this.selectedFiltersMustTag = newSelectedFilters;
         break;
       }
       case SpellFilterType.TagNot: {

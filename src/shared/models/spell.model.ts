@@ -331,6 +331,24 @@ export class Spell implements Spell {
             break;
           }           
         }
+        case SpellFilterType.ClassMust: {             
+          var spellClass: SpellClass = filter.value as SpellClass;
+          if(spellClass === null){
+            return true;
+          }
+          if(!spellClass.subclass){
+            if(!this.classes.some(cla => cla.name === spellClass.name)){
+              return false;
+            }          
+            break;
+          }
+          else{
+            if(!this.subclasses.some(sub => sub.name === spellClass.name)){
+              return false;
+            }          
+            break;
+          }           
+        }
         case SpellFilterType.ClassNot: {             
           var spellClass: SpellClass = filter.value as SpellClass;
           if(spellClass === null){
@@ -480,9 +498,18 @@ export class Spell implements Spell {
           }          
           break; 
         }
+        case SpellFilterType.TagMust: {             
+          var tag: SpellTag = filter.value as SpellTag;
+          if(tag === null){
+            return true;
+          }   
+          if(!this.tags.includes(tag)){
+            return false;
+          }
+          break; 
+        }
         case SpellFilterType.TagNot: {             
           var tag: SpellTag = filter.value as SpellTag;
-          console.log(this.name);;
           if(tag === null){
             return true;
           }
@@ -546,8 +573,8 @@ export class Spell implements Spell {
 
     }
 
-    //not filter have to return true, if not triggered
-    if(filterType === SpellFilterType.TagNot || filterType === SpellFilterType.ClassNot){
+    //not and must filter have to return true, if not triggered
+    if(filterType === SpellFilterType.TagMust || filterType === SpellFilterType.TagNot || filterType === SpellFilterType.ClassMust || filterType === SpellFilterType.ClassNot){
       return true;
     }
 

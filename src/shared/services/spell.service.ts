@@ -67,6 +67,16 @@ export class SpellService {
 
   }
 
+  public static getMustClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+
+    var classFilterOptions: SpellFilter[] = new Array();
+    properties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassMust, new SpellClass(spellClass, false, true), properties));
+    })
+    return classFilterOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getNotClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
 
     var classFilterOptions: SpellFilter[] = new Array();
@@ -149,6 +159,15 @@ export class SpellService {
     var tagFilterOptions: SpellFilter[] = new Array();
     properties.tags.forEach( tag => {
       tagFilterOptions.push(new SpellFilter(SpellFilterType.TagSingle, tag, properties))
+    })
+    return tagFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getMustTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var tagFilterOptions: SpellFilter[] = new Array();
+    properties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagMust, tag, properties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }
