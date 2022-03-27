@@ -1,6 +1,7 @@
 import { Spell } from "@models/spell.model";
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from "@models/spell-filter.model";
 import { SpellProperties } from "@models/spell-properties.model";
+import { SpellRange } from "@models/spell-range.model";
 import { ArrayUtilities } from "@utilities/array.utilities";
 import { SpellClass } from "@models/spell-class.model";
 
@@ -143,6 +144,10 @@ export class SpellService {
     attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Ability Check', properties));
     attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'None', properties));
     return attackSaveFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getRangeFilterOptions(properties: SpellProperties): SpellFilter[] {    
+    return SpellRange.getFilterOptions(properties);
   }
 
   public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {

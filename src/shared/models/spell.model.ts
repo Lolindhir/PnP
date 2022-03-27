@@ -4,6 +4,7 @@ import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 import { SpellTag } from "@models/spell-tag.model";
 import { Preset } from "@models/preset.model";
 import { of } from "rxjs";
+import { SpellRange, SpellRangeCategory } from "./spell-range.model";
 
 export interface RawSpell {  
   level: number;  
@@ -377,6 +378,13 @@ export class Spell implements Spell {
         case SpellFilterType.Duration: {             
           var duration: string = filter.value as string;
           if(duration === '' || this.duration.toLowerCase().includes(duration.toLowerCase())){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.Range: {             
+          var rangeCategory: SpellRangeCategory = filter.value as SpellRangeCategory;
+          if(rangeCategory === null || SpellRange.hasSpellRangeTheCategory(this.range, rangeCategory)){
             return true;
           }          
           break; 

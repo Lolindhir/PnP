@@ -1,5 +1,6 @@
 import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
+import { SpellRange, SpellRangeCategory } from "@models/spell-range.model";
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -29,18 +30,19 @@ export enum SpellFilterType{
     AttackSave = 14,
     Save = 15,
     AttackType = 16,
-    ComponentVerbal = 17,
-    ComponentSomatic = 18,
-    ComponentMaterial = 19,
-    MaterialValue = 20,
-    MaterialConsumed = 21,
-    Duration = 22,
-    Upcastable = 23,
-    SpellMod = 24,
-    DamageType = 25,
-    Condition = 26,
-    Source = 27,
-    None = 28,
+    Range = 17,
+    ComponentVerbal = 18,
+    ComponentSomatic = 19,
+    ComponentMaterial = 20,
+    MaterialValue = 21,
+    MaterialConsumed = 22,
+    Duration = 23,
+    Upcastable = 24,
+    SpellMod = 25,
+    DamageType = 26,
+    Condition = 27,
+    Source = 28,
+    None = 29,
 }
 
 export interface SpellFilterGroup{
@@ -271,6 +273,12 @@ export class SpellFilter implements SpellFilter {
             displayTextList = value as string;
         }
 
+        else if(type === SpellFilterType.Range){
+            displayText = SpellRange.getName(value) + ' Range';
+            displayTextList = SpellRange.getName(value);
+            tooltip = SpellRange.getTooltip(value);
+        }
+
         else{
             displayText = value as string;
             displayTextList = value as string;
@@ -299,6 +307,11 @@ export class SpellFilter implements SpellFilter {
         if (a.type === SpellFilterType.Level){
             compareA = a.value as string;
             compareB = b.value as string;
+        }
+        //for the range use the enum value
+        if(a.type === SpellFilterType.Range){
+            compareA = a.value as SpellRangeCategory;
+            compareB = b.value as SpellRangeCategory;
         }
         //for the casting time use the order from the properties
         else if(a.type === SpellFilterType.CastingTime){

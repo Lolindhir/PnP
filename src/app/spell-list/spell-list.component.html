@@ -207,6 +207,20 @@
           </mat-form-field>
         </div>
 
+        <div fxLayout="column" class="filter-select">
+          <div>Range</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersRange"
+              (ngModelChange)="addFilterMulti(optionsRange, selectedFiltersRange)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersRange.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsRange" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
         <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Casting Ability</div>
           <div style="text-align: center;">
@@ -665,7 +679,7 @@
             </div>
 
             <div>
-              <span class="spell-property-denotation">Range:</span>
+              <span class="spell-property-denotation">Range (Area):</span>
               <span class="spell-property-description">{{spell.range}}</span>
             </div>
 

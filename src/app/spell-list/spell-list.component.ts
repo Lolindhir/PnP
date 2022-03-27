@@ -33,6 +33,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSubclass: SpellFilter[] = new Array();
   selectedFiltersCastingTime: SpellFilter[] = new Array();
   selectedFiltersDuration: SpellFilter[] = new Array();
+  selectedFiltersRange: SpellFilter[] = new Array();
   selectedFiltersDamageType: SpellFilter[] = new Array();
   selectedFiltersCondition: SpellFilter[] = new Array();
   selectedFiltersSave: SpellFilter[] = new Array();
@@ -67,6 +68,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSubclass: SpellFilter[] = new Array();
   optionsCastingTime: SpellFilter[] = new Array();
   optionsDuration: SpellFilter[] = new Array();
+  optionsRange: SpellFilter[] = new Array();
   optionsDamageType: SpellFilter[] = new Array();
   optionsCondition: SpellFilter[] = new Array();
   optionsSave: SpellFilter[] = new Array();
@@ -155,6 +157,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSourceGroups = SpellService.getSourceGroupFilterOptions(this.optionsSource, spellProperties);
     this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
     this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
+    this.optionsRange = SpellService.getRangeFilterOptions(spellProperties);
     this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
     this.optionsCondition = SpellService.getConditionFilterOptions(spellProperties);
     this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
@@ -380,6 +383,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.Duration: {
         this.selectedFiltersDuration = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.Range: {
+        this.selectedFiltersRange = newSelectedFilters;
         break;
       }
       case SpellFilterType.DamageType: {
