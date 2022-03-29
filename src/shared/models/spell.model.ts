@@ -14,6 +14,7 @@ export interface RawSpell {
   ritual: boolean;
   castingTime: string;
   range: string;
+  area: string;
   components: string[];
   materials: string;
   duration: string;
@@ -27,6 +28,7 @@ export interface RawSpell {
   conditions: string[];
   saves: string[];
   attackTypes: string[];
+  targets: string[];
   castingAbility: string;
   translation: string;
   tags: string[];
@@ -43,7 +45,7 @@ export interface Spell {
   ritualTooltip: string;
   castingTime: string;
   castingTimeDisplayList: string;
-  range: string;
+  range: SpellRange;
   components: string[];
   componentsValue: boolean;
   componentsConsumed: boolean;
@@ -66,6 +68,7 @@ export interface Spell {
   saves: string[];
   attackTypes: string[];
   attacksSavesDisplay: string;
+  targets: string[];
   castingAbility: string;
   tags: SpellTag[];
   translation: string;
@@ -90,7 +93,7 @@ export class Spell implements Spell {
     this.ritualTooltip = 'Castable as a ritual';
     this.castingTime = rawSpell.castingTime;
     this.castingTimeDisplayList = rawSpell.castingTime.includes('reaction') ? '1 Reaction' : this.capitalizeWords(rawSpell.castingTime);
-    this.range = rawSpell.range;
+    this.range = new SpellRange(rawSpell.range, rawSpell.area);
     this.components = rawSpell.components;
     this.duration = rawSpell.duration;
     this.concentration = rawSpell.concentration;
@@ -104,6 +107,7 @@ export class Spell implements Spell {
     this.conditions = rawSpell.conditions;
     this.saves = rawSpell.saves;
     this.attackTypes = rawSpell.attackTypes;
+    this.targets = rawSpell.targets;
     this.castingAbility = rawSpell.castingAbility;
     this.translation = rawSpell.translation;
     this.descriptionDisplay = this.description;
@@ -384,7 +388,7 @@ export class Spell implements Spell {
         }
         case SpellFilterType.Range: {             
           var rangeCategory: SpellRangeCategory = filter.value as SpellRangeCategory;
-          if(rangeCategory === null || SpellRange.hasSpellRangeTheCategory(this.range, rangeCategory)){
+          if(rangeCategory === null || this.range.rangeCategory === rangeCategory){
             return true;
           }          
           break; 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="300"
+   height="300"
+   viewBox="-18 -6 36 17"
+   id="Olympic Rings"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Silver_medal.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="714"
+     inkscape:window-width="641"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.6466667"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-x="27"
+     inkscape:window-y="51"
+     inkscape:current-layer="Olympic Rings" />
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="300 : 150 : 1"
+       inkscape:persp3d-origin="150 : 100 : 1"
+       id="perspective22" />
+    <clipPath
+       id="clip_white">
+      <path
+         d="M 0,0 L -10,-5 L -10,5 L 0,0 z M 0,0 L 0.1,-10 L 8.1,-10 L 0,0 z "
+         id="path6" />
+    </clipPath>
+    <clipPath
+       id="clip_color">
+      <path
+         d="M 0,0 L -10,-10 L -10,10 L 0,0 z M 0,0 L 0,-10 L 10,-10 L 0,0 z "
+         id="path9" />
+    </clipPath>
+  </defs>
+  <path
+     d="M 4.1016951 -1.7372881 A 7.0847459 7.0508475 0 1 1  -10.067797,-1.7372881 A 7.0847459 7.0508475 0 1 1  4.1016951 -1.7372881 z"
+     transform="matrix(2.477719,0,0,2.477719,7.391162,6.804512)"
+     style="fill:#ccc;fill-opacity:1;stroke:#999;stroke-width:0.36000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3708" />
+</svg>

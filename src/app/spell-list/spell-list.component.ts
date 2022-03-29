@@ -12,6 +12,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
+import * as imagePaths from '@shared/imagePaths';
 
 @Component({
   selector: 'app-spell-list',
@@ -98,6 +99,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   private spellReloadAmount: number = 30;
 
   //other global stuff
+  images = imagePaths;
   translateAll: boolean = false;
   loading: boolean = true;
   expandedPanelIndex: number = -1;

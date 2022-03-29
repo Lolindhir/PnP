@@ -1,8 +1,9 @@
 import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 import { SpellProperties } from "@models/spell-properties.model";
+import * as imagePaths from '@shared/imagePaths';
 
 export enum SpellRangeCategory{
-    Self = 0,
+    Caster = 0,
     PointBlank = 1,  // <= 5ft
     Short = 2,  // <= 30ft
     Medium = 3, // <= 100ft
@@ -10,12 +11,114 @@ export enum SpellRangeCategory{
     Extra = 5,   
 }
 
-export class SpellRange{
-    
-    public static getName(category: SpellRangeCategory): string{
+export interface SpellRange{
+    rangeCategory: SpellRangeCategory,
+    displayTextComplete: string,
+    containsAsset: boolean,
+    assetPath: string,
+    displayTextPart1: string,
+    displayTextPart2: string,
+}
 
-        if(category === SpellRangeCategory.Self){
-            return 'Self';
+export class SpellRange implements SpellRange{
+    
+    constructor(rawRange: string, rawArea: string){
+
+        //defaults
+        this.displayTextComplete = rawArea.length === 0 ? rawRange : rawRange + ' (' + rawArea + ')';
+        var textLower = this.displayTextComplete.toLowerCase();
+        this.containsAsset = false;
+        this.displayTextPart1 = '';
+        this.displayTextPart2 = '';
+
+
+        //set and extract area asset
+        var parts: string[] = new Array();
+
+        if(textLower.includes('circle')){
+            this.assetPath = imagePaths.spellCircle;
+            var parts = this.displayTextComplete.split('circle', 2);
+        }
+        else if(textLower.includes('cone')){
+            this.assetPath = imagePaths.spellCone;
+            var parts = this.displayTextComplete.split('cone', 2);
+        }
+        else if(textLower.includes('cube')){
+            this.assetPath = imagePaths.spellCube;
+            var parts = this.displayTextComplete.split('cube', 2);
+        }
+        else if(textLower.includes('cylinder')){
+            this.assetPath = imagePaths.spellCylinder;
+            var parts = this.displayTextComplete.split('cylinder', 2);
+        }
+        else if(textLower.includes('line')){
+            this.assetPath = imagePaths.spellLine;
+            var parts = this.displayTextComplete.split('line', 2);
+        }
+        else if(textLower.includes('square')){
+            this.assetPath = imagePaths.spellSquare;
+            var parts = this.displayTextComplete.split('square', 2);
+        }
+        else if(textLower.includes('sphere')){
+            this.assetPath = imagePaths.spellSphere;
+            var parts = this.displayTextComplete.split('sphere', 2);
+        }
+        else if(textLower.includes('radius')){
+            this.assetPath = imagePaths.spellSphere;
+            var parts = this.displayTextComplete.split('radius', 2);
+        }
+
+        if(parts.length > 1){
+            this.containsAsset = true;
+            this.displayTextPart1 = parts[0];
+            this.displayTextPart2 = parts[1].trim();
+        }        
+
+
+        //get the range in feet
+        var range: number = 0;
+        if(textLower.includes('feet') || textLower.includes('foot')){      
+            //get the array of all digits
+            var digitArray = textLower.replace(',', '').match(/\d+/);
+            if(digitArray != null){
+                var rangeString: string = '';
+                for(var digit of digitArray){
+                    rangeString += digit;
+                }
+                range = Number(rangeString);
+            }        
+        }
+
+
+        //get category
+        if(range === 0 && textLower.includes('self')){
+            this.rangeCategory = SpellRangeCategory.Caster;          
+        }
+        else if(textLower.includes('touch')){
+            this.rangeCategory = SpellRangeCategory.PointBlank; 
+        }
+        else if(range > 0 && range <= 5){
+            this.rangeCategory = SpellRangeCategory.PointBlank;
+        }
+        else if(range > 5 && range <= 30){
+            this.rangeCategory = SpellRangeCategory.Short;
+        }
+        else if(range > 30 && range <= 100){
+            this.rangeCategory = SpellRangeCategory.Medium;
+        }
+        else if(range > 100 && range <= 500){
+            this.rangeCategory = SpellRangeCategory.Long; 
+        }
+        else{
+            this.rangeCategory = SpellRangeCategory.Extra; 
+        }
+
+    }
+
+    public static getCategoryName(category: SpellRangeCategory): string{
+
+        if(category === SpellRangeCategory.Caster){
+            return 'Only Caster';
         }
         if(category === SpellRangeCategory.PointBlank){
             return 'Point-Blank';
@@ -36,9 +139,33 @@ export class SpellRange{
         return 'Unknown';
     }
 
-    public static getTooltip(category: SpellRangeCategory): string{
+    public static getCategoryDisplayText(category: SpellRangeCategory): string{
 
-        if(category === SpellRangeCategory.Self){
+        if(category === SpellRangeCategory.Caster){
+            return 'Only on Caster';
+        }
+        if(category === SpellRangeCategory.PointBlank){
+            return 'Point-Blank';
+        }
+        if(category === SpellRangeCategory.Short){
+            return 'Short Range';
+        }
+        if(category === SpellRangeCategory.Medium){
+            return 'Medium Range';
+        }
+        if(category === SpellRangeCategory.Long){
+            return 'Long Range';
+        }
+        if(category === SpellRangeCategory.Extra){
+            return 'Extra Range';
+        }
+
+        return 'Unknown';
+    }
+
+    public static getCategoryTooltip(category: SpellRangeCategory): string{
+
+        if(category === SpellRangeCategory.Caster){
             return 'nur auf Caster';
         }
         if(category === SpellRangeCategory.PointBlank){
@@ -60,58 +187,7 @@ export class SpellRange{
         return 'Bis zu dieser Reichweite.';
     }
 
-    public static hasSpellRangeTheCategory(spellRange: string, category: SpellRangeCategory): boolean{
-
-        //get the range in feet
-        var range: number = 0;
-        if(spellRange.toLowerCase().includes('feet') || spellRange.toLowerCase().includes('foot')){      
-            //get the array of all digits
-            var digitArray = spellRange.replace(',', '').match(/\d+/);
-            if(digitArray != null){
-                var rangeString: string = '';
-                for(var digit of digitArray){
-                    rangeString += digit;
-                }
-                range = Number(rangeString);
-            }        
-        }
-
-        if(range === 0 && spellRange.includes('Self')){
-            return category === SpellRangeCategory.Self ? true : false;            
-        }
-
-        if(spellRange.includes('Touch')){
-            return category === SpellRangeCategory.PointBlank ? true : false;
-        }
-
-        if(range > 0 && range <= 5){
-            return category === SpellRangeCategory.PointBlank ? true : false;
-
-        }
-
-        if(range > 5 && range <= 30){
-            return category === SpellRangeCategory.Short ? true : false;
-
-        }
-
-        if(range > 30 && range <= 100){
-            return category === SpellRangeCategory.Medium ? true : false;
-
-        }
-
-        if(range > 100 && range <= 500){
-            return category === SpellRangeCategory.Long ? true : false;
-        }
-
-        //if nothing flags as false, then its the extra range
-        if(category === SpellRangeCategory.Extra){
-            return true;
-        }
-
-        return false;
-    }
-
-    public static getFilterOptions(properties: SpellProperties): SpellFilter[] {
+    public static getCategoryFilterOptions(properties: SpellProperties): SpellFilter[] {
     
         var filterOptions: SpellFilter[] = new Array();
         Object.values(SpellRangeCategory).forEach(categoryAsString => {

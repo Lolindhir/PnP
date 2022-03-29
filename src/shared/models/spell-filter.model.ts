@@ -274,9 +274,9 @@ export class SpellFilter implements SpellFilter {
         }
 
         else if(type === SpellFilterType.Range){
-            displayText = SpellRange.getName(value) + ' Range';
-            displayTextList = SpellRange.getName(value);
-            tooltip = SpellRange.getTooltip(value);
+            displayText = SpellRange.getCategoryDisplayText(value);
+            displayTextList = SpellRange.getCategoryName(value);
+            tooltip = SpellRange.getCategoryTooltip(value);
         }
 
         else{
@@ -309,7 +309,7 @@ export class SpellFilter implements SpellFilter {
             compareB = b.value as string;
         }
         //for the range use the enum value
-        if(a.type === SpellFilterType.Range){
+        else if (a.type === SpellFilterType.Range){
             compareA = a.value as SpellRangeCategory;
             compareB = b.value as SpellRangeCategory;
         }

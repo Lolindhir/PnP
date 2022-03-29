@@ -108,7 +108,7 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Ritual <img class="image" src="assets/images/ritual.png"></div>
+          <div style="text-align: center;">Ritual <img class="image" src={{images.spellRitual}}></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersRitual">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsRitual, true)">Yes</mat-button-toggle>
@@ -118,7 +118,7 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Concentration <img class="image" src="assets/images/concentration.png"></div>
+          <div style="text-align: center;">Concentration <img class="image" src={{images.spellConcentration}}></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersConcentration">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsConcentration, true)">Yes
@@ -233,7 +233,7 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Upcastable <img class="image" src="assets/images/arrow.png"></div>
+          <div style="text-align: center;">Upcastable <img class="image" src={{images.spellArrow}}></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpcastable">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpcastable, true)">Yes</mat-button-toggle>
@@ -277,7 +277,7 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Value <img class="image" src="assets/images/coins.png"></div>
+          <div style="text-align: center;">Value <img class="image" src={{images.spellCoins}}></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersMaterialValue">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsMaterialValue, true)">Yes
@@ -289,7 +289,7 @@
         </div>
 
         <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">M consumed <img class="image" src="assets/images/coins.png"></div>
+          <div style="text-align: center;">M consumed <img class="image" src={{images.spellCoins}}></div>
           <div style="text-align: center;">
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersMaterialConsumed">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsMaterialConsumed, true)">Yes
@@ -555,14 +555,14 @@
               <div class="spell-expansion-header spell-expansion-name" style="width: max-content;">
                 {{spell.name}}
                 <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.ritual" class="image" src="assets/images/ritual.png">
+                  <img *ngIf="spell.ritual" class="image" src={{images.spellRitual}}>
                 </span>
                 <span matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.concentration" class="image" src="assets/images/concentration.png">
+                  <img *ngIf="spell.concentration" class="image" src={{images.spellConcentration}}>
                 </span>
                 <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
                   matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src="assets/images/coins.png">
+                  <img class="image" src={{images.spellCoins}}>
                 </span>
               </div>
               <div class="spell-expansion-header spell-expansion-extra" style="width: max-content;">
@@ -580,15 +580,15 @@
                 </div>
                 <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
                   matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src="assets/images/ritual.png">
+                  <img class="image" src={{images.spellRitual}}>
                 </div>
                 <div *ngIf="spell.concentration" class="spell-expansion-icon"
                   matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src="assets/images/concentration.png">
+                  <img class="image" src={{images.spellConcentration}}>
                 </div>
                 <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
                   matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src="assets/images/coins.png">
+                  <img class="image" src={{images.spellCoins}}>
                 </div>
               </div>
               <div class="spell-expansion-header spell-expansion-extra"
@@ -605,14 +605,14 @@
               {{spell.levelDisplay}}
               <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" style="max-height: 10px;" src="assets/images/arrow.png">
+                <img class="image" style="max-height: 10px;" src={{images.spellArrow}}>
               </span>
             </div>
 
             <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 60px; width: 115px;">
               {{spell.castingTimeDisplayList}}
               <span *ngIf="spell.ritual" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src="assets/images/ritual.png">
+                <img class="image" src={{images.spellRitual}}>
               </span>
             </div>
 
@@ -620,18 +620,19 @@
               {{spell.componentsDisplayList}}
               <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src="assets/images/coins.png">
+                <img class="image" src={{images.spellCoins}}>
               </span>
             </div>
 
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 50px; width: 150px;">
-              {{spell.range}}
+              <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
+              <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}}>{{spell.range.displayTextPart2}}</span>
             </div>
 
             <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;">
               <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src="assets/images/concentration.png">
+                <img class="image" src={{images.spellConcentration}}>
               </span>
               {{spell.durationDisplayList}}
             </div>
@@ -680,7 +681,10 @@
 
             <div>
               <span class="spell-property-denotation">Range (Area):</span>
-              <span class="spell-property-description">{{spell.range}}</span>
+              <span class="spell-property-description">
+                <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
+                <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}}>{{spell.range.displayTextPart2}}</span>
+              </span>
             </div>
 
             <div>

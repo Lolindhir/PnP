@@ -147,7 +147,7 @@ export class SpellService {
   }
 
   public static getRangeFilterOptions(properties: SpellProperties): SpellFilter[] {    
-    return SpellRange.getFilterOptions(properties);
+    return SpellRange.getCategoryFilterOptions(properties);
   }
 
   public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {
