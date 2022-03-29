@@ -364,6 +364,11 @@ export class SpellFilter implements SpellFilter {
             compareA = a.properties.attackTypes.indexOf(a.value);
             compareB = b.properties.attackTypes.indexOf(b.value);
         }
+        //for the attack type use the order from the properties
+        else if(a.type === SpellFilterType.AffectedTargets){
+            compareA = a.properties.targets.indexOf(a.value);
+            compareB = b.properties.targets.indexOf(b.value);
+        }
         //for the tag use the order from the properties
         else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagMust || a.type === SpellFilterType.TagNot){
             compareA = a.properties.tags.indexOf(a.value);

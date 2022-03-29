@@ -496,6 +496,18 @@ export class Spell implements Spell {
           }          
           break; 
         }
+        case SpellFilterType.AffectedTargets: {             
+          var affectedTarget: string = filter.value as string;
+          if(affectedTarget === ''){
+            return true;
+          }
+          for(var target of this.targets){
+            if(target.toLowerCase().includes(affectedTarget.toLowerCase())){
+              return true;
+            }
+          }
+          break; 
+        }
         case SpellFilterType.Tag: {             
           var tag: SpellTag = filter.value as SpellTag;
           if(tag === null || this.tags.includes(tag)){

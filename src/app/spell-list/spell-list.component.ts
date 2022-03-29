@@ -40,6 +40,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSave: SpellFilter[] = new Array();
   selectedFiltersAttackType: SpellFilter[] = new Array();
   selectedFiltersAttackSave: SpellFilter[] = new Array();
+  selectedFiltersAffectedTargets: SpellFilter[] = new Array();
   selectedFiltersTag: SpellFilter[] = new Array();
   selectedFiltersSingleTag: SpellFilter[] = new Array();
   selectedFiltersMustTag: SpellFilter[] = new Array();
@@ -75,6 +76,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSave: SpellFilter[] = new Array();
   optionsAttackType: SpellFilter[] = new Array();
   optionsAttackSave: SpellFilter[] = new Array();
+  optionsAffectedTargets: SpellFilter[] = new Array();
   optionsTag: SpellFilter[] = new Array();
   optionsSingleTag: SpellFilter[] = new Array();
   optionsMustTag: SpellFilter[] = new Array();
@@ -165,6 +167,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
     this.optionsAttackType = SpellService.getAttackTypeFilterOptions(spellProperties);
     this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(spellProperties);
+    this.optionsAffectedTargets = SpellService.getAffectedTargetsFilterOptions(spellProperties);
     this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
     this.optionsSingleTag = SpellService.getSingleTagFilterOptions(spellProperties);
     this.optionsMustTag = SpellService.getMustTagFilterOptions(spellProperties);
@@ -409,6 +412,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.AttackSave: {
         this.selectedFiltersAttackSave = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.AffectedTargets: {
+        this.selectedFiltersAffectedTargets = newSelectedFilters;
         break;
       }
       case SpellFilterType.Tag: {

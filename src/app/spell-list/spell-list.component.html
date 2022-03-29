@@ -130,6 +130,20 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
+          <div>Number of Targets</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersAffectedTargets"
+              (ngModelChange)="addFilterMulti(optionsAffectedTargets, selectedFiltersAffectedTargets)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersAffectedTargets.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsAffectedTargets" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
           <div>Subclass</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersSubclass"

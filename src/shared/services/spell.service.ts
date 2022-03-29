@@ -136,6 +136,17 @@ export class SpellService {
     return attackTypeFilterOptions.sort(SpellFilter.compare);
   }
 
+  public static getAffectedTargetsFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var targetFilterOptions: SpellFilter[] = new Array();
+    properties.targets.forEach( target => {
+      if(!target.toLowerCase().includes('upcast')){
+        targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, target, properties))
+      }
+    })
+    return targetFilterOptions.sort(SpellFilter.compare);
+  }
+
   public static getAttackSaveFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var attackSaveFilterOptions: SpellFilter[] = new Array();

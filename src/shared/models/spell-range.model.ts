@@ -121,16 +121,16 @@ export class SpellRange implements SpellRange{
             return 'Only Caster';
         }
         if(category === SpellRangeCategory.PointBlank){
-            return 'Point-Blank';
+            return 'Point-Blank (5ft)';
         }
         if(category === SpellRangeCategory.Short){
-            return 'Short';
+            return 'Short (30ft)';
         }
         if(category === SpellRangeCategory.Medium){
-            return 'Medium';
+            return 'Medium (100ft)';
         }
         if(category === SpellRangeCategory.Long){
-            return 'Long';
+            return 'Long (500ft)';
         }
         if(category === SpellRangeCategory.Extra){
             return 'Extra';
