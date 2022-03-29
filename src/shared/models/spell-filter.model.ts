@@ -30,19 +30,20 @@ export enum SpellFilterType{
     AttackSave = 14,
     Save = 15,
     AttackType = 16,
-    Range = 17,
-    ComponentVerbal = 18,
-    ComponentSomatic = 19,
-    ComponentMaterial = 20,
-    MaterialValue = 21,
-    MaterialConsumed = 22,
-    Duration = 23,
-    Upcastable = 24,
-    SpellMod = 25,
-    DamageType = 26,
-    Condition = 27,
-    Source = 28,
-    None = 29,
+    AffectedTargets = 17,
+    Range = 18,
+    ComponentVerbal = 19,
+    ComponentSomatic = 20,
+    ComponentMaterial = 21,
+    MaterialValue = 22,
+    MaterialConsumed = 23,
+    Duration = 24,
+    Upcastable = 25,
+    SpellMod = 26,
+    DamageType = 27,
+    Condition = 28,
+    Source = 29,
+    None = 30,
 }
 
 export interface SpellFilterGroup{
@@ -277,6 +278,26 @@ export class SpellFilter implements SpellFilter {
             displayText = SpellRange.getCategoryDisplayText(value);
             displayTextList = SpellRange.getCategoryName(value);
             tooltip = SpellRange.getCategoryTooltip(value);
+        }
+
+        else if(type === SpellFilterType.AffectedTargets){
+            var valueString: string = value as string;
+            if(valueString === 'None' || valueString === 'Self'){
+                displayText = valueString + ' targeted';
+                displayTextList = valueString;
+            }
+            if(valueString === 'Single'){
+                displayText = 'Single target';
+                displayTextList = valueString;
+            }
+            if(valueString === 'Multiple'){
+                displayText = 'Multiple targets';
+                displayTextList = valueString;
+            }
+            if(valueString === 'AoE'){
+                displayText = 'Area of Effect';
+                displayTextList = valueString;
+            }
         }
 
         else{
