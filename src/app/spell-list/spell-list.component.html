@@ -7,6 +7,14 @@
         matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
         {{translateAll ? 'English' : 'Deutsch'}} <mat-icon>translate</mat-icon>
       </button>
+      <button color="primary" mat-button (click)="onSortOnlyByAlphabet()"
+        matTooltip="{{sortByName ? 'Sort spells first by level and then by name' : 'Sort spells first by name and then by level'}}">
+        {{sortByName ? 'Level > Name' : 'Name > Level'}} <mat-icon>sort_by_alpha</mat-icon>
+      </button>
+      <!-- <button color="primary" mat-button (click)="onHighlightFilter()"
+        matTooltip="{{highlightFilter ? 'Do not show the filtered spells' : 'Highlight the filtered spells'}}">
+        {{highlightFilter ? 'Don\'t show' : 'Highlight'}} <mat-icon>filter_alt</mat-icon>
+      </button> -->
     </div>
 
     <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
@@ -130,7 +138,7 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
-          <div>Number of Targets</div>
+          <div>Targets</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersAffectedTargets"
               (ngModelChange)="addFilterMulti(optionsAffectedTargets, selectedFiltersAffectedTargets)" multiple="true">
@@ -138,6 +146,20 @@
                 <span class="filter-selection-number">{{selectedFiltersAffectedTargets.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsAffectedTargets" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Range</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersRange"
+              (ngModelChange)="addFilterMulti(optionsRange, selectedFiltersRange)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersRange.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsRange" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -221,20 +243,6 @@
           </mat-form-field>
         </div>
 
-        <div fxLayout="column" class="filter-select">
-          <div>Range</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersRange"
-              (ngModelChange)="addFilterMulti(optionsRange, selectedFiltersRange)" multiple="true">
-              <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersRange.length}} selected</span>
-              </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsRange" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
         <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Casting Ability</div>
           <div style="text-align: center;">
@@ -252,6 +260,17 @@
             <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpcastable">
               <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpcastable, true)">Yes</mat-button-toggle>
               <mat-button-toggle value="false" (click)="addFilterToggle(optionsUpcastable, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Only Caster</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersTargetCaster">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsTargetCaster, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsTargetCaster, false)">No
               </mat-button-toggle>
             </mat-button-toggle-group>
           </div>
@@ -491,7 +510,7 @@
         </mat-chip>
       </mat-chip-list>
 
-      <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters</button>
+      <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon>filter_alt_off</mat-icon></button>
 
     </div>    
 
@@ -559,7 +578,8 @@
 
       <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="expandedPanelIndex = i"
-        (closed)="onSpellExpansionPanelClosed(i)">
+        (closed)="onSpellExpansionPanelClosed(i)"
+        [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
 
         <mat-expansion-panel-header>
 

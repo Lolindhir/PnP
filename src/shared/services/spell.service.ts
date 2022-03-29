@@ -244,6 +244,15 @@ export class SpellService {
 
   }
 
+  public static getTargetCasterFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var targetCasterFiltersOptions: SpellFilter[] = new Array();
+    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, true, properties));
+    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, false, properties));
+    return targetCasterFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getComponentVerbalFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var verbalFiltersOptions: SpellFilter[] = new Array();

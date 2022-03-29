@@ -80,6 +80,7 @@ export interface Spell {
   smallDisplay: string;
   asset: boolean;
   assetPath: string;
+  highlighted: boolean;
 }
 
 export class Spell implements Spell {  
@@ -406,7 +407,7 @@ export class Spell implements Spell {
             return true;
           }          
           break; 
-        }
+        }        
         case SpellFilterType.Upcastable: {             
           var upcastable: boolean = filter.value as boolean;
           if(upcastable === null || this.upcastable === upcastable){
@@ -426,6 +427,28 @@ export class Spell implements Spell {
           if(matConsumed === null || this.componentsConsumed === matConsumed){
             return true;
           }          
+          break; 
+        }
+        case SpellFilterType.TargetCaster: {             
+          var onlyCasterTargetable: boolean = filter.value as boolean;
+          if(onlyCasterTargetable === null){
+            return true;
+          }
+          //check spell if only self targetable
+          var spellOnlyCaster: boolean = false;
+          // if(this.range.displayTextComplete.toLowerCase().includes('self') && this.targets.includes('Self')){
+          //   return true;
+          // }
+          if(this.targets.length === 1 && this.targets.includes('Self')){
+            spellOnlyCaster = true;
+          }
+          if(this.targets.length === 2 && this.targets.includes('Self') && this.targets.includes('None')){
+            spellOnlyCaster = true;
+          }
+          //check with input
+          if(onlyCasterTargetable === spellOnlyCaster){
+            return true;
+          }
           break; 
         }
         case SpellFilterType.ComponentVerbal: {             
@@ -606,6 +629,43 @@ export class Spell implements Spell {
   }
 
 
+  public static compareLevelFirst(a: Spell, b: Spell) {
+        
+    //level first, name second
+    if(a.level < b.level){
+      return -1;
+    }
+    if(a.level > b.level){
+      return 1;
+    }
+    if(a.name < b.name){
+      return -1;
+    }
+    if(a.name > b.name){
+      return 1;
+    }
+
+    return 0;
+  }
+
+  public static compareNameFirst(a: Spell, b: Spell) {
+        
+    //name first, level second
+    if(a.name < b.name){
+      return -1;
+    }
+    if(a.name > b.name){
+      return 1;
+    }
+    if(a.level < b.level){
+      return -1;
+    }
+    if(a.level > b.level){
+      return 1;
+    }    
+
+    return 0;
+  }
 
 
   //capitalize all words of a string. 

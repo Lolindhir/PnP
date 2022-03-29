@@ -31,19 +31,20 @@ export enum SpellFilterType{
     Save = 15,
     AttackType = 16,
     AffectedTargets = 17,
-    Range = 18,
-    ComponentVerbal = 19,
-    ComponentSomatic = 20,
-    ComponentMaterial = 21,
-    MaterialValue = 22,
-    MaterialConsumed = 23,
-    Duration = 24,
-    Upcastable = 25,
-    SpellMod = 26,
-    DamageType = 27,
-    Condition = 28,
-    Source = 29,
-    None = 30,
+    TargetCaster = 18,
+    Range = 19,
+    ComponentVerbal = 20,
+    ComponentSomatic = 21,
+    ComponentMaterial = 22,
+    MaterialValue = 23,
+    MaterialConsumed = 24,
+    Duration = 25,
+    Upcastable = 26,
+    SpellMod = 27,
+    DamageType = 28,
+    Condition = 29,
+    Source = 30,
+    None = 31,
 }
 
 export interface SpellFilterGroup{
@@ -142,6 +143,16 @@ export class SpellFilter implements SpellFilter {
             }
             else{
                 displayText = 'No Concentration';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.TargetCaster){
+            if(value === true){
+                displayText = 'Can only affect Caster';
+            }
+            else{
+                displayText = 'Cannot only affect Caster';
             }
             displayTextList = displayText;
         }
@@ -282,21 +293,25 @@ export class SpellFilter implements SpellFilter {
 
         else if(type === SpellFilterType.AffectedTargets){
             var valueString: string = value as string;
-            if(valueString === 'None' || valueString === 'Self'){
-                displayText = valueString + ' targeted';
-                displayTextList = valueString;
+            if(valueString === 'None'){
+                displayText = 'No Targets';
+                displayTextList = 'No Targets';
+            }
+            if(valueString === 'Self'){
+                displayText = 'Caster-targetable';
+                displayTextList = 'Caster-targetable';
             }
             if(valueString === 'Single'){
-                displayText = 'Single target';
-                displayTextList = valueString;
+                displayText = 'Single other Target';
+                displayTextList = 'Single Other';
             }
             if(valueString === 'Multiple'){
-                displayText = 'Multiple targets';
-                displayTextList = valueString;
+                displayText = 'Multiple other Targets';
+                displayTextList = 'Multiple Others (choosable)';
             }
             if(valueString === 'AoE'){
                 displayText = 'Area of Effect';
-                displayTextList = valueString;
+                displayTextList = 'AoE (not choosable)';
             }
         }
 
@@ -377,6 +392,7 @@ export class SpellFilter implements SpellFilter {
         //for concentration and ritual, compare the boolean (true before false)
         else if(a.type === SpellFilterType.Ritual 
             || a.type === SpellFilterType.Concentration
+            || a.type === SpellFilterType.TargetCaster
             || a.type === SpellFilterType.ComponentVerbal
             || a.type === SpellFilterType.ComponentSomatic
             || a.type === SpellFilterType.ComponentMaterial

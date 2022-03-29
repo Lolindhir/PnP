@@ -50,6 +50,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
   selectedFiltersConcentration: string[] = new Array();
   selectedFiltersRitual: string[] = new Array();
+  selectedFiltersTargetCaster: string[] = new Array();
   selectedFiltersComponentV: string[] = new Array();
   selectedFiltersComponentS: string[] = new Array();
   selectedFiltersComponentM: string[] = new Array();
@@ -84,6 +85,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsPreset: SpellFilter[] = new Array();
   optionsConcentration: SpellFilter[] = new Array();
   optionsRitual: SpellFilter[] = new Array();
+  optionsTargetCaster: SpellFilter[] = new Array();
   optionsComponentV: SpellFilter[] = new Array();
   optionsComponentS: SpellFilter[] = new Array();
   optionsComponentM: SpellFilter[] = new Array();
@@ -102,6 +104,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   //other global stuff
   images = imagePaths;
+  highlightColor: string = 'lightgrey';
+  highlightFilter: boolean = false;
+  sortByName: boolean = false;
   translateAll: boolean = false;
   loading: boolean = true;
   expandedPanelIndex: number = -1;
@@ -148,6 +153,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     });
 
+    //sort spells
+    this.sortMasterSpells();
+
+    //fill filtered spells with all spells, because nothing is yet filtered
+    this.spellsFiltered = this.spells;
+
     //build options
     this.optionsLevel = SpellService.getLevelFilterOptions(spellProperties);
     this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
@@ -175,6 +186,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsPreset = SpellService.getPresetFilterOptions(spellProperties);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
+    this.optionsTargetCaster = SpellService.getTargetCasterFilterOptions(spellProperties);
     this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
     this.optionsComponentS = SpellService.getComponentSomaticFilterOptions(spellProperties);
     this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(spellProperties);
@@ -182,9 +194,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(spellProperties);
     this.optionsUpcastable = SpellService.getUpcastableFilterOptions(spellProperties);
     this.optionsSpellMod = SpellService.getSpellModFilterOptions(spellProperties);
-
-    //fill filtered spells with all spells, because nothing is yet filtered
-    this.spellsFiltered = this.spells;
 
     this.onChange();
   }
@@ -230,6 +239,16 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return didSomething;
   }  
   
+  sortMasterSpells() {
+
+    if(this.sortByName){
+      this.spells.sort(Spell.compareNameFirst);
+    }
+    else{
+      this.spells.sort(Spell.compareLevelFirst);
+    }
+  }
+
   onChange() {
     
     this.expandedPanelIndex = -1;
@@ -450,6 +469,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersRitual = newSelectedStrings;
         break;
       }
+      case SpellFilterType.TargetCaster:{
+        this.selectedFiltersTargetCaster = newSelectedStrings;
+        break;
+      }
       case SpellFilterType.ComponentVerbal:{
         this.selectedFiltersComponentV = newSelectedStrings;
         break;
@@ -621,6 +644,38 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
 
     }    
+
+  }
+
+  onSortOnlyByAlphabet(){
+
+    //change global variable
+    this.sortByName = !this.sortByName;
+
+    this.sortMasterSpells();
+   
+    this.onChange();
+    
+  }
+
+  onHighlightFilter(){
+
+    //change global variable
+    this.highlightFilter = !this.highlightFilter;
+
+    // for(var spell of this.spells){
+
+    //   if(this.translateAll && spell.translatable && !spell.translated){
+    //     spell.translated = true;
+    //     spell.descriptionDisplay = spell.translation;
+    //   }
+
+    //   if(!this.translateAll && spell.translated){
+    //     spell.translated = false;
+    //     spell.descriptionDisplay = spell.description;
+    //   }
+
+    // }    
 
   }
 
