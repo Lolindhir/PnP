@@ -638,9 +638,6 @@
 
             </div>
 
-            <!-- Placeholder for name column -->
-            <!-- <div *ngIf="screenSm" class="spell-expansion-properties" style="width: 250px; margin-left: 0px;"></div> -->
-
             <!-- 2nd row: level -->
             <div *ngIf="showColumnLevel" class="spell-expansion-properties" style="width: 75px;">
               {{spell.levelDisplay}}
@@ -666,22 +663,44 @@
             </div>
 
             <!-- 5th row: targets -->
-            <div *ngIf="showColumnFlex" class="spell-expansion-properties" style="width: 150px;">
-              <!-- Targets -->
-              <!-- <span *ngFor="let target of spell.targets">{{target}}</span> -->
+            <ng-template #Targets>
+              <span *ngFor="let target of spell.targetsDisplay; let firstElement = first; let lastElement = last">
+                <span *ngIf="firstElement"><img class="image" src={{images.spellTarget}}></span>
+                {{target.displayText}}
+                <span *ngIf="target.upcastableAsset" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" style="max-height: 10px;" src={{images.spellArrow}}>
+                </span>
+                <span *ngIf="!lastElement">& </span>
+              </span>
+            </ng-template> 
+            
+            <!-- if "cannot also target caster"-->
+            <div *ngIf="showColumnFlex && !spell.canAlsoTargetCaster" class="spell-expansion-properties" style="width: 150px;">          
+              <ng-template [ngTemplateOutlet]="Targets"></ng-template>
+            </div>
+            <!-- if "can also target caster"-->
+            <div *ngIf="showColumnFlex && spell.canAlsoTargetCaster" class="spell-expansion-propertiesSpecial" fxLayout="column" style="width: 150px;">           
+              <div class="spell-expansion-header">
+                <ng-template [ngTemplateOutlet]="Targets"></ng-template>
+              </div>
+              <div class="spell-expansion-extra">
+                (can target Caster)
+              </div>  
+            </div>       
+
+                
               <!-- Duration -->
-              <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
+              <!-- <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellConcentration}}>
               </span>
-              {{spell.durationDisplayList}}
+              {{spell.durationDisplayList}} -->
               <!-- Components -->
               <!-- {{spell.componentsDisplayList}}
               <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellCoins}}>
               </span> -->
-            </div>            
 
             <!-- last row: tags -->
             <div *ngIf="showColumnTags" class="spell-expansion-properties" style="width: 120px; margin-right: 15px; text-align: end;">

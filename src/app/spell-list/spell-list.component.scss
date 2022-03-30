@@ -87,6 +87,14 @@
   margin-left: 10px;
 }
 
+.spell-expansion-propertiesSpecial {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
 .spell-property-denotation {
   font-weight: bold;
   min-width: max-content;

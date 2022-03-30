@@ -2,6 +2,7 @@ import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 import { SpellTag } from "@models/spell-tag.model";
+import { SpellTarget } from "@models/spell-target.model";
 import { Preset } from "@models/preset.model";
 import { of } from "rxjs";
 import { SpellRange, SpellRangeCategory } from "./spell-range.model";
@@ -69,6 +70,8 @@ export interface Spell {
   attackTypes: string[];
   attacksSavesDisplay: string;
   targets: string[];
+  targetsDisplay: SpellTarget[];
+  canAlsoTargetCaster: boolean;
   castingAbility: string;
   tags: SpellTag[];
   translation: string;
@@ -223,6 +226,34 @@ export class Spell implements Spell {
       savesAttacksDisplay = savesAttacksDisplay === '' ? shortenedSave : savesAttacksDisplay + ', ' + shortenedSave;
     });
     this.attacksSavesDisplay = savesAttacksDisplay === '' ? ' — ' : savesAttacksDisplay;
+
+    //build display targets
+    this.canAlsoTargetCaster = false;
+    this.targetsDisplay = new Array();
+    for(var target of this.targets){
+      if(target === 'None'){
+        //don't show, because it has no value in the view
+        //this.targetsDisplay.push({name: target, displayText: 'No Targets', upcastableAsset: false});
+      }
+      if(target === 'Self'){ 
+        if(this.targets.length > 2 || (this.targets.length === 2 && !this.targets.includes('None'))){
+          this.canAlsoTargetCaster = true;
+        }
+        else{
+          this.targetsDisplay.push({name: target, displayText: 'Only Caster', upcastableAsset: false});
+        }
+      }
+      if(target === 'Single'){
+        var upcastExists: boolean = this.targets.includes('Multiple (Upcast)');
+        this.targetsDisplay.push({name: target, displayText: 'Single', upcastableAsset: upcastExists});
+      }
+      if(target === 'Multiple'){
+        this.targetsDisplay.push({name: target, displayText: 'Multiple', upcastableAsset: false});
+      }
+      if(target === 'AoE'){
+        this.targetsDisplay.push({name: target, displayText: 'AoE', upcastableAsset: false});
+      }
+    }
 
     //build tags
     var tags : SpellTag[] = new Array();

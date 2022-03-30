@@ -11,3 +11,4 @@ export const spellCylinder = 'assets/images/spells/cylinder.svg';
 export const spellLine = 'assets/images/spells/line.svg';
 export const spellSphere = 'assets/images/spells/sphere.svg';
 export const spellSquare = 'assets/images/spells/square.svg';
+export const spellTarget = 'assets/images/spells/bulls-eye.svg';
