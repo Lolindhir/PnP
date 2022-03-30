@@ -31,6 +31,17 @@
   // image-rendering: -webkit-optimize-contrast;
 }
 
+.dot {
+  //min-height: 22px;
+  width: 30px;
+  margin-right: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: xx-small;
+}
+
 .mat-accordion .mat-expansion-panel:not(.mat-expanded),
 .mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
    margin-bottom: 5px;
@@ -73,6 +84,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-left: 10px;
 }
 
 .spell-property-denotation {

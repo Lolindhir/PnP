@@ -110,7 +110,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   translateAll: boolean = false;
   loading: boolean = true;
   expandedPanelIndex: number = -1;
-  expansionPanelWidth: number = 0;
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showRandomControls: boolean = false;
@@ -121,6 +120,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   screenMd: boolean = false;
   screenLg: boolean = false;
   screenXl: boolean = false;
+  showColumnTags: boolean = false;
+  showColumnLevel: boolean = false;
+  showColumnCastingTime: boolean = false;
+  showColumnRange: boolean = false;
+  showColumnFlex: boolean = false;
 
   @ViewChild('expansionAccordion')
   expansionAccordion: ElementRef;
@@ -722,13 +726,21 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   async setPanelSize(){
     
     //needed for turning of mobile devices
-    await this.delay(100);
+    //await this.delay(100);
 
     if(this.expansionAccordion === undefined){
-      this.expansionPanelWidth = 0;
+      this.showColumnTags = false;
+      this.showColumnLevel = false;
+      this.showColumnCastingTime = false;
+      this.showColumnRange = false;
     }
     else {
-      this.expansionPanelWidth = this.expansionAccordion.nativeElement.offsetWidth;
+      var width = this.expansionAccordion.nativeElement.offsetWidth;
+      this.showColumnTags = width > 455;
+      this.showColumnLevel = width > 540;
+      this.showColumnCastingTime = width > 670;
+      this.showColumnRange = width > 850;
+      this.showColumnFlex = width > 1000;
     }
 
     this.loading = false;

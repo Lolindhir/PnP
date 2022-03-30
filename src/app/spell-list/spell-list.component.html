@@ -583,36 +583,10 @@
 
         <mat-expansion-panel-header>
 
-          <div *ngIf="i != expandedPanelIndex" fxLayout="row">
+          <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">
 
-            <!-- <div *ngIf="!screenSm" fxLayout="column" style="width: 10px;">
-              <div class="spell-expansion-header spell-expansion-name" style="width: max-content;">
-                {{spell.name}}
-                <span matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.ritual" class="image" src={{images.spellRitual}}>
-                </span>
-                <span matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img *ngIf="spell.concentration" class="image" src={{images.spellConcentration}}>
-                </span>
-                <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
-                  matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src={{images.spellCoins}}>
-                </span>
-              </div>
-              <div class="spell-expansion-header spell-expansion-extra" style="width: max-content;">
-                {{spell.smallDisplay}}
-              </div>
-            </div> -->
-
-            <!-- <div fxLayout="column" style="width: 10px;"> -->
-            <div fxLayout="column" style="width: 0px;">
-
-              <div fxLayout="row" [style.width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 75 : 325">
-                <div class="spell-expansion-header spell-expansion-name"
-                  [style.max-width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 100 : 300">
-                  {{spell.name}}
-                </div>
-                <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
+            <ng-template #NameIcons>
+              <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
                   matTooltipShowDelay="{{tooltipDelay}}">
                   <img class="image" src={{images.spellRitual}}>
                 </div>
@@ -624,18 +598,51 @@
                   matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                   <img class="image" src={{images.spellCoins}}>
                 </div>
+            </ng-template>           
+
+            <!-- 1st row: name -->
+            <!-- <div fxLayout="column" style="width: 0px;">
+
+              <div fxLayout="row" [style.width.px]="expansionPanelWidth < 325 ? expansionPanelWidth - 75 : 250">
+                <div class="spell-expansion-header spell-expansion-name"
+                  [style.max-width.px]="expansionPanelWidth < 325 ? expansionPanelWidth - 100 : 225">
+                  {{spell.name}}
+                </div>
+                <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
               </div>
               <div class="spell-expansion-header spell-expansion-extra"
-                [style.width.px]="expansionPanelWidth < 400 ? expansionPanelWidth - 50 : 350">
+                [style.width.px]="expansionPanelWidth < 325 ? expansionPanelWidth - 50 : 275">
                 <div *ngIf="!screenSm">{{spell.smallDisplay}}</div>
                 <div *ngIf="screenSm">
-                  {{spell.school}}
-                  <span *ngIf="!screenLg"> - {{spell.componentsDisplayList}}</span>
+                  {{spell.school}} - {{spell.componentsDisplayList}}
                 </div>
               </div>
+              
+            </div> -->
+
+            <!-- 1st row: name -->
+            <div fxLayout="column" style="width: 250px;">
+
+              <div fxLayout="row">
+                <div class="spell-expansion-header spell-expansion-name">
+                  {{spell.name}}
+                </div>
+                <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
+              </div>
+              <div class="spell-expansion-header spell-expansion-extra">
+                <div *ngIf="!showColumnLevel">{{spell.smallDisplay}}</div>
+                <div *ngIf="showColumnLevel">
+                  {{spell.school}} - {{spell.componentsDisplayList}}
+                </div>
+              </div>
+
             </div>
 
-            <div *ngIf="screenSm" class="spell-expansion-properties" style="margin-left: 345px; width: 75px;">
+            <!-- Placeholder for name column -->
+            <!-- <div *ngIf="screenSm" class="spell-expansion-properties" style="width: 250px; margin-left: 0px;"></div> -->
+
+            <!-- 2nd row: level -->
+            <div *ngIf="showColumnLevel" class="spell-expansion-properties" style="width: 75px;">
               {{spell.levelDisplay}}
               <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
@@ -643,33 +650,51 @@
               </span>
             </div>
 
-            <div *ngIf="screenMd" class="spell-expansion-properties" style="margin-left: 60px; width: 115px;">
+            <!-- 3rd row: casting time -->
+            <div *ngIf="showColumnCastingTime" class="spell-expansion-properties" style="width: 115px;">
               {{spell.castingTimeDisplayList}}
               <span *ngIf="spell.ritual" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellRitual}}>
               </span>
             </div>
 
-            <div *ngIf="screenLg" class="spell-expansion-properties" style="margin-left: 60px; width: 85px;">
-              {{spell.componentsDisplayList}}
-              <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
-                matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src={{images.spellCoins}}>
-              </span>
-            </div>
-
-            <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 50px; width: 150px;">
+            <!-- 4th row: range -->
+            <div *ngIf="showColumnRange" class="spell-expansion-properties" style="width: 150px;">
+              <!-- <span>{{spell.range.displayRangeCategory}}</span> -->
               <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
               <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}}>{{spell.range.displayTextPart2}}</span>
             </div>
 
-            <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;">
+            <!-- 5th row: targets -->
+            <div *ngIf="showColumnFlex" class="spell-expansion-properties" style="width: 150px;">
+              <!-- Targets -->
+              <!-- <span *ngFor="let target of spell.targets">{{target}}</span> -->
+              <!-- Duration -->
               <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellConcentration}}>
               </span>
               {{spell.durationDisplayList}}
+              <!-- Components -->
+              <!-- {{spell.componentsDisplayList}}
+              <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+                matTooltipShowDelay="{{tooltipDelay}}">
+                <img class="image" src={{images.spellCoins}}>
+              </span> -->
+            </div>            
+
+            <!-- last row: tags -->
+            <div *ngIf="showColumnTags" class="spell-expansion-properties" style="width: 120px; margin-right: 15px; text-align: end;">
+              <span *ngFor="let tag of spell.tags" class="dot" [style.color]="tag.fontColor" [style.background]="tag.colorCode" matTooltip="{{tag.name}}">{{tag.abbreviation}}</span>
             </div>
+
+            <!-- <div *ngIf="screenXl" class="spell-expansion-properties" style="margin-left: 30px; width: 150px;">
+              <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
+                matTooltipShowDelay="{{tooltipDelay}}">
+                <img class="image" src={{images.spellConcentration}}>
+              </span>
+              {{spell.durationDisplayList}}
+            </div> -->
 
           </div>
 

@@ -18,6 +18,7 @@ export interface SpellRange{
     assetPath: string,
     displayTextPart1: string,
     displayTextPart2: string,
+    displayRangeCategory: string,
 }
 
 export class SpellRange implements SpellRange{
@@ -113,6 +114,8 @@ export class SpellRange implements SpellRange{
             this.rangeCategory = SpellRangeCategory.Extra; 
         }
 
+        //set display as text only depending on range category
+        this.displayRangeCategory = SpellRange.getCategoryDisplayText(this.rangeCategory);
     }
 
     public static getCategoryName(category: SpellRangeCategory): string{
