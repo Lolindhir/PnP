@@ -4,6 +4,7 @@ export const spellRitual = 'assets/images/spells/ritual.svg';
 export const spellConcentration = 'assets/images/spells/concentration.svg';
 export const spellCoins = 'assets/images/spells/coins.svg';
 export const spellArrow = 'assets/images/spells/arrow.svg';
+export const spellArrowGrey = 'assets/images/spells/arrow_grey.svg';
 export const spellCircle = 'assets/images/spells/circle_empty.svg';
 export const spellCube = 'assets/images/spells/cube.svg';
 export const spellCone = 'assets/images/spells/cone.svg';

@@ -217,7 +217,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     console.log("ngAfterViewInit called");
 
     this.setSize();
-    this.setPanelSize();
 
     //show content because everything is set up
     this.loading = false;
@@ -263,7 +262,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     this.spellsToShow = new Array();
     this.fetchMore();
-    this.setPanelSize();
+    this.setSize();
 
   }
 
@@ -513,7 +512,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
 
   addFilterMulti(options: SpellFilter[], selectedFilters: SpellFilter[]) {
-    
+
     options.forEach(optionFilter => {
 
       if(!selectedFilters.includes(optionFilter) && !this.filters.includes(optionFilter)){
@@ -706,42 +705,41 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
 
     this.setSize();
-    this.setPanelSize();
   }
 
   @HostListener('window:resize', ['$event']) onResize(event: any) {
 
     this.setSize();
-    this.setPanelSize();
   }
 
   setSize(){  
+        
     this.screenWidth = window.innerWidth;
     this.screenSm = this.screenWidth >= 600 ? true : false;
     this.screenMd = this.screenWidth >= 730 ? true : false;
     this.screenLg = this.screenWidth >= 900 ? true : false;
     this.screenXl = this.screenWidth >= 1280 ? true : false;
-  }
 
-  async setPanelSize(){
-    
-    //needed for turning of mobile devices
-    //await this.delay(100);
+    this.showColumnTags = this.screenWidth > 515;
+    this.showColumnLevel = this.screenWidth > 600;
+    this.showColumnCastingTime = this.screenWidth > 730;
+    this.showColumnRange = this.screenWidth > 910;
+    this.showColumnFlex = this.screenWidth > 1060;
 
-    if(this.expansionAccordion === undefined){
-      this.showColumnTags = false;
-      this.showColumnLevel = false;
-      this.showColumnCastingTime = false;
-      this.showColumnRange = false;
-    }
-    else {
-      var width = this.expansionAccordion.nativeElement.offsetWidth;
-      this.showColumnTags = width > 455;
-      this.showColumnLevel = width > 540;
-      this.showColumnCastingTime = width > 670;
-      this.showColumnRange = width > 850;
-      this.showColumnFlex = width > 1000;
-    }
+    // if(this.expansionAccordion === undefined){
+    //   this.showColumnTags = false;
+    //   this.showColumnLevel = false;
+    //   this.showColumnCastingTime = false;
+    //   this.showColumnRange = false;
+    // }
+    // else {
+    //   var width = this.expansionAccordion.nativeElement.offsetWidth;
+    //   this.showColumnTags = this.screenWidth > 455;
+    //   this.showColumnLevel = width > 540;
+    //   this.showColumnCastingTime = width;
+    //   this.showColumnRange = width > 850;
+    //   this.showColumnFlex = width > 1000;
+    // }
 
     this.loading = false;
   }

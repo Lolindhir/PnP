@@ -28,6 +28,7 @@
         </mat-panel-description>
       </mat-expansion-panel-header>
 
+
       <div fxLayout="row wrap" fxLayoutAlign="center center">
       <!-- <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutAlign.lt-sm="space-evenly center"> -->
 
@@ -581,7 +582,7 @@
         (closed)="onSpellExpansionPanelClosed(i)"
         [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
 
-        <!-- Template for icons next to the spell name-->
+        <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
           <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
@@ -597,12 +598,31 @@
             </div>
         </ng-template>
 
+        <!-- Template for first column -->
+        <ng-template #FirstColumn>
+          <div fxLayout="row">
+            <div class="spell-expansion-header spell-expansion-name">
+              {{spell.name}}
+            </div>
+            <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
+          </div>
+          <div class="spell-expansion-header spell-expansion-extra">
+            <div *ngIf="!showColumnLevel">
+              <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                <img class="image" style="max-height: 9px;" src={{images.spellArrowGrey}}>
+              </span>{{spell.smallDisplay}}
+            </div>
+            <div *ngIf="showColumnLevel">
+              {{spell.school}} - {{spell.componentsDisplayList}}
+            </div>
+          </div>
+        </ng-template>
+
         <!-- Template for spell range -->
         <ng-template #SpellRange>
           <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
           <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
         </ng-template>  
-
 
         <mat-expansion-panel-header>
 
@@ -631,26 +651,14 @@
             <!-- 1st row: name -->
             <div fxLayout="column" style="width: 250px;">
 
-              <div fxLayout="row">
-                <div class="spell-expansion-header spell-expansion-name">
-                  {{spell.name}}
-                </div>
-                <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
-              </div>
-              <div class="spell-expansion-header spell-expansion-extra">
-                <div *ngIf="!showColumnLevel">{{spell.smallDisplay}}</div>
-                <div *ngIf="showColumnLevel">
-                  {{spell.school}} - {{spell.componentsDisplayList}}
-                </div>
-              </div>
-
+              <ng-template [ngTemplateOutlet]="FirstColumn"></ng-template>
+              
             </div>
 
             <!-- 2nd row: level -->
             <div *ngIf="showColumnLevel" class="spell-expansion-properties" style="width: 75px;">
               {{spell.levelDisplay}}
-              <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}"
-                matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" style="max-height: 10px;" src={{images.spellArrow}}>
               </span>
             </div>
