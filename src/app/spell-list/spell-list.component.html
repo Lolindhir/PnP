@@ -581,24 +581,32 @@
         (closed)="onSpellExpansionPanelClosed(i)"
         [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
 
+        <!-- Template for icons next to the spell name-->
+        <ng-template #NameIcons>
+          <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
+              matTooltipShowDelay="{{tooltipDelay}}">
+              <img class="image" src={{images.spellRitual}}>
+            </div>
+            <div *ngIf="spell.concentration" class="spell-expansion-icon"
+              matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+              <img class="image" src={{images.spellConcentration}}>
+            </div>
+            <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
+              matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+              <img class="image" src={{images.spellCoins}}>
+            </div>
+        </ng-template>
+
+        <!-- Template for spell range -->
+        <ng-template #SpellRange>
+          <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
+          <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
+        </ng-template>  
+
+
         <mat-expansion-panel-header>
 
-          <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">
-
-            <ng-template #NameIcons>
-              <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
-                  matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src={{images.spellRitual}}>
-                </div>
-                <div *ngIf="spell.concentration" class="spell-expansion-icon"
-                  matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src={{images.spellConcentration}}>
-                </div>
-                <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
-                  matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <img class="image" src={{images.spellCoins}}>
-                </div>
-            </ng-template>           
+          <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">          
 
             <!-- 1st row: name -->
             <!-- <div fxLayout="column" style="width: 0px;">
@@ -657,9 +665,7 @@
 
             <!-- 4th row: range -->
             <div *ngIf="showColumnRange" class="spell-expansion-properties" style="width: 150px;">
-              <!-- <span>{{spell.range.displayRangeCategory}}</span> -->
-              <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
-              <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}}>{{spell.range.displayTextPart2}}</span>
+              <ng-template [ngTemplateOutlet]="SpellRange"></ng-template>
             </div>
 
             <!-- 5th row: targets -->
@@ -760,8 +766,7 @@
             <div>
               <span class="spell-property-denotation">Range (Area):</span>
               <span class="spell-property-description">
-                <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
-                <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}}>{{spell.range.displayTextPart2}}</span>
+                <ng-template [ngTemplateOutlet]="SpellRange"></ng-template>
               </span>
             </div>
 

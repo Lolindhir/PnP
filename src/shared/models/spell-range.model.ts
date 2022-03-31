@@ -16,6 +16,7 @@ export interface SpellRange{
     displayTextComplete: string,
     containsAsset: boolean,
     assetPath: string,
+    assetTooltip: string;
     displayTextPart1: string,
     displayTextPart2: string,
     displayRangeCategory: string,
@@ -38,34 +39,42 @@ export class SpellRange implements SpellRange{
 
         if(textLower.includes('circle')){
             this.assetPath = imagePaths.spellCircle;
+            this.assetTooltip = 'Circle';
             var parts = this.displayTextComplete.split('circle', 2);
         }
         else if(textLower.includes('cone')){
             this.assetPath = imagePaths.spellCone;
+            this.assetTooltip = 'Cone';
             var parts = this.displayTextComplete.split('cone', 2);
         }
         else if(textLower.includes('cube')){
             this.assetPath = imagePaths.spellCube;
+            this.assetTooltip = 'Cube';
             var parts = this.displayTextComplete.split('cube', 2);
         }
         else if(textLower.includes('cylinder')){
             this.assetPath = imagePaths.spellCylinder;
+            this.assetTooltip = 'Cylinder';
             var parts = this.displayTextComplete.split('cylinder', 2);
         }
         else if(textLower.includes('line')){
             this.assetPath = imagePaths.spellLine;
+            this.assetTooltip = 'Line';
             var parts = this.displayTextComplete.split('line', 2);
         }
         else if(textLower.includes('square')){
             this.assetPath = imagePaths.spellSquare;
+            this.assetTooltip = 'Square';
             var parts = this.displayTextComplete.split('square', 2);
         }
         else if(textLower.includes('sphere')){
             this.assetPath = imagePaths.spellSphere;
+            this.assetTooltip = 'Sphere';
             var parts = this.displayTextComplete.split('sphere', 2);
         }
         else if(textLower.includes('radius')){
             this.assetPath = imagePaths.spellSphere;
+            this.assetTooltip = 'Sphere';
             var parts = this.displayTextComplete.split('radius', 2);
         }
 
