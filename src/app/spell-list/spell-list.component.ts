@@ -13,6 +13,7 @@ import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
 import * as imagePaths from '@shared/imagePaths';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-spell-list',
@@ -24,6 +25,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   //filter stuff
   advancedFiltersPanelOpen: boolean = false;
   filters: SpellFilter[] = new Array();
+  filtersAsString: string = '';
   filterName: string = '';
   selectedFiltersLevel: SpellFilter[] = new Array();
   selectedFiltersSchool: SpellFilter[] = new Array();
@@ -130,7 +132,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   expansionAccordion: ElementRef;
 
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, private cookieService: CookieService) {
 
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
@@ -206,6 +208,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     console.log("ngOnInit called");    
 
+    //load cookies
+    if(this.cookieService.get('TranslateAll') === 'true'){
+      this.onTranslateAll();
+    }
+    if(this.cookieService.get('SortByName') === 'true'){
+      this.onSortOnlyByAlphabet();
+    }
+
     //add first spells to show list
     this.onChange();
     this.fetchMore();
@@ -254,6 +264,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   onChange() {
     
+    //set cookies
+
+    this.cookieService.set('Filters', 'Test');
+
     this.expandedPanelIndex = -1;
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
 
@@ -631,8 +645,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   onTranslateAll(){
 
+    console.log('onTranslateAll called')
+
     //change global variable
     this.translateAll = !this.translateAll;
+    this.cookieService.set('TranslateAll', String(this.translateAll), 365);
 
     for(var spell of this.spells){
 
@@ -654,6 +671,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //change global variable
     this.sortByName = !this.sortByName;
+    this.cookieService.set('SortByName', String(this.sortByName), 365);
 
     this.sortMasterSpells();
    
