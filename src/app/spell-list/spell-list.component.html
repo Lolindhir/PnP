@@ -3,6 +3,9 @@
 
     <div div fxLayout="row" fxLayoutAlign="end center">
       <div></div>
+      <button color="primary" mat-button (click)="openDialog()" matTooltip="Settings">
+        Settings <mat-icon>settings</mat-icon>
+      </button>
       <button color="primary" mat-button (click)="onTranslateAll()"
         matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
         {{translateAll ? 'English' : 'Deutsch'}} <mat-icon>translate</mat-icon>
@@ -577,8 +580,8 @@
 
     <mat-accordion #expansionAccordion hideToggle="false" multi="false" style="display: block;">
 
-      <mat-expansion-panel #panel *ngFor="let spell of spellsToShow; let i = index"
-        [expanded]="i === expandedPanelIndex" (opened)="expandedPanelIndex = i"
+      <mat-expansion-panel #panel id="panel{{i}}" *ngFor="let spell of spellsToShow; let i = index"
+        [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
         [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
 

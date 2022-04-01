@@ -1,0 +1,14 @@
+<div mat-dialog-title>Settings</div>
+<div mat-dialog-content>
+    <div fxLayout="column" class="filter-button-select">
+        <div style="text-align: center;">Random Spells</div>
+        <div style="text-align: center;">
+          <mat-slide-toggle [(ngModel)]="data.showRandomControls" color="primary">
+          </mat-slide-toggle>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="{showRandomControls: data.showRandomControls}" kFocusInitial>Save</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+</div>

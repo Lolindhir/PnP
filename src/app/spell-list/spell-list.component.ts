@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
@@ -14,6 +14,13 @@ import { retry, catchError } from 'rxjs/operators';
 import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
 import * as imagePaths from '@shared/imagePaths';
 import { CookieService } from 'ngx-cookie-service';
+import { ViewportScroller } from '@angular/common';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+export interface SettingsData {
+  showRandomControls: boolean;
+}
+
 
 @Component({
   selector: 'app-spell-list',
@@ -25,7 +32,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   //filter stuff
   advancedFiltersPanelOpen: boolean = false;
   filters: SpellFilter[] = new Array();
-  filtersAsString: string = '';
   filterName: string = '';
   selectedFiltersLevel: SpellFilter[] = new Array();
   selectedFiltersSchool: SpellFilter[] = new Array();
@@ -132,7 +138,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   expansionAccordion: ElementRef;
 
 
-  constructor(private httpClient: HttpClient, private cookieService: CookieService) {
+  constructor(private httpClient: HttpClient, 
+    private cookieService: CookieService, 
+    private viewPortScroller: ViewportScroller,
+    private dialog: MatDialog) {
 
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
@@ -263,10 +272,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   onChange() {
-    
-    //set cookies
-
-    this.cookieService.set('Filters', 'Test');
 
     this.expandedPanelIndex = -1;
     this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
@@ -620,6 +625,18 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   // }
 
 
+  onSpellExpansionPanelOpened(index: number){
+
+    this.expandedPanelIndex = index;
+
+    // var element = document.getElementById("panel" + index);
+    // element?.scrollIntoView({behavior: "smooth", block: "start"}); //{behavior: "smooth", block: "start"}
+    
+    // console.log('panel' + index);
+    // this.viewPortScroller.scrollToAnchor('panel' + index);
+
+  }
+
   onSpellExpansionPanelClosed(index: number){
 
     if(this.expandedPanelIndex == index){
@@ -794,4 +811,43 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(SpellListSettingsDialog, {
+      //width: '250px',
+      disableClose: true,
+      data: {showRandomControls: this.showRandomControls},
+    });
+
+    dialogRef.afterClosed().subscribe((result: SettingsData) => {
+      
+      if(result === undefined){
+        return;
+      }
+
+      if(result.showRandomControls === true){
+        this.showRandomControls = true;
+        this.onRandomNumberChanged(0);
+      }
+      else{
+        this.showRandomControls = false;
+        this.onRandomNumberChanged(0);
+      }
+    });
+  }
+
+}
+
+@Component({
+  selector: 'spell-list-settings-dialog',
+  templateUrl: 'spell-list-settings-dialog.html',
+})
+export class SpellListSettingsDialog {
+  constructor(
+    public dialogRef: MatDialogRef<SpellListSettingsDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: SettingsData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 }

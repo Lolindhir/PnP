@@ -5,6 +5,7 @@
 - Cookies nutzen zum Speichern von Settings
 - Settings-Im-/Export (Selected/Filtered Spells, Favorited/Known Spells, Prepared Spells, Always Prepared Spells, Number of Prepared/Known Spells)
 - Zauber-Presets Im-/Export einbauen
+- Prepared Spells immer oben (Sortierung Prepared > Level > Name)
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
@@ -14,4 +15,5 @@
 
 # General
 - Animation während Seite geladen wird
+- Scroll to Panel, wenn Header außerhalb des sichtbaren Bereiches
 - Refactoring HTML (Templates verwenden)

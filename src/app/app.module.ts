@@ -20,11 +20,13 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip'; 
+import { MatDialogModule } from '@angular/material/dialog'; 
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
 import { MainBodyComponent } from '@components/main-body/main-body.component';
 import { SpellListComponent } from '@components/spell-list/spell-list.component';
+import { SpellListSettingsDialog } from '@components/spell-list/spell-list.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -36,6 +38,7 @@ import { FeatListComponent } from './feat-list/feat-list.component';
     MainHeaderComponent,
     MainBodyComponent,
     SpellListComponent,
+    SpellListSettingsDialog,
     SpellFilterPipe,
     HomeComponent,
     FeatListComponent,
@@ -61,6 +64,7 @@ import { FeatListComponent } from './feat-list/feat-list.component';
     MatCheckboxModule,
     MatMenuModule,
     MatTooltipModule,
+    MatDialogModule,
     ScrollingModule,
     AppRoutingModule,
   ],
