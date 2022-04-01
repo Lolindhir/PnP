@@ -19,6 +19,8 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 
 export interface SettingsData {
   showRandomControls: boolean;
+  translateAll: boolean;
+  sortByName: boolean;
 }
 
 
@@ -112,15 +114,26 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   //other global stuff
   images = imagePaths;
+  settings: SettingsData = {
+    showRandomControls: false,
+    sortByName: false,
+    translateAll: false,
+  };
+  settingsChanged = {
+    value: false,
+    get Var(){
+      return this.value;
+    },
+    set Var(value){
+      this.value = value;
+    }
+  }
   highlightColor: string = 'lightgrey';
   highlightFilter: boolean = false;
-  sortByName: boolean = false;
-  translateAll: boolean = false;
   loading: boolean = true;
   expandedPanelIndex: number = -1;
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
-  showRandomControls: boolean = false;
   showTags: boolean = true;
   tooltipDelay = 500;
   screenWidth: number = -1;
@@ -146,6 +159,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
+    //load settings from cookies
+    this.loadSettingsFromCookies();
+
     //get screen width
     this.screenWidth = window.innerWidth;
     this.setSize();
@@ -170,6 +186,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //sort spells
     this.sortMasterSpells();
+
+    //translate spells
+    this.translateAllMasterSpells();
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -217,14 +236,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     console.log("ngOnInit called");    
 
-    //load cookies
-    if(this.cookieService.get('TranslateAll') === 'true'){
-      this.onTranslateAll();
-    }
-    if(this.cookieService.get('SortByName') === 'true'){
-      this.onSortOnlyByAlphabet();
-    }
-
     //add first spells to show list
     this.onChange();
     this.fetchMore();
@@ -262,13 +273,25 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }  
   
   sortMasterSpells() {
-
-    if(this.sortByName){
+    if(this.settings.sortByName){
       this.spells.sort(Spell.compareNameFirst);
     }
     else{
       this.spells.sort(Spell.compareLevelFirst);
     }
+  }
+
+  translateAllMasterSpells(){
+    for(var spell of this.spells){
+      if(this.settings.translateAll && spell.translatable && !spell.translated){
+        spell.translated = true;
+        spell.descriptionDisplay = spell.translation;
+      }
+      if(!this.settings.translateAll && spell.translated){
+        spell.translated = false;
+        spell.descriptionDisplay = spell.description;
+      }
+    } 
   }
 
   onChange() {
@@ -660,42 +683,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
-  onTranslateAll(){
-
-    console.log('onTranslateAll called')
-
-    //change global variable
-    this.translateAll = !this.translateAll;
-    this.cookieService.set('TranslateAll', String(this.translateAll), 365);
-
-    for(var spell of this.spells){
-
-      if(this.translateAll && spell.translatable && !spell.translated){
-        spell.translated = true;
-        spell.descriptionDisplay = spell.translation;
-      }
-
-      if(!this.translateAll && spell.translated){
-        spell.translated = false;
-        spell.descriptionDisplay = spell.description;
-      }
-
-    }    
-
-  }
-
-  onSortOnlyByAlphabet(){
-
-    //change global variable
-    this.sortByName = !this.sortByName;
-    this.cookieService.set('SortByName', String(this.sortByName), 365);
-
-    this.sortMasterSpells();
-   
-    this.onChange();
-    
-  }
-
   onHighlightFilter(){
 
     //change global variable
@@ -811,27 +798,43 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
+  loadSettingsFromCookies(){
+
+    this.settings.showRandomControls = this.cookieService.get('RandomControls') === 'true' ? true : false;
+    this.settings.sortByName = this.cookieService.get('SortByName') === 'true' ? true : false;
+    this.settings.translateAll = this.cookieService.get('TranslateAll') === 'true' ? true : false;
+
+  }
+
+  saveSettings(): void{ 
+
+    this.cookieService.set('RandomControls', String(this.settings.showRandomControls), 365);
+    this.cookieService.set('SortByName', String(this.settings.sortByName), 365);
+    this.cookieService.set('TranslateAll', String(this.settings.translateAll), 365); 
+
+  }
+
   openDialog(): void {
     const dialogRef = this.dialog.open(SpellListSettingsDialog, {
       //width: '250px',
-      disableClose: true,
-      data: {showRandomControls: this.showRandomControls},
+      //height: '300px',
+      //disableClose: true,
+      data: this.settings,
     });
 
     dialogRef.afterClosed().subscribe((result: SettingsData) => {
       
-      if(result === undefined){
-        return;
-      }
+      //set settings
+      this.saveSettings();
 
-      if(result.showRandomControls === true){
-        this.showRandomControls = true;
-        this.onRandomNumberChanged(0);
-      }
-      else{
-        this.showRandomControls = false;
-        this.onRandomNumberChanged(0);
-      }
+      //act on changes
+      this.onRandomNumberChanged(0);
+      this.sortMasterSpells();
+      this.translateAllMasterSpells();
+
+      //trigger filtering et al
+      this.onChange();      
+
     });
   }
 
@@ -840,6 +843,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 @Component({
   selector: 'spell-list-settings-dialog',
   templateUrl: 'spell-list-settings-dialog.html',
+  styleUrls: ['./spell-list-settings-dialog.scss', './spell-list.component.scss']
 })
 export class SpellListSettingsDialog {
   constructor(

@@ -6,14 +6,14 @@
       <button color="primary" mat-button (click)="openDialog()" matTooltip="Settings">
         Settings <mat-icon>settings</mat-icon>
       </button>
-      <button color="primary" mat-button (click)="onTranslateAll()"
+      <!-- <button color="primary" mat-button (click)="onTranslateAll()"
         matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
         {{translateAll ? 'English' : 'Deutsch'}} <mat-icon>translate</mat-icon>
       </button>
       <button color="primary" mat-button (click)="onSortOnlyByAlphabet()"
         matTooltip="{{sortByName ? 'Sort spells first by level and then by name' : 'Sort spells first by name and then by level'}}">
         {{sortByName ? 'Level > Name' : 'Name > Level'}} <mat-icon>sort_by_alpha</mat-icon>
-      </button>
+      </button> -->
       <!-- <button color="primary" mat-button (click)="onHighlightFilter()"
         matTooltip="{{highlightFilter ? 'Do not show the filtered spells' : 'Highlight the filtered spells'}}">
         {{highlightFilter ? 'Don\'t show' : 'Highlight'}} <mat-icon>filter_alt</mat-icon>
@@ -475,16 +475,7 @@
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-button-select">
-          <div style="text-align: center;">Random Spells</div>
-          <div style="text-align: center;">
-            <mat-slide-toggle [(ngModel)]="showRandomControls" (change)="onRandomNumberChanged(0)" color="primary">
-            </mat-slide-toggle>
-          </div>
-        </div>
-        
+        </div>        
 
         <!-- <div fxLayout="column" class="filter-button-select">
           <div style="text-align: center;">Tags</div>
@@ -541,7 +532,7 @@
 
       </div>
 
-      <div *ngIf="showRandomControls" fxLayout="row" style='padding-bottom: 10px;'>
+      <div *ngIf="settings.showRandomControls" fxLayout="row" style='padding-bottom: 10px;'>
 
         <div>
           <button mat-raised-button [matMenuTriggerFor]="menu">{{stringOfRandomSpells}}</button>
