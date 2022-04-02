@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
 import { Spell, RawSpell } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
@@ -822,19 +822,21 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       data: this.settings,
     });
 
-    dialogRef.afterClosed().subscribe((result: SettingsData) => {
-      
-      //set settings
-      this.saveSettings();
-
-      //act on changes
-      this.onRandomNumberChanged(0);
-      this.sortMasterSpells();
+    dialogRef.componentInstance.onTranslate.subscribe(() => {
       this.translateAllMasterSpells();
+    });
 
-      //trigger filtering et al
-      this.onChange();      
+    dialogRef.componentInstance.onSort.subscribe(() => {
+      this.sortMasterSpells();
+      this.onChange();  
+    });
 
+    dialogRef.componentInstance.onRandom.subscribe(() => {
+      this.onRandomNumberChanged(0);
+    });
+
+    dialogRef.beforeClosed().subscribe(() => {
+      this.saveSettings();
     });
   }
 
@@ -846,10 +848,27 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   styleUrls: ['./spell-list-settings-dialog.scss', './spell-list.component.scss']
 })
 export class SpellListSettingsDialog {
+  
+  onRandom = new EventEmitter();
+  onTranslate = new EventEmitter();
+  onSort = new EventEmitter();
+  
   constructor(
     public dialogRef: MatDialogRef<SpellListSettingsDialog>,
     @Inject(MAT_DIALOG_DATA) public data: SettingsData,
   ) {}
+
+  onRandomClick() {
+    this.onRandom.emit();
+  }
+
+  onTranslateClick() {
+    this.onTranslate.emit();
+  }
+
+  onSortClick() {
+    this.onSort.emit();
+  }
 
   onNoClick(): void {
     this.dialogRef.close();

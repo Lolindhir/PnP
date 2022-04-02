@@ -2,30 +2,30 @@
 <div>
     <div fxLayout="column">
         <div fxLayout="row">
-            <mat-icon color="primary" class="icon">shuffle</mat-icon>
-            <div class="toggle">
-                <mat-slide-toggle [(ngModel)]="data.showRandomControls" color="primary">
-                </mat-slide-toggle>
-            </div>
-            <div class="description">show random spells option</div>
-        </div>
-        <div class="medium-gap"></div>
-        <div fxLayout="row">
             <mat-icon color="primary" class="icon">translate</mat-icon>
             <div class="toggle">
-                <mat-slide-toggle [(ngModel)]="data.translateAll" color="primary">
+                <mat-slide-toggle [(ngModel)]="data.translateAll" (ngModelChange)="onTranslateClick()" color="primary">
                 </mat-slide-toggle>
             </div>
-            <div class="description">spell descriptions in german</div>
+            <div class="description">descriptions in german</div>
         </div>
-        <div class="medium-gap"></div>
+        <div class="small-gap"></div>
         <div fxLayout="row">
             <mat-icon color="primary" class="icon">sort_by_alpha</mat-icon>
             <div class="toggle">
-                <mat-slide-toggle [(ngModel)]="data.sortByName" color="primary">
+                <mat-slide-toggle [(ngModel)]="data.sortByName" (ngModelChange)="onSortClick()" color="primary">
                 </mat-slide-toggle>
             </div>
             <div class="description">sort by name before level</div>
+        </div>        
+        <div class="small-gap"></div>
+        <div fxLayout="row">
+            <mat-icon color="primary" class="icon">shuffle</mat-icon>
+            <div class="toggle">
+                <mat-slide-toggle [(ngModel)]="data.showRandomControls" (ngModelChange)="onRandomClick()" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="description">show random spells option</div>
         </div>
     </div>
 </div>
