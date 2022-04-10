@@ -2,9 +2,18 @@
   <div *ngIf="!loading" class="container">
 
     <div div fxLayout="row" fxLayoutAlign="end center">
-      <div></div>
-      <button color="primary" mat-button (click)="openDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
-        Settings <mat-icon>settings</mat-icon>
+      <div *ngIf="settings.characterMode && characterManagementActivated">
+        <button color="primary" mat-button (click)="openCharacterDialog()" matTooltip="Character Management" matTooltipShowDelay="{{tooltipDelay}}"
+          style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+          [style.max-width.px]="screenWidth - 150">
+          <span>
+            {{characterData.selectedCharacter != undefined ? characterData.selectedCharacter.name : '&lt;choose character&gt;'}}
+          </span>
+          <mat-icon>manage_accounts</mat-icon>
+        </button>
+      </div>      
+      <button color="primary" mat-button (click)="openSettingsDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
+        <mat-icon>settings</mat-icon>
       </button>
       <!-- <button color="primary" mat-button (click)="onTranslateAll()"
         matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
@@ -566,30 +575,57 @@
 
     </div>
 
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && (characterData.selectedCharacter.preparedCasting || characterData.selectedCharacter.preparedCantripCasting || characterData.selectedCharacter.limitedSpells.length > 0)" fxLayout="row"> 
+
+      <div fxLayout="row wrap" fxLayoutAlign="left" *ngIf="characterData.selectedCharacter.preparedCasting || characterData.selectedCharacter.preparedCantripCasting">
+        <div>
+            <mat-slide-toggle [(ngModel)]="characterData.selectedCharacter.adventureMode" (ngModelChange)="onAdventureMode()" color="primary">
+            </mat-slide-toggle>
+        </div>
+        <div class="dialog-description"></div>
+        <mat-icon color="primary" class="dialog-icon">auto_fix_high</mat-icon>
+      </div> 
+
+      <div *ngIf="characterData.selectedCharacter.adventureMode">
+        <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon>auto_mode</mat-icon>
+          <span>
+            Refresh ({{characterData.selectedCharacter.usedSpells.length}})
+          </span>
+        </button>
+      </div>
+
+    </div>
+
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
 
-    <mat-accordion #expansionAccordion hideToggle="false" multi="false" style="display: block;">
+    <mat-accordion #expansionAccordion hideToggle="false" multi="false" style="display: block; border-color: red; border-width: 2px;"
+    [ngStyle]="{'border-style' : showRedBorder() ? 'solid' : ''}">
 
       <mat-expansion-panel #panel id="panel{{i}}" *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
+        [disabled]="greyOutUsed(spell)"
         [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
           <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
-              <img class="image" src={{images.spellRitual}}>
-            </div>
-            <div *ngIf="spell.concentration" class="spell-expansion-icon"
+            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
+            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
+          </div>
+          <div *ngIf="spell.concentration" class="spell-expansion-icon"
               matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-              <img class="image" src={{images.spellConcentration}}>
-            </div>
-            <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
+            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellConcentration}}></span>
+            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellConcentrationGrey}}></span>
+          </div>
+          <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
               matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-              <img class="image" src={{images.spellCoins}}>
-            </div>
+            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellCoins}}></span>
+            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellCoinsGrey}}></span>
+          </div>
         </ng-template>
 
         <!-- Template for first column -->
@@ -787,7 +823,62 @@
               <span class="spell-property-description">{{spell.attacksSavesDisplay}}</span>
             </div>
 
-            <div class="big-top-gap" [innerHTML]="spell.descriptionDisplay"></div>
+            <!--shows known/prepared/always information-->
+            <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" class="small-top-gap" fxLayout="row" fxLayoutAlign="end">
+              
+              <!--used-->
+              <div>
+                <button color="primary" class="infobutton" mat-icon-button (click)="onUsed(spell)"
+                  matTooltip="{{spell.prepared ? 'used' : 'not used'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.used"><mat-icon>pause_circle_filled</mat-icon></span>
+                  <span *ngIf="!spell.used"><mat-icon>pause_circle_outline</mat-icon></span>
+                </button>
+              </div> 
+              <!--prepared-->
+              <div>
+                <button color="primary" class="infobutton" mat-icon-button (click)="onPreparation(spell)"
+                  matTooltip="{{spell.prepared ? 'prepared' : 'not prepared'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.prepared"><mat-icon>label</mat-icon></span>
+                  <span *ngIf="!spell.prepared"><mat-icon>label_outline</mat-icon></span>
+                </button>
+              </div>              
+              <!--known-->
+              <div>
+                <button color="primary" class="infobutton" mat-icon-button (click)="onKnown(spell)"
+                  matTooltip="{{spell.known ? 'known' : 'not known'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.known"><mat-icon>bookmark</mat-icon></span>
+                  <span *ngIf="!spell.known"><mat-icon>bookmark_border</mat-icon></span>
+                </button>
+              </div>
+              <!--ritualCasting-->
+              <div *ngIf="spell.ritual && characterData.selectedCharacter.ritualCaster">
+                <button color="primary" class="infobutton" mat-icon-button (click)="onRitual(spell)"
+                  matTooltip="{{spell.ritualCast ? 'ritual cast' : 'not ritual cast'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.ritualCast"><mat-icon>menu_book</mat-icon></span>
+                  <span *ngIf="!spell.ritualCast"><mat-icon>import_contacts</mat-icon></span>
+                </button>
+              </div>
+              <!--limited-->
+              <div>
+                <button color="primary" class="infobutton" mat-icon-button (click)="onLimited(spell)"
+                  matTooltip="{{spell.limited ? 'limited' : 'not limited'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.limited"><mat-icon>repeat_one_on</mat-icon></span>
+                  <span *ngIf="!spell.limited"><mat-icon>repeat_one</mat-icon></span>
+                </button>
+              </div>
+              <!--always-->
+              <div>
+                <button color="primary" class="infobutton" mat-icon-button (click)="onAlways(spell)"
+                  matTooltip="{{spell.always ? 'special' : 'not special'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                  <span *ngIf="spell.always"><mat-icon>star</mat-icon></span>
+                  <span *ngIf="!spell.always"><mat-icon>star_border</mat-icon></span>
+                </button>
+              </div>
+
+            </div>
+
+            <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" [innerHTML]="spell.descriptionDisplay"></div>
+            <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined" class="big-top-gap" [innerHTML]="spell.descriptionDisplay"></div>
 
             <div *ngIf="!spell.translatable" class="medium-top-gap">
               <div class="source-style">

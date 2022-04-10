@@ -1,0 +1,227 @@
+<div [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
+
+  <div mat-dialog-title><mat-icon>manage_accounts</mat-icon> Character Management</div>
+  <div>
+      <div fxLayout="column">
+          
+          <div *ngIf="!addMode">
+              
+              <div fxLayout="row">
+
+                  <div>
+                      <mat-form-field appearance="fill" style="width: 150px;">
+                      <mat-select [(ngModel)]="data.selectedCharacter"
+                          (ngModelChange)="onCharacterChange()">
+                          <mat-option *ngFor="let character of data.characterList" [value]="character">
+                          {{character.name}}</mat-option>
+                      </mat-select>
+                      </mat-form-field>
+                  </div>
+          
+                  <div>
+                      <button color="primary" mat-button (click)="addMode = true">
+                        <mat-icon>person_add</mat-icon> New
+                      </button>
+                  </div>            
+      
+              </div>
+      
+              <div *ngIf="data.selectedCharacter != undefined">
+
+                <div><mat-divider></mat-divider></div>
+        
+                <div class="small-top-gap"></div>
+
+                <div *ngIf="!nameChangeMode" fxLayout="row">
+                  <div>
+                    <mat-form-field appearance="legacy" style="width: 130px">
+                      <input [disabled]="true" matInput name="name" [(ngModel)]="data.selectedCharacter.name">
+                    </mat-form-field>
+                  </div>        
+                  <div>
+                    <button color="primary" mat-button (click)="onNameChangeCalled()">
+                      <mat-icon>edit</mat-icon>
+                    </button>
+                  </div>         
+                </div>
+
+                <div *ngIf="nameChangeMode" fxLayout="row">
+                  <div>
+                    <mat-form-field appearance="legacy" style="width: 130px">
+                      <input matInput name="name" [(ngModel)]="changedName">
+                    </mat-form-field>
+                  </div>        
+                  <div>
+                    <button color="primary" mat-icon-button (click)="onNameChangeDone()">
+                      <mat-icon>done</mat-icon>
+                    </button>
+                  </div>
+                  <div>
+                    <button color="primary" mat-icon-button (click)="onNameChangeCanceled()">
+                      <mat-icon>clear</mat-icon>
+                    </button>
+                  </div>       
+                </div>
+
+                <h4>Knows Finite Number Of</h4>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.knownCantripCasting" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <mat-icon color="primary" class="dialog-icon">bookmark_border</mat-icon>
+                  <div class="dialog-description character-cantrip">Cantrips</div>
+                  <input [disabled]="!data.selectedCharacter.knownCantripCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxCantripsKnown" (ngModelChange)="onDetailChange()">
+                </div> 
+
+                <div class="small-top-gap"></div>
+
+                <div fxLayout="row">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.knownCasting" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <mat-icon color="primary" class="dialog-icon">bookmark_border</mat-icon>
+                  <div class="dialog-description character-spell">Spells</div>
+                  <input [disabled]="!data.selectedCharacter.knownCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxKnown" (ngModelChange)="onDetailChange()">
+                </div>            
+              
+                <div class="small-top-gap"></div>
+
+                <div fxLayout="row">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.ritualCaster" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <mat-icon color="primary" class="dialog-icon">import_contacts</mat-icon>
+                  <div class="dialog-description character-large">Ritual Casts (Feat)</div>
+                </div>
+
+                <div class="medium-top-gap"></div>
+
+                <h4>Has To Prepare</h4>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.preparedCantripCasting" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <mat-icon color="primary" class="dialog-icon">label_outline</mat-icon>
+                  <div class="dialog-description character-cantrip">Cantrips</div>
+                  <input [disabled]="!data.selectedCharacter.preparedCantripCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxCantripsPrepared" (ngModelChange)="onDetailChange()">
+                </div>
+
+                <div class="small-top-gap"></div>
+
+                <div fxLayout="row">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.preparedCasting" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <mat-icon color="primary" class="dialog-icon">label_outline</mat-icon>
+                  <div class="dialog-description character-spell">Spells</div>
+                  <input [disabled]="!data.selectedCharacter.preparedCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxPrepared" (ngModelChange)="onDetailChange()">
+                </div>                
+
+                <div class="small-top-gap"></div>
+
+                <div fxLayout="row">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [disabled]="!data.selectedCharacter.preparedCasting" [(ngModel)]="data.selectedCharacter.ritualCastingUnprepared" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description character-large" [ngStyle]="{'color' : !data.selectedCharacter.preparedCasting ? 'grey' : 'black'}">Except Rituals</div>
+                </div>  
+
+                <div class="medium-top-gap"></div>
+
+                <h4>Viewing Options</h4>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.preparedOnTop" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">prepared always on top</div>
+                </div>
+
+                <div class="medium-gap"></div>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.dontShowUsed" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">don't show used</div>
+                </div>
+
+                <div class="medium-gap"></div>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.allSpellsInOverview" (ngModelChange)="onCharacterChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">all spells in overview</div>
+                </div>
+
+                <div class="big-gap"></div>
+
+                <div><mat-divider></mat-divider></div>
+        
+                <div class="big-top-gap"></div>
+
+                <div>
+                    <button color="primary" mat-button (click)="onCharacterDelete()">
+                        <mat-icon>delete_forever</mat-icon> Delete Character
+                    </button>
+                </div>
+
+              </div>
+
+          </div>        
+
+          <div *ngIf="addMode">
+
+              <div>
+                <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
+                  <mat-label>
+                    Character Name
+                  </mat-label>
+                  <input matInput name="name" [(ngModel)]="newName">
+                </mat-form-field>
+              </div>
+
+              <div fxLayout="column" class="filter-select">
+                  <div>Use Preset</div>
+                  <mat-form-field appearance="fill">
+                    <mat-select [(ngModel)]="selectedPreset">
+                      <mat-option *ngFor="let preset of data.presets" [value]="preset">
+                        {{preset.name}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </div>
+
+              <div fxLayout="row">
+
+                  <div>
+                      <button color="primary" mat-button (click)="onCharacterCreated()">
+                        <mat-icon>add_circle</mat-icon> Create
+                      </button>
+                  </div>
+
+                  <div>
+                      <button color="primary" mat-button (click)="addMode = false">
+                        <mat-icon>cancel</mat-icon> Cancel
+                      </button>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+
+</div>

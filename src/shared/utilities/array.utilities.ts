@@ -40,12 +40,27 @@ export class ArrayUtilities{
       return 0;
   }
 
-    public static removeFromArray(array: any[], key: any){
-        const index = array.indexOf(key, 0);
-        if (index > -1) {
-            array.splice(index, 1);
-        }
+  public static stringArrayToString(array: string[]): string{
+    
+    var returnString: string = '';
+    for(let i = 0; i < array.length; i++){
+      returnString = i === 0 ? array[0] : returnString + '$' + array[i]; 
     }
+    return returnString;
+  }
+
+  public static stringToStringArray(rawString: string): string[]{
+    return rawString === undefined || rawString === '' ? new Array() : rawString.split('$');
+  }
+
+  public static removeFromArray(array: any[], key: any){
+      const index = array.indexOf(key, 0);
+      if (index > -1) {
+          array.splice(index, 1);
+      }
+  }
+
+  
 
 }
 

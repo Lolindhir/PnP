@@ -44,7 +44,8 @@ export enum SpellFilterType{
     DamageType = 28,
     Condition = 29,
     Source = 30,
-    None = 31,
+    SpellListCategory = 31,
+    None = 32,
 }
 
 export interface SpellFilterGroup{

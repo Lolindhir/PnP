@@ -4,8 +4,22 @@ import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 import { SpellTag } from "@models/spell-tag.model";
 import { SpellTarget } from "@models/spell-target.model";
 import { Preset } from "@models/preset.model";
-import { of } from "rxjs";
 import { SpellRange, SpellRangeCategory } from "./spell-range.model";
+
+
+export enum SpellListCategory{
+  known,
+  knownCantrips,
+  knownSpells,
+  knownRituals,
+  prepared,
+  preparedCantrips,
+  preparedSpells,
+  always,
+  limitedUsed,
+  limitedNotUsed,
+  ritualCastingSpells,
+}
 
 export interface RawSpell {  
   level: number;  
@@ -83,6 +97,12 @@ export interface Spell {
   smallDisplay: string;
   asset: boolean;
   assetPath: string;
+  known: boolean;
+  prepared: boolean;
+  always: boolean;
+  limited: boolean;
+  ritualCast: boolean;
+  used: boolean;
   highlighted: boolean;
 }
 
@@ -117,6 +137,12 @@ export class Spell implements Spell {
     this.descriptionDisplay = this.description;
     this.translated = false;
     this.translatable = this.translation != null && this.translation.length > 0 ? true : false;
+    this.known = false;
+    this.prepared = false;
+    this.always = false;
+    this.limited = false;
+    this.ritualCast = false;
+    this.used = false;
 
     //cut names from spells
     var name: string = rawSpell.name;
@@ -617,11 +643,11 @@ export class Spell implements Spell {
             return true;
           }
           //check single name, which overrides every other condition
-          if(preset.spells.includes(this.name)){
+          if(preset.spells.includes(this.name) || preset.alwaysKnownSpells.includes(this.name)){
             return true;
           }
           //check classes and corresponding level
-          if(preset.classes.length === 0 && preset.subclasses.length === 0 && preset.levels.includes(this.level)){
+          if(preset.classes.length === 0 && preset.subclasses.length === 0 && preset.alwaysKnownSubclasses.length === 0 && preset.levels.includes(this.level)){
             return true;
           }
           for (var mainClass of preset.classes) {
@@ -633,7 +659,12 @@ export class Spell implements Spell {
             if(this.subclasses.filter(subclass => subclass.name === subClass).length > 0 && preset.levels.includes(this.level)){
               return true;
             }
-          }                  
+          }
+          for (var subClass of preset.alwaysKnownSubclasses) {
+            if(this.subclasses.filter(subclass => subclass.name === subClass).length > 0 && preset.levels.includes(this.level)){
+              return true;
+            }
+          }                 
           break; 
         }  
         case SpellFilterType.Source: {             
@@ -642,7 +673,47 @@ export class Spell implements Spell {
             return true;
           }          
           break; 
-        }          
+        }
+        case SpellFilterType.SpellListCategory: {             
+          var listCategory: SpellListCategory = filter.value as SpellListCategory;
+          if(listCategory === null){
+            return true;
+          }
+          if(listCategory === SpellListCategory.known && this.known){
+            return true;
+          }
+          if(listCategory === SpellListCategory.knownCantrips && this.known && this.level === 0){
+            return true;
+          }
+          if(listCategory === SpellListCategory.knownSpells && this.known && this.level > 0){
+            return true;
+          }
+          if(listCategory === SpellListCategory.knownRituals && this.known && this.ritual){
+            return true;
+          }
+          if(listCategory === SpellListCategory.prepared && this.prepared){
+            return true;
+          }
+          if(listCategory === SpellListCategory.preparedCantrips && this.prepared && this.level === 0){
+            return true;
+          }
+          if(listCategory === SpellListCategory.preparedSpells && this.prepared && this.level > 0){
+            return true;
+          }
+          if(listCategory === SpellListCategory.always && this.always){
+            return true;
+          }
+          if(listCategory === SpellListCategory.limitedNotUsed && this.limited && !this.used){
+            return true;
+          }
+          if(listCategory === SpellListCategory.limitedUsed && this.limited && this.used){
+            return true;
+          }
+          if(listCategory === SpellListCategory.ritualCastingSpells && this.ritualCast){
+            return true;
+          }
+          break; 
+        }      
         default: { 
           console.log('Unknown filter type: ' + filter.type)
           return true;

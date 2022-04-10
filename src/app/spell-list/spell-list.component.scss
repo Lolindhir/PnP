@@ -126,6 +126,11 @@
   margin-top: 0.25rem;
 }
 
+.small-gap {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .spell-class-chip {
   font-size: small;
   padding-left: 0.5rem;
@@ -155,4 +160,44 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.infobutton {
+  max-width: 30px;
+  max-height: 25px;
+}
+
+.dialog-icon {
+  height: 1px;
+  //margin-right: 0.1rem;
+}
+
+.dialog-toggle {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dialog-description {
+  margin-left: 5px;
+}
+
+.character-spell {
+  width: 55px;
+}
+
+.character-cantrip {
+  width: 55px;
+}
+
+.character-large {
+  width: 155px;
+}
+
+.character-maxInput {
+  margin-left: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10%;
+  width: 50px;
+  text-align: center;
 }

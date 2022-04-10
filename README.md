@@ -47,6 +47,8 @@ Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Public\Quellen un
 
 [Load Local File](https://stackoverflow.com/questions/47581687/read-a-file-and-parse-its-content)
 
+[Cookie-Handling](https://stackoverflow.com/questions/34298133/angular-cookies)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

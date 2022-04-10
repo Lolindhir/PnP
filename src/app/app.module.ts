@@ -14,6 +14,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ScrollingModule } from '@angular/cdk/scrolling'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -25,12 +26,12 @@ import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
 import { MainBodyComponent } from '@components/main-body/main-body.component';
-import { SpellListComponent } from '@components/spell-list/spell-list.component';
-import { SpellListSettingsDialog } from '@components/spell-list/spell-list.component';
+import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog } from '@components/spell-list/spell-list.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatListComponent } from './feat-list/feat-list.component';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -39,9 +40,11 @@ import { FeatListComponent } from './feat-list/feat-list.component';
     MainBodyComponent,
     SpellListComponent,
     SpellListSettingsDialog,
+    SpellListCharacterDialog,
     SpellFilterPipe,
     HomeComponent,
     FeatListComponent,
+    SnackBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { FeatListComponent } from './feat-list/feat-list.component';
     MatSlideToggleModule,
     MatCheckboxModule,
     MatMenuModule,
+    MatSnackBarModule,
     MatTooltipModule,
     MatDialogModule,
     ScrollingModule,

@@ -7,7 +7,7 @@ import { SpellClass } from "@models/spell-class.model";
 
 export class SpellService {  
 
-  public static filterSpells(list: Spell[], nameFilter: string, filters: SpellFilter[]) : Spell[] {
+  public static filterSpells(list: Spell[], nameFilter: string, filters: SpellFilter[], impliciteFilters: SpellFilter[]) : Spell[] {
     
     //console.log('Filter called with \nname: %s \nsource: %s', nameFilter, sourceFilter );
 
@@ -16,7 +16,7 @@ export class SpellService {
 
       //console.log('Current spell: ' + spell.name);          
 
-      if(spell.filter(nameFilter, filters)){
+      if(spell.filter(nameFilter, filters.concat(impliciteFilters))){
         returnList.push(spell);
       }
 

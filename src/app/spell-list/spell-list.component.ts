@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
-import { Spell, RawSpell } from '@models/spell.model';
+import { Spell, RawSpell, SpellListCategory } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
@@ -16,11 +16,19 @@ import * as imagePaths from '@shared/imagePaths';
 import { CookieService } from 'ngx-cookie-service';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { Character, CharacterData } from '@shared/models/character.model';
+import { Preset } from '@shared/models/preset.model';
+import { SpellProperties } from '@shared/models/spell-properties.model';
+import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from "@angular/platform-browser";
 
 export interface SettingsData {
   showRandomControls: boolean;
   translateAll: boolean;
   sortByName: boolean;
+  characterMode: boolean;
 }
 
 
@@ -105,6 +113,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsSpellMod: SpellFilter[] = new Array();
 
   //spell related stuff
+  spellProperties: SpellProperties = spellPropertiesData;
   spells: Spell[] = new Array();
   spellsFiltered: Spell[] = new Array();
   spellsToShow: Spell[] = new Array();
@@ -118,16 +127,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     showRandomControls: false,
     sortByName: false,
     translateAll: false,
+    characterMode: false,
   };
-  settingsChanged = {
-    value: false,
-    get Var(){
-      return this.value;
-    },
-    set Var(value){
-      this.value = value;
-    }
-  }
+  characterData: CharacterData = {
+    characterList: new Array(),
+    selectedCharacter: undefined,
+    presets: new Array(),
+    cookieService: undefined,
+    masterSpellList: new Array(),
+  };
   highlightColor: string = 'lightgrey';
   highlightFilter: boolean = false;
   loading: boolean = true;
@@ -135,6 +143,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showTags: boolean = true;
+  characterManagementActivated: boolean = true;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
@@ -154,20 +163,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   constructor(private httpClient: HttpClient, 
     private cookieService: CookieService, 
     private viewPortScroller: ViewportScroller,
-    private dialog: MatDialog) {
+    private dialog: MatDialog,
+    private snackBar: MatSnackBar,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer) {
+
+    this.matIconRegistry.addSvgIcon('ritual', this.domSanitizer.bypassSecurityTrustResourceUrl(this.images.spellRitual));
+    this.matIconRegistry.addSvgIcon('ritual_grey', this.domSanitizer.bypassSecurityTrustResourceUrl(this.images.spellRitualGrey));
 
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
     //load settings from cookies
-    this.loadSettingsFromCookies();
+    this.loadSettingsFromCookies();    
 
     //get screen width
     this.screenWidth = window.innerWidth;
     this.setSize();
-
-    //get spell properties
-    var spellProperties = spellPropertiesData;
 
     //fill spells with raw spell data from json
     //and build sort options
@@ -180,7 +192,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
 
       //create spell
-      this.spells.push(new Spell(rawSpell, spellProperties))
+      this.spells.push(new Spell(rawSpell, this.spellProperties))
 
     });
 
@@ -194,40 +206,55 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.spellsFiltered = this.spells;
 
     //build options
-    this.optionsLevel = SpellService.getLevelFilterOptions(spellProperties);
-    this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
-    this.optionsClass = SpellService.getClassFilterOptions(spellProperties);
-    this.optionsSingleClass = SpellService.getSingleClassFilterOptions(spellProperties);
-    this.optionsMustClass = SpellService.getMustClassFilterOptions(spellProperties);
-    this.optionsNotClass = SpellService.getNotClassFilterOptions(spellProperties);
-    this.optionsSubclass = SpellService.getSubclassFilterOptions(spellProperties);
-    this.optionsSchool = SpellService.getSchoolFilterOptions(spellProperties);
-    this.optionsSource = SpellService.getSourceFilterOptions(this.spells, spellProperties);
-    this.optionsSourceGroups = SpellService.getSourceGroupFilterOptions(this.optionsSource, spellProperties);
-    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(spellProperties);
-    this.optionsDuration = SpellService.getDurationFilterOptions(spellProperties);
-    this.optionsRange = SpellService.getRangeFilterOptions(spellProperties);
-    this.optionsDamageType = SpellService.getDamageTypeFilterOptions(spellProperties);
-    this.optionsCondition = SpellService.getConditionFilterOptions(spellProperties);
-    this.optionsSave = SpellService.getSaveFilterOptions(spellProperties);
-    this.optionsAttackType = SpellService.getAttackTypeFilterOptions(spellProperties);
-    this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(spellProperties);
-    this.optionsAffectedTargets = SpellService.getAffectedTargetsFilterOptions(spellProperties);
-    this.optionsTag = SpellService.getTagFilterOptions(spellProperties);
-    this.optionsSingleTag = SpellService.getSingleTagFilterOptions(spellProperties);
-    this.optionsMustTag = SpellService.getMustTagFilterOptions(spellProperties);
-    this.optionsNotTag = SpellService.getNotTagFilterOptions(spellProperties);
-    this.optionsPreset = SpellService.getPresetFilterOptions(spellProperties);
-    this.optionsConcentration = SpellService.getConcentrationFilterOptions(spellProperties);
-    this.optionsRitual = SpellService.getRitualFilterOptions(spellProperties);
-    this.optionsTargetCaster = SpellService.getTargetCasterFilterOptions(spellProperties);
-    this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(spellProperties);
-    this.optionsComponentS = SpellService.getComponentSomaticFilterOptions(spellProperties);
-    this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(spellProperties);
-    this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(spellProperties);
-    this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(spellProperties);
-    this.optionsUpcastable = SpellService.getUpcastableFilterOptions(spellProperties);
-    this.optionsSpellMod = SpellService.getSpellModFilterOptions(spellProperties);
+    this.optionsLevel = SpellService.getLevelFilterOptions(this.spellProperties);
+    this.optionsSchool = SpellService.getSchoolFilterOptions(this.spellProperties);
+    this.optionsClass = SpellService.getClassFilterOptions(this.spellProperties);
+    this.optionsSingleClass = SpellService.getSingleClassFilterOptions(this.spellProperties);
+    this.optionsMustClass = SpellService.getMustClassFilterOptions(this.spellProperties);
+    this.optionsNotClass = SpellService.getNotClassFilterOptions(this.spellProperties);
+    this.optionsSubclass = SpellService.getSubclassFilterOptions(this.spellProperties);
+    this.optionsSchool = SpellService.getSchoolFilterOptions(this.spellProperties);
+    this.optionsSource = SpellService.getSourceFilterOptions(this.spells, this.spellProperties);
+    this.optionsSourceGroups = SpellService.getSourceGroupFilterOptions(this.optionsSource, this.spellProperties);
+    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(this.spellProperties);
+    this.optionsDuration = SpellService.getDurationFilterOptions(this.spellProperties);
+    this.optionsRange = SpellService.getRangeFilterOptions(this.spellProperties);
+    this.optionsDamageType = SpellService.getDamageTypeFilterOptions(this.spellProperties);
+    this.optionsCondition = SpellService.getConditionFilterOptions(this.spellProperties);
+    this.optionsSave = SpellService.getSaveFilterOptions(this.spellProperties);
+    this.optionsAttackType = SpellService.getAttackTypeFilterOptions(this.spellProperties);
+    this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(this.spellProperties);
+    this.optionsAffectedTargets = SpellService.getAffectedTargetsFilterOptions(this.spellProperties);
+    this.optionsTag = SpellService.getTagFilterOptions(this.spellProperties);
+    this.optionsSingleTag = SpellService.getSingleTagFilterOptions(this.spellProperties);
+    this.optionsMustTag = SpellService.getMustTagFilterOptions(this.spellProperties);
+    this.optionsNotTag = SpellService.getNotTagFilterOptions(this.spellProperties);
+    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties);
+    this.optionsConcentration = SpellService.getConcentrationFilterOptions(this.spellProperties);
+    this.optionsRitual = SpellService.getRitualFilterOptions(this.spellProperties);
+    this.optionsTargetCaster = SpellService.getTargetCasterFilterOptions(this.spellProperties);
+    this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(this.spellProperties);
+    this.optionsComponentS = SpellService.getComponentSomaticFilterOptions(this.spellProperties);
+    this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(this.spellProperties);
+    this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(this.spellProperties);
+    this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(this.spellProperties);
+    this.optionsUpcastable = SpellService.getUpcastableFilterOptions(this.spellProperties);
+    this.optionsSpellMod = SpellService.getSpellModFilterOptions(this.spellProperties);
+
+    //load character list from cookies
+    this.characterData.characterList = Character.loadCharactersFromCookies(cookieService);
+    //set selected character depending on character mode
+    this.applyCharacterMode();
+    //add presets to character data
+    var presets: Preset[] = new Array();
+    for(var presetFilter of this.optionsPreset){
+      presets.push(presetFilter.value);
+    }
+    this.characterData.presets = presets;
+    //add cookie service to character data
+    this.characterData.cookieService = this.cookieService;
+    //add master spells to character data
+    this.characterData.masterSpellList = this.spells;
 
     this.onChange();
   }
@@ -294,10 +321,161 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     } 
   }
 
+  greyOutUsed(spell: Spell): boolean{
+
+    var char: Character | undefined = this.characterData.selectedCharacter;
+    if(char === undefined){ 
+      return false;
+    }
+
+    if(char.adventureMode && spell.used){
+      return true;
+    }
+
+    return false;
+  } 
+
+  showRedBorder(): boolean {
+    
+    var char: Character | undefined = this.characterData.selectedCharacter;
+    if(char === undefined){ 
+      return false;
+    }
+
+    if(char.preparedCantripCasting && char.preparedCantrips.length > char.maxCantripsPrepared){
+      return true;
+    }
+    if(char.preparedCasting && char.preparedSpells.length > char.maxPrepared){
+      return true;
+    }
+    if(char.knownCantripCasting && char.knownCantrips.length > char.maxCantripsKnown){
+      return true;
+    }
+    if(char.knownCasting && char.knownSpells.length > char.maxKnown){
+      return true;
+    }
+
+    return false;
+  }
+
+  applyCharacterMode(){
+
+    if(this.settings.characterMode){
+      
+      var selectedId: number = Number(this.cookieService.get('SelectedCharacter'));
+      for(var char of this.characterData.characterList){
+        if(char.id === selectedId){
+          this.characterData.selectedCharacter = char;
+          break;
+        }
+      }
+
+    }
+    else{
+      this.characterData.selectedCharacter = undefined;
+    }
+
+    this.applySelectedCharacterData();
+
+  }
+
+  applySelectedCharacterData(){
+
+    for(var spell of this.spells){
+      
+      //no selected character: reset all settings from previous selected character
+      if(this.characterData.selectedCharacter === undefined){
+        spell.known = false;
+        spell.prepared = false;
+        spell.always = false;
+        spell.ritualCast = false;
+        spell.limited = false;
+        spell.used = false;
+      }
+      //selected character: apply infos
+      else{
+        //in known list?
+        spell.known = this.characterData.selectedCharacter.knownSpells.includes(spell.name) || this.characterData.selectedCharacter.knownCantrips.includes(spell.name);
+        //in prepared list?
+        spell.prepared = this.characterData.selectedCharacter.preparedSpells.includes(spell.name) || this.characterData.selectedCharacter.preparedCantrips.includes(spell.name);
+        //in always list?
+        spell.always = this.characterData.selectedCharacter.alwaysSpells.includes(spell.name);
+        //in ritual list?
+        spell.ritualCast = this.characterData.selectedCharacter.ritualSpells.includes(spell.name);
+        //in limited list?
+        spell.limited = this.characterData.selectedCharacter.limitedSpells.includes(spell.name);
+        //in used list?
+        spell.used = this.characterData.selectedCharacter.usedSpells.includes(spell.name);
+      }
+      
+    }
+
+    //trigger filtering
+    this.onChange();
+  }
+
   onChange() {
 
     this.expandedPanelIndex = -1;
-    this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters);
+
+    //build implicite filters
+    var impliciteFilters: SpellFilter[] = new Array();
+    var char = this.characterData.selectedCharacter;
+    if(char != undefined){
+
+      if(char.adventureMode){
+        
+        //check cantrips
+        if(char.preparedCantripCasting){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.preparedCantrips, this.spellProperties));
+        }
+        else{
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownCantrips, this.spellProperties));
+        }
+
+        //check spells
+        if(char.preparedCasting){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.preparedSpells, this.spellProperties));
+        }
+        else{
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownSpells, this.spellProperties));
+        }
+
+        //check rituals
+        if(char.ritualCastingUnprepared){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownRituals, this.spellProperties));
+        }
+        if(char.ritualCaster){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.ritualCastingSpells, this.spellProperties));
+        }
+
+        //add always
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.always, this.spellProperties));
+
+        //if dontShowUsed, add only limited, that are not used
+        if(char.dontShowUsed){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedNotUsed, this.spellProperties));
+        }
+        //else add all limited spells (used will be disabled)
+        else{
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedNotUsed, this.spellProperties));
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedUsed, this.spellProperties));
+        }
+
+      }
+      else{
+        //only known, always, ritual caster and limited spells shown
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.known, this.spellProperties));
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.always, this.spellProperties));
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedNotUsed, this.spellProperties));
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedUsed, this.spellProperties));
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.ritualCastingSpells, this.spellProperties));
+      }
+
+    }
+
+    //filter
+    this.spellsFiltered = SpellService.filterSpells(this.spells, this.filterName, this.filters, impliciteFilters);
 
     //reduce to random spells if wished
     this.setNumberOfRandomFilteredSpells();
@@ -668,6 +846,168 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  showSpellListSnackBar(spellName: string, action: string, current: number, max: number){
+    
+    var text: string = '\'' + spellName + '\'' + ' ' + action + ' (' + current + '/' + max + ')';
+
+    this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: 1500,
+      data: {text: text}
+    });
+  }
+
+  onPreparation(spell: Spell){
+
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    spell.prepared = !spell.prepared;
+    if(spell.prepared){
+      if(spell.level === 0){
+        this.characterData.selectedCharacter.preparedCantrips.push(spell.name);
+        this.showSpellListSnackBar(spell.name, 'prepared', this.getPreparationCount(true, false), this.getPreparationCount(true, true));
+      }
+      else{
+        this.characterData.selectedCharacter.preparedSpells.push(spell.name);
+        this.showSpellListSnackBar(spell.name, 'prepared', this.getPreparationCount(false, false), this.getPreparationCount(false, true));
+      }
+    }
+    else{
+      if(spell.level === 0){
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedCantrips, spell.name);
+        this.showSpellListSnackBar(spell.name, 'unprepared', this.getPreparationCount(true, false), this.getPreparationCount(true, true));
+      }
+      else{
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedSpells, spell.name);
+        this.showSpellListSnackBar(spell.name, 'unprepared', this.getPreparationCount(false, false), this.getPreparationCount(false, true));
+      }      
+    }
+    this.characterData.selectedCharacter.save();
+
+  }
+
+  getPreparationCount(cantrip: boolean, max: boolean): number{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return -1;
+    }
+    if(cantrip){
+      if(max){
+        return char.maxCantripsPrepared;
+      }
+      else{
+        return char.preparedCantrips.length;
+      }
+    }
+    else{
+      if(max){
+        return char.maxPrepared;
+      }
+      else{
+        return char.preparedSpells.length;
+      }
+    }
+  }
+
+  onKnown(spell: Spell){
+    
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    spell.known = !spell.known;
+    if(spell.known){
+      if(spell.level === 0){
+        this.characterData.selectedCharacter.knownCantrips.push(spell.name);
+      }
+      else{
+        this.characterData.selectedCharacter.knownSpells.push(spell.name);
+      }
+    }
+    else{
+      if(spell.level === 0){
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownCantrips, spell.name);
+      }
+      else{
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownSpells, spell.name);
+      }    
+    }
+    this.characterData.selectedCharacter.save();
+
+  }
+
+  onAlways(spell: Spell){
+    
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    spell.always = !spell.always;
+    if(spell.always){
+      this.characterData.selectedCharacter.alwaysSpells.push(spell.name);
+    }
+    else{
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.alwaysSpells, spell.name);
+    }
+    this.characterData.selectedCharacter.save();
+
+  }
+
+  onLimited(spell: Spell){
+    
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    spell.limited = !spell.limited;
+    if(spell.limited){
+      this.characterData.selectedCharacter.limitedSpells.push(spell.name);
+    }
+    else{
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.limitedSpells, spell.name);
+    }
+    this.characterData.selectedCharacter.save();
+
+  }
+
+  onRitual(spell: Spell){
+    
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined || !char.ritualCaster){
+      return;
+    }
+    spell.ritualCast = !spell.ritualCast;
+    if(spell.ritualCast){
+      char.ritualSpells.push(spell.name);
+    }
+    else{
+      ArrayUtilities.removeFromArray(char.ritualSpells, spell.name);
+    }
+    char.save();
+
+  }
+
+  onUsed(spell: Spell){
+    
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    if(this.characterData.selectedCharacter.adventureMode && !spell.used){
+      this.expandedPanelIndex = -1;
+    }
+    spell.used = !spell.used;
+    if(spell.used){
+      this.characterData.selectedCharacter.usedSpells.push(spell.name);
+    }
+    else{
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.usedSpells, spell.name);
+    }
+    this.characterData.selectedCharacter.save();
+
+    if(this.characterData.selectedCharacter.dontShowUsed && this.characterData.selectedCharacter.adventureMode){
+      this.onChange();
+    }
+
+  }
+
+
   onTranslation(spell: Spell){
 
     if(spell.translated){
@@ -681,6 +1021,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }      
     }
 
+  }
+
+  onAdventureMode(){
+    if(this.characterData.selectedCharacter === undefined){
+      return;
+    }
+    this.characterData.selectedCharacter.save();
+    this.onChange();
+  }
+
+  onRefreshUsed(){
+    if(this.characterData.selectedCharacter === undefined){
+      return;
+    }
+    this.characterData.selectedCharacter.usedSpells = new Array();
+    this.characterData.selectedCharacter.save();
+    this.applyCharacterMode();
   }
 
   onHighlightFilter(){
@@ -803,6 +1160,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.settings.showRandomControls = this.cookieService.get('RandomControls') === 'true' ? true : false;
     this.settings.sortByName = this.cookieService.get('SortByName') === 'true' ? true : false;
     this.settings.translateAll = this.cookieService.get('TranslateAll') === 'true' ? true : false;
+    this.settings.characterMode = this.cookieService.get('CharacterMode') === 'true' ? true : false;
 
   }
 
@@ -811,10 +1169,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.cookieService.set('RandomControls', String(this.settings.showRandomControls), 365);
     this.cookieService.set('SortByName', String(this.settings.sortByName), 365);
     this.cookieService.set('TranslateAll', String(this.settings.translateAll), 365); 
+    this.cookieService.set('CharacterMode', String(this.settings.characterMode), 365); 
 
   }
 
-  openDialog(): void {
+  openSettingsDialog(): void {
     const dialogRef = this.dialog.open(SpellListSettingsDialog, {
       //width: '250px',
       //height: '300px',
@@ -835,8 +1194,37 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.onRandomNumberChanged(0);
     });
 
+    dialogRef.componentInstance.onCharacter.subscribe(() => {
+      this.applyCharacterMode();
+    });
+
     dialogRef.beforeClosed().subscribe(() => {
       this.saveSettings();
+    });
+  }
+
+  openCharacterDialog(): void {
+
+    const dialogRef = this.dialog.open(SpellListCharacterDialog, {
+      //width: '250px',
+      //height: '300px',
+      //disableClose: true,
+      data: this.characterData,
+    });
+
+    dialogRef.componentInstance.onCharacterChanged.subscribe(() => {
+      
+      //save selected char to cookies
+      if(this.characterData.selectedCharacter === undefined){
+        this.cookieService.set('SelectedCharacter', '', -1);
+      }
+      else{
+        this.cookieService.set('SelectedCharacter', String(this.characterData.selectedCharacter.id), 365);
+      }
+
+      //trigger
+      this.applySelectedCharacterData();
+
     });
   }
 
@@ -845,13 +1233,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 @Component({
   selector: 'spell-list-settings-dialog',
   templateUrl: 'spell-list-settings-dialog.html',
-  styleUrls: ['./spell-list-settings-dialog.scss', './spell-list.component.scss']
+  styleUrls: ['./spell-list.component.scss']
 })
 export class SpellListSettingsDialog {
   
   onRandom = new EventEmitter();
   onTranslate = new EventEmitter();
   onSort = new EventEmitter();
+  onCharacter = new EventEmitter();
   
   constructor(
     public dialogRef: MatDialogRef<SpellListSettingsDialog>,
@@ -870,7 +1259,156 @@ export class SpellListSettingsDialog {
     this.onSort.emit();
   }
 
-  onNoClick(): void {
-    this.dialogRef.close();
+  onCharacterClick() {
+    this.onCharacter.emit();
   }
+
+}
+
+@Component({
+  selector: 'spell-list-character-dialog',
+  templateUrl: 'spell-list-character-dialog.html',
+  styleUrls: ['./spell-list.component.scss']
+})
+export class SpellListCharacterDialog {
+  
+  addMode: boolean = false;
+  selectedPreset: Preset | undefined;
+  newName: string | undefined;
+  nameChangeMode: boolean = false;
+  changedName: string = "";
+  onCharacterChanged = new EventEmitter();
+  disabled: boolean = false;
+
+  constructor(
+    public dialogRef: MatDialogRef<SpellListCharacterDialog>,
+    private snackBar: MatSnackBar,
+    @Inject(MAT_DIALOG_DATA) public data: CharacterData,
+  ) {}
+
+  onCharacterCreated() {
+
+    if(this.newName != undefined && this.newName != '' && this.data.cookieService != undefined){
+      
+      //create char
+      var newChar = new Character(undefined, this.newName, this.data.characterList, this.data.cookieService);
+
+      //add preset
+      if(this.selectedPreset != undefined){
+        newChar.applyPreset(this.selectedPreset, this.data.masterSpellList);
+      }
+
+      //save
+      newChar.save();
+
+      //select
+      this.data.selectedCharacter = newChar;
+      this.changedName = this.data.selectedCharacter.name;
+
+      //reset options
+      this.newName = undefined;
+      this.selectedPreset = undefined;
+      this.addMode = false;
+
+      //trigger
+      this.onCharacterChange();
+    }
+
+  }
+
+  onCharacterDelete() {
+    
+    if(this.data.selectedCharacter === undefined){
+      return;
+    }
+
+    //stop the user from clicking outside the dialog and disable clicks inside the dialog (until snackbar is interacted with)
+    this.dialogRef.disableClose = true;
+    this.disabled = true;
+
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Delete permanently?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      if(this.data.selectedCharacter === undefined){
+        return;
+      }
+
+      this.data.selectedCharacter.delete();
+      this.data.selectedCharacter = undefined;
+
+      //trigger
+      this.onCharacterChange();
+
+      //close snackbar
+      snackBarRef.dismiss();
+
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+  }
+
+  onDetailChange() {
+    //save character
+    this.data.selectedCharacter?.save();
+  }
+
+  onCharacterChange() {
+
+    //save character
+    this.data.selectedCharacter?.save();
+
+    //To-Do: do stuff like clearing known/prepared spells etc. -> really necessary?
+
+    this.onCharacterChanged.emit();
+  }
+
+  onNameChangeCalled() {
+
+    if(this.data.selectedCharacter === undefined){
+      return;
+    }
+    this.nameChangeMode = true;
+    this.changedName = this.data.selectedCharacter.name;
+
+  }
+
+  onNameChangeCanceled() {
+
+    this.nameChangeMode = false;
+    this.changedName = '';
+
+  }
+
+  onNameChangeDone() {
+
+    if(this.data.selectedCharacter === undefined || this.changedName === ''){
+      return;
+    }
+
+    this.data.selectedCharacter.name = this.changedName;
+    this.data.selectedCharacter.save();
+    this.onNameChangeCanceled();
+
+  }
+
 }

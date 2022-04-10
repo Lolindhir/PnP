@@ -1,11 +1,34 @@
 # Settings
-- vorhanden Settings (oben) in Settings
 - Filter: Highlight der Zauber, anstatt herausfiltern (macht nur Sinn, wenn über Preset in den Settings die Auswahl schon verkleinert ist)
 - Materialien ohne Kosten nicht anzeigen
-- Cookies nutzen zum Speichern von Settings
-- Settings-Im-/Export (Selected/Filtered Spells, Favorited/Known Spells, Prepared Spells, Always Prepared Spells, Number of Prepared/Known Spells)
-- Zauber-Presets Im-/Export einbauen
-- Prepared Spells immer oben (Sortierung Prepared > Level > Name)
+- Spell als Favorite markieren? außerhalb Character-Mode
+
+# Character Mode
+- Settings: Hinzuschaltung des Character Modes -> alles folgende nur in diesem Modus
+- Character-Settings: Spell-Management aktivieren (nur wenn an, können Spells known/always known werden) -> known highlighten
+- Character-Settings: ? Preparation deaktivieren (Preparation kann nicht bearbeitet werden)
+- Spell: Spell-Management-Mode temporär (nur solange Spell offen) aktivieren für Spell -> Symbol auto_fix_high
+- Character-Settings: Prepared Spells immer oben (Sortierung Prepared > Level > Name)
+- Character-Settings: Show all Spells (und maximal known highlighten) -> quasi Spell-Management-Mode dauerhaft?
+- Character-Settings: RitualCasting -> im AdventureMode auch Rituale anzeigen, aber anders kennzeichnen
+- Character-Settings: Benötigt prepared Option -> maxPrepared = 0
+- Character-Settings: Angabe Max-Anzahl prepared/known spells (maxKnown = 0 -> keine Listen anzeigen)
+- Character-Settings: neuer Character aus leeren oder Zauber-Presets Import
+- Character-Settings: Character Im-/Export
+- Character-Settings/oder allgemeine Settings?: known/prepared spells hervorheben/highlighten -> besonders im Edit-Mode? -> Symbole vor dem Namen
+- unter Suchleiste im Spell-Management-Mode: Add/remove current spells to/from Known
+- unter Suchleiste: show only prepared, show only known + X/Y prepared/known (rot wenn max überschritten)
+- Spell: zwischen Metainfos und Description drei Buttons (Prepared, Known, Always Prepared/Known)
+    - Prepared: no(label) yes(label_important)
+    - Known: no(bookmark_border) yes(bookmark)
+    - Always KnownPrepared: no(star_border) yes(star)
+    - Limited
+- Möglichkeit Spell zu "usen" und used zu resetten (retry als Symbol)
+- OneSpellListCategory-Filter
+- SnackBar: wenn Änderung prepared/known: Anzeige Anzahl Current/Max
+- Prepared Blueprints
+- Absichern, dass keine Spells prepared sind, die nicht known sind (und das keine Spells known/prepared sind, die always sind)
+- roter Rand, wenn Maximalwerte nicht eingehalten sind
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
