@@ -143,7 +143,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showTags: boolean = true;
-  characterManagementActivated: boolean = true;
+  characterManagementActivated: boolean = false;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
