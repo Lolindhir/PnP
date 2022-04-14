@@ -11,6 +11,13 @@ export interface CharacterData {
     masterSpellList: Spell[]
 }
 
+export enum ModeOption {
+    Overview = 'Overview',
+    Prep = 'Preparation',
+    AddRemove = 'Add/Remove',
+    Session = 'Session',
+}
+
 export interface Character {
     id: number,
     name: string,
@@ -32,8 +39,9 @@ export interface Character {
     maxCantripsPrepared: number,
     ritualCastingUnprepared: boolean,
     ritualCaster: boolean,
-    adventureMode: boolean,
+    mode: ModeOption,
     preparedOnTop: boolean,
+    knownOnTop: boolean,
     dontShowUsed: boolean,
     allSpellsInOverview: boolean,
 }
@@ -74,11 +82,13 @@ export class Character implements Character {
         this.ritualCastingUnprepared = false;
         this.ritualCaster = false;
         this.preparedOnTop = false;
-        this.adventureMode = false;
+        this.knownOnTop = false;
+        this.mode = ModeOption.Overview;
         this.dontShowUsed = false;
         this.allSpellsInOverview = false;
 
         characterList.push(this);
+        characterList.sort(Character.compare);
     }
 
 
@@ -177,9 +187,13 @@ export class Character implements Character {
         this.cookieService.set(ident + CharacterCookies.RitualCastingUnprepared, String(this.ritualCastingUnprepared), 365);
         this.cookieService.set(ident + CharacterCookies.RitualCaster, String(this.ritualCaster), 365);
         this.cookieService.set(ident + CharacterCookies.PreparedOnTop, String(this.preparedOnTop), 365);
-        this.cookieService.set(ident + CharacterCookies.AdventureMode, String(this.adventureMode), 365);
+        this.cookieService.set(ident + CharacterCookies.KnownOnTop, String(this.knownOnTop), 365);
+        this.cookieService.set(ident + CharacterCookies.Mode, this.mode, 365);
         this.cookieService.set(ident + CharacterCookies.DontShowUsed, String(this.dontShowUsed), 365);
         this.cookieService.set(ident + CharacterCookies.AllSpellsInOverview, String(this.allSpellsInOverview), 365);
+
+        //sort characters
+        this.characterList.sort(Character.compare);
 
     }
 
@@ -217,6 +231,7 @@ export class Character implements Character {
         for(var id of idList){
             this.loadFromCookies(Number(id), characterList, cookieService);
         }
+        characterList.sort(Character.compare);
         return characterList;
         
     }
@@ -247,12 +262,31 @@ export class Character implements Character {
         char.ritualCastingUnprepared = cookieService.get(ident + CharacterCookies.RitualCastingUnprepared) === 'true' ? true : false;
         char.ritualCaster = cookieService.get(ident + CharacterCookies.RitualCaster) === 'true' ? true : false;
         char.preparedOnTop = cookieService.get(ident + CharacterCookies.PreparedOnTop) === 'true' ? true : false;
-        char.adventureMode = cookieService.get(ident + CharacterCookies.AdventureMode) === 'true' ? true : false;
+        char.knownOnTop = cookieService.get(ident + CharacterCookies.KnownOnTop) === 'true' ? true : false;
         char.dontShowUsed = cookieService.get(ident + CharacterCookies.DontShowUsed) === 'true' ? true : false;
         char.allSpellsInOverview = cookieService.get(ident + CharacterCookies.AllSpellsInOverview) === 'true' ? true : false;
 
+        var rawMode: string = cookieService.get(ident + CharacterCookies.Mode);
+        for(var mode in ModeOption){
+            if(rawMode === mode){
+                char.mode = ModeOption[mode as keyof typeof ModeOption];
+                break;
+            }
+        }
+
         return char;
     }
+
+
+    private static compare(a: Character, b: Character) {
+        if ( a.name < b.name ){
+          return -1;
+        }
+        if ( a.name > b.name ){
+          return 1;
+        }
+        return 0;
+    }      
 
 }
 
@@ -277,7 +311,8 @@ export enum CharacterCookies{
     RitualCastingUnprepared = 'RitualCastingUnprepared',
     RitualCaster = 'RitualCaster',
     PreparedOnTop = 'PreparedOnTop',
-    AdventureMode = 'AdventureMode',
+    KnownOnTop = 'KnownOnTop',
+    Mode = 'Mode',
     DontShowUsed = 'DontShowUsed',
     AllSpellsInOverview = 'AllSpellsInOverview',
 }

@@ -5,6 +5,7 @@
 
 # Character Mode
 - Settings: Hinzuschaltung des Character Modes -> alles folgende nur in diesem Modus
+- Character-Settings: Anzeige von Prepared/Session deaktivieren (wenn nur als Zauberübersicht benutzt)
 - Character-Settings: Spell-Management aktivieren (nur wenn an, können Spells known/always known werden) -> known highlighten
 - Character-Settings: ? Preparation deaktivieren (Preparation kann nicht bearbeitet werden)
 - Spell: Spell-Management-Mode temporär (nur solange Spell offen) aktivieren für Spell -> Symbol auto_fix_high
@@ -29,6 +30,8 @@
 - Prepared Blueprints
 - Absichern, dass keine Spells prepared sind, die nicht known sind (und das keine Spells known/prepared sind, die always sind)
 - roter Rand, wenn Maximalwerte nicht eingehalten sind
+- in Overview auf eine Statistik klicken: Filterung auf diesen Eintrag bzw. Filter wieder rausnehmen (Filter nur hinzufügen/entfernen, nicht alle anderen löschen!)
+- Fragezeichen-Icon im Spell/oder an anderer Stelle mit Dialog zur Erklärung der einzelnen Symbole
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)

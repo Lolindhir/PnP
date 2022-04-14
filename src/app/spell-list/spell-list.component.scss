@@ -42,6 +42,16 @@
   font-size: xx-small;
 }
 
+.border-without-increase {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.right {
+  float: right;
+}
+
 .mat-accordion .mat-expansion-panel:not(.mat-expanded),
 .mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
    margin-bottom: 5px;
@@ -102,6 +112,11 @@
 
 .spell-property-description {
   padding-left: 0.3rem;
+}
+
+.total {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .big-top-gap {

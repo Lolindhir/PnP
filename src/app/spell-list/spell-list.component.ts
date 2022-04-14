@@ -17,7 +17,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
-import { Character, CharacterData } from '@shared/models/character.model';
+import { Character, CharacterData, ModeOption } from '@shared/models/character.model';
 import { Preset } from '@shared/models/preset.model';
 import { SpellProperties } from '@shared/models/spell-properties.model';
 import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
@@ -136,9 +136,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     cookieService: undefined,
     masterSpellList: new Array(),
   };
-  highlightColor: string = 'lightgrey';
+  highlightColor: string = '#E0FFFF'; //'lightgrey';
   highlightFilter: boolean = false;
   loading: boolean = true;
+  ModeOption = ModeOption;
   expandedPanelIndex: number = -1;
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
@@ -168,6 +169,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer) {
 
+    //create own icons
     this.matIconRegistry.addSvgIcon('ritual', this.domSanitizer.bypassSecurityTrustResourceUrl(this.images.spellRitual));
     this.matIconRegistry.addSvgIcon('ritual_grey', this.domSanitizer.bypassSecurityTrustResourceUrl(this.images.spellRitualGrey));
 
@@ -256,6 +258,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //add master spells to character data
     this.characterData.masterSpellList = this.spells;
 
+    //sort spells
+    this.sortMasterSpells();
+
+    //trigger change of shown spells
     this.onChange();
   }
 
@@ -300,11 +306,28 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }  
   
   sortMasterSpells() {
+    
     if(this.settings.sortByName){
-      this.spells.sort(Spell.compareNameFirst);
+      if(this.characterData.selectedCharacter?.mode === ModeOption.AddRemove && this.characterData.selectedCharacter?.knownOnTop){
+        this.spells.sort(Spell.compareKnownNameFirst);
+      }
+      else if(this.characterData.selectedCharacter?.mode === ModeOption.Prep && this.characterData.selectedCharacter?.preparedOnTop){
+        this.spells.sort(Spell.comparePreparedNameFirst);
+      }
+      else{
+        this.spells.sort(Spell.compareNameFirst);
+      }
     }
     else{
-      this.spells.sort(Spell.compareLevelFirst);
+      if(this.characterData.selectedCharacter?.mode === ModeOption.AddRemove && this.characterData.selectedCharacter?.knownOnTop){
+        this.spells.sort(Spell.compareKnownLevelFirst);
+      }
+      else if(this.characterData.selectedCharacter?.mode === ModeOption.Prep && this.characterData.selectedCharacter?.preparedOnTop){
+        this.spells.sort(Spell.comparePreparedLevelFirst);
+      }
+      else{
+        this.spells.sort(Spell.compareLevelFirst);
+      }
     }
   }
 
@@ -328,7 +351,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return false;
     }
 
-    if(char.adventureMode && spell.used){
+    if(char.mode === ModeOption.Session && spell.used){
       return true;
     }
 
@@ -342,16 +365,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return false;
     }
 
-    if(char.preparedCantripCasting && char.preparedCantrips.length > char.maxCantripsPrepared){
+    if(char.mode === ModeOption.AddRemove && this.knownHasError()){
       return true;
     }
-    if(char.preparedCasting && char.preparedSpells.length > char.maxPrepared){
-      return true;
-    }
-    if(char.knownCantripCasting && char.knownCantrips.length > char.maxCantripsKnown){
-      return true;
-    }
-    if(char.knownCasting && char.knownSpells.length > char.maxKnown){
+
+    if(char.mode === ModeOption.Prep && this.preparedHasError()){
       return true;
     }
 
@@ -361,7 +379,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   applyCharacterMode(){
 
     if(this.settings.characterMode){
-      
+
       var selectedId: number = Number(this.cookieService.get('SelectedCharacter'));
       for(var char of this.characterData.characterList){
         if(char.id === selectedId){
@@ -373,6 +391,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     else{
       this.characterData.selectedCharacter = undefined;
+      this.cookieService.set('SelectedCharacter', '', -1);
     }
 
     this.applySelectedCharacterData();
@@ -423,7 +442,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     var char = this.characterData.selectedCharacter;
     if(char != undefined){
 
-      if(char.adventureMode){
+      if(char.mode === ModeOption.Session){
         
         //check cantrips
         if(char.preparedCantripCasting){
@@ -463,13 +482,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         }
 
       }
-      else{
+
+      if(char.mode === ModeOption.Prep){
+        //only known spells can be/have to be prepared, except known spell that are also always known
+        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownNotAlways, this.spellProperties));
+      }
+
+      if(char.mode === ModeOption.Overview && !char.allSpellsInOverview){
         //only known, always, ritual caster and limited spells shown
         impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.known, this.spellProperties));
         impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.always, this.spellProperties));
         impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedNotUsed, this.spellProperties));
         impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.limitedUsed, this.spellProperties));
         impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.ritualCastingSpells, this.spellProperties));
+      }
+
+      if(char.mode === ModeOption.AddRemove || (char.mode === ModeOption.Overview && char.allSpellsInOverview)){
+        //no filter necessary
       }
 
     }
@@ -846,14 +875,209 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  getModeOptions(): ModeOption[]{
+    
+    var modeOptions: ModeOption[] = new Array();
+    if(this.characterData.selectedCharacter === undefined){
+      return modeOptions;
+    }
+    modeOptions.push(ModeOption.Overview);
+    modeOptions.push(ModeOption.AddRemove);
+    if(this.characterData.selectedCharacter.preparedCasting || this.characterData.selectedCharacter.preparedCantripCasting){
+      modeOptions.push(ModeOption.Prep);
+    }
+    modeOptions.push(ModeOption.Session);
+
+    return modeOptions;
+  }
+
+  onModeChanged(mode: ModeOption){
+
+    if(this.characterData.selectedCharacter === undefined || this.characterData.selectedCharacter.mode === mode){
+      return;
+    }
+    this.characterData.selectedCharacter.mode = mode;
+    this.characterData.selectedCharacter.save();
+
+    this.sortMasterSpells();
+    this.onChange();
+
+  }
+
   showSpellListSnackBar(spellName: string, action: string, current: number, max: number){
     
-    var text: string = '\'' + spellName + '\'' + ' ' + action + ' (' + current + '/' + max + ')';
+    var text: string = '\'' + spellName + '\'' + ' ' + action;
+
+    if(max > 0){
+      text = text + ' (' + current + '/' + max + ')';
+    }
 
     this.snackBar.openFromComponent(SnackBarComponent, {
       duration: 1500,
       data: {text: text}
     });
+  }
+
+
+  disableIconKnownLists(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove){
+      return false;
+    }
+    return true;
+  }
+
+  showIconKnown(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.known){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove){
+      return true;
+    }
+    return false;
+  } 
+  showIconAlways(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.always){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove){
+      return true;
+    }
+    return false;
+  }
+  showIconLimited(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.limited){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove){
+      return true;
+    }
+    return false;
+  }
+  showIconRitual(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.ritualCast && spell.ritual){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove && char.ritualCaster && spell.ritual){
+      return true;
+    }
+    return false;
+  }
+
+  disableIconPrepared(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return true;
+    }
+    if(char.mode === ModeOption.Prep){
+      return false;
+    }
+    return true;
+  }
+  showIconPrepared(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.prepared){
+      return true;
+    }
+    if(char.mode === ModeOption.Prep){
+      return true;
+    }
+    return false;
+  }
+
+
+  showTotalKnown(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if((char.knownSpells.length > 0 || char.knownCantrips.length > 0)
+    || (char.knownCasting && char.maxKnown > 0)
+    || (char.knownCantripCasting && char.maxCantripsKnown > 0)
+    || (!char.knownCasting && !char.knownCantripCasting)){
+      return true;
+    }
+    return false;
+  }
+  knownCantripsHaveError(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.knownCantripCasting && char.knownCantrips.length > char.maxCantripsKnown){
+      return true;
+    }
+    return false;
+  }
+  knownSpellsHaveError(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.knownCasting && char.knownSpells.length > char.maxKnown){
+      return true;
+    }
+    return false;
+  }
+  knownHasError(): boolean{
+    return this.knownCantripsHaveError() || this.knownSpellsHaveError();
+  }
+
+  showTotalPrepared(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if((char.preparedCasting && char.preparedSpells.length > 0) 
+    || (char.preparedCantripCasting && char.preparedCantrips.length > 0)){
+      return true;
+    }
+    return false;
+  }
+  preparedCantripsHaveError(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.preparedCantripCasting && char.preparedCantrips.length > char.maxCantripsPrepared){
+      return true;
+    }
+    return false;
+  }
+  preparedSpellsHaveError(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.preparedCasting && char.preparedSpells.length > char.maxPrepared){
+      return true;
+    }
+    return false;
+  }
+  preparedHasError(): boolean{
+    return this.preparedCantripsHaveError() || this.preparedSpellsHaveError();
   }
 
   onPreparation(spell: Spell){
@@ -884,6 +1108,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     this.characterData.selectedCharacter.save();
 
+    //if prepared on top, trigger sorting
+    if(this.characterData.selectedCharacter.preparedOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
   }
 
   getPreparationCount(cantrip: boolean, max: boolean): number{
@@ -918,21 +1147,53 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(spell.known){
       if(spell.level === 0){
         this.characterData.selectedCharacter.knownCantrips.push(spell.name);
+        this.showSpellListSnackBar(spell.name, 'known', this.getKnownCount(true, false), this.getKnownCount(true, true));
       }
       else{
         this.characterData.selectedCharacter.knownSpells.push(spell.name);
+        this.showSpellListSnackBar(spell.name, 'known', this.getKnownCount(false, false), this.getKnownCount(false, true));
       }
     }
     else{
       if(spell.level === 0){
         ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownCantrips, spell.name);
+        this.showSpellListSnackBar(spell.name, 'unknown', this.getKnownCount(true, false), this.getKnownCount(true, true));
       }
       else{
         ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownSpells, spell.name);
+        this.showSpellListSnackBar(spell.name, 'unknown', this.getKnownCount(false, false), this.getKnownCount(false, true));
       }    
     }
     this.characterData.selectedCharacter.save();
 
+    if(this.characterData.selectedCharacter.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
+
+  }
+
+  getKnownCount(cantrip: boolean, max: boolean): number{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return -1;
+    }
+    if(cantrip){
+      if(max){
+        return char.maxCantripsKnown;
+      }
+      else{
+        return char.knownCantrips.length;
+      }
+    }
+    else{
+      if(max){
+        return char.maxKnown;
+      }
+      else{
+        return char.knownSpells.length;
+      }
+    }
   }
 
   onAlways(spell: Spell){
@@ -943,11 +1204,18 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     spell.always = !spell.always;
     if(spell.always){
       this.characterData.selectedCharacter.alwaysSpells.push(spell.name);
+      this.showSpellListSnackBar(spell.name, 'always known/prepared', 0, 0);
     }
     else{
       ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.alwaysSpells, spell.name);
+      this.showSpellListSnackBar(spell.name, 'removed from always known/prepared', 0, 0);
     }
     this.characterData.selectedCharacter.save();
+
+    if(this.characterData.selectedCharacter.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
 
   }
 
@@ -959,11 +1227,18 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     spell.limited = !spell.limited;
     if(spell.limited){
       this.characterData.selectedCharacter.limitedSpells.push(spell.name);
+      this.showSpellListSnackBar(spell.name, 'limited available', 0, 0);
     }
     else{
       ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.limitedSpells, spell.name);
+      this.showSpellListSnackBar(spell.name, 'not anymore limited available', 0, 0);
     }
     this.characterData.selectedCharacter.save();
+
+    if(this.characterData.selectedCharacter.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
 
   }
 
@@ -976,11 +1251,18 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     spell.ritualCast = !spell.ritualCast;
     if(spell.ritualCast){
       char.ritualSpells.push(spell.name);
+      this.showSpellListSnackBar(spell.name, 'for ritual cast available', 0, 0);
     }
     else{
       ArrayUtilities.removeFromArray(char.ritualSpells, spell.name);
+      this.showSpellListSnackBar(spell.name, 'no longer for ritual cast available', 0, 0);
     }
     char.save();
+
+    if(char.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
 
   }
 
@@ -989,19 +1271,21 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(this.characterData.selectedCharacter == undefined){
       return;
     }
-    if(this.characterData.selectedCharacter.adventureMode && !spell.used){
+    if(this.characterData.selectedCharacter.mode === ModeOption.Session && !spell.used){
       this.expandedPanelIndex = -1;
     }
     spell.used = !spell.used;
     if(spell.used){
       this.characterData.selectedCharacter.usedSpells.push(spell.name);
+      this.showSpellListSnackBar(spell.name, 'used till next reset', 0, 0);
     }
     else{
       ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.usedSpells, spell.name);
+      this.showSpellListSnackBar(spell.name, 'no longer used', 0, 0);
     }
     this.characterData.selectedCharacter.save();
 
-    if(this.characterData.selectedCharacter.dontShowUsed && this.characterData.selectedCharacter.adventureMode){
+    if(this.characterData.selectedCharacter.dontShowUsed && this.characterData.selectedCharacter.mode === ModeOption.Session){
       this.onChange();
     }
 
@@ -1031,6 +1315,62 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.onChange();
   }
 
+  onAddAll(){
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return;
+    }
+
+    //ToDo: SnackBar mit Sicherheitsabfrage
+
+    for(var spell of this.spellsFiltered){
+      var spellAlreadyKnown: boolean = spell.known;
+      spell.known = true;
+      if(!spellAlreadyKnown){
+        if(spell.level === 0){
+          char.knownCantrips.push(spell.name);
+        }
+        else{
+          char.knownSpells.push(spell.name);
+        }
+      }
+    }
+    char.save();
+
+    if(char.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
+  }
+
+  onRemoveAll(){
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return;
+    }
+
+    //ToDo: SnackBar mit Sicherheitsabfrage
+
+    for(var spell of this.spellsFiltered){
+      var spellKnown: boolean = spell.known;
+      spell.known = false;
+      if(spellKnown){
+        if(spell.level === 0){
+          ArrayUtilities.removeFromArray(char.knownCantrips, spell.name);
+        }
+        else{
+          ArrayUtilities.removeFromArray(char.knownSpells, spell.name);
+        }
+      }
+    }
+    char.save();
+
+    if(char.knownOnTop){
+      this.sortMasterSpells();
+      this.onChange();
+    }
+  }
+
   onRefreshUsed(){
     if(this.characterData.selectedCharacter === undefined){
       return;
@@ -1038,6 +1378,52 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.characterData.selectedCharacter.usedSpells = new Array();
     this.characterData.selectedCharacter.save();
     this.applyCharacterMode();
+  }
+
+  onlyCastAsRitual(spell: Spell): boolean{
+    
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+
+    if(char.mode === ModeOption.Session){
+      if(spell.ritualCast && !spell.prepared && !(!char.preparedCasting && spell.known)){
+        return true;
+      }
+      if(spell.ritual && spell.known && !spell.prepared && char.ritualCastingUnprepared){
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  highlightSpell(spell: Spell):string{
+
+    var char = this.characterData.selectedCharacter;
+    if(char != undefined){
+
+      //highlight known spells
+      if(char.mode === ModeOption.AddRemove || (char.mode === ModeOption.Overview && char.allSpellsInOverview)){
+        if(spell.known || spell.limited || spell.ritualCast || spell.always){
+          return this.highlightColor;
+        }
+      }
+
+      //highlight prepared spells
+      if(char.mode === ModeOption.Prep && spell.prepared){
+        return this.highlightColor;
+      }
+
+      //highlight only ritual cast in session
+      if(char.mode === ModeOption.Session && this.onlyCastAsRitual(spell)){
+        return this.highlightColor;
+      }
+
+    }
+
+    return 'white';
   }
 
   onHighlightFilter(){
@@ -1174,6 +1560,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   openSettingsDialog(): void {
+    
+    if(this.filterName === 'char'){
+      this.characterManagementActivated = !this.characterManagementActivated;
+    }
+
     const dialogRef = this.dialog.open(SpellListSettingsDialog, {
       //width: '250px',
       //height: '300px',
@@ -1221,10 +1612,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       else{
         this.cookieService.set('SelectedCharacter', String(this.characterData.selectedCharacter.id), 365);
       }
-
+      
       //trigger
       this.applySelectedCharacterData();
 
+    });
+
+    dialogRef.componentInstance.onSortChanged.subscribe(() => {
+      this.sortMasterSpells();
+      this.onChange();  
     });
   }
 
@@ -1278,6 +1674,7 @@ export class SpellListCharacterDialog {
   nameChangeMode: boolean = false;
   changedName: string = "";
   onCharacterChanged = new EventEmitter();
+  onSortChanged = new EventEmitter();
   disabled: boolean = false;
 
   constructor(
@@ -1370,6 +1767,13 @@ export class SpellListCharacterDialog {
   onDetailChange() {
     //save character
     this.data.selectedCharacter?.save();
+  }
+
+  onSortChange(){
+    //save character
+    this.data.selectedCharacter?.save();
+    //send event
+    this.onSortChanged.emit();
   }
 
   onCharacterChange() {

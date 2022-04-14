@@ -22,6 +22,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip'; 
 import { MatDialogModule } from '@angular/material/dialog'; 
+import { MatTabsModule } from '@angular/material/tabs'; 
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
@@ -69,6 +70,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     MatSnackBarModule,
     MatTooltipModule,
     MatDialogModule,
+    MatTabsModule,
     ScrollingModule,
     AppRoutingModule,
   ],

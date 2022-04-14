@@ -9,6 +9,7 @@ import { SpellRange, SpellRangeCategory } from "./spell-range.model";
 
 export enum SpellListCategory{
   known,
+  knownNotAlways,
   knownCantrips,
   knownSpells,
   knownRituals,
@@ -682,6 +683,9 @@ export class Spell implements Spell {
           if(listCategory === SpellListCategory.known && this.known){
             return true;
           }
+          if(listCategory === SpellListCategory.knownNotAlways && this.known && !this.always){
+            return true;
+          }
           if(listCategory === SpellListCategory.knownCantrips && this.known && this.level === 0){
             return true;
           }
@@ -730,6 +734,30 @@ export class Spell implements Spell {
     return false;
   }
 
+  public static compareKnownLevelFirst(a: Spell, b: Spell) {        
+    
+    var knownA: boolean = a.known || a.limited || a.always || a.ritualCast;
+    var knownB: boolean = b.known || b.limited || b.always || b.ritualCast;
+
+    if(knownA && !knownB){
+      return -1;
+    }
+    if(!knownA && knownB){
+      return 1;
+    }
+    return Spell.compareLevelFirst(a, b);
+  }
+
+  public static comparePreparedLevelFirst(a: Spell, b: Spell) {        
+    //level first, name second
+    if(a.prepared && !b.prepared){
+      return -1;
+    }
+    if(!a.prepared && b.prepared){
+      return 1;
+    }
+    return Spell.compareLevelFirst(a, b);
+  }
 
   public static compareLevelFirst(a: Spell, b: Spell) {
         
@@ -748,6 +776,30 @@ export class Spell implements Spell {
     }
 
     return 0;
+  }
+
+  public static compareKnownNameFirst(a: Spell, b: Spell) {        
+    
+    var knownA: boolean = a.known || a.limited || a.always || a.ritualCast;
+    var knownB: boolean = b.known || b.limited || b.always || b.ritualCast;
+
+    if(knownA && !knownB){
+      return -1;
+    }
+    if(!knownA && knownB){
+      return 1;
+    }
+    return Spell.compareNameFirst(a, b);
+  }
+
+  public static comparePreparedNameFirst(a: Spell, b: Spell) {        
+    if(a.prepared && !b.prepared){
+      return -1;
+    }
+    if(!a.prepared && b.prepared){
+      return 1;
+    }
+    return Spell.compareNameFirst(a, b);
   }
 
   public static compareNameFirst(a: Spell, b: Spell) {

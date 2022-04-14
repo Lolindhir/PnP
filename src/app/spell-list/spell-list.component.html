@@ -1,32 +1,34 @@
 <div fxLayout="row" fxLayoutAlign="center">
   <div *ngIf="!loading" class="container">
 
-    <div div fxLayout="row" fxLayoutAlign="end center">
-      <div *ngIf="settings.characterMode && characterManagementActivated">
-        <button color="primary" mat-button (click)="openCharacterDialog()" matTooltip="Character Management" matTooltipShowDelay="{{tooltipDelay}}"
-          style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
-          [style.max-width.px]="screenWidth - 150">
-          <span>
-            {{characterData.selectedCharacter != undefined ? characterData.selectedCharacter.name : '&lt;choose character&gt;'}}
-          </span>
-          <mat-icon>manage_accounts</mat-icon>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+
+      <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && characterManagementActivated">
+        <button mat-icon-button color="primary" [matMenuTriggerFor]="menu" style="font-size: large"><mat-icon>menu</mat-icon> {{characterData.selectedCharacter.mode}}</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item *ngFor="let mode of getModeOptions()" (click)="onModeChanged(mode)">{{mode}}</button>
+        </mat-menu>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="end" style="width: 100%">
+
+        <div *ngIf="settings.characterMode && characterManagementActivated">
+          <button color="primary" mat-button (click)="openCharacterDialog()" matTooltip="Character Management" matTooltipShowDelay="{{tooltipDelay}}"
+            style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+            [style.max-width.px]="screenWidth - 220">
+            <mat-icon>manage_accounts</mat-icon>
+            <span>
+              {{characterData.selectedCharacter != undefined ? characterData.selectedCharacter.name : '&lt;choose character&gt;'}}
+            </span>            
+          </button>
+        </div>      
+  
+        <button color="primary" mat-icon-button (click)="openSettingsDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon>settings</mat-icon>
         </button>
+
       </div>      
-      <button color="primary" mat-button (click)="openSettingsDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
-        <mat-icon>settings</mat-icon>
-      </button>
-      <!-- <button color="primary" mat-button (click)="onTranslateAll()"
-        matTooltip="{{translateAll ? 'Switch descriptions to english' : 'Beschreibungen zu Deutsch wechseln'}}">
-        {{translateAll ? 'English' : 'Deutsch'}} <mat-icon>translate</mat-icon>
-      </button>
-      <button color="primary" mat-button (click)="onSortOnlyByAlphabet()"
-        matTooltip="{{sortByName ? 'Sort spells first by level and then by name' : 'Sort spells first by name and then by level'}}">
-        {{sortByName ? 'Level > Name' : 'Name > Level'}} <mat-icon>sort_by_alpha</mat-icon>
-      </button> -->
-      <!-- <button color="primary" mat-button (click)="onHighlightFilter()"
-        matTooltip="{{highlightFilter ? 'Do not show the filtered spells' : 'Highlight the filtered spells'}}">
-        {{highlightFilter ? 'Don\'t show' : 'Highlight'}} <mat-icon>filter_alt</mat-icon>
-      </button> -->
+
     </div>
 
     <mat-expansion-panel hideToggle (opened)="advancedFiltersPanelOpen = true"
@@ -517,11 +519,11 @@
       <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon>filter_alt_off</mat-icon></button>
 
     </div>    
+        
 
+    <div fxLayout="row wrap" fxLayoutAlign="left center" class="big-top-gap">
 
-    <div fxLayout="row wrap" fxLayoutAlign="left" class="big-top-gap">
-
-      <div fxLayout="row" style="width: 225px; margin-right: 1rem;">
+      <div fxLayout="row" fxLayoutAlign="left center" style="width: 225px; margin-right: 1rem;">
 
         <div>
           <mat-form-field appearance="legacy" style="width: 160px; font-size: larger; margin-left: 0.5rem;">
@@ -533,7 +535,7 @@
           </mat-form-field>
         </div>
 
-        <div *ngIf="filterName.length > 0" style='padding-top: 16px;'>
+        <div *ngIf="filterName.length > 0">
           <button color="primary" mat-button (click)="onNameFilterCleared()">
             <mat-icon>clear</mat-icon>
           </button>
@@ -568,46 +570,121 @@
 
       </div>
 
-      <div fxFlexAlign="end" style='margin-left: auto'>
+      <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined" fxFlexAlign="end" style='margin-left: auto'>
         <div>{{spellsFiltered.length}}
           {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
       </div>
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && (characterData.selectedCharacter.preparedCasting || characterData.selectedCharacter.preparedCantripCasting || characterData.selectedCharacter.limitedSpells.length > 0)" fxLayout="row"> 
-
-      <div fxLayout="row wrap" fxLayoutAlign="left" *ngIf="characterData.selectedCharacter.preparedCasting || characterData.selectedCharacter.preparedCantripCasting">
-        <div>
-            <mat-slide-toggle [(ngModel)]="characterData.selectedCharacter.adventureMode" (ngModelChange)="onAdventureMode()" color="primary">
-            </mat-slide-toggle>
-        </div>
-        <div class="dialog-description"></div>
-        <mat-icon color="primary" class="dialog-icon">auto_fix_high</mat-icon>
-      </div> 
-
-      <div *ngIf="characterData.selectedCharacter.adventureMode">
-        <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
-          <mat-icon>auto_mode</mat-icon>
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0" fxLayout="row wrap" fxLayoutAlign="start"> 
+  
+      <div>
+        <button color="primary" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon>add_circle</mat-icon>
           <span>
-            Refresh ({{characterData.selectedCharacter.usedSpells.length}})
+            Add Filtered
+          </span>
+        </button>
+      </div>
+
+      <div>
+        <button color="primary" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon>remove_circle</mat-icon>
+          <span>
+            Remove Filtered
           </span>
         </button>
       </div>
 
     </div>
 
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="space-between">
+
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
+  
+        <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
+          <div [ngStyle]="{'color' : knownHasError() ? 'red' : ''}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</div>
+        </div>
+        <div *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon color="primary">star</mat-icon></div>
+          <div>{{characterData.selectedCharacter.alwaysSpells.length}}</div>
+        </div>
+        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon color="primary">repeat_one_on</mat-icon></div>
+          <div>{{characterData.selectedCharacter.limitedSpells.length}}</div>
+        </div>
+        <div *ngIf="characterData.selectedCharacter.ritualSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon color="primary">menu_book</mat-icon></div>
+          <div>{{characterData.selectedCharacter.ritualSpells.length}}</div>
+        </div>
+        <div *ngIf="showTotalPrepared()" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon></div>
+          <div [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}">{{getPreparationCount(true, false) + getPreparationCount(false, false)}}</div>
+        </div>        
+  
+      </div>
+
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" fxLayout="row wrap" fxLayoutAlign="start">
+
+        <div *ngIf="characterData.selectedCharacter.knownCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
+          <div [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}">Cantrips: {{getKnownCount(true, false)}}/{{getKnownCount(true, true)}}</div>
+        </div>
+
+        <div *ngIf="characterData.selectedCharacter.knownCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
+          <div [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}">Spells {{getKnownCount(false, false)}}/{{getKnownCount(false, true)}}</div>
+        </div>
+
+      </div>
+
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" fxLayout="row wrap" fxLayoutAlign="start">
+
+        <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
+          <div [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}">Cantrips: {{getPreparationCount(true, false)}}/{{getPreparationCount(true, true)}}</div>
+        </div>
+
+        <div *ngIf="characterData.selectedCharacter.preparedCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <div><mat-icon [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
+          <div [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}">Spells {{getPreparationCount(false, false)}}/{{getPreparationCount(false, true)}}</div>
+        </div>
+
+      </div>
+
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Session" fxLayout="row wrap" fxLayoutAlign="start"> 
+  
+        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0">
+          <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon>auto_mode</mat-icon>
+            <span>
+              Refresh ({{characterData.selectedCharacter.usedSpells.length}})
+            </span>
+          </button>
+        </div>
+  
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="end end">
+        <div>{{spellsFiltered.length}} {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
+      </div>
+
+    </div>
+    
+
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
       matching spells found. Check the filter settings. -</div>
 
-    <mat-accordion #expansionAccordion hideToggle="false" multi="false" style="display: block; border-color: red; border-width: 2px;"
+    <mat-accordion #expansionAccordion hideToggle="false" multi="false" class="border-without-increase" style="display: block; border-color: red; border-width: 2px;"
     [ngStyle]="{'border-style' : showRedBorder() ? 'solid' : ''}">
 
       <mat-expansion-panel #panel id="panel{{i}}" *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
         [disabled]="greyOutUsed(spell)"
-        [ngStyle]="{'background-color': spell.highlighted ? highlightColor : 'white'}">
+        [style.backgroundColor]="highlightSpell(spell)">
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
@@ -823,63 +900,75 @@
               <span class="spell-property-description">{{spell.attacksSavesDisplay}}</span>
             </div>
 
-            <!--shows known/prepared/always information-->
-            <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" class="small-top-gap" fxLayout="row" fxLayoutAlign="end">
-              
-              <!--used-->
-              <div>
-                <button color="primary" class="infobutton" mat-icon-button (click)="onUsed(spell)"
-                  matTooltip="{{spell.prepared ? 'used' : 'not used'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.used"><mat-icon>pause_circle_filled</mat-icon></span>
-                  <span *ngIf="!spell.used"><mat-icon>pause_circle_outline</mat-icon></span>
-                </button>
-              </div> 
-              <!--prepared-->
-              <div>
-                <button color="primary" class="infobutton" mat-icon-button (click)="onPreparation(spell)"
-                  matTooltip="{{spell.prepared ? 'prepared' : 'not prepared'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.prepared"><mat-icon>label</mat-icon></span>
-                  <span *ngIf="!spell.prepared"><mat-icon>label_outline</mat-icon></span>
-                </button>
-              </div>              
-              <!--known-->
-              <div>
-                <button color="primary" class="infobutton" mat-icon-button (click)="onKnown(spell)"
-                  matTooltip="{{spell.known ? 'known' : 'not known'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.known"><mat-icon>bookmark</mat-icon></span>
-                  <span *ngIf="!spell.known"><mat-icon>bookmark_border</mat-icon></span>
-                </button>
+            <div>
+
+              <!--shows known/prepared/always information-->
+              <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row" fxLayoutAlign="end">
+                
+                <ng-template #icon let-show="show" let-iconFull="iconFull" let-iconEmpty="iconEmpty">
+                  <span *ngIf="show"><mat-icon color="primary">{{iconFull}}</mat-icon></span>
+                  <span *ngIf="!show"><mat-icon style="color: grey">{{iconEmpty}}</mat-icon></span>
+                </ng-template>
+
+                <!--used-->
+                <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Session">
+                  <button color="primary" class="infobutton" mat-icon-button (click)="onUsed(spell)"
+                    matTooltip="{{spell.prepared ? 'used' : 'not used'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <span *ngIf="spell.used"><mat-icon>pause_circle_filled</mat-icon></span>
+                    <span *ngIf="!spell.used"><mat-icon>pause_circle_outline</mat-icon></span>
+                  </button>
+                </div>                            
+                <!--known-->
+                <div *ngIf="showIconKnown(spell)">
+                  <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onKnown(spell)"
+                    matTooltip="{{spell.known ? 'known' : 'not known'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.known, iconFull:'bookmark', iconEmpty: 'bookmark_border'}"></ng-template>  
+                  </button>
+                  <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.known, iconFull:'bookmark', iconEmpty: 'bookmark_border'}"></ng-template>  
+                </div>
+                <!--ritualCasting-->
+                <div *ngIf="showIconRitual(spell)">
+                  <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onRitual(spell)"
+                    matTooltip="{{spell.ritualCast ? 'ritual cast' : 'not ritual cast'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.ritualCast, iconFull:'menu_book', iconEmpty: 'import_contacts'}"></ng-template>                  
+                  </button>
+                  <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.ritualCast, iconFull:'menu_book', iconEmpty: 'import_contacts'}"></ng-template>  
+                </div>
+                <!--limited-->
+                <div *ngIf="showIconLimited(spell)">
+                  <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onLimited(spell)"
+                    matTooltip="{{spell.limited ? 'limited' : 'not limited'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.limited, iconFull:'repeat_one_on', iconEmpty: 'repeat_one'}"></ng-template> 
+                  </button>
+                  <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.limited, iconFull:'repeat_one_on', iconEmpty: 'repeat_one'}"></ng-template>  
+                </div>
+                <!--always-->
+                <div *ngIf="showIconAlways(spell)">
+                  <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onAlways(spell)"
+                    matTooltip="{{spell.always ? 'special' : 'not special'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.always, iconFull:'star', iconEmpty: 'star_border'}"></ng-template> 
+                  </button>
+                  <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.always, iconFull:'star', iconEmpty: 'star_border'}"></ng-template>  
+                </div>
+                <!--prepared-->
+                <div *ngIf="showIconPrepared(spell)">
+                  <button *ngIf="!disableIconPrepared()" class="infobutton" mat-icon-button (click)="onPreparation(spell)"
+                    matTooltip="{{spell.prepared ? 'prepared' : 'not prepared'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.prepared, iconFull:'label', iconEmpty: 'label_outline'}"></ng-template> 
+                  </button>
+                  <ng-template *ngIf="disableIconPrepared()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.prepared, iconFull:'label', iconEmpty: 'label_outline'}"></ng-template>  
+                </div> 
+
               </div>
-              <!--ritualCasting-->
-              <div *ngIf="spell.ritual && characterData.selectedCharacter.ritualCaster">
-                <button color="primary" class="infobutton" mat-icon-button (click)="onRitual(spell)"
-                  matTooltip="{{spell.ritualCast ? 'ritual cast' : 'not ritual cast'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.ritualCast"><mat-icon>menu_book</mat-icon></span>
-                  <span *ngIf="!spell.ritualCast"><mat-icon>import_contacts</mat-icon></span>
-                </button>
-              </div>
-              <!--limited-->
+
               <div>
-                <button color="primary" class="infobutton" mat-icon-button (click)="onLimited(spell)"
-                  matTooltip="{{spell.limited ? 'limited' : 'not limited'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.limited"><mat-icon>repeat_one_on</mat-icon></span>
-                  <span *ngIf="!spell.limited"><mat-icon>repeat_one</mat-icon></span>
-                </button>
-              </div>
-              <!--always-->
-              <div>
-                <button color="primary" class="infobutton" mat-icon-button (click)="onAlways(spell)"
-                  matTooltip="{{spell.always ? 'special' : 'not special'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                  <span *ngIf="spell.always"><mat-icon>star</mat-icon></span>
-                  <span *ngIf="!spell.always"><mat-icon>star_border</mat-icon></span>
-                </button>
+                <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined || !(showIconKnown(spell) || showIconAlways(spell) || showIconLimited(spell) || showIconRitual(spell) || showIconPrepared(spell))" class="big-top-gap" ></div>
+                <div [innerHTML]="spell.descriptionDisplay"></div>    
               </div>
 
             </div>
 
-            <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" [innerHTML]="spell.descriptionDisplay"></div>
-            <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined" class="big-top-gap" [innerHTML]="spell.descriptionDisplay"></div>
-
+            
             <div *ngIf="!spell.translatable" class="medium-top-gap">
               <div class="source-style">
                 &#8226; {{spell.source}} &#8226;
