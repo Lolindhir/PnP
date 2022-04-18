@@ -104,7 +104,7 @@ export interface Spell {
   limited: boolean;
   ritualCast: boolean;
   used: boolean;
-  highlighted: boolean;
+  highlightColor: string;
 }
 
 export class Spell implements Spell {  
@@ -144,6 +144,7 @@ export class Spell implements Spell {
     this.limited = false;
     this.ritualCast = false;
     this.used = false;
+    this.highlightColor = 'white';
 
     //cut names from spells
     var name: string = rawSpell.name;

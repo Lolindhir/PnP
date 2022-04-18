@@ -687,11 +687,11 @@
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
         [disabled]="greyOutUsed(spell)"
-        [style.backgroundColor]="highlightSpell(spell)">
+        [style.backgroundColor]="spell.highlightColor">
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
-          <div *ngIf="spell.ritual" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
+          <div *ngIf="spell.ritual && !onlyCastAsRitual(spell)" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
             <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
             <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
@@ -711,6 +711,10 @@
         <!-- Template for first column -->
         <ng-template #FirstColumn>
           <div fxLayout="row">
+            <div *ngIf="onlyCastAsRitual(spell)">
+              <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
+              <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
+            </div>            
             <div class="spell-expansion-header spell-expansion-name">
               {{spell.name}}
             </div>
@@ -775,8 +779,13 @@
 
             <!-- 3rd row: casting time -->
             <div *ngIf="showColumnCastingTime" class="spell-expansion-properties" style="width: 115px;">
-              {{spell.castingTimeDisplayList}}
-              <span *ngIf="spell.ritual" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!onlyCastAsRitual(spell)">
+                {{spell.castingTimeDisplayList}}
+              </span>
+              <span *ngIf="onlyCastAsRitual(spell)">
+                Only as 
+              </span>
+              <span *ngIf="spell.ritual" style="margin-left: 2px" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellRitual}}>
               </span>
             </div>
@@ -878,7 +887,8 @@
 
             <div>
               <span class="spell-property-denotation">Casting time:</span>
-              <span class="spell-property-description">{{spell.castingTime}}</span>
+              <span *ngIf="!onlyCastAsRitual(spell)" class="spell-property-description">{{spell.castingTime}}</span>
+              <span *ngIf="onlyCastAsRitual(spell)" class="spell-property-description">10 Minutes + {{spell.castingTime}}</span>
             </div>
 
             <div>
