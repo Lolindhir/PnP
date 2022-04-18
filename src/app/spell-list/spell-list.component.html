@@ -687,7 +687,7 @@
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
         [disabled]="greyOutUsed(spell)"
-        [style.backgroundColor]="spell.highlightColor">
+        [style.background]="spell.highlightColor">
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
