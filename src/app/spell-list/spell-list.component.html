@@ -658,9 +658,12 @@
   
         <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0">
           <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon>auto_mode</mat-icon>
             <span>
-              Refresh ({{characterData.selectedCharacter.usedSpells.length}})
+              Refresh
+            </span>
+            <mat-icon>repeat_one</mat-icon>
+            <span>
+              ({{characterData.selectedCharacter.usedSpells.length}})
             </span>
           </button>
         </div>
@@ -911,11 +914,10 @@
                 </ng-template>
 
                 <!--used-->
-                <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Session">
-                  <button color="primary" class="infobutton" mat-icon-button (click)="onUsed(spell)"
-                    matTooltip="{{spell.prepared ? 'used' : 'not used'}}" matTooltipShowDelay="{{tooltipDelay}}">
-                    <span *ngIf="spell.used"><mat-icon>pause_circle_filled</mat-icon></span>
-                    <span *ngIf="!spell.used"><mat-icon>pause_circle_outline</mat-icon></span>
+                <div *ngIf="showIconUsed(spell)">
+                  <button color="primary" mat-button (click)="onUsed(spell)"
+                    matTooltip="set the spell to used, you can't use it until the next refresh" matTooltipShowDelay="{{tooltipDelay}}">
+                    <mat-icon>pause_circle_filled</mat-icon> spell used for the day
                   </button>
                 </div>                            
                 <!--known-->
@@ -962,7 +964,9 @@
               </div>
 
               <div>
-                <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined || !(showIconKnown(spell) || showIconAlways(spell) || showIconLimited(spell) || showIconRitual(spell) || showIconPrepared(spell))" class="big-top-gap" ></div>
+                <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined 
+                || !(showIconKnown(spell) || showIconAlways(spell) || showIconLimited(spell) || showIconRitual(spell) || showIconPrepared(spell) || showIconUsed(spell))"
+                class="big-top-gap" ></div>
                 <div [innerHTML]="spell.descriptionDisplay"></div>    
               </div>
 

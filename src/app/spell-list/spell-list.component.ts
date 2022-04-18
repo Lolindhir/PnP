@@ -144,7 +144,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showTags: boolean = true;
-  characterManagementActivated: boolean = false;
+  characterManagementActivated: boolean = true;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
@@ -982,6 +982,16 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     return false;
   }
+  showIconUsed(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Session && spell.limited){
+      return true;
+    }
+    return false;
+  }
 
   disableIconPrepared(): boolean{
     var char = this.characterData.selectedCharacter;
@@ -1418,7 +1428,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       //highlight only ritual cast in session
       if(char.mode === ModeOption.Session && this.onlyCastAsRitual(spell)){
-        return this.highlightColor;
+        return '#FFFFF0';
       }
 
     }

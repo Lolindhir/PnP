@@ -32,7 +32,7 @@
 - roter Rand, wenn Maximalwerte nicht eingehalten sind
 - in Overview auf eine Statistik klicken: Filterung auf diesen Eintrag bzw. Filter wieder rausnehmen (Filter nur hinzufügen/entfernen, nicht alle anderen löschen!)
 - Fragezeichen-Icon im Spell/oder an anderer Stelle mit Dialog zur Erklärung der einzelnen Symbole
-
+- Tooltips für Icons überarbeiten
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
 
