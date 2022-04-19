@@ -716,7 +716,7 @@
               <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
             </div>         
             <div class="spell-expansion-header spell-expansion-name">
-              {{spell.highlightColor}}{{spell.name}}
+              {{spell.name}}
             </div>
             <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
           </div>
@@ -738,7 +738,7 @@
           <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
         </ng-template>  
 
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header [style.background]="spell.highlightColor">
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">          
 
