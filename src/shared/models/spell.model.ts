@@ -760,6 +760,17 @@ export class Spell implements Spell {
     return Spell.compareLevelFirst(a, b);
   }
 
+  public static compareRitualLevelFirst(a: Spell, b: Spell) {        
+    //level first, name second
+    if(a.ritual && !b.ritual){
+      return 1;
+    }
+    if(!a.ritual && b.ritual){
+      return -1;
+    }
+    return Spell.compareLevelFirst(a, b);
+  }
+
   public static compareLevelFirst(a: Spell, b: Spell) {
         
     //level first, name second
@@ -799,6 +810,17 @@ export class Spell implements Spell {
     }
     if(!a.prepared && b.prepared){
       return 1;
+    }
+    return Spell.compareNameFirst(a, b);
+  }
+
+  public static compareRitualNameFirst(a: Spell, b: Spell) {        
+    //level first, name second
+    if(a.ritual && !b.ritual){
+      return 1;
+    }
+    if(!a.ritual && b.ritual){
+      return -1;
     }
     return Spell.compareNameFirst(a, b);
   }

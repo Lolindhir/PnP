@@ -317,6 +317,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       else if(this.characterData.selectedCharacter?.mode === ModeOption.Prep && this.characterData.selectedCharacter?.preparedOnTop){
         this.spells.sort(Spell.comparePreparedNameFirst);
       }
+      else if(this.characterData.selectedCharacter?.mode === ModeOption.Session && this.characterData.selectedCharacter?.ritualsAtBottom){
+        this.spells.sort(Spell.compareRitualNameFirst);
+      }
       else{
         this.spells.sort(Spell.compareNameFirst);
       }
@@ -327,6 +330,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       else if(this.characterData.selectedCharacter?.mode === ModeOption.Prep && this.characterData.selectedCharacter?.preparedOnTop){
         this.spells.sort(Spell.comparePreparedLevelFirst);
+      }
+      else if(this.characterData.selectedCharacter?.mode === ModeOption.Session && this.characterData.selectedCharacter?.ritualsAtBottom){
+        this.spells.sort(Spell.compareRitualLevelFirst);
       }
       else{
         this.spells.sort(Spell.compareLevelFirst);

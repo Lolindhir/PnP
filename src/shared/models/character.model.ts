@@ -43,6 +43,7 @@ export interface Character {
     preparedOnTop: boolean,
     knownOnTop: boolean,
     dontShowUsed: boolean,
+    ritualsAtBottom: boolean,
     allSpellsInOverview: boolean,
 }
 
@@ -85,6 +86,7 @@ export class Character implements Character {
         this.knownOnTop = false;
         this.mode = ModeOption.Overview;
         this.dontShowUsed = false;
+        this.ritualsAtBottom = false;
         this.allSpellsInOverview = false;
 
         characterList.push(this);
@@ -190,6 +192,7 @@ export class Character implements Character {
         this.cookieService.set(ident + CharacterCookies.KnownOnTop, String(this.knownOnTop), 365);
         this.cookieService.set(ident + CharacterCookies.Mode, this.mode, 365);
         this.cookieService.set(ident + CharacterCookies.DontShowUsed, String(this.dontShowUsed), 365);
+        this.cookieService.set(ident + CharacterCookies.RitualsAtBottom, String(this.ritualsAtBottom), 365);
         this.cookieService.set(ident + CharacterCookies.AllSpellsInOverview, String(this.allSpellsInOverview), 365);
 
         //sort characters
@@ -264,6 +267,7 @@ export class Character implements Character {
         char.preparedOnTop = cookieService.get(ident + CharacterCookies.PreparedOnTop) === 'true' ? true : false;
         char.knownOnTop = cookieService.get(ident + CharacterCookies.KnownOnTop) === 'true' ? true : false;
         char.dontShowUsed = cookieService.get(ident + CharacterCookies.DontShowUsed) === 'true' ? true : false;
+        char.ritualsAtBottom = cookieService.get(ident + CharacterCookies.RitualsAtBottom) === 'true' ? true : false;
         char.allSpellsInOverview = cookieService.get(ident + CharacterCookies.AllSpellsInOverview) === 'true' ? true : false;
 
         var rawMode: string = cookieService.get(ident + CharacterCookies.Mode);
@@ -314,5 +318,6 @@ export enum CharacterCookies{
     KnownOnTop = 'KnownOnTop',
     Mode = 'Mode',
     DontShowUsed = 'DontShowUsed',
+    RitualsAtBottom = 'RitualsAtBottom',
     AllSpellsInOverview = 'AllSpellsInOverview',
 }
