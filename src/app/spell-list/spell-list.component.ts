@@ -261,9 +261,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //sort spells
     this.sortMasterSpells();
 
-    //highlight spells
-    this.applyHighlightColor();
-
     //trigger change of shown spells
     this.onChange();
   }
@@ -385,12 +382,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return false;
   }
 
-  applyHighlightColor(){
-    for(var spell of this.spells){
-      spell.highlightColor = this.highlightSpell(spell);
-    } 
-  }
-
   applyCharacterMode(){
 
     if(this.settings.characterMode){
@@ -443,9 +434,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       
     }
-
-    //highlight spells
-    this.applyHighlightColor();
 
     //trigger filtering
     this.onChange();
@@ -918,7 +906,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.characterData.selectedCharacter.save();
 
     this.sortMasterSpells();
-    this.applyHighlightColor();
     this.onChange();
 
   }
