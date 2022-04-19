@@ -917,6 +917,35 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+
+  getEmptyListText(): string{
+
+    if(this.filterName.length === 0 && this.filters.length === 0){
+      
+      if(this.spells.length === 0){
+        return '- Empty spell database. Contact administrator. -'
+      }
+  
+      var char = this.characterData.selectedCharacter;
+      if(char != undefined){
+        
+        if(char.mode === ModeOption.Overview){
+          return '- No known spells. -'
+        }
+        if(char.mode === ModeOption.Prep){
+          return '- No known spells to prepare. -'
+        }
+        if(char.mode === ModeOption.Session){
+          return '- No spells known or prepared. -'
+        }
+      }
+
+    }   
+
+    return '- No matching spells found. Check the filter settings. -'
+    
+  }
+
   showSpellListSnackBar(spellName: string, action: string, current: number, max: number){
     
     var text: string = '\'' + spellName + '\'' + ' ' + action;

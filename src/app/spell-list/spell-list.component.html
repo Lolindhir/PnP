@@ -677,8 +677,9 @@
     </div>
     
 
-    <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">- No
-      matching spells found. Check the filter settings. -</div>
+    <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">
+      {{getEmptyListText()}}
+    </div>
 
     <mat-accordion #expansionAccordion hideToggle="false" multi="false" class="border-without-increase" style="display: block; border-color: red; border-width: 2px;"
     [ngStyle]="{'border-style' : showRedBorder() ? 'solid' : ''}">
@@ -687,7 +688,7 @@
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
         [disabled]="greyOutUsed(spell)"
-        [style.background]="spell.highlightColor">
+        [style.background]="highlightSpell(spell)">
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
@@ -715,7 +716,7 @@
               <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
               <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
             </div>         
-            <div class="spell-expansion-header spell-expansion-name">
+            <div class="spell-expansion-header spell-expansion-name" [ngStyle]="{'font-family' : onlyCastAsRitual(spell) ? 'Helvetica' : ''}">
               {{spell.name}}
             </div>
             <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
@@ -738,7 +739,7 @@
           <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
         </ng-template>  
 
-        <mat-expansion-panel-header [style.background]="spell.highlightColor">
+        <mat-expansion-panel-header [style.background]="highlightSpell(spell)">
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">          
 
@@ -773,7 +774,9 @@
             <div *ngIf="showColumnLevel" class="spell-expansion-properties" style="width: 75px;">
               {{spell.levelDisplay}}
               <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" style="max-height: 10px;" src={{images.spellArrow}}>
+                <!-- <img class="image" style="max-height: 10px;" src={{images.spellArrow}}> -->
+                <span *ngIf="!greyOutUsed(spell)"><img class="image" style="max-height: 10px;" src={{images.spellArrow}}></span>
+                <span *ngIf="greyOutUsed(spell)"><img class="image" style="max-height: 10px;" src={{images.spellArrowGrey}}></span>
               </span>
             </div>
 
