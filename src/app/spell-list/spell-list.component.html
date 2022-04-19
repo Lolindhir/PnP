@@ -716,7 +716,7 @@
               <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
               <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
             </div>         
-            <div class="spell-expansion-header spell-expansion-name" [ngStyle]="{'font-family' : onlyCastAsRitual(spell) ? 'Helvetica' : ''}">
+            <div class="spell-expansion-header spell-expansion-name" [ngStyle]="{'font-weight' : onlyCastAsRitual(spell) ? '100' : ''}">
               {{spell.name}}
             </div>
             <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
