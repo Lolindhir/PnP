@@ -52,6 +52,15 @@
   float: right;
 }
 
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: solid 1px lightgrey;
+}
+
 .mat-accordion .mat-expansion-panel:not(.mat-expanded),
 .mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
    margin-bottom: 5px;

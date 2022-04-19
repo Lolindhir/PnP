@@ -34,7 +34,7 @@
 - Fragezeichen-Icon im Spell/oder an anderer Stelle mit Dialog zur Erklärung der einzelnen Symbole
 - Tooltips für Icons überarbeiten
 - Hinweis, wenn Character-Name schon vorhanden, und keine Umbennung
-- Angaben zu current/max fixieren, sodass immer sichtbar (Add/Prep)
+- Angaben zu current/max fixieren, sodass immer sichtbar (Add/Prep) -> rechts unten? (fixed) oder an gleicher Stelle? (sticky)
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
