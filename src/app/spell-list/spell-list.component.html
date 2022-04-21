@@ -570,10 +570,10 @@
 
       </div>
 
-      <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined" fxFlexAlign="end" style='margin-left: auto'>
+      <!-- <div *ngIf="!settings.characterMode || characterData.selectedCharacter === undefined" fxFlexAlign="end" style='margin-left: auto'>
         <div>{{spellsFiltered.length}}
           {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -599,11 +599,11 @@
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="space-between" class="sticky">
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="space-between">
 
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
   
-        <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
+        <div *ngIf="showTotalKnown()" class="sticky" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
           <div [ngStyle]="{'color' : knownHasError() ? 'red' : ''}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</div>
         </div>
@@ -626,7 +626,7 @@
   
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" class="sticky" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div *ngIf="characterData.selectedCharacter.knownCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
@@ -640,7 +640,7 @@
 
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" class="sticky" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
@@ -670,13 +670,12 @@
   
       </div>
 
-      <div fxLayout="row" fxLayoutAlign="end end">
+      <!-- <div fxLayout="row" fxLayoutAlign="end end">
         <div>{{spellsFiltered.length}} {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
-      </div>
+      </div> -->
 
-    </div>
+    </div> 
     
-
     <div class="big-top-gap" *ngIf="spellsFiltered.length === 0" style="font-style: italic; text-align: center;">
       {{getEmptyListText()}}
     </div>
@@ -1069,6 +1068,11 @@
 
     </mat-accordion>
 
+
+    <div fxLayout="row" fxLayoutAlign="end end" class="bottom">
+      <div class="spellCount">{{spellsToShow.length}}/{{spellsFiltered.length}}
+        <span style="font-size: small;">{{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</span></div>
+    </div>
 
   </div>
 </div>
