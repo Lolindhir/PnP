@@ -1202,12 +1202,16 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     else{
       if(spell.level === 0){
         ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownCantrips, spell.name);
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedCantrips, spell.name);
+        spell.prepared = false;
         this.showSpellListSnackBar(spell.name, 'unknown', this.getKnownCount(true, false), this.getKnownCount(true, true));
       }
       else{
         ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownSpells, spell.name);
+        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedSpells, spell.name);
+        spell.prepared = false;
         this.showSpellListSnackBar(spell.name, 'unknown', this.getKnownCount(false, false), this.getKnownCount(false, true));
-      }    
+      }
     }
     this.characterData.selectedCharacter.save();
 
@@ -1454,9 +1458,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         if(spellKnown){
           if(spell.level === 0){
             ArrayUtilities.removeFromArray(char.knownCantrips, spell.name);
+            ArrayUtilities.removeFromArray(char.preparedCantrips, spell.name);
+            spell.prepared = false;
           }
           else{
             ArrayUtilities.removeFromArray(char.knownSpells, spell.name);
+            ArrayUtilities.removeFromArray(char.preparedSpells, spell.name);
+            spell.prepared = false;
           }
         }
       }
