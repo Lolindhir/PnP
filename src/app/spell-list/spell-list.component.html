@@ -577,33 +577,53 @@
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0" fxLayout="row wrap" fxLayoutAlign="start"> 
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="start"> 
   
-      <div>
-        <button color="primary" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
-          <mat-icon>add_circle</mat-icon>
-          <span>
-            Add Filtered
-          </span>
-        </button>
-      </div>
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0" fxLayout="row wrap" fxLayoutAlign="start"> 
 
-      <div>
-        <button color="primary" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
-          <mat-icon>remove_circle</mat-icon>
-          <span>
-            Remove Filtered
-          </span>
-        </button>
+        <div>
+          <button color="primary" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon>add_circle</mat-icon>
+            <span>
+              Add Filtered
+            </span>
+          </button>
+        </div>
+  
+        <div>
+          <button color="primary" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon>remove_circle</mat-icon>
+            <span>
+              Remove Filtered
+            </span>
+          </button>
+        </div>
+
+      </div>      
+
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Session" fxLayout="row wrap" fxLayoutAlign="start"> 
+  
+        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0">
+          <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
+            <span>
+              Refresh
+            </span>
+            <mat-icon>repeat_one</mat-icon>
+            <span>
+              ({{characterData.selectedCharacter.usedSpells.length}})
+            </span>
+          </button>
+        </div>
+  
       </div>
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="space-between">
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" class="sticky" fxLayout="row wrap" fxLayoutAlign="end">
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" class="topbar" fxLayout="row wrap" fxLayoutAlign="start"> 
   
-        <div *ngIf="showTotalKnown()" class="sticky" fxLayout="row" fxLayoutAlign="start center" class="total">
+        <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
           <div [ngStyle]="{'color' : knownHasError() ? 'red' : ''}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</div>
         </div>
@@ -626,53 +646,33 @@
   
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" class="sticky" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" class="topbar" fxLayout="row wrap" fxLayoutAlign="start">
 
-        <div *ngIf="characterData.selectedCharacter.knownCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+        <div fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
-          <div [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}">Cantrips: {{getKnownCount(true, false)}}/{{getKnownCount(true, true)}}</div>
+          <div [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}">Cantrip {{getKnownCount(true, false)}}<span *ngIf="characterData.selectedCharacter.knownCantripCasting">/{{getKnownCount(true, true)}}</span></div>
         </div>
 
-        <div *ngIf="characterData.selectedCharacter.knownCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
+        <div fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
-          <div [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}">Spells {{getKnownCount(false, false)}}/{{getKnownCount(false, true)}}</div>
+          <div [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}">Spell {{getKnownCount(false, false)}}<span *ngIf="characterData.selectedCharacter.knownCasting">/{{getKnownCount(false, true)}}</span></div>
         </div>
 
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" class="sticky" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" class="topbar" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
-          <div [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}">Cantrips: {{getPreparationCount(true, false)}}/{{getPreparationCount(true, true)}}</div>
+          <div [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}">Cantrip {{getPreparationCount(true, false)}}/{{getPreparationCount(true, true)}}</div>
         </div>
 
         <div *ngIf="characterData.selectedCharacter.preparedCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
-          <div [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}">Spells {{getPreparationCount(false, false)}}/{{getPreparationCount(false, true)}}</div>
+          <div [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}">Spell {{getPreparationCount(false, false)}}/{{getPreparationCount(false, true)}}</div>
         </div>
 
       </div>
-
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Session" fxLayout="row wrap" fxLayoutAlign="start"> 
-  
-        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0">
-          <button color="primary" mat-button (click)="onRefreshUsed()" matTooltip="Refresh used spells" matTooltipShowDelay="{{tooltipDelay}}">
-            <span>
-              Refresh
-            </span>
-            <mat-icon>repeat_one</mat-icon>
-            <span>
-              ({{characterData.selectedCharacter.usedSpells.length}})
-            </span>
-          </button>
-        </div>
-  
-      </div>
-
-      <!-- <div fxLayout="row" fxLayoutAlign="end end">
-        <div>{{spellsFiltered.length}} {{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</div>
-      </div> -->
 
     </div> 
     
@@ -680,7 +680,7 @@
       {{getEmptyListText()}}
     </div>
 
-    <mat-accordion #expansionAccordion hideToggle="false" multi="false" class="border-without-increase" style="display: block; border-color: red; border-width: 2px;"
+    <mat-accordion #expansionAccordion hideToggle="false" multi="false" class="border-without-increase" style="display: block; border-color: red; border-width: 2px; margin-top: 3px; margin-bottom: 5px;"
     [ngStyle]="{'border-style' : showRedBorder() ? 'solid' : ''}">
 
       <mat-expansion-panel #panel id="panel{{i}}" *ngFor="let spell of spellsToShow; let i = index"

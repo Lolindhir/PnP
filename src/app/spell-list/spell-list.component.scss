@@ -72,9 +72,14 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 1000;
-  border-bottom: solid 1px lightgrey;
+}
+
+.topbar {
+  background-color: floralwhite;
+  border: solid 1px grey;
+  border-radius: 25px;
+  padding-right: 5px;
 }
 
 .mat-accordion .mat-expansion-panel:not(.mat-expanded),
