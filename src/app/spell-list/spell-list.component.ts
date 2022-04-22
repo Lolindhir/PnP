@@ -123,6 +123,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   //other global stuff
   images = imagePaths;
+  disabled: boolean = false;
   settings: SettingsData = {
     showRandomControls: false,
     sortByName: false,
@@ -953,7 +954,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
-
   disableIconKnownLists(): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
@@ -1366,26 +1366,59 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    //ToDo: SnackBar mit Sicherheitsabfrage
+    //ask user
+    this.disabled = true;
 
-    for(var spell of this.spellsFiltered){
-      var spellAlreadyKnown: boolean = spell.known;
-      spell.known = true;
-      if(!spellAlreadyKnown){
-        if(spell.level === 0){
-          char.knownCantrips.push(spell.name);
-        }
-        else{
-          char.knownSpells.push(spell.name);
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Add all currently shown spells to known list?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      var char = this.characterData.selectedCharacter;
+      if(char === undefined){
+        return;
+      }
+
+      for(var spell of this.spellsFiltered){
+        var spellAlreadyKnown: boolean = spell.known;
+        spell.known = true;
+        if(!spellAlreadyKnown){
+          if(spell.level === 0){
+            char.knownCantrips.push(spell.name);
+          }
+          else{
+            char.knownSpells.push(spell.name);
+          }
         }
       }
-    }
-    char.save();
+      char.save();
+  
+      if(char.knownOnTop){
+        this.sortMasterSpells();
+        this.onChange();
+      }
 
-    if(char.knownOnTop){
-      this.sortMasterSpells();
-      this.onChange();
-    }
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+    });
+    
   }
 
   onRemoveAll(){
@@ -1394,26 +1427,59 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    //ToDo: SnackBar mit Sicherheitsabfrage
+    //ask user
+    this.disabled = true;
 
-    for(var spell of this.spellsFiltered){
-      var spellKnown: boolean = spell.known;
-      spell.known = false;
-      if(spellKnown){
-        if(spell.level === 0){
-          ArrayUtilities.removeFromArray(char.knownCantrips, spell.name);
-        }
-        else{
-          ArrayUtilities.removeFromArray(char.knownSpells, spell.name);
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Remove all currently shown spells from known list?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      var char = this.characterData.selectedCharacter;
+      if(char === undefined){
+        return;
+      }
+
+      for(var spell of this.spellsFiltered){
+        var spellKnown: boolean = spell.known;
+        spell.known = false;
+        if(spellKnown){
+          if(spell.level === 0){
+            ArrayUtilities.removeFromArray(char.knownCantrips, spell.name);
+          }
+          else{
+            ArrayUtilities.removeFromArray(char.knownSpells, spell.name);
+          }
         }
       }
-    }
-    char.save();
+      char.save();
+  
+      if(char.knownOnTop){
+        this.sortMasterSpells();
+        this.onChange();
+      }
 
-    if(char.knownOnTop){
-      this.sortMasterSpells();
-      this.onChange();
-    }
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+    });
+
   }
 
   onRefreshUsed(){
