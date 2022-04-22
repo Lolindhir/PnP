@@ -1391,10 +1391,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         return;
       }
 
+      var spellCount: number = 0;
+
       for(var spell of this.spellsFiltered){
         var spellAlreadyKnown: boolean = spell.known;
         spell.known = true;
         if(!spellAlreadyKnown){
+          spellCount++;
           if(spell.level === 0){
             char.knownCantrips.push(spell.name);
           }
@@ -1414,6 +1417,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       snackBarRef.dismiss();
       //re-enable clicking
       this.disabled = false;
+
+      //show result
+      this.showSpellListSnackBar(spellCount.toString(), 'spells added', 0, 0);
     });
 
     snackBarRef.instance.onDismiss.subscribe(() => {
@@ -1452,10 +1458,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         return;
       }
 
+      var spellCount: number = 0;
+
       for(var spell of this.spellsFiltered){
         var spellKnown: boolean = spell.known;
         spell.known = false;
         if(spellKnown){
+          spellCount++;
           if(spell.level === 0){
             ArrayUtilities.removeFromArray(char.knownCantrips, spell.name);
             ArrayUtilities.removeFromArray(char.preparedCantrips, spell.name);
@@ -1479,6 +1488,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       snackBarRef.dismiss();
       //re-enable clicking
       this.disabled = false;
+
+      //show result
+      this.showSpellListSnackBar(spellCount.toString(), 'spells removed', 0, 0);
+
     });
 
     snackBarRef.instance.onDismiss.subscribe(() => {
