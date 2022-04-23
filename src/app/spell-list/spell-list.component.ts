@@ -2000,4 +2000,20 @@ export class SpellListCharacterDialog {
     });
   }
 
+  showNameWarning(): boolean{
+    
+    var selectedChar = this.data.selectedCharacter;
+    if(selectedChar === undefined){
+      return false;
+    }
+
+    for(var char of this.data.characterList){
+      if(selectedChar.id != char.id && (selectedChar.name === char.name || this.changedName === char.name)){
+        return true;
+      }
+    }
+
+    return false;
+  }
+
 }
