@@ -619,9 +619,10 @@
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" class="sticky">
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && characterData.selectedCharacter.mode != ModeOption.Session"
+          class="sticky topbar" fxLayout="row wrap" fxLayoutAlign="space-between">
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" class="topbar" fxLayout="row wrap" fxLayoutAlign="start"> 
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
   
         <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
@@ -646,7 +647,7 @@
   
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" class="topbar" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
@@ -660,7 +661,7 @@
 
       </div>
 
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" class="topbar" fxLayout="row wrap" fxLayoutAlign="start">
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" fxLayout="row" fxLayoutAlign="start center" class="total">
           <div><mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon></div>
@@ -673,6 +674,12 @@
         </div>
 
       </div>
+
+      <div>
+        <button color="primary" mat-icon-button (click)="openInfoDialog()" matTooltip="Icon explanation" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon>help</mat-icon>
+        </button>
+      </div>      
 
     </div> 
     

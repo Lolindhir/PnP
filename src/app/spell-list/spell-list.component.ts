@@ -1690,6 +1690,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  openInfoDialog(): void {
+    this.dialog.open(SpellListInfoDialog);
+  }
+
   openSettingsDialog(): void {
 
     const dialogRef = this.dialog.open(SpellListSettingsDialog, {
@@ -1751,6 +1755,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
+}
+
+@Component({
+  selector: 'spell-list-info-dialog',
+  templateUrl: 'spell-list-info-dialog.html',
+  styleUrls: ['./spell-list.component.scss']
+})
+export class SpellListInfoDialog {
+  constructor() {}
 }
 
 @Component({
