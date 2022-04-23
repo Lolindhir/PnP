@@ -3,7 +3,7 @@
 
     <div fxLayout="row" fxLayoutAlign="space-between">
 
-      <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined && characterManagementActivated">
+      <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined">
         <button mat-icon-button color="primary" [matMenuTriggerFor]="menu" style="font-size: large"><mat-icon>menu</mat-icon> {{characterData.selectedCharacter.mode}}</button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item *ngFor="let mode of getModeOptions()" (click)="onModeChanged(mode)">{{mode}}</button>
@@ -12,10 +12,10 @@
 
       <div fxLayout="row" fxLayoutAlign="end" style="width: 100%">
 
-        <div *ngIf="settings.characterMode && characterManagementActivated">
+        <div *ngIf="settings.characterMode">
           <button color="primary" mat-button (click)="openCharacterDialog()" matTooltip="Character Management" matTooltipShowDelay="{{tooltipDelay}}"
             style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
-            [style.max-width.px]="screenWidth - 220">
+            [style.max-width.px]="characterData.selectedCharacter != undefined ? screenWidth - 220 : screenWidth - 100">
             <mat-icon>manage_accounts</mat-icon>
             <span>
               {{characterData.selectedCharacter != undefined ? characterData.selectedCharacter.name : '&lt;choose character&gt;'}}

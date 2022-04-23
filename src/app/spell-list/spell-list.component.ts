@@ -4,15 +4,12 @@ import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
 import { ArrayUtilities } from '@utilities/array.utilities';
-import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
-import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json'; 
 import { SelectionModel } from '@angular/cdk/collections';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
-import * as imagePaths from '@shared/imagePaths';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
@@ -23,6 +20,12 @@ import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
 import { StorageService } from '@shared/services/storage.service';
+import { FileSaverService } from 'ngx-filesaver';
+
+import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
+import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
+import * as imagePaths from '@shared/imagePaths';
+import * as globals from '@shared/globals';
 
 export interface SettingsData {
   showRandomControls: boolean;
@@ -144,7 +147,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
   showTags: boolean = true;
-  characterManagementActivated: boolean = true;
   tooltipDelay = 500;
   screenWidth: number = -1;
   screenSm: boolean = false;
@@ -946,7 +948,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
 
     this.snackBar.openFromComponent(SnackBarComponent, {
-      duration: 1500,
+      duration: globals.snackBarDuration,
       data: {text: text}
     });
   }
@@ -1689,10 +1691,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   openSettingsDialog(): void {
-    
-    if(this.filterName === 'char'){
-      this.characterManagementActivated = !this.characterManagementActivated;
-    }
 
     const dialogRef = this.dialog.open(SpellListSettingsDialog, {
       //width: '250px',
@@ -1799,17 +1797,20 @@ export class SpellListCharacterDialog {
   
   addMode: boolean = false;
   selectedPreset: Preset | undefined;
+  importedCharacter: Character | undefined;
   newName: string | undefined;
   nameChangeMode: boolean = false;
   changedName: string = "";
   onCharacterChanged = new EventEmitter();
   onSortChanged = new EventEmitter();
   disabled: boolean = false;
+  fileExtension: string = globals.characterFileExtension;
 
   constructor(
     public dialogRef: MatDialogRef<SpellListCharacterDialog>,
     private snackBar: MatSnackBar,
     private storageService: StorageService,
+    private fileSaver: FileSaverService,
     @Inject(MAT_DIALOG_DATA) public data: CharacterData,
   ) {}
 
@@ -1835,12 +1836,47 @@ export class SpellListCharacterDialog {
       //reset options
       this.newName = undefined;
       this.selectedPreset = undefined;
+      this.importedCharacter = undefined;
       this.addMode = false;
 
       //trigger
       this.onCharacterChange();
     }
 
+  }
+
+  onImport(e: any){
+    var file = e.target.files[0];
+
+    let fileReader = new FileReader();
+    fileReader.onload = (e) => {
+      var result = fileReader.result;
+      
+      if(result === undefined || result === null || result instanceof ArrayBuffer){
+        this.showSnackBar('File not readable')
+        return;
+      }
+
+      //create char
+      var newChar = Character.fromSerialized(result, undefined, this.data.characterList, this.storageService);
+      if(newChar === undefined){
+        this.showSnackBar('File contains error or insufficent character data')
+        return;
+      }
+      newChar.save();
+
+      //select
+      this.data.selectedCharacter = newChar;
+      this.changedName = this.data.selectedCharacter.name;
+
+      //trigger
+      this.onCharacterChange();
+
+      //success
+      this.showSnackBar('\'' + this.changedName + '\' imported')
+      
+    }
+    fileReader.readAsText(file);
   }
 
   onCharacterDelete() {
@@ -1951,8 +1987,17 @@ export class SpellListCharacterDialog {
       return;
     }
 
+    var fileName = this.data.selectedCharacter.name.replace(/[^\w]/g,'') + globals.characterFileExtension;
     var data = this.data.selectedCharacter.serialize();
+    this.storageService.storeJson(fileName, data);
 
+  }
+
+  private showSnackBar(text: string){
+    this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: globals.snackBarDuration,
+      data: {text: text}
+    });
   }
 
 }

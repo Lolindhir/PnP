@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FileSaverModule } from 'ngx-filesaver';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
@@ -54,6 +55,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     FlexLayoutModule,
     FormsModule,
     HttpClientModule,
+    FileSaverModule,
     BrowserAnimationsModule,
     MatExpansionModule,
     MatFormFieldModule,

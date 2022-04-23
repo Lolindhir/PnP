@@ -6,23 +6,34 @@
           
           <div *ngIf="!addMode">
               
-              <div fxLayout="row">
+              <div fxLayout="row" fxLayoutAlign="space-between stretch">
+
+                <div>
+                    <mat-form-field appearance="fill" style="width: 150px;">
+                    <mat-select [(ngModel)]="data.selectedCharacter"
+                        (ngModelChange)="onCharacterChange()">
+                        <mat-option *ngFor="let character of data.characterList" [value]="character">
+                        {{character.name}}</mat-option>
+                    </mat-select>
+                    </mat-form-field>
+                </div>
+        
+                <div fxLayout="column">
 
                   <div>
-                      <mat-form-field appearance="fill" style="width: 150px;">
-                      <mat-select [(ngModel)]="data.selectedCharacter"
-                          (ngModelChange)="onCharacterChange()">
-                          <mat-option *ngFor="let character of data.characterList" [value]="character">
-                          {{character.name}}</mat-option>
-                      </mat-select>
-                      </mat-form-field>
-                  </div>
-          
+                    <button color="primary" mat-icon-button (click)="addMode = true" style="max-height: 25px; width: 60px;">
+                      <mat-icon>person_add</mat-icon> New
+                    </button>
+                  </div>    
+                  
+                  <input type='file' accept="{{fileExtension}}" #file (change)="onImport($event)" hidden="true"> 
                   <div>
-                      <button color="primary" mat-button (click)="addMode = true">
-                        <mat-icon>person_add</mat-icon> New
-                      </button>
-                  </div>            
+                    <button color="primary" mat-icon-button (click)="file.click()" style="max-height: 25px; width: 70px;">
+                        <mat-icon>file_download</mat-icon> Import                    
+                    </button>
+                  </div>
+
+                </div>                
       
               </div>
       
@@ -228,7 +239,7 @@
                         {{preset.name}}</mat-option>
                     </mat-select>
                   </mat-form-field>
-              </div>
+              </div>                         
 
               <div fxLayout="row">
 

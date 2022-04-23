@@ -121,10 +121,17 @@ export class Character implements Character {
         };
     }
 
-    private static fromSerialized(serialized: string, id: number | undefined, characterList: Character[], storageService: StorageService): Character {
+    public static fromSerialized(serialized: string, id: number | undefined, characterList: Character[], storageService: StorageService): Character | undefined {
         
-        //desetialize
-        const charRaw: ReturnType<Character["toObject"]> = JSON.parse(serialized);
+        //deserialize
+        var charRaw: ReturnType<Character["toObject"]>;
+        try {
+            charRaw = JSON.parse(serialized);
+        }
+        catch (exception_var){
+            console.log(exception_var);
+            return undefined;
+        }
     
         //create stub
         var name: string = charRaw.name === undefined ? 'Unknown' : charRaw.name;
