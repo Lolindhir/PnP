@@ -29,6 +29,7 @@ import { MainHeaderComponent } from '@components/main-header/main-header.compone
 import { MainBodyComponent } from '@components/main-body/main-body.component';
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog } from '@components/spell-list/spell-list.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
+import { StorageService } from '@services/storage.service';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatListComponent } from './feat-list/feat-list.component';
@@ -76,6 +77,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
   ],
   providers: [
     CookieService,
+    StorageService,
   ],
   bootstrap: [AppComponent]
 })

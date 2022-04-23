@@ -49,6 +49,8 @@ Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Public\Quellen un
 
 [Cookie-Handling](https://stackoverflow.com/questions/34298133/angular-cookies)
 
+[Serializing](https://dev.to/hansott/simple-way-to-serialize-objects-to-json-in-typescript-27f5)
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

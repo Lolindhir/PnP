@@ -1,13 +1,12 @@
 import { Spell } from "@models/spell.model";
 import { Preset } from "@models/preset.model";
-import { CookieService } from 'ngx-cookie-service';
 import { ArrayUtilities } from "@shared/utilities/array.utilities";
+import { StorageService } from "@shared/services/storage.service";
 
 export interface CharacterData {
     characterList: Character[],
     selectedCharacter: Character | undefined,
     presets: Preset[],
-    cookieService: CookieService | undefined,
     masterSpellList: Spell[]
 }
 
@@ -50,7 +49,7 @@ export interface Character {
 export class Character implements Character {  
 
 
-    constructor(id: number | undefined, name: string, private characterList: Character[], private cookieService: CookieService){
+    constructor(id: number | undefined, name: string, private characterList: Character[], private storageService: StorageService){
 
         if(id != undefined){
             this.id = id;
@@ -93,6 +92,77 @@ export class Character implements Character {
         characterList.sort(Character.compare);
     }
 
+    private toObject() {
+        return {
+            name: this.name,
+            knownSpells: this.knownSpells,
+            knownCantrips: this.knownCantrips,
+            preparedSpells: this.preparedSpells,
+            preparedCantrips: this.preparedCantrips,
+            alwaysSpells: this.alwaysSpells,
+            ritualSpells: this.ritualSpells,
+            limitedSpells: this.limitedSpells,
+            usedSpells: this.usedSpells,
+            knownCasting: this.knownCasting,
+            maxKnown: this.maxKnown,
+            knownCantripCasting: this.knownCantripCasting,
+            maxCantripsKnown: this.maxCantripsKnown,
+            preparedCasting: this.preparedCasting,
+            maxPrepared: this.maxPrepared,
+            preparedCantripCasting: this.preparedCantripCasting,
+            maxCantripsPrepared: this.maxCantripsPrepared,
+            ritualCastingUnprepared: this.ritualCastingUnprepared,
+            ritualCaster: this.ritualCaster,
+            preparedOnTop: this.preparedOnTop,
+            knownOnTop: this.knownOnTop,
+            dontShowUsed: this.dontShowUsed,
+            ritualsAtBottom: this.ritualsAtBottom,
+            allSpellsInOverview: this.allSpellsInOverview,
+        };
+    }
+
+    private static fromSerialized(serialized: string, id: number | undefined, characterList: Character[], storageService: StorageService): Character {
+        
+        //desetialize
+        const charRaw: ReturnType<Character["toObject"]> = JSON.parse(serialized);
+    
+        //create stub
+        var name: string = charRaw.name === undefined ? 'Unknown' : charRaw.name;
+        var char = new Character(id, name, characterList, storageService);
+
+        //set values (if not undefined in raw)
+        //reminder: mode is not saved, so it is not set above
+        if(charRaw.knownSpells != undefined){ char.knownSpells = charRaw.knownSpells; }
+        if(charRaw.knownCantrips != undefined){ char.knownCantrips = charRaw.knownCantrips; }
+        if(charRaw.preparedSpells != undefined){ char.preparedSpells = charRaw.preparedSpells; }
+        if(charRaw.preparedCantrips != undefined){ char.preparedCantrips = charRaw.preparedCantrips; }
+        if(charRaw.alwaysSpells != undefined){ char.alwaysSpells = charRaw.alwaysSpells; }
+        if(charRaw.ritualSpells != undefined){ char.ritualSpells = charRaw.ritualSpells; }
+        if(charRaw.limitedSpells != undefined){ char.limitedSpells = charRaw.limitedSpells; }
+        if(charRaw.usedSpells != undefined){ char.usedSpells = charRaw.usedSpells; }
+        if(charRaw.knownCasting != undefined){ char.knownCasting = charRaw.knownCasting; }
+        if(charRaw.maxKnown != undefined){ char.maxKnown = charRaw.maxKnown; }
+        if(charRaw.knownCantripCasting != undefined){ char.knownCantripCasting = charRaw.knownCantripCasting; }
+        if(charRaw.maxCantripsKnown != undefined){ char.maxCantripsKnown = charRaw.maxCantripsKnown; }
+        if(charRaw.preparedCasting != undefined){ char.preparedCasting = charRaw.preparedCasting; }
+        if(charRaw.maxPrepared != undefined){ char.maxPrepared = charRaw.maxPrepared; }
+        if(charRaw.preparedCantripCasting != undefined){ char.preparedCantripCasting = charRaw.preparedCantripCasting; }
+        if(charRaw.maxCantripsPrepared != undefined){ char.maxCantripsPrepared = charRaw.maxCantripsPrepared; }
+        if(charRaw.ritualCastingUnprepared != undefined){ char.ritualCastingUnprepared = charRaw.ritualCastingUnprepared; }
+        if(charRaw.ritualCaster != undefined){ char.ritualCaster = charRaw.ritualCaster; }
+        if(charRaw.preparedOnTop != undefined){ char.preparedOnTop = charRaw.preparedOnTop; }
+        if(charRaw.knownOnTop != undefined){ char.knownOnTop = charRaw.knownOnTop; }
+        if(charRaw.dontShowUsed != undefined){ char.dontShowUsed = charRaw.dontShowUsed; }
+        if(charRaw.ritualsAtBottom != undefined){ char.ritualsAtBottom = charRaw.ritualsAtBottom; }
+        if(charRaw.allSpellsInOverview != undefined){ char.allSpellsInOverview = charRaw.allSpellsInOverview; }
+
+        //return the build character
+        return char;
+    } 
+
+    public serialize(): string{
+        return JSON.stringify(this.toObject());
+    }
 
     public applyPreset(preset: Preset, masterSpellList: Spell[]): void{
 
@@ -161,61 +231,31 @@ export class Character implements Character {
 
     }
 
-
     public save(): void{
 
         //write IDs of all chars
         this.writeIdList();
-
+        
         //write char
         var ident: string = 'Char' + this.id;
-        this.cookieService.set(ident + CharacterCookies.Name, this.name, 365);
-        this.cookieService.set(ident + CharacterCookies.KnownSpells, ArrayUtilities.stringArrayToString(this.knownSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.KnownCantrips, ArrayUtilities.stringArrayToString(this.knownCantrips), 365);
-        this.cookieService.set(ident + CharacterCookies.PreparedSpells, ArrayUtilities.stringArrayToString(this.preparedSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.PreparedCantrips, ArrayUtilities.stringArrayToString(this.preparedCantrips), 365);
-        this.cookieService.set(ident + CharacterCookies.AlwaysSpells, ArrayUtilities.stringArrayToString(this.alwaysSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.RitualSpells, ArrayUtilities.stringArrayToString(this.ritualSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.LimitedSpells, ArrayUtilities.stringArrayToString(this.limitedSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.UsedSpells, ArrayUtilities.stringArrayToString(this.usedSpells), 365);
-        this.cookieService.set(ident + CharacterCookies.KnownCasting, String(this.knownCasting), 365);
-        this.cookieService.set(ident + CharacterCookies.MaxKnown, String(this.maxKnown), 365);
-        this.cookieService.set(ident + CharacterCookies.KnownCantripCasting, String(this.knownCantripCasting), 365);
-        this.cookieService.set(ident + CharacterCookies.MaxCantripsKnown, String(this.maxCantripsKnown), 365);
-        this.cookieService.set(ident + CharacterCookies.PreparedCasting, String(this.preparedCasting), 365);
-        this.cookieService.set(ident + CharacterCookies.MaxPrepared, String(this.maxPrepared), 365);
-        this.cookieService.set(ident + CharacterCookies.PreparedCantripCasting, String(this.preparedCantripCasting), 365);
-        this.cookieService.set(ident + CharacterCookies.MaxCantripsPrepared, String(this.maxCantripsPrepared), 365);
-        this.cookieService.set(ident + CharacterCookies.RitualCastingUnprepared, String(this.ritualCastingUnprepared), 365);
-        this.cookieService.set(ident + CharacterCookies.RitualCaster, String(this.ritualCaster), 365);
-        this.cookieService.set(ident + CharacterCookies.PreparedOnTop, String(this.preparedOnTop), 365);
-        this.cookieService.set(ident + CharacterCookies.KnownOnTop, String(this.knownOnTop), 365);
-        this.cookieService.set(ident + CharacterCookies.Mode, this.mode, 365);
-        this.cookieService.set(ident + CharacterCookies.DontShowUsed, String(this.dontShowUsed), 365);
-        this.cookieService.set(ident + CharacterCookies.RitualsAtBottom, String(this.ritualsAtBottom), 365);
-        this.cookieService.set(ident + CharacterCookies.AllSpellsInOverview, String(this.allSpellsInOverview), 365);
+        this.storageService.storeLocal(ident, this.serialize());
 
         //sort characters
         this.characterList.sort(Character.compare);
-
     }
-
 
     public delete(): void{
 
-        //remove entries from cookies
+        //remove entry from cookies
         var ident: string = 'Char' + this.id;
-        for(var entry in CharacterCookies){
-            this.cookieService.set(ident + entry, '', -1);
-        }
+        this.storageService.deleteLocal(ident);
 
         //remove from char list
         ArrayUtilities.removeFromArray(this.characterList, this);
 
         //write IDs
         this.writeIdList();
-    }
-
+    }    
 
     private writeIdList(): void{
         //write IDs of all chars
@@ -223,64 +263,22 @@ export class Character implements Character {
         for(var char of this.characterList){
             charStrings.push(String(char.id));
         }
-        this.cookieService.set('CharIdList', ArrayUtilities.stringArrayToString(charStrings), 365);
+        this.storageService.storeLocal('CharIdList', ArrayUtilities.stringArrayToString(charStrings));
     }
 
-
-    public static loadCharactersFromCookies(cookieService: CookieService): Character[]{
+    public static loadCharacters(storageService: StorageService): Character[]{
         
         var characterList = new Array();
-        var idList = ArrayUtilities.stringToStringArray(cookieService.get('CharIdList'));
+        var idList = ArrayUtilities.stringToStringArray(storageService.loadLocal('CharIdList'));
         for(var id of idList){
-            this.loadFromCookies(Number(id), characterList, cookieService);
+            var ident: string = 'Char' + id;
+            var serializedChar: string = storageService.loadLocal(ident);
+            this.fromSerialized(serializedChar, Number(id), characterList, storageService);
         }
         characterList.sort(Character.compare);
         return characterList;
         
-    }
-
-
-    private static loadFromCookies(id: number, characterList: Character[], cookieService: CookieService): Character{
-
-        var ident: string = 'Char' + id;
-        var name: string = cookieService.get(ident + CharacterCookies.Name);
-        var char = new Character(id, name, characterList, cookieService);
-
-        char.knownSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.KnownSpells));
-        char.knownCantrips = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.KnownCantrips));
-        char.preparedSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.PreparedSpells));
-        char.preparedCantrips = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.PreparedCantrips));
-        char.alwaysSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.AlwaysSpells));
-        char.ritualSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.RitualSpells));
-        char.limitedSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.LimitedSpells));
-        char.usedSpells = ArrayUtilities.stringToStringArray(cookieService.get(ident + CharacterCookies.UsedSpells));
-        char.knownCasting = cookieService.get(ident + CharacterCookies.KnownCasting) === 'true' ? true : false;
-        char.maxKnown = Number(cookieService.get(ident + CharacterCookies.MaxKnown));
-        char.knownCantripCasting = cookieService.get(ident + CharacterCookies.KnownCantripCasting) === 'true' ? true : false;
-        char.maxCantripsKnown = Number(cookieService.get(ident + CharacterCookies.MaxCantripsKnown));
-        char.preparedCasting = cookieService.get(ident + CharacterCookies.PreparedCasting) === 'true' ? true : false;
-        char.maxPrepared = Number(cookieService.get(ident + CharacterCookies.MaxPrepared));
-        char.preparedCantripCasting = cookieService.get(ident + CharacterCookies.PreparedCantripCasting) === 'true' ? true : false;
-        char.maxCantripsPrepared = Number(cookieService.get(ident + CharacterCookies.MaxCantripsPrepared));
-        char.ritualCastingUnprepared = cookieService.get(ident + CharacterCookies.RitualCastingUnprepared) === 'true' ? true : false;
-        char.ritualCaster = cookieService.get(ident + CharacterCookies.RitualCaster) === 'true' ? true : false;
-        char.preparedOnTop = cookieService.get(ident + CharacterCookies.PreparedOnTop) === 'true' ? true : false;
-        char.knownOnTop = cookieService.get(ident + CharacterCookies.KnownOnTop) === 'true' ? true : false;
-        char.dontShowUsed = cookieService.get(ident + CharacterCookies.DontShowUsed) === 'true' ? true : false;
-        char.ritualsAtBottom = cookieService.get(ident + CharacterCookies.RitualsAtBottom) === 'true' ? true : false;
-        char.allSpellsInOverview = cookieService.get(ident + CharacterCookies.AllSpellsInOverview) === 'true' ? true : false;
-
-        var rawMode: string = cookieService.get(ident + CharacterCookies.Mode);
-        for(var mode in ModeOption){
-            if(rawMode === mode){
-                char.mode = ModeOption[mode as keyof typeof ModeOption];
-                break;
-            }
-        }
-
-        return char;
-    }
-
+    } 
 
     private static compare(a: Character, b: Character) {
         if ( a.name < b.name ){
@@ -292,32 +290,4 @@ export class Character implements Character {
         return 0;
     }      
 
-}
-
-export enum CharacterCookies{
-    Name = 'Name',
-    KnownSpells = 'KnownSpells',
-    KnownCantrips = 'KnownCantrips',
-    PreparedSpells = 'PreparedSpells',
-    PreparedCantrips = 'PreparedCantrips',
-    AlwaysSpells = 'AlwaysSpells',
-    RitualSpells = 'RitualSpells',
-    LimitedSpells = 'LimitedSpells',
-    UsedSpells = 'UsedSpells',
-    KnownCasting = 'KnownCasting',
-    MaxKnown = 'MaxKnown',
-    KnownCantripCasting = 'KnownCantripCasting',
-    MaxCantripsKnown = 'MaxCantripsKnown',
-    PreparedCasting = 'PreparedCasting',
-    MaxPrepared = 'MaxPrepared',
-    PreparedCantripCasting = 'PreparedCantripCasting',
-    MaxCantripsPrepared = 'MaxCantripsPrepared',
-    RitualCastingUnprepared = 'RitualCastingUnprepared',
-    RitualCaster = 'RitualCaster',
-    PreparedOnTop = 'PreparedOnTop',
-    KnownOnTop = 'KnownOnTop',
-    Mode = 'Mode',
-    DontShowUsed = 'DontShowUsed',
-    RitualsAtBottom = 'RitualsAtBottom',
-    AllSpellsInOverview = 'AllSpellsInOverview',
 }

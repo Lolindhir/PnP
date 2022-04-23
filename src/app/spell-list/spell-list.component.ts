@@ -13,7 +13,6 @@ import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
 import * as imagePaths from '@shared/imagePaths';
-import { CookieService } from 'ngx-cookie-service';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
@@ -23,6 +22,7 @@ import { SpellProperties } from '@shared/models/spell-properties.model';
 import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
+import { StorageService } from '@shared/services/storage.service';
 
 export interface SettingsData {
   showRandomControls: boolean;
@@ -134,7 +134,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     characterList: new Array(),
     selectedCharacter: undefined,
     presets: new Array(),
-    cookieService: undefined,
     masterSpellList: new Array(),
   };
   highlightColor: string = '#E0FFFF'; //'lightgrey';
@@ -162,8 +161,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   expansionAccordion: ElementRef;
 
 
-  constructor(private httpClient: HttpClient, 
-    private cookieService: CookieService, 
+  constructor(private httpClient: HttpClient,
+    private storageService: StorageService,
     private viewPortScroller: ViewportScroller,
     private dialog: MatDialog,
     private snackBar: MatSnackBar,
@@ -177,8 +176,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
-    //load settings from cookies
-    this.loadSettingsFromCookies();    
+    //load settings
+    this.loadSettings();    
 
     //get screen width
     this.screenWidth = window.innerWidth;
@@ -244,8 +243,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsUpcastable = SpellService.getUpcastableFilterOptions(this.spellProperties);
     this.optionsSpellMod = SpellService.getSpellModFilterOptions(this.spellProperties);
 
-    //load character list from cookies
-    this.characterData.characterList = Character.loadCharactersFromCookies(cookieService);
+    //load character list
+    this.characterData.characterList = Character.loadCharacters(storageService);
     //set selected character depending on character mode
     this.applyCharacterMode();
     //add presets to character data
@@ -254,8 +253,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       presets.push(presetFilter.value);
     }
     this.characterData.presets = presets;
-    //add cookie service to character data
-    this.characterData.cookieService = this.cookieService;
     //add master spells to character data
     this.characterData.masterSpellList = this.spells;
 
@@ -387,7 +384,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     if(this.settings.characterMode){
 
-      var selectedId: number = Number(this.cookieService.get('SelectedCharacter'));
+      var selectedId: number = Number(this.storageService.loadLocal('SelectedCharacter'));
       for(var char of this.characterData.characterList){
         if(char.id === selectedId){
           this.characterData.selectedCharacter = char;
@@ -398,7 +395,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     else{
       this.characterData.selectedCharacter = undefined;
-      this.cookieService.set('SelectedCharacter', '', -1);
+      this.storageService.deleteLocal('SelectedCharacter');
     }
 
     this.applySelectedCharacterData();
@@ -1673,21 +1670,21 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
-  loadSettingsFromCookies(){
+  loadSettings(){
 
-    this.settings.showRandomControls = this.cookieService.get('RandomControls') === 'true' ? true : false;
-    this.settings.sortByName = this.cookieService.get('SortByName') === 'true' ? true : false;
-    this.settings.translateAll = this.cookieService.get('TranslateAll') === 'true' ? true : false;
-    this.settings.characterMode = this.cookieService.get('CharacterMode') === 'true' ? true : false;
+    this.settings.showRandomControls = this.storageService.loadLocal('RandomControls') === 'true' ? true : false;
+    this.settings.sortByName = this.storageService.loadLocal('SortByName') === 'true' ? true : false;
+    this.settings.translateAll = this.storageService.loadLocal('TranslateAll') === 'true' ? true : false;
+    this.settings.characterMode = this.storageService.loadLocal('CharacterMode') === 'true' ? true : false;
 
   }
 
   saveSettings(): void{ 
 
-    this.cookieService.set('RandomControls', String(this.settings.showRandomControls), 365);
-    this.cookieService.set('SortByName', String(this.settings.sortByName), 365);
-    this.cookieService.set('TranslateAll', String(this.settings.translateAll), 365); 
-    this.cookieService.set('CharacterMode', String(this.settings.characterMode), 365); 
+    this.storageService.storeLocal('RandomControls', String(this.settings.showRandomControls));
+    this.storageService.storeLocal('SortByName', String(this.settings.sortByName));
+    this.storageService.storeLocal('TranslateAll', String(this.settings.translateAll)); 
+    this.storageService.storeLocal('CharacterMode', String(this.settings.characterMode)); 
 
   }
 
@@ -1737,12 +1734,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     dialogRef.componentInstance.onCharacterChanged.subscribe(() => {
       
-      //save selected char to cookies
+      //save selected char
       if(this.characterData.selectedCharacter === undefined){
-        this.cookieService.set('SelectedCharacter', '', -1);
+        this.storageService.deleteLocal('SelectedCharacter');
       }
       else{
-        this.cookieService.set('SelectedCharacter', String(this.characterData.selectedCharacter.id), 365);
+        this.storageService.storeLocal('SelectedCharacter', String(this.characterData.selectedCharacter.id));
       }
       
       //trigger
@@ -1812,15 +1809,16 @@ export class SpellListCharacterDialog {
   constructor(
     public dialogRef: MatDialogRef<SpellListCharacterDialog>,
     private snackBar: MatSnackBar,
+    private storageService: StorageService,
     @Inject(MAT_DIALOG_DATA) public data: CharacterData,
   ) {}
 
   onCharacterCreated() {
 
-    if(this.newName != undefined && this.newName != '' && this.data.cookieService != undefined){
+    if(this.newName != undefined && this.newName != ''){
       
       //create char
-      var newChar = new Character(undefined, this.newName, this.data.characterList, this.data.cookieService);
+      var newChar = new Character(undefined, this.newName, this.data.characterList, this.storageService);
 
       //add preset
       if(this.selectedPreset != undefined){
@@ -1944,6 +1942,16 @@ export class SpellListCharacterDialog {
     this.data.selectedCharacter.name = this.changedName;
     this.data.selectedCharacter.save();
     this.onNameChangeCanceled();
+
+  }
+
+  onExport() {
+
+    if(this.data.selectedCharacter === undefined){
+      return;
+    }
+
+    var data = this.data.selectedCharacter.serialize();
 
   }
 
