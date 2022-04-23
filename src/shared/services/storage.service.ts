@@ -16,6 +16,6 @@ export class StorageService {
   }
 
   public deleteLocal(key: string){
-    localStorage.deleteItem(key);
+    localStorage.removeItem(key);
   }
 }
