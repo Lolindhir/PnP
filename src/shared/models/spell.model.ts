@@ -11,7 +11,9 @@ export enum SpellListCategory{
   known,
   knownNotAlways,
   knownCantrips,
+  knownCantripsNotAlways,
   knownSpells,
+  knownSpellsNotAlways,
   knownRituals,
   prepared,
   preparedCantrips,
@@ -690,7 +692,13 @@ export class Spell implements Spell {
           if(listCategory === SpellListCategory.knownCantrips && this.known && this.level === 0){
             return true;
           }
+          if(listCategory === SpellListCategory.knownCantripsNotAlways && this.known && !this.always && this.level === 0){
+            return true;
+          }
           if(listCategory === SpellListCategory.knownSpells && this.known && this.level > 0){
+            return true;
+          }
+          if(listCategory === SpellListCategory.knownSpellsNotAlways && this.known && !this.always && this.level > 0){
             return true;
           }
           if(listCategory === SpellListCategory.knownRituals && this.known && this.ritual){

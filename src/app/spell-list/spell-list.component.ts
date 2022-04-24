@@ -491,7 +491,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       if(char.mode === ModeOption.Prep){
         //only known spells can be/have to be prepared, except known spell that are also always known
-        impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownNotAlways, this.spellProperties));
+        if(char.preparedCantripCasting){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownCantripsNotAlways, this.spellProperties));
+        }
+        if(char.preparedCasting){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.knownSpellsNotAlways, this.spellProperties));
+        }
       }
 
       if(char.mode === ModeOption.Overview && !char.allSpellsInOverview){

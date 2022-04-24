@@ -168,7 +168,7 @@ export class Character implements Character {
     } 
 
     public serialize(): string{
-        return JSON.stringify(this.toObject());
+        return JSON.stringify(this.toObject(), null, 2);
     }
 
     public applyPreset(preset: Preset, masterSpellList: Spell[]): void{
