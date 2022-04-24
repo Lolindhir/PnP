@@ -909,7 +909,7 @@
 
             <div>
               <span class="spell-property-denotation">Components:</span>
-              <span class="spell-property-description">{{spell.componentsDisplay}}</span>
+              <span class="spell-property-description">{{settings.onlyValueMaterials && !spell.componentsConsumed && !spell.componentsValue ? spell.componentsDisplayList : spell.componentsDisplay}}</span>
             </div>
 
             <div>

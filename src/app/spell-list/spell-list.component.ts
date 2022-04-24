@@ -32,6 +32,7 @@ export interface SettingsData {
   translateAll: boolean;
   sortByName: boolean;
   characterMode: boolean;
+  onlyValueMaterials: boolean;
 }
 
 
@@ -132,6 +133,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     sortByName: false,
     translateAll: false,
     characterMode: false,
+    onlyValueMaterials: false,
   };
   characterData: CharacterData = {
     characterList: new Array(),
@@ -1683,6 +1685,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.settings.sortByName = this.storageService.loadLocal('SortByName') === 'true' ? true : false;
     this.settings.translateAll = this.storageService.loadLocal('TranslateAll') === 'true' ? true : false;
     this.settings.characterMode = this.storageService.loadLocal('CharacterMode') === 'true' ? true : false;
+    this.settings.onlyValueMaterials = this.storageService.loadLocal('OnlyValueMaterials') === 'true' ? true : false;
 
   }
 
@@ -1692,6 +1695,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.storageService.storeLocal('SortByName', String(this.settings.sortByName));
     this.storageService.storeLocal('TranslateAll', String(this.settings.translateAll)); 
     this.storageService.storeLocal('CharacterMode', String(this.settings.characterMode)); 
+    this.storageService.storeLocal('OnlyValueMaterials', String(this.settings.onlyValueMaterials)); 
 
   }
 
@@ -1782,11 +1786,17 @@ export class SpellListSettingsDialog {
   onTranslate = new EventEmitter();
   onSort = new EventEmitter();
   onCharacter = new EventEmitter();
+  onMaterials = new EventEmitter();
+  images = imagePaths;
   
   constructor(
     public dialogRef: MatDialogRef<SpellListSettingsDialog>,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer,
     @Inject(MAT_DIALOG_DATA) public data: SettingsData,
-  ) {}
+  ) {
+    this.matIconRegistry.addSvgIcon('coins', this.domSanitizer.bypassSecurityTrustResourceUrl(this.images.spellCoinsBlue));
+  }
 
   onRandomClick() {
     this.onRandom.emit();
@@ -1802,6 +1812,10 @@ export class SpellListSettingsDialog {
 
   onCharacterClick() {
     this.onCharacter.emit();
+  }
+
+  onMaterialsClick() {
+    this.onMaterials.emit();
   }
 
 }
