@@ -71,9 +71,9 @@ export class Character implements Character {
         this.ritualSpells = new Array();
         this.limitedSpells = new Array();
         this.usedSpells = new Array();
-        this.knownCasting = true;
+        this.knownCasting = false;
         this.maxKnown = 0;
-        this.knownCantripCasting = true;
+        this.knownCantripCasting = false;
         this.maxCantripsKnown = 0;
         this.preparedCasting = false;
         this.maxPrepared = 0;

@@ -942,7 +942,7 @@
                 <!--known-->
                 <div *ngIf="showIconKnown(spell)">
                   <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onKnown(spell)"
-                    matTooltip="{{spell.known ? 'known' : 'not known'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    matTooltip="known spell" matTooltipShowDelay="{{tooltipDelay}}">
                     <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.known, iconFull:'bookmark', iconEmpty: 'bookmark_border'}"></ng-template>  
                   </button>
                   <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.known, iconFull:'bookmark', iconEmpty: 'bookmark_border'}"></ng-template>  
@@ -950,7 +950,7 @@
                 <!--ritualCasting-->
                 <div *ngIf="showIconRitual(spell)">
                   <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onRitual(spell)"
-                    matTooltip="{{spell.ritualCast ? 'ritual cast' : 'not ritual cast'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    matTooltip="ritual cast" matTooltipShowDelay="{{tooltipDelay}}">
                     <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.ritualCast, iconFull:'menu_book', iconEmpty: 'import_contacts'}"></ng-template>                  
                   </button>
                   <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.ritualCast, iconFull:'menu_book', iconEmpty: 'import_contacts'}"></ng-template>  
@@ -958,7 +958,7 @@
                 <!--limited-->
                 <div *ngIf="showIconLimited(spell)">
                   <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onLimited(spell)"
-                    matTooltip="{{spell.limited ? 'limited' : 'not limited'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    matTooltip="limited usable" matTooltipShowDelay="{{tooltipDelay}}">
                     <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.limited, iconFull:'repeat_one_on', iconEmpty: 'repeat_one'}"></ng-template> 
                   </button>
                   <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.limited, iconFull:'repeat_one_on', iconEmpty: 'repeat_one'}"></ng-template>  
@@ -966,7 +966,7 @@
                 <!--always-->
                 <div *ngIf="showIconAlways(spell)">
                   <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onAlways(spell)"
-                    matTooltip="{{spell.always ? 'special' : 'not special'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    matTooltip="always usable" matTooltipShowDelay="{{tooltipDelay}}">
                     <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.always, iconFull:'star', iconEmpty: 'star_border'}"></ng-template> 
                   </button>
                   <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.always, iconFull:'star', iconEmpty: 'star_border'}"></ng-template>  
@@ -974,7 +974,7 @@
                 <!--prepared-->
                 <div *ngIf="showIconPrepared(spell)">
                   <button *ngIf="!disableIconPrepared()" class="infobutton" mat-icon-button (click)="onPreparation(spell)"
-                    matTooltip="{{spell.prepared ? 'prepared' : 'not prepared'}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    matTooltip="prepared for casting" matTooltipShowDelay="{{tooltipDelay}}">
                     <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.prepared, iconFull:'label', iconEmpty: 'label_outline'}"></ng-template> 
                   </button>
                   <ng-template *ngIf="disableIconPrepared()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.prepared, iconFull:'label', iconEmpty: 'label_outline'}"></ng-template>  

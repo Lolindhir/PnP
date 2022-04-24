@@ -6,7 +6,6 @@
 # Character Mode
 - Symbole für Zauber (known, prepared, limited etc.) anzeigen, ohne dass ausgeklappt werden muss -> vor/hinter Namen?
 - Prepared Blueprints
-- Tooltips für Icons überarbeiten
 - in Overview auf eine Statistik klicken: Filterung auf diesen Eintrag bzw. Filter wieder rausnehmen (Filter nur hinzufügen/entfernen, nicht alle anderen löschen!)
 
 # Filter
