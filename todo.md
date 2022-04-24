@@ -1,6 +1,5 @@
 # Settings
 - Filter: Highlight der Zauber, anstatt herausfiltern (macht nur Sinn, wenn über Preset in den Settings die Auswahl schon verkleinert ist)
-- Materialien ohne Kosten nicht anzeigen
 - Spell als Favorite markieren? außerhalb Character-Mode
 
 # Character Mode

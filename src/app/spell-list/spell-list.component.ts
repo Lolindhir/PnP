@@ -79,6 +79,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersMaterialValue: string[] = new Array();
   selectedFiltersMaterialConsumed: string[] = new Array();
   selectedFiltersUpcastable: string[] = new Array();
+  selectedFiltersCategoryKnown: string[] = new Array();
+  selectedFiltersCategoryAlways: string[] = new Array();
+  selectedFiltersCategoryLimited: string[] = new Array();
+  selectedFiltersCategoryRitualCast: string[] = new Array();
+  selectedFiltersCategoryPrepared: string[] = new Array();
   selectedFiltersSpellMod: string[] = new Array();
 
   //all filter options
@@ -114,6 +119,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsMaterialValue: SpellFilter[] = new Array();
   optionsMaterialConsumed: SpellFilter[] = new Array();
   optionsUpcastable: SpellFilter[] = new Array();
+  optionsCategoryKnown: SpellFilter[] = new Array();
+  optionsCategoryAlways: SpellFilter[] = new Array();
+  optionsCategoryLimited: SpellFilter[] = new Array();
+  optionsCategoryRitualCast: SpellFilter[] = new Array();
+  optionsCategoryPrepared: SpellFilter[] = new Array();
   optionsSpellMod: SpellFilter[] = new Array();
 
   //spell related stuff
@@ -246,6 +256,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(this.spellProperties);
     this.optionsUpcastable = SpellService.getUpcastableFilterOptions(this.spellProperties);
     this.optionsSpellMod = SpellService.getSpellModFilterOptions(this.spellProperties);
+    this.optionsCategoryKnown = SpellService.getCategoryKnownFilterOptions(this.spellProperties);
+    this.optionsCategoryAlways = SpellService.getCategoryAlwaysFilterOptions(this.spellProperties);
+    this.optionsCategoryLimited = SpellService.getCategoryLimitedFilterOptions(this.spellProperties);
+    this.optionsCategoryRitualCast = SpellService.getCategoryRitualCastFilterOptions(this.spellProperties);
+    this.optionsCategoryPrepared = SpellService.getCategoryPreparedFilterOptions(this.spellProperties);
 
     //load character list
     this.characterData.characterList = Character.loadCharacters(storageService);
@@ -762,6 +777,26 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersUpcastable = newSelectedStrings;
         break;
       }
+      case SpellFilterType.CategoryKnown:{
+        this.selectedFiltersCategoryKnown = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.CategoryAlways:{
+        this.selectedFiltersCategoryAlways = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.CategoryLimited:{
+        this.selectedFiltersCategoryLimited = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.CategoryRitualCast:{
+        this.selectedFiltersCategoryRitualCast = newSelectedStrings;
+        break;
+      }
+      case SpellFilterType.CategoryPrepared:{
+        this.selectedFiltersCategoryPrepared = newSelectedStrings;
+        break;
+      }
       case SpellFilterType.SpellMod:{
         this.selectedFiltersSpellMod = newSelectedStrings;
         break;
@@ -886,6 +921,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.expandedPanelIndex = -1;
     }
 
+  }
+
+  characterSelected(): boolean{
+    return this.characterData.selectedCharacter != undefined && this.settings.characterMode;
   }
 
   getModeOptions(): ModeOption[]{
@@ -1058,6 +1097,57 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return false;
   }
 
+  showFilterKnown(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    return true;
+  }
+  showFilterAlways(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    return char.alwaysSpells.length > 0;
+  } 
+  showFilterLimited(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    return char.limitedSpells.length > 0;
+  } 
+  showFilterRitualCast(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    return char.ritualCaster || char.ritualSpells.length > 0;
+  } 
+  showFilterPrepared(): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    return char.preparedCantripCasting || char.preparedCantrips.length > 0 || char.preparedCasting || char.preparedSpells.length > 0;
+  }
+
+  onTotalKnownClick(){
+    this.addFilterToggle(this.optionsCategoryKnown, true);
+  }
+  onTotalAlwaysClick(){
+    this.addFilterToggle(this.optionsCategoryAlways, true);
+  }
+  onTotalLimitedClick(){
+    this.addFilterToggle(this.optionsCategoryLimited, true);
+  }
+  onTotalRitualCastClick(){
+    this.addFilterToggle(this.optionsCategoryRitualCast, true);
+  }
+  onTotalPreparedClick(){
+    this.addFilterToggle(this.optionsCategoryPrepared, true);
+  }
 
   showTotalKnown(): boolean{
     var char = this.characterData.selectedCharacter;

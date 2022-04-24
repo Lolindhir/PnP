@@ -45,7 +45,12 @@ export enum SpellFilterType{
     Condition = 29,
     Source = 30,
     SpellListCategory = 31,
-    None = 32,
+    CategoryKnown = 32,
+    CategoryAlways = 33,
+    CategoryLimited = 34,
+    CategoryRitualCast = 35,
+    CategoryPrepared = 36,
+    None = 37,
 }
 
 export interface SpellFilterGroup{
@@ -204,6 +209,56 @@ export class SpellFilter implements SpellFilter {
             }
             else{
                 displayText = 'Material not consumed';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryKnown){
+            if(value === true){
+                displayText = 'Known';
+            }
+            else{
+                displayText = 'Not known';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryAlways){
+            if(value === true){
+                displayText = 'Always known';
+            }
+            else{
+                displayText = 'Not always known';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryLimited){
+            if(value === true){
+                displayText = 'Limited usable';
+            }
+            else{
+                displayText = 'Not limited usable';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryRitualCast){
+            if(value === true){
+                displayText = 'Ritual castable';
+            }
+            else{
+                displayText = 'Not ritual castable';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryPrepared){
+            if(value === true){
+                displayText = 'Prepared';
+            }
+            else{
+                displayText = 'Not prepared';
             }
             displayTextList = displayText;
         }
@@ -399,6 +454,11 @@ export class SpellFilter implements SpellFilter {
             || a.type === SpellFilterType.ComponentMaterial
             || a.type === SpellFilterType.MaterialValue
             || a.type === SpellFilterType.MaterialConsumed
+            || a.type === SpellFilterType.CategoryKnown
+            || a.type === SpellFilterType.CategoryAlways
+            || a.type === SpellFilterType.CategoryLimited
+            || a.type === SpellFilterType.CategoryRitualCast
+            || a.type === SpellFilterType.CategoryPrepared
             || a.type === SpellFilterType.Upcastable){
             compareA = a.value as boolean ? 1 : 2;
             compareB = b.value as boolean ? 1 : 2;

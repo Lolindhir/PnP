@@ -726,7 +726,42 @@ export class Spell implements Spell {
             return true;
           }
           break; 
-        }      
+        }
+        case SpellFilterType.CategoryKnown: {             
+          var known: boolean = filter.value as boolean;
+          if(known === null || this.known === known){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.CategoryAlways: {             
+          var always: boolean = filter.value as boolean;
+          if(always === null || this.always === always){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.CategoryLimited: {             
+          var limited: boolean = filter.value as boolean;
+          if(limited === null || this.limited === limited){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.CategoryRitualCast: {             
+          var ritual: boolean = filter.value as boolean;
+          if(ritual === null || this.ritualCast === ritual){
+            return true;
+          }          
+          break; 
+        }
+        case SpellFilterType.CategoryPrepared: {             
+          var prepared: boolean = filter.value as boolean;
+          if(prepared === null || this.prepared === prepared){
+            return true;
+          }          
+          break; 
+        } 
         default: { 
           console.log('Unknown filter type: ' + filter.type)
           return true;

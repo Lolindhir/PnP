@@ -88,7 +88,7 @@
           </mat-form-field>
         </div>
 
-        <div fxLayout="column" class="filter-select">
+        <div *ngIf="!characterSelected()" fxLayout="column" class="filter-select">
           <div>Preset</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersPreset"
@@ -212,6 +212,63 @@
 
       </div>
 
+      <div *ngIf="characterSelected()" class="medium-gap">
+        <mat-divider></mat-divider>
+      </div>
+
+      <div *ngIf="characterSelected()" fxLayout="row wrap" fxLayoutAlign="center center">
+
+        <div *ngIf="showFilterKnown()" fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Known<mat-icon class="filterIcon">bookmark</mat-icon></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersCategoryKnown">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsCategoryKnown, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsCategoryKnown, false)">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+  
+        <div *ngIf="showFilterAlways()" fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Always known<mat-icon class="filterIcon">star</mat-icon></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersCategoryAlways">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsCategoryAlways, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsCategoryAlways, false)">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+  
+        <div *ngIf="showFilterLimited()" fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Limited use<mat-icon class="filterIcon">repeat_one_on</mat-icon></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersCategoryLimited">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsCategoryLimited, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsCategoryLimited, false)">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+  
+        <div *ngIf="showFilterRitualCast()" fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Ritual Caster<mat-icon class="filterIcon">menu_book</mat-icon></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersCategoryRitualCast">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsCategoryRitualCast, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsCategoryRitualCast, false)">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+  
+        <div *ngIf="showFilterPrepared()" fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Prepared<mat-icon class="filterIcon">label</mat-icon></div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersCategoryPrepared">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsCategoryPrepared, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsCategoryPrepared, false)">No</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+      </div>
 
       <div *ngIf="screenSm" class="medium-gap">
         <mat-divider></mat-divider>
@@ -625,24 +682,31 @@
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
   
         <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <div><mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon></div>
-          <div [ngStyle]="{'color' : knownHasError() ? 'red' : ''}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</div>
+          <button mat-icon-button (click)="onTotalKnownClick()" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
+            <span [ngStyle]="{'color' : knownHasError() ? 'red' : 'black'}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</span>
+          </button>
         </div>
         <div *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <div><mat-icon color="primary">star</mat-icon></div>
-          <div>{{characterData.selectedCharacter.alwaysSpells.length}}</div>
+          <button mat-icon-button (click)="onTotalAlwaysClick()" matTooltip="filter always known" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon color="primary">star</mat-icon>{{characterData.selectedCharacter.alwaysSpells.length}}
+          </button>
         </div>
         <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <div><mat-icon color="primary">repeat_one_on</mat-icon></div>
-          <div>{{characterData.selectedCharacter.limitedSpells.length}}</div>
+          <button mat-icon-button (click)="onTotalLimitedClick()" matTooltip="filter limited use" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon color="primary">repeat_one_on</mat-icon>{{characterData.selectedCharacter.limitedSpells.length}}
+          </button>
         </div>
         <div *ngIf="characterData.selectedCharacter.ritualSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <div><mat-icon color="primary">menu_book</mat-icon></div>
-          <div>{{characterData.selectedCharacter.ritualSpells.length}}</div>
+          <button mat-icon-button (click)="onTotalRitualCastClick()" matTooltip="filter ritual casting" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon color="primary">menu_book</mat-icon>{{characterData.selectedCharacter.ritualSpells.length}}
+          </button>
         </div>
         <div *ngIf="showTotalPrepared()" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <div><mat-icon [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon></div>
-          <div [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}">{{getPreparationCount(true, false) + getPreparationCount(false, false)}}</div>
+          <button mat-icon-button (click)="onTotalPreparedClick()" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon>
+            <span [ngStyle]="{'color' : preparedHasError() ? 'red' : 'black'}">{{getPreparationCount(true, false) + getPreparationCount(false, false)}}</span>
+          </button>
         </div>        
   
       </div>

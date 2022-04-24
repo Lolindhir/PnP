@@ -253,6 +253,51 @@ export class SpellService {
 
   }
 
+  public static getCategoryKnownFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var knownFiltersOptions: SpellFilter[] = new Array();
+    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, true, properties));
+    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, false, properties));
+    return knownFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
+  public static getCategoryAlwaysFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var alwaysFiltersOptions: SpellFilter[] = new Array();
+    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, true, properties));
+    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, false, properties));
+    return alwaysFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
+  public static getCategoryLimitedFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var limitedFiltersOptions: SpellFilter[] = new Array();
+    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, true, properties));
+    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, false, properties));
+    return limitedFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
+  public static getCategoryRitualCastFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var ritualCastFiltersOptions: SpellFilter[] = new Array();
+    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, true, properties));
+    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, false, properties));
+    return ritualCastFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
+  public static getCategoryPreparedFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var preparedFiltersOptions: SpellFilter[] = new Array();
+    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, true, properties));
+    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, false, properties));
+    return preparedFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getComponentVerbalFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var verbalFiltersOptions: SpellFilter[] = new Array();
