@@ -1182,13 +1182,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     
   }
-  
+
   totalStyle(type: SpellFilterType): Object{
     if(this.filters.some( filter => filter.type === type && filter.value === true)){
-      return {background: 'lightgrey'};
+      return {background: '#CCE5FF'};
     }
     if(this.filters.some( filter => filter.type === type && filter.value === false)){
-      return {background: 'lightgrey', textDecoration: 'line-through'};
+      return {background: '#FFCCCC', textDecoration: 'line-through'};
     }
     return {background: 'white'};
   }  
