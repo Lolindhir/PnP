@@ -681,29 +681,29 @@
 
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
   
-        <div *ngIf="showTotalKnown()" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalKnownClick()" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
+        <div *ngIf="showTotalKnown()" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)" fxLayout="row" fxLayoutAlign="start center" class="total totalButton">
+          <button mat-icon-button disableRipple="true" (click)="onTotalClick(SpellFilterType.CategoryKnown)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon  [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
             <span [ngStyle]="{'color' : knownHasError() ? 'red' : 'black'}">{{getKnownCount(true, false) + getKnownCount(false, false)}}</span>
           </button>
         </div>
-        <div *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalAlwaysClick()" matTooltip="filter always known" matTooltipShowDelay="{{tooltipDelay}}">
+        <div *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0" [ngStyle]="totalStyle(SpellFilterType.CategoryAlways)" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <button mat-icon-button disableRipple="true" (click)="onTotalClick(SpellFilterType.CategoryAlways)" matTooltip="filter always known" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon color="primary">star</mat-icon>{{characterData.selectedCharacter.alwaysSpells.length}}
           </button>
         </div>
-        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalLimitedClick()" matTooltip="filter limited use" matTooltipShowDelay="{{tooltipDelay}}">
+        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0" [ngStyle]="totalStyle(SpellFilterType.CategoryLimited)" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <button mat-icon-button disableRipple="true" (click)="onTotalClick(SpellFilterType.CategoryLimited)" matTooltip="filter limited use" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon color="primary">repeat_one_on</mat-icon>{{characterData.selectedCharacter.limitedSpells.length}}
           </button>
         </div>
-        <div *ngIf="characterData.selectedCharacter.ritualSpells.length > 0" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalRitualCastClick()" matTooltip="filter ritual casting" matTooltipShowDelay="{{tooltipDelay}}">
+        <div *ngIf="characterData.selectedCharacter.ritualSpells.length > 0" [ngStyle]="totalStyle(SpellFilterType.CategoryRitualCast)" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <button mat-icon-button disableRipple="true" (click)="onTotalClick(SpellFilterType.CategoryRitualCast)" matTooltip="filter ritual casting" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon color="primary">menu_book</mat-icon>{{characterData.selectedCharacter.ritualSpells.length}}
           </button>
         </div>
-        <div *ngIf="showTotalPrepared()" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalPreparedClick()" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
+        <div *ngIf="showTotalPrepared()" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <button mat-icon-button disableRipple="true" (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon>
             <span [ngStyle]="{'color' : preparedHasError() ? 'red' : 'black'}">{{getPreparationCount(true, false) + getPreparationCount(false, false)}}</span>
           </button>

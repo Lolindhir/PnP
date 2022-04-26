@@ -155,6 +155,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   highlightFilter: boolean = false;
   loading: boolean = true;
   ModeOption = ModeOption;
+  SpellFilterType = SpellFilterType;
   expandedPanelIndex: number = -1;
   assetNotLoadedIndex: number = -1;
   showAdvancedFilters: boolean = false;
@@ -1133,21 +1134,65 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return char.preparedCantripCasting || char.preparedCantrips.length > 0 || char.preparedCasting || char.preparedSpells.length > 0;
   }
 
-  onTotalKnownClick(){
-    this.addFilterToggle(this.optionsCategoryKnown, true);
+  onTotalClick(type: SpellFilterType){
+    
+    if(type === SpellFilterType.CategoryKnown){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryKnown, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryKnown, false);
+      }
+    }
+
+    if(type === SpellFilterType.CategoryAlways){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryAlways, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryAlways, false);
+      }
+    }
+
+    if(type === SpellFilterType.CategoryLimited){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryLimited, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryLimited, false);
+      }
+    }
+
+    if(type === SpellFilterType.CategoryRitualCast){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryRitualCast, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryRitualCast, false);
+      }
+    }
+
+    if(type === SpellFilterType.CategoryPrepared){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryPrepared, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryPrepared, false);
+      }
+    }
+    
   }
-  onTotalAlwaysClick(){
-    this.addFilterToggle(this.optionsCategoryAlways, true);
-  }
-  onTotalLimitedClick(){
-    this.addFilterToggle(this.optionsCategoryLimited, true);
-  }
-  onTotalRitualCastClick(){
-    this.addFilterToggle(this.optionsCategoryRitualCast, true);
-  }
-  onTotalPreparedClick(){
-    this.addFilterToggle(this.optionsCategoryPrepared, true);
-  }
+  
+  totalStyle(type: SpellFilterType): Object{
+    if(this.filters.some( filter => filter.type === type && filter.value === true)){
+      return {background: 'lightgrey'};
+    }
+    if(this.filters.some( filter => filter.type === type && filter.value === false)){
+      return {background: 'lightgrey', textDecoration: 'line-through'};
+    }
+    return {background: 'white'};
+  }  
+
 
   showTotalKnown(): boolean{
     var char = this.characterData.selectedCharacter;
