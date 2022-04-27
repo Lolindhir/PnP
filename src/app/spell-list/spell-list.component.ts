@@ -1183,6 +1183,26 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     
   }
 
+  totalWidth(text: string): number{
+    
+    if(text.length === 0){
+      return 35;
+    }
+    if(text.length === 1){
+      return 40;
+    }
+    if(text.length === 2){
+      return 43;
+    }
+    if(text.length === 3){
+      return 50;
+    }
+    if(text.length <= 12){
+      return 40 + (text.length * 5);
+    }
+    return 35 + (text.length * 6);
+  }
+
   totalStyle(type: SpellFilterType): Object{
     if(this.filters.some( filter => filter.type === type && filter.value === true)){
       return {background: '#CCE5FF'};
@@ -1194,6 +1214,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }  
 
 
+  getTotalKnown(): string{
+    return (this.getKnownCount(true, false) + this.getKnownCount(false, false)).toString();
+  }
+  getCantripsKnown(): string{
+    var returnString: string = 'Cantrips: ' + this.getKnownCount(true, false).toString();
+    if(this.characterData.selectedCharacter != undefined && this.characterData.selectedCharacter.knownCantripCasting){
+      returnString = returnString + '/' + this.getKnownCount(true, true).toString();
+    }
+    return returnString;
+  }
+  getSpellsKnown(): string{
+    var returnString: string = 'Spells: ' + this.getKnownCount(false, false).toString();
+    if(this.characterData.selectedCharacter != undefined && this.characterData.selectedCharacter.knownCasting){
+      returnString = returnString + '/' + this.getKnownCount(false, true).toString();
+    }
+    return returnString;
+  }
   showTotalKnown(): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
@@ -1231,6 +1268,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return this.knownCantripsHaveError() || this.knownSpellsHaveError();
   }
 
+  getTotalPrepared(): string{
+    return (this.getPreparationCount(true, false) + this.getPreparationCount(false, false)).toString();
+  }
+  getCantripsPrepared(): string{
+    var returnString: string = 'Cantrips: ' + this.getPreparationCount(true, false).toString();
+    if(this.characterData.selectedCharacter != undefined && this.characterData.selectedCharacter.preparedCantripCasting){
+      returnString = returnString + '/' + this.getPreparationCount(true, true).toString();
+    }
+    return returnString;
+  }
+  getSpellsPrepared(): string{
+    var returnString: string = 'Spells: ' + this.getPreparationCount(false, false).toString();
+    if(this.characterData.selectedCharacter != undefined && this.characterData.selectedCharacter.preparedCasting){
+      returnString = returnString + '/' + this.getPreparationCount(false, true).toString();
+    }
+    return returnString;
+  }
   showTotalPrepared(): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
