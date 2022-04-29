@@ -1698,6 +1698,77 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  onUnprepareAll(){
+
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return;
+    }
+
+    //ask user
+    this.disabled = true;
+
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Unprepare all spells?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      var char = this.characterData.selectedCharacter;
+      if(char === undefined){
+        return;
+      }
+
+      var spellCount: number = 0;
+
+      for(var spell of this.spells){
+        var spellPrepared: boolean = spell.prepared;
+        if(spellPrepared){
+          spellCount++;
+          if(spell.level === 0){
+            ArrayUtilities.removeFromArray(char.preparedCantrips, spell.name);
+            spell.prepared = false;
+          }
+          else{
+            ArrayUtilities.removeFromArray(char.preparedSpells, spell.name);
+            spell.prepared = false;
+          }
+        }
+      }
+      char.save();
+  
+      if(char.preparedOnTop){
+        this.sortMasterSpells();
+      }
+
+      this.onChange();
+
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+
+      //show result
+      this.showSpellListSnackBar(spellCount.toString(), 'spells unprepared', 0, 0);
+
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable clicking
+      this.disabled = false;
+    });
+
+  }
+
   onRefreshUsed(){
     if(this.characterData.selectedCharacter === undefined){
       return;

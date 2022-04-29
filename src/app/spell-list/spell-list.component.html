@@ -765,16 +765,22 @@
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" fxLayout="row wrap" fxLayoutAlign="start">
 
         <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" [style.width.px]="totalWidth(getCantripsPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
             <span [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}">{{getCantripsPrepared()}}</span>
           </button>
         </div>
 
         <div *ngIf="characterData.selectedCharacter.preparedCasting" [style.width.px]="totalWidth(getSpellsPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
             <span [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}">{{getSpellsPrepared()}}</span>
+          </button>
+        </div>
+
+        <div *ngIf="characterData.selectedCharacter.preparedCantripCasting || characterData.selectedCharacter.preparedCasting" fxLayout="row" fxLayoutAlign="start center">
+          <button mat-icon-button (click)="onUnprepareAll()" matTooltip="clear all prepared" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon color="primary">backspace</mat-icon>
           </button>
         </div>
 
