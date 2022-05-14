@@ -353,6 +353,9 @@ export class Spell implements Spell {
       switch(filterType) { 
         case SpellFilterType.Level: { 
           var level: number = filter.value as number;
+          if(level === -1 && this.level > 0){
+            return true;
+          }
           if(this.level === level){
             return true;
           } 

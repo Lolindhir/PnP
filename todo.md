@@ -8,6 +8,7 @@
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
+- extra Filter für "keine Cantrips"
 
 # General
 - Animation während Seite geladen wird

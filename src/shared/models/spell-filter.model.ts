@@ -73,25 +73,32 @@ export class SpellFilter implements SpellFilter {
         var tooltip = 'All spells that match this filter or one of the other filters are shown.';
 
         if(type === SpellFilterType.Level){
-            if(value as number === 0){
-                displayText = 'Cantrip';
+            if(value as number === -1){
+                displayText = 'No Cantrip';
+                displayTextList = displayText;
+                tooltip = 'No cantrips and the other selected levels are shown.';
             }
-            if(value as number === 1){
-                displayText = '1st';
-            }
-            if(value as number === 2){
-                displayText = '2nd';
-            }
-            if(value as number === 3){
-                displayText = '3rd';
-            }
-            if(value as number >= 4){
-                displayText = value as string + 'th';
-            }
-            displayTextList = displayText;
-            
-            var levelText = value as number === 0 ? 'Cantrip' : displayText + ' level';
-            tooltip = `All ${levelText} spells and the other selected levels are shown.`
+            else{
+                if(value as number === 0){
+                    displayText = 'Cantrip';
+                }
+                if(value as number === 1){
+                    displayText = '1st';
+                }
+                if(value as number === 2){
+                    displayText = '2nd';
+                }
+                if(value as number === 3){
+                    displayText = '3rd';
+                }
+                if(value as number >= 4){
+                    displayText = value as string + 'th';
+                }
+                displayTextList = displayText;
+                
+                var levelText = value as number === 0 ? 'Cantrip' : displayText + ' level';
+                tooltip = `All ${levelText} spells and the other selected levels are shown.`
+            }            
         }
 
         else if(type === SpellFilterType.Source){

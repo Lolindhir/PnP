@@ -27,7 +27,7 @@ export class SpellService {
   public static getLevelFilterOptions(properties: SpellProperties): SpellFilter[] {  
 
     var levelFilterOptions: SpellFilter[] = new Array();
-    for(var i = 0; i <= 9; i++){
+    for(var i = -1; i <= 9; i++){
       levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i, properties));
     }
     return levelFilterOptions.sort(SpellFilter.compare);
