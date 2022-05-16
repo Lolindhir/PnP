@@ -1,6 +1,7 @@
 import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellRange, SpellRangeCategory } from "@models/spell-range.model";
+import { SpellTarget } from "@models/spell-target.model";
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -31,26 +32,27 @@ export enum SpellFilterType{
     Save = 15,
     AttackType = 16,
     AffectedTargets = 17,
-    TargetCaster = 18,
-    Range = 19,
-    ComponentVerbal = 20,
-    ComponentSomatic = 21,
-    ComponentMaterial = 22,
-    MaterialValue = 23,
-    MaterialConsumed = 24,
-    Duration = 25,
-    Upcastable = 26,
-    SpellMod = 27,
-    DamageType = 28,
-    Condition = 29,
-    Source = 30,
-    SpellListCategory = 31,
-    CategoryKnown = 32,
-    CategoryAlways = 33,
-    CategoryLimited = 34,
-    CategoryRitualCast = 35,
-    CategoryPrepared = 36,
-    None = 37,
+    NumberOfTargets = 18,
+    TargetCaster = 19,
+    Range = 20,
+    ComponentVerbal = 21,
+    ComponentSomatic = 22,
+    ComponentMaterial = 23,
+    MaterialValue = 24,
+    MaterialConsumed = 25,
+    Duration = 26,
+    Upcastable = 27,
+    SpellMod = 28,
+    DamageType = 29,
+    Condition = 30,
+    Source = 31,
+    SpellListCategory = 32,
+    CategoryKnown = 33,
+    CategoryAlways = 34,
+    CategoryLimited = 35,
+    CategoryRitualCast = 36,
+    CategoryPrepared = 37,
+    None = 38,
 }
 
 export interface SpellFilterGroup{
@@ -357,20 +359,48 @@ export class SpellFilter implements SpellFilter {
         else if(type === SpellFilterType.AffectedTargets){
             var valueString: string = value as string;
             if(valueString === 'None'){
+                displayText = 'Targets nothing specific';
+                displayTextList = 'None';
+            }
+            if(valueString === 'Self'){
+                displayText = 'Used on Caster';
+                displayTextList = 'Caster';
+            }
+            if(valueString === 'Allies'){
+                displayText = 'Used on Friends';
+                displayTextList = 'Friends';
+            }
+            if(valueString === 'Enemies'){
+                displayText = 'Used against Enemies';
+                displayTextList = 'Enemies';
+            }
+            if(valueString === 'Objects'){
+                displayText = 'Used on Objects';
+                displayTextList = 'Objects';
+            }
+            if(valueString === 'Spells'){
+                displayText = 'Used against Spells';
+                displayTextList = 'Spells';
+            }
+        }
+
+        else if(type === SpellFilterType.NumberOfTargets){
+            var valueString: string = value as string;
+            if(valueString === 'None'){
                 displayText = 'No Targets';
                 displayTextList = 'No Targets';
             }
-            if(valueString === 'Self'){
-                displayText = 'Caster-targetable';
-                displayTextList = 'Caster-targetable';
-            }
             if(valueString === 'Single'){
-                displayText = 'Single other Target';
-                displayTextList = 'Single Other';
+                displayText = 'Single Target';
+                displayTextList = 'Single';
             }
             if(valueString === 'Multiple'){
-                displayText = 'Multiple other Targets';
-                displayTextList = 'Multiple Others (choosable)';
+                displayText = 'Multiple Targets';
+                displayTextList = 'Multiple (choosable)';
+            }
+            if(valueString === 'MultipleUpcast'){
+                displayText = 'Multiple Targets if Upcast';
+                displayTextList = 'Multiple (choosable) if Upcast';
             }
             if(valueString === 'AoE'){
                 displayText = 'Area of Effect';
@@ -442,10 +472,15 @@ export class SpellFilter implements SpellFilter {
             compareA = a.properties.attackTypes.indexOf(a.value);
             compareB = b.properties.attackTypes.indexOf(b.value);
         }
-        //for the attack type use the order from the properties
+        //for the target use the order from the method
         else if(a.type === SpellFilterType.AffectedTargets){
-            compareA = a.properties.targets.indexOf(a.value);
-            compareB = b.properties.targets.indexOf(b.value);
+            compareA = SpellTarget.getOrderNumberForAffectedTargets(a.value);
+            compareB = SpellTarget.getOrderNumberForAffectedTargets(b.value);
+        }
+        //for the number of targets use the order from the method
+        else if(a.type === SpellFilterType.NumberOfTargets){
+            compareA = SpellTarget.getOrderNumberForNumberOfTargets(a.value);
+            compareB = SpellTarget.getOrderNumberForNumberOfTargets(b.value);
         }
         //for the tag use the order from the properties
         else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagMust || a.type === SpellFilterType.TagNot){
@@ -531,4 +566,6 @@ export class SpellFilter implements SpellFilter {
 
         return 0;
     }
+
+    
 }

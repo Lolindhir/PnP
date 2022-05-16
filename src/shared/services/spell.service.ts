@@ -139,12 +139,24 @@ export class SpellService {
   public static getAffectedTargetsFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var targetFilterOptions: SpellFilter[] = new Array();
-    properties.targets.forEach( target => {
-      if(!target.toLowerCase().includes('upcast')){
-        targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, target, properties))
-      }
-    })
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'None', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Self', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Allies', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Enemies', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Objects', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Spells', properties))
     return targetFilterOptions.sort(SpellFilter.compare);
+  }
+
+  public static getNumberOfTargetsFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var numberOfTargetsFilterOptions: SpellFilter[] = new Array();
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'None', properties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Single', properties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Multiple', properties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'MultipleUpcast', properties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'AoE', properties))
+    return numberOfTargetsFilterOptions.sort(SpellFilter.compare);
   }
 
   public static getAttackSaveFilterOptions(properties: SpellProperties): SpellFilter[] {

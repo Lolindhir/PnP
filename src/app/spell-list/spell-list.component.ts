@@ -63,6 +63,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersAttackType: SpellFilter[] = new Array();
   selectedFiltersAttackSave: SpellFilter[] = new Array();
   selectedFiltersAffectedTargets: SpellFilter[] = new Array();
+  selectedFiltersNumberOfTargets: SpellFilter[] = new Array();
   selectedFiltersTag: SpellFilter[] = new Array();
   selectedFiltersSingleTag: SpellFilter[] = new Array();
   selectedFiltersMustTag: SpellFilter[] = new Array();
@@ -105,6 +106,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsAttackType: SpellFilter[] = new Array();
   optionsAttackSave: SpellFilter[] = new Array();
   optionsAffectedTargets: SpellFilter[] = new Array();
+  optionsNumberOfTargets: SpellFilter[] = new Array();
   optionsTag: SpellFilter[] = new Array();
   optionsSingleTag: SpellFilter[] = new Array();
   optionsMustTag: SpellFilter[] = new Array();
@@ -242,6 +244,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsAttackType = SpellService.getAttackTypeFilterOptions(this.spellProperties);
     this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(this.spellProperties);
     this.optionsAffectedTargets = SpellService.getAffectedTargetsFilterOptions(this.spellProperties);
+    this.optionsNumberOfTargets = SpellService.getNumberOfTargetsFilterOptions(this.spellProperties);
     this.optionsTag = SpellService.getTagFilterOptions(this.spellProperties);
     this.optionsSingleTag = SpellService.getSingleTagFilterOptions(this.spellProperties);
     this.optionsMustTag = SpellService.getMustTagFilterOptions(this.spellProperties);
@@ -716,6 +719,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       case SpellFilterType.AffectedTargets: {
         this.selectedFiltersAffectedTargets = newSelectedFilters;
+        break;
+      }
+      case SpellFilterType.NumberOfTargets: {
+        this.selectedFiltersNumberOfTargets = newSelectedFilters;
         break;
       }
       case SpellFilterType.Tag: {

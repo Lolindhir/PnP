@@ -153,7 +153,7 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
-          <div>Targets</div>
+          <div>Primary Targets</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersAffectedTargets"
               (ngModelChange)="addFilterMulti(optionsAffectedTargets, selectedFiltersAffectedTargets)" multiple="true">
@@ -335,6 +335,20 @@
               </mat-button-toggle>
             </mat-button-toggle-group>
           </div>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
+          <div>Number of Targets</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersNumberOfTargets"
+              (ngModelChange)="addFilterMulti(optionsNumberOfTargets, selectedFiltersNumberOfTargets)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersNumberOfTargets.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsNumberOfTargets" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
 
         <div fxLayout="column" class="filter-button-select">
@@ -920,21 +934,22 @@
                 <span *ngIf="target.upcastableAsset" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
                   <img class="image" style="max-height: 10px;" src={{images.spellArrow}}>
                 </span>
-                <span *ngIf="!lastElement">& </span>
+                <span *ngIf="!lastElement">/ </span>
               </span>
             </ng-template> 
             
             <!-- if "cannot also target caster"-->
-            <div *ngIf="showColumnFlex && !spell.canAlsoTargetCaster" class="spell-expansion-properties" style="width: 150px;">          
+            <div *ngIf="showColumnFlex && !spell.aoeIgnoresCaster" class="spell-expansion-properties" style="width: 150px;">          
               <ng-template [ngTemplateOutlet]="Targets"></ng-template>
             </div>
             <!-- if "can also target caster"-->
-            <div *ngIf="showColumnFlex && spell.canAlsoTargetCaster" class="spell-expansion-propertiesSpecial" fxLayout="column" style="width: 150px;">           
+            <div *ngIf="showColumnFlex && spell.aoeIgnoresCaster" class="spell-expansion-propertiesSpecial" fxLayout="column" style="width: 150px;">           
               <div class="spell-expansion-header">
                 <ng-template [ngTemplateOutlet]="Targets"></ng-template>
               </div>
               <div class="spell-expansion-extra">
-                (can target Caster)
+                (does not hit Caster)
+                <!-- (Caster is not hit) -->
               </div>  
             </div>       
 

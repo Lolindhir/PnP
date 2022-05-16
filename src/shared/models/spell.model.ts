@@ -88,7 +88,7 @@ export interface Spell {
   attacksSavesDisplay: string;
   targets: string[];
   targetsDisplay: SpellTarget[];
-  canAlsoTargetCaster: boolean;
+  aoeIgnoresCaster: boolean;
   castingAbility: string;
   tags: SpellTag[];
   translation: string;
@@ -258,32 +258,114 @@ export class Spell implements Spell {
     this.attacksSavesDisplay = savesAttacksDisplay === '' ? ' — ' : savesAttacksDisplay;
 
     //build display targets
-    this.canAlsoTargetCaster = false;
+    this.aoeIgnoresCaster = false;
     this.targetsDisplay = new Array();
-    for(var target of this.targets){
-      if(target === 'None'){
-        //don't show, because it has no value in the view
-        //this.targetsDisplay.push({name: target, displayText: 'No Targets', upcastableAsset: false});
+
+    if(this.targets.some(target => target.toLowerCase().includes('none'))){
+      //this.targetsDisplay.push({name: 'none', displayText: 'Untargeted', upcastableAsset: false});
+    }
+    if(this.targets.includes('Self')){
+      if(this.targets.length > 2 || (this.targets.length === 2 && !this.targets.includes('None'))){
+        //this.canAlsoTargetCaster = true;
       }
-      if(target === 'Self'){ 
-        if(this.targets.length > 2 || (this.targets.length === 2 && !this.targets.includes('None'))){
-          this.canAlsoTargetCaster = true;
-        }
-        else{
-          this.targetsDisplay.push({name: target, displayText: 'Only Caster', upcastableAsset: false});
-        }
-      }
-      if(target === 'Single'){
-        var upcastExists: boolean = this.targets.includes('Multiple (Upcast)');
-        this.targetsDisplay.push({name: target, displayText: 'Single', upcastableAsset: upcastExists});
-      }
-      if(target === 'Multiple'){
-        this.targetsDisplay.push({name: target, displayText: 'Multiple', upcastableAsset: false});
-      }
-      if(target === 'AoE'){
-        this.targetsDisplay.push({name: target, displayText: 'AoE', upcastableAsset: false});
+      else{
+        this.targetsDisplay.push({name: 'self', displayText: 'Caster', upcastableAsset: false});
       }
     }
+    if(this.targets.some(target => target.toLowerCase() === 'aoe')){
+      if(this.range.displayTextComplete.toLowerCase().includes('self') && !this.targets.some(target => target.toLowerCase() === 'aoecaster')){
+        this.aoeIgnoresCaster = true;
+      }
+      if(this.targets.some(target => target.toLowerCase() === 'aoeobject') && this.targets.some(target => target.toLowerCase() === 'aoespell')){
+        this.targetsDisplay.push({name: 'aoe', displayText: 'AoE (incl. Spells & Objects)', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'aoeobject')){
+        this.targetsDisplay.push({name: 'aoe', displayText: 'AoE (incl. Objects)', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'aoespell')){
+        this.targetsDisplay.push({name: 'aoe', displayText: 'AoE (incl. Spells)', upcastableAsset: false});
+      }
+      else{
+        this.targetsDisplay.push({name: 'aoe', displayText: 'AoE', upcastableAsset: false});
+      }      
+    }
+    if(this.targets.some(target => target.toLowerCase().includes('ally'))){
+      if(this.targets.some(target => target.toLowerCase() === 'aoeally') || this.targets.some(target => target.toLowerCase() === 'allymultiple')){
+        this.targetsDisplay.push({name: 'friends', displayText: 'Friends', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'allymultiple (upcast)')){
+        this.targetsDisplay.push({name: 'friends', displayText: '1 Friend', upcastableAsset: true});
+      }
+      else{
+        this.targetsDisplay.push({name: 'friends', displayText: '1 Friend', upcastableAsset: false});
+      } 
+    }
+    if(this.targets.some(target => target.toLowerCase().includes('enemy'))){
+      if(this.targets.some(target => target.toLowerCase() === 'aoeenemy')){
+        this.targetsDisplay.push({name: 'enemies', displayText: 'Enemies', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'enemymultiple')){
+        if(this.targets.some(target => target.toLowerCase() === 'enemysingle')){
+          this.targetsDisplay.push({name: 'enemies', displayText: 'Enemy(s)', upcastableAsset: false});
+        }
+        else {
+          this.targetsDisplay.push({name: 'enemies', displayText: 'Enemies', upcastableAsset: false});
+        }
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'enemymultiple (upcast)')){
+        this.targetsDisplay.push({name: 'enemies', displayText: '1 Enemy', upcastableAsset: true});
+      }
+      else{
+        this.targetsDisplay.push({name: 'enemies', displayText: '1 Enemy', upcastableAsset: false});
+      }
+    }    
+    if(this.targets.some(target => target.toLowerCase().includes('spell')) && !(this.targets.some(target => target.toLowerCase() === 'aoespell') && this.targets.some(target => target.toLowerCase() === 'aoe'))){
+      if(this.targets.some(target => target.toLowerCase() === 'aoespell') || this.targets.some(target => target.toLowerCase() === 'spellmultiple')){
+        this.targetsDisplay.push({name: 'spells', displayText: 'Spells', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'spellmultiple (upcast)')){
+        this.targetsDisplay.push({name: 'spells', displayText: '1 Spell', upcastableAsset: true});
+      }
+      else{
+        this.targetsDisplay.push({name: 'spells', displayText: '1 Spell', upcastableAsset: false});
+      }
+    }
+    if(this.targets.some(target => target.toLowerCase().includes('object')) && !(this.targets.some(target => target.toLowerCase() === 'aoeobject') && this.targets.some(target => target.toLowerCase() === 'aoe'))){
+      if(this.targets.some(target => target.toLowerCase() === 'aoeobject') || this.targets.some(target => target.toLowerCase() === 'objectmultiple')){
+        this.targetsDisplay.push({name: 'objects', displayText: 'Objects', upcastableAsset: false});
+      }
+      else if(this.targets.some(target => target.toLowerCase() === 'objectmultiple (upcast)')){
+        this.targetsDisplay.push({name: 'objects', displayText: '1 Object', upcastableAsset: true});
+      }
+      else{
+        this.targetsDisplay.push({name: 'objects', displayText: '1 Object', upcastableAsset: false});
+      }
+    }
+
+    // for(var target of this.targets){
+    //   if(target === 'None'){
+    //     //don't show, because it has no value in the view
+    //     //this.targetsDisplay.push({name: target, displayText: 'No Targets', upcastableAsset: false});
+    //   }
+    //   if(target === 'Self'){ 
+    //     if(this.targets.length > 2 || (this.targets.length === 2 && !this.targets.includes('None'))){
+    //       this.canAlsoTargetCaster = true;
+    //     }
+    //     else{
+    //       this.targetsDisplay.push({name: target, displayText: 'Only Caster', upcastableAsset: false});
+    //     }
+    //   }
+    //   if(target === 'Single'){
+    //     var upcastExists: boolean = this.targets.includes('Multiple (Upcast)');
+    //     this.targetsDisplay.push({name: target, displayText: 'Single', upcastableAsset: upcastExists});
+    //   }
+    //   if(target === 'Multiple'){
+    //     this.targetsDisplay.push({name: target, displayText: 'Multiple', upcastableAsset: false});
+    //   }
+    //   if(target === 'AoE'){
+    //     this.targetsDisplay.push({name: target, displayText: 'AoE', upcastableAsset: false});
+    //   }
+    // }
 
     //build tags
     var tags : SpellTag[] = new Array();
@@ -588,10 +670,49 @@ export class Spell implements Spell {
           if(affectedTarget === ''){
             return true;
           }
-          for(var target of this.targets){
-            if(target.toLowerCase().includes(affectedTarget.toLowerCase())){
-              return true;
-            }
+          if(affectedTarget === 'None' && this.targets.some(target => target.toLowerCase().includes('none'))){
+            return true;
+          }
+          if(affectedTarget === 'Self' && this.targets.some(target => target.toLowerCase().includes('self'))){
+            return true;
+          }
+          if(affectedTarget === 'Objects' && this.targets.some(target => target.toLowerCase().includes('object'))){
+            return true;
+          }
+          if(affectedTarget === 'Spells' && this.targets.some(target => target.toLowerCase().includes('spell'))){
+            return true;
+          }
+          if(affectedTarget === 'Allies' && this.targets.some(target => target.toLowerCase().includes('ally'))){
+            return true;
+          }
+          if(affectedTarget === 'Enemies' && this.targets.some(target => target.toLowerCase().includes('enemy'))){
+            return true;
+          }
+          //if target is AoE, it counts as 'against enemies' even if it could hit allies
+          if(this.targets.some(target => target.toLowerCase() === 'aoe') && affectedTarget === 'Enemies'){
+            return true;
+          }
+          break; 
+        }
+        case SpellFilterType.NumberOfTargets: {             
+          var numberOfTargets: string = filter.value as string;
+          if(numberOfTargets === ''){
+            return true;
+          }
+          if(numberOfTargets === 'None' && this.targets.some(target => target.toLowerCase().includes('none'))){
+            return true;
+          }
+          if(numberOfTargets === 'Single' && this.targets.some(target => target.toLowerCase().includes('single'))){
+            return true;
+          }
+          if(numberOfTargets === 'Multiple' && this.targets.some(target => target.toLowerCase().includes('multiple') && !target.toLowerCase().includes('upcast'))){
+            return true;
+          }
+          if(numberOfTargets === 'MultipleUpcast' && this.targets.some(target => target.toLowerCase().includes('multiple') && target.toLowerCase().includes('upcast'))){
+            return true;
+          }
+          if(numberOfTargets === 'AoE' && this.targets.some(target => target.toLowerCase().includes('aoe'))){
+            return true;
           }
           break; 
         }
