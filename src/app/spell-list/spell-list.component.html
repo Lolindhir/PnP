@@ -938,34 +938,40 @@
               </span>
             </ng-template> 
             
-            <!-- if "cannot also target caster"-->
-            <div *ngIf="showColumnFlex && !spell.aoeIgnoresCaster" class="spell-expansion-properties" style="width: 150px;">          
-              <ng-template [ngTemplateOutlet]="Targets"></ng-template>
-            </div>
-            <!-- if "can also target caster"-->
-            <div *ngIf="showColumnFlex && spell.aoeIgnoresCaster" class="spell-expansion-propertiesSpecial" fxLayout="column" style="width: 150px;">           
-              <div class="spell-expansion-header">
+            <!-- show targets -->
+            <div *ngIf="!settings.showDuration">
+              <!-- if "cannot also target caster"-->
+              <div *ngIf="showColumnFlex && !spell.aoeIgnoresCaster" class="spell-expansion-properties" style="width: 150px;">          
                 <ng-template [ngTemplateOutlet]="Targets"></ng-template>
               </div>
-              <div class="spell-expansion-extra">
-                (does not hit Caster)
-                <!-- (Caster is not hit) -->
+              <!-- if "can also target caster"-->
+              <div *ngIf="showColumnFlex && spell.aoeIgnoresCaster" class="spell-expansion-propertiesSpecial" fxLayout="column" style="width: 150px;">           
+                <div class="spell-expansion-header">
+                  <ng-template [ngTemplateOutlet]="Targets"></ng-template>
+                </div>
+                <div class="spell-expansion-extra">
+                  (does not hit Caster)
+                  <!-- (Caster is not hit) -->
+                </div>  
               </div>  
-            </div>       
-
-                
-              <!-- Duration -->
-              <!-- <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
+            </div>
+                 
+            <!-- show duration -->
+            <div *ngIf="settings.showDuration" class="spell-expansion-properties" style="width: 150px;">
+              <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
                 matTooltipShowDelay="{{tooltipDelay}}">
                 <img class="image" src={{images.spellConcentration}}>
               </span>
-              {{spell.durationDisplayList}} -->
-              <!-- Components -->
-              <!-- {{spell.componentsDisplayList}}
-              <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
-                matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src={{images.spellCoins}}>
-              </span> -->
+              {{spell.durationDisplayList}}
+            </div>             
+              
+              
+            <!-- Components -->
+            <!-- {{spell.componentsDisplayList}}
+            <span *ngIf="spell.componentsValue || spell.componentsConsumed" matTooltip="{{spell.materialTooltip}}"
+              matTooltipShowDelay="{{tooltipDelay}}">
+              <img class="image" src={{images.spellCoins}}>
+            </span> -->
 
             <!-- last row: tags -->
             <div *ngIf="showColumnTags" class="spell-expansion-properties" style="width: 120px; margin-right: 15px; text-align: end;">

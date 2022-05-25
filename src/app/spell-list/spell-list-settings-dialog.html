@@ -2,6 +2,15 @@
 <div>
     <div fxLayout="column">
         <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">person</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.characterMode" (ngModelChange)="onCharacterClick()" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="dialog-description">character mode</div>
+        </div>
+        <div class="small-top-gap"></div>
+        <div fxLayout="row">
             <mat-icon color="primary" class="dialog-icon">translate</mat-icon>
             <div class="dialog-toggle">
                 <mat-slide-toggle [(ngModel)]="data.translateAll" (ngModelChange)="onTranslateClick()" color="primary">
@@ -18,16 +27,7 @@
             </div>
             <div class="dialog-description">sort by name before level</div>
         </div>        
-        <div class="small-top-gap"></div>
-        <div fxLayout="row">
-            <mat-icon color="primary" class="dialog-icon">person</mat-icon>
-            <div class="dialog-toggle">
-                <mat-slide-toggle [(ngModel)]="data.characterMode" (ngModelChange)="onCharacterClick()" color="primary">
-                </mat-slide-toggle>
-            </div>
-            <div class="dialog-description">character mode</div>
-        </div>
-        <div class="small-top-gap"></div>
+        <div class="small-top-gap"></div>        
         <div fxLayout="row">
             <mat-icon svgIcon="coins"></mat-icon>
             <div class="dialog-toggle">
@@ -35,6 +35,15 @@
                 </mat-slide-toggle>
             </div>
             <div class="dialog-description">only materials with value</div>
+        </div>
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">timer</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.showDuration" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="dialog-description">show duration instead of targets</div>
         </div>
         <div class="small-top-gap"></div>
         <div fxLayout="row">

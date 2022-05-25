@@ -33,6 +33,7 @@ export interface SettingsData {
   sortByName: boolean;
   characterMode: boolean;
   onlyValueMaterials: boolean;
+  showDuration: boolean;
 }
 
 
@@ -146,6 +147,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     translateAll: false,
     characterMode: false,
     onlyValueMaterials: false,
+    showDuration: false,
   };
   characterData: CharacterData = {
     characterList: new Array(),
