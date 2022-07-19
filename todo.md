@@ -5,6 +5,9 @@
 # Character Mode
 - Symbole für Zauber (known, prepared, limited etc.) anzeigen, ohne dass ausgeklappt werden muss -> vor/hinter Namen?
 - Prepared Blueprints
+- Nicht-Liste um Spells rauszuwerfen, die definitiv nicht genommen werden
+- Option, um benutzte Limited Spells noch anzuzeigen (Rituale für Barden oder Zauber, die einmal pro Tag ohne Slot dann aber mit Slot gecastet werden können, z.B. Tiefling Spells) - Kombination aus Limited + Always Known
+- Spell Slots
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
