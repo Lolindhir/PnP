@@ -820,6 +820,11 @@
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
+          <div *ngIf="spell.smiteSpell" class="spell-expansion-icon"
+              matTooltip="{{spell.smiteSpellTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellHammer}}></span>
+            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellHammerGrey}}></span>
+          </div>
           <div *ngIf="spell.ritual && !onlyCastAsRitual(spell)" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
             <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>

@@ -61,6 +61,8 @@ export interface Spell {
   levelSchoolDisplay: string;
   ritual: boolean;
   ritualTooltip: string;
+  smiteSpell: boolean;
+  smiteSpellTooltip: string;
   castingTime: string;
   castingTimeDisplayList: string;
   range: SpellRange;
@@ -207,6 +209,11 @@ export class Spell implements Spell {
       materialTooltip = 'Requires materials, which are consumed'; 
     }
     this.materialTooltip = materialTooltip;
+
+    //get smite spell information
+    this.smiteSpell = rawSpell.description.toLowerCase().includes('smite spell.') ? true : false;
+    this.smiteSpellTooltip = 'This is a smite spell';
+
 
     //build small display
     var levelText: string = this.level === 0 ? this.levelDisplay : this.levelDisplay + ' level';

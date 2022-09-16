@@ -1,5 +1,7 @@
 'use strict';
 
+export const spellHammer = 'assets/images/spells/hammer.svg';
+export const spellHammerGrey = 'assets/images/spells/hammer_grey.svg';
 export const spellRitual = 'assets/images/spells/ritual.svg';
 export const spellRitualGrey = 'assets/images/spells/ritual_grey.svg';
 export const spellConcentration = 'assets/images/spells/concentration.svg';
