@@ -34,6 +34,7 @@ export interface SettingsData {
   characterMode: boolean;
   onlyValueMaterials: boolean;
   showDuration: boolean;
+  dmMode: boolean;
 }
 
 
@@ -148,6 +149,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     characterMode: false,
     onlyValueMaterials: false,
     showDuration: false,
+    dmMode: false
   };
   characterData: CharacterData = {
     characterList: new Array(),
@@ -251,7 +253,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsSingleTag = SpellService.getSingleTagFilterOptions(this.spellProperties);
     this.optionsMustTag = SpellService.getMustTagFilterOptions(this.spellProperties);
     this.optionsNotTag = SpellService.getNotTagFilterOptions(this.spellProperties);
-    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties);
+    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties, this.settings.dmMode);
     this.optionsConcentration = SpellService.getConcentrationFilterOptions(this.spellProperties);
     this.optionsRitual = SpellService.getRitualFilterOptions(this.spellProperties);
     this.optionsTargetCaster = SpellService.getTargetCasterFilterOptions(this.spellProperties);
@@ -552,6 +554,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   onNameFilterCleared() {
     this.filterName = '';
     this.onChange();
+  }
+
+  onDmModeChange(){
+    this.saveSettings();
+    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties, this.settings.dmMode);
   }
 
   onRandomNumberChanged(random: number) {
@@ -1955,6 +1962,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.settings.translateAll = this.storageService.loadLocal('TranslateAll') === 'true' ? true : false;
     this.settings.characterMode = this.storageService.loadLocal('CharacterMode') === 'true' ? true : false;
     this.settings.onlyValueMaterials = this.storageService.loadLocal('OnlyValueMaterials') === 'true' ? true : false;
+    this.settings.dmMode = this.storageService.loadLocal('DMMode') === 'true' ? true : false;
 
   }
 
@@ -1965,6 +1973,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.storageService.storeLocal('TranslateAll', String(this.settings.translateAll)); 
     this.storageService.storeLocal('CharacterMode', String(this.settings.characterMode)); 
     this.storageService.storeLocal('OnlyValueMaterials', String(this.settings.onlyValueMaterials)); 
+    this.storageService.storeLocal('DMMode', String(this.settings.dmMode)); 
 
   }
 

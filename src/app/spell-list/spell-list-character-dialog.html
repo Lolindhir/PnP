@@ -240,8 +240,9 @@
                   <div>Use Preset</div>
                   <mat-form-field appearance="fill">
                     <mat-select [(ngModel)]="selectedPreset">
-                      <mat-option *ngFor="let preset of data.presets" [value]="preset">
-                        {{preset.name}}</mat-option>
+                      <div *ngFor="let preset of data.presets">
+                        <mat-option *ngIf="preset.template"  [value]="preset">{{preset.name}}</mat-option>
+                      </div>
                     </mat-select>
                   </mat-form-field>
               </div>                         

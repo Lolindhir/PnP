@@ -3,6 +3,13 @@
 
     <div fxLayout="row" fxLayoutAlign="space-between">
 
+      <div *ngIf="settings.dmMode || filterName === 'dmMode'">
+        <div class="dialog-toggle">
+          <mat-slide-toggle [(ngModel)]="settings.dmMode" (ngModelChange)="onDmModeChange()" color="primary">
+          </mat-slide-toggle>
+        </div>
+      </div>      
+
       <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined">
         <button mat-icon-button color="primary" [matMenuTriggerFor]="menu" style="font-size: large"><mat-icon>menu</mat-icon> {{characterData.selectedCharacter.mode}}</button>
         <mat-menu #menu="matMenu">

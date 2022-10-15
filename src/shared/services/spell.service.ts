@@ -209,13 +209,25 @@ export class SpellService {
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getPresetFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public static getPresetFilterOptions(properties: SpellProperties, ignoreDate: boolean): SpellFilter[] {
     
-    var presetFilterOptions: SpellFilter[] = new Array();
+    //template options first (mostly PCs)
+    var templateOptions: SpellFilter[] = new Array();
     properties.presets.forEach( preset => {
-      presetFilterOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+      if(preset.template === true && (ignoreDate || Date.parse(preset.publishingDate) < Date.now())){
+        templateOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+      }
     })
-    return presetFilterOptions.sort(SpellFilter.compare);
+
+    //non-template second
+    var nonTemplateOptions: SpellFilter[] = new Array();
+    properties.presets.forEach( preset => {
+      if(preset.template === false && (ignoreDate || Date.parse(preset.publishingDate) < Date.now())){
+        nonTemplateOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+      }
+    })
+
+    return templateOptions.sort(SpellFilter.compare).concat(nonTemplateOptions.sort(SpellFilter.compare));
   }
 
   public static getCastingTimeFilterOptions(properties: SpellProperties): SpellFilter[] {
