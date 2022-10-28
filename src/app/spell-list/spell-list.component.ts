@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
-import { Spell, RawSpell, SpellListCategory } from '@models/spell.model';
+import { Spell, RawSpell, SpellPrint, SpellListCategory } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
@@ -35,6 +35,7 @@ export interface SettingsData {
   onlyValueMaterials: boolean;
   showDuration: boolean;
   dmMode: boolean;
+  showPrint: boolean;
 }
 
 
@@ -149,7 +150,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     characterMode: false,
     onlyValueMaterials: false,
     showDuration: false,
-    dmMode: false
+    dmMode: false,
+    showPrint: false
   };
   characterData: CharacterData = {
     characterList: new Array(),
@@ -1861,6 +1863,49 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
+  onPrint() {
+
+    if(this.spellsFiltered === undefined || this.spellsFiltered.length < 1){
+      return;
+    }
+
+    var printSpells: SpellPrint[] = new Array();
+    for(var spell of this.spellsFiltered){
+      
+      //join materials (if needed) and description in right language
+      var matDescr = spell.translated ? spell.translation : spell.description;
+      if(spell.hasMaterials){
+        matDescr = '(' + spell.materials + ')' + matDescr; 
+      }
+
+      //get "for who"
+      //not used!!!!!!!!!
+      // var forWho : string = spell.classesDisplay;
+      // if(this.characterData.selectedCharacter != undefined){
+      //   forWho = this.characterData.selectedCharacter.name;
+      // }
+
+      printSpells.push({
+        level: spell.level,
+        name: spell.ritual ? spell.name + ' (Ritual)' : spell.name,
+        levelSchool: spell.levelSchool,
+        castingTime: spell.castingTime,
+        range: spell.range.displayTextComplete,
+        components: spell.componentsDisplayList,
+        duration: spell.duration,
+        materialsAndDescription: matDescr,
+        forWho: spell.sourceShortened
+      });
+    }
+
+    var fileName = 'spells';
+    if(this.characterData.selectedCharacter != undefined){
+      fileName = fileName + this.characterData.selectedCharacter.name;
+    }
+    this.storageService.storeCsv(fileName + '.csv', printSpells, false);
+
+  }
+
   spellAssetNotLoaded(index: number, assetPath: string){
 
     console.log(assetPath + " not found")
@@ -1963,6 +2008,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.settings.characterMode = this.storageService.loadLocal('CharacterMode') === 'true' ? true : false;
     this.settings.onlyValueMaterials = this.storageService.loadLocal('OnlyValueMaterials') === 'true' ? true : false;
     this.settings.dmMode = this.storageService.loadLocal('DMMode') === 'true' ? true : false;
+    this.settings.showPrint = this.storageService.loadLocal('ShowPrint') === 'true' ? true : false;
 
   }
 
@@ -1974,6 +2020,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.storageService.storeLocal('CharacterMode', String(this.settings.characterMode)); 
     this.storageService.storeLocal('OnlyValueMaterials', String(this.settings.onlyValueMaterials)); 
     this.storageService.storeLocal('DMMode', String(this.settings.dmMode)); 
+    this.storageService.storeLocal('ShowPrint', String(this.settings.showPrint)); 
 
   }
 

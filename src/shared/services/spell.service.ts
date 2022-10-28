@@ -1,4 +1,5 @@
 import { Spell } from "@models/spell.model";
+import { SpellSource } from "@models/spell-source.model";
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from "@models/spell-filter.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellRange } from "@models/spell-range.model";
@@ -416,11 +417,11 @@ export class SpellService {
     var sourceFilterGroupOptions: SpellFilterGroup[] = new Array();
 
     //core sources
-    var coreFilters: SpellFilter[] = this.addFiltersByStringValue(['Player', 'Xanathar', 'Tasha'], sourceFilterOptions);
+    var coreFilters: SpellFilter[] = this.addFiltersByStringValue(SpellSource.CategoryOfficialCore, sourceFilterOptions);
     sourceFilterGroupOptions.push({name: 'Official Core Books', filters: coreFilters});
 
     //official others
-    var officialFilters: SpellFilter[] = this.addFiltersByStringValue(['Official', 'Unearthed', 'Wildemount', 'Fizban', 'Strixhaven'], sourceFilterOptions);
+    var officialFilters: SpellFilter[] = this.addFiltersByStringValue(SpellSource.CategoryOfficialOther, sourceFilterOptions);
     sourceFilterGroupOptions.push({name: 'Official Other Content', filters: officialFilters});
 
     //third-party (all others)

@@ -1217,9 +1217,16 @@
     </mat-accordion>
 
 
-    <div fxLayout="row" fxLayoutAlign="end end" class="bottom">
-      <div class="spellCount">{{spellsToShow.length}}/{{spellsFiltered.length}}
-        <span style="font-size: small;">{{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</span></div>
+    <div fxLayout="row" fxLayoutAlign="end end" class="bottom">      
+      <div class="spellCount">        
+        {{spellsToShow.length}}/{{spellsFiltered.length}}
+        <span style="font-size: small;">{{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</span>
+        <div *ngIf="settings.showPrint">
+          <button color="primary" mat-icon-button (click)="onPrint()" matTooltip="Export to .csv for print" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon>print</mat-icon>
+          </button>
+        </div>
+      </div>
     </div>
 
   </div>

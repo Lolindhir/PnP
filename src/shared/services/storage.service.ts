@@ -28,4 +28,22 @@ export class StorageService {
     this.fileSaver.save(blob, fileName);
 
   }
+
+  public storeCsv(fileName: string, data: any, withHeader: boolean) {
+    
+    const replacer = (key : any, value: any) => value === null ? '' : value; // specify how you want to handle null values here
+    const header = Object.keys(data[0]);
+    let csv = data.map((row: { [x: string]: any; }) => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(';'));
+    
+    //with or without header
+    if(withHeader){
+      csv.unshift(header.join(';'));
+    }
+   
+    let csvArray = csv.join('\r\n');
+
+    var blob = new Blob([csvArray], {type: 'text/csv' })
+    this.fileSaver.save(blob, fileName);
+  }
+
 }

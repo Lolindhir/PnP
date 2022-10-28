@@ -3,6 +3,7 @@ import { SpellProperties } from "@models/spell-properties.model";
 import { SpellFilter, SpellFilterType } from "@models/spell-filter.model";
 import { SpellTag } from "@models/spell-tag.model";
 import { SpellTarget } from "@models/spell-target.model";
+import { SpellSource } from "@models/spell-source.model";
 import { Preset } from "@models/preset.model";
 import { SpellRange, SpellRangeCategory } from "./spell-range.model";
 
@@ -57,7 +58,8 @@ export interface Spell {
   level: number;  
   levelDisplay: string;  
   name: string;  
-  school: string;  
+  school: string;
+  levelSchool: string;  
   levelSchoolDisplay: string;
   ritual: boolean;
   ritualTooltip: string;
@@ -71,6 +73,8 @@ export interface Spell {
   componentsConsumed: boolean;
   componentsDisplay: string;
   componentsDisplayList: string;
+  hasMaterials: boolean;
+  materials: string;
   materialTooltip: string;
   duration: string;
   durationDisplayList: string;
@@ -78,6 +82,7 @@ export interface Spell {
   concentrationTooltip: string;
   description: string;
   source: string;
+  sourceShortened: string;
   classes: SpellClass[];
   classesDisplay: string;
   subclasses: SpellClass[];
@@ -111,6 +116,18 @@ export interface Spell {
   highlightColor: string;
 }
 
+export interface SpellPrint {
+  level: number;
+  name: string;
+  levelSchool: string;
+  castingTime: string;
+  range: string;
+  components: string;
+  duration: string;
+  materialsAndDescription: string;
+  forWho: string;
+}
+
 export class Spell implements Spell {  
 
   constructor(rawSpell: RawSpell, spellProperties: SpellProperties){
@@ -118,12 +135,14 @@ export class Spell implements Spell {
     //take straight raw values
     this.level = rawSpell.level;
     this.school = rawSpell.school;
+    this.levelSchool = rawSpell.levelSchool;
     this.ritual = rawSpell.ritual;
     this.ritualTooltip = 'Castable as a ritual';
     this.castingTime = rawSpell.castingTime;
     this.castingTimeDisplayList = rawSpell.castingTime.includes('reaction') ? '1 Reaction' : this.capitalizeWords(rawSpell.castingTime);
     this.range = new SpellRange(rawSpell.range, rawSpell.area);
     this.components = rawSpell.components;
+    this.materials = rawSpell.materials;
     this.duration = rawSpell.duration;
     this.concentration = rawSpell.concentration;
     this.concentrationTooltip = 'Requires concentration';
@@ -184,6 +203,9 @@ export class Spell implements Spell {
     }
     this.levelSchoolDisplay = levelSchoolDisplay;
 
+    //build shortened source
+    this.sourceShortened = SpellSource.GetAbbreviation(this.source);
+
     //build components display
     var componentsDisplay : string = '';
     this.components.forEach(component => {
@@ -195,9 +217,12 @@ export class Spell implements Spell {
     }
     this.componentsDisplay = componentsDisplay;
 
+    //get component contains material
+    this.hasMaterials = this.componentsDisplay.toLowerCase().includes('m');
+    
     //get component material/consumed
-    this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp') ? true : false;
-    this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume') ? true : false;
+    this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp');
+    this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume');
     var materialTooltip = '';
     if(this.componentsValue && this.componentsConsumed){
       materialTooltip = 'Requires materials with gold value, which are consumed'; 
@@ -211,7 +236,7 @@ export class Spell implements Spell {
     this.materialTooltip = materialTooltip;
 
     //get smite spell information
-    this.smiteSpell = rawSpell.description.toLowerCase().includes('smite spell.') ? true : false;
+    this.smiteSpell = rawSpell.description.toLowerCase().includes('smite spell.');
     this.smiteSpellTooltip = 'This is a smite spell';
 
 
