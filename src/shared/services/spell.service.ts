@@ -174,6 +174,15 @@ export class SpellService {
     return SpellRange.getCategoryFilterOptions(properties);
   }
 
+  public static getThemeFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var themeFilterOptions: SpellFilter[] = new Array();
+    properties.themes.forEach( theme => {
+      themeFilterOptions.push(new SpellFilter(SpellFilterType.Theme, theme, properties))
+    })
+    return themeFilterOptions.sort(SpellFilter.compare);
+  }
+
   public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var tagFilterOptions: SpellFilter[] = new Array();

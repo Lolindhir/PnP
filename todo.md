@@ -1,3 +1,6 @@
+# Bugs
+- Spell-Anzahl sprint auf mobile Device
+
 # Settings
 - Filter: Highlight der Zauber, anstatt herausfiltern (macht nur Sinn, wenn über Preset in den Settings die Auswahl schon verkleinert ist)
 - Spell als Favorite markieren? außerhalb Character-Mode
@@ -10,8 +13,8 @@
 - Spell Slots
 
 # Filter
+- Theme für Spells
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
-- extra Filter für "keine Cantrips"
 
 # General
 - Animation während Seite geladen wird

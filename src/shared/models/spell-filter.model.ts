@@ -46,13 +46,14 @@ export enum SpellFilterType{
     DamageType = 29,
     Condition = 30,
     Source = 31,
-    SpellListCategory = 32,
-    CategoryKnown = 33,
-    CategoryAlways = 34,
-    CategoryLimited = 35,
-    CategoryRitualCast = 36,
-    CategoryPrepared = 37,
-    None = 38,
+    Theme = 32,
+    SpellListCategory = 33,
+    CategoryKnown = 34,
+    CategoryAlways = 35,
+    CategoryLimited = 36,
+    CategoryRitualCast = 37,
+    CategoryPrepared = 38,
+    None = 39,
 }
 
 export interface SpellFilterGroup{
@@ -340,6 +341,11 @@ export class SpellFilter implements SpellFilter {
             tooltip = value.description;
         }
 
+        else if(type === SpellFilterType.Theme){
+            displayText = 'Theme: ' + value as string;
+            displayTextList = value as string;
+        }
+
         else if(type === SpellFilterType.Preset){
             displayText = 'Preset: ' + value.name;
             displayTextList = value.name;
@@ -486,6 +492,11 @@ export class SpellFilter implements SpellFilter {
         else if(a.type === SpellFilterType.Tag || a.type === SpellFilterType.TagSingle || a.type === SpellFilterType.TagMust || a.type === SpellFilterType.TagNot){
             compareA = a.properties.tags.indexOf(a.value);
             compareB = b.properties.tags.indexOf(b.value);
+        }
+        //for the theme use the order from the properties
+        else if(a.type === SpellFilterType.Theme){
+            compareA = a.properties.themes.indexOf(a.value);
+            compareB = b.properties.themes.indexOf(b.value);
         }
         //for concentration and ritual, compare the boolean (true before false)
         else if(a.type === SpellFilterType.Ritual 

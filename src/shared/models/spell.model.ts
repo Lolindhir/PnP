@@ -51,6 +51,7 @@ export interface RawSpell {
   castingAbility: string;
   translation: string;
   tags: string[];
+  themes: string[];
   asset: boolean;
 }
 
@@ -98,6 +99,7 @@ export interface Spell {
   aoeIgnoresCaster: boolean;
   castingAbility: string;
   tags: SpellTag[];
+  themes: string[];
   translation: string;
   translatable: boolean;
   translated: boolean;
@@ -157,6 +159,7 @@ export class Spell implements Spell {
     this.attackTypes = rawSpell.attackTypes;
     this.targets = rawSpell.targets;
     this.castingAbility = rawSpell.castingAbility;
+    this.themes = rawSpell.themes;
     this.translation = rawSpell.translation;
     this.descriptionDisplay = this.description;
     this.translated = false;
@@ -746,6 +749,13 @@ export class Spell implements Spell {
           if(numberOfTargets === 'AoE' && this.targets.some(target => target.toLowerCase().includes('aoe'))){
             return true;
           }
+          break; 
+        }
+        case SpellFilterType.Theme: {             
+          var theme: string = filter.value as string;
+          if(theme === null || this.themes.includes(theme)){
+            return true;
+          }          
           break; 
         }
         case SpellFilterType.Tag: {             

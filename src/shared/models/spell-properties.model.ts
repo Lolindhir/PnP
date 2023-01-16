@@ -13,6 +13,7 @@ export interface SpellProperties{
     saves: string[];
     attackTypes: string[];
     targets: string[];
+    themes: string[];
     tags: SpellTag[];
     presets: Preset[];
 }

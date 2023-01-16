@@ -309,6 +309,20 @@
         </div>
 
         <div fxLayout="column" class="filter-select">
+          <div>Theme</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersTheme"
+              (ngModelChange)="addFilterMulti(optionsTheme, selectedFiltersTheme)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersTheme.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsTheme" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div fxLayout="column" class="filter-select">
           <div>Damage Type</div>
           <mat-form-field appearance="fill">
             <mat-select [(ngModel)]="selectedFiltersDamageType"
@@ -317,6 +331,20 @@
                 <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
               </mat-select-trigger>
               <mat-option *ngFor="let filter of optionsDamageType" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div> 
+
+        <div fxLayout="column" class="filter-select">
+          <div>Condition</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersCondition"
+              (ngModelChange)="addFilterMulti(optionsCondition, selectedFiltersCondition)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersCondition.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsCondition" [value]="filter">
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -342,7 +370,7 @@
               </mat-button-toggle>
             </mat-button-toggle-group>
           </div>
-        </div>
+        </div>              
 
         <div fxLayout="column" class="filter-select">
           <div>Number of Targets</div>
@@ -466,21 +494,7 @@
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
-        </div>
-
-        <div fxLayout="column" class="filter-select">
-          <div>Condition</div>
-          <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersCondition"
-              (ngModelChange)="addFilterMulti(optionsCondition, selectedFiltersCondition)" multiple="true">
-              <mat-select-trigger>
-                <span class="filter-selection-number">{{selectedFiltersCondition.length}} selected</span>
-              </mat-select-trigger>
-              <mat-option *ngFor="let filter of optionsCondition" [value]="filter">
-                {{filter.displayTextList}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+        </div>        
 
         <div fxLayout="column" class="filter-select">
           <div>Single Class</div>
