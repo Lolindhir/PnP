@@ -224,14 +224,14 @@ export class Spell implements Spell {
     this.hasMaterials = this.componentsDisplay.toLowerCase().includes('m');
     
     //get component material/consumed
-    this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp');
+    this.componentsValue = this.componentsDisplay.toLowerCase().includes(' gp') || this.componentsDisplay.toLowerCase().includes(' sp') || this.componentsDisplay.toLowerCase().includes(' cp');
     this.componentsConsumed = this.componentsDisplay.toLowerCase().includes('consume');
     var materialTooltip = '';
     if(this.componentsValue && this.componentsConsumed){
-      materialTooltip = 'Requires materials with gold value, which are consumed'; 
+      materialTooltip = 'Requires materials with value, which are consumed'; 
     }
     else if(this.componentsValue){
-      materialTooltip = 'Requires materials with gold value'; 
+      materialTooltip = 'Requires materials with value'; 
     }
     else{
       materialTooltip = 'Requires materials, which are consumed'; 
