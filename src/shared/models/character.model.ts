@@ -28,6 +28,7 @@ export interface Character {
     ritualSpells: string[],
     limitedSpells: string[],
     usedSpells: string[],
+    removedSpells: string[],
     knownCasting: boolean,
     maxKnown: number,
     knownCantripCasting: boolean,
@@ -42,6 +43,7 @@ export interface Character {
     preparedOnTop: boolean,
     knownOnTop: boolean,
     dontShowUsed: boolean,
+    showRemoved: boolean,
     ritualsAtBottom: boolean,
     allSpellsInOverview: boolean,
 }
@@ -71,6 +73,7 @@ export class Character implements Character {
         this.ritualSpells = new Array();
         this.limitedSpells = new Array();
         this.usedSpells = new Array();
+        this.removedSpells = new Array();
         this.knownCasting = false;
         this.maxKnown = 0;
         this.knownCantripCasting = false;
@@ -85,6 +88,7 @@ export class Character implements Character {
         this.knownOnTop = false;
         this.mode = ModeOption.Overview;
         this.dontShowUsed = false;
+        this.showRemoved = false;
         this.ritualsAtBottom = false;
         this.allSpellsInOverview = false;
 
@@ -103,6 +107,7 @@ export class Character implements Character {
             ritualSpells: this.ritualSpells,
             limitedSpells: this.limitedSpells,
             usedSpells: this.usedSpells,
+            removedSpells: this.removedSpells,
             knownCasting: this.knownCasting,
             maxKnown: this.maxKnown,
             knownCantripCasting: this.knownCantripCasting,
@@ -116,6 +121,7 @@ export class Character implements Character {
             preparedOnTop: this.preparedOnTop,
             knownOnTop: this.knownOnTop,
             dontShowUsed: this.dontShowUsed,
+            showRemoved: this.showRemoved,
             ritualsAtBottom: this.ritualsAtBottom,
             allSpellsInOverview: this.allSpellsInOverview,
         };
@@ -147,6 +153,7 @@ export class Character implements Character {
         if(charRaw.ritualSpells != undefined){ char.ritualSpells = charRaw.ritualSpells; }
         if(charRaw.limitedSpells != undefined){ char.limitedSpells = charRaw.limitedSpells; }
         if(charRaw.usedSpells != undefined){ char.usedSpells = charRaw.usedSpells; }
+        if(charRaw.removedSpells != undefined){ char.removedSpells = charRaw.removedSpells; }
         if(charRaw.knownCasting != undefined){ char.knownCasting = charRaw.knownCasting; }
         if(charRaw.maxKnown != undefined){ char.maxKnown = charRaw.maxKnown; }
         if(charRaw.knownCantripCasting != undefined){ char.knownCantripCasting = charRaw.knownCantripCasting; }
@@ -160,6 +167,7 @@ export class Character implements Character {
         if(charRaw.preparedOnTop != undefined){ char.preparedOnTop = charRaw.preparedOnTop; }
         if(charRaw.knownOnTop != undefined){ char.knownOnTop = charRaw.knownOnTop; }
         if(charRaw.dontShowUsed != undefined){ char.dontShowUsed = charRaw.dontShowUsed; }
+        if(charRaw.showRemoved != undefined){ char.showRemoved = charRaw.showRemoved; }
         if(charRaw.ritualsAtBottom != undefined){ char.ritualsAtBottom = charRaw.ritualsAtBottom; }
         if(charRaw.allSpellsInOverview != undefined){ char.allSpellsInOverview = charRaw.allSpellsInOverview; }
 

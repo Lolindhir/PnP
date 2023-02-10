@@ -332,6 +332,15 @@ export class SpellService {
 
   }
 
+  public static getCategoryRemovedFilterOptions(properties: SpellProperties): SpellFilter[] {
+    
+    var removedFiltersOptions: SpellFilter[] = new Array();
+    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, true, properties));
+    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, false, properties));
+    return removedFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
   public static getComponentVerbalFilterOptions(properties: SpellProperties): SpellFilter[] {
     
     var verbalFiltersOptions: SpellFilter[] = new Array();

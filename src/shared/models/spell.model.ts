@@ -20,6 +20,8 @@ export enum SpellListCategory{
   preparedCantrips,
   preparedSpells,
   always,
+  removed,
+  allButRemoved,
   limitedUsed,
   limitedNotUsed,
   ritualCastingSpells,
@@ -115,6 +117,7 @@ export interface Spell {
   limited: boolean;
   ritualCast: boolean;
   used: boolean;
+  removed: boolean;
   highlightColor: string;
 }
 
@@ -170,6 +173,7 @@ export class Spell implements Spell {
     this.limited = false;
     this.ritualCast = false;
     this.used = false;
+    this.removed = false;
     this.highlightColor = 'white';
 
     //cut names from spells
@@ -882,6 +886,12 @@ export class Spell implements Spell {
           if(listCategory === SpellListCategory.always && this.always){
             return true;
           }
+          if(listCategory === SpellListCategory.removed && this.removed){
+            return true;
+          }
+          if(listCategory === SpellListCategory.allButRemoved && !this.removed){
+            return true;
+          }
           if(listCategory === SpellListCategory.limitedNotUsed && this.limited && !this.used){
             return true;
           }
@@ -924,6 +934,13 @@ export class Spell implements Spell {
         case SpellFilterType.CategoryPrepared: {             
           var prepared: boolean = filter.value as boolean;
           if(prepared === null || this.prepared === prepared){
+            return true;
+          }          
+          break; 
+        } 
+        case SpellFilterType.CategoryRemoved: {             
+          var removed: boolean = filter.value as boolean;
+          if(removed === null || this.removed === removed){
             return true;
           }          
           break; 

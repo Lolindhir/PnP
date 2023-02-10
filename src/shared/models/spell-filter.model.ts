@@ -53,7 +53,8 @@ export enum SpellFilterType{
     CategoryLimited = 36,
     CategoryRitualCast = 37,
     CategoryPrepared = 38,
-    None = 39,
+    CategoryRemoved = 39,
+    None = 40,
 }
 
 export interface SpellFilterGroup{
@@ -269,6 +270,16 @@ export class SpellFilter implements SpellFilter {
             }
             else{
                 displayText = 'Not prepared';
+            }
+            displayTextList = displayText;
+        }
+
+        else if(type === SpellFilterType.CategoryRemoved){
+            if(value === true){
+                displayText = 'Deleted';
+            }
+            else{
+                displayText = 'Not deleted';
             }
             displayTextList = displayText;
         }
@@ -512,6 +523,7 @@ export class SpellFilter implements SpellFilter {
             || a.type === SpellFilterType.CategoryLimited
             || a.type === SpellFilterType.CategoryRitualCast
             || a.type === SpellFilterType.CategoryPrepared
+            || a.type === SpellFilterType.CategoryRemoved
             || a.type === SpellFilterType.Upcastable){
             compareA = a.value as boolean ? 1 : 2;
             compareB = b.value as boolean ? 1 : 2;

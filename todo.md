@@ -13,7 +13,6 @@
 - Spell Slots
 
 # Filter
-- Theme für Spells
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
 
 # General

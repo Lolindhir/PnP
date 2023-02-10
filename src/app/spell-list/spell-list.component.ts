@@ -131,6 +131,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsCategoryLimited: SpellFilter[] = new Array();
   optionsCategoryRitualCast: SpellFilter[] = new Array();
   optionsCategoryPrepared: SpellFilter[] = new Array();
+  optionsCategoryRemoved: SpellFilter[] = new Array();
   optionsSpellMod: SpellFilter[] = new Array();
 
   //spell related stuff
@@ -274,6 +275,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.optionsCategoryLimited = SpellService.getCategoryLimitedFilterOptions(this.spellProperties);
     this.optionsCategoryRitualCast = SpellService.getCategoryRitualCastFilterOptions(this.spellProperties);
     this.optionsCategoryPrepared = SpellService.getCategoryPreparedFilterOptions(this.spellProperties);
+    this.optionsCategoryRemoved = SpellService.getCategoryRemovedFilterOptions(this.spellProperties);
 
     //load character list
     this.characterData.characterList = Character.loadCharacters(storageService);
@@ -394,6 +396,20 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return false;
   } 
 
+  greyOutRemoved(spell: Spell): boolean{
+
+    var char: Character | undefined = this.characterData.selectedCharacter;
+    if(char === undefined){ 
+      return false;
+    }
+
+    if(char.mode === ModeOption.Overview && spell.removed){
+      return true;
+    }
+
+    return false;
+  } 
+
   showRedBorder(): boolean {
     
     var char: Character | undefined = this.characterData.selectedCharacter;
@@ -446,6 +462,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         spell.ritualCast = false;
         spell.limited = false;
         spell.used = false;
+        spell.removed = false;
       }
       //selected character: apply infos
       else{
@@ -461,6 +478,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         spell.limited = this.characterData.selectedCharacter.limitedSpells.includes(spell.name);
         //in used list?
         spell.used = this.characterData.selectedCharacter.usedSpells.includes(spell.name);
+        //in removed list?
+        spell.removed = this.characterData.selectedCharacter.removedSpells.includes(spell.name);
       }
       
     }
@@ -518,7 +537,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         }
 
       }
-
+ 
       if(char.mode === ModeOption.Prep){
         //only known spells can be/have to be prepared, except known spell that are also always known
         if(char.preparedCantripCasting){
@@ -539,7 +558,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
 
       if(char.mode === ModeOption.AddRemove || (char.mode === ModeOption.Overview && char.allSpellsInOverview)){
-        //no filter necessary
+        //no filter necessary, if removed shall be shown
+        //otherwise show all but removed
+        if(!char.showRemoved){
+          impliciteFilters.push(new SpellFilter(SpellFilterType.SpellListCategory, SpellListCategory.allButRemoved, this.spellProperties));
+        }
       }
 
     }
@@ -1041,6 +1064,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(char === undefined){
       return false;
     }
+    if(spell.removed){
+      return false;
+    }
     if(char.mode === ModeOption.Overview && spell.known){
       return true;
     }
@@ -1054,7 +1080,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(char === undefined){
       return false;
     }
+    if(spell.removed){
+      return false;
+    }
     if(char.mode === ModeOption.Overview && spell.always){
+      return true;
+    }
+    if(char.mode === ModeOption.AddRemove){
+      return true;
+    }
+    return false;
+  }
+  showIconRemoved(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(char.mode === ModeOption.Overview && spell.removed){
       return true;
     }
     if(char.mode === ModeOption.AddRemove){
@@ -1065,6 +1107,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   showIconLimited(spell: Spell): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
+      return false;
+    }
+    if(spell.removed){
       return false;
     }
     if(char.mode === ModeOption.Overview && spell.limited){
@@ -1080,6 +1125,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(char === undefined){
       return false;
     }
+    if(spell.removed){
+      return false;
+    }
     if(char.mode === ModeOption.Overview && spell.ritualCast && spell.ritual){
       return true;
     }
@@ -1091,6 +1139,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   showIconUsed(spell: Spell): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
+      return false;
+    }
+    if(spell.removed){
       return false;
     }
     if(char.mode === ModeOption.Session && spell.limited){
@@ -1112,6 +1163,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   showIconPrepared(spell: Spell): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){
+      return false;
+    }
+    if(spell.removed){
       return false;
     }
     if(char.mode === ModeOption.Overview && spell.prepared){
@@ -1203,6 +1257,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       else if(this.filters.some( filter => filter.type === type)){
         this.addFilterToggle(this.optionsCategoryPrepared, false);
+      }
+    }
+
+    if(type === SpellFilterType.CategoryRemoved){
+      if(!this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryRemoved, true);
+      }
+      else if(this.filters.some( filter => filter.type === type)){
+        this.addFilterToggle(this.optionsCategoryRemoved, false);
       }
     }
     
@@ -1465,6 +1528,51 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
   }
 
+  onRemoved(spell: Spell){
+    
+    if(this.characterData.selectedCharacter == undefined){
+      return;
+    }
+    spell.removed = !spell.removed;
+    if(spell.removed){
+      
+      this.characterData.selectedCharacter.removedSpells.push(spell.name);
+      this.showSpellListSnackBar(spell.name, 'deleted', 0, 0);
+      
+      //remove all other attributes
+      spell.known = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownCantrips, spell.name);
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.knownSpells, spell.name);
+
+      spell.always = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.alwaysSpells, spell.name);
+  
+      spell.limited = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.limitedSpells, spell.name);
+           
+      spell.ritualCast = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.ritualSpells, spell.name);
+      
+      spell.used = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.usedSpells, spell.name);
+      
+      spell.prepared = false;
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedCantrips, spell.name);
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedSpells, spell.name);
+
+    }
+    else{
+      ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.removedSpells, spell.name);
+      this.showSpellListSnackBar(spell.name, 'restored from deleted spells', 0, 0);
+    }
+    this.characterData.selectedCharacter.save();
+
+    if(!this.characterData.selectedCharacter.showRemoved && this.characterData.selectedCharacter.mode === ModeOption.AddRemove){
+      this.onChange();
+    }
+
+  }
+
   onAlways(spell: Spell){
     
     if(this.characterData.selectedCharacter == undefined){
@@ -1615,8 +1723,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       for(var spell of this.spellsFiltered){
         var spellAlreadyKnown: boolean = spell.known;
-        spell.known = true;
-        if(!spellAlreadyKnown){
+        if(!spellAlreadyKnown && !spell.removed){
+          spell.known = true;
           spellCount++;
           if(spell.level === 0){
             char.knownCantrips.push(spell.name);
@@ -1839,11 +1947,15 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         return this.highlightColor;
       }
 
+      //highlight removed
+      if(spell.removed){
+        return '#DCDCDC'
+      }
+
       //highlight only ritual cast in session
       if(char.mode === ModeOption.Session && this.onlyCastAsRitual(spell)){
         return '#FFFAF0'; //floral white
-      }
-
+      }   
     }
 
     return 'white';

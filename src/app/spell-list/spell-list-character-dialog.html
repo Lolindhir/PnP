@@ -201,6 +201,16 @@
                   </div>
                   <div class="dialog-description">Session: rituals at bottom</div>
                 </div>
+                
+                <div class="medium-gap"></div>
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.showRemoved" (ngModelChange)="onSortChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">Show deleted spells</div>
+                </div>
                                
 
                 <div class="big-gap"></div>

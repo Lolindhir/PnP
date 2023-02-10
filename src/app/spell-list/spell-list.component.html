@@ -747,6 +747,14 @@
         </div>
       </ng-template>
 
+      <ng-template #IconRemoved>
+        <div *ngIf="characterData.selectedCharacter.showRemoved && characterData.selectedCharacter.removedSpells.length > 0" [style.width.px]="totalWidth(characterData.selectedCharacter.removedSpells.length.toString())" [ngStyle]="totalStyle(SpellFilterType.CategoryRemoved)" fxLayout="row" fxLayoutAlign="start center" class="total">
+          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryRemoved)" matTooltip="filter deleted" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon color="primary">delete</mat-icon> {{characterData.selectedCharacter.removedSpells.length}}
+          </button>
+        </div>
+      </ng-template>
+
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
   
         <div *ngIf="showTotalKnown()" [style.width.px]="totalWidth(getTotalKnown())" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)" fxLayout="row" fxLayoutAlign="start center" class="total">
@@ -759,6 +767,7 @@
         <ng-template [ngTemplateOutlet]="IconAlways"></ng-template>   
         <ng-template [ngTemplateOutlet]="IconLimited"></ng-template>   
         <ng-template [ngTemplateOutlet]="IconRitual"></ng-template>          
+        <ng-template [ngTemplateOutlet]="IconRemoved"></ng-template>          
         
         <div *ngIf="showTotalPrepared()" [style.width.px]="totalWidth(getTotalPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
           <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
@@ -791,6 +800,7 @@
           <ng-template [ngTemplateOutlet]="IconAlways"></ng-template>   
           <ng-template [ngTemplateOutlet]="IconLimited"></ng-template>   
           <ng-template [ngTemplateOutlet]="IconRitual"></ng-template> 
+          <ng-template [ngTemplateOutlet]="IconRemoved"></ng-template> 
         </div>        
 
         <ng-template [ngTemplateOutlet]="IconExplanation"></ng-template>    
@@ -836,7 +846,7 @@
       <mat-expansion-panel #panel id="panel{{i}}" *ngFor="let spell of spellsToShow; let i = index"
         [expanded]="i === expandedPanelIndex" (opened)="onSpellExpansionPanelOpened(i)"
         (closed)="onSpellExpansionPanelClosed(i)"
-        [disabled]="greyOutUsed(spell)"
+        [disabled]="greyOutUsed(spell) || greyOutRemoved(spell)"
         [style.background]="highlightSpell(spell)">
 
         <!-- Template for icons next to the spell name -->
@@ -893,7 +903,7 @@
           <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
         </ng-template>  
 
-        <mat-expansion-panel-header [style.background]="highlightSpell(spell)">
+        <mat-expansion-panel-header [style.background]="highlightSpell(spell)" [ngClass]="{'striked-through': spell.removed}">
 
           <div *ngIf="i != expandedPanelIndex" fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">          
 
@@ -943,7 +953,8 @@
                 Only as 
               </span>
               <span *ngIf="spell.ritual" style="margin-left: 2px" matTooltip="{{spell.ritualTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src={{images.spellRitual}}>
+                <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
+                <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
               </span>
             </div>
 
@@ -1134,6 +1145,14 @@
                   </button>
                   <ng-template *ngIf="disableIconPrepared()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.prepared, iconFull:'label', iconEmpty: 'label_outline'}"></ng-template>  
                 </div> 
+                <!--removed-->
+                <div *ngIf="showIconRemoved(spell)">
+                  <button *ngIf="!disableIconKnownLists()" class="infobutton" mat-icon-button (click)="onRemoved(spell)"
+                    matTooltip="delete from spell options" matTooltipShowDelay="{{tooltipDelay}}">
+                    <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.removed, iconFull:'delete', iconEmpty: 'delete_outline'}"></ng-template> 
+                  </button>
+                  <ng-template *ngIf="disableIconKnownLists()" [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{show: spell.removed, iconFull:'delete', iconEmpty: 'delete_outline'}"></ng-template>  
+                </div>
 
               </div>
 
