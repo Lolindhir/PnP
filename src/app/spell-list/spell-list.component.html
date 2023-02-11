@@ -669,26 +669,38 @@
 
     </div>
 
-    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined" fxLayout="row wrap" fxLayoutAlign="start"> 
+    <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined"> 
   
-      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0" fxLayout="row wrap" fxLayoutAlign="start"> 
+      <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0"> 
 
-        <div>
-          <button color="primary" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon>add_circle</mat-icon>
-            <span>
-              Add Filtered
-            </span>
-          </button>
-        </div>
-  
-        <div>
-          <button color="primary" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon>remove_circle</mat-icon>
-            <span>
-              Remove Filtered
-            </span>
-          </button>
+        <div fxLayout="row wrap" fxLayoutAlign="start">
+          <div>
+            <button color="primary" [disabled]="disableButtonAddFiltered()" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
+              <mat-icon>add_circle</mat-icon>
+              <span>
+                {{removedInsteadOfKnown ? "Restore all deleted" : "Add all to known"}}
+              </span>
+            </button>
+          </div>
+    
+          <div>
+            <button color="primary" [disabled]="disableButtonRemoveFiltered()" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
+              <mat-icon>remove_circle</mat-icon>
+              <span>
+                {{removedInsteadOfKnown ? "Delete all" : "Remove all from known"}}
+              </span>
+            </button>
+          </div>
+        </div>      
+
+        <div fxLayout="row" style="margin-top: -5px; margin-left: 20px">
+          <div style="display:flex; align-items:center">
+            {{removedInsteadOfKnown ? "switch to known:" : "switch to deleted:"}}
+          </div>
+          <button color="primary" mat-icon-button (click)="removedInsteadOfKnown = !removedInsteadOfKnown">
+            <mat-icon *ngIf="removedInsteadOfKnown">bookmark</mat-icon>
+            <mat-icon *ngIf="!removedInsteadOfKnown">delete</mat-icon>
+          </button>          
         </div>
 
       </div>      
@@ -766,8 +778,7 @@
         
         <ng-template [ngTemplateOutlet]="IconAlways"></ng-template>   
         <ng-template [ngTemplateOutlet]="IconLimited"></ng-template>   
-        <ng-template [ngTemplateOutlet]="IconRitual"></ng-template>          
-        <ng-template [ngTemplateOutlet]="IconRemoved"></ng-template>          
+        <ng-template [ngTemplateOutlet]="IconRitual"></ng-template>                 
         
         <div *ngIf="showTotalPrepared()" [style.width.px]="totalWidth(getTotalPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
           <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
