@@ -63,9 +63,10 @@
 }
 
 .bottom {
-  /*position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 10px;
+  right: 25px;
 }
 
 .spellCount {
@@ -79,7 +80,7 @@
 }
 
 .sticky {
-  /*position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   z-index: 1000;
