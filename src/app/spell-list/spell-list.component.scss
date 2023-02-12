@@ -64,9 +64,9 @@
 
 .bottom {
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
   bottom: 10px;
-  right: 25px;
+  right: 10px;
 }
 
 .spellCount {
