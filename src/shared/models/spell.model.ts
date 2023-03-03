@@ -144,7 +144,6 @@ export class Spell implements Spell {
     this.ritual = rawSpell.ritual;
     this.ritualTooltip = 'Castable as a ritual';
     this.castingTime = rawSpell.castingTime;
-    this.castingTimeDisplayList = rawSpell.castingTime.includes('reaction') ? '1 Reaction' : this.capitalizeWords(rawSpell.castingTime);
     this.range = new SpellRange(rawSpell.range, rawSpell.area);
     this.components = rawSpell.components;
     this.materials = rawSpell.materials;
@@ -210,6 +209,17 @@ export class Spell implements Spell {
     }
     this.levelSchoolDisplay = levelSchoolDisplay;
 
+    //build casting time display
+    var castingTimeDisplay = this.capitalizeWords(rawSpell.castingTime);
+    if(rawSpell.castingTime.includes('reaction')){
+      castingTimeDisplay = '1 Reaction';
+    }
+    else if(rawSpell.castingTime.includes('bonus')){
+      castingTimeDisplay = '1 Bonus Action';
+    }
+    this.castingTimeDisplayList = castingTimeDisplay;
+
+
     //build shortened source
     this.sourceShortened = SpellSource.GetAbbreviation(this.source);
 
@@ -243,7 +253,7 @@ export class Spell implements Spell {
     this.materialTooltip = materialTooltip;
 
     //get smite spell information
-    this.smiteSpell = rawSpell.description.toLowerCase().includes('smite spell.');
+    this.smiteSpell = rawSpell.castingTime.toLowerCase().includes('immediately after hitting');
     this.smiteSpellTooltip = 'This is a smite spell';
 
 

@@ -862,11 +862,6 @@
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
-          <div *ngIf="spell.smiteSpell" class="spell-expansion-icon"
-              matTooltip="{{spell.smiteSpellTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellHammer}}></span>
-            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellHammerGrey}}></span>
-          </div>
           <div *ngIf="spell.ritual && !onlyCastAsRitual(spell)" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
             <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
@@ -956,7 +951,7 @@
             </div>
 
             <!-- 3rd row: casting time -->
-            <div *ngIf="showColumnCastingTime" class="spell-expansion-properties" style="width: 115px;">
+            <div *ngIf="showColumnCastingTime" class="spell-expansion-properties" style="width: 120px;">
               <span *ngIf="!onlyCastAsRitual(spell)">
                 {{spell.castingTimeDisplayList}}
               </span>
@@ -967,10 +962,14 @@
                 <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
                 <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
               </span>
+              <span *ngIf="spell.smiteSpell" class="spell-expansion-icon" matTooltip="{{spell.smiteSpellTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellHammer}}></span>
+                <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellHammerGrey}}></span>
+              </span>
             </div>
 
             <!-- 4th row: range -->
-            <div *ngIf="showColumnRange" class="spell-expansion-properties" style="width: 150px;">
+            <div *ngIf="showColumnRange" class="spell-expansion-properties" style="width: 145px;">
               <ng-template [ngTemplateOutlet]="SpellRange"></ng-template>
             </div>
 
