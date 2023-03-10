@@ -435,6 +435,9 @@ export class Spell implements Spell {
     //set asset path
     this.asset = rawSpell.asset;
     this.assetPath = "assets/spellImages/" + this.name + ".PNG";
+    if(this.ritual){
+      this.assetPath = "assets/spellImages/" + this.name + " (Ritual).PNG";
+    }
 
   }    
 
