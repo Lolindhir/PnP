@@ -2257,7 +2257,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     else{
       this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
       //window.open(this.router.serializeUrl(this.router.createUrlTree(['spells/print'])), '_blank');
-      window.open(location.origin + '/spells/print');
+      window.open(location.href + '/print');
     }
 
 

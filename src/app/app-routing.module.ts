@@ -17,9 +17,9 @@ export const routes: Routes = [
   //spell list
   { path:'spells', component: SpellListComponent, pathMatch: 'full' },
   //homepage
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: '', redirectTo: 'spells', pathMatch: 'full'},
   //default
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'spells' },
 ];
 
 export const routingComponents = [
