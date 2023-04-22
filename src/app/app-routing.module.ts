@@ -15,11 +15,7 @@ export const routes: Routes = [
   //spell print view
   { path:'spells/print', component: SpellPrintComponent, pathMatch: 'full' },
   //spell list
-  { 
-    path:'spells',
-    component: SpellListComponent,
-    pathMatch: 'full',
-  },
+  { path:'spells', component: SpellListComponent, pathMatch: 'full' },
   //homepage
   { path: '', component: HomeComponent, pathMatch: 'full' },
   //default
