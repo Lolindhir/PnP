@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
-import { Spell, RawSpell, SpellPrint, SpellListCategory } from '@models/spell.model';
+import { Router, ActivatedRoute} from '@angular/router';
+import { Spell, RawSpell, SpellPrintCsv, SpellListCategory } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
@@ -188,7 +189,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   expansionAccordion: ElementRef;
 
 
-  constructor(private httpClient: HttpClient,
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private httpClient: HttpClient,
     private storageService: StorageService,
     private viewPortScroller: ViewportScroller,
     private dialog: MatDialog,
@@ -2192,9 +2196,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     if(this.spellsFiltered === undefined || this.spellsFiltered.length < 1){
       return;
-    }
+    }    
 
-    var printSpells: SpellPrint[] = new Array();
+    var csvPrint : boolean = this.settings.dmMode;
+    var printSpells = new Array();
     for(var spell of this.spellsFiltered){
       
       //join materials (if needed) and description in right language
@@ -2203,31 +2208,57 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         matDescr = '(' + spell.materials + ')' + matDescr; 
       }
 
-      //get "for who"
-      //not used!!!!!!!!!
-      // var forWho : string = spell.classesDisplay;
-      // if(this.characterData.selectedCharacter != undefined){
-      //   forWho = this.characterData.selectedCharacter.name;
-      // }
+      var spellToPrint;
+      //decide depending on csv print or direct print
+      if(csvPrint){
+        spellToPrint = {
+          level: spell.level,
+          name: spell.ritual ? spell.name + ' (Ritual)' : spell.name,
+          levelSchool: spell.levelSchool,
+          castingTime: spell.castingTime,
+          range: spell.range.displayTextComplete,
+          components: spell.componentsDisplayList,
+          duration: spell.duration,
+          materialsAndDescription: matDescr,
+          forWho: spell.sourceShortened
+        };
+      }
+      else{
+        spellToPrint = {
+          level: spell.level,
+          name: spell.name,
+          levelSchool: spell.levelSchool,
+          ritual: spell.ritual,
+          castingTime: spell.castingTime,
+          range: spell.range.displayTextComplete,
+          components: spell.componentsDisplayList,
+          duration: spell.duration,
+          hasMaterials: spell.hasMaterials,
+          materials: spell.materials,
+          description: spell.translated ? spell.translation : spell.description,
+          forWho: spell.sourceShortened,
+          always: spell.always,
+          ritualCast: spell.ritualCast,
+          limited: spell.limited
+        };
+      }
 
-      printSpells.push({
-        level: spell.level,
-        name: spell.ritual ? spell.name + ' (Ritual)' : spell.name,
-        levelSchool: spell.levelSchool,
-        castingTime: spell.castingTime,
-        range: spell.range.displayTextComplete,
-        components: spell.componentsDisplayList,
-        duration: spell.duration,
-        materialsAndDescription: matDescr,
-        forWho: spell.sourceShortened
-      });
+      printSpells.push(spellToPrint);
     }
 
-    var fileName = 'spells';
-    if(this.characterData.selectedCharacter != undefined){
-      fileName = fileName + this.characterData.selectedCharacter.name;
+    if(csvPrint){
+      var fileName = 'spells';
+      if(this.characterData.selectedCharacter != undefined){
+        fileName = fileName + this.characterData.selectedCharacter.name;
+      }
+  
+      this.storageService.storeCsv(fileName + '.csv', printSpells, false);
     }
-    this.storageService.storeCsv(fileName + '.csv', printSpells, false);
+    else{
+      this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
+      window.open(this.router.serializeUrl(this.router.createUrlTree(['spells/print'])), '_blank');
+    }
+
 
   }
 

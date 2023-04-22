@@ -121,7 +121,7 @@ export interface Spell {
   highlightColor: string;
 }
 
-export interface SpellPrint {
+export interface SpellPrintCsv {
   level: number;
   name: string;
   levelSchool: string;
@@ -131,6 +131,26 @@ export interface SpellPrint {
   duration: string;
   materialsAndDescription: string;
   forWho: string;
+}
+
+export interface SpellPrintDirect {
+  id: string;
+  level: number;
+  name: string;
+  nameSize: number;
+  levelSchool: string;
+  ritual: boolean;
+  castingTime: string;
+  range: string;
+  components: string;
+  duration: string;
+  hasMaterials: boolean;
+  materials: string;
+  description: string;
+  forWho: string;
+  always: boolean;
+  limited: boolean;
+  ritualCast: boolean;
 }
 
 export class Spell implements Spell {  
@@ -177,12 +197,18 @@ export class Spell implements Spell {
 
     //cut names from spells
     var name: string = rawSpell.name;
-    // name = name.replace('Leomund\'s ', '')
-    // name = name.replace('Mordenkainen\'s ', '')
-    // name = name.replace('Melf\'s ', '')
-    // name = name.replace('Tasha\'s ', '')
-    // name = name.replace('Abi-Dalzim\'s ', '')
-    // name = name.replace('Icingdeath\'s ', 'Icing ')
+    name = name.replace('Leomund\'s ', '')
+    name = name.replace('Mordenkainen\'s F', 'F')
+    name = name.replace('Mordenkainen\'s M', 'M')
+    name = name.replace('Mordenkainen\'s P', 'P')
+    name = name.replace('Mordenkainen\'s S', 'Arcane S')
+    name = name.replace('Maximilian\'s ', '')
+    name = name.replace('Melf\'s ', '')
+    name = name.replace('Tasha\'s ', '')
+    name = name.replace('Rary\'s ', '')
+    name = name.replace('Drawmij\'s ', '')
+    name = name.replace('Abi-Dalzim\'s ', '')
+    name = name.replace('Bigby\'s ', 'Arcane ')
     this.name = name;
 
     //build level display

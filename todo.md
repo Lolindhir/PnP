@@ -1,7 +1,7 @@
 # Bugs
-- Spell-Anzahl sprint auf mobile Device
 
 # Settings
+- Exportfunktion für alle Settings inkl. Charakteren
 - Filter: Highlight der Zauber, anstatt herausfiltern (macht nur Sinn, wenn über Preset in den Settings die Auswahl schon verkleinert ist)
 - Spell als Favorite markieren? außerhalb Character-Mode
 

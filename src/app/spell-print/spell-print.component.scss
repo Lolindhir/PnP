@@ -1,0 +1,167 @@
+$backgroundColor:var(--backgroundColor);
+$fontColor:var(--fontColor);
+
+.toolbar
+{
+	max-width: 210mm;
+	border: 2px solid grey;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.a4
+{
+	width: 210mm;
+	height: 297mm;
+}
+
+.lined
+{
+	border-bottom: 2px solid $backgroundColor;	
+}
+
+.card
+{
+	float: left;
+	width: 2.5in;
+	height: 3.5in;
+	padding: 0;	
+	position: relative;
+	margin:0px;	
+	vertical-align: top;	
+	text-align: left;	
+	z-index: 1;
+	margin:0 1px 1px 0;
+    page-break-after: auto!important;
+	page-break-inside: avoid!important;
+	background-color: $backgroundColor!important;
+}
+
+.front
+{	
+	height: 100%;
+	width: 100%;	
+	padding: 10px 10px 25px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.body
+{
+	background-color: white!important;
+	border-radius: 5px;
+	height: 100%;	
+	overflow: hidden;
+}
+
+.caption {
+	overflow: hidden;
+	height: 28px;
+}
+
+.name
+{	
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500; //standard = 400
+    color: inherit;
+	line-height: normal;
+	//height: 16px;
+	padding: 5px 4px;	
+	margin: 0px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+
+.ritual {
+	max-height: 18px;
+	max-width: 18px;
+	margin-right: 8px;
+}
+
+.props
+{
+	text-align: center;
+	padding: 2px 4px;
+	font-size: 9px;
+	line-height: 9px;
+	min-height: 25px;
+	width: 50%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.propertyCaption
+{
+	font-style: normal;
+	text-transform: uppercase;
+	display: block;	
+	color: $backgroundColor!important;
+	font-weight: bold;
+	padding-bottom: 2px;
+	width: 100%;
+}
+
+.rightLined
+{
+	border-right: 1px solid $backgroundColor;	
+}
+
+.leftLined
+{
+	border-left: 1px solid $backgroundColor;	
+}
+
+.materials
+{
+	color: $fontColor!important;
+	background-color: $backgroundColor!important;
+	display: block;
+	padding: 2px 4px 4px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 100%;
+	font-size: 8px;
+}
+
+.description
+{
+	padding: 2px 4px;
+	font-size: 10px;
+	line-height: 9px;
+	margin: 0;
+}
+
+.footer
+{
+	padding: 1px;
+}
+
+.source
+{
+	//position: absolute;
+	bottom: 8px;
+	color: $fontColor!important;
+	left: 10px;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+.school
+{
+	bottom: 8px;
+	color: $fontColor!important;
+	right: 10px;
+	font-size: 10px;
+	font-weight: normal;
+}
