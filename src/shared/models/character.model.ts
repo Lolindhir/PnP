@@ -46,6 +46,8 @@ export interface Character {
     showRemoved: boolean,
     ritualsAtBottom: boolean,
     allSpellsInOverview: boolean,
+    cardColor: string,
+    cardFontWhite: boolean,
 }
 
 export class Character implements Character {  

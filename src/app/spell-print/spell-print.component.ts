@@ -1,9 +1,13 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { StorageService } from '@shared/services/storage.service';
-import { SpellPrintDirect } from '@models/spell.model';
+import { PrintSettings, SpellPrintDirect } from '@models/spell-print.model';
+import { ColorPreset } from '@models/color-preset.model';
 import * as imagePaths from '@shared/imagePaths';
 
-const defaultCaptionSize = 14.5;
+const defaultCaptionSize: number = 14.5;
+const defaultDescriptionSize: number = 10;
+const defaultBackgroundColor: string = ColorPreset.GetDefaultBackground();
+const defaultFontIsWhite: boolean = ColorPreset.GetDefaultFontIsWhite();
 
 @Component({
   selector: 'app-spell-print',
@@ -12,35 +16,48 @@ const defaultCaptionSize = 14.5;
 })
 export class SpellPrintComponent implements OnInit {
 
-  //spell stuff
+  //global stuff
   spellsToPrint: SpellPrintDirect[] = new Array();
-  //SCSS variables
-  scssBackgroundColor: string = getComputedStyle(document.documentElement).getPropertyValue('--backgroundColor');
-  scssFontColor: string = getComputedStyle(document.documentElement).getPropertyValue('--fontColor');
-  //card settings
-  showIcons: boolean = true;
-  ritualAsIcon: boolean = false;
-  //other global stuff
+  printSettings: PrintSettings;
   images = imagePaths;
+  colorPresets: ColorPreset[] = ColorPreset.GetDefaultPresets();
+  //card settings
+  characterCards: boolean = false;
+  showIcons: boolean = false;
+  ritualAsIcon: boolean = false;
+  backgroundColor: string = '';
+  fontIsWhite: boolean = false;
 
   constructor(
     private storageService: StorageService,
     private cdRef: ChangeDetectorRef,
   ) { 
 
-    //default scss variables
-    this.setScssBackgroundColor('black');
-    this.setScssFontColor('white');
+    //defaults
+    this.backgroundColor = defaultBackgroundColor;
+    this.setScssBackgroundColor(defaultBackgroundColor);
+    this.fontIsWhite = defaultFontIsWhite;
+    this.setScssFontColor(defaultFontIsWhite ? 'white' : 'black');
+    this.setScssDescriptionFontSize(defaultDescriptionSize);
+
+    //load print settings
+    this.printSettings = JSON.parse(this.storageService.loadLocal('PrintSettings'));
+    this.characterCards = this.printSettings.characterMode;
+    //if character mode, get character settings
+    if(this.characterCards){
+      this.showIcons = this.characterCards;
+      var refreshNeeded: boolean = false;
+      this.backgroundColor = this.printSettings.backgroundColor;
+      this.fontIsWhite = this.printSettings.whiteFont;
+      this.changeColor();
+    }
   }
 
-  ngOnInit(): void {
-    
-    this.setScssBackgroundColor('black');
-    this.setScssFontColor('white');
-    
+  ngOnInit(): void {   
+
     //load spells to print
     var loadedSpellsToPrint: SpellPrintDirect[] = JSON.parse(this.storageService.loadLocal('PrintSpells'));
-    
+
     for(var spell of loadedSpellsToPrint){      
       
       //the number of necessary cards to show all of this spell's description (will be increased until it fits)
@@ -191,11 +208,12 @@ export class SpellPrintComponent implements OnInit {
     return result;
   }
 
-  ngAfterViewInit(): void {
-
+  changeColor(): void{
+    this.setScssBackgroundColor(this.backgroundColor);
+    this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
   }
 
-  onChange():void{
+  onChange(): void{
     for(var spell of this.spellsToPrint){      
       this.reduceNameSize(spell);
     }
@@ -210,6 +228,9 @@ export class SpellPrintComponent implements OnInit {
   }
   setScssFontColor(color: string): void {
     document.documentElement.style.setProperty('--fontColor', color);
+  }
+  setScssDescriptionFontSize(size: number): void {
+    document.documentElement.style.setProperty('--descriptionSize', size + 'px');
   }
 
 }

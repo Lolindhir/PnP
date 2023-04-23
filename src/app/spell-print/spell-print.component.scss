@@ -1,12 +1,28 @@
 $backgroundColor:var(--backgroundColor);
 $fontColor:var(--fontColor);
+$descriptionSize:var(--descriptionSize);
 
 .toolbar
 {
 	max-width: 210mm;
-	border: 2px solid grey;
+	width: fit-content;
+	border: 1px solid grey;
 	padding: 5px;
-	margin-bottom: 10px;
+}
+
+.toolbarItem
+{
+	width: 100%;
+}
+
+.under
+{
+	margin-top: 10px;
+}
+
+.toggle
+{
+	margin-left: 3px;
 }
 
 .a4
@@ -136,9 +152,10 @@ $fontColor:var(--fontColor);
 
 .description
 {
+	font-family: "Helvetica Condensed", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 2px 4px;
-	font-size: 10px;
-	line-height: 9px;
+	font-size: $descriptionSize;
+	line-height: 90%;
 	margin: 0;
 }
 
@@ -153,7 +170,7 @@ $fontColor:var(--fontColor);
 	bottom: 8px;
 	color: $fontColor!important;
 	left: 10px;
-	font-size: 9px;
+	font-size: 10px;
 	font-weight: normal;
 }
 

@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
-import { Spell, RawSpell, SpellPrintCsv, SpellListCategory } from '@models/spell.model';
+import { Spell, RawSpell, SpellListCategory } from '@models/spell.model';
+import { SpellPrintDirect, SpellPrintCsv, PrintSettings } from '@models/spell-print.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
@@ -27,6 +28,7 @@ import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.j
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
 import * as imagePaths from '@shared/imagePaths';
 import * as globals from '@shared/globals';
+import { ColorPreset } from '@shared/models/color-preset.model';
 
 export interface SettingsData {
   showRandomControls: boolean;
@@ -2255,6 +2257,24 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.storageService.storeCsv(fileName + '.csv', printSpells, false);
     }
     else{
+      
+      //get print settings from character, if character mode
+      var printSettings: PrintSettings = 
+      {
+        characterMode: false,
+        name: '',
+        backgroundColor: ColorPreset.GetDefaultBackground(),
+        whiteFont: ColorPreset.GetDefaultFontIsWhite()
+      }
+      if(this.settings.characterMode && this.characterData.selectedCharacter != undefined){
+        printSettings.characterMode = true;
+        printSettings.name = this.characterData.selectedCharacter.name;
+        //get color information
+        printSettings.backgroundColor = '#ff8000';
+        printSettings.whiteFont = false;
+      }
+
+      this.storageService.storeLocal('PrintSettings', JSON.stringify(printSettings));
       this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
       //window.open(this.router.serializeUrl(this.router.createUrlTree(['spells/print'])), '_blank');
       window.open(location.href + '/print');

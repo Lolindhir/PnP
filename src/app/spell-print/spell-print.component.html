@@ -1,12 +1,29 @@
 <div>
     
-    <div class="hidePrint toolbar" fxLayout="row wrap" fxLayoutAlign="space-around center">
-        <button mat-stroked-button color="primary" (click)="onPrint()">
+    <div class="hidePrint">
+        <div class="toolbar" fxLayout="column" fxLayoutAlign="center start">
+            <div class="toolbarItem" fxLayout="row wrap" fxLayoutAlign="start center">
+                <div style="margin-right: 3px;">Color:</div>
+                <input matInput type="color" [(ngModel)]="backgroundColor" (ngModelChange)="changeColor()" 
+                style="height: 30px; width: 50px; background-color: white; padding: 0px"
+                matTooltip="{{backgroundColor}}" matTooltipShowDelay="1000">
+                <mat-slide-toggle class="toggle" [(ngModel)]="fontIsWhite" (ngModelChange)="changeColor()" color="primary">white highlights</mat-slide-toggle>
+            </div>            
+            <div class="toolbarItem under" *ngIf="characterCards" fxLayout="row wrap" fxLayoutAlign="start center">
+                <mat-icon>star</mat-icon>
+                <mat-icon>repeat_one_on</mat-icon>
+                <mat-icon>menu_book</mat-icon>
+                <mat-slide-toggle class="toggle" [(ngModel)]="showIcons" (ngModelChange)="onChange()" color="primary">character icons in caption</mat-slide-toggle>
+            </div>
+            <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
+                <img class="icon" src={{images.spellRitual}}>
+                <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsIcon" (ngModelChange)="onChange()" color="primary">ritual icon in caption</mat-slide-toggle>
+            </div>
+        </div>
+        <button mat-stroked-button color="primary" style="margin: 10px" (click)="onPrint()">
             <mat-icon>print</mat-icon>
         </button>
-        <mat-slide-toggle [(ngModel)]="showIcons" (ngModelChange)="onChange()" color="primary">show icons</mat-slide-toggle>
-        <mat-slide-toggle [(ngModel)]="ritualAsIcon" (ngModelChange)="onChange()" color="primary">show ritual as icon</mat-slide-toggle>
-    </div>    
+    </div>
  
 
     <div id="sectionToPrint" class="a4">        
