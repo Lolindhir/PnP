@@ -1,5 +1,6 @@
 import { Spell } from "@models/spell.model";
 import { Preset } from "@models/preset.model";
+import { ColorPreset } from "@models/color-preset.model";
 import { ArrayUtilities } from "@shared/utilities/array.utilities";
 import { StorageService } from "@shared/services/storage.service";
 
@@ -93,6 +94,8 @@ export class Character implements Character {
         this.showRemoved = false;
         this.ritualsAtBottom = false;
         this.allSpellsInOverview = false;
+        this.cardColor = ColorPreset.GetDefaultBackground();
+        this.cardFontWhite = ColorPreset.GetDefaultFontIsWhite();
 
         characterList.push(this);
         characterList.sort(Character.compare);
@@ -126,6 +129,8 @@ export class Character implements Character {
             showRemoved: this.showRemoved,
             ritualsAtBottom: this.ritualsAtBottom,
             allSpellsInOverview: this.allSpellsInOverview,
+            cardColor: this.cardColor,
+            cardFontWhite: this.cardFontWhite,
         };
     }
 
@@ -172,6 +177,8 @@ export class Character implements Character {
         if(charRaw.showRemoved != undefined){ char.showRemoved = charRaw.showRemoved; }
         if(charRaw.ritualsAtBottom != undefined){ char.ritualsAtBottom = charRaw.ritualsAtBottom; }
         if(charRaw.allSpellsInOverview != undefined){ char.allSpellsInOverview = charRaw.allSpellsInOverview; }
+        if(charRaw.cardColor != undefined){ char.cardColor = charRaw.cardColor; }
+        if(charRaw.cardFontWhite != undefined){ char.cardFontWhite = charRaw.cardFontWhite; }
 
         //return the build character
         return char;

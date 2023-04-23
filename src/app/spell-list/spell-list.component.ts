@@ -2270,8 +2270,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         printSettings.characterMode = true;
         printSettings.name = this.characterData.selectedCharacter.name;
         //get color information
-        printSettings.backgroundColor = '#ff8000';
-        printSettings.whiteFont = false;
+        printSettings.backgroundColor = this.characterData.selectedCharacter.cardColor;
+        printSettings.whiteFont = this.characterData.selectedCharacter.cardFontWhite;
       }
 
       this.storageService.storeLocal('PrintSettings', JSON.stringify(printSettings));

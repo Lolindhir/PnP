@@ -212,6 +212,27 @@
                   <div class="dialog-description">Session: rituals at bottom</div>
                 </div>              
                 
+                <h4>Printing Options</h4>             
+
+                <div fxLayout="row" style="margin-top: -10px">
+                  <input matInput type="color" [(ngModel)]="data.selectedCharacter.cardColor" (ngModelChange)="onCharacterChange()"
+                  style="height: 20px; width: 45px; background-color: white; padding: 0px"
+                  matTooltip="{{data.selectedCharacter.cardColor}}" matTooltipShowDelay="1000">
+                  <div class="dialog-description">Card Color</div>
+                </div>
+
+                <div fxLayout="row" style="margin-top: 0px; margin-bottom: 3px">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.cardFontWhite" color="primary" (ngModelChange)="onCharacterChange()">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">white highlighting</div>
+                </div>
+
+                <div fxLayout="row nowrap" fxLayoutAlign="start center">
+                  <div>e.g.: </div>
+                  <div style="margin-left: 5px; width: 100%; text-align: center; padding: 2px" [ngStyle]="{'background-color': data.selectedCharacter.cardColor, 'color': data.selectedCharacter.cardFontWhite ? 'white' : 'black'}">1st level Evocation</div>  
+                </div>
                 
                 <div class="big-gap"></div>
 
