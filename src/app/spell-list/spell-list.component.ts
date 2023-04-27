@@ -2539,6 +2539,7 @@ export class SpellListCharacterDialog {
   onSortChanged = new EventEmitter();
   disabled: boolean = false;
   fileExtension: string = globals.characterFileExtension;
+  colorPresets: ColorPreset[] = ColorPreset.GetDefaultPresets();
 
   constructor(
     public dialogRef: MatDialogRef<SpellListCharacterDialog>,
@@ -2662,6 +2663,15 @@ export class SpellListCharacterDialog {
       this.disabled = false;
     });
 
+  }
+
+  onPresetChosen(preset: ColorPreset): void{
+    if(this.data.selectedCharacter === undefined){
+      return;
+    }
+    this.data.selectedCharacter.cardColor = preset.backgroundColor;
+    this.data.selectedCharacter.cardFontWhite = preset.whiteFont;
+    this.onCharacterChange();
   }
 
   onDetailChange() {

@@ -8,7 +8,13 @@
                 style="height: 30px; width: 50px; background-color: white; padding: 0px"
                 matTooltip="{{backgroundColor}}" matTooltipShowDelay="1000">
                 <mat-slide-toggle class="toggle" [(ngModel)]="fontIsWhite" (ngModelChange)="changeColor()" color="primary">white highlighting</mat-slide-toggle>
-            </div>            
+            </div>
+            <div class="toolbarItem under">
+                <button mat-button [matMenuTriggerFor]="menu"><mat-icon color="primary">border_color</mat-icon> Choose color preset</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item *ngFor="let preset of colorPresets" (click)="onPresetChosen(preset)">{{preset.name}}</button>
+                </mat-menu>  
+            </div>                 
             <div class="toolbarItem under" *ngIf="characterCards" fxLayout="row wrap" fxLayoutAlign="start center">
                 <mat-icon>star</mat-icon>
                 <mat-icon>repeat_one_on</mat-icon>

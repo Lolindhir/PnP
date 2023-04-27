@@ -46,7 +46,6 @@ export class SpellPrintComponent implements OnInit {
     //if character mode, get character settings
     if(this.characterCards){
       this.showIcons = this.characterCards;
-      var refreshNeeded: boolean = false;
       this.backgroundColor = this.printSettings.backgroundColor;
       this.fontIsWhite = this.printSettings.whiteFont;
       this.changeColor();
@@ -206,6 +205,12 @@ export class SpellPrintComponent implements OnInit {
     }
 
     return result;
+  }
+
+  onPresetChosen(preset: ColorPreset): void{
+    this.backgroundColor = preset.backgroundColor;
+    this.fontIsWhite = preset.whiteFont;
+    this.changeColor();
   }
 
   changeColor(): void{
