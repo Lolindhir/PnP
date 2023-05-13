@@ -183,7 +183,7 @@ export class SpellPrintComponent implements OnInit {
 
   }
 
-  appendFirstTextSectionToDescription(spellCard: SpellPrintDirect, textToAppend: string): AppendTextResult {
+  appendFirstTextSectionToDescription(spellCard: SpellPrintDirect, textToAppend: string, newSection: boolean = true, sectionIsSentence: boolean = false): AppendTextResult {
 
     //prepare default return values
     var result: AppendTextResult = { success: true, remainingText: ''};
@@ -194,7 +194,7 @@ export class SpellPrintComponent implements OnInit {
     }
 
     //necessary variables
-    const separator: string = '<br>';    
+    const breakSeparator: string = '<br>';    
     var sectionToAppend: string = textToAppend.trim();
     var remainingText: string = '';
     var originalDescription: string = spellCard.description;
@@ -202,10 +202,36 @@ export class SpellPrintComponent implements OnInit {
     var sectionFits: boolean = true;
 
     //get section if the append text includes line break    
-    if(sectionToAppend.toLowerCase().includes('<br>')){
-      var firstSeparatorIndex: number = textToAppend.toLowerCase().indexOf(separator);
+    if(sectionIsSentence == false && sectionToAppend.toLowerCase().includes('<br>')){
+      var firstSeparatorIndex: number = textToAppend.toLowerCase().indexOf(breakSeparator);
       sectionToAppend = textToAppend.substring(0, firstSeparatorIndex).trim();
       remainingText = textToAppend.substring(firstSeparatorIndex + 4).trim();
+    }
+
+    //get sentence if the append text includes a full stop
+    if(sectionIsSentence == true && sectionToAppend.toLowerCase().includes('.')){
+      var firstSeparatorIndex: number = textToAppend.toLowerCase().indexOf('.');
+      sectionToAppend = textToAppend.substring(0, firstSeparatorIndex + 1).trim();
+      remainingText = textToAppend.substring(firstSeparatorIndex + 1).trim();
+
+      //check if section to append contains non-closed <b> or <i>
+      var checkForNonClosedNecessary: boolean = true;
+      while(checkForNonClosedNecessary){
+        var nonClosedB: boolean = sectionToAppend.toLowerCase().includes('<b>') && !sectionToAppend.toLowerCase().includes('</b>');
+        var nonClosedI: boolean = sectionToAppend.toLowerCase().includes('<i>') && !sectionToAppend.toLowerCase().includes('</i>');
+  
+        if(nonClosedB || nonClosedI){
+
+          //then add the next sentence also to the list
+          var nextSeparatorIndex: number = remainingText.toLowerCase().indexOf('.');
+          sectionToAppend += ' ' + remainingText.substring(0, nextSeparatorIndex + 1).trim();
+          remainingText = remainingText.substring(nextSeparatorIndex + 1).trim();
+
+        }
+        else{
+          checkForNonClosedNecessary = false;
+        }
+      }      
     }
 
     //append section to description
@@ -213,7 +239,17 @@ export class SpellPrintComponent implements OnInit {
       spellCard.description = sectionToAppend;
     }
     else{
-      spellCard.description += separator + sectionToAppend;
+      if(sectionIsSentence == false){
+        spellCard.description += breakSeparator + sectionToAppend;
+      }
+      else{
+        if(newSection){
+          spellCard.description += breakSeparator + sectionToAppend;
+        }
+        else{
+          spellCard.description += ' ' + sectionToAppend;
+        }
+      }      
     }
 
     //refresh list to deploy change in description
@@ -236,21 +272,54 @@ export class SpellPrintComponent implements OnInit {
     //no
     else{      
       
-      if(originalDescriptionIsEmpty == false){
-        //restore the original description (and push)
+      if(sectionIsSentence == false){
+        
+        //restore the original description
         spellCard.description = originalDescription;
         this.cdRef.detectChanges(); //necessary?
-        //return false and the textToAppend as remaining
+        
+        //now try to fit as much sentences from the text as possible
+        var addText = textToAppend;
+        var descriptionFull = false;
+        var firstSentence = true;
+        while (!descriptionFull && addText.length > 0) {
+          //add first sentence of the remaining description text
+          //append unsuccessful means description is full
+          //set the remaining text as new add text
+          var appendResult: AppendTextResult = { success: false, remainingText: addText};
+          if(firstSentence){
+            appendResult = this.appendFirstTextSectionToDescription(spellCard, addText, true, true);
+            firstSentence = false;
+          }
+          else{
+            appendResult = this.appendFirstTextSectionToDescription(spellCard, addText, false, true);
+          }
+          descriptionFull = !appendResult.success;
+          addText = appendResult.remainingText;
+        }
+
+        //we know that not all will fit, so return false and the remaining text that couldn't be added
         result.success = false;
-        result.remainingText = textToAppend;
+        result.remainingText = addText;
+
       }
       else{
-        //if original description was empty, the section will never fit
-        console.log(spellCard.name + ': one section too big for a card!')
-        //so just let it be and report success until a better logic is found
-        result.success = true;
-        result.remainingText = remainingText;
-      } 
+        if(originalDescriptionIsEmpty == false){
+          //restore the original description (and push)
+          spellCard.description = originalDescription;
+          this.cdRef.detectChanges(); //necessary?
+          //return false and the textToAppend as remaining
+          result.success = false;
+          result.remainingText = textToAppend;
+        }
+        else{
+          //if original description was empty, the section will never fit
+          console.log(spellCard.name + ': one section/sentence too big for a card!')
+          //so just let it be and report success until a better logic is found
+          result.success = true;
+          result.remainingText = remainingText;
+        } 
+      }      
     }
 
     return result;
