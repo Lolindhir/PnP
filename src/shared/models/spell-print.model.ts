@@ -14,6 +14,7 @@ export interface SpellPrintDirect {
     id: string;
     level: number;
     name: string;
+    nameEnumeration: string;
     nameSize: number;
     levelSchool: string;
     ritual: boolean;

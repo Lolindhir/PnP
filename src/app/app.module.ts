@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatTooltipModule } from '@angular/material/tooltip'; 
 import { MatDialogModule } from '@angular/material/dialog'; 
 import { MatTabsModule } from '@angular/material/tabs'; 
@@ -72,6 +73,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     MatButtonToggleModule,
     MatSlideToggleModule,
     MatCheckboxModule,
+    MatRadioModule,
     MatMenuModule,
     MatSnackBarModule,
     MatTooltipModule,

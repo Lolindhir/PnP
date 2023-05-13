@@ -157,7 +157,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     onlyValueMaterials: false,
     showDuration: false,
     dmMode: false,
-    showPrint: false
+    showPrint: true
   };
   characterData: CharacterData = {
     characterList: new Array(),

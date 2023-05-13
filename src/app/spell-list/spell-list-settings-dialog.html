@@ -47,21 +47,21 @@
         </div>
         <div class="small-top-gap"></div>        
         <div fxLayout="row">
-            <mat-icon color="primary" class="dialog-icon">print</mat-icon>
-            <div class="dialog-toggle">
-                <mat-slide-toggle [(ngModel)]="data.showPrint" color="primary">
-                </mat-slide-toggle>
-            </div>
-            <div class="dialog-description">show print spells option</div>
-        </div>
-        <div class="small-top-gap"></div>
-        <div fxLayout="row">
             <mat-icon color="primary" class="dialog-icon">shuffle</mat-icon>
             <div class="dialog-toggle">
                 <mat-slide-toggle [(ngModel)]="data.showRandomControls" (ngModelChange)="onRandomClick()" color="primary">
                 </mat-slide-toggle>
             </div>
             <div class="dialog-description">show random spells option</div>
+        </div>
+        <div class="small-top-gap"></div>
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">print</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.showPrint" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="dialog-description">show print spells option</div>
         </div>
     </div>
 </div>

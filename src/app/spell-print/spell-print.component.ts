@@ -4,10 +4,28 @@ import { PrintSettings, SpellPrintDirect } from '@models/spell-print.model';
 import { ColorPreset } from '@models/color-preset.model';
 import * as imagePaths from '@shared/imagePaths';
 
+const defaultPageWidth: string = '210mm';
+const defaultPageHeight: string = '297mm';
+const defaultCardWidth: number = 2.5;
+const defaultCardHeight: number = 3.5;
 const defaultCaptionSize: number = 14.5;
 const defaultDescriptionSize: number = 10;
+const defaultDescriptionSizeLarge: number = 10.75;
+const defaultDescriptionSizeBig: number = 11.5;
 const defaultBackgroundColor: string = ColorPreset.GetDefaultBackground();
 const defaultFontIsWhite: boolean = ColorPreset.GetDefaultFontIsWhite();
+
+export interface CardSizePreset{
+  name: string;
+  width: number;
+  height: number;
+  landscape: boolean;
+}
+
+export interface DescriptionSize{
+  name: string;
+  size: number;
+}
 
 @Component({
   selector: 'app-spell-print',
@@ -22,11 +40,21 @@ export class SpellPrintComponent implements OnInit {
   images = imagePaths;
   colorPresets: ColorPreset[] = ColorPreset.GetDefaultPresets();
   //card settings
+  pageLandscape: boolean = false;
+  cardWidth: number = defaultCardWidth;
+  cardHeight: number = defaultCardHeight;
+  descriptionSize: DescriptionSize = { name: 'Default', size: defaultDescriptionSize};
   characterCards: boolean = false;
   showIcons: boolean = false;
   ritualAsIcon: boolean = false;
-  backgroundColor: string = '';
-  fontIsWhite: boolean = false;
+  ritualAsParenthesis: boolean = false;
+  backgroundColor: string = defaultBackgroundColor;
+  fontIsWhite: boolean = defaultFontIsWhite;
+  selectedCardSizePreset: CardSizePreset;
+  cardSizePresets: CardSizePreset[] = new Array();
+  selectedDescriptionSize: DescriptionSize;
+  descriptionSizes: DescriptionSize[] = new Array();
+
 
   constructor(
     private storageService: StorageService,
@@ -34,11 +62,26 @@ export class SpellPrintComponent implements OnInit {
   ) { 
 
     //defaults
-    this.backgroundColor = defaultBackgroundColor;
-    this.setScssBackgroundColor(defaultBackgroundColor);
-    this.fontIsWhite = defaultFontIsWhite;
-    this.setScssFontColor(defaultFontIsWhite ? 'white' : 'black');
-    this.setScssDescriptionFontSize(defaultDescriptionSize);
+    this.setScssPageDimensions(this.pageLandscape);
+    this.setScssCardWidth(this.cardWidth);
+    this.setScssCardHeight(this.cardHeight);
+    this.setScssBackgroundColor(this.backgroundColor);
+    this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
+    this.setScssDescriptionFontSize(this.descriptionSize);
+    this.cardSizePresets = [
+      {name: 'Default/MtG (2.5 x 3.5 inches)', width: 2.5, height: 3.5, landscape: false },
+      {name: 'Large (2.7 x 3.8 inches)', width: 2.7, height: 3.8, landscape: false },
+      {name: 'Big (2.85 x 3.99 inches)', width: 2.85, height: 3.99, landscape: true },
+      {name: 'Small/Yu-Gi-Oh! (2.25 x 3.25 inches)', width: 2.25, height: 3.25, landscape: true },
+      {name: 'Special/Skat (2.32 x 3.58 inches)', width: 2.32, height: 3.58, landscape: true },
+    ];
+    this.selectedCardSizePreset = this.cardSizePresets[0];
+    this.descriptionSizes = [
+      {name: 'normal', size: defaultDescriptionSize},
+      {name: 'large', size: defaultDescriptionSizeLarge},
+      {name: 'big', size: defaultDescriptionSizeBig},
+    ];
+    this.selectedDescriptionSize = this.descriptionSizes[0];
 
     //load print settings
     this.printSettings = JSON.parse(this.storageService.loadLocal('PrintSettings'));
@@ -53,12 +96,19 @@ export class SpellPrintComponent implements OnInit {
   }
 
   ngOnInit(): void {   
+    this.onCardPropChange();
+  }
 
-    //load spells to print
+  private reloadSpellList() {
+
+    //clear spell list
+    this.spellsToPrint = new Array();
+    
+    //load from storage
     var loadedSpellsToPrint: SpellPrintDirect[] = JSON.parse(this.storageService.loadLocal('PrintSpells'));
 
-    for(var spell of loadedSpellsToPrint){      
-      
+    for (var spell of loadedSpellsToPrint) {
+
       //the number of necessary cards to show all of this spell's description (will be increased until it fits)
       var necessaryCardNumber = 0;
 
@@ -66,12 +116,12 @@ export class SpellPrintComponent implements OnInit {
       var addText = spell.description;
 
       //do as long until all fits
-      while(addText.length > 0){
+      while (addText.length > 0) {
 
         necessaryCardNumber++;
 
         //create new card with the current number and empty description
-        var currentSpellCard: SpellPrintDirect = {...spell};
+        var currentSpellCard: SpellPrintDirect = { ...spell };
         currentSpellCard.nameSize = defaultCaptionSize;
         currentSpellCard.id = spell.name + necessaryCardNumber;
         currentSpellCard.description = '';
@@ -79,7 +129,7 @@ export class SpellPrintComponent implements OnInit {
 
         //add as much as possible to the description (signaled by full description or empty text to add)
         var descriptionFull = false;
-        while(!descriptionFull && addText.length > 0){
+        while (!descriptionFull && addText.length > 0) {
           //add first section of the remaining description text
           //append unsuccessful means description is full
           //set the remaining text as new add text
@@ -90,24 +140,23 @@ export class SpellPrintComponent implements OnInit {
       }
 
       //afterwards, set part numbers in spell names depending on necessaryCardNumber (if it is over 1)
-      if(necessaryCardNumber > 1){
+      if (necessaryCardNumber > 1) {
         var partNumber = 1;
-        for(var readySpell of this.spellsToPrint){
-          if(readySpell.name === spell.name){
-            readySpell.name += ' [' + partNumber++ + '/' + necessaryCardNumber +']';
+        for (var readySpell of this.spellsToPrint) {
+          if (readySpell.name === spell.name) {
+            readySpell.nameEnumeration = ' [' + partNumber++ + '/' + necessaryCardNumber + ']';
           }
         }
-      }         
+      }
 
     }
 
     //make names fit
-    for(var spell of this.spellsToPrint){
+    for (var spell of this.spellsToPrint) {
       this.reduceNameSize(spell);
     }
     //refresh list and trigger reload of cards
     this.cdRef.detectChanges();
-    
   }
 
   reduceNameSize(spellCard: SpellPrintDirect): void {
@@ -218,24 +267,60 @@ export class SpellPrintComponent implements OnInit {
     this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
   }
 
-  onChange(): void{
+  onPageOrientationChange(): void{
+    this.setScssPageDimensions(this.pageLandscape);
+  }
+
+  onNameFieldChange(): void{
     for(var spell of this.spellsToPrint){      
       this.reduceNameSize(spell);
     }
+  }
+
+  onCardPropChange(): void{    
+    //get props from card size preset
+    this.setScssCardWidth(this.selectedCardSizePreset.width);
+    this.setScssCardHeight(this.selectedCardSizePreset.height);
+    this.pageLandscape = this.selectedCardSizePreset.landscape;
+    
+    //get description size
+    this.setScssDescriptionFontSize(this.selectedDescriptionSize);
+    
+    //recreate cards
+    this.reloadSpellList();
+
+    //set page orientation
+    this.onPageOrientationChange();
   }
 
   onPrint(): void {
     window.print();
   }
 
+  setScssPageDimensions(landscape: boolean): void {
+    if(landscape){
+      document.documentElement.style.setProperty('--pageWidth', defaultPageHeight);
+      document.documentElement.style.setProperty('--pageHeight', defaultPageWidth);
+    }
+    else{
+      document.documentElement.style.setProperty('--pageWidth', defaultPageWidth);
+      document.documentElement.style.setProperty('--pageHeight', defaultPageHeight);
+    }    
+  }
+  setScssCardWidth(width: number): void {
+    document.documentElement.style.setProperty('--cardWidth', width + 'in');
+  }
+  setScssCardHeight(height: number): void {
+    document.documentElement.style.setProperty('--cardHeight', height + 'in');
+  }
   setScssBackgroundColor(color: string): void {
     document.documentElement.style.setProperty('--backgroundColor', color);
   }
   setScssFontColor(color: string): void {
     document.documentElement.style.setProperty('--fontColor', color);
   }
-  setScssDescriptionFontSize(size: number): void {
-    document.documentElement.style.setProperty('--descriptionSize', size + 'px');
+  setScssDescriptionFontSize(size: DescriptionSize): void {
+      document.documentElement.style.setProperty('--descriptionSize', size.size + 'px');
   }
 
 }

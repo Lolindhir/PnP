@@ -2,29 +2,62 @@
     
     <div class="hidePrint">
         <div class="toolbar" fxLayout="column" fxLayoutAlign="center start">
-            <div class="toolbarItem" fxLayout="row wrap" fxLayoutAlign="start center">
+            <div class="toolbarItem">
+                <button mat-button [matMenuTriggerFor]="menu"><mat-icon color="primary">border_color</mat-icon> Choose color preset</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item *ngFor="let preset of colorPresets" (click)="onPresetChosen(preset)">{{preset.name}}</button>
+                </mat-menu>  
+            </div>  
+            <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
                 <div style="margin-right: 3px;">Color:</div>
                 <input matInput type="color" [(ngModel)]="backgroundColor" (ngModelChange)="changeColor()" 
                 style="height: 30px; width: 50px; background-color: white; padding: 0px"
                 matTooltip="{{backgroundColor}}" matTooltipShowDelay="1000">
                 <mat-slide-toggle class="toggle" [(ngModel)]="fontIsWhite" (ngModelChange)="changeColor()" color="primary">white highlighting</mat-slide-toggle>
+            </div>            
+
+            <mat-divider class="divider"></mat-divider>
+
+            <div class="toolbarItem">
+                <mat-form-field style="width: 90%">
+                    <mat-label>Card size</mat-label>
+                    <mat-select [(ngModel)]="selectedCardSizePreset" (ngModelChange)="onCardPropChange()">
+                        <mat-option *ngFor="let preset of cardSizePresets" [value]="preset">
+                            {{preset.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>            
+            <div class="toolbarItem" fxLayout="row wrap" fxLayoutAlign="start center">
+                <mat-icon color="primary">text_format</mat-icon>         
+                <mat-radio-group color="primary" [(ngModel)]="selectedDescriptionSize" (ngModelChange)="onCardPropChange()">
+                    <mat-radio-button style="margin-left: 5px;" *ngFor="let size of descriptionSizes" [value]="size">
+                        {{size.name}}
+                    </mat-radio-button>
+                </mat-radio-group>
             </div>
-            <div class="toolbarItem under">
-                <button mat-button [matMenuTriggerFor]="menu"><mat-icon color="primary">border_color</mat-icon> Choose color preset</button>
-                <mat-menu #menu="matMenu">
-                    <button mat-menu-item *ngFor="let preset of colorPresets" (click)="onPresetChosen(preset)">{{preset.name}}</button>
-                </mat-menu>  
-            </div>                 
-            <div class="toolbarItem under" *ngIf="characterCards" fxLayout="row wrap" fxLayoutAlign="start center">
+            <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
+                <mat-icon color="primary">stay_current_landscape</mat-icon>
+                <mat-slide-toggle class="toggle" [(ngModel)]="pageLandscape" (ngModelChange)="onPageOrientationChange()" color="primary">A4 in landscape</mat-slide-toggle>
+            </div>   
+
+            <mat-divider class="divider"></mat-divider>
+
+            <div class="toolbarItem" *ngIf="characterCards" fxLayout="row wrap" fxLayoutAlign="start center">
                 <mat-icon>star</mat-icon>
                 <mat-icon>repeat_one_on</mat-icon>
                 <mat-icon>menu_book</mat-icon>
-                <mat-slide-toggle class="toggle" [(ngModel)]="showIcons" (ngModelChange)="onChange()" color="primary">character icons in caption</mat-slide-toggle>
+                <mat-slide-toggle class="toggle" [(ngModel)]="showIcons" (ngModelChange)="onNameFieldChange()" color="primary">character icons in caption</mat-slide-toggle>
             </div>
             <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
                 <img class="icon" src={{images.spellRitual}}>
-                <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsIcon" (ngModelChange)="onChange()" color="primary">ritual icon in caption</mat-slide-toggle>
+                <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsIcon" (ngModelChange)="onNameFieldChange()" color="primary">ritual icon in caption</mat-slide-toggle>
             </div>
+            <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
+                <div><b>(Ritual)</b></div>
+                <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsParenthesis" (ngModelChange)="onNameFieldChange()" color="primary">ritual in parenthesis</mat-slide-toggle>
+            </div>   
+
         </div>
         <button mat-stroked-button color="primary" style="margin: 10px" (click)="onPrint()">
             <mat-icon>print</mat-icon>
@@ -39,7 +72,7 @@
                     <div class="caption lined" fxLayout="row" fxLayoutAlign="space-between stretch">
                         <div class="caption" style="width: 100%">
                             <div [id]="'name' + spell.id" class="name" [ngStyle]="{'font-size': spell.nameSize + 'px'}">
-                                {{spell.name}}
+                                {{spell.name}}<span *ngIf="ritualAsParenthesis && spell.ritual"> (Ritual)</span>{{spell.nameEnumeration}}
                             </div>
                         </div>  
                         <div *ngIf="spell.ritual && ritualAsIcon && (!spell.ritualCast || !showIcons)">
