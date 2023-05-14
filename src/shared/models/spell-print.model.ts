@@ -29,6 +29,7 @@ export interface SpellPrintDirect {
     always: boolean;
     limited: boolean;
     ritualCast: boolean;
+    attacksSaves: string;
 }
 
 export interface PrintSettings {

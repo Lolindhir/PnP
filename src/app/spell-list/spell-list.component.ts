@@ -2234,6 +2234,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
           castingTime: spell.castingTime,
           range: spell.range.displayTextComplete,
           components: spell.componentsDisplayList,
+          attacksSaves: spell.attacksSavesDisplay === ' — ' ? '' : spell.attacksSavesDisplay,
           duration: spell.duration,
           hasMaterials: spell.hasMaterials,
           materials: spell.materials,

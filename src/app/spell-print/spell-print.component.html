@@ -111,7 +111,10 @@
                             <div class="propertyVaule">{{spell.duration}}</div>
                         </div>
                     </div>                               
-                    <span *ngIf="spell.hasMaterials" class="materials">{{spell.materials}}</span>
+                    <div style="width: 100%" fxLayout="column" fxLayoutAlign="start center">
+                        <span *ngIf="spell.hasMaterials" class="materials">{{spell.materials}}</span>
+                        <span *ngIf="spell.attacksSaves.length > 0" class="attacksSaves">{{spell.attacksSaves}}</span>
+                    </div>                    
                     <div [id]="'description' + spell.id" class="description" [innerHTML]="spell.description"></div>      
                 </div>    		
                 <div [id]="'footer' + spell.id" class="footer" fxLayout="row" fxLayoutAlign="space-between" >

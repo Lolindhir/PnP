@@ -15,7 +15,6 @@
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
 
 # General
-- Animation während Seite geladen wird
+- Animation während Seite geladen wird (auch beim Druck von vielen Karten)
 - Scroll to Panel, wenn Header außerhalb des sichtbaren Bereiches
 - Refactoring HTML (Templates verwenden)
-- Zauber (als Karten) ausdruckbar machen
