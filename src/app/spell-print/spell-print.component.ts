@@ -220,8 +220,9 @@ export class SpellPrintComponent implements OnInit {
         var nonClosedB: boolean = sectionToAppend.toLowerCase().includes('<b>') && !sectionToAppend.toLowerCase().includes('</b>');
         var nonClosedI: boolean = sectionToAppend.toLowerCase().includes('<i>') && !sectionToAppend.toLowerCase().includes('</i>');
         var singleCharacterBefore: boolean = remainingText.includes('.') && sectionToAppend.substring(sectionToAppend.lastIndexOf('.') - 2, sectionToAppend.lastIndexOf('.') - 1) === ' ';
+        var twoCharactersBefore: boolean = remainingText.includes('.') && sectionToAppend.substring(sectionToAppend.lastIndexOf('.') - 3, sectionToAppend.lastIndexOf('.') - 2) === ' ';
   
-        if(nonClosedB || nonClosedI || singleCharacterBefore){
+        if(nonClosedB || nonClosedI || singleCharacterBefore || twoCharactersBefore){
 
           //then add the next sentence also to the list
           //only if the remainingText contains a full stop
