@@ -215,21 +215,26 @@ export class SpellPrintComponent implements OnInit {
       remainingText = textToAppend.substring(firstSeparatorIndex + 1).trim();
 
       //check if section to append contains non-closed <b> or <i>
-      var checkForNonClosedNecessary: boolean = true;
-      while(checkForNonClosedNecessary){
+      //and point comes after single character (likely german enumeration, e.g. "2.")
+      while(true){
         var nonClosedB: boolean = sectionToAppend.toLowerCase().includes('<b>') && !sectionToAppend.toLowerCase().includes('</b>');
         var nonClosedI: boolean = sectionToAppend.toLowerCase().includes('<i>') && !sectionToAppend.toLowerCase().includes('</i>');
+        var singleCharacterBefore: boolean = remainingText.includes('.') && sectionToAppend.substring(sectionToAppend.lastIndexOf('.') - 2, sectionToAppend.lastIndexOf('.') - 1) === ' ';
   
-        if(nonClosedB || nonClosedI){
+        if(nonClosedB || nonClosedI || singleCharacterBefore){
 
           //then add the next sentence also to the list
+          //only if the remainingText contains a full stop
+          if(!remainingText.includes('.')){
+            break;
+          }
           var nextSeparatorIndex: number = remainingText.toLowerCase().indexOf('.');
           sectionToAppend += ' ' + remainingText.substring(0, nextSeparatorIndex + 1).trim();
           remainingText = remainingText.substring(nextSeparatorIndex + 1).trim();
 
         }
         else{
-          checkForNonClosedNecessary = false;
+          break;
         }
       }      
     }
