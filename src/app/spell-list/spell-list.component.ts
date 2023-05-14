@@ -2235,14 +2235,16 @@ export class SpellListComponent implements OnInit, AfterViewInit {
           range: spell.range.displayTextComplete,
           components: spell.componentsDisplayList,
           attacksSaves: spell.attacksSavesDisplay === ' — ' ? '' : spell.attacksSavesDisplay,
-          duration: spell.duration,
+          duration: spell.duration.replace('Concentration, ', ''),
           hasMaterials: spell.hasMaterials,
           materials: spell.materials,
+          materialValue: spell.componentsValue,
           description: spell.translated ? spell.translation : spell.description,
           forWho: spell.sourceShortened,
           always: spell.always,
           ritualCast: spell.ritualCast,
-          limited: spell.limited
+          limited: spell.limited,
+          concentration: spell.concentration,
         };
       }
 

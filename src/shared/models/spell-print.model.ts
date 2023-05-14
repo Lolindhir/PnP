@@ -24,12 +24,14 @@ export interface SpellPrintDirect {
     duration: string;
     hasMaterials: boolean;
     materials: string;
+    materialValue: boolean;
     description: string;
     forWho: string;
     always: boolean;
     limited: boolean;
     ritualCast: boolean;
     attacksSaves: string;
+    concentration: boolean;
 }
 
 export interface PrintSettings {

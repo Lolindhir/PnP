@@ -90,7 +90,7 @@
                     </div>
                     <div [id]="'properties' + spell.id" class="lined" fxLayout="row" fxLayoutAlign="space-between stretch">
                         <div class="props rightLined" fxLayout="row" fxLayoutAlign="center stretch">
-                            <div *ngIf="spell.ritual"><img class="ritual" src={{images.spellRitual}}></div>
+                            <div *ngIf="spell.ritual" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellRitual}}></div>
                             <div>
                                 <div class="propertyCaption">casting time</div>
                                 <div class="propertyVaule">{{spell.castingTime}}</div>
@@ -102,13 +102,19 @@
                         </div>                        
                     </div>
                     <div class="lined" fxLayout="row" fxLayoutAlign="space-between stretch">
-                        <div class="props rightLined">
-                            <div class="propertyCaption">components</div>
-                            <div class="propertyVaule">{{spell.components}}</div>
+                        <div class="props rightLined" fxLayout="row" fxLayoutAlign="center stretch">
+                            <div *ngIf="spell.materialValue" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellCoins}}></div>
+                            <div>
+                                <div class="propertyCaption">components</div>
+                                <div class="propertyVaule">{{spell.components}}</div>
+                            </div>
                         </div>
-                        <div class="props leftLined" fxLayout="column">
-                            <div class="propertyCaption">duration</div>
-                            <div class="propertyVaule">{{spell.duration}}</div>
+                        <div class="props leftLined" fxLayout="row" fxLayoutAlign="center stretch">
+                            <div *ngIf="spell.concentration" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellConcentration}}></div>
+                            <div>
+                                <div class="propertyCaption">duration</div>
+                                <div class="propertyVaule">{{spell.duration}}</div>
+                            </div>                            
                         </div>
                     </div>                               
                     <div style="width: 100%" fxLayout="column" fxLayoutAlign="start center">
