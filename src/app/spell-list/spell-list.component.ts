@@ -45,7 +45,7 @@ export interface SettingsData {
 @Component({
   selector: 'app-spell-list',
   templateUrl: './spell-list.component.html',
-  styleUrls: ['./spell-list.component.scss']
+  styleUrls: ['../app.component.scss', './spell-list.component.scss']
 })
 export class SpellListComponent implements OnInit, AfterViewInit {
 

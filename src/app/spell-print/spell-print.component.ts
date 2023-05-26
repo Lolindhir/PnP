@@ -19,7 +19,6 @@ export interface CardSizePreset{
   name: string;
   width: number;
   height: number;
-  landscape: boolean;
 }
 
 export interface DescriptionSize{
@@ -40,7 +39,6 @@ export class SpellPrintComponent implements OnInit {
   images = imagePaths;
   colorPresets: ColorPreset[] = ColorPreset.GetDefaultPresets();
   //card settings
-  pageLandscape: boolean = false;
   cardWidth: number = defaultCardWidth;
   cardHeight: number = defaultCardHeight;
   descriptionSize: DescriptionSize = { name: 'Default', size: defaultDescriptionSize};
@@ -62,18 +60,17 @@ export class SpellPrintComponent implements OnInit {
   ) { 
 
     //defaults
-    this.setScssPageDimensions(this.pageLandscape);
     this.setScssCardWidth(this.cardWidth);
     this.setScssCardHeight(this.cardHeight);
     this.setScssBackgroundColor(this.backgroundColor);
     this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
     this.setScssDescriptionFontSize(this.descriptionSize);
     this.cardSizePresets = [
-      {name: 'Default/MtG (2.5 x 3.5 inches)', width: 2.5, height: 3.5, landscape: false },
-      {name: 'Large (2.7 x 3.8 inches)', width: 2.7, height: 3.8, landscape: false },
-      {name: 'Big (2.85 x 3.99 inches)', width: 2.85, height: 3.99, landscape: true },
-      {name: 'Small/Yu-Gi-Oh! (2.25 x 3.25 inches)', width: 2.25, height: 3.25, landscape: true },
-      {name: 'Special/Skat (2.32 x 3.58 inches)', width: 2.32, height: 3.58, landscape: true },
+      {name: 'Default/MtG (2.5 x 3.5 inches)', width: 2.5, height: 3.5},
+      {name: 'Large (2.75 x 3.9 inches)', width: 2.75, height: 3.9}, //old: 2.7x3.8
+      {name: 'Big (3.25 x 3.9 inches)', width: 3.25, height: 3.9}, //old: 2.85x3.99
+      {name: 'Small/Yu-Gi-Oh! (2.25 x 3.25 inches)', width: 2.25, height: 3.25},
+      {name: 'Special/Skat (2.32 x 3.58 inches)', width: 2.32, height: 3.58},
     ];
     this.selectedCardSizePreset = this.cardSizePresets[0];
     this.descriptionSizes = [
@@ -342,10 +339,6 @@ export class SpellPrintComponent implements OnInit {
     this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
   }
 
-  onPageOrientationChange(): void{
-    this.setScssPageDimensions(this.pageLandscape);
-  }
-
   onNameFieldChange(): void{
     for(var spell of this.spellsToPrint){      
       this.reduceNameSize(spell);
@@ -356,32 +349,18 @@ export class SpellPrintComponent implements OnInit {
     //get props from card size preset
     this.setScssCardWidth(this.selectedCardSizePreset.width);
     this.setScssCardHeight(this.selectedCardSizePreset.height);
-    this.pageLandscape = this.selectedCardSizePreset.landscape;
     
     //get description size
     this.setScssDescriptionFontSize(this.selectedDescriptionSize);
     
     //recreate cards
     this.reloadSpellList();
-
-    //set page orientation
-    this.onPageOrientationChange();
   }
 
   onPrint(): void {
     window.print();
   }
 
-  setScssPageDimensions(landscape: boolean): void {
-    if(landscape){
-      document.documentElement.style.setProperty('--pageWidth', defaultPageHeight);
-      document.documentElement.style.setProperty('--pageHeight', defaultPageWidth);
-    }
-    else{
-      document.documentElement.style.setProperty('--pageWidth', defaultPageWidth);
-      document.documentElement.style.setProperty('--pageHeight', defaultPageHeight);
-    }    
-  }
   setScssCardWidth(width: number): void {
     document.documentElement.style.setProperty('--cardWidth', width + 'in');
   }

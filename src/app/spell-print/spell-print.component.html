@@ -9,7 +9,7 @@
                 </mat-menu>  
             </div>  
             <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
-                <div style="margin-right: 3px;">Color:</div>
+                <div class="toolbarBold" style="margin-right: 3px;">Color:</div>
                 <input matInput type="color" [(ngModel)]="backgroundColor" (ngModelChange)="changeColor()" 
                 style="height: 30px; width: 50px; background-color: white; padding: 0px"
                 matTooltip="{{backgroundColor}}" matTooltipShowDelay="1000">
@@ -29,17 +29,14 @@
                 </mat-form-field>
             </div>            
             <div class="toolbarItem" fxLayout="row wrap" fxLayoutAlign="start center">
-                <mat-icon color="primary">text_format</mat-icon>         
+                <!-- <mat-icon color="primary">text_format</mat-icon> -->
+                <div class="toolbarBold">Description size:</div>         
                 <mat-radio-group color="primary" [(ngModel)]="selectedDescriptionSize" (ngModelChange)="onCardPropChange()">
                     <mat-radio-button style="margin-left: 5px;" *ngFor="let size of descriptionSizes" [value]="size">
                         {{size.name}}
                     </mat-radio-button>
                 </mat-radio-group>
-            </div>
-            <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
-                <mat-icon color="primary">stay_current_landscape</mat-icon>
-                <mat-slide-toggle class="toggle" [(ngModel)]="pageLandscape" (ngModelChange)="onPageOrientationChange()" color="primary">A4 in landscape</mat-slide-toggle>
-            </div>   
+            </div>  
 
             <mat-divider class="divider"></mat-divider>
 
@@ -54,7 +51,7 @@
                 <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsIcon" (ngModelChange)="onNameFieldChange()" color="primary">ritual icon in caption</mat-slide-toggle>
             </div>
             <div class="toolbarItem under" fxLayout="row wrap" fxLayoutAlign="start center">
-                <div><b>(Ritual)</b></div>
+                <div class="toolbarBold">(Ritual)</div>
                 <mat-slide-toggle class="toggle" [(ngModel)]="ritualAsParenthesis" (ngModelChange)="onNameFieldChange()" color="primary">ritual in parenthesis</mat-slide-toggle>
             </div>   
 
@@ -65,8 +62,8 @@
     </div>
  
 
-    <div id="sectionToPrint" class="a4">        
-        <div class="card" *ngFor="let spell of spellsToPrint">
+    <div id="sectionToPrint">        
+        <div class="card print" *ngFor="let spell of spellsToPrint; let i=index">
             <div class="front">
                 <div class="body">
                     <div class="caption lined" fxLayout="row" fxLayoutAlign="space-between stretch">

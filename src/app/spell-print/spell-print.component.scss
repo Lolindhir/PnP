@@ -1,5 +1,3 @@
-$pageWidth:var(--pageWidth);
-$pageHeight:var(--pageHeight);
 $cardWidth:var(--cardWidth);
 $cardHeight:var(--cardHeight);
 $backgroundColor:var(--backgroundColor);
@@ -12,11 +10,18 @@ $descriptionSize:var(--descriptionSize);
 	width: fit-content;
 	border: 1px solid grey;
 	padding: 5px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .toolbarItem
 {
 	width: 100%;
+}
+
+.toolbarBold
+{
+    font-weight: 550; //standard = 400
 }
 
 .divider
@@ -34,12 +39,6 @@ $descriptionSize:var(--descriptionSize);
 .toggle
 {
 	margin-left: 3px;
-}
-
-.a4
-{
-	width: $pageWidth;
-	height: $pageHeight;
 }
 
 .lined
