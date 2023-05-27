@@ -1255,6 +1255,43 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return false;
   }
 
+  showNameIcon(spell: Spell, property: string): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(spell.removed){
+      return false;
+    }
+    switch (property) {
+      case "known":
+        return char.mode === ModeOption.AddRemove && spell.known;
+      case "limited":
+        return (char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.limited;
+      case "ritualCasting":
+        return (char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.ritualCast;
+      case "always":
+        return (char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.always;
+      case "prepared":
+        return char.mode === ModeOption.Overview && spell.prepared;
+      default:
+        return false;
+    }
+  }
+  showNameIconPrepared(spell: Spell): boolean{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return false;
+    }
+    if(spell.removed){
+      return false;
+    }
+    if((char.mode === ModeOption.Overview || char.mode === ModeOption.Prep) && spell.prepared){
+      return true;
+    }
+    return false;
+  }
+
   showFilterKnown(): boolean{
     var char = this.characterData.selectedCharacter;
     if(char === undefined){

@@ -862,45 +862,85 @@
 
         <!-- Template for icons next to the spell name -->
         <ng-template #NameIcons>
-          <div *ngIf="spell.ritual && !onlyCastAsRitual(spell)" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
+          <div fxLayout="row nowrap" style="width: content">
+            <div *ngIf="spell.ritual && !onlyCastAsRitual(spell)" class="spell-expansion-icon" matTooltip="{{spell.ritualTooltip}}"
               matTooltipShowDelay="{{tooltipDelay}}">
             <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
             <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
-          </div>
-          <div *ngIf="spell.concentration" class="spell-expansion-icon"
-              matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellConcentration}}></span>
-            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellConcentrationGrey}}></span>
-          </div>
-          <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
-              matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-            <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellCoins}}></span>
-            <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellCoinsGrey}}></span>
+            </div>
+            <div *ngIf="spell.concentration" class="spell-expansion-icon"
+                matTooltip="{{spell.concentrationTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellConcentration}}></span>
+              <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellConcentrationGrey}}></span>
+            </div>
+            <div *ngIf="spell.componentsValue || spell.componentsConsumed" class="spell-expansion-icon"
+                matTooltip="{{spell.materialTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellCoins}}></span>
+              <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellCoinsGrey}}></span>
+            </div>    
+          </div>         
+        </ng-template>
+
+        <!-- Template for character icons next to the spell name -->
+        <ng-template #CharacterIcons>
+          <div fxLayout="row nowrap" style="width: content">
+            <!--known-->
+            <div *ngIf="showNameIcon(spell, 'known')" matTooltip="known spell" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><mat-icon class="characterIcon" color="primary">bookmark</mat-icon></span>
+              <span *ngIf="greyOutUsed(spell)"><mat-icon class="characterIcon" style="color: grey">bookmark</mat-icon></span>
+            </div>
+            <!--ritualCasting-->
+            <div *ngIf="showNameIcon(spell, 'ritualCasting')" matTooltip="ritual cast" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><mat-icon class="characterIcon" color="primary">menu_book</mat-icon></span>
+              <span *ngIf="greyOutUsed(spell)"><mat-icon class="characterIcon" style="color: grey">menu_book</mat-icon></span>
+            </div>
+            <!--limited-->
+            <div *ngIf="showNameIcon(spell, 'limited')" matTooltip="limited usable" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><mat-icon class="characterIcon" color="primary">repeat_one_on</mat-icon></span>
+              <span *ngIf="greyOutUsed(spell)"><mat-icon class="characterIcon" style="color: grey">repeat_one_on</mat-icon></span>
+            </div>
+            <!--always-->
+            <div *ngIf="showNameIcon(spell, 'always')" matTooltip="always usable" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><mat-icon class="characterIcon" color="primary">star</mat-icon></span>
+              <span *ngIf="greyOutUsed(spell)"><mat-icon class="characterIcon" style="color: grey">star</mat-icon></span>
+            </div>
+            <!--prepared-->
+            <div *ngIf="showNameIcon(spell, 'prepared')" matTooltip="prepared for casting" matTooltipShowDelay="{{tooltipDelay}}">
+              <span *ngIf="!greyOutUsed(spell)"><mat-icon class="characterIcon" color="primary">label</mat-icon></span>
+              <span *ngIf="greyOutUsed(spell)"><mat-icon class="characterIcon" style="color: grey">label</mat-icon></span>
+            </div>
           </div>
         </ng-template>
 
         <!-- Template for first column -->
         <ng-template #FirstColumn>
-          <div fxLayout="row">
-            <div *ngIf="onlyCastAsRitual(spell)">
-              <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
-              <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
-            </div>         
-            <div class="spell-expansion-header spell-expansion-name" [ngStyle]="{'font-weight' : onlyCastAsRitual(spell) ? '100' : ''}">
-              {{spell.name}}
-            </div>
-            <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
-          </div>
-          <div class="spell-expansion-header spell-expansion-extra">
-            <div *ngIf="!showColumnLevel">
-              <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" style="max-height: 9px;" src={{images.spellArrowGrey}}>
-              </span>{{spell.smallDisplay}}
-            </div>
-            <div *ngIf="showColumnLevel">
-              {{spell.school}} - {{spell.componentsDisplayList}}
-            </div>
-          </div>
+            <div fxLayout="column" style="width: 250px;">
+              <div fxLayout="row" style="width: 250px; height: 20px;">
+                <div *ngIf="onlyCastAsRitual(spell)">
+                  <span *ngIf="!greyOutUsed(spell)"><img class="image" src={{images.spellRitual}}></span>
+                  <span *ngIf="greyOutUsed(spell)"><img class="image" src={{images.spellRitualGrey}}></span>
+                </div>         
+                <div class="spell-expansion-header spell-expansion-name" [ngStyle]="{'font-weight' : onlyCastAsRitual(spell) ? '100' : ''}">
+                  {{spell.name}}
+                </div>
+                <div>
+                  <ng-template [ngTemplateOutlet]="NameIcons"></ng-template>
+                </div>
+                <div>
+                  <ng-template [ngTemplateOutlet]="CharacterIcons"></ng-template>
+                </div>
+              </div>              
+              <div class="spell-expansion-header spell-expansion-extra">
+                <div *ngIf="!showColumnLevel">
+                  <span *ngIf="spell.upcastable" matTooltip="{{spell.upcastableTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">
+                    <img class="image" style="max-height: 9px;" src={{images.spellArrowGrey}}>
+                  </span>{{spell.smallDisplay}}
+                </div>
+                <div *ngIf="showColumnLevel">
+                  {{spell.school}} - {{spell.componentsDisplayList}}
+                </div>
+              </div>
+            </div>            
         </ng-template>
 
         <!-- Template for spell range -->
@@ -934,9 +974,9 @@
             </div> -->
 
             <!-- 1st row: name -->
-            <div fxLayout="column" style="width: 250px;">
+            <div>
 
-              <ng-template [ngTemplateOutlet]="FirstColumn"></ng-template>
+              <ng-template [ngTemplateOutlet]="FirstColumn"></ng-template>              
               
             </div>
 

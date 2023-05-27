@@ -73,7 +73,9 @@
                             </div>
                         </div>  
                         <div *ngIf="spell.ritual && ritualAsIcon && (!spell.ritualCast || !showIcons)">
-                            <img class="icon" src={{images.spellRitual}}>
+                            <svg class="icon">
+                                <use [attr.href]="icons.spellRitual"></use>
+                            </svg>
                         </div>                      
                         <div *ngIf="showIcons && spell.always" class="icon">
                             <div><mat-icon>star</mat-icon></div>
@@ -87,7 +89,11 @@
                     </div>
                     <div [id]="'properties' + spell.id" class="lined" fxLayout="row" fxLayoutAlign="space-between stretch">
                         <div class="props rightLined" fxLayout="row" fxLayoutAlign="center stretch">
-                            <div *ngIf="spell.ritual" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellRitual}}></div>
+                            <div *ngIf="spell.ritual" fxLayoutAlign="center center">
+                                <svg class="iconProps">
+                                    <use [attr.href]="icons.spellRitual"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <div class="propertyCaption">casting time</div>
                                 <div class="propertyVaule">{{spell.castingTime}}</div>
@@ -100,14 +106,22 @@
                     </div>
                     <div class="lined" fxLayout="row" fxLayoutAlign="space-between stretch">
                         <div class="props rightLined" fxLayout="row" fxLayoutAlign="center stretch">
-                            <div *ngIf="spell.materialValue" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellCoins}}></div>
+                            <div *ngIf="spell.materialValue" fxLayoutAlign="center center">
+                                <svg class="iconProps">
+                                    <use [attr.href]="icons.spellCoins"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <div class="propertyCaption">components</div>
                                 <div class="propertyVaule">{{spell.components}}</div>
                             </div>
                         </div>
                         <div class="props leftLined" fxLayout="row" fxLayoutAlign="center stretch">
-                            <div *ngIf="spell.concentration" fxLayoutAlign="center center"><img class="iconProps" src={{images.spellConcentration}}></div>
+                            <div *ngIf="spell.concentration" fxLayoutAlign="center center">
+                                <svg class="iconProps">
+                                    <use [attr.href]="icons.spellConcentration"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <div class="propertyCaption">duration</div>
                                 <div class="propertyVaule">{{spell.duration}}</div>

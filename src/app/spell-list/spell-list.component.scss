@@ -35,6 +35,13 @@
   // image-rendering: -webkit-optimize-contrast;
 }
 
+.characterIcon {
+  font-size: 18px;
+  max-height: 18px;
+  max-width: 18px;
+  margin-left: 3px;
+}
+
 .filterIcon {
   font-size: 15px;
   width: 20px;
@@ -104,6 +111,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   font-style: italic;
+  padding-right: 2px;
 }
 
 .spell-expansion-header {
@@ -126,6 +134,7 @@
   font-size: small;
   font-style: italic;
   margin-left: 0.25rem;
+  padding-right: 2px;
   color:gray; 
 }
 

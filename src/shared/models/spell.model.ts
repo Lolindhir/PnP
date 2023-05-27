@@ -165,18 +165,19 @@ export class Spell implements Spell {
 
     //cut names from spells
     var name: string = rawSpell.name;
-    name = name.replace('Leomund\'s ', '')
-    name = name.replace('Mordenkainen\'s F', 'F')
-    name = name.replace('Mordenkainen\'s M', 'M')
-    name = name.replace('Mordenkainen\'s P', 'P')
-    name = name.replace('Mordenkainen\'s S', 'Arcane S')
-    name = name.replace('Maximilian\'s ', '')
-    name = name.replace('Melf\'s ', '')
-    name = name.replace('Tasha\'s ', '')
-    name = name.replace('Rary\'s ', '')
-    name = name.replace('Drawmij\'s ', '')
-    name = name.replace('Abi-Dalzim\'s ', '')
-    name = name.replace('Bigby\'s ', 'Arcane ')
+    // name = name.replace('Aganazzar\'s ', 'Arcane ')
+    // name = name.replace('Leomund\'s ', '')
+    // name = name.replace('Mordenkainen\'s F', 'F')
+    // name = name.replace('Mordenkainen\'s M', 'M')
+    // name = name.replace('Mordenkainen\'s P', 'P')
+    // name = name.replace('Mordenkainen\'s S', 'Arcane S')
+    // name = name.replace('Maximilian\'s ', '')
+    // name = name.replace('Melf\'s ', '')
+    // name = name.replace('Tasha\'s ', '')
+    // name = name.replace('Rary\'s ', '')
+    // name = name.replace('Drawmij\'s ', '')
+    // name = name.replace('Abi-Dalzim\'s ', '')
+    // name = name.replace('Bigby\'s ', 'Arcane ')
     this.name = name;
 
     //build level display

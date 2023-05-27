@@ -3,6 +3,7 @@ import { StorageService } from '@shared/services/storage.service';
 import { PrintSettings, SpellPrintDirect } from '@models/spell-print.model';
 import { ColorPreset } from '@models/color-preset.model';
 import * as imagePaths from '@shared/imagePaths';
+import * as iconPaths from '@shared/iconPaths';
 
 const defaultPageWidth: string = '210mm';
 const defaultPageHeight: string = '297mm';
@@ -37,6 +38,7 @@ export class SpellPrintComponent implements OnInit {
   spellsToPrint: SpellPrintDirect[] = new Array();
   printSettings: PrintSettings;
   images = imagePaths;
+  icons = iconPaths;
   colorPresets: ColorPreset[] = ColorPreset.GetDefaultPresets();
   //card settings
   cardWidth: number = defaultCardWidth;
@@ -47,6 +49,7 @@ export class SpellPrintComponent implements OnInit {
   ritualAsIcon: boolean = false;
   ritualAsParenthesis: boolean = false;
   backgroundColor: string = defaultBackgroundColor;
+  iconColor: string = defaultBackgroundColor;
   fontIsWhite: boolean = defaultFontIsWhite;
   selectedCardSizePreset: CardSizePreset;
   cardSizePresets: CardSizePreset[] = new Array();
@@ -63,6 +66,7 @@ export class SpellPrintComponent implements OnInit {
     this.setScssCardWidth(this.cardWidth);
     this.setScssCardHeight(this.cardHeight);
     this.setScssBackgroundColor(this.backgroundColor);
+    this.setScssIconColor(this.iconColor);
     this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
     this.setScssDescriptionFontSize(this.descriptionSize);
     this.cardSizePresets = [
@@ -87,6 +91,7 @@ export class SpellPrintComponent implements OnInit {
     if(this.characterCards){
       this.showIcons = this.characterCards;
       this.backgroundColor = this.printSettings.backgroundColor;
+      this.iconColor = this.printSettings.backgroundColor;
       this.fontIsWhite = this.printSettings.whiteFont;
       this.changeColor();
     }
@@ -330,12 +335,14 @@ export class SpellPrintComponent implements OnInit {
 
   onPresetChosen(preset: ColorPreset): void{
     this.backgroundColor = preset.backgroundColor;
+    this.iconColor = preset.backgroundColor;
     this.fontIsWhite = preset.whiteFont;
     this.changeColor();
   }
 
   changeColor(): void{
     this.setScssBackgroundColor(this.backgroundColor);
+    this.setScssIconColor(this.iconColor);
     this.setScssFontColor(this.fontIsWhite ? 'white' : 'black');
   }
 
@@ -369,6 +376,9 @@ export class SpellPrintComponent implements OnInit {
   }
   setScssBackgroundColor(color: string): void {
     document.documentElement.style.setProperty('--backgroundColor', color);
+  }
+  setScssIconColor(color: string): void {
+    document.documentElement.style.setProperty('--iconColor', color);
   }
   setScssFontColor(color: string): void {
     document.documentElement.style.setProperty('--fontColor', color);
