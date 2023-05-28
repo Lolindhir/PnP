@@ -7,8 +7,7 @@
 
 # Character Mode
 - Prepared Blueprints
-- Option, um benutzte Limited Spells noch anzuzeigen (Rituale für Barden oder Zauber, die einmal pro Tag ohne Slot dann aber mit Slot gecastet werden können, z.B. Tiefling Spells) - Kombination aus Limited + Always Known
-- Spell Slots
+- Spell Slots -> Casting-Möglichkeit im Session-Mode, der Slots abzieht
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)

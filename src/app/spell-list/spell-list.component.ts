@@ -396,7 +396,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       return false;
     }
 
-    if(char.mode === ModeOption.Session && spell.used){
+    if(char.mode === ModeOption.Session && spell.used && !this.onlyCastAsRitual(spell)){
       return true;
     }
 
@@ -1222,7 +1222,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     if(spell.removed){
       return false;
     }
-    if(char.mode === ModeOption.Session && spell.limited){
+    if(char.mode === ModeOption.Session && !spell.used && spell.limited && !(!char.preparedCasting && spell.known) && !spell.always && !spell.prepared){
       return true;
     }
     return false;
@@ -2168,6 +2168,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
 
     if(char.mode === ModeOption.Session){
+      if(spell.limited && !spell.used){
+        //spell is not used yet
+        return false;
+      }
       if(spell.ritualCast && !spell.prepared && !(!char.preparedCasting && spell.known)){
         return true;
       }
