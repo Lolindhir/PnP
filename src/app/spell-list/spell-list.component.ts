@@ -450,7 +450,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     else{
       this.characterData.selectedCharacter = undefined;
-      this.storageService.deleteLocal('SelectedCharacter');
+      //this.storageService.deleteLocal('SelectedCharacter');
     }
 
     this.applySelectedCharacterData();
