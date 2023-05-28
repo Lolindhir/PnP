@@ -1267,7 +1267,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       case "known":
         return char.mode === ModeOption.AddRemove && spell.known;
       case "limited":
-        return (char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.limited;
+        if((char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.limited){
+          return true;
+        }
+        if(char.mode === ModeOption.Session && this.showIconUsed(spell)){
+          return true;
+        }
+        return false;
       case "ritualCasting":
         return (char.mode === ModeOption.Overview || char.mode === ModeOption.AddRemove) && spell.ritualCast;
       case "always":
@@ -1277,19 +1283,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       default:
         return false;
     }
-  }
-  showNameIconPrepared(spell: Spell): boolean{
-    var char = this.characterData.selectedCharacter;
-    if(char === undefined){
-      return false;
-    }
-    if(spell.removed){
-      return false;
-    }
-    if((char.mode === ModeOption.Overview || char.mode === ModeOption.Prep) && spell.prepared){
-      return true;
-    }
-    return false;
   }
 
   showFilterKnown(): boolean{

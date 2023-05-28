@@ -7,7 +7,9 @@
 
 # Character Mode
 - Prepared Blueprints
-- Spell Slots -> Casting-Möglichkeit im Session-Mode, der Slots abzieht
+- Spell Slots 
+    -> entweder: Casting-Möglichkeit im Session-Mode, der Slots abzieht
+    -> oder einfacher: im Session-Mode einfach keine Zauber anzeigen, für die keine Slots mehr existieren
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
