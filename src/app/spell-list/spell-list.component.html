@@ -1112,8 +1112,11 @@
 
             <div>
               <span class="spell-property-denotation">Casting time:</span>
-              <span *ngIf="!onlyCastAsRitual(spell)" class="spell-property-description">{{spell.castingTime}}</span>
-              <span *ngIf="onlyCastAsRitual(spell)" class="spell-property-description">10 Minutes + {{spell.castingTime}}</span>
+              <span *ngIf="!onlyCastAsRitual(spell)" class="spell-property-description">
+                {{spell.castingTime}}
+                <span *ngIf="spell.ritual"><img class="image" style="margin-left: 2px;" src={{images.spellRitual}}></span>
+              </span>
+              <span *ngIf="onlyCastAsRitual(spell)" class="spell-property-description"><img class="image" src={{images.spellRitual}}>10 Minutes + {{spell.castingTime}}</span>
             </div>
 
             <div>

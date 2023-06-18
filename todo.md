@@ -9,7 +9,12 @@
 - Prepared Blueprints
 - Spell Slots 
     -> entweder: Casting-Möglichkeit im Session-Mode, der Slots abzieht
-    -> oder einfacher: im Session-Mode einfach keine Zauber anzeigen, für die keine Slots mehr existieren
+    -> oder einfacher: im Session-Mode einfach keine Zauber anzeigen, für die keine Slots mehr existieren -> und das ganz einfach über Anzeige "existierende Slot Level"
+- Item-Zauber irgendwie kennzeichenbar/anzeigbar machen (notwendig?)
+- Custom Spell hinzufügbar machen (Itemeffekte, Klassenfeatures etc.)
+    - Art des Spells angebbar machen und dies als Namensvorsatz verwenden
+    - nur im Session-Modus anzeigen? oder überall? womöglich muss so etwas prepared werden?
+    - minimale Properties (bspw. nur eine Description)
 
 # Filter
 - jedes Target einzeln rausziehen, wie Materialien (trotzdem noch Targets belassen in Main-Filter)
