@@ -1,0 +1,21 @@
+{
+    "name": "Lolindhirs PnP-Homerules",
+    "short_name": "LPNPH",
+    "description": "All Pen and Paper Homerules.",
+  
+    "scope": "/PnP/",
+    "start_url": "/PnP/",
+  
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+  
+    "display": "standalone", 
+    
+    "icons": [
+        {
+          "src": "/PnP/favicon.ico",
+          "type": "image/x-icon",
+          "sizes": "700x700"
+        }
+    ]
+}
