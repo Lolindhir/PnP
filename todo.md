@@ -1,3 +1,6 @@
+# Features
+- direkten Link auf Spells ermöglichen (wie spells/print)
+
 # Bugs
 
 # Settings
