@@ -23,6 +23,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
 import { StorageService } from '@shared/services/storage.service';
 import { FileSaverService } from 'ngx-filesaver';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
 import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
@@ -196,6 +197,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     private router: Router,
     private httpClient: HttpClient,
     private storageService: StorageService,
+    private clipboard: Clipboard,
     private viewPortScroller: ViewportScroller,
     private dialog: MatDialog,
     private snackBar: MatSnackBar,
@@ -2225,6 +2227,27 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //   }
 
     // }    
+
+  }
+
+  onCopyToClipboard() {
+
+    if(this.spellsFiltered === undefined || this.spellsFiltered.length < 1){
+      return;
+    }
+
+    var toCopy : string = "";
+
+    for(var spell of this.spellsFiltered){
+      if(toCopy.length > 0){
+        toCopy += "\n";
+      }
+      toCopy += spell.ritual ? spell.name + ' (Ritual)' : spell.name;
+    }
+
+    console.log(toCopy);
+
+    this.clipboard.copy(toCopy);
 
   }
 

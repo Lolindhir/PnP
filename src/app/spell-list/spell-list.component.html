@@ -322,6 +322,20 @@
           </mat-form-field>
         </div>
 
+        <div *ngIf="characterSelected()" fxLayout="column" class="filter-select">
+          <div>Preset</div>
+          <mat-form-field appearance="fill">
+            <mat-select [(ngModel)]="selectedFiltersPreset"
+              (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
+              <mat-select-trigger>
+                <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let filter of optionsPreset" [value]="filter">
+                {{filter.displayTextList}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
         <div fxLayout="column" class="filter-select">
           <div>Damage Type</div>
           <mat-form-field appearance="fill">
@@ -1311,6 +1325,9 @@
         <div *ngIf="settings.showPrint">
           <button color="primary" mat-icon-button (click)="onPrint()" matTooltip="Export to .csv for print" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>print</mat-icon>
+          </button>
+          <button color="primary" mat-icon-button (click)="onCopyToClipboard()" matTooltip="Copy spell names to clipboard" matTooltipShowDelay="{{tooltipDelay}}">
+            <mat-icon>content_copy</mat-icon>
           </button>
         </div>
       </div>
