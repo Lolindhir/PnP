@@ -39,6 +39,7 @@ export interface RawSpell {
   components: string[];
   materials: string;
   duration: string;
+  durationGrittyRealism: string;
   concentration: boolean;
   description: string;
   source: string;
@@ -80,7 +81,8 @@ export interface Spell {
   materials: string;
   materialTooltip: string;
   duration: string;
-  durationDisplayList: string;
+  durationStandard: string;
+  durationGrittyRealism: string;
   concentration: boolean;
   concentrationTooltip: string;
   description: string;
@@ -136,6 +138,8 @@ export class Spell implements Spell {
     this.components = rawSpell.components;
     this.materials = rawSpell.materials;
     this.duration = rawSpell.duration;
+    this.durationStandard = rawSpell.duration;
+    this.durationGrittyRealism = rawSpell.durationGrittyRealism;
     this.concentration = rawSpell.concentration;
     this.concentrationTooltip = 'Requires concentration';
     this.description = rawSpell.description;
@@ -255,10 +259,6 @@ export class Spell implements Spell {
     //build small display
     var levelText: string = this.level === 0 ? this.levelDisplay : this.levelDisplay + ' level';
     this.smallDisplay = levelText + ' ' + this.school + ' - ' + this.componentsDisplayList;
-
-    //build duration display
-    var splitDuration: string[] = rawSpell.duration.toLowerCase().split('concentration, up to ');
-    this.durationDisplayList = splitDuration.length > 1 ? this.capitalizeWords(splitDuration[1]) : this.capitalizeWords(rawSpell.duration);
 
     //build classes and classes dispaly
     var classes : SpellClass[] = new Array();
@@ -437,6 +437,13 @@ export class Spell implements Spell {
   }    
 
 
+  public getDurationForList() : string {
+
+    //build duration display
+    var splitDuration: string[] = this.duration.toLowerCase().split('concentration, up to ');
+    return splitDuration.length > 1 ? this.capitalizeWords(splitDuration[1]) : this.capitalizeWords(this.duration);
+
+  }
 
 
   public filter(nameFilter: string, filters: SpellFilter[]) : boolean{

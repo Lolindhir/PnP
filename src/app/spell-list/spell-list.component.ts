@@ -34,6 +34,7 @@ import { ColorPreset } from '@shared/models/color-preset.model';
 export interface SettingsData {
   showRandomControls: boolean;
   translateAll: boolean;
+  useGrittyRealism: boolean;
   sortByName: boolean;
   characterMode: boolean;
   onlyValueMaterials: boolean;
@@ -154,6 +155,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     showRandomControls: false,
     sortByName: false,
     translateAll: false,
+    useGrittyRealism: false,
     characterMode: false,
     onlyValueMaterials: false,
     showDuration: false,
@@ -238,6 +240,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //translate spells
     this.translateAllMasterSpells();
+
+    //set correct duration
+    this.setDurationAllMasterSpells();
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
@@ -388,6 +393,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         spell.translated = false;
         spell.descriptionDisplay = spell.description;
       }
+    } 
+  }
+
+  setDurationAllMasterSpells(){
+    for(var spell of this.spells){
+      spell.duration = this.settings.useGrittyRealism ? spell.durationGrittyRealism : spell.durationStandard;
     } 
   }
 
@@ -2442,6 +2453,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.settings.showRandomControls = this.storageService.loadLocal('RandomControls') === 'true' ? true : false;
     this.settings.sortByName = this.storageService.loadLocal('SortByName') === 'true' ? true : false;
     this.settings.translateAll = this.storageService.loadLocal('TranslateAll') === 'true' ? true : false;
+    this.settings.useGrittyRealism = this.storageService.loadLocal('UseGrittyRealism') === 'true' ? true : false;
+    this.settings.showDuration = this.storageService.loadLocal('ShowDuration') === 'true' ? true : false;
     this.settings.characterMode = this.storageService.loadLocal('CharacterMode') === 'true' ? true : false;
     this.settings.onlyValueMaterials = this.storageService.loadLocal('OnlyValueMaterials') === 'true' ? true : false;
     this.settings.dmMode = this.storageService.loadLocal('DMMode') === 'true' ? true : false;
@@ -2454,6 +2467,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.storageService.storeLocal('RandomControls', String(this.settings.showRandomControls));
     this.storageService.storeLocal('SortByName', String(this.settings.sortByName));
     this.storageService.storeLocal('TranslateAll', String(this.settings.translateAll)); 
+    this.storageService.storeLocal('UseGrittyRealism', String(this.settings.useGrittyRealism)); 
+    this.storageService.storeLocal('ShowDuration', String(this.settings.showDuration)); 
     this.storageService.storeLocal('CharacterMode', String(this.settings.characterMode)); 
     this.storageService.storeLocal('OnlyValueMaterials', String(this.settings.onlyValueMaterials)); 
     this.storageService.storeLocal('DMMode', String(this.settings.dmMode)); 
@@ -2476,6 +2491,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     dialogRef.componentInstance.onTranslate.subscribe(() => {
       this.translateAllMasterSpells();
+    });
+
+    dialogRef.componentInstance.onGritty.subscribe(() => {
+      this.setDurationAllMasterSpells();
     });
 
     dialogRef.componentInstance.onSort.subscribe(() => {
@@ -2546,6 +2565,7 @@ export class SpellListSettingsDialog {
   
   onRandom = new EventEmitter();
   onTranslate = new EventEmitter();
+  onGritty = new EventEmitter();
   onSort = new EventEmitter();
   onCharacter = new EventEmitter();
   onMaterials = new EventEmitter();
@@ -2566,6 +2586,10 @@ export class SpellListSettingsDialog {
 
   onTranslateClick() {
     this.onTranslate.emit();
+  }
+
+  onGrittyClick() {
+    this.onGritty.emit();
   }
 
   onSortClick() {

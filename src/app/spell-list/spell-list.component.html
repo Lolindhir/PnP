@@ -1058,12 +1058,14 @@
             </div>
                  
             <!-- show duration -->
-            <div *ngIf="settings.showDuration" class="spell-expansion-properties" style="width: 150px;">
-              <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
-                matTooltipShowDelay="{{tooltipDelay}}">
-                <img class="image" src={{images.spellConcentration}}>
-              </span>
-              {{spell.durationDisplayList}}
+            <div *ngIf="settings.showDuration">
+              <div *ngIf="showColumnFlex" class="spell-expansion-properties" style="width: 150px;">
+                <span *ngIf="spell.concentration" matTooltip="{{spell.concentrationTooltip}}"
+                  matTooltipShowDelay="{{tooltipDelay}}">
+                  <img class="image" src={{images.spellConcentration}}>
+                </span>
+                {{spell.getDurationForList()}}
+              </div>             
             </div>             
               
               

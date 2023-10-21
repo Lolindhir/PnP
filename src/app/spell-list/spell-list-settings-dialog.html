@@ -47,6 +47,15 @@
         </div>
         <div class="small-top-gap"></div>        
         <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">fitness_center</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.useGrittyRealism" (ngModelChange)="onGrittyClick()" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="dialog-description">show gritty realism durations</div>
+        </div>
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
             <mat-icon color="primary" class="dialog-icon">shuffle</mat-icon>
             <div class="dialog-toggle">
                 <mat-slide-toggle [(ngModel)]="data.showRandomControls" (ngModelChange)="onRandomClick()" color="primary">
