@@ -1,4 +1,5 @@
-import { Spell } from "@models/spell.model";
+import { Injectable } from '@angular/core';
+import { Spell, RawSpell } from "@models/spell.model";
 import { SpellSource } from "@models/spell-source.model";
 import { SpellFilter, SpellFilterType, SpellFilterGroup } from "@models/spell-filter.model";
 import { SpellProperties } from "@models/spell-properties.model";
@@ -6,7 +7,32 @@ import { SpellRange } from "@models/spell-range.model";
 import { ArrayUtilities } from "@utilities/array.utilities";
 import { SpellClass } from "@models/spell-class.model";
 
+//import data
+import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
+import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
+
+
+@Injectable({
+  providedIn: 'root'
+})
 export class SpellService {  
+
+  allSpells: Spell[] = new Array();
+  spellProperties: SpellProperties = spellPropertiesData;
+
+  constructor(){
+
+    var rawSpells: RawSpell[] = spellsData;
+    rawSpells.forEach(rawSpell => {      
+      //only allowed spells
+      if(!rawSpell.allowed){
+        return;
+      }
+      //create spell
+      this.allSpells.push(new Spell(rawSpell, this.spellProperties))
+    });
+
+  }
 
   public static filterSpells(list: Spell[], nameFilter: string, filters: SpellFilter[], impliciteFilters: SpellFilter[]) : Spell[] {
     
@@ -25,386 +51,386 @@ export class SpellService {
     return returnList;
   }
 
-  public static getLevelFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getLevelFilterOptions(): SpellFilter[] {  
 
     var levelFilterOptions: SpellFilter[] = new Array();
     for(var i = -1; i <= 9; i++){
-      levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i, properties));
+      levelFilterOptions.push(new SpellFilter(SpellFilterType.Level, i, this.spellProperties));
     }
     return levelFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSchoolFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getSchoolFilterOptions(): SpellFilter[] {
     
     var schoolFilterOptions: SpellFilter[] = new Array();
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Abjuration', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Conjuration', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Divination', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Enchantment', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Evocation', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Illusion', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Necromancy', properties));
-    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Transmutation', properties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Abjuration',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Conjuration',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Divination',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Enchantment',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Evocation',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Illusion',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Necromancy',this.spellProperties));
+    schoolFilterOptions.push(new SpellFilter(SpellFilterType.School, 'Transmutation',this.spellProperties));
     return schoolFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getClassFilterOptions(): SpellFilter[] {  
 
     var classFilterOptions: SpellFilter[] = new Array();
-    properties.allowedClasses.forEach( spellClass => {
-      classFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellClass, false, true), properties));
+   this.spellProperties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellClass, false, true),this.spellProperties));
     })
     return classFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSingleClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getSingleClassFilterOptions(): SpellFilter[] {  
 
     var classFilterOptions: SpellFilter[] = new Array();
-    properties.allowedClasses.forEach( spellClass => {
-      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassSingle, new SpellClass(spellClass, false, true), properties));
+   this.spellProperties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassSingle, new SpellClass(spellClass, false, true),this.spellProperties));
     })
     return classFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getMustClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getMustClassFilterOptions(): SpellFilter[] {  
 
     var classFilterOptions: SpellFilter[] = new Array();
-    properties.allowedClasses.forEach( spellClass => {
-      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassMust, new SpellClass(spellClass, false, true), properties));
+   this.spellProperties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassMust, new SpellClass(spellClass, false, true),this.spellProperties));
     })
     return classFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getNotClassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getNotClassFilterOptions(): SpellFilter[] {  
 
     var classFilterOptions: SpellFilter[] = new Array();
-    properties.allowedClasses.forEach( spellClass => {
-      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassNot, new SpellClass(spellClass, false, true), properties));
+   this.spellProperties.allowedClasses.forEach( spellClass => {
+      classFilterOptions.push(new SpellFilter(SpellFilterType.ClassNot, new SpellClass(spellClass, false, true),this.spellProperties));
     })
     return classFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSubclassFilterOptions(properties: SpellProperties): SpellFilter[] {  
+  public getSubclassFilterOptions(): SpellFilter[] {  
 
     var subclassFilterOptions: SpellFilter[] = new Array();
-    properties.allowedSubclasses.forEach( spellSubclass => {
-      subclassFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellSubclass, true, true), properties));
+   this.spellProperties.allowedSubclasses.forEach( spellSubclass => {
+      subclassFilterOptions.push(new SpellFilter(SpellFilterType.Class, new SpellClass(spellSubclass, true, true),this.spellProperties));
     })
     return subclassFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getDamageTypeFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getDamageTypeFilterOptions(): SpellFilter[] {
     
     var damageFilterOptions: SpellFilter[] = new Array();
-    properties.damageTypes.forEach( damageType => {
-      damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, damageType, properties))
+   this.spellProperties.damageTypes.forEach( damageType => {
+      damageFilterOptions.push(new SpellFilter(SpellFilterType.DamageType, damageType,this.spellProperties))
     })
     return damageFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getConditionFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getConditionFilterOptions(): SpellFilter[] {
     
     var conditionFilterOptions: SpellFilter[] = new Array();
-    properties.conditions.forEach( condition => {
-      conditionFilterOptions.push(new SpellFilter(SpellFilterType.Condition, condition, properties))
+   this.spellProperties.conditions.forEach( condition => {
+      conditionFilterOptions.push(new SpellFilter(SpellFilterType.Condition, condition,this.spellProperties))
     })
     return conditionFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getSaveFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getSaveFilterOptions(): SpellFilter[] {
     
     var saveFilterOptions: SpellFilter[] = new Array();
-    properties.saves.forEach( save => {
-      saveFilterOptions.push(new SpellFilter(SpellFilterType.Save, save, properties))
+   this.spellProperties.saves.forEach( save => {
+      saveFilterOptions.push(new SpellFilter(SpellFilterType.Save, save,this.spellProperties))
     })
     return saveFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getAttackTypeFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getAttackTypeFilterOptions(): SpellFilter[] {
     
     var attackTypeFilterOptions: SpellFilter[] = new Array();
-    properties.attackTypes.forEach( attackType => {
+   this.spellProperties.attackTypes.forEach( attackType => {
       if(attackType != 'Ability Check'){
-        attackTypeFilterOptions.push(new SpellFilter(SpellFilterType.AttackType, attackType, properties))
+        attackTypeFilterOptions.push(new SpellFilter(SpellFilterType.AttackType, attackType,this.spellProperties))
       }
     })
     return attackTypeFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getAffectedTargetsFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getAffectedTargetsFilterOptions(): SpellFilter[] {
     
     var targetFilterOptions: SpellFilter[] = new Array();
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'None', properties))
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Self', properties))
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Allies', properties))
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Enemies', properties))
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Objects', properties))
-    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Spells', properties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'None',this.spellProperties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Self',this.spellProperties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Allies',this.spellProperties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Enemies',this.spellProperties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Objects',this.spellProperties))
+    targetFilterOptions.push(new SpellFilter(SpellFilterType.AffectedTargets, 'Spells',this.spellProperties))
     return targetFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getNumberOfTargetsFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getNumberOfTargetsFilterOptions(): SpellFilter[] {
     
     var numberOfTargetsFilterOptions: SpellFilter[] = new Array();
-    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'None', properties))
-    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Single', properties))
-    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Multiple', properties))
-    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'MultipleUpcast', properties))
-    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'AoE', properties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'None',this.spellProperties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Single',this.spellProperties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'Multiple',this.spellProperties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'MultipleUpcast',this.spellProperties))
+    numberOfTargetsFilterOptions.push(new SpellFilter(SpellFilterType.NumberOfTargets, 'AoE',this.spellProperties))
     return numberOfTargetsFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getAttackSaveFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getAttackSaveFilterOptions(): SpellFilter[] {
     
     var attackSaveFilterOptions: SpellFilter[] = new Array();
-    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Attack', properties));
-    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Save', properties));
-    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Ability Check', properties));
-    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'None', properties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Attack',this.spellProperties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Save',this.spellProperties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'Ability Check',this.spellProperties));
+    attackSaveFilterOptions.push(new SpellFilter(SpellFilterType.AttackSave, 'None',this.spellProperties));
     return attackSaveFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getRangeFilterOptions(properties: SpellProperties): SpellFilter[] {    
-    return SpellRange.getCategoryFilterOptions(properties);
+  public getRangeFilterOptions(): SpellFilter[] {    
+    return SpellRange.getCategoryFilterOptions(this.spellProperties);
   }
 
-  public static getThemeFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getThemeFilterOptions(): SpellFilter[] {
     
     var themeFilterOptions: SpellFilter[] = new Array();
-    properties.themes.forEach( theme => {
-      themeFilterOptions.push(new SpellFilter(SpellFilterType.Theme, theme, properties))
+   this.spellProperties.themes.forEach( theme => {
+      themeFilterOptions.push(new SpellFilter(SpellFilterType.Theme, theme,this.spellProperties))
     })
     return themeFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getTagFilterOptions(): SpellFilter[] {
     
     var tagFilterOptions: SpellFilter[] = new Array();
-    properties.tags.forEach( tag => {
-      tagFilterOptions.push(new SpellFilter(SpellFilterType.Tag, tag, properties))
+   this.spellProperties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.Tag, tag,this.spellProperties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getSingleTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getSingleTagFilterOptions(): SpellFilter[] {
     
     var tagFilterOptions: SpellFilter[] = new Array();
-    properties.tags.forEach( tag => {
-      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagSingle, tag, properties))
+   this.spellProperties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagSingle, tag,this.spellProperties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getMustTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getMustTagFilterOptions(): SpellFilter[] {
     
     var tagFilterOptions: SpellFilter[] = new Array();
-    properties.tags.forEach( tag => {
-      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagMust, tag, properties))
+   this.spellProperties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagMust, tag,this.spellProperties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getNotTagFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getNotTagFilterOptions(): SpellFilter[] {
     
     var tagFilterOptions: SpellFilter[] = new Array();
-    properties.tags.forEach( tag => {
-      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagNot, tag, properties))
+   this.spellProperties.tags.forEach( tag => {
+      tagFilterOptions.push(new SpellFilter(SpellFilterType.TagNot, tag,this.spellProperties))
     })
     return tagFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getPresetFilterOptions(properties: SpellProperties, ignoreDate: boolean): SpellFilter[] {
+  public getPresetFilterOptions(ignoreDate: boolean): SpellFilter[] {
     
     //template options first (mostly PCs)
     var templateOptions: SpellFilter[] = new Array();
-    properties.presets.forEach( preset => {
+   this.spellProperties.presets.forEach( preset => {
       if(preset.template === true && (ignoreDate || Date.parse(preset.publishingDate) < Date.now())){
-        templateOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+        templateOptions.push(new SpellFilter(SpellFilterType.Preset, preset,this.spellProperties))
       }
     })
 
     //non-template second
     var nonTemplateOptions: SpellFilter[] = new Array();
-    properties.presets.forEach( preset => {
+   this.spellProperties.presets.forEach( preset => {
       if(preset.template === false && (ignoreDate || Date.parse(preset.publishingDate) < Date.now())){
-        nonTemplateOptions.push(new SpellFilter(SpellFilterType.Preset, preset, properties))
+        nonTemplateOptions.push(new SpellFilter(SpellFilterType.Preset, preset,this.spellProperties))
       }
     })
 
     return templateOptions.sort(SpellFilter.compare).concat(nonTemplateOptions.sort(SpellFilter.compare));
   }
 
-  public static getCastingTimeFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCastingTimeFilterOptions(): SpellFilter[] {
     
     var castingTimeFilterOptions: SpellFilter[] = new Array();
-    properties.castingTimes.forEach( castingTime => {
-      castingTimeFilterOptions.push(new SpellFilter(SpellFilterType.CastingTime, castingTime, properties));
+   this.spellProperties.castingTimes.forEach( castingTime => {
+      castingTimeFilterOptions.push(new SpellFilter(SpellFilterType.CastingTime, castingTime,this.spellProperties));
     })
     return castingTimeFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getDurationFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getDurationFilterOptions(): SpellFilter[] {
     
     var durationFilterOptions: SpellFilter[] = new Array();
-    properties.durations.forEach( duration => {
-      durationFilterOptions.push(new SpellFilter(SpellFilterType.Duration, duration, properties));
+   this.spellProperties.durations.forEach( duration => {
+      durationFilterOptions.push(new SpellFilter(SpellFilterType.Duration, duration,this.spellProperties));
     })
     return durationFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getConcentrationFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getConcentrationFilterOptions(): SpellFilter[] {
     
     var concentrationFilterOptions: SpellFilter[] = new Array();
-    concentrationFilterOptions.push(new SpellFilter(SpellFilterType.Concentration, true, properties));
-    concentrationFilterOptions.push(new SpellFilter(SpellFilterType.Concentration, false, properties));
+    concentrationFilterOptions.push(new SpellFilter(SpellFilterType.Concentration, true,this.spellProperties));
+    concentrationFilterOptions.push(new SpellFilter(SpellFilterType.Concentration, false,this.spellProperties));
     return concentrationFilterOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getRitualFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getRitualFilterOptions(): SpellFilter[] {
     
     var ritualFiltersOptions: SpellFilter[] = new Array();
-    ritualFiltersOptions.push(new SpellFilter(SpellFilterType.Ritual, true, properties));
-    ritualFiltersOptions.push(new SpellFilter(SpellFilterType.Ritual, false, properties));
+    ritualFiltersOptions.push(new SpellFilter(SpellFilterType.Ritual, true,this.spellProperties));
+    ritualFiltersOptions.push(new SpellFilter(SpellFilterType.Ritual, false,this.spellProperties));
     return ritualFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getTargetCasterFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getTargetCasterFilterOptions(): SpellFilter[] {
     
     var targetCasterFiltersOptions: SpellFilter[] = new Array();
-    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, true, properties));
-    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, false, properties));
+    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, true,this.spellProperties));
+    targetCasterFiltersOptions.push(new SpellFilter(SpellFilterType.TargetCaster, false,this.spellProperties));
     return targetCasterFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryKnownFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryKnownFilterOptions(): SpellFilter[] {
     
     var knownFiltersOptions: SpellFilter[] = new Array();
-    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, true, properties));
-    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, false, properties));
+    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, true,this.spellProperties));
+    knownFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryKnown, false,this.spellProperties));
     return knownFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryAlwaysFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryAlwaysFilterOptions(): SpellFilter[] {
     
     var alwaysFiltersOptions: SpellFilter[] = new Array();
-    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, true, properties));
-    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, false, properties));
+    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, true,this.spellProperties));
+    alwaysFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryAlways, false,this.spellProperties));
     return alwaysFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryLimitedFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryLimitedFilterOptions(): SpellFilter[] {
     
     var limitedFiltersOptions: SpellFilter[] = new Array();
-    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, true, properties));
-    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, false, properties));
+    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, true,this.spellProperties));
+    limitedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryLimited, false,this.spellProperties));
     return limitedFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryRitualCastFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryRitualCastFilterOptions(): SpellFilter[] {
     
     var ritualCastFiltersOptions: SpellFilter[] = new Array();
-    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, true, properties));
-    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, false, properties));
+    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, true,this.spellProperties));
+    ritualCastFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRitualCast, false,this.spellProperties));
     return ritualCastFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryPreparedFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryPreparedFilterOptions(): SpellFilter[] {
     
     var preparedFiltersOptions: SpellFilter[] = new Array();
-    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, true, properties));
-    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, false, properties));
+    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, true,this.spellProperties));
+    preparedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryPrepared, false,this.spellProperties));
     return preparedFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getCategoryRemovedFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getCategoryRemovedFilterOptions(): SpellFilter[] {
     
     var removedFiltersOptions: SpellFilter[] = new Array();
-    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, true, properties));
-    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, false, properties));
+    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, true,this.spellProperties));
+    removedFiltersOptions.push(new SpellFilter(SpellFilterType.CategoryRemoved, false,this.spellProperties));
     return removedFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getComponentVerbalFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getComponentVerbalFilterOptions(): SpellFilter[] {
     
     var verbalFiltersOptions: SpellFilter[] = new Array();
-    verbalFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentVerbal, true, properties));
-    verbalFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentVerbal, false, properties));
+    verbalFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentVerbal, true,this.spellProperties));
+    verbalFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentVerbal, false,this.spellProperties));
     return verbalFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getComponentSomaticFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getComponentSomaticFilterOptions(): SpellFilter[] {
     
     var somaticFiltersOptions: SpellFilter[] = new Array();
-    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, true, properties));
-    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, false, properties));
+    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, true,this.spellProperties));
+    somaticFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentSomatic, false,this.spellProperties));
     return somaticFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getComponentMaterialFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getComponentMaterialFilterOptions(): SpellFilter[] {
     
     var materialFiltersOptions: SpellFilter[] = new Array();
-    materialFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentMaterial, true, properties));
-    materialFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentMaterial, false, properties));
+    materialFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentMaterial, true,this.spellProperties));
+    materialFiltersOptions.push(new SpellFilter(SpellFilterType.ComponentMaterial, false,this.spellProperties));
     return materialFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getMaterialValueFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getMaterialValueFilterOptions(): SpellFilter[] {
     
     var valueFiltersOptions: SpellFilter[] = new Array();
-    valueFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialValue, true, properties));
-    valueFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialValue, false, properties));
+    valueFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialValue, true,this.spellProperties));
+    valueFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialValue, false,this.spellProperties));
     return valueFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getMaterialConsumedFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getMaterialConsumedFilterOptions(): SpellFilter[] {
     
     var consumedFiltersOptions: SpellFilter[] = new Array();
-    consumedFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialConsumed, true, properties));
-    consumedFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialConsumed, false, properties));
+    consumedFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialConsumed, true,this.spellProperties));
+    consumedFiltersOptions.push(new SpellFilter(SpellFilterType.MaterialConsumed, false,this.spellProperties));
     return consumedFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getUpcastableFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getUpcastableFilterOptions(): SpellFilter[] {
     
     var upcastableFiltersOptions: SpellFilter[] = new Array();
-    upcastableFiltersOptions.push(new SpellFilter(SpellFilterType.Upcastable, true, properties));
-    upcastableFiltersOptions.push(new SpellFilter(SpellFilterType.Upcastable, false, properties));
+    upcastableFiltersOptions.push(new SpellFilter(SpellFilterType.Upcastable, true,this.spellProperties));
+    upcastableFiltersOptions.push(new SpellFilter(SpellFilterType.Upcastable, false,this.spellProperties));
     return upcastableFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSpellModFilterOptions(properties: SpellProperties): SpellFilter[] {
+  public getSpellModFilterOptions(): SpellFilter[] {
     
     var spellModFiltersOptions: SpellFilter[] = new Array();
-    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, true, properties));
-    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, false, properties));
+    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, true,this.spellProperties));
+    spellModFiltersOptions.push(new SpellFilter(SpellFilterType.SpellMod, false,this.spellProperties));
     return spellModFiltersOptions.sort(SpellFilter.compare);
 
   }
 
-  public static getSourceFilterOptions(spells: Spell[], properties: SpellProperties): SpellFilter[] {
+  public getSourceFilterOptions(spells: Spell[]): SpellFilter[] {
     
     var differentSources: string[] = new Array();
     spells.forEach(spell => {
@@ -423,14 +449,14 @@ export class SpellService {
     var sourceFilterOptions: SpellFilter[] = new Array();
     differentSources.forEach(source => {
 
-      sourceFilterOptions.push(new SpellFilter(SpellFilterType.Source, source, properties));
+      sourceFilterOptions.push(new SpellFilter(SpellFilterType.Source, source, this.spellProperties));
 
     })
 
     return sourceFilterOptions.sort(SpellFilter.compare);
   }
 
-  public static getSourceGroupFilterOptions(sourceFilterOptions: SpellFilter[], properties: SpellProperties): SpellFilterGroup[] {
+  public getSourceGroupFilterOptions(sourceFilterOptions: SpellFilter[]): SpellFilterGroup[] {
 
     var sourceFilterGroupOptions: SpellFilterGroup[] = new Array();
 
@@ -454,7 +480,7 @@ export class SpellService {
     return sourceFilterGroupOptions;
   }
 
-  private static addFiltersByStringValue(relevantNames: string[], possibleFilters: SpellFilter[]): SpellFilter[]{
+  private addFiltersByStringValue(relevantNames: string[], possibleFilters: SpellFilter[]): SpellFilter[]{
 
     var returnList: SpellFilter[] = new Array();
 

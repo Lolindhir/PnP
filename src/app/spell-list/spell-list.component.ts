@@ -1,20 +1,17 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
-import { Spell, RawSpell, SpellListCategory } from '@models/spell.model';
-import { SpellPrintDirect, SpellPrintCsv, PrintSettings } from '@models/spell-print.model';
+import { Spell, SpellListCategory } from '@models/spell.model';
+import { PrintSettings } from '@models/spell-print.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
-import { SpellFilter, SpellFilterType, SpellFilterGroup } from '@models/spell-filter.model';
+import { SpellFilter, SpellFilterType } from '@models/spell-filter.model';
 import { ArrayUtilities } from '@utilities/array.utilities';
 import { SelectionModel } from '@angular/cdk/collections';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
-import { CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY_PROVIDER_FACTORY } from '@angular/cdk/overlay/overlay-directives';
+import { throwError } from 'rxjs';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Character, CharacterData, ModeOption } from '@shared/models/character.model';
 import { Preset } from '@shared/models/preset.model';
 import { SpellProperties } from '@shared/models/spell-properties.model';
@@ -24,12 +21,11 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { StorageService } from '@shared/services/storage.service';
 import { FileSaverService } from 'ngx-filesaver';
 import { Clipboard } from '@angular/cdk/clipboard';
+import { ColorPreset } from '@shared/models/color-preset.model';
 
-import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
-import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
 import * as imagePaths from '@shared/imagePaths';
 import * as globals from '@shared/globals';
-import { ColorPreset } from '@shared/models/color-preset.model';
+
 
 export interface SettingsData {
   showRandomControls: boolean;
@@ -50,6 +46,34 @@ export interface SettingsData {
   styleUrls: ['../app.component.scss', './spell-list.component.scss']
 })
 export class SpellListComponent implements OnInit, AfterViewInit {
+
+  //settings
+  settings: SettingsData = {
+    showRandomControls: false,
+    sortByName: false,
+    translateAll: false,
+    useGrittyRealism: false,
+    characterMode: false,
+    onlyValueMaterials: false,
+    showDuration: false,
+    dmMode: false,
+    showPrint: true
+  };
+  characterData: CharacterData = {
+    characterList: new Array(),
+    selectedCharacter: undefined,
+    presets: new Array(),
+    masterSpellList: new Array(),
+  };
+
+  //spell related stuff
+  spellProperties: SpellProperties = this.spellService.spellProperties;
+  spells: Spell[] = this.spellService.allSpells;
+  spellsFiltered: Spell[] = new Array();
+  spellsToShow: Spell[] = new Array();
+  numberOfRandomSpells: number = 0;
+  stringOfRandomSpells: string = 'Random spells';
+  private spellReloadAmount: number = 30;
 
   //filter stuff
   advancedFiltersPanelOpen: boolean = false;
@@ -97,77 +121,51 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersSpellMod: string[] = new Array();
 
   //all filter options
-  optionsLevel: SpellFilter[] = new Array();
-  optionsSchool: SpellFilter[] = new Array();
-  optionsSource: SpellFilter[] = new Array();
-  optionsSourceGroups: SpellFilterGroup[] = new Array();
-  optionsClass: SpellFilter[] = new Array();
-  optionsSingleClass: SpellFilter[] = new Array();
-  optionsMustClass: SpellFilter[] = new Array();
-  optionsNotClass: SpellFilter[] = new Array();
-  optionsSubclass: SpellFilter[] = new Array();
-  optionsCastingTime: SpellFilter[] = new Array();
-  optionsDuration: SpellFilter[] = new Array();
-  optionsRange: SpellFilter[] = new Array();
-  optionsDamageType: SpellFilter[] = new Array();
-  optionsCondition: SpellFilter[] = new Array();
-  optionsSave: SpellFilter[] = new Array();
-  optionsAttackType: SpellFilter[] = new Array();
-  optionsAttackSave: SpellFilter[] = new Array();
-  optionsAffectedTargets: SpellFilter[] = new Array();
-  optionsNumberOfTargets: SpellFilter[] = new Array();
-  optionsTheme: SpellFilter[] = new Array();
-  optionsTag: SpellFilter[] = new Array();
-  optionsSingleTag: SpellFilter[] = new Array();
-  optionsMustTag: SpellFilter[] = new Array();
-  optionsNotTag: SpellFilter[] = new Array();
-  optionsPreset: SpellFilter[] = new Array();
-  optionsConcentration: SpellFilter[] = new Array();
-  optionsRitual: SpellFilter[] = new Array();
-  optionsTargetCaster: SpellFilter[] = new Array();
-  optionsComponentV: SpellFilter[] = new Array();
-  optionsComponentS: SpellFilter[] = new Array();
-  optionsComponentM: SpellFilter[] = new Array();
-  optionsMaterialValue: SpellFilter[] = new Array();
-  optionsMaterialConsumed: SpellFilter[] = new Array();
-  optionsUpcastable: SpellFilter[] = new Array();
-  optionsCategoryKnown: SpellFilter[] = new Array();
-  optionsCategoryAlways: SpellFilter[] = new Array();
-  optionsCategoryLimited: SpellFilter[] = new Array();
-  optionsCategoryRitualCast: SpellFilter[] = new Array();
-  optionsCategoryPrepared: SpellFilter[] = new Array();
-  optionsCategoryRemoved: SpellFilter[] = new Array();
-  optionsSpellMod: SpellFilter[] = new Array();
-
-  //spell related stuff
-  spellProperties: SpellProperties = spellPropertiesData;
-  spells: Spell[] = new Array();
-  spellsFiltered: Spell[] = new Array();
-  spellsToShow: Spell[] = new Array();
-  numberOfRandomSpells: number = 0;
-  stringOfRandomSpells: string = 'Random spells';
-  private spellReloadAmount: number = 30;
+  optionsLevel: SpellFilter[] = this.spellService.getLevelFilterOptions();
+  optionsSchool = this.spellService.getSchoolFilterOptions();
+  optionsClass = this.spellService.getClassFilterOptions();
+  optionsSingleClass = this.spellService.getSingleClassFilterOptions();
+  optionsMustClass = this.spellService.getMustClassFilterOptions();
+  optionsNotClass = this.spellService.getNotClassFilterOptions();
+  optionsSubclass = this.spellService.getSubclassFilterOptions();
+  optionsSource = this.spellService.getSourceFilterOptions(this.spells);
+  optionsSourceGroups = this.spellService.getSourceGroupFilterOptions(this.optionsSource);
+  optionsCastingTime = this.spellService.getCastingTimeFilterOptions();
+  optionsDuration = this.spellService.getDurationFilterOptions();
+  optionsRange = this.spellService.getRangeFilterOptions();
+  optionsDamageType = this.spellService.getDamageTypeFilterOptions();
+  optionsCondition = this.spellService.getConditionFilterOptions();
+  optionsSave = this.spellService.getSaveFilterOptions();
+  optionsAttackType = this.spellService.getAttackTypeFilterOptions();
+  optionsAttackSave = this.spellService.getAttackSaveFilterOptions();
+  optionsAffectedTargets = this.spellService.getAffectedTargetsFilterOptions();
+  optionsNumberOfTargets = this.spellService.getNumberOfTargetsFilterOptions();
+  optionsTheme = this.spellService.getThemeFilterOptions();
+  optionsTag = this.spellService.getTagFilterOptions();
+  optionsSingleTag = this.spellService.getSingleTagFilterOptions();
+  optionsMustTag = this.spellService.getMustTagFilterOptions();
+  optionsNotTag = this.spellService.getNotTagFilterOptions();
+  optionsPreset = this.spellService.getPresetFilterOptions(this.settings.dmMode);
+  optionsConcentration = this.spellService.getConcentrationFilterOptions();
+  optionsRitual = this.spellService.getRitualFilterOptions();
+  optionsTargetCaster = this.spellService.getTargetCasterFilterOptions();
+  optionsComponentV = this.spellService.getComponentVerbalFilterOptions();
+  optionsComponentS = this.spellService.getComponentSomaticFilterOptions();
+  optionsComponentM = this.spellService.getComponentMaterialFilterOptions();
+  optionsMaterialValue = this.spellService.getMaterialValueFilterOptions();
+  optionsMaterialConsumed = this.spellService.getMaterialConsumedFilterOptions();
+  optionsUpcastable = this.spellService.getUpcastableFilterOptions();
+  optionsSpellMod = this.spellService.getSpellModFilterOptions();
+  optionsCategoryKnown = this.spellService.getCategoryKnownFilterOptions();
+  optionsCategoryAlways = this.spellService.getCategoryAlwaysFilterOptions();
+  optionsCategoryLimited = this.spellService.getCategoryLimitedFilterOptions();
+  optionsCategoryRitualCast = this.spellService.getCategoryRitualCastFilterOptions();
+  optionsCategoryPrepared = this.spellService.getCategoryPreparedFilterOptions();
+  optionsCategoryRemoved = this.spellService.getCategoryRemovedFilterOptions();
 
   //other global stuff
   images = imagePaths;
   disabled: boolean = false;
-  settings: SettingsData = {
-    showRandomControls: false,
-    sortByName: false,
-    translateAll: false,
-    useGrittyRealism: false,
-    characterMode: false,
-    onlyValueMaterials: false,
-    showDuration: false,
-    dmMode: false,
-    showPrint: true
-  };
-  characterData: CharacterData = {
-    characterList: new Array(),
-    selectedCharacter: undefined,
-    presets: new Array(),
-    masterSpellList: new Array(),
-  };
   highlightColor: string = '#E0FFFF'; //'lightgrey';
   highlightFilter: boolean = false;
   loading: boolean = true;
@@ -199,6 +197,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     private router: Router,
     private httpClient: HttpClient,
     private storageService: StorageService,
+    private spellService: SpellService,
     private clipboard: Clipboard,
     private viewPortScroller: ViewportScroller,
     private dialog: MatDialog,
@@ -220,21 +219,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.screenWidth = window.innerWidth;
     this.setSize();
 
-    //fill spells with raw spell data from json
-    //and build sort options
-    var rawSpells: RawSpell[] = spellsData;
-    rawSpells.forEach(rawSpell => {
-      
-      //only allowed spells
-      if(!rawSpell.allowed){
-        return;
-      }
-
-      //create spell
-      this.spells.push(new Spell(rawSpell, this.spellProperties))
-
-    });
-
     //sort spells
     this.sortMasterSpells();
 
@@ -246,50 +230,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;
-
-    //build options
-    this.optionsLevel = SpellService.getLevelFilterOptions(this.spellProperties);
-    this.optionsSchool = SpellService.getSchoolFilterOptions(this.spellProperties);
-    this.optionsClass = SpellService.getClassFilterOptions(this.spellProperties);
-    this.optionsSingleClass = SpellService.getSingleClassFilterOptions(this.spellProperties);
-    this.optionsMustClass = SpellService.getMustClassFilterOptions(this.spellProperties);
-    this.optionsNotClass = SpellService.getNotClassFilterOptions(this.spellProperties);
-    this.optionsSubclass = SpellService.getSubclassFilterOptions(this.spellProperties);
-    this.optionsSchool = SpellService.getSchoolFilterOptions(this.spellProperties);
-    this.optionsSource = SpellService.getSourceFilterOptions(this.spells, this.spellProperties);
-    this.optionsSourceGroups = SpellService.getSourceGroupFilterOptions(this.optionsSource, this.spellProperties);
-    this.optionsCastingTime = SpellService.getCastingTimeFilterOptions(this.spellProperties);
-    this.optionsDuration = SpellService.getDurationFilterOptions(this.spellProperties);
-    this.optionsRange = SpellService.getRangeFilterOptions(this.spellProperties);
-    this.optionsDamageType = SpellService.getDamageTypeFilterOptions(this.spellProperties);
-    this.optionsCondition = SpellService.getConditionFilterOptions(this.spellProperties);
-    this.optionsSave = SpellService.getSaveFilterOptions(this.spellProperties);
-    this.optionsAttackType = SpellService.getAttackTypeFilterOptions(this.spellProperties);
-    this.optionsAttackSave = SpellService.getAttackSaveFilterOptions(this.spellProperties);
-    this.optionsAffectedTargets = SpellService.getAffectedTargetsFilterOptions(this.spellProperties);
-    this.optionsNumberOfTargets = SpellService.getNumberOfTargetsFilterOptions(this.spellProperties);
-    this.optionsTheme = SpellService.getThemeFilterOptions(this.spellProperties);
-    this.optionsTag = SpellService.getTagFilterOptions(this.spellProperties);
-    this.optionsSingleTag = SpellService.getSingleTagFilterOptions(this.spellProperties);
-    this.optionsMustTag = SpellService.getMustTagFilterOptions(this.spellProperties);
-    this.optionsNotTag = SpellService.getNotTagFilterOptions(this.spellProperties);
-    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties, this.settings.dmMode);
-    this.optionsConcentration = SpellService.getConcentrationFilterOptions(this.spellProperties);
-    this.optionsRitual = SpellService.getRitualFilterOptions(this.spellProperties);
-    this.optionsTargetCaster = SpellService.getTargetCasterFilterOptions(this.spellProperties);
-    this.optionsComponentV = SpellService.getComponentVerbalFilterOptions(this.spellProperties);
-    this.optionsComponentS = SpellService.getComponentSomaticFilterOptions(this.spellProperties);
-    this.optionsComponentM = SpellService.getComponentMaterialFilterOptions(this.spellProperties);
-    this.optionsMaterialValue = SpellService.getMaterialValueFilterOptions(this.spellProperties);
-    this.optionsMaterialConsumed = SpellService.getMaterialConsumedFilterOptions(this.spellProperties);
-    this.optionsUpcastable = SpellService.getUpcastableFilterOptions(this.spellProperties);
-    this.optionsSpellMod = SpellService.getSpellModFilterOptions(this.spellProperties);
-    this.optionsCategoryKnown = SpellService.getCategoryKnownFilterOptions(this.spellProperties);
-    this.optionsCategoryAlways = SpellService.getCategoryAlwaysFilterOptions(this.spellProperties);
-    this.optionsCategoryLimited = SpellService.getCategoryLimitedFilterOptions(this.spellProperties);
-    this.optionsCategoryRitualCast = SpellService.getCategoryRitualCastFilterOptions(this.spellProperties);
-    this.optionsCategoryPrepared = SpellService.getCategoryPreparedFilterOptions(this.spellProperties);
-    this.optionsCategoryRemoved = SpellService.getCategoryRemovedFilterOptions(this.spellProperties);
 
     //load character list
     this.characterData.characterList = Character.loadCharacters(storageService);
@@ -604,7 +544,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   onDmModeChange(){
     this.saveSettings();
-    this.optionsPreset = SpellService.getPresetFilterOptions(this.spellProperties, this.settings.dmMode);
+    this.optionsPreset = this.spellService.getPresetFilterOptions(this.settings.dmMode);
   }
 
   onRandomNumberChanged(random: number) {
