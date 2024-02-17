@@ -7,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FileSaverModule } from 'ngx-filesaver';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule} from '@angular/material/input';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -32,6 +35,7 @@ import { MainBodyComponent } from '@components/main-body/main-body.component';
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
+import { ItemListComponent } from './item-list/item-list.component';
 import { StorageService } from '@services/storage.service';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -49,9 +53,11 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     SpellListInfoDialog,
     SpellPrintComponent,
     SpellFilterPipe,
+    ItemListComponent,
     HomeComponent,
     FeatListComponent,
     SnackBarComponent,
+    ItemListComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +69,9 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatFormFieldModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
     MatInputModule,
     MatDividerModule,
     MatIconModule,

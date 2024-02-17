@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SpellListComponent } from './spell-list/spell-list.component';
 import { SpellPrintComponent } from './spell-print/spell-print.component';
+import { ItemListComponent } from './item-list/item-list.component';
 import { FeatListComponent } from './feat-list/feat-list.component';
 
 
@@ -16,6 +17,8 @@ export const routes: Routes = [
   { path:'spells/print', component: SpellPrintComponent, pathMatch: 'full' },
   //spell list
   { path:'spells', component: SpellListComponent, pathMatch: 'full' },
+  //item list
+  { path:'items', component: ItemListComponent, pathMatch: 'full' },
   //homepage
   { path: '', redirectTo: 'spells', pathMatch: 'full'},
   //default
@@ -26,6 +29,7 @@ export const routingComponents = [
   HomeComponent,
   SpellListComponent,
   SpellPrintComponent,
+  ItemListComponent,
   FeatListComponent,
 ];
 

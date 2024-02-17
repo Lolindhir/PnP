@@ -1,7 +1,7 @@
 export class SpellSource{
 
     public static CategoryOfficialCore: string[] = ['Player', 'Xanathar', 'Tasha'];
-    public static CategoryOfficialOther: string[] = ['Official', 'Unearthed', 'Wildemount', 'Fizban', 'Strixhaven'];
+    public static CategoryOfficialOther: string[] = ['Official', 'Unearthed', 'Wildemount', 'Fizban', 'Strixhaven', 'Humblewood'];
 
     public static GetAbbreviation(source: string) : string{
         var sourceAbb : string = source;
@@ -30,6 +30,9 @@ export class SpellSource{
         }
         else if(source.includes('Strixhaven')){
             sourceAbb = 'Strixhaven'
+        }
+        else if(source.includes('Humblewood')){
+            sourceAbb = 'Humblewood'
         }
         else if(source.includes('Homebrew')){
             sourceAbb = 'Homebrew'
