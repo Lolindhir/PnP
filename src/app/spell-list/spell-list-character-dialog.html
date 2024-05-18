@@ -1,7 +1,7 @@
-<div class="dialog-frame" [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
+<div [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
 
   <div mat-dialog-title><mat-icon>manage_accounts</mat-icon> Character Management</div>
-  <div>
+  <div matDialogContent class="dialog-text">
       <div fxLayout="column">
           
           <div *ngIf="!addMode">
@@ -169,7 +169,7 @@
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.knownOnTop" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
                   </div>
-                  <div class="dialog-description">Add/Remove: known on top</div>
+                  <div class="dialog-description" style="min-width: max-content">Add/Remove: known on top</div>
                 </div>
 
                 <div class="small-top-gap"></div>

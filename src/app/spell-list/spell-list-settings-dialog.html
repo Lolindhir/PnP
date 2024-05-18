@@ -1,78 +1,76 @@
-<div class="dialog-frame" autofocus="dialog">
-    <div mat-dialog-title><mat-icon>settings</mat-icon> Settings</div>
-    <div>
-        <div fxLayout="column">
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">person</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.characterMode" (ngModelChange)="onCharacterClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">character mode</div>
+<div mat-dialog-title><mat-icon>settings</mat-icon> Settings</div>
+<div matDialogContent class="dialog-text">
+    <div fxLayout="column">
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">person</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.characterMode" (ngModelChange)="onCharacterClick()" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">translate</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.translateAll" (ngModelChange)="onTranslateClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">descriptions in german</div>
+            <div class="dialog-description">character mode</div>
+        </div>
+        <div class="small-top-gap"></div>
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">translate</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.translateAll" (ngModelChange)="onTranslateClick()" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">sort_by_alpha</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.sortByName" (ngModelChange)="onSortClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">sort by name before level</div>
-            </div>        
-            <div class="small-top-gap"></div>        
-            <div fxLayout="row">
-                <mat-icon svgIcon="coins"></mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.onlyValueMaterials" (ngModelChange)="onMaterialsClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">only materials with value</div>
+            <div class="dialog-description">descriptions in german</div>
+        </div>
+        <div class="small-top-gap"></div>
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">sort_by_alpha</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.sortByName" (ngModelChange)="onSortClick()" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>        
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">timer</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.showDuration" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">show duration instead of targets</div>
+            <div class="dialog-description">sort by name before level</div>
+        </div>        
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
+            <mat-icon svgIcon="coins"></mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.onlyValueMaterials" (ngModelChange)="onMaterialsClick()" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>        
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">fitness_center</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.useGrittyRealism" (ngModelChange)="onGrittyClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">show gritty realism durations</div>
+            <div class="dialog-description">only materials with value</div>
+        </div>
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">timer</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.showDuration" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>        
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">shuffle</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.showRandomControls" (ngModelChange)="onRandomClick()" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">show random spells option</div>
+            <div class="dialog-description">show duration instead of targets</div>
+        </div>
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">fitness_center</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.useGrittyRealism" (ngModelChange)="onGrittyClick()" color="primary">
+                </mat-slide-toggle>
             </div>
-            <div class="small-top-gap"></div>
-            <div fxLayout="row">
-                <mat-icon color="primary" class="dialog-icon">print</mat-icon>
-                <div class="dialog-toggle">
-                    <mat-slide-toggle [(ngModel)]="data.showPrint" color="primary">
-                    </mat-slide-toggle>
-                </div>
-                <div class="dialog-description">show print spells option</div>
+            <div class="dialog-description">show gritty realism durations</div>
+        </div>
+        <div class="small-top-gap"></div>        
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">shuffle</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.showRandomControls" (ngModelChange)="onRandomClick()" color="primary">
+                </mat-slide-toggle>
             </div>
+            <div class="dialog-description">show random spells option</div>
+        </div>
+        <div class="small-top-gap"></div>
+        <div fxLayout="row">
+            <mat-icon color="primary" class="dialog-icon">print</mat-icon>
+            <div class="dialog-toggle">
+                <mat-slide-toggle [(ngModel)]="data.showPrint" color="primary">
+                </mat-slide-toggle>
+            </div>
+            <div class="dialog-description">show print spells option</div>
         </div>
     </div>
 </div>
