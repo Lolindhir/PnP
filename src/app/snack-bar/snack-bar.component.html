@@ -1,10 +1,10 @@
 <div style="text-align: center">{{data.text}}</div>
 <div *ngIf="data.action || data.dismiss" sytle="width: 100%" fxLayout="row" fxLayoutAlign="center">
     <div *ngIf="data.action">
-        <button mat-button style="cursor: pointer" (click)="onActionClick()">{{data.actionText}}</button>
+        <button mat-button matSnackBarAction style="cursor: pointer" (click)="onActionClick()">{{data.actionText}}</button>
     </div>
     <div *ngIf="data.dismiss">
-        <button mat-button style="cursor: pointer" (click)="onDismissClick()">{{data.dismissText}}</button>
+        <button mat-button matSnackBarAction style="cursor: pointer" (click)="onDismissClick()">{{data.dismissText}}</button>
     </div>
 </div>
 

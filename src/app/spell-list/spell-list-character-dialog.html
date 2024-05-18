@@ -1,7 +1,7 @@
-<div [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
+<div class="dialog-frame" [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
 
   <div mat-dialog-title><mat-icon>manage_accounts</mat-icon> Character Management</div>
-  <div mat-dialog-content>
+  <div>
       <div fxLayout="column">
           
           <div *ngIf="!addMode">
@@ -21,15 +21,15 @@
                 <div fxLayout="column">
 
                   <div>
-                    <button color="primary" mat-icon-button (click)="addMode = true" style="max-height: 25px; width: 60px;">
-                      <mat-icon>person_add</mat-icon> New
+                    <button mat-button color="primary" (click)="addMode = true">
+                      <mat-icon class="normal-button-icon">person_add</mat-icon> New
                     </button>
                   </div>    
                   
                   <input type='file' accept="{{fileExtension}}" #file (change)="onImport($event)" hidden="true"> 
                   <div>
-                    <button color="primary" mat-icon-button (click)="file.click()" style="max-height: 25px; width: 70px;">
-                        <mat-icon>file_download</mat-icon> Import                    
+                    <button mat-button color="primary" (click)="file.click()">
+                        <mat-icon class="normal-button-icon">file_download</mat-icon> Import                    
                     </button>
                   </div>
 
@@ -50,12 +50,12 @@
 
                 <div *ngIf="!nameChangeMode" fxLayout="row">
                   <div>
-                    <mat-form-field appearance="legacy" style="width: 130px">
+                    <mat-form-field style="width: 150px">
                       <input [disabled]="true" matInput name="name" [(ngModel)]="data.selectedCharacter.name">
                     </mat-form-field>
                   </div>        
                   <div>
-                    <button color="primary" mat-button (click)="onNameChangeCalled()">
+                    <button mat-icon-button class="normal-icon-button" color="primary" (click)="onNameChangeCalled()">
                       <mat-icon>edit</mat-icon>
                     </button>
                   </div>         
@@ -63,17 +63,17 @@
 
                 <div *ngIf="nameChangeMode" fxLayout="row">
                   <div>
-                    <mat-form-field appearance="legacy" style="width: 130px">
+                    <mat-form-field style="width: 150px">
                       <input matInput name="name" [(ngModel)]="changedName">
                     </mat-form-field>
                   </div>        
                   <div>
-                    <button color="primary" mat-icon-button (click)="onNameChangeDone()">
+                    <button color="primary" mat-icon-button class="normal-icon-button" (click)="onNameChangeDone()">
                       <mat-icon>done</mat-icon>
                     </button>
                   </div>
                   <div>
-                    <button color="primary" mat-icon-button (click)="onNameChangeCanceled()">
+                    <button color="primary" mat-icon-button class="normal-icon-button" (click)="onNameChangeCanceled()">
                       <mat-icon>clear</mat-icon>
                     </button>
                   </div>       
@@ -87,7 +87,7 @@
                       </mat-slide-toggle>
                   </div>
                   <mat-icon color="primary" class="dialog-icon">bookmark_border</mat-icon>
-                  <div class="dialog-description character-cantrip">Cantrips</div>
+                  <div #knownCantrips class="dialog-description">Cantrips</div>
                   <input [disabled]="!data.selectedCharacter.knownCantripCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxCantripsKnown" (ngModelChange)="onDetailChange()">
                 </div> 
 
@@ -99,7 +99,7 @@
                       </mat-slide-toggle>
                   </div>
                   <mat-icon color="primary" class="dialog-icon">bookmark_border</mat-icon>
-                  <div class="dialog-description character-spell">Spells</div>
+                  <div class="dialog-description" [ngStyle]="{'width.px': knownCantrips.offsetWidth }">Spells</div>
                   <input [disabled]="!data.selectedCharacter.knownCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxKnown" (ngModelChange)="onDetailChange()">
                 </div>            
               
@@ -111,7 +111,7 @@
                       </mat-slide-toggle>
                   </div>
                   <mat-icon color="primary" class="dialog-icon">import_contacts</mat-icon>
-                  <div class="dialog-description character-large">Ritual Casts (Feat)</div>
+                  <div class="dialog-description">Ritual Casts (Feat)</div>
                 </div>
 
                 <div class="medium-top-gap"></div>
@@ -124,7 +124,7 @@
                       </mat-slide-toggle>
                   </div>
                   <mat-icon color="primary" class="dialog-icon">label_outline</mat-icon>
-                  <div class="dialog-description character-cantrip">Cantrips</div>
+                  <div #preparedCantrips class="dialog-description">Cantrips</div>
                   <input [disabled]="!data.selectedCharacter.preparedCantripCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxCantripsPrepared" (ngModelChange)="onDetailChange()">
                 </div>
 
@@ -136,7 +136,7 @@
                       </mat-slide-toggle>
                   </div>
                   <mat-icon color="primary" class="dialog-icon">label_outline</mat-icon>
-                  <div class="dialog-description character-spell">Spells</div>
+                  <div class="dialog-description" [ngStyle]="{'width.px': preparedCantrips.offsetWidth }">Spells</div>
                   <input [disabled]="!data.selectedCharacter.preparedCasting" class="character-maxInput" matInput type="number" [(ngModel)]="data.selectedCharacter.maxPrepared" (ngModelChange)="onDetailChange()">
                 </div>                
 
@@ -147,7 +147,7 @@
                       <mat-slide-toggle [disabled]="!data.selectedCharacter.preparedCasting" [(ngModel)]="data.selectedCharacter.ritualCastingUnprepared" (ngModelChange)="onCharacterChange()" color="primary">
                       </mat-slide-toggle>
                   </div>
-                  <div class="dialog-description character-large" [ngStyle]="{'color' : !data.selectedCharacter.preparedCasting ? 'grey' : 'black'}">Except Rituals</div>
+                  <span class="dialog-description" [ngStyle]="{'color' : !data.selectedCharacter.preparedCasting ? 'grey' : ''}">Except Rituals</span>
                 </div>  
 
                 <div class="medium-top-gap"></div>
@@ -162,9 +162,9 @@
                   <div class="dialog-description">Overview: show all spells</div>
                 </div>
 
-                <div class="medium-gap"></div>
+                <div class="small-top-gap"></div>
 
-                <div fxLayout="row" style="margin-top: -10px">
+                <div fxLayout="row">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.knownOnTop" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
@@ -172,9 +172,9 @@
                   <div class="dialog-description">Add/Remove: known on top</div>
                 </div>
 
-                <div class="medium-gap"></div>
+                <div class="small-top-gap"></div>
 
-                <div fxLayout="row" style="margin-top: -10px">
+                <div fxLayout="row">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.showRemoved" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
@@ -182,9 +182,9 @@
                   <div class="dialog-description">Add/Remove: show deleted</div>
                 </div>
 
-                <div class="medium-gap"></div>
+                <div class="small-top-gap"></div>
 
-                <div fxLayout="row" style="margin-top: -10px">
+                <div fxLayout="row">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.preparedOnTop" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
@@ -192,9 +192,9 @@
                   <div class="dialog-description">Prep: prepared on top</div>
                 </div> 
 
-                <div class="medium-gap"></div>
+                <div class="small-top-gap"></div>
 
-                <div fxLayout="row" style="margin-top: -10px">
+                <div fxLayout="row">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.dontShowUsed" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
@@ -202,9 +202,9 @@
                   <div class="dialog-description">Session: don't show used</div>
                 </div>
 
-                <div class="medium-gap"></div>
+                <div class="small-top-gap"></div>
 
-                <div fxLayout="row" style="margin-top: -10px">
+                <div fxLayout="row">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.ritualsAtBottom" (ngModelChange)="onSortChange()" color="primary">
                       </mat-slide-toggle>
@@ -230,6 +230,8 @@
                   <div class="dialog-description">Card Color</div>
                 </div>
 
+                <div class="small-top-gap"></div>
+
                 <div fxLayout="row" style="margin-top: 0px; margin-bottom: 3px">
                   <div class="dialog-toggle">
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.cardFontWhite" color="primary" (ngModelChange)="onCharacterChange()">
@@ -238,9 +240,11 @@
                   <div class="dialog-description">white highlighting</div>
                 </div>
 
+                <div class="small-top-gap"></div>
+
                 <div fxLayout="row nowrap" fxLayoutAlign="start center">
                   <div>e.g.: </div>
-                  <div style="margin-left: 5px; width: 100%; text-align: center; padding: 2px" [ngStyle]="{'background-color': data.selectedCharacter.cardColor, 'color': data.selectedCharacter.cardFontWhite ? 'white' : 'black'}">1st level Evocation</div>  
+                  <div style="margin-left: 5px; width: fit-content; text-align: center; padding: 2px; padding-left: 25px; padding-right: 25px" [ngStyle]="{'background-color': data.selectedCharacter.cardColor, 'color': data.selectedCharacter.cardFontWhite ? 'white' : 'black'}">1st level Evocation</div>  
                 </div>
                 
                 <div class="big-gap"></div>
@@ -268,7 +272,7 @@
           <div *ngIf="addMode">
 
               <div>
-                <mat-form-field appearance="legacy" style="font-size: larger; margin-left: 0.5rem;">
+                <mat-form-field style="font-size: larger; margin-left: 0.5rem;">
                   <mat-label>
                     Character Name
                   </mat-label>
@@ -291,13 +295,13 @@
 
                   <div>
                       <button color="primary" mat-button (click)="onCharacterCreated()">
-                        <mat-icon>add_circle</mat-icon> Create
+                        <mat-icon class="normal-button-icon">add_circle</mat-icon> Create
                       </button>
                   </div>
 
                   <div>
                       <button color="primary" mat-button (click)="addMode = false">
-                        <mat-icon>cancel</mat-icon> Cancel
+                        <mat-icon class="normal-button-icon">cancel</mat-icon> Cancel
                       </button>
                   </div>
 

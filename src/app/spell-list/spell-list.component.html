@@ -11,7 +11,9 @@
       </div>      
 
       <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined">
-        <button mat-icon-button color="primary" [matMenuTriggerFor]="menu" style="font-size: large"><mat-icon>menu</mat-icon> {{characterData.selectedCharacter.mode}}</button>
+        <button mat-button color="primary" [matMenuTriggerFor]="menu" style="font-size: large; white-space: nowrap">
+          <mat-icon class="normal-button-icon" style="margin-right: 3px !important">menu</mat-icon> {{characterData.selectedCharacter.mode}}
+        </button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item *ngFor="let mode of getModeOptions()" (click)="onModeChanged(mode)">{{mode}}</button>
         </mat-menu>
@@ -21,16 +23,16 @@
 
         <div *ngIf="settings.characterMode">
           <button color="primary" mat-button (click)="openCharacterDialog()" matTooltip="Character Management" matTooltipShowDelay="{{tooltipDelay}}"
-            style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+            style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
             [style.max-width.px]="characterData.selectedCharacter != undefined ? screenWidth - 220 : screenWidth - 100">
-            <mat-icon>manage_accounts</mat-icon>
+            <mat-icon class="normal-button-icon">manage_accounts</mat-icon>
             <span>
               {{characterData.selectedCharacter != undefined ? characterData.selectedCharacter.name : '&lt;choose character&gt;'}}
             </span>            
           </button>
         </div>      
   
-        <button color="primary" mat-icon-button (click)="openSettingsDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
+        <button mat-icon-button class="normal-icon-button" color="primary" (click)="openSettingsDialog()" matTooltip="Settings" matTooltipShowDelay="{{tooltipDelay}}">
           <mat-icon>settings</mat-icon>
         </button>
 
@@ -79,7 +81,7 @@
                 {{filter.displayTextList}}</mat-option>
             </mat-select>
           </mat-form-field>
-        </div>
+        </div>        
 
         <div fxLayout="column" class="filter-select">
           <div>Category</div>
@@ -614,38 +616,35 @@
 
     <div class="big-top-gap" style="margin-bottom: -1rem;" *ngIf="filters.length > 0">
 
-      <mat-chip-list>
-        <mat-chip class="spell-class-chip" *ngFor="let filter of filters" [selectable]=false [removable]=true
+      <mat-chip-grid>
+        <mat-chip-option *ngFor="let filter of filters" [selectable]=false [removable]=true
           (removed)="onFilterRemoved(filter)" [matTooltip]="filter.tooltip">
-          {{filter.displayText}}
+          <span class="chip-text">{{filter.displayText}}</span>
           <mat-icon matChipRemove>cancel</mat-icon>
-        </mat-chip>
-      </mat-chip-list>
+        </mat-chip-option>
+      </mat-chip-grid>
 
-      <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon>filter_alt_off</mat-icon></button>
+      <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
 
     </div>    
         
 
-    <div fxLayout="row wrap" fxLayoutAlign="left center" class="big-top-gap">
+    <div fxLayout="row wrap" fxLayoutAlign="left center" class="big-top-gap" style="margin-bottom: 5px">
 
       <div fxLayout="row" fxLayoutAlign="left center" style="width: 225px; margin-right: 1rem;">
 
         <div>
-          <mat-form-field appearance="legacy" style="width: 160px; font-size: larger; margin-left: 0.5rem;">
+          <mat-form-field appearance="outline" subscriptSizing="dynamic" style="width: 210px; font-size: larger; margin-left: 3px; letter-spacing: normal">
             <mat-label>
               <mat-icon>search</mat-icon>
               <!-- Filter by Name -->
             </mat-label>
             <input matInput name="name" [(ngModel)]="filterName" (keyup)="onChange()">
+            <button mat-icon-button class="normal-icon-button" style="margin-right: 5px" *ngIf="filterName.length > 0" color="primary" matSuffix (click)="onNameFilterCleared()">
+              <mat-icon>clear</mat-icon>
+            </button>
           </mat-form-field>
-        </div>
-
-        <div *ngIf="filterName.length > 0">
-          <button color="primary" mat-button (click)="onNameFilterCleared()">
-            <mat-icon>clear</mat-icon>
-          </button>
-        </div>
+        </div>          
 
       </div>
 
@@ -670,7 +669,7 @@
 
         <div *ngIf="numberOfRandomSpells > 0">
           <button color="primary" mat-button (click)="onRandomNumberChanged(numberOfRandomSpells)">
-            <mat-icon>autorenew</mat-icon>
+            <mat-icon class="normal-button-icon">autorenew</mat-icon>
           </button>
         </div>
 
@@ -683,6 +682,8 @@
 
     </div>
 
+    <div class="big-top-gap"></div>
+
     <div *ngIf="settings.characterMode && characterData.selectedCharacter != undefined"> 
   
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove && filters.length > 0"> 
@@ -690,7 +691,7 @@
         <div fxLayout="row wrap" fxLayoutAlign="start">
           <div>
             <button color="primary" [disabled]="disableButtonAddFiltered()" mat-button (click)="onAddAll()" matTooltip="Add all filtered to known spells" matTooltipShowDelay="{{tooltipDelay}}">
-              <mat-icon>add_circle</mat-icon>
+              <mat-icon class="normal-button-icon">add_circle</mat-icon>
               <span>
                 {{removedInsteadOfKnown ? "Restore all deleted" : "Add all to known"}}
               </span>
@@ -699,7 +700,7 @@
     
           <div>
             <button color="primary" [disabled]="disableButtonRemoveFiltered()" mat-button (click)="onRemoveAll()" matTooltip="Remove all filtered from known spells" matTooltipShowDelay="{{tooltipDelay}}">
-              <mat-icon>remove_circle</mat-icon>
+              <mat-icon class="normal-button-icon">remove_circle</mat-icon>
               <span>
                 {{removedInsteadOfKnown ? "Delete all" : "Remove all from known"}}
               </span>
@@ -711,7 +712,7 @@
           <div style="display:flex; align-items:center">
             {{removedInsteadOfKnown ? "switch to known:" : "switch to deleted:"}}
           </div>
-          <button color="primary" mat-icon-button (click)="removedInsteadOfKnown = !removedInsteadOfKnown">
+          <button color="primary" mat-icon-button class="normal-icon-button" (click)="removedInsteadOfKnown = !removedInsteadOfKnown">
             <mat-icon *ngIf="removedInsteadOfKnown">bookmark</mat-icon>
             <mat-icon *ngIf="!removedInsteadOfKnown">delete</mat-icon>
           </button>          
@@ -726,7 +727,7 @@
             <span>
               Refresh
             </span>
-            <mat-icon>repeat_one</mat-icon>
+            <mat-icon class="normal-button-icon">repeat_one</mat-icon>
             <span>
               ({{characterData.selectedCharacter.usedSpells.length}})
             </span>
@@ -743,63 +744,73 @@
 
       <ng-template #IconExplanation>
         <div style="margin-left: auto">
-          <button color="primary" mat-icon-button (click)="openInfoDialog()" matTooltip="Icon explanation" matTooltipShowDelay="{{tooltipDelay}}">
+          <button color="primary" mat-icon-button class="normal-icon-button" (click)="openInfoDialog()" matTooltip="Icon explanation" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>help</mat-icon>
           </button>
         </div>
       </ng-template>
   
       <ng-template #IconAlways>
-        <div *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0" [style.width.px]="totalWidth(characterData.selectedCharacter.alwaysSpells.length.toString())" [ngStyle]="totalStyle(SpellFilterType.CategoryAlways)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryAlways)" matTooltip="filter always known" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon color="primary">star</mat-icon>{{characterData.selectedCharacter.alwaysSpells.length}}
-          </button>
-        </div>
+        <button mat-button *ngIf="characterData.selectedCharacter.alwaysSpells.length > 0"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryAlways)"
+        (click)="onTotalClick(SpellFilterType.CategoryAlways)"
+        matTooltip="filter always known" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" color="primary">star</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryAlways, false)">{{characterData.selectedCharacter.alwaysSpells.length}}</span>
+        </button>
       </ng-template>
   
       <ng-template #IconLimited>
-        <div *ngIf="characterData.selectedCharacter.limitedSpells.length > 0" [style.width.px]="totalWidth(characterData.selectedCharacter.limitedSpells.length.toString())" [ngStyle]="totalStyle(SpellFilterType.CategoryLimited)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryLimited)" matTooltip="filter limited use" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon color="primary">repeat_one_on</mat-icon>{{characterData.selectedCharacter.limitedSpells.length}}
-          </button>
-        </div>
+        <button mat-button *ngIf="characterData.selectedCharacter.limitedSpells.length > 0"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryLimited)"
+        (click)="onTotalClick(SpellFilterType.CategoryLimited)"
+        matTooltip="filter limited use" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" color="primary">repeat_one_on</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryLimited, false)">{{characterData.selectedCharacter.limitedSpells.length}}</span>
+        </button>
       </ng-template>
   
       <ng-template #IconRitual>
-        <div *ngIf="characterData.selectedCharacter.ritualSpells.length > 0" [style.width.px]="totalWidth(characterData.selectedCharacter.ritualSpells.length.toString())" [ngStyle]="totalStyle(SpellFilterType.CategoryRitualCast)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryRitualCast)" matTooltip="filter ritual casting" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon color="primary">menu_book</mat-icon> {{characterData.selectedCharacter.ritualSpells.length}}
-          </button>
-        </div>
+        <button mat-button *ngIf="characterData.selectedCharacter.ritualSpells.length > 0"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryRitualCast)"
+        (click)="onTotalClick(SpellFilterType.CategoryRitualCast)"
+        matTooltip="filter ritual casting" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" color="primary">menu_book</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryRitualCast, false)">{{characterData.selectedCharacter.ritualSpells.length}}</span>
+        </button>
       </ng-template>
 
       <ng-template #IconRemoved>
-        <div *ngIf="characterData.selectedCharacter.showRemoved && characterData.selectedCharacter.removedSpells.length > 0" [style.width.px]="totalWidth(characterData.selectedCharacter.removedSpells.length.toString())" [ngStyle]="totalStyle(SpellFilterType.CategoryRemoved)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryRemoved)" matTooltip="filter deleted" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon color="primary">delete</mat-icon> {{characterData.selectedCharacter.removedSpells.length}}
-          </button>
-        </div>
+        <button mat-button *ngIf="characterData.selectedCharacter.showRemoved && characterData.selectedCharacter.removedSpells.length > 0"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryRemoved)"
+        (click)="onTotalClick(SpellFilterType.CategoryRemoved)"
+        matTooltip="filter deleted" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" color="primary">delete</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryRemoved, false)">{{characterData.selectedCharacter.removedSpells.length}}</span>
+        </button>
       </ng-template>
 
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Overview" fxLayout="row wrap" fxLayoutAlign="start"> 
-  
-        <div *ngIf="showTotalKnown()" [style.width.px]="totalWidth(getTotalKnown())" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryKnown)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon  [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
-            <span [ngStyle]="{'color' : knownHasError() ? 'red' : 'black'}">{{getTotalKnown()}}</span>
-          </button>
-        </div>
+
+        <button mat-button *ngIf="showTotalKnown()"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)"
+        (click)="onTotalClick(SpellFilterType.CategoryKnown)"
+        matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : knownHasError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryKnown, knownHasError())">{{getTotalKnown()}}</span>
+        </button>
         
         <ng-template [ngTemplateOutlet]="IconAlways"></ng-template>   
         <ng-template [ngTemplateOutlet]="IconLimited"></ng-template>   
         <ng-template [ngTemplateOutlet]="IconRitual"></ng-template>                 
-        
-        <div *ngIf="showTotalPrepared()" [style.width.px]="totalWidth(getTotalPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon>
-            <span [ngStyle]="{'color' : preparedHasError() ? 'red' : 'black'}">{{getTotalPrepared()}}</span>
-          </button>
-        </div>        
+
+        <button mat-button *ngIf="showTotalPrepared()"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)"
+        (click)="onTotalClick(SpellFilterType.CategoryPrepared)"
+        matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : preparedHasError() ? 'red' : ''}" color="primary">label</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryPrepared, preparedHasError())">{{getTotalPrepared()}}</span>
+        </button>
   
         <ng-template [ngTemplateOutlet]="IconExplanation"></ng-template>   
 
@@ -807,19 +818,22 @@
 
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.AddRemove" fxLayout="row wrap" fxLayoutAlign="start">
 
-        <div *ngIf="showTotalKnown()" [style.width.px]="totalWidth(getCantripsKnown())" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryKnown)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
-            <span [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}">{{getCantripsKnown()}}</span>
-          </button>
-        </div>
+        <button mat-button *ngIf="showTotalKnown()"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)"
+        (click)="onTotalClick(SpellFilterType.CategoryKnown)"
+        matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : knownCantripsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryKnown, knownCantripsHaveError())">{{getCantripsKnown()}}</span>
+        </button>
 
-        <div *ngIf="showTotalKnown()" [style.width.px]="totalWidth(getSpellsKnown())" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryKnown)" matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
-            <span [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}">{{getSpellsKnown()}}</span>
-          </button>
-        </div>
+        <button mat-button *ngIf="showTotalKnown()"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryKnown)"
+        (click)="onTotalClick(SpellFilterType.CategoryKnown)"
+        matTooltip="filter known" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : knownSpellsHaveError() ? 'red' : ''}" color="primary">bookmark</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryKnown, knownSpellsHaveError())">{{getSpellsKnown()}}</span>
+        </button>
+
 
         <div fxLayout="row" fxLayoutAlign="start">
           <ng-template [ngTemplateOutlet]="IconAlways"></ng-template>   
@@ -834,30 +848,29 @@
 
       <div *ngIf="characterData.selectedCharacter.mode === ModeOption.Prep" fxLayout="row wrap" fxLayoutAlign="start">
 
-        <div *ngIf="characterData.selectedCharacter.preparedCantripCasting" [style.width.px]="totalWidth(getCantripsPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
-            <span [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}">{{getCantripsPrepared()}}</span>
-          </button>
-        </div>
+        <button mat-button *ngIf="characterData.selectedCharacter.preparedCantripCasting"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)"
+        (click)="onTotalClick(SpellFilterType.CategoryPrepared)"
+        matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : preparedCantripsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryPrepared, preparedCantripsHaveError())">{{getCantripsPrepared()}}</span>
+        </button>
+      
+        <button mat-button *ngIf="characterData.selectedCharacter.preparedCasting"
+        class="total" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)"
+        (click)="onTotalClick(SpellFilterType.CategoryPrepared)"
+        matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon class="normal-button-icon" [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
+          <span [ngStyle]="totalStyleText(SpellFilterType.CategoryPrepared, preparedSpellsHaveError())">{{getSpellsPrepared()}}</span>
+        </button>
 
-        <div *ngIf="characterData.selectedCharacter.preparedCasting" [style.width.px]="totalWidth(getSpellsPrepared())" [ngStyle]="totalStyle(SpellFilterType.CategoryPrepared)" fxLayout="row" fxLayoutAlign="start center" class="total">
-          <button mat-icon-button (click)="onTotalClick(SpellFilterType.CategoryPrepared)" matTooltip="filter prepared" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}" color="primary">label</mat-icon>
-            <span [ngStyle]="{'color' : preparedSpellsHaveError() ? 'red' : ''}">{{getSpellsPrepared()}}</span>
-          </button>
-        </div>
-
-        <div *ngIf="characterData.selectedCharacter.preparedCantripCasting || characterData.selectedCharacter.preparedCasting" fxLayout="row" fxLayoutAlign="start center">
-          <button mat-icon-button (click)="onUnprepareAll()" matTooltip="clear all prepared" matTooltipShowDelay="{{tooltipDelay}}">
-            <mat-icon color="primary">backspace</mat-icon>
-          </button>
-        </div>
+        <button *ngIf="characterData.selectedCharacter.preparedCantripCasting || characterData.selectedCharacter.preparedCasting" mat-icon-button class="normal-icon-button" (click)="onUnprepareAll()" matTooltip="clear all prepared" matTooltipShowDelay="{{tooltipDelay}}">
+          <mat-icon color="primary">backspace</mat-icon>
+        </button>
 
         <ng-template [ngTemplateOutlet]="IconExplanation"></ng-template>   
 
       </div>
-
 
     </div> 
     
@@ -1171,7 +1184,7 @@
                 <div *ngIf="showIconUsed(spell)">
                   <button color="primary" mat-button (click)="onUsed(spell)"
                     matTooltip="set the spell to used, you can't use it until the next refresh" matTooltipShowDelay="{{tooltipDelay}}">
-                    <mat-icon>pause_circle_filled</mat-icon> spell used for the day
+                    <mat-icon class="normal-button-icon">pause_circle_filled</mat-icon> spell used for the day
                   </button>
                 </div>                            
                 <!--known-->
@@ -1248,7 +1261,7 @@
               <div fxLayout="row" fxLayoutAlign="space-between center">
                 <div [style.max-width.px]="screenWidth - 140" class="source-style">&#8226; {{spell.source}} &#8226;</div>
                 <div>
-                  <button color="primary" mat-icon-button (click)="onTranslation(spell)">
+                  <button color="primary" mat-icon-button class="normal-icon-button" (click)="onTranslation(spell)">
                     <mat-icon>translate</mat-icon>
                   </button>
                 </div>              
@@ -1260,22 +1273,22 @@
 
             <div class="big-top-gap">
               <span class="spell-property-denotation">Classes:</span>
-              <mat-chip-list>
-                <mat-chip class="spell-class-chip" *ngFor="let spellClass of spell.classes">
-                  {{spellClass.name}}
+              <mat-chip-set>
+                <mat-chip *ngFor="let spellClass of spell.classes">
+                  <span class="chip-text">{{spellClass.name}}</span>
                 </mat-chip>
-              </mat-chip-list>
+              </mat-chip-set>
               <!-- <span class="spell-property-denotation">Classes:</span>
               <span class="spell-property-description">{{spell.classesDisplay}}</span> -->
             </div>
 
             <div class="medium-top-gap" *ngIf="spell.subclasses.length">
               <div class="spell-property-denotation">Subclasses:</div>
-              <mat-chip-list>
-                <mat-chip class="spell-class-chip" *ngFor="let spellSubclass of spell.subclasses" [selectable]=false>
-                  {{spellSubclass.name}}
+              <mat-chip-set>
+                <mat-chip *ngFor="let spellSubclass of spell.subclasses">
+                  <span class="chip-text">{{spellSubclass.name}}</span>
                 </mat-chip>
-              </mat-chip-list>
+              </mat-chip-set>
               <!-- <span class="spell-property-denotation">Subclasses:</span> -->
               <!-- <span class="spell-property-description">{{spell.subclassesDisplay}}</span> -->
             </div>
@@ -1288,12 +1301,12 @@
               </div>
 
               <div class="medium-top-gap">
-                <mat-chip-list>
-                  <mat-chip class="spell-tag-chip" *ngFor="let spellTag of spell.tags" selectable="false" selected
-                    [style.background]="spellTag.colorCode" [style.color]="spellTag.fontColor" [matTooltip]="spellTag.description">
-                    {{spellTag.name}}
+                <mat-chip-set>
+                  <mat-chip *ngFor="let spellTag of spell.tags"
+                    [style.background]="spellTag.colorCode" [matTooltip]="spellTag.description">
+                    <span class="chip-text-big" [style.color]="spellTag.fontColor">{{spellTag.name}}</span>
                   </mat-chip>
-                </mat-chip-list>
+                </mat-chip-set>
               </div>
 
             </div>   
@@ -1325,10 +1338,10 @@
         {{spellsToShow.length}}/{{spellsFiltered.length}}
         <span style="font-size: small;">{{spellsFiltered.length === 1 ? 'spell' : 'spells'}}</span>
         <div *ngIf="settings.showPrint">
-          <button color="primary" mat-icon-button (click)="onPrint()" matTooltip="Export to .csv for print" matTooltipShowDelay="{{tooltipDelay}}">
+          <button color="primary" mat-icon-button class="normal-icon-button" (click)="onPrint()" matTooltip="Export to .csv for print" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>print</mat-icon>
           </button>
-          <button color="primary" mat-icon-button (click)="onCopyToClipboard()" matTooltip="Copy spell names to clipboard" matTooltipShowDelay="{{tooltipDelay}}">
+          <button color="primary" mat-icon-button class="normal-icon-button" (click)="onCopyToClipboard()" matTooltip="Copy spell names to clipboard" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>content_copy</mat-icon>
           </button>
         </div>

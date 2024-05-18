@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pnp-homerules-wiki:build:production"
+              "buildTarget": "pnp-homerules-wiki:build:production"
             },
             "development": {
-              "browserTarget": "pnp-homerules-wiki:build:development"
+              "buildTarget": "pnp-homerules-wiki:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pnp-homerules-wiki:build"
+            "buildTarget": "pnp-homerules-wiki:build"
           }
         },
         "test": {
@@ -111,6 +111,5 @@
     "@schematics/angular:component": {
       "style": "scss"
     }
-  },
-  "defaultProject": "pnp-homerules-wiki"
+  }
 }

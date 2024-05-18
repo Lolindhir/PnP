@@ -1332,36 +1332,47 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     
   }
 
-  totalWidth(text: string): number{
+  //wird nicht mehr benötigt, da jetzt über mat-button abgebildet mit width: max-content
+  // totalWidth(text: string): number{
     
-    if(text.length === 0){
-      return 35;
-    }
-    if(text.length === 1){
-      return 40;
-    }
-    if(text.length === 2){
-      return 43;
-    }
-    if(text.length === 3){
-      return 50;
-    }
-    if(text.length <= 12){
-      return 40 + (text.length * 5);
-    }
-    return 35 + (text.length * 6);
-  }
+  //   if(text.length === 0){
+  //     return 35;
+  //   }
+  //   if(text.length === 1){
+  //     return 40;
+  //   }
+  //   if(text.length === 2){
+  //     return 43;
+  //   }
+  //   if(text.length === 3){
+  //     return 50;
+  //   }
+  //   if(text.length <= 12){
+  //     return 40 + (text.length * 5);
+  //   }
+  //   return 35 + (text.length * 6);
+  // }
 
   totalStyle(type: SpellFilterType): Object{
     if(this.filters.some( filter => filter.type === type && filter.value === true)){
       return {background: '#CCE5FF'};
     }
     if(this.filters.some( filter => filter.type === type && filter.value === false)){
-      return {background: '#FFCCCC', textDecoration: 'line-through'};
+      return {background: '#FFCCCC'};
     }
     return {background: 'white'};
-  }  
+  }
 
+  totalStyleText(type: SpellFilterType, colorRed: boolean): Object{
+    if(this.filters.some( filter => filter.type === type && filter.value === false)){
+      if(colorRed){ return {textDecoration: 'line-through',color: 'red'}}
+      else{ return {textDecoration: 'line-through',color: ''}}
+    }
+    else{
+      if(colorRed){return {textDecoration: '', color: 'red'}}
+    }
+    return {textDecoration: '', color: ''};
+  } 
 
   getTotalKnown(): string{
     return (this.getKnownCount(true, false) + this.getKnownCount(false, false)).toString();
@@ -2426,6 +2437,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       //width: '250px',
       //height: '300px',
       //disableClose: true,
+      autoFocus: 'dialog',
       data: this.settings,
     });
 
@@ -2461,6 +2473,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       //width: '250px',
       //height: '300px',
       //disableClose: true,
+      autoFocus: 'dialog',
       data: this.characterData,
     });
 
@@ -2499,7 +2512,7 @@ export class SpellListInfoDialog {
 @Component({
   selector: 'spell-list-settings-dialog',
   templateUrl: 'spell-list-settings-dialog.html',
-  styleUrls: ['./spell-list.component.scss']
+  styleUrls: ['../app.component.scss', './spell-list.component.scss']
 })
 export class SpellListSettingsDialog {
   
@@ -2549,7 +2562,7 @@ export class SpellListSettingsDialog {
 @Component({
   selector: 'spell-list-character-dialog',
   templateUrl: 'spell-list-character-dialog.html',
-  styleUrls: ['./spell-list.component.scss']
+  styleUrls: ['../app.component.scss', './spell-list.component.scss']
 })
 export class SpellListCharacterDialog {
   

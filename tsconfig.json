@@ -15,22 +15,35 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
+    "target": "ES2022",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
     ],
     "paths": {
-      "@components/*": ["./src/app/*"],
-      "@shared/*": ["./src/shared/*"],
-      "@models/*": ["./src/shared/models/*"],
-      "@services/*": ["./src/shared/services/*"],
-      "@pipes/*": ["./src/shared/pipes/*"],
-      "@utilities/*": ["./src/shared/utilities/*"],
+      "@components/*": [
+        "./src/app/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@models/*": [
+        "./src/shared/models/*"
+      ],
+      "@services/*": [
+        "./src/shared/services/*"
+      ],
+      "@pipes/*": [
+        "./src/shared/pipes/*"
+      ],
+      "@utilities/*": [
+        "./src/shared/utilities/*"
+      ]
     },
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

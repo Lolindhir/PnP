@@ -4,6 +4,49 @@
 	}
 }
 
+.mat-expansion-panel-header {
+	font-weight: normal;
+}
+
+.mat-mdc-button {
+	letter-spacing: normal;
+}
+
+.mat-mdc-option {
+	letter-spacing: normal;
+	font-size: 14px;
+	width: max-content;
+	white-space: nowrap;
+}
+
+.mat-mdc-dialog-title {
+	letter-spacing: normal;
+	padding: 0px;
+	margin-bottom: 20px;
+	height: 100%; //seems not to work, solution needed
+}
+
 .page {
 	padding: 0.5rem;
+}
+
+.normal-icon-button {
+	width: 40px !important;
+	height: 40px !important;
+	padding: 0px !important;
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+  
+	.mat-mdc-button-touch-target {
+	   width: 40px !important;
+	   height: 40px !important;
+	}
+}
+
+.normal-button-icon {
+	height: 24px !important;
+	width: 24px !important;
+	font-size: 24px !important;
+	margin: 0px !important;
 }

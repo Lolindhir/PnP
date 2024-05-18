@@ -122,7 +122,8 @@
 }
 
 .spell-expansion-name {
-  font-size: larger;
+  //font-size: larger; <-- vor Angular 16 Umstellung
+  font-size: 18px;
   font-weight: 415;
 }
 
@@ -165,10 +166,12 @@
 }
 
 .total {
-  margin-left: 3px;
-  margin-right: 3px;
-  padding-right: 3px;
-  border-radius: 30%;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  width: max-content !important;
+  min-width: 0px !important;
+  padding: 0px !important;
+  letter-spacing: normal;
 }
 
 .big-top-gap {
@@ -198,22 +201,15 @@
   margin-bottom: 0.25rem;
 }
 
-.spell-class-chip {
-  font-size: small;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  margin-top: 1rem;
+.chip-text {
+	font-size: small;
+	word-spacing: normal;
+  font-weight: 415;
 }
 
-.spell-tag-chip {
-  //font-weight: bold;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  margin-top: 1rem;
+.chip-text-big {
+	word-spacing: normal;
+  font-weight: 415;
 }
 
 .filter-selection-number {
@@ -230,13 +226,27 @@
 }
 
 .infobutton {
-  max-width: 30px;
-  max-height: 25px;
+  width: 30px !important;
+	height: 24px !important;
+	padding: 0px !important;
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+  
+	.mat-mdc-button-touch-target {
+	   width: 30px !important;
+	   height: 24px !important;
+	}
+}
+
+.dialog-frame {
+  padding: 24px;
+  word-spacing: normal;
 }
 
 .dialog-icon {
-  height: 1px;
-  //margin-right: 0.1rem;
+  //height: 1px;
+  margin-left: 0.1rem;
 }
 
 .dialog-toggle {
@@ -246,18 +256,6 @@
 
 .dialog-description {
   margin-left: 5px;
-}
-
-.character-spell {
-  width: 55px;
-}
-
-.character-cantrip {
-  width: 55px;
-}
-
-.character-large {
-  width: 155px;
 }
 
 .character-maxInput {
