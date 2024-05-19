@@ -217,15 +217,19 @@
                 <h4>Printing Options</h4>             
 
                 <div style="margin-top: -15px">
-                  <button mat-button [matMenuTriggerFor]="menu"><mat-icon color="primary">border_color</mat-icon> Choose color preset</button>
-                <mat-menu #menu="matMenu">
+                  <button mat-button [matMenuTriggerFor]="menu" color="primary">
+                    <mat-icon>border_color</mat-icon>
+                    Choose color preset
+                  </button>
+                  <mat-menu #menu="matMenu">
                     <button mat-menu-item *ngFor="let preset of colorPresets" (click)="onPresetChosen(preset)">{{preset.name}}</button>
-                </mat-menu>
+                  </mat-menu>
                 </div>                
 
                 <div fxLayout="row">
                   <input matInput type="color" [(ngModel)]="data.selectedCharacter.cardColor" (ngModelChange)="onCharacterChange()"
-                  style="height: 20px; width: 45px; background-color: white; padding: 0px"
+                  style="height: 20px; background-color: white; padding: 0px"
+                  [ngStyle]="{'width.px': highlightingToggle.offsetWidth + 10}"
                   matTooltip="{{data.selectedCharacter.cardColor}}" matTooltipShowDelay="1000">
                   <div class="dialog-description">Card Color</div>
                 </div>
@@ -233,7 +237,7 @@
                 <div class="small-top-gap"></div>
 
                 <div fxLayout="row" style="margin-top: 0px; margin-bottom: 3px">
-                  <div class="dialog-toggle">
+                  <div class="dialog-toggle" #highlightingToggle>
                       <mat-slide-toggle [(ngModel)]="data.selectedCharacter.cardFontWhite" color="primary" (ngModelChange)="onCharacterChange()">
                       </mat-slide-toggle>
                   </div>
