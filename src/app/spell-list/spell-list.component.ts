@@ -25,6 +25,7 @@ import { ColorPreset } from '@shared/models/color-preset.model';
 
 import * as imagePaths from '@shared/imagePaths';
 import * as globals from '@shared/globals';
+import { PreparedSpellsBlueprint } from '@shared/models/prepared-spells-blueprint.model';
 
 
 export interface SettingsData {
@@ -1487,22 +1488,20 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
     spell.prepared = !spell.prepared;
     if(spell.prepared){
+      this.characterData.selectedCharacter.addPreparedSpell(spell);
       if(spell.level === 0){
-        this.characterData.selectedCharacter.preparedCantrips.push(spell.name);
         this.showSpellListSnackBar(spell.name, 'prepared', this.getPreparationCount(true, false), this.getPreparationCount(true, true));
       }
       else{
-        this.characterData.selectedCharacter.preparedSpells.push(spell.name);
         this.showSpellListSnackBar(spell.name, 'prepared', this.getPreparationCount(false, false), this.getPreparationCount(false, true));
       }
     }
     else{
+      this.characterData.selectedCharacter.removedPreparedSpell(spell);
       if(spell.level === 0){
-        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedCantrips, spell.name);
         this.showSpellListSnackBar(spell.name, 'unprepared', this.getPreparationCount(true, false), this.getPreparationCount(true, true));
       }
       else{
-        ArrayUtilities.removeFromArray(this.characterData.selectedCharacter.preparedSpells, spell.name);
         this.showSpellListSnackBar(spell.name, 'unprepared', this.getPreparationCount(false, false), this.getPreparationCount(false, true));
       }      
     }
@@ -1513,6 +1512,77 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.sortMasterSpells();
     }
     this.onChange();
+  }
+
+  onApplyPreparationBlueprint(blueprint: PreparedSpellsBlueprint){
+       
+    //ask user
+    this.disabled = true;
+
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Unprepare existing spells before applying template?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {      
+      this.unprepareAll();
+      //close snackbar
+      snackBarRef.dismiss();      
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+    });
+
+    snackBarRef.afterDismissed().subscribe(() => {
+      
+      //re-enable clicking
+      this.disabled = false;
+
+      var char = this.characterData.selectedCharacter;
+      if(char === undefined || blueprint === undefined){
+        return;
+      }
+
+      var preparedCounter : number = 0;
+
+      for(var spellName of blueprint.preparedSpells){      
+        var spellToPrepare: Spell | undefined = this.spells.find(spell => spell.name === spellName);
+  
+        //also check if not always and so on?, see list creation for prepared modus
+        if(spellToPrepare != undefined && spellToPrepare.known && !spellToPrepare.always && !spellToPrepare.prepared){
+          spellToPrepare.prepared = true;
+          if(this.characterData.selectedCharacter?.addPreparedSpell(spellToPrepare)){
+            preparedCounter++;
+          }
+        }            
+      }
+
+      if(preparedCounter > 0){
+        char.save();
+
+        //if prepared on top, trigger sorting
+        if(char.preparedOnTop){
+          this.sortMasterSpells();
+        }
+        this.onChange();
+      }
+
+      var spellText: string = preparedCounter === 1 ? ' spell' : ' spells';
+      this.snackBar.openFromComponent(SnackBarComponent, {
+        duration: globals.snackBarDuration,
+        data: {text: preparedCounter + spellText  + ' prepared'}
+      });
+
+    });    
+
   }
 
   getPreparationCount(cantrip: boolean, max: boolean): number{
@@ -2060,34 +2130,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     snackBarRef.instance.onAction.subscribe(() => {
       
-      var char = this.characterData.selectedCharacter;
-      if(char === undefined){
-        return;
-      }
-
-      var spellCount: number = 0;
-
-      for(var spell of this.spells){
-        var spellPrepared: boolean = spell.prepared;
-        if(spellPrepared){
-          spellCount++;
-          if(spell.level === 0){
-            ArrayUtilities.removeFromArray(char.preparedCantrips, spell.name);
-            spell.prepared = false;
-          }
-          else{
-            ArrayUtilities.removeFromArray(char.preparedSpells, spell.name);
-            spell.prepared = false;
-          }
-        }
-      }
-      char.save();
-  
-      if(char.preparedOnTop){
-        this.sortMasterSpells();
-      }
-
-      this.onChange();
+      var spellCount: number = this.unprepareAll();
 
       //close snackbar
       snackBarRef.dismiss();
@@ -2106,6 +2149,39 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       this.disabled = false;
     });
 
+  }
+
+  unprepareAll() : number{
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined){
+      return 0;
+    }
+
+    var spellCount: number = 0;
+
+    for(var spell of this.spells){
+      var spellPrepared: boolean = spell.prepared;
+      if(spellPrepared){
+        spellCount++;
+        if(spell.level === 0){
+          ArrayUtilities.removeFromArray(char.preparedCantrips, spell.name);
+          spell.prepared = false;
+        }
+        else{
+          ArrayUtilities.removeFromArray(char.preparedSpells, spell.name);
+          spell.prepared = false;
+        }
+      }
+    }
+    char.save();
+
+    if(char.preparedOnTop){
+      this.sortMasterSpells();
+    }
+
+    this.onChange();
+
+    return spellCount;
   }
 
   onRefreshUsed(){
@@ -2498,6 +2574,32 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
+  openBlueprintDialog(): void {
+
+    const dialogRef = this.dialog.open(SpellListBlueprintDialog, {
+      //width: '250px',
+      //height: '300px',
+      //disableClose: true,
+      autoFocus: 'dialog',
+      data: this.characterData,
+    });
+  
+    dialogRef.componentInstance.onCharacterChanged.subscribe(() => {
+      
+      console.log('char save called');
+
+      //save selected char
+      if(this.characterData.selectedCharacter === undefined){
+        this.storageService.deleteLocal('SelectedCharacter');
+      }
+      else{
+        this.storageService.storeLocal('SelectedCharacter', String(this.characterData.selectedCharacter.id));
+      }
+  
+    });
+  
+  }
+
 }
 
 @Component({
@@ -2795,6 +2897,221 @@ export class SpellListCharacterDialog {
     }
 
     return false;
+  }
+
+}
+
+
+
+@Component({
+  selector: 'spell-list-blueprint-dialog',
+  templateUrl: 'spell-list-blueprint-dialog.html',
+  styleUrls: ['../app.component.scss', './spell-list.component.scss']
+})
+export class SpellListBlueprintDialog {
+  
+  addMode: boolean = false;
+  newName: string | undefined;
+  nameChangeMode: boolean = false;
+  changedName: string = "";
+  selectedBlueprint: PreparedSpellsBlueprint | undefined;
+  onCharacterChanged = new EventEmitter();
+  disabled: boolean = false;
+
+  constructor(
+    public dialogRef: MatDialogRef<SpellListBlueprintDialog>,
+    private snackBar: MatSnackBar,
+    @Inject(MAT_DIALOG_DATA) public data: CharacterData,
+  ) {}
+
+  onBlueprintCreated() {
+
+    if(this.newName != undefined && this.newName != '' && this.data.selectedCharacter != undefined){
+      
+      var char = this.data.selectedCharacter;
+
+      //create blueprint
+      var newBlueprint = new PreparedSpellsBlueprint(this.newName, char.preparedCantrips.concat(char.preparedSpells));
+
+      //add blueprint to character
+      char.preparedBlueprints.push(newBlueprint);
+
+      //save
+      char.save();
+
+      //select
+      this.selectedBlueprint = newBlueprint;
+      this.changedName = this.selectedBlueprint.name;
+
+      //reset options
+      this.newName = undefined;
+      this.addMode = false;
+
+      //trigger
+      this.onBlueprintChange();
+    }
+
+  }
+
+  onBlueprintDelete() {
+    
+    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+      return;
+    }
+
+    //stop the user from clicking outside the dialog and disable clicks inside the dialog (until snackbar is interacted with)
+    this.dialogRef.disableClose = true;
+    this.disabled = true;
+
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Delete permanently?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      if(this.data.selectedCharacter === undefined|| this.selectedBlueprint === undefined){
+        return;
+      }
+
+      ArrayUtilities.removeFromArray(this.data.selectedCharacter.preparedBlueprints, this.selectedBlueprint);
+      this.selectedBlueprint = undefined;
+
+      //trigger
+      this.onBlueprintChange();
+
+      //close snackbar
+      snackBarRef.dismiss();
+
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+  }
+
+  onBlueprintOverwrite() {
+    
+    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+      return;
+    }
+
+    //stop the user from clicking outside the dialog and disable clicks inside the dialog (until snackbar is interacted with)
+    this.dialogRef.disableClose = true;
+    this.disabled = true;
+
+    var snackBarRef = this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: -1,
+      data: {
+        text: 'Overwrite existing template?',
+        action: true,
+        actionText: 'Yes',
+        dismiss: true,
+        dismissText: 'No',
+      }
+    });
+
+    snackBarRef.instance.onAction.subscribe(() => {
+      
+      var char = this.data.selectedCharacter;
+      if(char === undefined|| this.selectedBlueprint === undefined){
+        return;
+      }
+
+      this.selectedBlueprint.preparedSpells = char.preparedCantrips.concat(char.preparedSpells);
+
+      //trigger
+      this.onBlueprintChange();
+
+      //close snackbar
+      snackBarRef.dismiss();
+
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+    snackBarRef.instance.onDismiss.subscribe(() => {
+      //close snackbar
+      snackBarRef.dismiss();
+      //re-enable dialog
+      this.dialogRef.disableClose = false;
+      this.disabled = false;
+    });
+
+  }
+
+  onBlueprintChange() {
+
+    //save character
+    this.data.selectedCharacter?.save();
+
+    //trigger save event
+    this.onCharacterChanged.emit();
+  }
+
+  onNameChangeCalled() {
+
+    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+      return;
+    }
+    this.nameChangeMode = true;
+    this.changedName = this.selectedBlueprint.name;
+
+  }
+
+  onNameChangeCanceled() {
+
+    this.nameChangeMode = false;
+    this.changedName = '';
+
+  }
+
+  onNameChangeDone() {
+
+    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined || this.changedName === ''){
+      return;
+    }
+
+    this.selectedBlueprint.name = this.changedName;
+
+    //trigger
+    this.onBlueprintChange();
+
+    //reset
+    this.onNameChangeCanceled();
+
+  }
+
+  showNameWarning(): boolean{
+    
+    var selectedChar = this.data.selectedCharacter;
+    if(selectedChar === undefined || this.selectedBlueprint === undefined){
+      return false;
+    }
+
+    var nameCounter = 0;
+    for(var blueprint of selectedChar.preparedBlueprints){
+      if(blueprint.name === this.selectedBlueprint.name){
+        nameCounter++;
+      }
+    }
+
+    return nameCounter > 1;
   }
 
 }

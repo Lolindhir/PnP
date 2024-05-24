@@ -148,7 +148,7 @@
                       </mat-slide-toggle>
                   </div>
                   <span class="dialog-description" [ngStyle]="{'color' : !data.selectedCharacter.preparedCasting ? 'grey' : ''}">Except Rituals</span>
-                </div>  
+                </div>                  
 
                 <div class="medium-top-gap"></div>
 
@@ -192,6 +192,16 @@
                   <div class="dialog-description">Prep: prepared on top</div>
                 </div> 
 
+                <div class="small-top-gap"></div>
+
+                <div fxLayout="row">
+                  <div class="dialog-toggle">
+                      <mat-slide-toggle [(ngModel)]="data.selectedCharacter.usePreparedBlueprints" (ngModelChange)="onSortChange()" color="primary">
+                      </mat-slide-toggle>
+                  </div>
+                  <div class="dialog-description">Prep: use templates</div>
+                </div> 
+                
                 <div class="small-top-gap"></div>
 
                 <div fxLayout="row">

@@ -1,0 +1,129 @@
+<div [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
+
+  <div mat-dialog-title><mat-icon>edit_note</mat-icon>Template Management</div>
+  
+  <div matDialogContent class="dialog-text">
+    <div fxLayout="column">
+        
+      <div *ngIf="!addMode">
+          
+        <div>
+          <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-select [(ngModel)]="selectedBlueprint">
+              <mat-option></mat-option>
+              <mat-option *ngFor="let blueprint of data.selectedCharacter?.preparedBlueprints" [value]="blueprint">
+                {{blueprint.name}}
+              </mat-option>
+          </mat-select>
+          </mat-form-field>
+        </div>
+
+
+        <div *ngIf="selectedBlueprint === undefined">
+          <div>
+            <button mat-button color="primary" (click)="addMode = true">
+              <mat-icon class="normal-button-icon">add</mat-icon> New Template
+            </button>
+          </div>
+        </div>                            
+
+  
+        <div *ngIf="selectedBlueprint != undefined">
+
+          <div><mat-divider></mat-divider></div>
+  
+          <div class="small-top-gap"></div>
+
+          <div *ngIf="showNameWarning()" style="color: orange" fxLayout="row" fxLayoutAlign="start center">
+            <div><mat-icon>warning</mat-icon></div>
+            <div>Duplicate name</div>
+          </div>
+
+          <div *ngIf="!nameChangeMode" fxLayout="row">            
+            <div>
+              <button color="primary" mat-button (click)="onNameChangeCalled()">
+                  <mat-icon class="normal-button-icon">edit</mat-icon> Edit Name
+              </button>
+            </div>
+          </div>
+
+          <div *ngIf="nameChangeMode" fxLayout="row">
+            <div>
+              <mat-form-field style="width: 150px">
+                <input matInput name="name" [(ngModel)]="changedName">
+              </mat-form-field>
+            </div>        
+            <div>
+              <button color="primary" mat-icon-button class="normal-icon-button" (click)="onNameChangeDone()">
+                <mat-icon>done</mat-icon>
+              </button>
+            </div>
+            <div>
+              <button color="primary" mat-icon-button class="normal-icon-button" (click)="onNameChangeCanceled()">
+                <mat-icon>clear</mat-icon>
+              </button>
+            </div>       
+          </div>                          
+
+          <div>
+            <button color="primary" mat-button (click)="onBlueprintOverwrite()">
+                <mat-icon class="normal-button-icon">content_paste_go</mat-icon> Overwrite Template
+            </button>
+          </div>
+
+          <div>
+              <button color="primary" mat-button (click)="onBlueprintDelete()">
+                  <mat-icon class="normal-button-icon">delete_forever</mat-icon> Delete Template
+              </button>
+          </div>
+
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title style="font-size: 15px">Template Spells</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <mat-list role="list">
+                <mat-list-item style="height: fit-content" role="listitem" *ngFor="let blueprintSpell of selectedBlueprint.preparedSpells">
+                  <span style="font-size: small">{{blueprintSpell}}</span>
+                </mat-list-item>
+              </mat-list>   
+            </mat-card-content>
+          </mat-card>          
+
+        </div>
+
+      </div>        
+
+      <div *ngIf="addMode">
+
+        <div>
+          <mat-form-field style="font-size: larger; margin-left: 0.5rem;">
+            <mat-label>
+              Template Name
+            </mat-label>
+            <input matInput name="name" [(ngModel)]="newName">
+          </mat-form-field>
+        </div>                       
+
+        <div fxLayout="row">
+
+            <div>
+                <button color="primary" mat-button (click)="onBlueprintCreated()">
+                  <mat-icon class="normal-button-icon">add_circle</mat-icon> Create
+                </button>
+            </div>
+
+            <div>
+                <button color="primary" mat-button (click)="addMode = false">
+                  <mat-icon class="normal-button-icon">cancel</mat-icon> Cancel
+                </button>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

@@ -27,12 +27,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTooltipModule } from '@angular/material/tooltip'; 
 import { MatDialogModule } from '@angular/material/dialog'; 
-import { MatTabsModule } from '@angular/material/tabs'; 
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
 import { MainBodyComponent } from '@components/main-body/main-body.component';
-import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
+import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListBlueprintDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
@@ -50,6 +52,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     SpellListComponent,
     SpellListSettingsDialog,
     SpellListCharacterDialog,
+    SpellListBlueprintDialog,
     SpellListInfoDialog,
     SpellPrintComponent,
     SpellFilterPipe,
@@ -88,6 +91,8 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     MatTooltipModule,
     MatDialogModule,
     MatTabsModule,
+    MatCardModule,
+    MatListModule,
     ScrollingModule,
     AppRoutingModule,
   ],

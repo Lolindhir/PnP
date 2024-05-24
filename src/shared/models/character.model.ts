@@ -1,4 +1,5 @@
 import { Spell } from "@models/spell.model";
+import { PreparedSpellsBlueprint } from "@models/prepared-spells-blueprint.model";
 import { Preset } from "@models/preset.model";
 import { ColorPreset } from "@models/color-preset.model";
 import { ArrayUtilities } from "@shared/utilities/array.utilities";
@@ -34,12 +35,14 @@ export interface Character {
     maxKnown: number,
     knownCantripCasting: boolean,
     maxCantripsKnown: number,
+    ritualCaster: boolean,
     preparedCasting: boolean,
     maxPrepared: number,
     preparedCantripCasting: boolean,
     maxCantripsPrepared: number,
     ritualCastingUnprepared: boolean,
-    ritualCaster: boolean,
+    usePreparedBlueprints: boolean,
+    preparedBlueprints: PreparedSpellsBlueprint[],
     mode: ModeOption,
     preparedOnTop: boolean,
     knownOnTop: boolean,
@@ -87,6 +90,8 @@ export class Character implements Character {
         this.maxCantripsPrepared = 0;
         this.ritualCastingUnprepared = false;
         this.ritualCaster = false;
+        this.preparedBlueprints = new Array();
+        this.usePreparedBlueprints = false;
         this.preparedOnTop = false;
         this.knownOnTop = false;
         this.mode = ModeOption.Overview;
@@ -123,6 +128,8 @@ export class Character implements Character {
             maxCantripsPrepared: this.maxCantripsPrepared,
             ritualCastingUnprepared: this.ritualCastingUnprepared,
             ritualCaster: this.ritualCaster,
+            preparedBlueprints: this.preparedBlueprints,
+            usePreparedBlueprints: this.usePreparedBlueprints,
             preparedOnTop: this.preparedOnTop,
             knownOnTop: this.knownOnTop,
             dontShowUsed: this.dontShowUsed,
@@ -171,6 +178,8 @@ export class Character implements Character {
         if(charRaw.maxCantripsPrepared != undefined){ char.maxCantripsPrepared = charRaw.maxCantripsPrepared; }
         if(charRaw.ritualCastingUnprepared != undefined){ char.ritualCastingUnprepared = charRaw.ritualCastingUnprepared; }
         if(charRaw.ritualCaster != undefined){ char.ritualCaster = charRaw.ritualCaster; }
+        if(charRaw.usePreparedBlueprints != undefined){ char.usePreparedBlueprints = charRaw.usePreparedBlueprints; }
+        if(charRaw.preparedBlueprints != undefined){ char.preparedBlueprints = charRaw.preparedBlueprints; }
         if(charRaw.preparedOnTop != undefined){ char.preparedOnTop = charRaw.preparedOnTop; }
         if(charRaw.knownOnTop != undefined){ char.knownOnTop = charRaw.knownOnTop; }
         if(charRaw.dontShowUsed != undefined){ char.dontShowUsed = charRaw.dontShowUsed; }
@@ -302,7 +311,39 @@ export class Character implements Character {
         characterList.sort(Character.compare);
         return characterList;
         
-    } 
+    }
+
+    public addPreparedSpell(spell: Spell) : boolean{
+        
+        var preparedCantripsBefore: number = this.preparedCantrips.length;
+        var preparedSpellsBefore: number = this.preparedSpells.length;
+
+        if(spell.level === 0){
+            this.preparedCantrips.push(spell.name);
+            return preparedCantripsBefore != this.preparedCantrips.length;
+        }
+        else{
+            this.preparedSpells.push(spell.name);
+            return preparedSpellsBefore != this.preparedSpells.length;
+        }
+
+    }
+
+    public removedPreparedSpell(spell: Spell) : boolean{
+
+        var preparedCantripsBefore: number = this.preparedCantrips.length;
+        var preparedSpellsBefore: number = this.preparedSpells.length;
+
+        if(spell.level === 0){
+            ArrayUtilities.removeFromArray(this.preparedCantrips, spell.name);
+            return preparedCantripsBefore != this.preparedCantrips.length;
+        }
+        else{
+            ArrayUtilities.removeFromArray(this.preparedSpells, spell.name);
+            return preparedSpellsBefore != this.preparedSpells.length;
+        } 
+ 
+    }
 
     private static compare(a: Character, b: Character) {
         if ( a.name < b.name ){
