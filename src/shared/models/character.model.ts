@@ -138,6 +138,8 @@ export class Character implements Character {
             allSpellsInOverview: this.allSpellsInOverview,
             cardColor: this.cardColor,
             cardFontWhite: this.cardFontWhite,
+            //mode is saved as of recently
+            mode: this.mode,
         };
     }
 
@@ -157,8 +159,7 @@ export class Character implements Character {
         var name: string = charRaw.name === undefined ? 'Unknown' : charRaw.name;
         var char = new Character(id, name, characterList, storageService);
 
-        //set values (if not undefined in raw)
-        //reminder: mode is not saved, so it is not set above
+        //set values (if not undefined in raw)        
         if(charRaw.knownSpells != undefined){ char.knownSpells = charRaw.knownSpells; }
         if(charRaw.knownCantrips != undefined){ char.knownCantrips = charRaw.knownCantrips; }
         if(charRaw.preparedSpells != undefined){ char.preparedSpells = charRaw.preparedSpells; }
@@ -188,6 +189,8 @@ export class Character implements Character {
         if(charRaw.allSpellsInOverview != undefined){ char.allSpellsInOverview = charRaw.allSpellsInOverview; }
         if(charRaw.cardColor != undefined){ char.cardColor = charRaw.cardColor; }
         if(charRaw.cardFontWhite != undefined){ char.cardFontWhite = charRaw.cardFontWhite; }
+        //reminder doesn't count anymore: mode is not saved, so it is not set above
+        if(charRaw.mode != undefined){ char.mode = charRaw.mode; }
 
         //return the build character
         return char;
