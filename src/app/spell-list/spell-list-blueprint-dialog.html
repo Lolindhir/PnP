@@ -11,8 +11,8 @@
           <mat-form-field appearance="fill" style="width: 100%;">
           <mat-select [(ngModel)]="selectedBlueprint">
               <mat-option></mat-option>
-              <mat-option *ngFor="let blueprint of data.selectedCharacter?.preparedBlueprints" [value]="blueprint">
-                {{blueprint.name}}
+              <mat-option *ngFor="let blueprint of data.char.selectedCharacter?.preparedBlueprints" [value]="blueprint">
+                {{blueprint.name}} ({{blueprint.preparedSpells.length}})
               </mat-option>
           </mat-select>
           </mat-form-field>
@@ -78,13 +78,21 @@
           </div>
 
           <mat-card>
-            <mat-card-header>
+            <!-- <mat-card-header>
               <mat-card-title style="font-size: 15px">Template Spells</mat-card-title>
-            </mat-card-header>
+            </mat-card-header> -->
             <mat-card-content>
               <mat-list role="list">
-                <mat-list-item style="height: fit-content" role="listitem" *ngFor="let blueprintSpell of selectedBlueprint.preparedSpells">
-                  <span style="font-size: small">{{blueprintSpell}}</span>
+                <mat-list-item role="listitem"
+                *ngFor="let blueprintSpell of selectedBlueprint.preparedSpells"
+                style="height: fit-content">                 
+                  <span style="font-size: small" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': ''}">
+                    <span style="font-size: smaller" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': 'grey'}">&lt;{{getSpellLevelString(blueprintSpell)}}&gt; </span>
+                    <span>{{blueprintSpell.name}}</span>
+                    <span style="font-size: smaller; font-style: italic; color: orangered" *ngIf="showSpellWarning(blueprintSpell).length > 0">
+                      ({{showSpellWarning(blueprintSpell)}})
+                    </span>
+                  </span>                
                 </mat-list-item>
               </mat-list>   
             </mat-card-content>

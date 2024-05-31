@@ -266,6 +266,9 @@ export class Character implements Character {
 
     public save(): void{
 
+        //sort prepared spells blueprints
+        this.preparedBlueprints.sort((a, b) => a.name.localeCompare(b.name));
+
         //write IDs of all chars
         this.writeIdList();
         

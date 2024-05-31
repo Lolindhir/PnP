@@ -25,7 +25,7 @@ import { ColorPreset } from '@shared/models/color-preset.model';
 
 import * as imagePaths from '@shared/imagePaths';
 import * as globals from '@shared/globals';
-import { PreparedSpellsBlueprint } from '@shared/models/prepared-spells-blueprint.model';
+import { PreparedSpellBlueprint, PreparedSpellsBlueprint } from '@shared/models/prepared-spells-blueprint.model';
 
 
 export interface SettingsData {
@@ -1515,7 +1515,13 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   onApplyPreparationBlueprint(blueprint: PreparedSpellsBlueprint){
-       
+
+    if(this.getCurrentPreparationCount() === 0){
+      //apply blueprint without asking the user (not necessary because zero spells are prepared)
+      this.doApplyPreparationBlueprint(blueprint);
+      return;
+    }
+
     //ask user
     this.disabled = true;
 
@@ -1528,7 +1534,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         dismiss: true,
         dismissText: 'No',
       }
-    });
+    });    
 
     snackBarRef.instance.onAction.subscribe(() => {      
       this.unprepareAll();
@@ -1546,43 +1552,70 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       //re-enable clicking
       this.disabled = false;
 
-      var char = this.characterData.selectedCharacter;
-      if(char === undefined || blueprint === undefined){
-        return;
-      }
+      //apply blueprint
+      this.doApplyPreparationBlueprint(blueprint);
 
-      var preparedCounter : number = 0;
+    });    
 
-      for(var spellName of blueprint.preparedSpells){      
-        var spellToPrepare: Spell | undefined = this.spells.find(spell => spell.name === spellName);
-  
-        //also check if not always and so on?, see list creation for prepared modus
-        if(spellToPrepare != undefined && spellToPrepare.known && !spellToPrepare.always && !spellToPrepare.prepared){
+  }
+
+  doApplyPreparationBlueprint(blueprint: PreparedSpellsBlueprint){
+
+    var preparedCounter: number = this.applyPreparationBlueprint(blueprint, false);    
+
+    var spellText: string = preparedCounter === 1 ? ' spell' : ' spells';
+    this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: globals.snackBarDuration,
+      data: {text: preparedCounter + spellText  + ' prepared'}
+    });
+
+  }
+
+  applyPreparationBlueprint(blueprint: PreparedSpellsBlueprint, dryRun: boolean): number {
+
+    var char = this.characterData.selectedCharacter;
+    if(char === undefined || blueprint === undefined){
+      return 0;
+    }
+
+    var preparedCounter : number = 0;
+
+    for(var blueprintSpell of blueprint.preparedSpells){      
+      var spellToPrepare: Spell | undefined = this.spells.find(spell => spell.name === blueprintSpell.name);
+
+      //also check if not always and so on?, see list creation for prepared modus
+      if(spellToPrepare != undefined && spellToPrepare.known && !spellToPrepare.always && !spellToPrepare.prepared){
+        
+        //dry run: only add to counter
+        if(dryRun){
+          preparedCounter++;
+        }
+        //real run
+        else{
           spellToPrepare.prepared = true;
           if(this.characterData.selectedCharacter?.addPreparedSpell(spellToPrepare)){
             preparedCounter++;
           }
-        }            
+        }        
+      }            
+    }
+
+    if(!dryRun && preparedCounter > 0){
+      char.save();
+
+      //if prepared on top, trigger sorting
+      if(char.preparedOnTop){
+        this.sortMasterSpells();
       }
+      this.onChange();
+    }
 
-      if(preparedCounter > 0){
-        char.save();
+    return preparedCounter;
 
-        //if prepared on top, trigger sorting
-        if(char.preparedOnTop){
-          this.sortMasterSpells();
-        }
-        this.onChange();
-      }
+  }
 
-      var spellText: string = preparedCounter === 1 ? ' spell' : ' spells';
-      this.snackBar.openFromComponent(SnackBarComponent, {
-        duration: globals.snackBarDuration,
-        data: {text: preparedCounter + spellText  + ' prepared'}
-      });
-
-    });    
-
+  getCurrentPreparationCount(): number{
+    return this.getPreparationCount(true, false) + this.getPreparationCount(false, false);
   }
 
   getPreparationCount(cantrip: boolean, max: boolean): number{
@@ -2581,7 +2614,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       //height: '300px',
       //disableClose: true,
       autoFocus: 'dialog',
-      data: this.characterData,
+      data: {char: this.characterData, masterSpells: this.spells}
     });
   
     dialogRef.componentInstance.onCharacterChanged.subscribe(() => {
@@ -2921,20 +2954,39 @@ export class SpellListBlueprintDialog {
   constructor(
     public dialogRef: MatDialogRef<SpellListBlueprintDialog>,
     private snackBar: MatSnackBar,
-    @Inject(MAT_DIALOG_DATA) public data: CharacterData,
+    @Inject(MAT_DIALOG_DATA) public data: {char: CharacterData, masterSpells: Spell[]},
   ) {}
+
+  createBlueprintList(): PreparedSpellBlueprint[]{
+    
+    var tempBlueprint: PreparedSpellBlueprint[] = new Array();
+
+    var char = this.data.char.selectedCharacter;
+    if(char === undefined){
+      return tempBlueprint;
+    }
+    
+    
+    for(var spell of this.data.masterSpells){
+      if(spell.prepared){
+        tempBlueprint.push({name: spell.name, level: spell.level});
+      }
+    }
+
+    return tempBlueprint;
+  }
 
   onBlueprintCreated() {
 
-    if(this.newName != undefined && this.newName != '' && this.data.selectedCharacter != undefined){
+    if(this.newName != undefined && this.newName != '' && this.data.char.selectedCharacter != undefined){
       
-      var char = this.data.selectedCharacter;
+      var char = this.data.char.selectedCharacter;
 
       //create blueprint
-      var newBlueprint = new PreparedSpellsBlueprint(this.newName, char.preparedCantrips.concat(char.preparedSpells));
+      var newBlueprint = new PreparedSpellsBlueprint(this.newName, this.createBlueprintList());
 
       //add blueprint to character
-      char.preparedBlueprints.push(newBlueprint);
+      char.preparedBlueprints.push(newBlueprint);      
 
       //save
       char.save();
@@ -2955,7 +3007,7 @@ export class SpellListBlueprintDialog {
 
   onBlueprintDelete() {
     
-    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+    if(this.data.char.selectedCharacter === undefined || this.selectedBlueprint === undefined){
       return;
     }
 
@@ -2976,11 +3028,11 @@ export class SpellListBlueprintDialog {
 
     snackBarRef.instance.onAction.subscribe(() => {
       
-      if(this.data.selectedCharacter === undefined|| this.selectedBlueprint === undefined){
+      if(this.data.char.selectedCharacter === undefined|| this.selectedBlueprint === undefined){
         return;
       }
 
-      ArrayUtilities.removeFromArray(this.data.selectedCharacter.preparedBlueprints, this.selectedBlueprint);
+      ArrayUtilities.removeFromArray(this.data.char.selectedCharacter.preparedBlueprints, this.selectedBlueprint);
       this.selectedBlueprint = undefined;
 
       //trigger
@@ -3006,7 +3058,7 @@ export class SpellListBlueprintDialog {
 
   onBlueprintOverwrite() {
     
-    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+    if(this.data.char.selectedCharacter === undefined || this.selectedBlueprint === undefined){
       return;
     }
 
@@ -3025,14 +3077,13 @@ export class SpellListBlueprintDialog {
       }
     });
 
-    snackBarRef.instance.onAction.subscribe(() => {
+    snackBarRef.instance.onAction.subscribe(() => {      
       
-      var char = this.data.selectedCharacter;
-      if(char === undefined|| this.selectedBlueprint === undefined){
+      if(this.selectedBlueprint === undefined){
         return;
       }
 
-      this.selectedBlueprint.preparedSpells = char.preparedCantrips.concat(char.preparedSpells);
+      this.selectedBlueprint.preparedSpells = this.createBlueprintList();
 
       //trigger
       this.onBlueprintChange();
@@ -3058,7 +3109,7 @@ export class SpellListBlueprintDialog {
   onBlueprintChange() {
 
     //save character
-    this.data.selectedCharacter?.save();
+    this.data.char.selectedCharacter?.save();
 
     //trigger save event
     this.onCharacterChanged.emit();
@@ -3066,7 +3117,7 @@ export class SpellListBlueprintDialog {
 
   onNameChangeCalled() {
 
-    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined){
+    if(this.data.char.selectedCharacter === undefined || this.selectedBlueprint === undefined){
       return;
     }
     this.nameChangeMode = true;
@@ -3083,7 +3134,7 @@ export class SpellListBlueprintDialog {
 
   onNameChangeDone() {
 
-    if(this.data.selectedCharacter === undefined || this.selectedBlueprint === undefined || this.changedName === ''){
+    if(this.data.char.selectedCharacter === undefined || this.selectedBlueprint === undefined || this.changedName === ''){
       return;
     }
 
@@ -3099,7 +3150,7 @@ export class SpellListBlueprintDialog {
 
   showNameWarning(): boolean{
     
-    var selectedChar = this.data.selectedCharacter;
+    var selectedChar = this.data.char.selectedCharacter;
     if(selectedChar === undefined || this.selectedBlueprint === undefined){
       return false;
     }
@@ -3112,6 +3163,41 @@ export class SpellListBlueprintDialog {
     }
 
     return nameCounter > 1;
+  }
+
+  showSpellWarning(spell: PreparedSpellBlueprint): string{
+
+    var selectedChar = this.data.char.selectedCharacter;
+    if(selectedChar === undefined || this.selectedBlueprint === undefined){
+      return '';
+    }    
+
+    if(selectedChar.knownCantrips.indexOf(spell.name) === -1 && selectedChar.knownSpells.indexOf(spell.name) === -1){
+      
+      if(selectedChar.alwaysSpells.indexOf(spell.name) > -1){
+        return 'always known';
+      }
+
+      return 'not known';
+    }
+
+    return '';
+  }
+
+  getSpellLevelString(spell: PreparedSpellBlueprint): string{
+    switch(spell.level) { 
+      case 0: { return 'Can'; }
+      case 1: { return '1st'; }
+      case 2: { return '2nd'; }
+      case 3: { return '3rd'; }
+      case 4: { return '4th'; }
+      case 5: { return '5th'; }
+      case 6: { return '6th'; }
+      case 7: { return '7th'; }
+      case 8: { return '8th'; }
+      case 9: { return '9th'; }
+      default: { return 'N.N.'; } 
+    }     
   }
 
 }
