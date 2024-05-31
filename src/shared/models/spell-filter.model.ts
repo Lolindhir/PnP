@@ -2,6 +2,7 @@ import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellRange, SpellRangeCategory } from "@models/spell-range.model";
 import { SpellTarget } from "@models/spell-target.model";
+import { StorageService } from "@shared/services/storage.service";
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -434,7 +435,6 @@ export class SpellFilter implements SpellFilter {
         this.displayTextList = displayTextList;
         this.tooltip = tooltip;
     }
-
 
     public static compare(a: SpellFilter, b: SpellFilter) {
         

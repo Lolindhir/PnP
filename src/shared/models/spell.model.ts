@@ -695,7 +695,6 @@ export class Spell implements Spell {
             return true;
           }
           for(var attack of this.attackTypes){
-            console.log(attack as string);
             if(attack.toLowerCase().includes(attackSave.toLowerCase())){
               return true;
             }

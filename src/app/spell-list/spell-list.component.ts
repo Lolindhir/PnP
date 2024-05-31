@@ -213,6 +213,12 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
+    //fill filtered spells with all spells, because nothing is yet filtered
+    this.spellsFiltered = this.spells;
+
+    //load filters
+    this.loadFilters();
+
     //load settings
     this.loadSettings();    
 
@@ -228,9 +234,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //set correct duration
     this.setDurationAllMasterSpells();
-
-    //fill filtered spells with all spells, because nothing is yet filtered
-    this.spellsFiltered = this.spells;
 
     //load character list
     this.characterData.characterList = Character.loadCharacters(storageService);
@@ -450,6 +453,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   onChange() {
+
+
+    //save filters
+    this.saveFilters();
 
     this.expandedPanelIndex = -1;
 
@@ -878,6 +885,19 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     
   }
 
+  saveFilters(): void{ 
+
+    this.storageService.storeLocal('NameFilter', String(this.filterName));
+    this.storageService.storeLocal('Filters', JSON.stringify(this.filters, null, 2));
+
+  }
+
+  loadFilters(){
+
+    this.filters = JSON.parse(this.storageService.loadLocal('Filters'));
+    this.filterName = this.storageService.loadLocal('NameFilter');
+
+  }
 
   // getRelevantFilterArray(type: SpellFilterType): SpellFilter[]{
   //   var relevantFilterArray: SpellFilter[] = new Array();

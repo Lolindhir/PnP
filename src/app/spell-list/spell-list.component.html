@@ -616,13 +616,13 @@
 
     <div class="big-top-gap" style="margin-bottom: -1rem;" *ngIf="filters.length > 0">
 
-      <mat-chip-grid>
+      <mat-chip-set>
         <mat-chip-option *ngFor="let filter of filters" [selectable]=false [removable]=true
           (removed)="onFilterRemoved(filter)" [matTooltip]="filter.tooltip">
           <span class="chip-text">{{filter.displayText}}</span>
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip-option>
-      </mat-chip-grid>
+      </mat-chip-set>
 
       <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
 
