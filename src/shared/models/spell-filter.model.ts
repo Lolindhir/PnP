@@ -63,6 +63,11 @@ export interface SpellFilterGroup{
     filters: SpellFilter[];
 }
 
+export interface SpellFilterStorage{
+    type: SpellFilterType;
+    displayTextList: string;
+}
+
 export class SpellFilter implements SpellFilter {
 
     

@@ -87,7 +87,7 @@
                 *ngFor="let blueprintSpell of selectedBlueprint.preparedSpells"
                 style="height: fit-content">                 
                   <span style="font-size: small" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': ''}">
-                    <span style="font-size: smaller" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': 'grey'}">&lt;{{getSpellLevelString(blueprintSpell)}}&gt; </span>
+                    <span style="font-size: smaller" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': 'grey'}">({{getSpellLevelString(blueprintSpell)}}) </span>
                     <span>{{blueprintSpell.name}}</span>
                     <span style="font-size: smaller; font-style: italic; color: orangered" *ngIf="showSpellWarning(blueprintSpell).length > 0">
                       ({{showSpellWarning(blueprintSpell)}})

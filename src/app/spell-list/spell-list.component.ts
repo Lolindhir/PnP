@@ -4,7 +4,7 @@ import { Spell, SpellListCategory } from '@models/spell.model';
 import { PrintSettings } from '@models/spell-print.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
-import { SpellFilter, SpellFilterType } from '@models/spell-filter.model';
+import { SpellFilter, SpellFilterStorage, SpellFilterType } from '@models/spell-filter.model';
 import { ArrayUtilities } from '@utilities/array.utilities';
 import { SelectionModel } from '@angular/cdk/collections';
 import { HttpClient } from '@angular/common/http';
@@ -104,7 +104,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersNotTag: SpellFilter[] = new Array();
   selectedFiltersPreset: SpellFilter[] = new Array();
   selectedFiltersSource: SpellFilter[] = new Array();
-  selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
+  // selectedFiltersSourceGroups: SelectionModel<SpellFilter>;
   selectedFiltersConcentration: string[] = new Array();
   selectedFiltersRitual: string[] = new Array();
   selectedFiltersTargetCaster: string[] = new Array();
@@ -214,7 +214,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
 
     //fill filtered spells with all spells, because nothing is yet filtered
-    this.spellsFiltered = this.spells;
+    this.spellsFiltered = this.spells;   
 
     //load filters
     this.loadFilters();
@@ -888,21 +888,110 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   saveFilters(): void{ 
 
     this.storageService.storeLocal('NameFilter', String(this.filterName));
-    this.storageService.storeLocal('Filters', JSON.stringify(this.filters, null, 2));
+
+    var filterStorage: SpellFilterStorage[] = new Array();
+    for(var filter of this.filters){
+      filterStorage.push({type: filter.type, displayTextList: filter.displayTextList});
+    }
+    this.storageService.storeLocal('Filters', JSON.stringify(filterStorage, null, 2));
 
   }
 
   loadFilters(){
 
+    //get name filter first
+    this.filterName = this.storageService.loadLocal('NameFilter');
+
+
+    //array to bundle all multi filter options for loading
+    var allMultiOptions: {filters: SpellFilter[], selected: SpellFilter[]}[] = new Array();
+    //fill multi filter options bundle
+    allMultiOptions.push({ filters: this.optionsLevel, selected: this.selectedFiltersLevel });
+    allMultiOptions.push({ filters: this.optionsSchool, selected: this.selectedFiltersSchool });
+    allMultiOptions.push({ filters: this.optionsClass, selected: this.selectedFiltersClass });
+    allMultiOptions.push({ filters: this.optionsSingleClass, selected: this.selectedFiltersSingleClass });
+    allMultiOptions.push({ filters: this.optionsMustClass, selected: this.selectedFiltersMustClass });
+    allMultiOptions.push({ filters: this.optionsNotClass, selected: this.selectedFiltersNotClass });
+    allMultiOptions.push({ filters: this.optionsSubclass, selected: this.selectedFiltersSubclass });
+    allMultiOptions.push({ filters: this.optionsSource, selected: this.selectedFiltersSource });
+    allMultiOptions.push({ filters: this.optionsCastingTime, selected: this.selectedFiltersCastingTime });
+    allMultiOptions.push({ filters: this.optionsDuration, selected: this.selectedFiltersDuration });
+    allMultiOptions.push({ filters: this.optionsRange, selected: this.selectedFiltersRange });
+    allMultiOptions.push({ filters: this.optionsDamageType, selected: this.selectedFiltersDamageType });
+    allMultiOptions.push({ filters: this.optionsCondition, selected: this.selectedFiltersCondition });
+    allMultiOptions.push({ filters: this.optionsSave, selected: this.selectedFiltersSave });
+    allMultiOptions.push({ filters: this.optionsAttackType, selected: this.selectedFiltersAttackType });
+    allMultiOptions.push({ filters: this.optionsAttackSave, selected: this.selectedFiltersAttackSave });
+    allMultiOptions.push({ filters: this.optionsAffectedTargets, selected: this.selectedFiltersAffectedTargets });
+    allMultiOptions.push({ filters: this.optionsNumberOfTargets, selected: this.selectedFiltersNumberOfTargets });
+    allMultiOptions.push({ filters: this.optionsTheme, selected: this.selectedFiltersTheme });
+    allMultiOptions.push({ filters: this.optionsTag, selected: this.selectedFiltersTag });
+    allMultiOptions.push({ filters: this.optionsSingleTag, selected: this.selectedFiltersSingleTag });
+    allMultiOptions.push({ filters: this.optionsMustTag, selected: this.selectedFiltersMustTag });
+    allMultiOptions.push({ filters: this.optionsNotTag, selected: this.selectedFiltersNotTag });
+    allMultiOptions.push({ filters: this.optionsPreset, selected: this.selectedFiltersPreset });
+    
+    //array to bundle all single filter options for loading
+    var allSingleOptions: {filters: SpellFilter[], selected: string[] | undefined}[] = new Array();
+    //fill single filter options bundle
+    allSingleOptions.push({ filters: this.optionsConcentration, selected: this.selectedFiltersConcentration });
+    allSingleOptions.push({ filters: this.optionsRitual, selected: this.selectedFiltersRitual });
+    allSingleOptions.push({ filters: this.optionsTargetCaster, selected: this.selectedFiltersTargetCaster });
+    allSingleOptions.push({ filters: this.optionsComponentV, selected: this.selectedFiltersComponentV });
+    allSingleOptions.push({ filters: this.optionsComponentS, selected: this.selectedFiltersComponentS });
+    allSingleOptions.push({ filters: this.optionsComponentM, selected: this.selectedFiltersComponentM });
+    allSingleOptions.push({ filters: this.optionsMaterialValue, selected: this.selectedFiltersMaterialValue });
+    allSingleOptions.push({ filters: this.optionsMaterialConsumed, selected: this.selectedFiltersMaterialConsumed });
+    allSingleOptions.push({ filters: this.optionsUpcastable, selected: this.selectedFiltersUpcastable });
+    allSingleOptions.push({ filters: this.optionsCategoryKnown, selected: this.selectedFiltersCategoryKnown });
+    allSingleOptions.push({ filters: this.optionsCategoryAlways, selected: this.selectedFiltersCategoryAlways });
+    allSingleOptions.push({ filters: this.optionsCategoryLimited, selected: this.selectedFiltersCategoryLimited });
+    allSingleOptions.push({ filters: this.optionsCategoryRitualCast, selected: this.selectedFiltersCategoryRitualCast });
+    allSingleOptions.push({ filters: this.optionsCategoryPrepared, selected: this.selectedFiltersCategoryPrepared });
+    allSingleOptions.push({ filters: this.optionsCategoryRemoved, selected: undefined });
+    allSingleOptions.push({ filters: this.optionsSpellMod, selected: this.selectedFiltersSpellMod });
+        
+    
+    //get saved filter storage
+    var filterStorages: SpellFilterStorage[] = new Array();
     try {
-      this.filters = JSON.parse(this.storageService.loadLocal('Filters'));
+      filterStorages = JSON.parse(this.storageService.loadLocal('Filters'));
     }
     catch (exception_var){
-        console.log('Filter settings not loaded. Set them.');
-        var emptyFilters: SpellFilter[] = new Array();
-        this.storageService.storeLocal('Filters', JSON.stringify(emptyFilters, null, 2));
-    }    
-    this.filterName = this.storageService.loadLocal('NameFilter');
+      return;
+    }
+    
+    //iterate all multi filter options and pick the one who are saved
+    for(var optionMulti of allMultiOptions){
+      for(var optionMultiFilter of optionMulti.filters){
+        if(filterStorages.some(filterStorage => filterStorage.type === optionMultiFilter.type && filterStorage.displayTextList === optionMultiFilter.displayTextList)){
+          optionMultiFilter.selected = true;
+          optionMulti.selected.push(optionMultiFilter);
+          this.filters.push(optionMultiFilter); 
+        }               
+      }
+    }
+
+    //iterate all multi filter options and pick the one who are saved
+    for(var optionSingle of allSingleOptions){
+      for(var optionSingleFilter of optionSingle.filters){
+        if(filterStorages.some(filterStorage => filterStorage.type === optionSingleFilter.type && filterStorage.displayTextList === optionSingleFilter.displayTextList)){
+          optionSingleFilter.selected = true;
+          if(optionSingle.selected != undefined){
+            if(optionSingleFilter.value === true){
+              optionSingle.selected.push('true');
+            }
+            if(optionSingleFilter.value === false){
+              optionSingle.selected.push('false');
+            }
+          }
+          this.filters.push(optionSingleFilter); 
+        }               
+      }
+    }
+
+    //sort filters at the end
+    this.filters.sort(SpellFilter.compare);
 
   }
 

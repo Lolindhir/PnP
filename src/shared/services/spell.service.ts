@@ -35,8 +35,6 @@ export class SpellService {
   }
 
   public static filterSpells(list: Spell[], nameFilter: string, filters: SpellFilter[], impliciteFilters: SpellFilter[]) : Spell[] {
-    
-    //console.log('Filter called with \nname: %s \nsource: %s', nameFilter, sourceFilter );
 
     var returnList: Spell[] = new Array();
     list.forEach(spell => {
