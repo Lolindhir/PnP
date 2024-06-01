@@ -724,7 +724,7 @@
 
         <div style="font-size: smaller; font-style: italic;">Templates: apply, add, manage</div>
 
-        <div style="margin-top: 5px; margin-bottom: 5px" fxLayout="row wrap" fxLayoutAlign="start">
+        <div style="margin-top: 3px; margin-bottom: 3px" fxLayout="row wrap" fxLayoutAlign="start">
           
           <!-- <button mat-fab class="normal-icon-button" [matMenuTriggerFor]="setBlueprints" color="primary" matTooltip="Set Blueprint" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>label</mat-icon>
@@ -733,7 +733,7 @@
             <button mat-menu-item *ngFor="let blueprint of characterData.selectedCharacter.preparedBlueprints" (click)="onSetPreparationBlueprint(blueprint)">{{blueprint.name}}</button>
           </mat-menu>         -->
     
-          <button mat-fab class="normal-icon-button" [disabled]="characterData.selectedCharacter.preparedBlueprints.length < 1" [matMenuTriggerFor]="addBlueprints" color="primary" matTooltip="Add from Template" matTooltipShowDelay="{{tooltipDelay}}">
+          <button mat-fab class="normal-icon-button mat-fab-button-no-shadow" [disabled]="characterData.selectedCharacter.preparedBlueprints.length < 1" [matMenuTriggerFor]="addBlueprints" color="primary" matTooltip="Add from Template" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>new_label</mat-icon>
           </button>
           <mat-menu #addBlueprints="matMenu">
@@ -743,11 +743,11 @@
             </button>
           </mat-menu>
     
-          <button style="margin-left: 20px" mat-fab class="normal-icon-button" [disabled]="getTotalPreparedNumber() < 1" color="primary" (click)="openBlueprintDialog(true)" matTooltip="Create Template" matTooltipShowDelay="{{tooltipDelay}}">
+          <button style="margin-left: 20px" mat-fab class="normal-icon-button mat-fab-button-no-shadow" [disabled]="getTotalPreparedNumber() < 1" color="primary" (click)="openBlueprintDialog(true)" matTooltip="Create Template" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>format_list_bulleted_add</mat-icon>
           </button>
 
-          <button style="margin-left: 20px" mat-fab class="normal-icon-button" color="primary" [disabled]="characterData.selectedCharacter.preparedBlueprints.length < 1" (click)="openBlueprintDialog(false)" matTooltip="Template Management" matTooltipShowDelay="{{tooltipDelay}}">
+          <button style="margin-left: 20px" mat-fab class="normal-icon-button mat-fab-button-no-shadow" color="primary" [disabled]="characterData.selectedCharacter.preparedBlueprints.length < 1" (click)="openBlueprintDialog(false)" matTooltip="Template Management" matTooltipShowDelay="{{tooltipDelay}}">
             <mat-icon>edit_note</mat-icon>
           </button>
         </div>     
