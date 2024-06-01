@@ -1,38 +1,64 @@
 <div [ngStyle]="{ 'pointer-events' : disabled ? 'none' : ''}">
 
-  <div mat-dialog-title><mat-icon>edit_note</mat-icon>Template Management</div>
+  <div mat-dialog-title *ngIf="!data.addMode"><mat-icon>edit_note</mat-icon>Template Management</div>
+  <div mat-dialog-title *ngIf="data.addMode"><mat-icon>format_list_bulleted_add</mat-icon>Template Creation</div>
   
   <div matDialogContent class="dialog-text">
     <div fxLayout="column">
-        
-      <div *ngIf="!addMode">
-          
-        <div>
-          <mat-form-field appearance="fill" style="width: 100%;">
-          <mat-select [(ngModel)]="selectedBlueprint">
-              <mat-option></mat-option>
-              <mat-option *ngFor="let blueprint of data.char.selectedCharacter?.preparedBlueprints" [value]="blueprint">
-                {{blueprint.name}} ({{blueprint.preparedSpells.length}})
-              </mat-option>
-          </mat-select>
-          </mat-form-field>
-        </div>
+      
+      <div>
+        <mat-form-field appearance="fill" style="width: 100%;" subscriptSizing="dynamic">
+        <mat-select [(ngModel)]="selectedBlueprint">
+            <mat-option *ngIf="data.addMode"></mat-option>
+            <mat-option *ngFor="let blueprint of data.char.selectedCharacter?.preparedBlueprints" [value]="blueprint">
+              {{blueprint.name}} ({{blueprint.preparedSpells.length}})
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+      </div>
 
+      <div *ngIf="blueprintsEmpty()" class="blueprint-selection-underline">*create a template first</div>
+      <div *ngIf="data.addMode && !blueprintsEmpty() && selectedBlueprint === undefined" class="blueprint-selection-underline">*choose a template to overwrite</div>
+      <div *ngIf="!data.addMode && !blueprintsEmpty() && selectedBlueprint === undefined" class="blueprint-selection-underline">*choose a template</div>
+
+      <div class="small-gap"></div>
+
+      <div *ngIf="data.addMode">
 
         <div *ngIf="selectedBlueprint === undefined">
+          <mat-form-field style="font-size: larger" subscriptSizing="dynamic">
+            <mat-label>
+              Template Name
+            </mat-label>
+            <input matInput name="name" [(ngModel)]="newName">
+          </mat-form-field>
+          <div class="small-top-gap"></div>
           <div>
-            <button mat-button color="primary" (click)="addMode = true">
+            <button color="primary" mat-button (click)="onBlueprintCreated()">
+              <mat-icon class="normal-button-icon">add_circle</mat-icon> Create Template
+            </button>
+          </div>                  
+        </div>
+
+        <div *ngIf="selectedBlueprint != undefined">
+          <button color="primary" mat-button (click)="onBlueprintOverwrite()">
+              <mat-icon class="normal-button-icon">content_paste_go</mat-icon> Overwrite Template
+          </button>
+        </div>
+
+      </div>
+
+      <div *ngIf="!data.addMode">
+        
+        <div *ngIf="selectedBlueprint === undefined">
+          <div>
+            <button mat-button color="primary" (click)="data.addMode = true">
               <mat-icon class="normal-button-icon">add</mat-icon> New Template
             </button>
           </div>
-        </div>                            
+        </div>                 
 
-  
         <div *ngIf="selectedBlueprint != undefined">
-
-          <div><mat-divider></mat-divider></div>
-  
-          <div class="small-top-gap"></div>
 
           <div *ngIf="showNameWarning()" style="color: orange" fxLayout="row" fxLayoutAlign="start center">
             <div><mat-icon>warning</mat-icon></div>
@@ -66,70 +92,35 @@
           </div>                          
 
           <div>
-            <button color="primary" mat-button (click)="onBlueprintOverwrite()">
-                <mat-icon class="normal-button-icon">content_paste_go</mat-icon> Overwrite Template
-            </button>
-          </div>
-
-          <div>
               <button color="primary" mat-button (click)="onBlueprintDelete()">
                   <mat-icon class="normal-button-icon">delete_forever</mat-icon> Delete Template
               </button>
-          </div>
-
-          <mat-card>
-            <!-- <mat-card-header>
-              <mat-card-title style="font-size: 15px">Template Spells</mat-card-title>
-            </mat-card-header> -->
-            <mat-card-content>
-              <mat-list role="list">
-                <mat-list-item role="listitem"
-                *ngFor="let blueprintSpell of selectedBlueprint.preparedSpells"
-                style="height: fit-content">                 
-                  <span style="font-size: small" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': ''}">
-                    <span style="font-size: smaller" [ngStyle]="showSpellWarning(blueprintSpell).length > 0 ? {'color':'orangered'} : {'color': 'grey'}">({{getSpellLevelString(blueprintSpell)}}) </span>
-                    <span>{{blueprintSpell.name}}</span>
-                    <span style="font-size: smaller; font-style: italic; color: orangered" *ngIf="showSpellWarning(blueprintSpell).length > 0">
-                      ({{showSpellWarning(blueprintSpell)}})
-                    </span>
-                  </span>                
-                </mat-list-item>
-              </mat-list>   
-            </mat-card-content>
-          </mat-card>          
+          </div>                   
 
         </div>
 
-      </div>        
-
-      <div *ngIf="addMode">
-
-        <div>
-          <mat-form-field style="font-size: larger; margin-left: 0.5rem;">
-            <mat-label>
-              Template Name
-            </mat-label>
-            <input matInput name="name" [(ngModel)]="newName">
-          </mat-form-field>
-        </div>                       
-
-        <div fxLayout="row">
-
-            <div>
-                <button color="primary" mat-button (click)="onBlueprintCreated()">
-                  <mat-icon class="normal-button-icon">add_circle</mat-icon> Create
-                </button>
-            </div>
-
-            <div>
-                <button color="primary" mat-button (click)="addMode = false">
-                  <mat-icon class="normal-button-icon">cancel</mat-icon> Cancel
-                </button>
-            </div>
-
-        </div>
-
-      </div>
+      </div>  
+      
+      <mat-card style="margin-top: 10px">
+        <!-- <mat-card-header>
+          <mat-card-title style="font-size: 15px">Template Spells</mat-card-title>
+        </mat-card-header> -->
+        <mat-card-content *ngIf="data.addMode || selectedBlueprint != undefined">
+          <mat-list role="list">
+            <mat-list-item role="listitem"
+            *ngFor="let blueprintSpell of getSpellBlueprintList()"
+            style="height: fit-content">                 
+              <span style="font-size: small" [ngClass]="getStyleText(blueprintSpell)">
+                <span style="font-size: smaller; color: grey" [ngClass]="getStyleText(blueprintSpell)">({{getSpellPrefixString(blueprintSpell)}}) </span>
+                <span>{{blueprintSpell.name}}</span>
+                <span style="font-size: smaller; font-style: italic" *ngIf="showSpellWarning(blueprintSpell).length > 0">
+                  {{showSpellWarning(blueprintSpell)}}
+                </span>
+              </span>                
+            </mat-list-item>
+          </mat-list>   
+        </mat-card-content>
+      </mat-card> 
 
     </div>
   </div>

@@ -70,6 +70,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   //spell related stuff
   spellProperties: SpellProperties = this.spellService.spellProperties;
   spells: Spell[] = this.spellService.allSpells;
+  masterSpells: Spell[] = new Array();
   spellsFiltered: Spell[] = new Array();
   spellsToShow: Spell[] = new Array();
   numberOfRandomSpells: number = 0;
@@ -212,6 +213,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
     //test for read of local file
     //this.httpClient.get<RawSpell[]>(this.spellPresetPath).pipe(retry(1), catchError(this.handleError)).subscribe(data => { this.test = data });
+
+    //create master spell list
+    for(var spell of this.spells){
+      this.masterSpells.push(spell);
+    }
 
     //fill filtered spells with all spells, because nothing is yet filtered
     this.spellsFiltered = this.spells;   
@@ -1554,8 +1560,11 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return this.knownCantripsHaveError() || this.knownSpellsHaveError();
   }
 
+  getTotalPreparedNumber(): number{
+    return this.getPreparationCount(true, false) + this.getPreparationCount(false, false);
+  }
   getTotalPrepared(): string{
-    return (this.getPreparationCount(true, false) + this.getPreparationCount(false, false)).toString();
+    return this.getTotalPreparedNumber.toString();
   }
   getCantripsPrepared(): string{
     var returnString: string = 'Cantrips: ' + this.getPreparationCount(true, false).toString();
@@ -2732,14 +2741,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     });
   }
 
-  openBlueprintDialog(): void {
+  openBlueprintDialog(addMode: boolean): void {
 
     const dialogRef = this.dialog.open(SpellListBlueprintDialog, {
       //width: '250px',
       //height: '300px',
       //disableClose: true,
       autoFocus: 'dialog',
-      data: {char: this.characterData, masterSpells: this.spells}
+      data: {char: this.characterData, masterSpells: this.masterSpells, addMode: addMode}
     });
   
     dialogRef.componentInstance.onCharacterChanged.subscribe(() => {
@@ -3068,7 +3077,6 @@ export class SpellListCharacterDialog {
 })
 export class SpellListBlueprintDialog {
   
-  addMode: boolean = false;
   newName: string | undefined;
   nameChangeMode: boolean = false;
   changedName: string = "";
@@ -3079,8 +3087,31 @@ export class SpellListBlueprintDialog {
   constructor(
     public dialogRef: MatDialogRef<SpellListBlueprintDialog>,
     private snackBar: MatSnackBar,
-    @Inject(MAT_DIALOG_DATA) public data: {char: CharacterData, masterSpells: Spell[]},
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: {char: CharacterData, masterSpells: Spell[], addMode: boolean},
+  ) 
+  {
+    this.setSelectedBlueprintToFirst();
+  }
+
+  blueprintsEmpty(): boolean{
+    if(this.data.char.selectedCharacter?.preparedBlueprints != undefined
+      && this.data.char.selectedCharacter.preparedBlueprints.length > 0
+    ){
+      return false;
+    }
+    return true;
+  }
+
+  setSelectedBlueprintToFirst(){
+    if(!this.data.addMode && !this.blueprintsEmpty()){
+      this.selectedBlueprint = this.data.char.selectedCharacter?.preparedBlueprints[0];
+    }
+  }
+
+  switchMode(){
+    this.data.addMode = !this.data.addMode;
+    this.setSelectedBlueprintToFirst();
+  }
 
   createBlueprintList(): PreparedSpellBlueprint[]{
     
@@ -3122,7 +3153,7 @@ export class SpellListBlueprintDialog {
 
       //reset options
       this.newName = undefined;
-      this.addMode = false;
+      this.data.addMode = false;
 
       //trigger
       this.onBlueprintChange();
@@ -3290,26 +3321,87 @@ export class SpellListBlueprintDialog {
     return nameCounter > 1;
   }
 
+  getSpellBlueprintList(): PreparedSpellBlueprint[]{
+    var spells: PreparedSpellBlueprint[] = new Array();
+
+    if(!this.data.addMode && this.selectedBlueprint != undefined){
+      return this.selectedBlueprint.preparedSpells;
+    }
+
+    if(this.data.addMode){
+      for(var spell of this.data.masterSpells){
+        if(this.selectedBlueprint?.preparedSpells.some(preparedBlueprintSpell => preparedBlueprintSpell.name === spell.name)
+        || this.data.char.selectedCharacter?.preparedCantrips.some(preparedCantrip => preparedCantrip === spell.name)
+        || this.data.char.selectedCharacter?.preparedSpells.some(preparedSpell => preparedSpell === spell.name)
+        ){
+          spells.push({name: spell.name, level: spell.level});
+        }
+      }
+    }
+
+    return spells;
+  }
+
   showSpellWarning(spell: PreparedSpellBlueprint): string{
 
     var selectedChar = this.data.char.selectedCharacter;
-    if(selectedChar === undefined || this.selectedBlueprint === undefined){
+    if(selectedChar === undefined){
       return '';
     }    
 
-    if(selectedChar.knownCantrips.indexOf(spell.name) === -1 && selectedChar.knownSpells.indexOf(spell.name) === -1){
+    if(this.data.addMode){
+      if(this.selectedBlueprint === undefined
+      || !this.selectedBlueprint.preparedSpells.some(preparedBlueprintSpell => preparedBlueprintSpell.name === spell.name)
+      ){
+        return '+';
+      }
+    }
+    else{
+      if(selectedChar.knownCantrips.indexOf(spell.name) === -1 && selectedChar.knownSpells.indexOf(spell.name) === -1){
       
-      if(selectedChar.alwaysSpells.indexOf(spell.name) > -1){
-        return 'always known';
+        if(selectedChar.alwaysSpells.indexOf(spell.name) > -1){
+          return '(always known)';
+        }
+  
+        return '(not known)';
+      }
+    }   
+
+    return '';
+  }
+
+  getStyleText(spell: PreparedSpellBlueprint): string{
+    
+    //show warning if a spell in the blueprint isn't known anymore
+    if(!this.data.addMode && this.showSpellWarning(spell).length > 0){
+      return 'blueprint-spell-warning';
+    }
+
+    //signalize added and removed spells
+    var char = this.data.char.selectedCharacter;
+    if(this.data.addMode && char != undefined){
+
+      //spell is prepared and will be added because it isn't already in the blueprint
+      if(char.preparedCantrips.some(preparedCantrip => preparedCantrip === spell.name)
+      || char.preparedSpells.some(preparedSpell => preparedSpell === spell.name)
+      ){        
+        if(this.selectedBlueprint === undefined
+        || !this.selectedBlueprint.preparedSpells.some(preparedBlueprintSpell => preparedBlueprintSpell.name === spell.name)
+        ){
+          return 'blueprint-spell-added';
+        }
+      }
+      //spell is not prepared and will be removed
+      else{
+        return 'blueprint-spell-removed';
       }
 
-      return 'not known';
     }
 
     return '';
   }
 
-  getSpellLevelString(spell: PreparedSpellBlueprint): string{
+  getSpellPrefixString(spell: PreparedSpellBlueprint): string{
     switch(spell.level) { 
       case 0: { return 'Can'; }
       case 1: { return '1st'; }

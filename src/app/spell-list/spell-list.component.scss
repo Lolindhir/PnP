@@ -273,3 +273,22 @@
   width: 50px;
   text-align: center;
 }
+
+.blueprint-spell-warning {
+  color: orangered !important;
+}
+
+.blueprint-spell-added {
+  color: green !important;
+}
+
+.blueprint-spell-removed {
+  color: red !important;
+  text-decoration: line-through;
+}
+
+.blueprint-selection-underline {
+  font-size: smaller;
+  font-style: italic;
+  color: gray;
+}
