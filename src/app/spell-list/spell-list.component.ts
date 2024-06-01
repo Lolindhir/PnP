@@ -950,7 +950,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     allSingleOptions.push({ filters: this.optionsCategoryPrepared, selected: this.selectedFiltersCategoryPrepared });
     allSingleOptions.push({ filters: this.optionsCategoryRemoved, selected: undefined });
     allSingleOptions.push({ filters: this.optionsSpellMod, selected: this.selectedFiltersSpellMod });
-        
     
     //get saved filter storage
     var filterStorages: SpellFilterStorage[] = new Array();
@@ -968,7 +967,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
           optionMultiFilter.selected = true;
           optionMulti.selected.push(optionMultiFilter);
           this.filters.push(optionMultiFilter); 
-        }               
+        }
       }
     }
 
@@ -1395,45 +1394,55 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     
     if(type === SpellFilterType.CategoryKnown){
       if(!this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryKnown = ['true'];
         this.addFilterToggle(this.optionsCategoryKnown, true);
       }
       else if(this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryKnown = ['false'];
         this.addFilterToggle(this.optionsCategoryKnown, false);
       }
     }
 
     if(type === SpellFilterType.CategoryAlways){
       if(!this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryAlways = ['true'];
         this.addFilterToggle(this.optionsCategoryAlways, true);
       }
       else if(this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryAlways = ['false'];
         this.addFilterToggle(this.optionsCategoryAlways, false);
       }
     }
 
     if(type === SpellFilterType.CategoryLimited){
       if(!this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryLimited = ['true'];
         this.addFilterToggle(this.optionsCategoryLimited, true);
       }
       else if(this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryLimited = ['false'];
         this.addFilterToggle(this.optionsCategoryLimited, false);
       }
     }
 
     if(type === SpellFilterType.CategoryRitualCast){
       if(!this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryRitualCast = ['true'];
         this.addFilterToggle(this.optionsCategoryRitualCast, true);
       }
       else if(this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryRitualCast = ['false'];
         this.addFilterToggle(this.optionsCategoryRitualCast, false);
       }
     }
 
     if(type === SpellFilterType.CategoryPrepared){
       if(!this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryPrepared = ['true'];
         this.addFilterToggle(this.optionsCategoryPrepared, true);
       }
       else if(this.filters.some( filter => filter.type === type)){
+        this.selectedFiltersCategoryPrepared = ['false'];
         this.addFilterToggle(this.optionsCategoryPrepared, false);
       }
     }
