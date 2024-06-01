@@ -894,7 +894,14 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   loadFilters(){
 
-    this.filters = JSON.parse(this.storageService.loadLocal('Filters'));
+    try {
+      this.filters = JSON.parse(this.storageService.loadLocal('Filters'));
+    }
+    catch (exception_var){
+        console.log('Filter settings not loaded. Set them.');
+        var emptyFilters: SpellFilter[] = new Array();
+        this.storageService.storeLocal('Filters', JSON.stringify(emptyFilters, null, 2));
+    }    
     this.filterName = this.storageService.loadLocal('NameFilter');
 
   }
