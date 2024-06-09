@@ -14,7 +14,7 @@ import { ItemService } from '@services/item.service';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.scss'],
+  styleUrls: ['../app.component.scss', './item-list.component.scss'],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({height: '0px', minHeight: '0'})),

@@ -165,5 +165,5 @@ export class Item implements Item {
         }
     
         return 0;
-      }
+    }
 }
