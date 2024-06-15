@@ -23,6 +23,23 @@
 	padding: 0.5rem;
 }
 
+.container {
+	width: 1250px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.chip-text {
+	font-size: small;
+	word-spacing: normal;
+  font-weight: 415;
+}
+
+.chip-text-big {
+	word-spacing: normal;
+  font-weight: 415;
+}
+
 .normal-icon-button {
 	width: 40px !important;
 	height: 40px !important;
