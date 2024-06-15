@@ -1,4 +1,4 @@
-<div>
+<div class="page">
 
     <div fxLayout="row" fxLayoutAlign="left center" style="width: 225px; margin-right: 1rem;">
 
@@ -77,20 +77,21 @@
 
         <!-- Explanation Column -->
         <ng-container matColumnDef="explanation">
-            <th mat-header-cell *matHeaderCellDef>Explanation</th>
-            <td mat-cell *matCellDef="let element">
-                <div *ngIf="element.prerequisite.length > 0" style="margin-bottom: 5px; font-style: italic;">Prerequisite: {{element.prerequisite}}</div>
+            <th mat-header-cell *matHeaderCellDef>Feat</th>
+            <td mat-cell *matCellDef="let element" style="padding-top: 10px; padding-bottom: 10px;">
+                <div style="font-weight: 500; font-size: larger; margin-bottom: 3px;">{{element.name}}</div>
+                <div *ngIf="element.prerequisite.length > 0" style="margin-bottom: 5px; font-style: italic; color: darkgoldenrod;">Prerequisite: {{element.prerequisite}}</div>
                 <div [innerHTML]="element.explanation"></div>
-                <div *ngIf="element.cost > 1" style="margin-top: 10px; font-style: italic; color: grey;">This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.</div>
-                <div *ngIf="element.multi != 1" style="margin-top: 10px; color: grey;">
-                    <div *ngIf="element.multi > 1" style="font-style: italic;">You can select this feat {{element.multi}} times.</div>
-                    <div *ngIf="element.multi < 1" style="font-style: italic;">You can select this feat multiple times.</div>
-                    <div *ngIf="element.multiAppendix.length > 0">{{element.multiAppendix}}</div>
-                </div>                
+                <div *ngIf="element.multi != 1" style="margin-top: 10px;">
+                    <div *ngIf="element.multi > 1" style="font-style: italic; color: darkgreen;">You can select this feat {{element.multi}} times.</div>
+                    <div *ngIf="element.multi < 1" style="font-style: italic; color: darkgreen;">You can select this feat multiple times.</div>
+                    <div *ngIf="element.multiAppendix.length > 0" style="color: darkgreen;">{{element.multiAppendix}}</div>
+                <div *ngIf="element.cost > 1" style="margin-top: 10px; font-style: italic; color: darkred;">This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.</div>
+            </div>                
             </td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <!-- <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr> -->
         <tr mat-row *matRowDef="let element; columns: columnsToDisplay;">
         </tr>
         <!-- <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr> -->

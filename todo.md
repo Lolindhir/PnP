@@ -9,7 +9,6 @@
 - Spell als Favorite markieren? außerhalb Character-Mode
 
 # Character Mode
-- Prepared Blueprints
 - Spell Slots 
     -> entweder: Casting-Möglichkeit im Session-Mode, der Slots abzieht
     -> oder einfacher: im Session-Mode einfach keine Zauber anzeigen, für die keine Slots mehr existieren -> und das ganz einfach über Anzeige "existierende Slot Level"

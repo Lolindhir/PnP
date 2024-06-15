@@ -51,7 +51,7 @@ export class FeatListComponent implements OnInit {
   //     cell: (feat: Feat) => `${feat.explanation}`,
   //   },   
   // ];
-  columnsToDisplay = ['name', 'explanation'];
+  columnsToDisplay = ['explanation'];
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedFeat: Feat | null;
   filterAll: string = "";
