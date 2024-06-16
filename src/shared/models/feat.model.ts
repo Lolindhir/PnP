@@ -1,4 +1,6 @@
 import { StringUtilities } from "@utilities/string.utilities";
+import { FeatProperties } from "./feat-properties.model";
+import { FeatCategory } from "./feat-category.model";
 
 export interface RawFeat {
     name: string;
@@ -27,6 +29,8 @@ export interface Feat {
 
 export class Feat implements Feat {
 
+    public static globalProperties: FeatProperties;
+
     constructor(rawFeat: RawFeat){
         //take straight raw values
         this.name = rawFeat.name;
@@ -48,19 +52,29 @@ export class Feat implements Feat {
 
     public static compareBasic(a: Feat, b: Feat) {
         
-        //category first, subcategory second, name last
-        // if(a.orderNumber < b.orderNumber){
-        //     return -1;
-        // }
-        // if(a.orderNumber > b.orderNumber){
-        //     return 1;
-        // }
-        // if(a.rarityTier < b.rarityTier){
-        //     return -1;
-        // }
-        // if(a.rarityTier > b.rarityTier){
-        //     return 1;
-        // }    
+        var catIndexA : number = FeatCategory.getCategoryIndex(Feat.globalProperties.categories, a.category);
+        var catIndexB : number = FeatCategory.getCategoryIndex(Feat.globalProperties.categories, b.category);
+
+        //category first
+        if(catIndexA < catIndexB){
+            return -1;
+        }
+        if(catIndexA > catIndexB){
+            return 1;
+        }
+        //subcategory second
+        if(catIndexA > -1){
+            var cat : FeatCategory = Feat.globalProperties.categories[catIndexA];
+            var subcatIndexA : number = cat.subcategories.indexOf(a.subcategory);
+            var subcatIndexB : number = cat.subcategories.indexOf(b.subcategory);
+            if(subcatIndexA < subcatIndexB){
+                return -1;
+            }
+            if(subcatIndexA > subcatIndexB){
+                return 1;
+            }
+        }
+        //name last
         return Feat.compareName(a, b);
     }
 
