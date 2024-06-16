@@ -5,7 +5,7 @@
         <div fxLayout="row" fxLayoutAlign="left center" style="width: 225px; margin-right: 1rem;">
 
             <div>
-            <mat-form-field style="width: 160px; font-size: larger; margin-left: 0.5rem;">
+            <mat-form-field style="width: 250px; font-size: larger; margin-left: 0.5rem;">
                 <mat-label>
                 <mat-icon>search</mat-icon>
                 <!-- Filter by ALL -->
@@ -21,6 +21,11 @@
             </div>
 
         </div>
+
+        <mat-button-toggle-group hideSingleSelectionIndicator="true" value="{{defaultSort}}" (change)="onSortChanged($event)">
+            <mat-button-toggle value="category">Category</mat-button-toggle>
+            <mat-button-toggle value="name">Name</mat-button-toggle>
+        </mat-button-toggle-group>
 
         <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort class="mat-elevation-z8">
 
