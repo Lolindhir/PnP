@@ -44,10 +44,24 @@ export class Feat implements Feat {
         this.explanation = rawFeat.explanation;
 
         //build category text
-        this.categoryText = this.category;
-        if(this.subcategory.length >  0){
-            this.categoryText += " (" + this.subcategory + ")";
-        }
+        this.categoryText = Feat.getCategoryText(this.category, this.subcategory);
+    }
+
+    public static getCategoryTexts(): string[] {
+        var categoryTexts: string[] = new Array();
+
+        Feat.globalProperties.categories.forEach(category => {
+            if(category.subcategories.length === 0){
+                categoryTexts.push(category.name);
+            }
+            else {
+                category.subcategories.forEach(subcategory => {
+                    categoryTexts.push(Feat.getCategoryText(category.name, subcategory))
+                });
+            }
+        });
+
+        return categoryTexts;
     }
 
     public static compareBasic(a: Feat, b: Feat) {
@@ -86,6 +100,14 @@ export class Feat implements Feat {
             return 1;
         }    
         return 0;
+    }
+
+    private static getCategoryText(category: string, subcategory: string): string {
+        var categoryText: string = category;
+        if(subcategory.length >  0){
+            categoryText += " (" + subcategory + ")";
+        }
+        return categoryText;
     }
 
 }
