@@ -5,7 +5,7 @@
         <div fxLayout="row" fxLayoutAlign="left center" style="width: 225px; margin-right: 1rem;">
 
             <div>
-            <mat-form-field style="width: 250px; font-size: larger; margin-left: 0.5rem;">
+            <mat-form-field subscriptSizing="dynamic" style="width: 250px; font-size: larger; margin-bottom: 0.5rem;">
                 <mat-label>
                 <mat-icon>search</mat-icon>
                 <!-- Filter by ALL -->
@@ -40,7 +40,7 @@
 
             <div *ngIf="selectedCategories.length === 0"></div>
 
-            <div *ngIf="selectedCategories.length > 0" fxLayout="row wrap" fxLayoutAlign="left center">
+            <div *ngIf="selectedCategories.length > 0" fxLayout="row wrap" fxLayoutAlign="left center" style="margin-bottom: 25px">
 
                 <mat-chip-set>
                     <mat-chip-option *ngFor="let category of selectedCategories" [selectable]=false [removable]=true (removed)="onCategoryFilterRemoved(category)">
