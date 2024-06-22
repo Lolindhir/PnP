@@ -1,10 +1,10 @@
 //angular imports
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { ArrayUtilities } from '@utilities/array.utilities';
 
 //business imports
 import { Feat } from '@models/feat.model';
@@ -100,6 +100,12 @@ export class FeatListComponent implements OnInit {
 
   onAllCategoryFiltersRemoved() {
     this.selectedCategories = new Array();
+    this.saveSettings();
+    this.filterFeats();
+  }
+
+  onCategoryFilterRemoved(category: string){
+    ArrayUtilities.removeFromArray(this.selectedCategories, category);
     this.saveSettings();
     this.filterFeats();
   }
