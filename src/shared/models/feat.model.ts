@@ -68,6 +68,7 @@ export class Feat implements Feat {
         
         var catIndexA : number = FeatCategory.getCategoryIndex(Feat.globalProperties.categories, a.category);
         var catIndexB : number = FeatCategory.getCategoryIndex(Feat.globalProperties.categories, b.category);
+        var cat : FeatCategory = Feat.globalProperties.categories[catIndexA];
 
         //category first
         if(catIndexA < catIndexB){
@@ -77,14 +78,22 @@ export class Feat implements Feat {
             return 1;
         }
         //subcategory second
-        if(catIndexA > -1){
-            var cat : FeatCategory = Feat.globalProperties.categories[catIndexA];
+        if(cat != undefined){
             var subcatIndexA : number = cat.subcategories.indexOf(a.subcategory);
             var subcatIndexB : number = cat.subcategories.indexOf(b.subcategory);
             if(subcatIndexA < subcatIndexB){
                 return -1;
             }
             if(subcatIndexA > subcatIndexB){
+                return 1;
+            }
+        }
+        //prerequisite third (depending on category)
+        if(cat != undefined && cat.orderByPrerequisite){
+            if(a.prerequisite < b.prerequisite){
+                return -1;
+            }
+            if(a.prerequisite > b.prerequisite){
                 return 1;
             }
         }

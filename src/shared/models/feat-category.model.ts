@@ -1,13 +1,15 @@
 export interface FeatCategory{
     name: string;
     subcategories: string[];
+    orderByPrerequisite: boolean;
 } 
 
 export class FeatCategory implements FeatCategory {
 
-    constructor(name: string, subcategories: string[]){
+    constructor(name: string, subcategories: string[], orderByPrerequisite: boolean){
         this.name = name;
         this.subcategories = subcategories;
+        this.orderByPrerequisite = orderByPrerequisite;
     }
     
     public static getCategoryIndex (categories: FeatCategory[], categoryName: string): number {
