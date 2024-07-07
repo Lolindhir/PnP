@@ -1564,7 +1564,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     return this.getPreparationCount(true, false) + this.getPreparationCount(false, false);
   }
   getTotalPrepared(): string{
-    return this.getTotalPreparedNumber.toString();
+    return this.getTotalPreparedNumber().toString();
   }
   getCantripsPrepared(): string{
     var returnString: string = 'Cantrips: ' + this.getPreparationCount(true, false).toString();
