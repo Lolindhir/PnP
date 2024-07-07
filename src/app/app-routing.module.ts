@@ -7,6 +7,8 @@ import { SpellListComponent } from './spell-list/spell-list.component';
 import { SpellPrintComponent } from './spell-print/spell-print.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FeatListComponent } from './feat-list/feat-list.component';
+import { AppComponent } from './app.component';
+import { MainBodyComponent } from './main-body/main-body.component';
 
 
 //Reihenfolge ist relevant: Allgemeine Seiten zum Schluss, spezielle Seiten an den Anfang
@@ -19,10 +21,12 @@ export const routes: Routes = [
   { path:'spells', component: SpellListComponent, pathMatch: 'full' },
   //item list
   { path:'items', component: ItemListComponent, pathMatch: 'full' },
+  //home
+  { path:'home', component: HomeComponent, pathMatch: 'full'},
   //homepage
-  { path: '', redirectTo: 'spells', pathMatch: 'full'},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   //default
-  { path: '**', redirectTo: 'spells' },
+  { path: '**', redirectTo: 'home' },
 ];
 
 export const routingComponents = [
