@@ -7,8 +7,6 @@ import { SpellListComponent } from './spell-list/spell-list.component';
 import { SpellPrintComponent } from './spell-print/spell-print.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FeatListComponent } from './feat-list/feat-list.component';
-import { AppComponent } from './app.component';
-import { MainBodyComponent } from './main-body/main-body.component';
 
 
 //Reihenfolge ist relevant: Allgemeine Seiten zum Schluss, spezielle Seiten an den Anfang

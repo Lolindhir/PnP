@@ -34,7 +34,6 @@ import { MatListModule } from '@angular/material/list';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
-import { MainBodyComponent } from '@components/main-body/main-body.component';
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListBlueprintDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
@@ -49,7 +48,6 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
   declarations: [
     AppComponent,
     MainHeaderComponent,
-    MainBodyComponent,
     SpellListComponent,
     SpellListSettingsDialog,
     SpellListCharacterDialog,
