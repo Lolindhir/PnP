@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd} from '@angular/router';
+import { NgNavigatorShareService } from 'ng-navigator-share';
 import { Spell, SpellListCategory } from '@models/spell.model';
 import { PrintSettings } from '@models/spell-print.model';
 import { SpellService } from '@services/spell.service';
@@ -199,6 +200,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     private route: ActivatedRoute,
     private router: Router,
     private httpClient: HttpClient,
+    private ngNavigatorShareService: NgNavigatorShareService,
     private storageService: StorageService,
     private spellService: SpellService,
     private clipboard: Clipboard,
@@ -268,7 +270,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     this.onChange();
     this.fetchMore();
 
-    this.sharable = navigator.canShare();
+    this.sharable = this.ngNavigatorShareService.canShare();
 
   }
 
@@ -2559,30 +2561,19 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   }
 
-  onShareSpell(spell: Spell){
-
+  async onShareSpell(spell: Spell) {
+    
     var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
 
-    // this.clipboard.copy(sharedRoute);
-
-    // this.snackBar.openFromComponent(SnackBarComponent, {
-    //   duration: globals.snackBarDuration,
-    //   data: {text: 'Link to spell copied!'}
-    // });
-
-    if (navigator.share) {
-      navigator.share({
-        title: 'Lolindhir\'s Homerules',
-        text: 'Look at this spell!',
-        url: sharedRoute,
-      }).then(() => {
-        console.log('Shared successfull');
-      }).catch((error) => {
-        console.error('Error sharing', error);
+    try{
+      const sharedResponse = await this.ngNavigatorShareService.share({
+        title:'Lolindhir\'s Homerules',
+        text: 'Check out this spell!',
+        url: sharedRoute
       });
-    } else {
-      //fallback 
-      alert('Sharing is not supported.');
+      console.log(sharedResponse);
+    } catch(error) {
+      console.log('Your spell is not shared, reason: ',error);
     }
     
   }
