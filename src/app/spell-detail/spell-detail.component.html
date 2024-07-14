@@ -1,0 +1,131 @@
+<app-main-header></app-main-header>
+
+<div  class="page" fxLayout="row" fxLayoutAlign="center">
+    <div class="container">
+
+        <div *ngIf="!spellLoaded">
+            <span>Spell '{{spellIdName}}' doesn't exist!</span>
+        </div>
+
+        <mat-card *ngIf="spell != undefined" style="margin-top: 10px;">
+
+            <mat-card-header>
+                <mat-card-title>{{spell.name}}</mat-card-title>
+                <mat-card-subtitle>{{spell.levelSchoolDisplay}}</mat-card-subtitle>
+           </mat-card-header>
+
+           <mat-card-content>
+
+            <div class="big-top-gap"></div>
+
+            <div>
+                <span class="spell-property-denotation">Casting time:</span>
+                <span class="spell-property-description">
+                  {{spell.castingTime}}
+                  <span *ngIf="spell.ritual"><img class="image" style="margin-left: 2px;" src={{images.spellRitual}}></span>
+                </span>
+              </div>
+  
+              <!-- Template for spell range -->
+              <ng-template #SpellRange>
+                  <span *ngIf="!spell.range.containsAsset">{{spell.range.displayTextComplete}}</span>
+                  <span *ngIf="spell.range.containsAsset">{{spell.range.displayTextPart1}}<img class="image" src={{spell.range.assetPath}} matTooltip="{{spell.range.assetTooltip}}" matTooltipShowDelay="{{tooltipDelay}}">{{spell.range.displayTextPart2}}</span>
+              </ng-template>  
+  
+              <div>
+                <span class="spell-property-denotation">Range (Area):</span>
+                <span class="spell-property-description">
+                  <ng-template [ngTemplateOutlet]="SpellRange"></ng-template>
+                </span>
+              </div>
+  
+              <div>
+                <span class="spell-property-denotation">Components:</span>
+                <span class="spell-property-description">{{spell.componentsDisplay}}</span>
+              </div>
+  
+              <div>
+                <span class="spell-property-denotation">Duration:</span>
+                <span class="spell-property-description">{{spell.duration}}</span>
+              </div>
+  
+              <div *ngIf="spell.castingAbility.toLowerCase() != 'unknown'">
+                <span class="spell-property-denotation">Attack/Save:</span>
+                <span class="spell-property-description">{{spell.attacksSavesDisplay}}</span>
+              </div>         
+  
+              <div>    
+                <div>
+                  <div class="big-top-gap"></div>
+                  <div [innerHTML]="spell.descriptionDisplay"></div>    
+                </div>  
+              </div>
+              
+              <div>
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                  <div fxLayout="column" fxLayoutAlign="center start" style="height: 48px;">
+                    <div class="source-style">&#8226; {{spell.source}} &#8226;</div>
+                  </div>
+                  <div fxLayout="row" fxLayoutAlign="end center" fxFlex="auto">
+                    <div *ngIf="spell.translatable">
+                      <button color="primary" mat-icon-button class="normal-icon-button" (click)="onTranslation(spell)">
+                        <mat-icon>translate</mat-icon>
+                      </button>
+                    </div> 
+                  </div>                             
+                </div>
+                <div>
+                  <mat-divider></mat-divider>
+                </div>
+              </div>
+  
+              <div class="big-top-gap">
+                <span class="spell-property-denotation">Classes:</span>
+                <mat-chip-set>
+                  <mat-chip *ngFor="let spellClass of spell.classes">
+                    <span class="chip-text">{{spellClass.name}}</span>
+                  </mat-chip>
+                </mat-chip-set>
+                <!-- <span class="spell-property-denotation">Classes:</span>
+                <span class="spell-property-description">{{spell.classesDisplay}}</span> -->
+              </div>
+  
+              <div class="medium-top-gap" *ngIf="spell.subclasses.length">
+                <div class="spell-property-denotation">Subclasses:</div>
+                <mat-chip-set>
+                  <mat-chip *ngFor="let spellSubclass of spell.subclasses">
+                    <span class="chip-text">{{spellSubclass.name}}</span>
+                  </mat-chip>
+                </mat-chip-set>
+                <!-- <span class="spell-property-denotation">Subclasses:</span> -->
+                <!-- <span class="spell-property-description">{{spell.subclassesDisplay}}</span> -->
+              </div>
+                         
+  
+              <div class="big-top-gap" *ngIf="spell.tags.length">
+                
+                <div>
+                  <mat-divider></mat-divider>
+                </div>
+  
+                <div class="medium-top-gap">
+                  <mat-chip-set>
+                    <mat-chip *ngFor="let spellTag of spell.tags"
+                      [style.background]="spellTag.colorCode" [matTooltip]="spellTag.description">
+                      <span class="chip-text-big" [style.color]="spellTag.fontColor">{{spellTag.name}}</span>
+                    </mat-chip>
+                  </mat-chip-set>
+                </div>
+  
+              </div>   
+  
+              <div *ngIf="spell.asset" class="big-top-gap">
+                <img src={{spell.assetPath}} style="max-width: 100%; margin-right: 1rem;"/>
+              </div>
+
+           </mat-card-content>         
+
+        </mat-card>
+
+    </div>
+</div>

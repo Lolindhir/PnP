@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit, HostListener, ViewChild, ElementRef, AfterViewInit, EventEmitter } from '@angular/core';
-import { Router, ActivatedRoute} from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd} from '@angular/router';
 import { Spell, SpellListCategory } from '@models/spell.model';
 import { PrintSettings } from '@models/spell-print.model';
 import { SpellService } from '@services/spell.service';
@@ -263,8 +263,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
 
-    console.log("ngOnInit called");    
-
     //add first spells to show list
     this.onChange();
     this.fetchMore();
@@ -272,8 +270,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    
-    console.log("ngAfterViewInit called");
 
     this.setSize();
 
@@ -2450,7 +2446,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       toCopy += spell.ritual ? spell.name + ' (Ritual)' : spell.name;
     }
 
-    console.log(toCopy);
+    //console.log(toCopy);
 
     this.clipboard.copy(toCopy);
 
@@ -2541,11 +2537,23 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       this.storageService.storeLocal('PrintSettings', JSON.stringify(printSettings));
       this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
-      //window.open(this.router.serializeUrl(this.router.createUrlTree(['spells/print'])), '_blank');
-      window.open(location.href + '/print');
+      window.open(this.router.serializeUrl(this.router.createUrlTree(['spells-print'])), '_blank');
+      //window.open(location.href + '/print');
+      
     }
+  }
 
+  onShareSpell(spell: Spell){
+    //this.router.navigate(['spells/', spell.name]);
+    var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
 
+    //window.open(sharedRoute, '_blank');
+    this.clipboard.copy(sharedRoute);
+
+    this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: globals.snackBarDuration,
+      data: {text: 'Link to spell copied!'}
+    });
   }
 
   spellAssetNotLoaded(index: number, assetPath: string){

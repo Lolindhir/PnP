@@ -1283,24 +1283,23 @@
 
             </div>
 
-            
-            <div *ngIf="!spell.translatable" class="medium-top-gap">
-              <div class="source-style">
-                &#8226; {{spell.source}} &#8226;
-              </div>
-              <div class="medium-top-gap">
-                <mat-divider></mat-divider>
-              </div>
-            </div>
-
-            <div *ngIf="spell.translatable">
-              <div fxLayout="row" fxLayoutAlign="space-between center">
-                <div [style.max-width.px]="screenWidth - 140" class="source-style">&#8226; {{spell.source}} &#8226;</div>
-                <div>
-                  <button color="primary" mat-icon-button class="normal-icon-button" (click)="onTranslation(spell)">
-                    <mat-icon>translate</mat-icon>
-                  </button>
-                </div>              
+            <div>
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxLayout="column" fxLayoutAlign="center start" style="height: 48px;">
+                  <div class="source-style">&#8226; {{spell.source}} &#8226;</div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="end center" fxFlex="auto">
+                  <div>
+                    <button color="primary" mat-icon-button class="normal-icon-button" (click)="onShareSpell(spell)">
+                      <mat-icon>link</mat-icon>
+                    </button>
+                  </div>
+                  <div *ngIf="spell.translatable">
+                    <button color="primary" mat-icon-button class="normal-icon-button" (click)="onTranslation(spell)">
+                      <mat-icon>translate</mat-icon>
+                    </button>
+                  </div> 
+                </div>                             
               </div>
               <div>
                 <mat-divider></mat-divider>

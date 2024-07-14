@@ -36,6 +36,7 @@ import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListBlueprintDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
+import { SpellDetailComponent } from '@components/spell-detail/spell-detail.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
 import { StorageService } from '@services/storage.service';
@@ -54,6 +55,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     SpellListBlueprintDialog,
     SpellListInfoDialog,
     SpellPrintComponent,
+    SpellDetailComponent,
     SpellFilterPipe,
     ItemListComponent,
     HomeComponent,

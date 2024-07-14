@@ -59,6 +59,7 @@ export interface RawSpell {
 }
 
 export interface Spell {
+  id: string;
   level: number;  
   levelDisplay: string;  
   name: string;  
@@ -183,6 +184,9 @@ export class Spell implements Spell {
     // name = name.replace('Abi-Dalzim\'s ', '')
     // name = name.replace('Bigby\'s ', 'Arcane ')
     this.name = name;
+
+    //build id from name
+    this.id = encodeURI(this.name);
 
     //build level display
     if(this.level === 0){

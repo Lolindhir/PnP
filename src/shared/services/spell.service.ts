@@ -21,7 +21,7 @@ export class SpellService {
   spellProperties: SpellProperties = spellPropertiesData;
 
   constructor(){
-
+    
     var rawSpells: RawSpell[] = spellsData;
     rawSpells.forEach(rawSpell => {      
       //only allowed spells
@@ -31,6 +31,12 @@ export class SpellService {
       //create spell
       this.allSpells.push(new Spell(rawSpell, this.spellProperties))
     });
+
+  }
+
+  public getSpellById(id: string): Spell | undefined {    
+
+    return this.allSpells.find(spell => spell.id === id);
 
   }
 
