@@ -167,6 +167,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   //other global stuff
   images = imagePaths;
+  sharable: boolean = false;
   disabled: boolean = false;
   highlightColor: string = '#E0FFFF'; //'lightgrey';
   highlightFilter: boolean = false;
@@ -266,6 +267,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //add first spells to show list
     this.onChange();
     this.fetchMore();
+
+    this.sharable = navigator.canShare();
 
   }
 
@@ -2543,17 +2546,45 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onShareSpell(spell: Spell){
-    //this.router.navigate(['spells/', spell.name]);
+  onCopySpellLink(spell: Spell){
+
     var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
 
-    //window.open(sharedRoute, '_blank');
     this.clipboard.copy(sharedRoute);
 
     this.snackBar.openFromComponent(SnackBarComponent, {
       duration: globals.snackBarDuration,
       data: {text: 'Link to spell copied!'}
     });
+
+  }
+
+  onShareSpell(spell: Spell){
+
+    var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
+
+    // this.clipboard.copy(sharedRoute);
+
+    // this.snackBar.openFromComponent(SnackBarComponent, {
+    //   duration: globals.snackBarDuration,
+    //   data: {text: 'Link to spell copied!'}
+    // });
+
+    if (navigator.share) {
+      navigator.share({
+        title: 'Lolindhir\'s Homerules',
+        text: 'Look at this spell!',
+        url: sharedRoute,
+      }).then(() => {
+        console.log('Shared successfull');
+      }).catch((error) => {
+        console.error('Error sharing', error);
+      });
+    } else {
+      //fallback 
+      alert('Sharing is not supported.');
+    }
+    
   }
 
   spellAssetNotLoaded(index: number, assetPath: string){
