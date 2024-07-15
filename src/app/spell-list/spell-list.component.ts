@@ -2563,7 +2563,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   async onShareSpell(spell: Spell) {
     
-    var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
+    var sharedRoute = location.href + this.router.serializeUrl(this.router.createUrlTree(['', spell.id]));
 
     try{
       const sharedResponse = await this.ngNavigatorShareService.share({
