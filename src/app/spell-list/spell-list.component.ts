@@ -2550,7 +2550,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   onCopySpellLink(spell: Spell){
 
-    var sharedRoute = location.origin + this.router.serializeUrl(this.router.createUrlTree(['spells', spell.id]));
+    var sharedRoute = location.href + this.router.serializeUrl(this.router.createUrlTree(['', spell.id]));
 
     this.clipboard.copy(sharedRoute);
 
@@ -2568,7 +2568,6 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     try{
       const sharedResponse = await this.ngNavigatorShareService.share({
         title:'Lolindhir\'s Homerules',
-        text: 'Check out this spell!',
         url: sharedRoute
       });
       console.log(sharedResponse);
