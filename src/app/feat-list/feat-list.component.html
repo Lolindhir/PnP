@@ -27,7 +27,7 @@
         <div fxLayout="column" style="width: 250px;">
             <mat-form-field appearance="fill" subscriptSizing="dynamic">
                 <mat-label>Filter by categories</mat-label>
-                <mat-select [(ngModel)]="selectedCategories" (ngModelChange)="onCategoryFilterChanged()" multiple="true">
+                <mat-select [(ngModel)]="selectedCategories" (ngModelChange)="onFilterChanged()" multiple="true">
                     <mat-select-trigger>
                         <span>{{selectedCategories.length}} selected</span>
                     </mat-select-trigger>
@@ -38,11 +38,25 @@
             </mat-form-field>
         </div>
 
+        <div fxLayout="column" style="width: 250px;">
+            <mat-form-field appearance="fill" subscriptSizing="dynamic">
+                <mat-label>Filter by attributes</mat-label>
+                <mat-select [(ngModel)]="selectedAttributes" (ngModelChange)="onFilterChanged()" multiple="true">
+                    <mat-select-trigger>
+                        <span>{{selectedAttributes.length}} selected</span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let attribute of optionsAttribute" [value]="attribute">
+                        {{attribute}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
         <div fxLayout="row" fxLayoutAlign="space-between end" style="margin-top: 10px;">
 
-            <div *ngIf="selectedCategories.length === 0"></div>
+            <div *ngIf="selectedCategories.length + selectedAttributes.length === 0"></div>
 
-            <div *ngIf="selectedCategories.length > 0" fxLayout="row wrap" fxLayoutAlign="left center" style="margin-bottom: 25px">
+            <div *ngIf="selectedCategories.length + selectedAttributes.length > 0" fxLayout="row wrap" fxLayoutAlign="left center" style="margin-bottom: 25px">
 
                 <mat-chip-set>
                     <mat-chip-option *ngFor="let category of selectedCategories" [selectable]=false [removable]=true (removed)="onCategoryFilterRemoved(category)">
@@ -51,7 +65,14 @@
                     </mat-chip-option>
                 </mat-chip-set>
             
-                <button mat-button color="primary" (click)="onAllCategoryFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
+                <mat-chip-set>
+                    <mat-chip-option *ngFor="let attribute of selectedAttributes" [selectable]=false [removable]=true (removed)="onAttributeFilterRemoved(attribute)">
+                        <span class="chip-text">{{attribute}}</span>
+                        <mat-icon matChipRemove>cancel</mat-icon>
+                    </mat-chip-option>
+                </mat-chip-set>
+
+                <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
 
             </div>            
       
@@ -147,8 +168,8 @@
                         <mat-chip *ngIf="element.cost > 1" style="background: rgba(218, 167, 248, 0.4);" matTooltip="This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.">
                           <span class="chip-text">Costs {{element.cost}}</span>
                         </mat-chip>
-                        <mat-chip *ngIf="element.starter === false" style="background: rgba(240, 128, 128, 0.3);" matTooltip="This feat can't be taken at character creation.">
-                            <span class="chip-text">No Starter</span>
+                        <mat-chip *ngIf="element.starter === true" style="background: rgb(210, 224, 247);" matTooltip="This feat can't be taken at character creation.">
+                            <span class="chip-text">Starting Feat</span>
                         </mat-chip>
                     </mat-chip-set>
 

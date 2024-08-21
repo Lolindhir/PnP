@@ -39,6 +39,8 @@ export class FeatListComponent implements OnInit {
   //filter
   selectedCategories: string[] = new Array();
   optionsCategory: string[] = new Array();
+  selectedAttributes: string[] = new Array();
+  optionsAttribute: string[] = new Array();
 
   @ViewChild(MatSort) sort: MatSort;
 
@@ -52,6 +54,13 @@ export class FeatListComponent implements OnInit {
 
     //get categories
     this.optionsCategory = Feat.getCategoryTexts();
+    //get attributes
+    this.optionsAttribute.push('Strength 13+');
+    this.optionsAttribute.push('Dexterity 13+');
+    this.optionsAttribute.push('Constitution 13+');
+    this.optionsAttribute.push('Intelligence 13+');
+    this.optionsAttribute.push('Wisdom 13+');
+    this.optionsAttribute.push('Charisma 13+');
 
     //set data source
     this.featsShown = this.feats;
@@ -74,17 +83,19 @@ export class FeatListComponent implements OnInit {
   saveSettings(): void{ 
     this.storageService.storeLocal('FeatsSortBy', this.defaultSort);
     this.storageService.storeLocal('FeatsSelectedCategories', JSON.stringify(this.selectedCategories, null, 2));
+    this.storageService.storeLocal('FeatsSelectedAttributes', JSON.stringify(this.selectedAttributes, null, 2));
   }
 
   loadSettings(){
     this.defaultSort = this.storageService.loadLocal('FeatsSortBy').length > 0  ? this.storageService.loadLocal('FeatsSortBy') : this.defaultSort;
 
-    //get saved selected category storage
+    //get saved selected category and attributes storage
     try {
       this.selectedCategories = JSON.parse(this.storageService.loadLocal('FeatsSelectedCategories'));
+      this.selectedAttributes = JSON.parse(this.storageService.loadLocal('FeatsSelectedAttributes'));
     }
     catch (exception_var){
-      console.log('Cannot load selectedCategories');
+      console.log('Cannot load selectedCategories or selectedAttributes!');
       return;
     }
   }  
@@ -98,19 +109,36 @@ export class FeatListComponent implements OnInit {
     this.applyFilter();
   }
 
-  onAllCategoryFiltersRemoved() {
+  onAllFiltersRemoved() {
     this.selectedCategories = new Array();
+    this.selectedAttributes = new Array();
     this.saveSettings();
     this.filterFeats();
   }
 
   onCategoryFilterRemoved(category: string){
     ArrayUtilities.removeFromArray(this.selectedCategories, category);
+    var tempArray = this.selectedCategories;
+    this.selectedCategories = new Array();
+    tempArray.forEach(tempEntry => {
+      this.selectedCategories.push(tempEntry);
+    })
     this.saveSettings();
     this.filterFeats();
   }
 
-  onCategoryFilterChanged() {
+  onAttributeFilterRemoved(attribute: string){
+    ArrayUtilities.removeFromArray(this.selectedAttributes, attribute);
+    var tempArray = this.selectedAttributes;
+    this.selectedAttributes = new Array();
+    tempArray.forEach(tempEntry => {
+      this.selectedAttributes.push(tempEntry);
+    })
+    this.saveSettings();
+    this.filterFeats();
+  }
+
+  onFilterChanged() {
     this.saveSettings();
     this.filterFeats();
   }
@@ -124,11 +152,39 @@ export class FeatListComponent implements OnInit {
     //reset shown array
     this.featsShown = new Array();
 
-    //push every feat matching the categories if selected categories aren't empty
+    //push every feat:
+    //matching the categories if selected categories aren't empty
+    //matching the attributes if selected attributes aren't empty
     this.feats.forEach(feat => {
-      if(this.selectedCategories.length === 0 || this.selectedCategories.includes(feat.categoryText)){
-        this.featsShown.push(feat);
+      
+      if(this.selectedCategories.length > 0 && !this.selectedCategories.includes(feat.categoryText)){
+        return;
       }
+
+      if(this.selectedAttributes.length > 0 && 
+        (
+          feat.prerequisite.toLowerCase().includes('strength')
+        ||feat.prerequisite.toLowerCase().includes('dexterity')
+        ||feat.prerequisite.toLowerCase().includes('constitution')
+        ||feat.prerequisite.toLowerCase().includes('intelligence')
+        ||feat.prerequisite.toLowerCase().includes('wisdom')
+        ||feat.prerequisite.toLowerCase().includes('charisma')
+        )
+      ){
+        
+        var dontPush: boolean = true;
+        
+        if((feat.prerequisite.toLowerCase().includes('strength') && this.selectedAttributes.includes('Strength 13+'))) dontPush = false;
+        if((feat.prerequisite.toLowerCase().includes('dexterity') && this.selectedAttributes.includes('Dexterity 13+'))) dontPush = false;
+        if((feat.prerequisite.toLowerCase().includes('constitution') && this.selectedAttributes.includes('Constitution 13+'))) dontPush = false;
+        if((feat.prerequisite.toLowerCase().includes('intelligence') && this.selectedAttributes.includes('Intelligence 13+'))) dontPush = false;
+        if((feat.prerequisite.toLowerCase().includes('wisdom') && this.selectedAttributes.includes('Wisdom 13+'))) dontPush = false;
+        if((feat.prerequisite.toLowerCase().includes('charisma') && this.selectedAttributes.includes('Charisma 13+'))) dontPush = false;        
+
+        if(dontPush) return;
+      }
+
+      this.featsShown.push(feat);
     });
 
     //reset data source

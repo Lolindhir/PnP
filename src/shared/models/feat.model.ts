@@ -51,6 +51,7 @@ export class Feat implements Feat {
         var categoryTexts: string[] = new Array();
 
         Feat.globalProperties.categories.forEach(category => {
+            
             if(category.subcategories.length === 0){
                 categoryTexts.push(category.name);
             }
