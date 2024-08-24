@@ -4,6 +4,7 @@ import rulesData from 'D:/OneDrive/D&D/Website Content/rulesToC.json';
 export interface RawRulesContent {
     id: string;
     name: string;
+    breadcrumb: string;
     filename: string;
     children: RawRulesContent[];
 }
@@ -11,6 +12,7 @@ export interface RawRulesContent {
 export interface RulesContent {
     id: string;
     name: string;
+    breadcrumb: string;
     filename: string;
     path: string;
     children: RulesContent[];
@@ -68,25 +70,25 @@ export class RulesContent {
         return this.allRoutesNavigation;
     }
 
-    public static getPathFromRoot(targetRulesContent: RulesContent): RulesNavigationRouteSimple[] {
+    public static getBreadcrumb(targetRulesContent: RulesContent): RulesNavigationRouteSimple[] {
         var chainArray: RulesNavigationRouteSimple[] = new Array();
-        this.getParentNav(targetRulesContent, chainArray);
+        this.getParentBreadcrumbNav(targetRulesContent, chainArray);
         return chainArray;
     }
 
 
 
 
-    private static getParentNav(rulesContent: RulesContent, chainArray: RulesNavigationRouteSimple[]): void {
+    private static getParentBreadcrumbNav(rulesContent: RulesContent, chainArray: RulesNavigationRouteSimple[]): void {
 
         //first check for parent and call recursion to order array top down
         if(rulesContent.parent != null){
-            this.getParentNav(rulesContent.parent, chainArray);
+            this.getParentBreadcrumbNav(rulesContent.parent, chainArray);
         }
 
         //then add current rules content
         chainArray.push({
-            name: rulesContent.name,
+            name: rulesContent.breadcrumb,
             route: rulesContent.path
         });
     }
@@ -154,6 +156,7 @@ export class RulesContent {
             var freshRulesContent: RulesContent = {
                 id: rawRule.id,
                 name: rawRule.name,
+                breadcrumb: rawRule.breadcrumb,
                 filename: rawRule.filename,
                 path: newPath,
                 children: new Array(),

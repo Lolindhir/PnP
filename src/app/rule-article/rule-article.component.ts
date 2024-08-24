@@ -29,7 +29,7 @@ export class RuleArticleComponent {
 
         this.children = rulesContent.children;
 
-        this.breadcrumbs = RulesContent.getPathFromRoot(rulesContent);
+        this.breadcrumbs = RulesContent.getBreadcrumb(rulesContent);
       }
 
 
