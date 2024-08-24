@@ -1,5 +1,3 @@
-# Fighter
-
 ## Core Fighter Traits
 
 | <!-- -->                       | <!-- -->                                                                                                                |
