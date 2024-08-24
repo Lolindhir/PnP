@@ -3,8 +3,8 @@ import { Feat, RawFeat } from "@models/feat.model";
 import { FeatProperties } from "@models/feat-properties.model";
 
 //import data
-import featsData from 'D:/OneDrive/D&D/My Homebrew and -Rules/feats.json';
-import featPropertiesData from 'D:/OneDrive/D&D/My Homebrew and -Rules/featProperties.json';
+import featsData from 'D:/OneDrive/D&D/Website Content/feats.json';
+import featPropertiesData from 'D:/OneDrive/D&D/Website Content/featProperties.json';
 
 
 @Injectable({

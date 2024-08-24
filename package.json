@@ -1,6 +1,6 @@
 {
   "name": "pnp-homerules-wiki",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,11 +21,14 @@
     "@angular/platform-browser": "^17.3.8",
     "@angular/platform-browser-dynamic": "^17.3.8",
     "@angular/router": "^17.3.8",
+    "@types/marked": "^4.3.0",
     "file-saver": "^2.0.5",
     "file-system": "^2.2.2",
+    "marked": "^4.3.0",
     "ng-navigator-share": "^1.0.4",
     "ngx-cookie-service": "^17.1.0",
     "ngx-filesaver": "^17.0.0",
+    "ngx-markdown": "^15.1.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.5"

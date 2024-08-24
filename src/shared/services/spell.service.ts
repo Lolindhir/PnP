@@ -8,8 +8,8 @@ import { ArrayUtilities } from "@utilities/array.utilities";
 import { SpellClass } from "@models/spell-class.model";
 
 //import data
-import spellsData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spells.json'; 
-import spellPropertiesData from 'D:/OneDrive/D&D/Public/Quellen und Infos/Zauber/spellProperties.json';
+import spellsData from 'D:/OneDrive/D&D/Website Content/Zauber/spells.json'; 
+import spellPropertiesData from 'D:/OneDrive/D&D/Website Content/Zauber/spellProperties.json';
 
 
 @Injectable({

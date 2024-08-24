@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, FormControl } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FileSaverModule } from 'ngx-filesaver';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -37,6 +37,8 @@ import { MainHeaderComponent } from '@components/main-header/main-header.compone
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListBlueprintDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellDetailComponent } from '@components/spell-detail/spell-detail.component';
+import { RulesHomeComponent } from './rules-home/rules-home.component';
+import { RuleArticleComponent } from './rule-article/rule-article.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
 import { StorageService } from '@services/storage.service';
@@ -44,6 +46,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatListComponent } from './feat-list/feat-list.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
+import { MarkdownModule } from 'ngx-markdown'; 
 
 @NgModule({
   declarations: [
@@ -56,6 +59,8 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     SpellListInfoDialog,
     SpellPrintComponent,
     SpellDetailComponent,
+    RulesHomeComponent,
+    RuleArticleComponent,
     SpellFilterPipe,
     ItemListComponent,
     HomeComponent,
@@ -97,6 +102,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     MatListModule,
     ScrollingModule,
     AppRoutingModule,
+    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
   ],
   providers: [
     CookieService,

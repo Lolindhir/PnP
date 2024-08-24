@@ -1,0 +1,42 @@
+<app-main-header></app-main-header>
+
+<div class="page" fxLayout="row" fxLayoutAlign="center">
+    <div class="container">
+        <h1>{{headline}}</h1>
+
+        <div *ngIf="markDownSource.length > 0">
+
+            <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div *ngFor="let rulesContent of children">
+                    <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article-small">
+                        <mat-card-content>
+                             <mat-card-title>{{rulesContent.name}}</mat-card-title>
+                        </mat-card-content>
+                      </mat-card>
+                </div> 
+            </div>
+    
+            <div *ngIf="markDownSource.length > 0" markdown [src]="markDownSource"></div>
+
+        </div>
+
+        <div *ngIf="markDownSource.length < 1">
+
+            <div *ngIf="children.length > 0" fxLayout="column" fxLayoutAlign="start center">
+
+                <div *ngFor="let rulesContent of children">
+                    <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article-normal">
+                        <mat-card-content>
+                             <mat-card-title>{{rulesContent.name}}</mat-card-title>
+                        </mat-card-content>
+                      </mat-card>
+                </div>    
+            
+            </div>
+
+        </div>
+
+        
+
+    </div>
+</div>
