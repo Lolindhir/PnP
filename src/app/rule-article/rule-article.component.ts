@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { RulesContent } from '@models/rules-content.model';
+import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.model';
 
 @Component({
   selector: 'app-rule-article',
@@ -12,6 +12,7 @@ export class RuleArticleComponent {
   headline: string = 'Artikel';
   markDownSource: string = '';
   children: RulesContent[] = new Array();
+  breadcrumbs: RulesNavigationRouteSimple[] = new Array();
   href: string = "";
   
   constructor(private route: ActivatedRoute) { }
@@ -28,6 +29,7 @@ export class RuleArticleComponent {
 
         this.children = rulesContent.children;
 
+        this.breadcrumbs = RulesContent.getPathFromRoot(rulesContent);
       }
 
 

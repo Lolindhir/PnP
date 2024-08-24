@@ -14,12 +14,18 @@ export interface RulesContent {
     filename: string;
     path: string;
     children: RulesContent[];
+    parent: RulesContent | null;
 }
 
 export interface RulesNavigationRoute {
     name: string,
     route: string,
     children: RulesNavigationRoute[]
+}
+
+export interface RulesNavigationRouteSimple {
+    name: string,
+    route: string
 }
 
 export class RulesContent {
@@ -37,7 +43,7 @@ export class RulesContent {
             //get rules from raw
             var rawRules: RawRulesContent[] = rulesData;
             //transform raw rules
-            this.allRules = this.transformRaw(rawRules, '/rules');
+            this.allRules = this.transformRaw(rawRules, '/rules', null);
         }
 
         return this.allRules;
@@ -60,6 +66,29 @@ export class RulesContent {
             this.allRoutesNavigation = this.transformToNavigation(this.getAllRules());
         }
         return this.allRoutesNavigation;
+    }
+
+    public static getPathFromRoot(targetRulesContent: RulesContent): RulesNavigationRouteSimple[] {
+        var chainArray: RulesNavigationRouteSimple[] = new Array();
+        this.getParentNav(targetRulesContent, chainArray);
+        return chainArray;
+    }
+
+
+
+
+    private static getParentNav(rulesContent: RulesContent, chainArray: RulesNavigationRouteSimple[]): void {
+
+        //first check for parent and call recursion to order array top down
+        if(rulesContent.parent != null){
+            this.getParentNav(rulesContent.parent, chainArray);
+        }
+
+        //then add current rules content
+        chainArray.push({
+            name: rulesContent.name,
+            route: rulesContent.path
+        });
     }
 
     private static transformToRoutes(rulesContent: RulesContent[]): void {
@@ -112,7 +141,7 @@ export class RulesContent {
         return returnArray;
     }
     
-    private static transformRaw(rawContent: RawRulesContent[], parentPath: string): RulesContent[]{
+    private static transformRaw(rawContent: RawRulesContent[], parentPath: string, parent: RulesContent | null): RulesContent[]{
 
         var freshRulesContentArray: RulesContent[] = new Array();
 
@@ -127,8 +156,12 @@ export class RulesContent {
                 name: rawRule.name,
                 filename: rawRule.filename,
                 path: newPath,
-                children: this.transformRaw(rawRule.children, newPath)
+                children: new Array(),
+                parent: parent
             };
+
+            //transform children and add
+            freshRulesContent.children = this.transformRaw(rawRule.children, newPath, freshRulesContent);
 
             //push fresh rules content
             freshRulesContentArray.push(freshRulesContent);

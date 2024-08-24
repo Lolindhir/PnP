@@ -2,19 +2,24 @@
 
 <div class="page" fxLayout="row" fxLayoutAlign="center">
     <div class="container">
+        
+        <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-bottom: 10px;">
+            <a routerLink="/rules">Rules</a>
+            <div *ngFor="let breadcrumb of breadcrumbs" fxLayout="row" fxLayoutAlign="start center">
+                <div style="margin-left: 5px; margin-right: 5px;">></div>
+                <a routerLink="{{breadcrumb.route}}">{{breadcrumb.name}}</a>
+            </div>
+        </div>
+
         <h1>{{headline}}</h1>
 
         <div *ngIf="markDownSource.length > 0">
 
-            <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="space-between center">
+            <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="start center" style="margin-bottom: 20px;">
                 <div *ngFor="let rulesContent of children">
-                    <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article-small">
-                        <mat-card-content>
-                             <mat-card-title>{{rulesContent.name}}</mat-card-title>
-                        </mat-card-content>
-                      </mat-card>
+                    <a routerLink="{{rulesContent.path}}" mat-button color="primary" style="text-decoration: underline;">{{rulesContent.name}}</a>
                 </div> 
-            </div>
+            </div>              
     
             <div *ngIf="markDownSource.length > 0" markdown [src]="markDownSource"></div>
 
@@ -25,7 +30,7 @@
             <div *ngIf="children.length > 0" fxLayout="column" fxLayoutAlign="start center">
 
                 <div *ngFor="let rulesContent of children">
-                    <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article-normal">
+                    <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article">
                         <mat-card-content>
                              <mat-card-title>{{rulesContent.name}}</mat-card-title>
                         </mat-card-content>
