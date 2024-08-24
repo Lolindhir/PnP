@@ -15,9 +15,9 @@ ___
 
 As a Wizard, you gain the following class features when you reach the specified Wizard levels. These features are listed in the Wizard Features table.
 
-| Level | Proficiency Bonus | Class Features                              | Prepared Cantrips | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| :---: | :---------------: | :------------------------------------------ | :---------------: | :-------------: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|   1   |        +2         | Spellcasting, Ritual Adept, Arcane Recovery |         3         |        4        |  2  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|   2   |        +2         | Scholar                                     |         3         |        5        |  3  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|   3   |        +2         | Wizard Subclass                             |         3         |        6        |  4  |  2  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|   4   |        +2         | Ability Score Improvement                   |         4         |        7        |  4  |  3  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+| Level | Proficiency Bonus | Class Features                              | Prepared Cantrips | Prepared Spells |
+| :---: | :---------------: | :------------------------------------------ | :---------------: | :-------------: |
+|   1   |        +2         | Spellcasting, Ritual Adept, Arcane Recovery |         3         |        4        |
+|   2   |        +2         | Scholar                                     |         3         |        5        |
+|   3   |        +2         | Wizard Subclass                             |         3         |        6        |
+|   4   |        +2         | Ability Score Improvement                   |         4         |        7        |
