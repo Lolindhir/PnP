@@ -13,14 +13,14 @@ ___
 
 ## Fighter Class Features
 
-As Fighter, you gain the following class features when you reach the specified Fighter levels. These features are listed on the Fighter Features table.
+As a Fighter, you gain the following class features when you reach the specified Fighter levels. These features are listed on the Fighter Features table.
 
-| **Level** | **Proficiency Bonus** | **Class Features**                          | **Second Wind** | **Weapon Mastery** |
-| :-------: | :-------------------: | :------------------------------------------ | :-------------: | :----------------: |
-|     1     |          +2           | Fighting Style, Second Wind, Weapon Mastery |        2        |         3          |
-|     2     |          +2           | Action Surge (one use), Tactical Mind       |        2        |         3          |
-|     3     |          +2           | Fighter Subclass                            |        2        |         3          |
-|     4     |          +2           | Ability Score Improvement                   |        3        |         4          |
+| Level | Proficiency Bonus | Class Features                              | Second Wind | Weapon Mastery |
+| :---: | :---------------: | :------------------------------------------ | :---------: | :------------: |
+|   1   |        +2         | Fighting Style, Second Wind, Weapon Mastery |      2      |       3        |
+|   2   |        +2         | Action Surge (one use), Tactical Mind       |      2      |       3        |
+|   3   |        +2         | Fighter Subclass                            |      2      |       3        |
+|   4   |        +2         | Ability Score Improvement                   |      3      |       4        |
 
 
 ### Level 1: Fighting Style
