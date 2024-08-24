@@ -21,3 +21,4 @@ As a Wizard, you gain the following class features when you reach the specified 
 |   2   |        +2         | Scholar                                     |         3         |        5        |
 |   3   |        +2         | Wizard Subclass                             |         3         |        6        |
 |   4   |        +2         | Ability Score Improvement                   |         4         |        7        |
+|   5   |        +3         | Memorize Spell                              |         4         |        9        |

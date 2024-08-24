@@ -11,3 +11,15 @@
 | **Armor Training**             | Light armor                                                                                                                             |
 ___
 
+
+## Rogue Class Features
+
+As a Rogue, you gain the following class features when you reach the specified Rogue levels. These features are listed in the Rogue Features table.
+
+| Level | Proficiency Bonus | Class Features                                         | Sneak Attack |
+| :---: | :---------------: | :----------------------------------------------------- | :----------: |
+|   1   |        +2         | Expertise, Sneak Attack, Thieves' Cant, Weapon Mastery |     1d6      |
+|   2   |        +2         | Cunning Action                                         |     1d6      |
+|   3   |        +2         | Rogue Subclass, Steady Aim                             |     2d6      |
+|   4   |        +2         | Ability Score Improvement                              |     2d6      |
+|   5   |        +3         | Cunning Strike, Uncanny Dodge                          |     3d6      |
