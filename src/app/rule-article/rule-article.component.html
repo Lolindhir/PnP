@@ -15,13 +15,13 @@
 
         <div *ngIf="markDownSource.length > 0">
 
-            <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="start center" style="margin-bottom: 20px;">
+            <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="start center">
                 <div *ngFor="let rulesContent of children">
                     <a routerLink="{{rulesContent.path}}" mat-button color="primary" style="text-decoration: underline;">{{rulesContent.name}}</a>
                 </div> 
             </div>              
     
-            <div *ngIf="markDownSource.length > 0" markdown [src]="markDownSource"></div>
+            <div *ngIf="markDownSource.length > 0" class="markdown" markdown [src]="markDownSource"></div>
 
         </div>
 

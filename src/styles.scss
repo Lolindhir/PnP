@@ -2,3 +2,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Markdown definitions */
+.markdown h2 { 
+    margin-top: 20px;
+}
+
+.markdown h3 { 
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.markdown td, th {
+    padding-left: 7px;
+    padding-right: 7px;
+}
