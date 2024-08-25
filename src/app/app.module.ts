@@ -46,7 +46,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatListComponent } from './feat-list/feat-list.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
-import { MarkdownModule } from 'ngx-markdown'; 
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -102,7 +102,13 @@ import { MarkdownModule } from 'ngx-markdown';
     MatListModule,
     ScrollingModule,
     AppRoutingModule,
-    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
+    MarkdownModule.forRoot({ markedOptions: {
+      provide: MarkedOptions,
+      useValue: {
+        gfm: true,
+        breaks: true
+      }
+    } }),
   ],
   providers: [
     CookieService,
