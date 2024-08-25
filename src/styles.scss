@@ -31,6 +31,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-bottom: 15px;
 }
 
+.markdown p {
+    margin-bottom: 5px;
+}
+
 .markdown td, th {
     padding-left: 4px;
     padding-right: 4px;
