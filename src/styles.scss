@@ -9,8 +9,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .markdown h3 { 
+    margin-top: 25px;
+    margin-bottom: 7px;
+    font-size: 19px;
+}
+
+.markdown h4 { 
     margin-top: 20px;
     margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.markdown h5 { 
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.markdown table {
+    margin-bottom: 15px;
 }
 
 .markdown td, th {
