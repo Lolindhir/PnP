@@ -22,7 +22,7 @@
 #### Heavy Armor
 
 | Armor            | Armor Class (AC)     | Strength | Stealth |
-| :--------------- | :------------------- | :------- | :------ |
+| :--------------- | :------------------: | :------- | :------ |
 | Ring Mail        | 14                   | -        | Disadv. |
 | Chain Mail       | 16                   | Str 13   | Disadv. |
 | Splint Armor     | 17                   | Str 15   | Disadv. |
@@ -31,7 +31,7 @@
 #### Shield
 
 | Armor  | Armor Class (AC) |
-| :----- | :--------------- |
+| :----- | :--------------: |
 | Shield | +2               |
 
 

@@ -906,8 +906,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   loadFilters(){
 
-    //get name filter first
-    this.filterName = this.storageService.loadLocal('NameFilter');
+    //get name filter first - disabled (makes no sense really)
+    //this.filterName = this.storageService.loadLocal('NameFilter');
 
 
     //array to bundle all multi filter options for loading

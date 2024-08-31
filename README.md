@@ -11,11 +11,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Update Articles
-Run `del "src/assets/rules/*" -Recurse; cp -Path "D:\OneDrive\D&D\Website Content\rules\*" -Destination "src/assets/rules" -Force -Recurse;`
+Run `del "src/assets/rules/*" -Recurse; cp -Path "D:\OneDrive\D&D\Website Content\Rules\*" -Destination "src/assets/rules" -Force -Recurse;`
 
 ## Build
 
-Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Website Content\Zauber\Spell Images\*" -Destination "src/assets/spellImages" -Force -Recurse; del "src/assets/itemImages/*"; cp -Path "D:\OneDrive\D&D\Karten - Items\_Images\*" -Destination "src/assets/itemImages" -Force -Recurse; del "src/assets/rules/*" -Recurse; cp -Path "D:\OneDrive\D&D\Website Content\rules\*" -Destination "src/assets/rules" -Force -Recurse; ng build --base-href="https://lolindhir.github.io/PnP/"; cp docs/index.html docs/404.html` to build the project. The build artifacts will be stored in the `docs` directory.
+Run `del "src/assets/spellImages/*"; cp -Path "D:\OneDrive\D&D\Website Content\Zauber\Spell Images\*" -Destination "src/assets/spellImages" -Force -Recurse; del "src/assets/itemImages/*"; cp -Path "D:\OneDrive\D&D\Karten - Items\_Images\*" -Destination "src/assets/itemImages" -Force -Recurse; del "src/assets/rules/*" -Recurse; cp -Path "D:\OneDrive\D&D\Website Content\Rules\*" -Destination "src/assets/rules" -Force -Recurse; ng build --base-href="https://lolindhir.github.io/PnP/"; cp docs/index.html docs/404.html` to build the project. The build artifacts will be stored in the `docs` directory.
 
 ## Useful links
 

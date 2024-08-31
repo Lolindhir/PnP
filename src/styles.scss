@@ -5,7 +5,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Markdown definitions */
 .markdown h2 { 
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-decoration: underline;
 }
 
 .markdown h3 { 
@@ -18,6 +21,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-top: 20px;
     margin-bottom: 5px;
     font-size: 17px;
+    font-style: italic;
 }
 
 .markdown h5 { 
@@ -32,10 +36,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .markdown p {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .markdown td, th {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.markdown ul {
+    //margin-top: 5px;
+}
+
+.markdown .startgap {
+    margin-top: 25px;
+}
+
+.markdown .listNoGap {
+    margin-top: -12px;
 }
