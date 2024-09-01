@@ -31,21 +31,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-weight: bolder;
 }
 
-.markdown table {
-    margin-bottom: 15px;
-}
-
 .markdown p {
     margin-bottom: 7px;
 }
 
+.markdown table {
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
 .markdown td, th {
     padding-left: 5px;
     padding-right: 5px;
+    
 }
-
-.markdown ul {
-    //margin-top: 5px;
+.markdown tr {
+    border-bottom: 1px solid lightgrey;
+}
+.markdown tr:last-child {
+    /* row border */
+    border-bottom: 0px solid lightgrey!important;
 }
 
 .markdown .startgap {
