@@ -31,7 +31,7 @@ As a Fighter, you gain the following class features when you reach the specified
 |  12   | Ability Score Improvement                                                                            |
 |  13   | Indomitable (2 uses), Studied Attacks                                                                |
 |  14   | Ability Score Improvement                                                                            |
-|  15   | Subclass Feature, Combat Superiority (5d10), Maneuvers (9)                                           |
+|  15   | Subclass Feature, Combat Superiority (5d10), Maneuvers (9), Relentless                               |
 |  16   | Ability Score Improvement, Weapon Mastery (6)                                                        |
 |  17   | Action Surge (2 uses), Indomitable (3 uses)                                                          |
 |  18   | Subclass feature, Combat Superiority (5d12)                                                          |

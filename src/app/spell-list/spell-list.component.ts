@@ -116,6 +116,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   selectedFiltersMaterialValue: string[] = new Array();
   selectedFiltersMaterialConsumed: string[] = new Array();
   selectedFiltersUpcastable: string[] = new Array();
+  selectedFiltersUpdated: string[] = new Array();
   selectedFiltersCategoryKnown: string[] = new Array();
   selectedFiltersCategoryAlways: string[] = new Array();
   selectedFiltersCategoryLimited: string[] = new Array();
@@ -158,6 +159,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
   optionsMaterialValue = this.spellService.getMaterialValueFilterOptions();
   optionsMaterialConsumed = this.spellService.getMaterialConsumedFilterOptions();
   optionsUpcastable = this.spellService.getUpcastableFilterOptions();
+  optionsUpdated = this.spellService.getUpdatedFilterOptions();
   optionsSpellMod = this.spellService.getSpellModFilterOptions();
   optionsCategoryKnown = this.spellService.getCategoryKnownFilterOptions();
   optionsCategoryAlways = this.spellService.getCategoryAlwaysFilterOptions();
@@ -799,6 +801,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
         this.selectedFiltersUpcastable = newSelectedStrings;
         break;
       }
+      case SpellFilterType.Updated:{
+        this.selectedFiltersUpdated = newSelectedStrings;
+        break;
+      }
       case SpellFilterType.CategoryKnown:{
         this.selectedFiltersCategoryKnown = newSelectedStrings;
         break;
@@ -950,6 +956,7 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     allSingleOptions.push({ filters: this.optionsMaterialValue, selected: this.selectedFiltersMaterialValue });
     allSingleOptions.push({ filters: this.optionsMaterialConsumed, selected: this.selectedFiltersMaterialConsumed });
     allSingleOptions.push({ filters: this.optionsUpcastable, selected: this.selectedFiltersUpcastable });
+    allSingleOptions.push({ filters: this.optionsUpdated, selected: this.selectedFiltersUpdated });
     allSingleOptions.push({ filters: this.optionsCategoryKnown, selected: this.selectedFiltersCategoryKnown });
     allSingleOptions.push({ filters: this.optionsCategoryAlways, selected: this.selectedFiltersCategoryAlways });
     allSingleOptions.push({ filters: this.optionsCategoryLimited, selected: this.selectedFiltersCategoryLimited });

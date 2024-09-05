@@ -298,6 +298,17 @@
       <!-- <div *ngIf="showAdvancedFilters || screenSm" fxLayout="row wrap" fxLayoutAlign="left"
         fxLayoutAlign.lt-sm="space-evenly center"> -->
 
+        <div fxLayout="column" class="filter-button-select">
+          <div style="text-align: center;">Updated</div>
+          <div style="text-align: center;">
+            <mat-button-toggle-group multiple="true" [(ngModel)]="selectedFiltersUpdated">
+              <mat-button-toggle value="true" (click)="addFilterToggle(optionsUpdated, true)">Yes</mat-button-toggle>
+              <mat-button-toggle value="false" (click)="addFilterToggle(optionsUpdated, false)">No
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
         <div fxLayout="column" class="filter-select">
           <div>Spell School</div>
           <mat-form-field appearance="fill">

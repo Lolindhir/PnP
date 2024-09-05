@@ -44,9 +44,9 @@ export class SpellSource{
             sourceAbb = 'MCDM'
         }
 
-        //add changed
-        if(source.toLowerCase().includes('changed')){
-            sourceAbb += ' (changed)'
+        //add brackets
+        if(source.toLowerCase().includes('(')){
+            sourceAbb += source.substring(source.indexOf('(') - 1, source.length);' (changed)'
         }
 
         return sourceAbb;

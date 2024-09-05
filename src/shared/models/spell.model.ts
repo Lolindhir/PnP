@@ -619,6 +619,14 @@ export class Spell implements Spell {
           }          
           break; 
         }
+        case SpellFilterType.Updated: {             
+          var checkUpdated: boolean = filter.value as boolean;
+          var updated: boolean = this.source.toLowerCase().includes('(');
+          if(checkUpdated === updated){
+            return true;
+          }          
+          break; 
+        }
         case SpellFilterType.MaterialValue: {             
           var matValue: boolean = filter.value as boolean;
           if(matValue === null || this.componentsValue === matValue){

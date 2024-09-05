@@ -425,6 +425,15 @@ export class SpellService {
 
   }
 
+  public getUpdatedFilterOptions(): SpellFilter[] {
+    
+    var updatedFiltersOptions: SpellFilter[] = new Array();
+    updatedFiltersOptions.push(new SpellFilter(SpellFilterType.Updated, true,this.spellProperties));
+    updatedFiltersOptions.push(new SpellFilter(SpellFilterType.Updated, false,this.spellProperties));
+    return updatedFiltersOptions.sort(SpellFilter.compare);
+
+  }
+
   public getSpellModFilterOptions(): SpellFilter[] {
     
     var spellModFiltersOptions: SpellFilter[] = new Array();

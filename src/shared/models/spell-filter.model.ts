@@ -2,7 +2,7 @@ import { SpellClass } from "@models/spell-class.model";
 import { SpellProperties } from "@models/spell-properties.model";
 import { SpellRange, SpellRangeCategory } from "@models/spell-range.model";
 import { SpellTarget } from "@models/spell-target.model";
-import { StorageService } from "@shared/services/storage.service";
+
 
 export interface SpellFilter{
     type: SpellFilterType;
@@ -55,7 +55,8 @@ export enum SpellFilterType{
     CategoryRitualCast = 37,
     CategoryPrepared = 38,
     CategoryRemoved = 39,
-    None = 40,
+    Updated = 40,
+    None = 41,
 }
 
 export interface SpellFilterGroup{
@@ -300,6 +301,16 @@ export class SpellFilter implements SpellFilter {
             displayTextList = displayText;
         }
 
+        else if(type === SpellFilterType.Updated){
+            if(value === true){
+                displayText = 'Only Updated';
+            }
+            else{
+                displayText = 'Without Updated';
+            }
+            displayTextList = displayText;
+        }
+
         else if(type === SpellFilterType.SpellMod){
             if(value === true){
                 displayText = 'Casting  Ability required';
@@ -529,6 +540,7 @@ export class SpellFilter implements SpellFilter {
             || a.type === SpellFilterType.CategoryRitualCast
             || a.type === SpellFilterType.CategoryPrepared
             || a.type === SpellFilterType.CategoryRemoved
+            || a.type === SpellFilterType.Updated
             || a.type === SpellFilterType.Upcastable){
             compareA = a.value as boolean ? 1 : 2;
             compareB = b.value as boolean ? 1 : 2;
