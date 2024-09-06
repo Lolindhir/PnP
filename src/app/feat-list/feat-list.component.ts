@@ -41,6 +41,7 @@ export class FeatListComponent implements OnInit {
   optionsCategory: string[] = new Array();
   selectedAttributes: string[] = new Array();
   optionsAttribute: string[] = new Array();
+  onlyStarter: boolean = false;
 
   @ViewChild(MatSort) sort: MatSort;
 
@@ -155,8 +156,13 @@ export class FeatListComponent implements OnInit {
     //push every feat:
     //matching the categories if selected categories aren't empty
     //matching the attributes if selected attributes aren't empty
+    //matching starter attribute, if true
     this.feats.forEach(feat => {
       
+      if(this.onlyStarter && !feat.starter){
+        return;
+      }
+
       if(this.selectedCategories.length > 0 && !this.selectedCategories.includes(feat.categoryText)){
         return;
       }
