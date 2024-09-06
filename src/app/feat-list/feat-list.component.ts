@@ -83,12 +83,15 @@ export class FeatListComponent implements OnInit {
 
   saveSettings(): void{ 
     this.storageService.storeLocal('FeatsSortBy', this.defaultSort);
+    this.storageService.storeLocal('FeatsOnlyStarter', String(this.onlyStarter));
     this.storageService.storeLocal('FeatsSelectedCategories', JSON.stringify(this.selectedCategories, null, 2));
     this.storageService.storeLocal('FeatsSelectedAttributes', JSON.stringify(this.selectedAttributes, null, 2));
   }
 
   loadSettings(){
     this.defaultSort = this.storageService.loadLocal('FeatsSortBy').length > 0  ? this.storageService.loadLocal('FeatsSortBy') : this.defaultSort;
+    this.onlyStarter = this.storageService.loadLocal('FeatsOnlyStarter') === 'true' ? true : false;
+
 
     //get saved selected category and attributes storage
     try {
