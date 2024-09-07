@@ -28,7 +28,7 @@ When you hit a creature with a weapon attack, you can expend one superiority die
 When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.
 
 
-#### Evasive Defense
+##### Evasive Defense
 If you are hit by an attack while not wearing heavy armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half damage from it.
 
 
@@ -85,7 +85,7 @@ On your turn, you can use a bonus action and expend one superiority die to bolst
 When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack or an unarmed strike against the creature. If you hit, you add the superiority die to the attack's damage roll.
 
 
-#### Scout Training
+##### Scout Training
 When you make an Intelligence (Nature), a Wisdom (Perception), or a Wisdom (Survival) check, you can expend one superiority die and add the superiority die to the ability check.
 
 
@@ -97,7 +97,7 @@ When you hit a creature with a melee weapon attack or an unarmed strike, you can
 When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.
 
 
-#### Trained Body
+##### Trained Body
 When you make a Strength (Athletics), a Dexterity (Acrobatics), or a Constitution check, you can expend one superiority die and add the superiority die to the ability check.
 
 

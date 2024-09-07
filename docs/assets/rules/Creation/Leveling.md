@@ -15,9 +15,7 @@ Werden beim Level-Up die Lebenspunkte erhöht, würfelt jeder für seinen Charak
 
 
 ## ASI
-Sollte ein Klassenlevel (bei den meisten Klassen Level 4, 8, 12, 16 und 19) erreicht werden, welches eine Ability Score Improvement (ASI) ermöglicht, dürfen nun statt 2 Attributwerten sogar 3 Attributwerte erhöht werden. Dabei gilt, dass ein Attribut maximal um 2 erhöht werden darf.
-
-Anstatt einer Erhöhung eines Attributs um 1, kann aber auch ein Feat (Talent) ausgewählt werden. Dabei gibt es keine Einschränkung bei der Anzahl, d.h. es könnte beispielsweise komplett darauf verzichtet werden einen Attributswert zu erhöhen und dafür 3 Feats ausgewählt werden oder es könnte Stärke um 2 erhöht und zusätzlich ein Feat genommen werden. ASI-Punkte können jedoch nicht bis zur nächsten ASI angespart werden (um beispielsweise ein 2 Punkt-Kosten-Feat später nehmen zu können), sondern müssen sofort aufgebraucht werden.
+Sollte ein Klassenlevel (bei den meisten Klassen Level 4, 8, 12, 16 und 19) erreicht werden, welches eine Ability Score Improvement (ASI) ermöglicht, dürfen nun 3 Feats ausgewählt werden. Erhöhung eines Attributs ist ebenfalls ein Feat. Dieses Ability Score Improvement Feat muss mindestens einmal beim Levelaufstieg genommen werden.
 
 Die meisten Klassen erlauben beim Erreichen eines ASI-Klassenlevels den Tausch bestimmter Klassenfähigkeiten (Fighting Style, Expertise, Cantrips usw.). Was genau ausgetauscht werden kann, ist in der Klassenbeschreibung bzw. in der Beschreibung der Klassenanpassungen nachzulesen.
 

@@ -79,8 +79,7 @@ You gain an additional Superiority Die when you reach Fighter level 7 (four dice
 
 
 ### Level 4: Ability Score Improvement
-
-You gain three feats of your choice, for which you qualify. Taking the Ability Score Improvement feat is recommend at least two times, until you maxed out your primary ability score.
+You gain three feats of your choice, for which you qualify. You have to take the Ability Score Improvement feat at least once (two times is recommended).
 You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 
@@ -122,7 +121,7 @@ Your Superiority Die becomes a d12.
 
 
 ### Level 19: Epic Boon
-You gain an Epic Boon feat or two other feat of your choice for which you qualify. Boon of Combat Prowess is recommended.
+You gain an Epic Boon feat or three other feats of your choice for which you qualify. Boon of Combat Prowess is recommended.
 
 
 ### Level 20: Three Extra Attacks
