@@ -18,7 +18,7 @@ As a Fighter, you gain the following class features when you reach the specified
 | Level | Class Features                                                                                       |
 | :---: | :--------------------------------------------------------------------------------------------------- |
 |   1   | Fighting Style, Second Wind (2 uses), Weapon Mastery (3)                                             |
-|   2   | Action Surge (1 use)                                                                                 |
+|   2   | Action Surge (1 use), Special Training                                                               |
 |   3   | Fighter Subclass, Combat Superiority (3d8), Maneuvers (2)                                            |
 |   4   | Ability Score Improvement, Second Wind (3 uses), Weapon Mastery (4)                                  |
 |   5   | Extra Attack, Tactical Shift                                                                         |
@@ -58,6 +58,15 @@ When you reach certain Fighter levels, you gain the ability to use the Mastery p
 ### Level 2: Action Surge
 You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.
 Once you use this feature, you must finish a Short or Long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
+
+
+### Level 2: Special Training
+Your are trained to excel on and off the battlefield.
+
+**Second Wind usage.** When you make an ability check, you can expend a use of your Second Wind to push yourself towards success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check.
+If it's a check the DM will tell you the outcome of, you can do this after you know that you failed the check. If the check still fails, this use of Second Wind isn't expended.
+
+**Special Battle Maneuver.** If you have or gain the Combat Superiority Feature (for example Fighter Level 3 or Superior Technique Fighting Style), you learn the *Commanding Presence*, *Scout Training*, *Tactical Assessment*, or *Trained Body* maneuver (your choice). This maneuver doesn't count against the number of maneuvers you know.
 
 
 ### Level 3: Fighter Subclass

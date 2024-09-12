@@ -28,8 +28,8 @@ When you hit a creature with a weapon attack, you can expend one superiority die
 When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.
 
 
-##### Evasive Defense
-If you are hit by an attack while not wearing heavy armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half damage from it.
+<!-- ##### Evasive Defense
+If you are hit by an attack while not wearing heavy armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half damage from it. -->
 
 
 ##### Evasive Footwork
@@ -61,8 +61,12 @@ When you hit a creature with a weapon attack, you can expend one superiority die
 When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.
 
 
-##### Parry
+##### Parry: Block
 When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Strength or Dexterity modifier (your choice).
+
+
+##### Parry: Dodge (not final)
+When another creature hits you with a melee attack while you are not wearing heavy armor, you can use your reaction and expend one superiority die to add the number you roll on your superiority die to your AC, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.
 
 
 ##### Precision Attack

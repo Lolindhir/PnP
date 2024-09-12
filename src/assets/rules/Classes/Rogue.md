@@ -23,3 +23,31 @@ As a Rogue, you gain the following class features when you reach the specified R
 |   3   |        +2         | Rogue Subclass, Steady Aim                             |     2d6      |
 |   4   |        +2         | Ability Score Improvement                              |     2d6      |
 |   5   |        +3         | Cunning Strike, Uncanny Dodge                          |     3d6      |
+
+
+
+
+## Thief Stuff
+
+### Level 2: Second-Story Work
+
+### Level 3: Fast Hands
+As a Bonus Action, you can do one of the following.
+
+**Sleight of Hand.** Make a Dexterity (Sleight of Hand) check to pick a lock or disarm a trap with Thieves' Tools or to pick a pocket.
+
+**Use an Object.** Take the utilize action, or take the Magic action to use a magic item that requires that action.
+
+
+### Level 5: Supreme Sneak -> direkt rein in Cunning Strike Optionen
+
+
+### Level 6: Fast Assessment
+As a Bonus Action, you can make a Intelligence (Investigation) check to discern whether a creature you are at least one round in combat with has any Immunities, Resistances, or Vulnerabilities, and what they are.
+
+
+### Level 9: Additional Attunement
+
+### Level 13: Use Magic Device
+
+### Level 15: Thief's Reflexeses
