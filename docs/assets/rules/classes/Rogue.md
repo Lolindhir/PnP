@@ -43,7 +43,7 @@ As a Bonus Action, you can do one of the following.
 
 
 ### Level 6: Fast Assessment
-As a Bonus Action, you can make a Intelligence (Investigation) check to discern whether a creature you are at least one round in combat with has any Immunities, Resistances, or Vulnerabilities, and what they are.
+As a Bonus Action, you can make a Intelligence (Investigation) check to discern whether a creature you are at least one round in combat with has any Immunities, Resistances, or Vulnerabilities, and what they are. For every round in combat, you gain a +1 bonus to the check.
 
 
 ### Level 9: Additional Attunement
