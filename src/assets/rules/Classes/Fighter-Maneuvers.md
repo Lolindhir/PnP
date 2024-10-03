@@ -8,6 +8,10 @@ When you're within 5 feet of a creature on your turn, you can expend one superio
 Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.
 
 
+##### Block
+When you take damage, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Fighter level + your Strength or Dexterity modifier (your choice).
+
+
 ##### Brace
 When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll.
 
@@ -34,7 +38,7 @@ If you are hit by an attack while not wearing heavy armor, you can expend one su
 
 ##### Evasive Footwork
 <!-- When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving. -->
-As a bonus action, you can expend one superiority die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.
+As a bonus action, you can expend one superiority die and take the Disengage or Dodge action. You also roll the die and add the number rolled to your AC until the start of your next turn.
 
 
 ##### Feinting Attack
@@ -61,12 +65,8 @@ When you hit a creature with a weapon attack, you can expend one superiority die
 When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.
 
 
-##### Parry: Block
-When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Strength or Dexterity modifier (your choice).
-
-
-##### Parry: Dodge (not final)
-When another creature hits you with a melee attack while you are not wearing heavy armor, you can use your reaction and expend one superiority die to add the number you roll on your superiority die to your AC, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.
+##### Parry
+When another creature hits you with a melee attack, you can use your reaction and expend one superiority die to add the number you roll on your superiority die to your AC, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.
 
 
 ##### Precision Attack

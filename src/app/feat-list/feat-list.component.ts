@@ -196,8 +196,9 @@ export class FeatListComponent implements OnInit {
       this.featsShown.push(feat);
     });
 
-    //reset data source
+    //reset data source and apply filter
     this.dataSource = new MatTableDataSource(this.featsShown);
+    this.applyFilter();
   }
 
   sortFeats(sortArgument: string){
@@ -221,8 +222,9 @@ export class FeatListComponent implements OnInit {
       } 
     }
 
-    //reset data source
+    //reset data source and apply filter
     this.dataSource = new MatTableDataSource(this.featsShown);
+    this.applyFilter();
 
     //save settings
     this.saveSettings();
