@@ -1,5 +1,5 @@
 
-Each weapon has a mastery property, which is usable only by a character whi has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
+Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
 
 ### Cleave
 If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.
