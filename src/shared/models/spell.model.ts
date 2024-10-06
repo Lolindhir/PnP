@@ -987,6 +987,28 @@ export class Spell implements Spell {
     return false;
   }
 
+
+  public static checkForOriginalName(spellName: string) : {result: boolean, originalName: string} {
+
+    if(spellName === 'Guided Blade'){
+      return {result: true, originalName: 'True Weapon Strike'};
+    }
+
+    return {result: false, originalName: ''};
+
+  }
+
+  public static checkForNewName(spellName: string) : {result: boolean, newName: string} {
+
+    if(spellName === 'True Weapon Strike'){
+      return {result: true, newName: 'Guided Blade'};
+    }
+
+    return {result: false, newName: ''};
+
+  }
+
+
   public static compareKnownLevelFirst(a: Spell, b: Spell) {        
     
     var knownA: boolean = a.known || a.limited || a.always || a.ritualCast;

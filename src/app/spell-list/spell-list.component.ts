@@ -425,10 +425,22 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
   applySelectedCharacterData(){
 
-    for(var spell of this.spells){
-      
+    var char = this.characterData.selectedCharacter;
+
+    var setKnownSpells: string[] = new Array();
+    var setKnownCantrips: string[] = new Array();
+    var setPreparedSpells: string[] = new Array();
+    var setPreparedCantrips: string[] = new Array();
+    var setAlwaysSpells: string[] = new Array();
+    var setRitualSpells: string[] = new Array();
+    var setLimitedSpells: string[] = new Array();
+    var setUsedSpells: string[] = new Array();
+    var setRemovedSpells: string[] = new Array();
+
+    for(var spell of this.spells){ 
+
       //no selected character: reset all settings from previous selected character
-      if(this.characterData.selectedCharacter === undefined){
+      if(char === undefined){
         spell.known = false;
         spell.prepared = false;
         spell.always = false;
@@ -439,26 +451,135 @@ export class SpellListComponent implements OnInit, AfterViewInit {
       }
       //selected character: apply infos
       else{
+
+        //spell could be renamed, check for it
+        var originalNameCheck = Spell.checkForOriginalName(spell.name);
+        var oldName: string = originalNameCheck.result === true ? originalNameCheck.originalName : spell.name;
+        
+
         //in known list?
-        spell.known = this.characterData.selectedCharacter.knownSpells.includes(spell.name) || this.characterData.selectedCharacter.knownCantrips.includes(spell.name);
+        spell.known = char.knownSpells.includes(spell.name) || char.knownSpells.includes(oldName) || char.knownCantrips.includes(spell.name) || char.knownCantrips.includes(oldName);
+        if(spell.known && spell.level === 0) setKnownCantrips.push(spell.name);
+        if(spell.known && spell.level > 0) setKnownSpells.push(spell.name);
+
         //in prepared list?
-        spell.prepared = this.characterData.selectedCharacter.preparedSpells.includes(spell.name) || this.characterData.selectedCharacter.preparedCantrips.includes(spell.name);
+        spell.prepared = char.preparedSpells.includes(spell.name) || char.preparedSpells.includes(oldName) || char.preparedCantrips.includes(spell.name) || char.preparedCantrips.includes(oldName);
+        if(spell.prepared && spell.level === 0) setPreparedCantrips.push(spell.name);
+        if(spell.prepared && spell.level > 0) setPreparedSpells.push(spell.name);
+
         //in always list?
-        spell.always = this.characterData.selectedCharacter.alwaysSpells.includes(spell.name);
+        spell.always = char.alwaysSpells.includes(spell.name) || char.alwaysSpells.includes(oldName);
+        if(spell.always) setAlwaysSpells.push(spell.name);
+
         //in ritual list?
-        spell.ritualCast = this.characterData.selectedCharacter.ritualSpells.includes(spell.name);
+        spell.ritualCast = char.ritualSpells.includes(spell.name) || char.ritualSpells.includes(oldName);
+        if(spell.ritualCast) setRitualSpells.push(spell.name);
+
         //in limited list?
-        spell.limited = this.characterData.selectedCharacter.limitedSpells.includes(spell.name);
+        spell.limited = char.limitedSpells.includes(spell.name) || char.limitedSpells.includes(oldName);
+        if(spell.limited) setLimitedSpells.push(spell.name);
+
         //in used list?
-        spell.used = this.characterData.selectedCharacter.usedSpells.includes(spell.name);
+        spell.used = char.usedSpells.includes(spell.name) || char.usedSpells.includes(oldName);
+        if(spell.used) setUsedSpells.push(spell.name);
+
         //in removed list?
-        spell.removed = this.characterData.selectedCharacter.removedSpells.includes(spell.name);
+        spell.removed = char.removedSpells.includes(spell.name) || char.removedSpells.includes(oldName);
+        if(spell.removed) setRemovedSpells.push(spell.name);
+
       }
-      
+
+    }    
+
+    //check if character lists and blueprints are up-to-date with spells
+    if(char != undefined){
+      if(this.deficientCharacterSpellList('Known Spells', setKnownSpells, char.knownSpells)) char.knownSpells = setKnownSpells;
+      if(this.deficientCharacterSpellList('Known Cantrips', setKnownCantrips, char.knownCantrips)) char.knownCantrips = setKnownCantrips;
+      if(this.deficientCharacterSpellList('Prepared Spells', setPreparedSpells, char.preparedSpells)) char.preparedSpells = setPreparedSpells;
+      if(this.deficientCharacterSpellList('Prepared Cantrips', setPreparedCantrips, char.preparedCantrips)) char.preparedCantrips = setPreparedCantrips;
+      if(this.deficientCharacterSpellList('Always Spells', setAlwaysSpells, char.alwaysSpells)) char.alwaysSpells = setAlwaysSpells;
+      if(this.deficientCharacterSpellList('Ritual Spells', setRitualSpells, char.ritualSpells)) char.ritualSpells = setRitualSpells;
+      if(this.deficientCharacterSpellList('Limited Spells', setLimitedSpells, char.limitedSpells)) char.limitedSpells = setLimitedSpells;
+      if(this.deficientCharacterSpellList('Used Spells', setUsedSpells, char.usedSpells)) char.usedSpells = setUsedSpells;
+      if(this.deficientCharacterSpellList('Removed Spells', setRemovedSpells, char.removedSpells)) char.removedSpells = setRemovedSpells;
+
+      //correct blue prints
+      for(var blueprint of char.preparedBlueprints){
+        
+        var existingBlueprintSpells: PreparedSpellBlueprint[] = new Array();
+        for(var blueprintSpell of blueprint.preparedSpells){ 
+          
+          //spell could be renamed, check for it
+          var newNameCheck = Spell.checkForNewName(blueprintSpell.name);
+          var newName: string = newNameCheck.result === true ? newNameCheck.newName : blueprintSpell.name;
+
+          if(this.spells.some(spell => spell.name === newName)){
+            existingBlueprintSpells.push({name: newName, level: blueprintSpell.level});
+          }
+        }
+
+        var blueprintSpellsString: string[] = new Array();
+        for(var blueprintSpell of blueprint.preparedSpells){
+          blueprintSpellsString.push(blueprintSpell.name);
+        }
+        var existingBlueprintSpellsString: string[] = new Array();
+        for(var blueprintSpell of existingBlueprintSpells){
+          existingBlueprintSpellsString.push(blueprintSpell.name);
+        }
+        if(this.deficientCharacterSpellList('Blueprint Spells', existingBlueprintSpellsString, blueprintSpellsString)){
+          blueprint.preparedSpells = existingBlueprintSpells;
+        }
+
+      }
+
+      char.save();
     }
 
     //trigger filtering
     this.onChange();
+
+    
+  }
+
+  deficientCharacterSpellList(logName: string, updatedList: string[], currentList: string[]) : boolean{
+    
+    //check which spells are missing in the updated list
+    var missingInUpdated: string[] = new Array();
+    for(var spell of currentList){
+      if(!updatedList.includes(spell)) missingInUpdated.push(spell);
+    }
+
+    //check which spells are missing in the current list
+    var missingInCurrent: string[] = new Array();
+    for(var spell of updatedList){
+      if(!currentList.includes(spell)) missingInCurrent.push(spell);
+    }
+
+    //if nothing is missing, no need to act
+    if(missingInUpdated.length === 0  && missingInCurrent.length === 0){
+      return false;
+    }
+
+    //list spells from current list not in updated list
+    console.log(logName + ' has unknown or renamed spells:');
+    for(var currentSpell of missingInUpdated){
+
+      //check if spell was renamed (it should be in the missing from current list)
+      var renamed: boolean = false;
+
+      for(var updatedSpell of missingInCurrent){
+        var renameCheck = Spell.checkForOriginalName(updatedSpell);
+        if(renameCheck.result === true && renameCheck.originalName === currentSpell){
+          console.log('- ' + currentSpell + ' (Renamed: ' + updatedSpell + ')');
+          renamed = true;
+          break;
+        }
+      }     
+
+      if(!renamed) console.log('- ' + currentSpell + ' (unknown)');
+    }
+
+    return true;
   }
 
   onChange() {
