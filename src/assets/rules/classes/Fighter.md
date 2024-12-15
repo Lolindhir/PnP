@@ -118,7 +118,7 @@ You can attack three times instead of once whenever you take the Attack action o
 
 
 ### Level 13: Studied Attacks
-You study your opponents and learn from each attack you make. If oyu make an attack roll against a creature and miss, you have Advantage on your next roll against that creature before the end of your next turn.
+You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next roll against that creature before the end of your next turn.
 
 
 ### Level 15: Relentless

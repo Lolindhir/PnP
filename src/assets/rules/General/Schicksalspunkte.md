@@ -18,6 +18,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
     - Healing Roll (nur im Kampf)\
       *mehr Punkte möglich für größeren Würfel: ab 5th zwei für 1d10, ab 11th drei für 2d8, ab 17th vier für 2d12*
 - vor Turn die Reihenfolge mit anderem Spieler tauschen (darf noch nicht an der Reihe gewesen sein)
+- zusätzliche Reaction erhalten (maximal einmal pro Runde)
 - kleine positive Veränderung in einer Szene/Kampfplatz hinzufügen (Cover auf Battlemap, positive Verbindung zu Händler, Ablenkung, einfaches Item finden usw.)
 
 #### Nur Weiß:
@@ -29,13 +30,16 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - 1d6 hinzufügen zu Ability Check (vor oder nach dem Wurf, maximal einmal pro Wurf) abhängig von Tier of Play (ab 5 d8, ab 11 d10, ab 17 d12)
 - Damage Roll zusätzlichen Schadenswürfel hinzufügen abhängig von Tier of Play (ab 5 zwei, ab 11 drei, ab 17 vier)
 - d20-Wurf neu würfeln
+- Reaction zurück erhalten
 - „Mini Legendary Action“ für Monster (normale Aktion oder Dash) – kostet 2 für Boss/Legendary Monster
-- Bite the Bullet: Condition (Stunned, Paralyzed usw.) zu negieren
+- Recharge einer aufladenden Fähigkeit (z.B. Drachenodem)
+- Refresh einer limitierten Fähigkeit (z.B. Spellslot) - Gruppe erhält weißen Punkt
+- Bite the Bullet: Condition (Stunned, Paralyzed usw.) negieren
     - entweder: 3 Punkte
     - oder: 1 Punkt + 20% der maximalen HP opfern 
 - kleine Komplikation einer Szene/Kampfplatz hinzufügen (Cover zerstören, negative Meinung von NPC, Pech usw.)
 - freie Verwendung im Ermessen des Dungeon Masters
- 
+
 ## Erhalt und Verbleib von Schicksalspunkten
 
 ### Schwarze Punkte

@@ -16,7 +16,7 @@ The Standard Languages table lists languages that are widespread on D&D worlds. 
 | Orc                | Orcs                           |
 | Regional Language* | Various material plane regions |
 
-*Every world has different regions with various regional languages depending on the specific campaign setting.
+**Every world has different regions with various regional languages depending on the specific campaign setting.*
 
 
 ### Rare Languages
@@ -35,4 +35,4 @@ The Rare Languages table lists languages that are either secret or derived from 
 | Thieves' Cant | Various criminal guilds  |
 | Undercommon   | The Underdark            |
 
-*Primordial includes the Aquan, Auran, Ignan, and Terran dialects. Creatures that know one of these dialects can communicate with those that know a different one.
+**Primordial includes the Aquan, Auran, Ignan, and Terran dialects. Creatures that know one of these dialects can communicate with those that know a different one.*
