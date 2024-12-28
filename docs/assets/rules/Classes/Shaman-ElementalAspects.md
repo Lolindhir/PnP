@@ -2,7 +2,7 @@
 ## Aspect of Air
 Wind whirls around you, enhancing your mobility on the battlefield.
 * Ranged weapon attacks made against you have disadvantage on the attack roll.
-* You have resistance against damage and advantage on saving throws against effects caused by harmful fog, smoke or other gases.
+* You have resistance against lightning damage and damage caused by harmful fog, smoke or other gases. You also have advantage on saving throws against such harmful effects of such gases.
 * When you fail a Dexterity saving throw, you can use your reaction to succeed on that saving throw instead.
 * You can take the Disengage or Dash action as a bonus action.
 * You gain advantage on Strength (Athletics) checks related to jumping and once on each of your turns, you can jump up to 30 feet by spending 10 feet of movement.

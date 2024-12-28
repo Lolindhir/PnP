@@ -67,16 +67,73 @@
 
 
 ## Shaman (neue Klasse)
-*- eigene Klasse aus Circle of the Four Elements Druid erstellt -*
+*- eigene Klasse aus Circle of the Four Elements Druid erstellt, nachfolgend die Unterschiede zum Druiden -*
+- Spellcasting Ability kann nun gewählt werden zwischen Wisdom und Charisma
 - Zauberliste: Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
+- Skills leicht angepasst im Vergleich zu Druiden Skills
 - Primordial nun direkt auf Level 1 bekannt, zusammen mit Druidic
-- neu: Elemental Role
+- neu: Elemental Role + Elemental Specialization (Level 1, 6 und 15)
+    - Schamane hat keine Subklassen, sondern wählt eine von zwei Rollen - Sage oder Warrior
+    - die Wahl beeinflusst dann im Laufe des Auflevelns welche weiteren Features dazukommen
+    - Sage hat eher den Fernkampf- und Zauber-Fokus
+        - Level 1:
+            - Proficiency in Intelligence Saving Throws (3 statt übliche 2 Saving Throws)
+            - extra Cantrip
+            - Bonus auf Arcana und Nature Checks
+            - Resistance Cantrip kann als Bonus Action auf Range gecastet werden und hat größeren Würfel
+        - Level 6:
+            - Fernkampf-Cantrips und Angriffe des Feueraspekts erlauben Spellcasting Modifier Hinzunahme zum Schaden
+            - Heilung des Wasseraspekts um halben Level erhöht
+            - Resistance Cantrip Würfel erneut vergrößert
+        - Level 15:
+            - Aktive Fähigkeit des Feueraspekts fügt nun auch Spellcasting Modifier zum Schaden hinzu
+            - Heilung des Wasseraspekts hat nun Reichweite von 30 Fuß und Würfel vergrößert
+            - Resistance Cantrip Würfel erneut vergrößert
+    - Warrior hat den Nahkampf-Fokus über Shillelagh oder Unarmed Strikes
+        - Level 1:
+            - Proficiency in Strength Saving Throws (3 statt übliche 2 Saving Throws)
+            - Shillelagh kann elementaren Schaden hinzufügen
+            - Stärke Modifier kann zu Nahkampfschaden hinzugefügt werden
+            - Absorb Elements ist immer prepared und hat größere Schadenswürfel
+        - Level 6:
+            - Shillelagh kann einmal pro Zug Schadenswürfel verdoppeln
+            - zusätzlicher elementarer Schaden einmal pro Zug, wenn Kreatur im Nahkampf getroffen wird
+            - Absorb Elements Schadenswürfel werden erneut vergrößert
+        - Level 15:
+            - Shillelagh kann einmal pro Zug Schadenswürfel verdreifachen
+            - zusätzlicher elementarer Schaden einmal pro Zug, wenn Kreatur im Nahkampf getroffen wird, ist erhöht
+            - Absorb Elements Schadenswürfel werden erneut vergrößert
 - Elemental Call Anzahl und Zurückerlangung angepasst:
     - Anzahl um 1 erhöht (skaliert bis Level 20)
     - Short Rest gibt nun 1 zurück und nicht mehr alle
-    - Spell Slots können nun in Elemental Calls umgewandelt werden (ab Level 5)
-- Elemental Recovery (ab Level 3) erlaubt nun, neben der Wiederherstellung von Spell Slots, einen Aspect Spell pro Long Rest ohne Nutzung eines Slots zu zaubern
-- neu: Elemental Resurgence (ab Level 5)
-    - Spell Slots können beliebig oft in Elemental Call umgewandelt werden, wenn keine Calls mehr vorhanden
-    - einmal pro Long Rest kann Elemental Call in Level 1 Spell Slot umgewandelt werden
-- neu: Elemental Fury
+    - Elemental Resurgence ab Level 5: Spell Slots können nun in Elemental Calls und umgekehrt umgewandelt werden
+- Elemental Calls sind großteils gleich geblieben, wurden nur auf die neuen beiden Rollen angepast:
+    - Warrior hat Synergien mit Luft und Erde, Sage hat Synergien mit Feuer und Wasser
+    - Luftaspekt:
+        - zusätzlich Resistenz gegen Lightning Damage
+        - zusätzlich 10 Feet Movement Speed und ab Level 8 einen automatischen Fly Speed und Hover
+        - Aktive Fähigkeit fügt nun auch Schaden hinzu und kann gezielt auf Feinde eingesetzt werden
+    - Erdaspekt:
+        - kein AC-Floor mehr sondern Bonus-AC abhängig vom Proficiency Bonus (bis +3 AC)
+        - nur noch 3x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP)
+        - neu: Schaden bei Concentration Check-Berechnung wird noch mal halbiert (leichter Concentration zu halten)
+        - Rock Smash DC addiert nun Strength Modifier mit dazu
+    - Feueraspekt:
+        - Schaden gegen Nahkampfangreifer ist nun halber Level und kann auch auf Hellish Rebuke-Zauber übertragen werden (neuer Zauber durch Aspektzauber)
+        - Flaming Beams addieren nicht mehr automatisch den Spellcasting Modifier dazu, da dies nun ein Bonus der Sage-Rolle ist
+        - neue aktive Fähigkeit: verstärkte Feuerstrahlen mit Möglichkeit auf mehrere Ziele
+    - Wasseraspekt: Healing Flow extrem gebufft (3d8 Grundheilung und 3d8 Skalierung anstatt 1d8)
+- Aspects Spells nun für alle Aspekte:
+    - bisher hat man nur die Zauber des ersten Aspekts bekommen, den man gewählt hat, jetzt erhält man die Aspektzauber aller vier Aspekte
+    - dafür wurde die jeweilige Anzahl pro Aspekt halbiert
+    - trotzdem erhält man dadurch 20 zusätzliche Zauber (anstatt 10), die nicht prepared werden müssen
+- Elemental Manifestation (ehemals Elemental Summoning) ab Level 7
+    - erlaubt Beschwören eines Elementars für den Sage (Summon Elemental-Zauber) und von Elementen, die den Nahmkampf-Schaden deutlich erhöhen, für den Warrior (Conjure Minor Elementals-Zauber)
+    - beide haben den jeweiligen Zauber immer prepared und können ihn sowohl als Action, aber auch als Bonus Action oder sogar Reaction beim Kampfbeginn casten
+    - dabei müssen keine Materielkosten aufgebracht werden
+    einmal pro Long Rest kann Zauber umsonst gesprochen werden
+    - ab Level 10: Concentration des Zaubers kann nicht gebrochen werden
+    - ab Level 14: Elementar (des Sages) bekommt zusätzliche Temporäre HP und Warrior bekommt erhöhte maximale Lebenspunkte
+    - ab Level 18: Sage kann Genie rufen und Warrior kann sich in einen Genie verwandeln
+- Epic Boon auf Level 19 (neu für jede Klasse)
+- Level 20 - Avatar of the Elements: kostet nun 4 Aspect Calls (es ist ja nun einfacher, Aspect Calls zu generieren)

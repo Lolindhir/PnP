@@ -19,7 +19,7 @@
 | [Power Word Fortify](https://lolindhir.github.io/PnP/spells/Power%2520Word%2520Fortify)                         |   7th   | Bard, Cleric                    | Gibt große Mengen an aufteilbaren temporären HP                                                                    |
 | [Prayer of Resting](https://lolindhir.github.io/PnP/spells/Prayer%2520of%2520Resting)                           |   2nd   | Cleric, Paladin                 | Gibt Zielen Short Rest Vorzüge und heilt sie                                                                       |
 | [Sorcerous Burst](https://lolindhir.github.io/PnP/spells/Sorcerous%2520Burst)                                   | Cantrip | Sorcerer                        | Elementarer Zauber mit explodierendem Schadenswürfel                                                               |
-| [Starry Wisp](https://lolindhir.github.io/PnP/spells/Starry%2520Wisp)                                           | Cantrip | Bard, Druid, Shaman             | Fernkampf-Cantrip, das zusätzlich Unsichtbarkeit des Ziels verhindert                                              |
+| [Starry Wisp](https://lolindhir.github.io/PnP/spells/Starry%2520Wisp)                                           | Cantrip | Bard, Druid                     | Fernkampf-Cantrip, das zusätzlich Unsichtbarkeit des Ziels verhindert                                              |
 | [Yolande's Regal Presence](https://lolindhir.github.io/PnP/spells/Yolande's%2520Regal%2520Presence)             |   5th   | Bard, Wizard                    | AoE-Damage für 1 Minute um den Zaubernden (Allys ausschließbar), schlägt Gegner zu Boden und pusht sie             |
 
 

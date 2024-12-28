@@ -45,7 +45,7 @@ As a Shaman, you gain the following class features when you reach the specified 
 ### Level 1: Spellcasting
 Drawing on the elemental essence of nature itself, you can cast spells to shape that essence to your will.
 
-**Free Cantrip.** You always know the *Elementalism* cantrip, which doesn't count against the number of Shaman cantrips you know.
+**Free Cantrip.** You always know the [*Elementalism*](https://lolindhir.github.io/PnP/spells/Elementalism) cantrip, which doesn't count against the number of Shaman cantrips you know.
 
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
 Whenever you gain a Shaman level, you can replace one of your cantrips with another cantrip of your choice from the Shaman spell list.
@@ -107,14 +107,14 @@ While training with the elements, you have dedicated yourself to one of the foll
 **Sage.**
 - You gain proficiency in Intelligence saving throws.
 - You know one extra cantrip from the Shaman spell list.
-- You know the *Resistance* cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
+- You know the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
 - Your connection to the elements gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your spellcasting ability modifier (minimum bonus of +1).
 
 **Warrior.**
 - Trained for battle, you gain proficiency in Strength saving throws and Shields.
-- You know the *Shillelagh* cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Cold, Fire, Lightning, or Thunder damage (your choice).
+- You know the [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Cold, Fire, Lightning, or Thunder damage (your choice).
 - You add your Strength modifier to the damage of your melee attacks you make using your spellcasting ability modifier and vice versa your spellcasting ability modifier to the damage of your melee attacks you make using your Strength modifier.
-- You know the *Absorb Elements* spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
+- You know the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
 
 
 
@@ -190,19 +190,19 @@ The might of the elements flows through you. You gain one of the following optio
 **Sage.**
 - Add your spellcasting ability modifier to the damage you deal with any Shaman cantrip with a range of 10 feet or greater and each Fire Aspects Flaming Beam.
 - Add half your Shaman level to the healing of your Water Aspects Healing Flow.
-- For you, the die of the *Resistance* spell is now a d8 instead of a d4 and you add half your Shaman level to the amount of damage reduced.
+- For you, the die of the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) spell is now a d8 instead of a d4 and you add half your Shaman level to the amount of damage reduced.
 
 **Warrior.**
-- Once on each of your turns when you change the damage type of the weapon imbued by your *Shillelagh* spell to Cold, Fire, Lightning, or Thunder damage, the damage die is doubled.
+- Once on each of your turns when you change the damage type of the weapon imbued by your [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) spell to Cold, Fire, Lightning, or Thunder damage, the damage die is doubled.
 - Once on each of your turns when you hit a creature with a melee attack roll, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).
-- For you, the damage dice of the *Absorb Elements* spell are now d10s instead of d6s.
+- For you, the damage dice of the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell are now d10s instead of d6s.
 
 
 
 ### Level 7: Elemental Manifestation
 You gain the ability to physically manifest the elements from the Elemental Planes of existence. Depending on your chosen role, you have the following spell always prepared (it doesn't count against the number of your prepared spells):
-- **Sage:** *Summon Elemental*
-- **Warrior:** *Conjure Minor Elementals*
+- **Sage:** [*Summon Elemental*](https://lolindhir.github.io/PnP/spells/Summon%2520Elemental)
+- **Warrior:** [*Conjure Minor Elementals*](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals)
 
 **Action and Components.** You can cast the spell as an Action, a Bonus Action, or a Reaction immediately after rolling initiative (in this case, your reaction doesn't recharge at the start of your first turn this combat). For this casting of the spell, it has neither a verbal, a somantic, nor a material cost.
 
@@ -237,12 +237,12 @@ The option you gained for your role for Elemental Fury grows more powerful, as d
 **Sage.**
 - Add your spellcasting ability modifier to the damage you deal with each ray of you Fire Aspects Flaming Rays.
 - When you use your Water Aspects Healing Flow, it's range is now 30 feet for you and the dice you roll are d10s instead of d8s.
-- For you, the die of the *Resistance* spell is now a d12 instead of a d4.
+- For you, the die of the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) spell is now a d12 instead of a d4.
 
 **Warrior.**
-- When your *Shillelagh* damage die would be doubled, you instead triple it.
+- When your [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) damage die would be doubled, you instead triple it.
 - The once per turn extra damage of your melee attack roll increases to 2d8.
-- For you, the damage dice of the *Absorb Elements* spell are now d12s instead of d6s.
+- For you, the damage dice of the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell are now d12s instead of d6s.
 
 
 
