@@ -30,8 +30,9 @@
 *- Keine Änderungen -*
 
 
+
 ## Rogue
-- anstelle von Thieves' Cant kann auch andere Sprache gewählt werden
+- zusätzliche Sprache zu Thieves' Cant und anstelle von Thieves' Cant kann auch weitere andere Sprache gewählt werden
 - neu: Weapon Mastery für zwei Waffentypen ab Level 1
 - neu: Steady Aim ab Level 3 (Advantage auf nächsten Angriff für Movement)
 - neu: Cunning Strikes
@@ -62,3 +63,20 @@
 
 ### Rogue Subklasse: Soulknife
 *- Keine Änderungen -*
+
+
+
+## Shaman (neue Klasse)
+*- eigene Klasse aus Circle of the Four Elements Druid erstellt -*
+- Zauberliste: Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
+- Primordial nun direkt auf Level 1 bekannt, zusammen mit Druidic
+- neu: Elemental Role
+- Elemental Call Anzahl und Zurückerlangung angepasst:
+    - Anzahl um 1 erhöht (skaliert bis Level 20)
+    - Short Rest gibt nun 1 zurück und nicht mehr alle
+    - Spell Slots können nun in Elemental Calls umgewandelt werden (ab Level 5)
+- Elemental Recovery (ab Level 3) erlaubt nun, neben der Wiederherstellung von Spell Slots, einen Aspect Spell pro Long Rest ohne Nutzung eines Slots zu zaubern
+- neu: Elemental Resurgence (ab Level 5)
+    - Spell Slots können beliebig oft in Elemental Call umgewandelt werden, wenn keine Calls mehr vorhanden
+    - einmal pro Long Rest kann Elemental Call in Level 1 Spell Slot umgewandelt werden
+- neu: Elemental Fury

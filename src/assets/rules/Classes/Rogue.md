@@ -64,7 +64,8 @@ The amount of the extra damage increases as you gain Rogue levels, as shown in t
 
 
 ### Level 1: Thieves' Cant
-You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant or one other language of your choice, which you choose from the language tables.
+You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the language tables.
+Alternatively, you can forgo knowing Thieves' Cant and pick up another language of your choice.
 
 
 ### Level 1: Weapon Mastery
