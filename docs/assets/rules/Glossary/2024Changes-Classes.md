@@ -91,7 +91,7 @@
             - Resistance Cantrip Würfel erneut vergrößert
     - Warrior hat den Nahkampf-Fokus über Shillelagh oder Unarmed Strikes
         - Level 1:
-            - Proficiency in Strength Saving Throws (3 statt übliche 2 Saving Throws)
+            - Proficiency in Strength Saving Throws (3 statt übliche 2 Saving Throws) und mit Schilden
             - Shillelagh kann elementaren Schaden hinzufügen
             - Stärke Modifier kann zu Nahkampfschaden hinzugefügt werden
             - Absorb Elements ist immer prepared und hat größere Schadenswürfel
