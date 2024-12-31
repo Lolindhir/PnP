@@ -64,12 +64,12 @@ The amount of the extra damage increases as you gain Rogue levels, as shown in t
 
 
 ### Level 1: Thieves' Cant
-You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the language tables.
+You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the [Language Tables](https://lolindhir.github.io/PnP/rules/glossary/languages).
 Alternatively, you can forgo knowing Thieves' Cant and pick up another language of your choice.
 
 
 ### Level 1: Weapon Mastery
-Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.
+Your training with weapons allows you to use the mastery properties ([Weapon Overview](https://lolindhir.github.io/PnP/rules/equipment/weapons)) of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.
 Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.
 
 ### Level 2: Cunning Action
@@ -89,6 +89,10 @@ You've trained to get into especially hard-to-reach places, granting you these b
 
 ### Level 3: Rogue Subclass
 You gain a Rogue subclass of your choice. A subclass is a specialization that grants you features at certain Rogue levels. For the rest of your career, you gain each of your subclass's features that are of your Rogue level or lower.
+- [Arcane Trickster](https://lolindhir.github.io/PnP/rules/classes/rogue/arcane_trickster)
+- [Assassin](https://lolindhir.github.io/PnP/rules/classes/rogue/assassin)
+- [Soulknife](https://lolindhir.github.io/PnP/rules/classes/rogue/soulknife)
+
 
 ### Level 3: Steady Aim
 As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.

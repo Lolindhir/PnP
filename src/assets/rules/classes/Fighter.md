@@ -51,7 +51,7 @@ When you reach certain Fighter levels, you gain more uses of this feature: 3 at 
 
 
 ### Level 1: Weapon Mastery
-Your training with weapons allows you to use the Mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.
+Your training with weapons allows you to use the Mastery property ([Weapon Overview](https://lolindhir.github.io/PnP/rules/equipment/weapons)) of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.
 When you reach certain Fighter levels, you gain the ability to use the Mastery properties of more kinds of weapons: 4 at 4th level, 5 at 10th level, and 6 at 16th level.
 
 
@@ -71,12 +71,15 @@ If it's a check the DM will tell you the outcome of, you can do this after you k
 
 ### Level 3: Fighter Subclass
 You gain a Fighter subclass of your choice. A subclass is a specialization that grants you features at certain Fighter levels. For the rest of your career, you gain each of your subclass's features that are of your Fighter level or lower.
+- [Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion)
+- [Eldritch Knight](https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight)
+- [Psy Warrior](https://lolindhir.github.io/PnP/rules/classes/fighter/psy_warrior)
 
 
 ### Level 3: Combat Superiority
 Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by special dice called Superiority Dice.
 
-**Maneuvers.** You learn two maneuvers of your choice from the "Maneuvers" section. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.
+**Maneuvers.** You learn two maneuvers of your choice from the [Maneuvers section](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers). Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.
 You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.
 
 **Superiority Dice.** You have three Superiority Dice, which are d8s. A Superiority Die is expended when you use it. You regain all expended Superiority Dice when you finish a Short or Long rest.

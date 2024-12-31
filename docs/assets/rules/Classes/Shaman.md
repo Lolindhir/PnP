@@ -45,13 +45,13 @@ As a Shaman, you gain the following class features when you reach the specified 
 ### Level 1: Spellcasting
 Drawing on the elemental essence of nature itself, you can cast spells to shape that essence to your will.
 
-**Free Cantrip.** You always know the [*Elementalism*](https://lolindhir.github.io/PnP/spells/Elementalism) cantrip, which doesn't count against the number of Shaman cantrips you know.
+**Free Cantrip.** You always know the *[Elementalism](https://lolindhir.github.io/PnP/spells/Elementalism)* cantrip, which doesn't count against the number of Shaman cantrips you know.
 
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
 Whenever you gain a Shaman level, you can replace one of your cantrips with another cantrip of your choice from the Shaman spell list.
 When you reach Shaman levels 4 and 10, you learn another cantrip of your choice from the Shaman spell list.
 
-**Spell Slots.** The Shaman Features Table shows how many spell slots you have to cast your level 1+ spells.
+**Spell Slots.** The [Shaman Features Table](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_features_table) shows how many spell slots you have to cast your level 1+ spells.
 You regain all expended slots when you finish a Long Rest.
 
 **Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four Level 1 spells from the Shaman spell list.
@@ -70,18 +70,18 @@ If another Shaman feature gives you spells that you always have prepared, those 
 |      6       |        9        |
 |      7       |       10        |
 |      8       |       10        |
-|      9       |       12        |
-|      10      |       12        |
-|      11      |       13        |
-|      12      |       13        |
-|      13      |       14        |
-|      14      |       14        |
-|      15      |       15        |
-|      16      |       15        |
-|      17      |       16        |
-|      18      |       16        |
-|      19      |       17        |
-|      20      |       17        |
+|      9       |       11        |
+|      10      |       11        |
+|      11      |       12        |
+|      12      |       12        |
+|      13      |       13        |
+|      14      |       13        |
+|      15      |       14        |
+|      16      |       14        |
+|      17      |       15        |
+|      18      |       15        |
+|      19      |       15        |
+|      20      |       15        |
 
 **Changing Your Prepared Spells.** Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
 If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared.
@@ -107,14 +107,14 @@ While training with the elements, you have dedicated yourself to one of the foll
 **Sage.**
 - You gain proficiency in Intelligence saving throws.
 - You know one extra cantrip from the Shaman spell list.
-- You know the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
+- You know the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
 - Your connection to the elements gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your spellcasting ability modifier (minimum bonus of +1).
 
 **Warrior.**
-- Trained for battle, you gain proficiency in Strength saving throws and Shields.
-- You know the [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Cold, Fire, Lightning, or Thunder damage (your choice).
-- You add your Strength modifier to the damage of your melee attacks you make using your spellcasting ability modifier and vice versa your spellcasting ability modifier to the damage of your melee attacks you make using your Strength modifier.
-- You know the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
+- You gain proficiency in Strength saving throws.
+- Trained for battle, you gain proficiency with Shields.
+- You know the *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Acid, Cold, Fire, Lightning, or Thunder damage (your choice).
+- You know the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
 
 
 
@@ -134,12 +134,12 @@ When you gain certain Shaman levels, you gain additional aspects of your choice.
 
 
 #### Aspect Spells
-The connection to the Elemental Aspects gains you access to spells connected with these elements. Consult the associated lists of spells in the Elemental Aspect Spells overview page.
+The connection to the Elemental Aspects gains you access to spells connected with these elements. Consult the associated lists of spells in the [Elemental Aspect Spells overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_spells).
 You gain access to all listed Aspect Spells for which you have spell slots and for which you know the corresponding Aspect. You always have these spells prepared, and they don't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Shaman spell list, the spell is nonetheless a Shaman spell for you.
 
 
 #### Aspect Call
-You can use your bonus action to call forth one Elemental Aspect you know. The Elemental Aspect surrounds you and you gain benefits depending on the kind of aspect - Air, Earth, Fire, or Water - which are described in the Elemental Aspect Calls overview page. If a Aspect Call requires a spell attack or saving throw, use your spellcasting ability.
+You can use your bonus action to call forth one Elemental Aspect you know. The Elemental Aspect surrounds you and you gain benefits depending on the kind of aspect - Air, Earth, Fire, or Water - which are described in the [Elemental Aspect Calls overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls). If a Aspect Call requires a spell attack or saving throw, use your spellcasting ability.
 The Elemental Aspect surrounds you for 1 minute, until you use your bonus action to dismiss it, until you use this feature again to call another aspect with an bonus action, or until you are incapacitated, fall unconscious, drop to 0 hit points, or die. 
 
 **Number of Uses.** You can use Aspect Call twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.
@@ -188,21 +188,23 @@ If you expend a number of uses of Aspect Call, you regain expended spell slots e
 The might of the elements flows through you. You gain one of the following options depending on the role chosen at 1st level.
 
 **Sage.**
-- Add your spellcasting ability modifier to the damage you deal with any Shaman cantrip with a range of 10 feet or greater and each Fire Aspects Flaming Beam.
+- Add your spellcasting ability modifier to the damage you deal with any Shaman cantrip with a range of 10 feet or greater.
+- Add your spellcasting ability modifier to the damage you deal with each beam of your Fire Aspects Flaming Beam ability.
 - Add half your Shaman level to the healing of your Water Aspects Healing Flow.
-- For you, the die of the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) spell is now a d8 instead of a d4 and you add half your Shaman level to the amount of damage reduced.
+- For you, the die of the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* spell is now a d8 instead of a d4 and you add half your Shaman level to the amount of damage reduced.
 
 **Warrior.**
-- Once on each of your turns when you change the damage type of the weapon imbued by your [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) spell to Cold, Fire, Lightning, or Thunder damage, the damage die is doubled.
-- Once on each of your turns when you hit a creature with a melee attack roll, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).
-- For you, the damage dice of the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell are now d10s instead of d6s.
+- You add your Strength modifier to the damage of your melee attacks you make using your spellcasting ability modifier and vice versa your spellcasting ability modifier to the damage of your melee attacks you make using your Strength modifier.
+- Once on each of your turns when you change the damage type of the weapon imbued by your *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* spell to Acid, Cold, Fire, Lightning, or Thunder damage, the damage die is doubled.
+- Once on each of your turns when you hit a creature with a melee attack roll, you can cause the target to take an extra 1d8 Acid, Cold, Fire, Lightning, or Thunder damage (choose when you hit).
+- For you, the damage dice of the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell are now d10s instead of d6s.
 
 
 
 ### Level 7: Elemental Manifestation
 You gain the ability to physically manifest the elements from the Elemental Planes of existence. Depending on your chosen role, you have the following spell always prepared (it doesn't count against the number of your prepared spells):
-- **Sage:** [*Summon Elemental*](https://lolindhir.github.io/PnP/spells/Summon%2520Elemental)
-- **Warrior:** [*Conjure Minor Elementals*](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals)
+- **Sage:** *[Summon Elemental](https://lolindhir.github.io/PnP/spells/Summon%2520Elemental)*
+- **Warrior:** *[Conjure Minor Elementals](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals)*
 
 **Action and Components.** You can cast the spell as an Action, a Bonus Action, or a Reaction immediately after rolling initiative (in this case, your reaction doesn't recharge at the start of your first turn this combat). For this casting of the spell, it has neither a verbal, a somantic, nor a material cost.
 
@@ -235,14 +237,14 @@ You can expend two uses of Aspect Call at the same time to call forth two elemen
 The option you gained for your role for Elemental Fury grows more powerful, as detailed below.
 
 **Sage.**
-- Add your spellcasting ability modifier to the damage you deal with each ray of you Fire Aspects Flaming Rays.
+- Add your spellcasting ability modifier to the damage you deal with each ray of you Fire Aspects Flaming Rays ability.
 - When you use your Water Aspects Healing Flow, it's range is now 30 feet for you and the dice you roll are d10s instead of d8s.
-- For you, the die of the [*Resistance*](https://lolindhir.github.io/PnP/spells/Resistance) spell is now a d12 instead of a d4.
+- For you, the die of the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* spell is now a d12 instead of a d4.
 
 **Warrior.**
-- When your [*Shillelagh*](https://lolindhir.github.io/PnP/spells/Shillelagh) damage die would be doubled, you instead triple it.
+- When your *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* damage die would be doubled, you instead triple it.
 - The once per turn extra damage of your melee attack roll increases to 2d8.
-- For you, the damage dice of the [*Absorb Elements*](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements) spell are now d12s instead of d6s.
+- For you, the damage dice of the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell are now d12s instead of d6s.
 
 
 

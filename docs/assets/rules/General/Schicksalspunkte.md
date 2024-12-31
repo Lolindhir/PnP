@@ -40,6 +40,14 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - kleine Komplikation einer Szene/Kampfplatz hinzufügen (Cover zerstören, negative Meinung von NPC, Pech usw.)
 - freie Verwendung im Ermessen des Dungeon Masters
 
+
+## Diebstahl von Schicksalspunkten
+Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen eigenen hinzufügen. Dafür existieren mehrere Möglichkeiten:
+- Wenn die Spieler am Start einer Runde 3 oder mehr schwarze Schicksalspunkte haben, rollt einer der Spieler einen d6 und wenn das Ergebnis die Anzahl der schwarzen Schicksalspunkte oder weniger ist, verlieren die Spieler einen schwarzen Schicksalspunkt. (Beispiel: wenn sie 4 schwarze Schicksalspunkte haben, dann verlieren sie bei einem Wurf von 1, 2, 3 oder 4 einen dieser Schicksalspunkte)
+- Der DM kann jederzeit eine Legendary Action einsetzen, um einen Schicksalspunkt zu stehlen (bis zu drei bei Einsatz von drei Legendary Actions).
+- Wenn ein Monster eine Attack Action ausführt, kann der DM auf eine Anzahl an Attacken dieser Action verzichten (Multi Attack hat mehrere Attacken), um diese Anzahl an schwarzen Schicksalspunkten zu stehlen.
+
+
 ## Erhalt und Verbleib von Schicksalspunkten
 
 ### Schwarze Punkte

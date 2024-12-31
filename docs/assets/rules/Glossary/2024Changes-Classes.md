@@ -93,9 +93,9 @@
         - Level 1:
             - Proficiency in Strength Saving Throws (3 statt übliche 2 Saving Throws) und mit Schilden
             - Shillelagh kann elementaren Schaden hinzufügen
-            - Stärke Modifier kann zu Nahkampfschaden hinzugefügt werden
             - Absorb Elements ist immer prepared und hat größere Schadenswürfel
         - Level 6:
+            - Stärke Modifier kann zu Nahkampfschaden hinzugefügt werden
             - Shillelagh kann einmal pro Zug Schadenswürfel verdoppeln
             - zusätzlicher elementarer Schaden einmal pro Zug, wenn Kreatur im Nahkampf getroffen wird
             - Absorb Elements Schadenswürfel werden erneut vergrößert
@@ -108,21 +108,23 @@
     - Short Rest gibt nun 1 zurück und nicht mehr alle
     - Elemental Resurgence ab Level 5: Spell Slots können nun in Elemental Calls und umgekehrt umgewandelt werden
 - Elemental Calls sind großteils gleich geblieben, wurden nur auf die neuen beiden Rollen angepast:
-    - Warrior hat Synergien mit Luft und Erde, Sage hat Synergien mit Feuer und Wasser
+    - Warrior hat Synergien mit Luft und Erde (Melee Attacks), Sage hat Synergien mit Feuer und Wasser (Ranged Attacks und Heilung)
     - Luftaspekt:
         - zusätzlich Resistenz gegen Lightning Damage
         - zusätzlich 10 Feet Movement Speed und ab Level 8 einen automatischen Fly Speed und Hover
         - Aktive Fähigkeit fügt nun auch Schaden hinzu und kann gezielt auf Feinde eingesetzt werden
     - Erdaspekt:
-        - kein AC-Floor mehr sondern Bonus-AC abhängig vom Proficiency Bonus (bis +3 AC)
+        - kein AC-Floor mehr sondern Bonus-AC abhängig vom Proficiency Bonus (bis +4 AC auf Level 20)
         - nur noch 3x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP)
         - neu: Schaden bei Concentration Check-Berechnung wird noch mal halbiert (leichter Concentration zu halten)
         - Rock Smash DC addiert nun Strength Modifier mit dazu
     - Feueraspekt:
-        - Schaden gegen Nahkampfangreifer ist nun halber Level und kann auch auf Hellish Rebuke-Zauber übertragen werden (neuer Zauber durch Aspektzauber)
+        - Schaden gegen Nahkampfangreifer ist nun halber Level (Erhöhung) und kann auch auf Hellish Rebuke-Zauber übertragen werden (neuer Zauber durch Aspektzauber)
         - Flaming Beams addieren nicht mehr automatisch den Spellcasting Modifier dazu, da dies nun ein Bonus der Sage-Rolle ist
-        - neue aktive Fähigkeit: verstärkte Feuerstrahlen mit Möglichkeit auf mehrere Ziele
-    - Wasseraspekt: Healing Flow extrem gebufft (3d8 Grundheilung und 3d8 Skalierung anstatt 1d8)
+        - neue aktive Fähigkeit: verstärkte Feuerstrahlen mit Möglichkeit auf mehrere Ziele (wird später auch noch durch Sage-Rolle geupgradet)
+    - Wasseraspekt:
+        - Selbstheilung erhöht sich früher, da jetzt ein Fünftel des Shaman Levels (aufgerundet)
+        - Healing Flow extrem gebufft (3d8 Grundheilung und 3d8 Skalierung anstatt 1d8)
 - Aspects Spells nun für alle Aspekte:
     - bisher hat man nur die Zauber des ersten Aspekts bekommen, den man gewählt hat, jetzt erhält man die Aspektzauber aller vier Aspekte
     - dafür wurde die jeweilige Anzahl pro Aspekt halbiert
