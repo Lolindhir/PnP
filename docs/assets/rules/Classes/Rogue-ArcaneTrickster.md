@@ -16,7 +16,7 @@ Some Rogues enhance their fine-honed skills of stealth and agility with spells, 
 
 You have learned to cast spells.
 
-**Cantrips.** You learn three cantrips: *mage hand* and two other cantrips of your choice from the wizard spell list.
+**Cantrips.** You learn three cantrips: *[Mage Hand](https://lolindhir.github.io/PnP/spells/Mage%2520Hand)* and two other cantrips of your choice from the wizard spell list.
 You learn an additional wizard cantrip of your choice at 10th Rogue level.
 
 **Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. You regain all expended spell slots when you finish a long rest.
@@ -57,13 +57,13 @@ The spells you learn at 8th, 14th, and 20th level can come from any school of ma
 
 
 ### Level 3: Mage Hand Legerdemain
-When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.
+When you cast *[Mage Hand](https://lolindhir.github.io/PnP/spells/Mage%2520Hand)*, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.
 
 ### Level 9: Magical Ambush
 If you are hidden from a creature when you cast a spell on it, the creature has Disadvantage on any saving throw it makes against the spell on the same turn.
 
 ### Level 13: Versatile Trickster
-You gain the ability to distract targets with your *Mage Hand*. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.
+You gain the ability to distract targets with your *[Mage Hand](https://lolindhir.github.io/PnP/spells/Mage%2520Hand)*. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.
 Additionally, when you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.
 
 ### Level 17: Spell Thief

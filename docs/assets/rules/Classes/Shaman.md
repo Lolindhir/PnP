@@ -100,7 +100,6 @@ You know Druidic, the secret language of druids and shamans. You can use Druidic
 Additionally, you know Primordial, the language of the elementals.
 
 
-
 ### Level 1: Elemental Role
 While training with the elements, you have dedicated yourself to one of the following roles of your choice. Depending on your chosen role, you will gain additional features as you progress in this class.
 
