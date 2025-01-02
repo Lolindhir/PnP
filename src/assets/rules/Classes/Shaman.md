@@ -45,6 +45,13 @@ As a Shaman, you gain the following class features when you reach the specified 
 ### Level 1: Spellcasting
 Drawing on the elemental essence of nature itself, you can cast spells to shape that essence to your will.
 
+**Spellcasting Ability.** Wisdom or Charisma (your choice when choosing this class) is your spellcasting ability for your Shaman spells.
+
+> **Spell save DC** = 8 + your proficiency bonus + your chosen ability's modifier
+> **Spell attack modifier** = your proficiency bonus + your chosen ability's modifier
+
+**Spellcasting Focus.** You can use a Druidic Focus as a Spellcasting Focus for your Shaman spells.
+
 **Free Cantrip.** You always know the *[Elementalism](https://lolindhir.github.io/PnP/spells/Elementalism)* cantrip, which doesn't count against the number of Shaman cantrips you know.
 
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
@@ -86,12 +93,6 @@ If another Shaman feature gives you spells that you always have prepared, those 
 **Changing Your Prepared Spells.** Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
 If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared.
 
-**Spellcasting Ability.** Wisdom or Charisma (your choice when choosing this class) is your spellcasting ability for your Shaman spells.
-
-> **Spell save DC** = 8 + your proficiency bonus + your chosen ability's modifier
-> **Spell attack modifier** = your proficiency bonus + your chosen ability's modifier
-
-**Spellcasting Focus.** You can use a Druidic Focus as a Spellcasting Focus for your Shaman spells.
 
 
 

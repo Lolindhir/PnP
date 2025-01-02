@@ -11,9 +11,9 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 ### Einsatzmöglichkeiten für Spieler
 
 #### Schwarz und Weiß:
-- vor dem Wurf 1d6 hinzufügen zu
+- einem Wurf 1d6 hinzufügen zu (vor oder nach dem Wurf)
     - D20-Test (außer Death Save)
-    - Damage Roll (nur im Kampf)\
+    - Damage Roll (nur im Kampf, wird nicht durch Crit verdoppelt)\
       *mehr Punkte möglich für mehr Würfel: ab 5th zweimal, ab 11th dreimal, ab 17th viermal*
     - Healing Roll (nur im Kampf)\
       *mehr Punkte möglich für größeren Würfel: ab 5th zwei für 1d10, ab 11th drei für 2d8, ab 17th vier für 2d12*
@@ -51,7 +51,7 @@ Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen
 ## Erhalt und Verbleib von Schicksalspunkten
 
 ### Schwarze Punkte
-Schwarze Schicksalspunkte sind nur für eine Session vorhanden und werden am Start jeder Session neu verteilt (so wie der Zufall will). Am Anfang der Session rollt jeder Spieler und der Dungeon Master einen d6 und abhängig vom Würfelwurf erhalten entweder die Spieler, 1-3, oder der Dungeon Master, 4-6, einen schwarzen Schicksalspunkt. Darüber hinaus können die Spieler innerhalb der Session einen schwarzen Punkt erhalten, wenn in einer wichtigen Situation eine natürliche 1 gewürfelt wird (nach Ermessen des Dungeon Masters).
+Schwarze Schicksalspunkte sind nur für eine Session vorhanden und werden am Start jeder Session neu verteilt (so wie der Zufall will). Am Anfang der Session rollt jeder Spieler und der Dungeon Master einen d6 und abhängig vom Würfelwurf erhalten entweder die Spieler, 4-6, oder der Dungeon Master, 1-3, einen schwarzen Schicksalspunkt. Darüber hinaus können die Spieler innerhalb der Session einen schwarzen Punkt erhalten, wenn in einer wichtigen Situation eine natürliche 1 gewürfelt wird (nach Ermessen des Dungeon Masters).
 
 ### Weiße Punkte
 Weiße Schicksalspunkte verfallen nicht, sondern sind über eine Session hinaus verfügbar. Jedoch können die Spieler nur eine maximale Anzahl von zehn weißen Punkten besitzen. Im Fall, dass die maximale Anzahl an weißen Punkten erreicht ist und die Spieler einen weißen Punkt erhalten würden, erhalten sie anstatt einen schwarzen Punkt.

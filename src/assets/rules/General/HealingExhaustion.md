@@ -3,9 +3,9 @@
 
 **Levels of Exhaustion.** This Condition is cumulative. Each time you receive it, you gain 1 level of exhaustion. You die if your exhaustion level exceeds 10.
 
-**D20 Tests Affected.** When you make a D20 Test, the roll is reduced by your Exhaustion level.
+**D20 Tests Affected.** When you make a D20 Test, the roll is reduced by half your exhaustion level.
 
-**Speed Recuced.** Your Speed is reduced by 5 feet for every two levels of Exhaustion.
+**Speed Reduced.** Your Speed is reduced by 5 feet once you have 3 levels of exhaustion. For every two levels of exhaustion over 3 (5, 7, and 9), your Speed is reduced by additional 5 feet.
 
 
 ### Erhalt von Exhaustion
@@ -13,10 +13,10 @@
 
 - übliche Wege (Forced March, Extreme Heat usw.)
 - Heilung einer Kreatur von 0 HP:
-  - Wenn von 0 HP geheilt wird, dann muss ein Constitution Saving Throw gemacht werden. Passiert dies innerhalb eines Kampfes, dann erfolgt der Saving Throw erst nach Ende des Kampfes (Adrenalin im Kampf puffert Effekt). 
-  - Constitution Save DC = 10 + 3 * Anzahl Unconcious im Kampf
-  - bei Fehlschlag des Saves: so viele Level Exhaustion, wie Anzahl Unconcious + maximale Failed Death Saves im Kampf
-  - Wenn von 0 HP stabilisiert wird, um auf 1 HP unconcious zu bleiben, dann keine Exhaustion.
+  - wenn von 0 HP geheilt wird, dann muss ein Constitution Saving Throw gemacht werden
+  - Constitution Save DC = 12 + 4 * Anzahl Failed Death Saves
+  - bei Fehlschlag des Saves: 1 Level Exhaustion
+  - wenn von 0 HP stabilisiert wird, um auf 1 HP unconcious zu bleiben, dann keine Exhaustion
 - „Push your Body“
   - Zauber zaubern, ohne Slot (verbrauchter Slot muss existieren): 1 Exhaustion pro Slot
   - 1 Exhaustion für 1 zusätzliche Action (nur einmal pro Zug): Attack (nur eine Waffenattack), Dash, Disengage
