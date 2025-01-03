@@ -18,28 +18,28 @@ Shamans hail from regions that have strong ties to the Elemental Planes of Exist
 
 As a Shaman, you gain the following class features when you reach the specified Shaman levels. These features are listed in the Shaman Features table.
 
-| Level | Class Features                                                                         |
-| :---: | :------------------------------------------------------------------------------------- |
-|   1   | Spellcasting, Speaker of Two Worlds, Elemental Role                                    |
-|   2   | Elemental Aspect, Aspect Spells, Aspect Call (2 uses)                                  |
-|   3   | Elemental Recovery                                                                     |
-|   4   | Ability Score Improvement                                                              |
-|   5   | Elemental Resurgence                                                                   |
-|   6   | Elemental Specialization, Additional Elemental Aspect (2)                              |
-|   7   | Elemental Manifestation, Aspect Call (3 uses)                                          |
-|   8   | Ability Score Improvement                                                              |
-|   9   | -                                                                                      |
-|  10   | Focused Elemental Manifestation, Additional Elemental Aspect (3)                       |
-|  11   | -                                                                                      |
-|  12   | Ability Score Improvement                                                              |
-|  13   | -                                                                                      |
-|  14   | Durable Elemental Manifestation, Improved Aspect Call, Additional Elemental Aspect (4) |
-|  15   | Improved Elemental Specialization, Aspect Call (4 uses)                                |
-|  16   | Ability Score Improvement                                                              |
-|  17   | -                                                                                      |
-|  18   | Genie Manifestation                                                                    |
-|  19   | Epic Boon                                                                              |
-|  20   | Avatar of the Elements                                                                 |
+| Level | Class Features                                          |
+| :---: | :------------------------------------------------------ |
+|   1   | Spellcasting, Speaker of Two Worlds, Elemental Role     |
+|   2   | Elemental Aspect, Aspect Spells, Aspect Call (2 uses)   |
+|   3   | Elemental Resurgence                                    |
+|   4   | Ability Score Improvement                               |
+|   5   | Elemental Specialization                                |
+|   6   | Additional Elemental Aspect (2)                         |
+|   7   | Elemental Manifestation, Aspect Call (3 uses)           |
+|   8   | Ability Score Improvement                               |
+|   9   | -                                                       |
+|  10   | Additional Elemental Aspect (3)                         |
+|  11   | -                                                       |
+|  12   | Ability Score Improvement                               |
+|  13   | -                                                       |
+|  14   | Additional Elemental Aspect (4), Improved Aspect Call   |
+|  15   | Improved Elemental Specialization, Aspect Call (4 uses) |
+|  16   | Ability Score Improvement                               |
+|  17   | -                                                       |
+|  18   | Genie Manifestation                                     |
+|  19   | Epic Boon                                               |
+|  20   | Avatar of the Elements                                  |
 
 
 ### Level 1: Spellcasting
@@ -101,17 +101,16 @@ You know Druidic, the secret language of druids and shamans. You can use Druidic
 Additionally, you know Primordial, the language of the elementals.
 
 
+
 ### Level 1: Elemental Role
 While training with the elements, you have dedicated yourself to one of the following roles of your choice. Depending on your chosen role, you will gain additional features as you progress in this class.
 
 **Sage.**
-- You gain proficiency in Intelligence saving throws.
 - You know one extra cantrip from the Shaman spell list.
 - You know the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
 - Your connection to the elements gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your spellcasting ability modifier (minimum bonus of +1).
 
 **Warrior.**
-- You gain proficiency in Strength saving throws.
 - Trained for battle, you gain proficiency with Shields.
 - You know the *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Acid, Cold, Fire, Lightning, or Thunder damage (your choice).
 - You know the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
@@ -146,17 +145,27 @@ The Elemental Aspect surrounds you for 1 minute, until you use your bonus action
 You gain additional uses when you reach certain Shaman levels, as shown in the Aspect Calls table.
 
 ##### Aspect Calls
-| Shaman Level | Aspect Calls |
-| :----------: | :----------: |
-|      1       |      -       |
-|      2       |      2       |
-|      7       |      3       |
-|      15      |      4       |
+| Shaman Level | Aspect Call Uses |
+| :----------: | :--------------: |
+|      1       |        -         |
+|      2       |        2         |
+|      7       |        3         |
+|      15      |        4         |
 
 
 
-### Level 3: Elemental Recovery
-When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Shaman level (round up), and none of them can be level 6+. For example, if you're a level 6 Shaman, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a Long Rest.
+### Level 3: Elemental Resurgence
+Once on each of your turns, you can convert uses of Aspect Call to spell slots and vice versa. The Resurgence Table below lists the minimum spell slot cost to gain a number of Aspect Call uses, the spell slot level you gain for a defined number of Aspect Call uses, and the minimum Shaman level you must be to convert certain amounts.
+**Converting Spell Slots to Aspect Call Uses.** You can expend a spell slot to gain a number of expended Aspect Call uses (no action required). The Resurgence table lists the minimum spell slot you have to expend to regain a certain number of Aspect Call uses.
+**Creating Spell Slots.** As a Bonus Action, you can convert unexpended Aspect Call uses into one spell slot. The Resurgence table shows the spell slot you gain for the amount of Aspect Call uses spend.
+
+##### Resurgence Table
+| Aspect Call Uses | Spell Slot Cost | Spell Slot Regain | Min. Shaman Level |
+| :--------------: | :-------------: | :---------------: | :---------------: |
+|        1         |       2nd       |        1st        |         3         |
+|        2         |       4th       |        2nd        |         7         |
+|        3         |       6th       |        3rd        |        11         |
+|        4         |       8th       |        4th        |        15         |
 
 
 
@@ -166,25 +175,7 @@ You gain this feature again at Shaman levels 8, 12, and 16.
 
 
 
-### Level 5: Elemental Resurgence
-Once on each of your turns (no action required), you can give yourself uses of Aspect call by expending spell slots or spell slots by expending uses of Aspect Call.
-To regain a certain number of expended uses of Aspect Call, you have to expend a spell slot of at least a certain level. The needed level is noted in the Resurgence Table below.
-If you expend a number of uses of Aspect Call, you regain expended spell slots equal to a combined level that is noted in the Resurgence Table below. None of this spell slots can be level 6+.
-
-##### Resurgence Table
-
-| Aspect Call Uses | Spell Slot Cost | Regained Combined |
-| :--------------: | :-------------: | :---------------: |
-|        1         |       2nd       |      1 slot       |
-|        2         |       4th       |      3 slots      |
-|        3         |       6th       |      5 slots      |
-|        4         |       8th       |     7 slots*      |
-
-**maximum 5th level spell slot*
-
-
-
-### Level 6: Elemental Specialization
+### Level 5: Elemental Specialization
 The might of the elements flows through you. You gain one of the following options depending on the role chosen at 1st level.
 
 **Sage.**
@@ -210,21 +201,14 @@ You gain the ability to physically manifest the elements from the Elemental Plan
 
 **Ability instead of Casting.** Casting the spell doesn't count as casting or concentrating for such things as *Counterspell*, the Earth Aspects casting constraint, Barbarian Rage and so on. You still have to concentrate on it and have to make concentration checks as usual.
 
-**Free Usage.** You can cast the spell once at 4th level without expending a spell slot, and you must finish a Long Rest before you can do so again.
+**Free Usage.** You can cast the spell once at 4th level without expending a spell slot, and you must finish a Long Rest before you can do so again. The level at which you cast the spell increases as you reach certain Shaman levels as described in the Free Elemental Manifestation Level table below.
 
-
-
-### Level 10: Focused Elemental Manifestation
-**Improved Free Casting.** Your free casting of your Elemental Manifestation spell is now at 5th level.
-**No Concentration.** Your Elemental Manifestation spell doesn't need concentration anymore, but as long as the spell is active, you can't maintain concentration.
-
-
-
-### Level 14: Durable Elemental Manifestation
-**Improved Free Casting.** Your free casting of your Elemental Manifestation spell is now at 7th level.
-**Stronger Elemental Form.**
-- **Sage.** The elemental manifestation you summon with your *Summon Elemental* spell temporary hit points equal to two times your Shaman level.
-- **Warrior.** The elements conjured by your *Conjure Minor Elementals* spell bolster your resilience. As long as the spell is active, your hit point maximum increases by your Shaman level.
+##### Free Elemental Manifestation Level
+| Shaman Level | Spell Level |
+| :----------: | :---------: |
+|      7       |     4th     |
+|      10      |     5th     |
+|      14      |     7th     |
 
 
 
@@ -267,7 +251,7 @@ You gain an Epic Boon feat or three other feats of your choice for which you qua
 
 ### Level 20: Avatar of the Elements
 You have ultimately mastered all four elements and can call them simultaneously to aid you in battle.
-Expend four uses of Aspect Call at the same time to surround yourself with all four elemental aspects at the same time.
+Expend four uses of Aspect Call at the same time to surround yourself with all four elemental aspects.
 
 
 

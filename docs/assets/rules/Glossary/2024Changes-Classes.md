@@ -70,14 +70,14 @@
 *- eigene Klasse aus Circle of the Four Elements Druid erstellt, nachfolgend die Unterschiede zum Druiden -*
 - Spellcasting Ability kann nun gewählt werden zwischen Wisdom und Charisma
 - Zauberliste: Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
+- Druiden-Zauber haben Fokus auf Support/Healing und Area/Crowd Control, Shamanen-Zauber haben den Fokus auf Elementarschaden und Healing (Control und Support stärker im Hintergrund)
 - Skills leicht angepasst im Vergleich zu Druiden Skills
 - Primordial nun direkt auf Level 1 bekannt, zusammen mit Druidic
-- neu: Elemental Role + Elemental Specialization (Level 1, 6 und 15)
+- neu: Elemental Role + Elemental Specialization (Level 1, 5 und 15)
     - Schamane hat keine Subklassen, sondern wählt eine von zwei Rollen - Sage oder Warrior
     - die Wahl beeinflusst dann im Laufe des Auflevelns welche weiteren Features dazukommen
     - Sage hat eher den Fernkampf- und Zauber-Fokus
         - Level 1:
-            - Proficiency in Intelligence Saving Throws (3 statt übliche 2 Saving Throws)
             - extra Cantrip
             - Bonus auf Arcana und Nature Checks
             - Resistance Cantrip kann als Bonus Action auf Range gecastet werden und hat größeren Würfel
@@ -91,7 +91,6 @@
             - Resistance Cantrip Würfel erneut vergrößert
     - Warrior hat den Nahkampf-Fokus über Shillelagh oder Unarmed Strikes
         - Level 1:
-            - Proficiency in Strength Saving Throws (3 statt übliche 2 Saving Throws) und mit Schilden
             - Shillelagh kann elementaren Schaden hinzufügen
             - Absorb Elements ist immer prepared und hat größere Schadenswürfel
         - Level 6:
@@ -106,7 +105,7 @@
 - Elemental Call Anzahl und Zurückerlangung angepasst:
     - Anzahl um 1 erhöht (skaliert bis Level 20)
     - Short Rest gibt nun 1 zurück und nicht mehr alle
-    - Elemental Resurgence ab Level 5: Spell Slots können nun in Elemental Calls und umgekehrt umgewandelt werden
+- Elemental Recovery durch Elemental Resurgence ersetzt: Spell Slots können nun in Elemental Calls und umgekehrt umgewandelt werden
 - Elemental Calls sind großteils gleich geblieben, wurden nur auf die neuen beiden Rollen angepast:
     - Warrior hat Synergien mit Luft und Erde (Melee Attacks), Sage hat Synergien mit Feuer und Wasser (Ranged Attacks und Heilung)
     - Luftaspekt:
@@ -115,8 +114,8 @@
         - Aktive Fähigkeit fügt nun auch Schaden hinzu und kann gezielt auf Feinde eingesetzt werden
     - Erdaspekt:
         - kein AC-Floor mehr sondern Bonus-AC abhängig vom Proficiency Bonus (bis +4 AC auf Level 20)
-        - nur noch 3x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP)
-        - neu: Schaden bei Concentration Check-Berechnung wird noch mal halbiert (leichter Concentration zu halten)
+        - nur noch 2x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP)
+        - auf höheren Leveln erlaubt Bonus Action zwei zusätzliche Unarmed Strikes
         - Rock Smash DC addiert nun Strength Modifier mit dazu
     - Feueraspekt:
         - Schaden gegen Nahkampfangreifer ist nun halber Level (Erhöhung) und kann auch auf Hellish Rebuke-Zauber übertragen werden (neuer Zauber durch Aspektzauber)
@@ -133,9 +132,7 @@
     - erlaubt Beschwören eines Elementars für den Sage (Summon Elemental-Zauber) und von Elementen, die den Nahmkampf-Schaden deutlich erhöhen, für den Warrior (Conjure Minor Elementals-Zauber)
     - beide haben den jeweiligen Zauber immer prepared und können ihn sowohl als Action, aber auch als Bonus Action oder sogar Reaction beim Kampfbeginn casten
     - dabei müssen keine Materielkosten aufgebracht werden
-    einmal pro Long Rest kann Zauber umsonst gesprochen werden
-    - ab Level 10: Concentration des Zaubers kann nicht gebrochen werden
-    - ab Level 14: Elementar (des Sages) bekommt zusätzliche Temporäre HP und Warrior bekommt erhöhte maximale Lebenspunkte
+    - einmal pro Long Rest kann Zauber umsonst gesprochen werden (Höhe des Levels steigt)
     - ab Level 18: Sage kann Genie rufen und Warrior kann sich in einen Genie verwandeln
 - Epic Boon auf Level 19 (neu für jede Klasse)
 - Level 20 - Avatar of the Elements: kostet nun 4 Aspect Calls (es ist ja nun einfacher, Aspect Calls zu generieren)

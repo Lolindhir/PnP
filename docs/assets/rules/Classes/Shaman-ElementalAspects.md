@@ -14,12 +14,11 @@ Higher Slot Levels: When you expend a spell slot of 2nd level or higher, the ran
 
 ## Aspect of Earth
 Bits of rock spread across your body, strengthening your melee and defensive capabilities.
-* You gain temporary hit points equal to 3 times your Shaman level until you dismiss or drop the earth aspect.
-* You gain a +1 bonus to your AC. The bonus increases at Shaman levels 7 (+2), 14 (+3), and 20 (+4). 
+* You gain temporary hit points equal to 2 times your Shaman level until you dismiss or drop the earth aspect.
+* You gain a +1 bonus to your AC. The bonus increases at Shaman levels 8 (+2), 14 (+3), and 20 (+4). 
 * You can't cast spells, but calling the Earth Aspect doesn't break your concentration on a spell you've already cast or prevent you from taking actions that are part of a spell, such as *Call Lightning*, that you've already cast. When you reach 20th Shaman level, this restriction no longer applies to you.
-* For the evaluation of the Concentration Check DC to hold concentration after taking damage, the damage is additionally halved for you.
 * You can use your spellcasting ability instead of Strength for the attack and damage rolls of your unarmed strikes. Also they do double damage to objects and structures. Additionally, you can roll a d8 in place of the normal damage of your unarmed strike. This die changes when you reach 5th Shaman level (d10), 11th Shaman level (d12), and 17th Shaman level (2d6).
-* If you attacked this turn with an unarmed strike or your Rock Smash, you can make one unarmed strike as a bonus action.
+* If you attacked this turn with an unarmed strike or your Rock Smash, you can make one unarmed strike as a bonus action. Beginning at Shaman Level 15, you can make two unarmed strikes instead of one.
 * **Rock Smash.** As an action, you can expend a spell slot to focus the rock surrounding you at your fist or weapon and make a mighty blow. When you expend a spell slot of 1st level, make a melee attack (weapon or spell) against one creature you can reach. On a hit, the target takes 2d12 bludgeoning damage and must make a Strength saving throw. You can add your Strength modifier to saving throw DC. On a failed save, the creature is knocked prone. A huge creature has advantage and a gargantuan creature automatically succeeds on the save.
 Higher Slot Levels: When you expend a spell slot of 2nd level or higher, the damage increases by 1d12 for each spell slot level above 1st.
 
