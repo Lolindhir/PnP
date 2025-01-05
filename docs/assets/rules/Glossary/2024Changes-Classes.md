@@ -69,8 +69,10 @@
 ## Shaman (neue Klasse)
 *- eigene Klasse aus Circle of the Four Elements Druid erstellt, nachfolgend die Unterschiede zum Druiden -*
 - Spellcasting Ability kann nun gewählt werden zwischen Wisdom und Charisma
-- Zauberliste: Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
-- Druiden-Zauber haben Fokus auf Support/Healing und Area/Crowd Control, Shamanen-Zauber haben den Fokus auf Elementarschaden, Healing und Illusionen (Control und Support stärker im Hintergrund)
+- Zauberliste:
+    - Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
+    - Druiden-Zauber haben Fokus auf Control, Healing, Support und Utility
+    - Shamanen-Zauber haben den Fokus auf Schaden, Control, Healing und Sehen/Wahrsagen (Divination Zauber)
 - Skills leicht angepasst im Vergleich zu Druiden Skills
 - Primordial nun direkt auf Level 1 bekannt, zusammen mit Druidic
 - neu: Elemental Role + Elemental Specialization (Level 1, 5 und 15)
