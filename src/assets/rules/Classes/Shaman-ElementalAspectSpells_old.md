@@ -33,7 +33,7 @@
 |     2nd     | [Flaming Sphere](https://lolindhir.github.io/PnP/spells/Flaming%2520Sphere) |
 |     3rd     | [Fireball](https://lolindhir.github.io/PnP/spells/Fireball)       |
 |     4th     | [Wall of Fire](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Fire)   |
-|     5th     | [Immolation](https://lolindhir.github.io/PnP/spells/Immolation) Flame Strike    |
+|     5th     | [Immolation](https://lolindhir.github.io/PnP/spells/Immolation)     |
 
 
 
