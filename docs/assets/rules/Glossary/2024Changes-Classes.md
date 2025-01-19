@@ -72,7 +72,7 @@
 - Zauberliste:
     - Tier-, Pflanzen- und Giftzauber entfernt, dafür weitere Elementarzauber hinzugefügt
     - Druiden-Zauber haben Fokus auf Control, Healing, Support und Utility
-    - Shamanen-Zauber haben den Fokus auf Schaden, Control, Healing und Sehen/Wahrsagen (Divination Zauber)
+    - Shamanen-Zauber haben den Fokus auf Elementaren Schaden, Control, Healing, Sehen/Wahrsagen (Divination Zauber) und Dimensionszaubern
 - Skills leicht angepasst im Vergleich zu Druiden Skills
 - Primordial nun direkt auf Level 1 bekannt, zusammen mit Druidic
 - neu: Elemental Role + Elemental Specialization (Level 1, 5 und 15)
@@ -129,7 +129,8 @@
 - Aspects Spells nun für alle Aspekte:
     - bisher hat man nur die Zauber des ersten Aspekts bekommen, den man gewählt hat, jetzt erhält man die Aspektzauber aller vier Aspekte
     - dafür kann man nun aber in einem Elemental Call keine anderen Zauber außer Cantrips oder zum Call passende Aspektzauber sprechen
-    - man erhält insgesamt über 60 Zauber, die immer prepared sind -> dafür weniger prepared Zauber (Cantrips und Zauber, die Slot benötigen)
+    - man erhält insgesamt über 60 Zauber, die immer prepared sind -> dafür deutlich weniger prepared Zauber (Cantrips und Zauber, die Slot benötigen)
+    - Schadenszauber mit Cold, Fire, Thunder und Acid sind größtenteils mit den Aspektzaubern verknüpft, aber Lightning Damage Zauber sind immer und sofort verfügbar
 - Elemental Manifestation (ehemals Elemental Summoning) ab Level 7
     - erlaubt Beschwören eines Elementars für den Sage (Summon Elemental-Zauber) und von Elementen, die den Nahmkampf-Schaden deutlich erhöhen, für den Warrior (Conjure Minor Elementals-Zauber)
     - beide haben den jeweiligen Zauber immer prepared und können ihn sowohl als Action, aber auch als Bonus Action oder sogar Reaction beim Kampfbeginn casten

@@ -1,11 +1,9 @@
 Schicksalspunkte symbolisieren die Strömungen von Ordnung, Chaos, Gut und Böse. Sie können sowohl von den Spielern als auch vom Dungeon Master verwendet werden, um diese Strömungen und den Zufall zu beeinflussen. Dabei können Spieler und Dungeon Master sie jeweils für unterschiedliche Dinge einsetzen (wird unten detailliert). 
-
 Es gibt zwei Arten von Schicksalspunkten – weiße und schwarze. Weiße Schicksalspunkte symbolisieren das positive Maß mit dem die Spieler ihr Schicksal bzw. ihre Bestimmung erfüllt haben und können deshalb nur von Spielern eingesetzt werden. Dagegen symbolisieren schwarze Schicksalspunkte den allgemeinen Zufall und den unbestimmbaren Verlauf des Schicksals und können sowohl von Spielern als auch vom Dungeon Master eingesetzt werden.
 
 
 ## Einsatz von Schicksalspunkten
 Ein Spieler kann jederzeit frei über alle Schicksalspunkte der Spielerseite verfügen, die anderen Spieler haben kein Veto-Recht. Die Einsatzmöglichkeiten für Spieler sind fest definiert, wogegen der Dungeon Master freier über die Verwendung der Punkte verfügen kann.
-
 Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden nach Nutzung aus dem Spiel entfernt. Dagegen können schwarze Schicksalspunkte sowohl von Spielern als auch vom Dungeon Master eingesetzt werden. Wenn ein schwarzer Schicksalspunkt eingesetzt wird, dann verliert die einsetzende Seite (Spieler oder Dungeon Master) diesen Punkt und die Gegenseite erhält ihn.
 
 ### Einsatzmöglichkeiten für Spieler
@@ -26,6 +24,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - „Geschäft mit dem Schicksal“: Spieler können die Regeln biegen in Verhandlung mit dem Dungeon Master, der einen Punktepreis festlegt, abhängig vom gewünschten Umfang der Regelbiegung
 
 
+
 ### Einsatzmöglichkeiten für Dungeon Master
 - 1d6 hinzufügen zu Ability Check (vor oder nach dem Wurf, maximal einmal pro Wurf) abhängig von Tier of Play (ab 5 d8, ab 11 d10, ab 17 d12)
 - Damage Roll zusätzlichen Schadenswürfel hinzufügen abhängig von Tier of Play (ab 5 zwei, ab 11 drei, ab 17 vier)
@@ -41,11 +40,18 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - freie Verwendung im Ermessen des Dungeon Masters
 
 
+
 ## Diebstahl von Schicksalspunkten
+
+### Spieler
+Wenn ein Monster eine Legendary Resistance verwendet, um einen Saving Throw automatisch zu bestehen, kann der Spieler, der den Saving Throw ausgelöst hat, einen D6 würfeln. Die Spieler stehlen die Hälfte der Augenzahl (aufgerundet) an schwarzen Würfeln vom Dungeon Master. Sollte der Dungeon Master nicht genügend schwarze Würfel besitzen, erhalten die Spieler anstelle weiße Würfel.
+
+### Dungeon Master
 Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen eigenen hinzufügen. Dafür existieren mehrere Möglichkeiten:
 - Wenn die Spieler am Start einer Runde 3 oder mehr schwarze Schicksalspunkte haben, rollt einer der Spieler einen d6 und wenn das Ergebnis die Anzahl der schwarzen Schicksalspunkte oder weniger ist, verlieren die Spieler einen schwarzen Schicksalspunkt. (Beispiel: wenn sie 4 schwarze Schicksalspunkte haben, dann verlieren sie bei einem Wurf von 1, 2, 3 oder 4 einen dieser Schicksalspunkte)
 - Der DM kann jederzeit eine Legendary Action einsetzen, um einen Schicksalspunkt zu stehlen (bis zu drei bei Einsatz von drei Legendary Actions).
 - Wenn ein Monster eine Attack Action ausführt, kann der DM auf eine Anzahl an Attacken dieser Action verzichten (Multi Attack hat mehrere Attacken), um diese Anzahl an schwarzen Schicksalspunkten zu stehlen.
+
 
 
 ## Erhalt und Verbleib von Schicksalspunkten

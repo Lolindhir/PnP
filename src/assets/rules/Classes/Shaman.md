@@ -60,12 +60,25 @@ Whenever you gain a Shaman level, you can replace one of your cantrips with anot
 **Spell Slots.** The [Shaman Features Table](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_features_table) shows how many spell slots you have to cast your level 1+ spells.
 You regain all expended slots when you finish a Long Rest.
 
-**Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four Level 1 spells from the Shaman spell list.
+**Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two Level 1 spells from the Shaman spell list.
 The number of spells on your list increases as you gain Shaman levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from the Shaman spell list until the number of spells on your
-list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include six spells of levels 1 and 2 in any combination.
+list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include four spells of levels 1 and 2 in any combination.
 If another Shaman feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Shaman spells for you.
 
 ##### Prepared Spells Table
+| Shaman Level | Prepared Spells |
+| :----------: | :-------------: |
+|      1       |        2        |
+|      3       |        3        |
+|      5       |        4        |
+|      7       |        5        |
+|      9       |        6        |
+|      11      |        7        |
+|      13      |        8        |
+|      15      |        9        |
+|      17      |       10        |
+
+<!--
 | Shaman Level | Prepared Spells |
 | :----------: | :-------------: |
 |      1       |        4        |
@@ -88,6 +101,7 @@ If another Shaman feature gives you spells that you always have prepared, those 
 |      18      |       15        |
 |      19      |       15        |
 |      20      |       15        |
+-->
 
 **Changing Your Prepared Spells.** Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
 If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared.
@@ -132,13 +146,13 @@ When you gain certain Shaman levels, you gain additional aspects of your choice.
 
 
 #### Aspect Spells
-The connection to the Elemental Aspects grants you access to spells connected with these elements. Consult the associated lists of spells depending on your Elemental Role: [Sage Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) or [Warrior Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior).
+The connection to the Elemental Aspects grants you access to spells connected with these elements. Consult the associated lists of spells depending on your Elemental Role: [Sage Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) or [Warrior Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior).
 You gain access to all listed Aspect Spells for which you have spell slots, for which you know the corresponding Aspect, and for which you have the required Elemental Role. You always have these spells prepared, and they don't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Shaman spell list, the spell is nonetheless a Shaman spell for you.
 
 
 #### Aspect Call
 You can use your bonus action to call forth one Elemental Aspect you know. The Elemental Aspect surrounds you and you gain benefits depending on the kind of aspect - Air, Earth, Fire, or Water - which are described in the [Elemental Aspect Calls overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls). If a Aspect Call requires a spell attack or saving throw, use your spellcasting ability.
-While the Aspect surrounds you, you can't cast spells other than cantrips or the corresponding spells of the called Elemental Aspect. Calling the Aspect doesn't break your concentration on a spell you've already cast or prevent you from taking actions that are part of a spell, such as *Witch Bolt*, that you've already cast.
+While the Aspect surrounds you, you can't cast spells other than cantrips, spells granted by your Elemental Role, and the corresponding spells of the called Elemental Aspect. Calling the Aspect doesn't break your concentration on a spell you've already cast or prevent you from taking actions that are part of a spell, such as *Witch Bolt*, that you've already cast.
 The Elemental Aspect surrounds you for 1 minute, until you use your bonus action to dismiss it, until you use this feature again to call another aspect with an bonus action, or until you are incapacitated, fall unconscious, drop to 0 hit points, or die. 
 
 **Number of Uses.** You can use Aspect Call twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.
