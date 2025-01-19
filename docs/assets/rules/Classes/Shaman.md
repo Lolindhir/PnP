@@ -132,9 +132,7 @@ When you gain certain Shaman levels, you gain additional aspects of your choice.
 
 
 #### Aspect Spells
-The connection to the Elemental Aspects grants you access to spells connected with these elements. Consult the associated lists of spells depending on your Elemental Role:
-- [Sage Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage)
-- [Warrior Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior)
+The connection to the Elemental Aspects grants you access to spells connected with these elements. Consult the associated lists of spells depending on your Elemental Role: [Sage Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) or [Warrior Elemental Aspect Spells](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior).
 You gain access to all listed Aspect Spells for which you have spell slots, for which you know the corresponding Aspect, and for which you have the required Elemental Role. You always have these spells prepared, and they don't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Shaman spell list, the spell is nonetheless a Shaman spell for you.
 
 
