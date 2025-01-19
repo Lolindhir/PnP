@@ -116,7 +116,7 @@
         - Aktive Fähigkeit fügt nun auch Schaden hinzu und kann gezielt auf Feinde eingesetzt werden
     - Erdaspekt:
         - kein AC-Floor mehr sondern Bonus-AC abhängig vom Proficiency Bonus (bis +4 AC auf Level 20)
-        - nur noch 2x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP)
+        - nur noch 2x Level als Temporäre HP anstatt 4x (Druide hat auch verringerte THP und man kann jetzt auch zaubern, siehe unten)
         - auf höheren Leveln erlaubt Bonus Action zwei zusätzliche Unarmed Strikes
         - Rock Smash DC addiert nun Strength Modifier mit dazu
     - Feueraspekt:
@@ -128,8 +128,8 @@
         - Healing Flow extrem gebufft (3d8 Grundheilung und 3d8 Skalierung anstatt 1d8)
 - Aspects Spells nun für alle Aspekte:
     - bisher hat man nur die Zauber des ersten Aspekts bekommen, den man gewählt hat, jetzt erhält man die Aspektzauber aller vier Aspekte
-    - dafür wurde die jeweilige Anzahl pro Aspekt halbiert
-    - trotzdem erhält man dadurch 20 zusätzliche Zauber (anstatt 10), die nicht prepared werden müssen
+    - dafür kann man nun aber in einem Elemental Call keine anderen Zauber außer Cantrips oder zum Call passende Aspektzauber sprechen
+    - man erhält insgesamt über 60 Zauber, die immer prepared sind -> dafür weniger prepared Zauber (Cantrips und Zauber, die Slot benötigen)
 - Elemental Manifestation (ehemals Elemental Summoning) ab Level 7
     - erlaubt Beschwören eines Elementars für den Sage (Summon Elemental-Zauber) und von Elementen, die den Nahmkampf-Schaden deutlich erhöhen, für den Warrior (Conjure Minor Elementals-Zauber)
     - beide haben den jeweiligen Zauber immer prepared und können ihn sowohl als Action, aber auch als Bonus Action oder sogar Reaction beim Kampfbeginn casten

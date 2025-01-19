@@ -56,7 +56,6 @@ Drawing on the elemental essence of nature itself, you can cast spells to shape 
 
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
 Whenever you gain a Shaman level, you can replace one of your cantrips with another cantrip of your choice from the Shaman spell list.
-When you reach Shaman levels 4 and 10, you learn another cantrip of your choice from the Shaman spell list.
 
 **Spell Slots.** The [Shaman Features Table](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_features_table) shows how many spell slots you have to cast your level 1+ spells.
 You regain all expended slots when you finish a Long Rest.
@@ -133,12 +132,13 @@ When you gain certain Shaman levels, you gain additional aspects of your choice.
 
 
 #### Aspect Spells
-The connection to the Elemental Aspects gains you access to spells connected with these elements. Consult the associated lists of spells in the [Elemental Aspect Spells overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_spells).
-You gain access to all listed Aspect Spells for which you have spell slots and for which you know the corresponding Aspect. You always have these spells prepared, and they don't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Shaman spell list, the spell is nonetheless a Shaman spell for you.
+The connection to the Elemental Aspects grants you access to spells connected with these elements. Consult the associated lists of spells depending on your Elemental Role in the [Elemental Aspect Spells overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_spells).
+You gain access to all listed Aspect Spells for which you have spell slots, for which you know the corresponding Aspect, and for which you have the required Elemental Role. You always have these spells prepared, and they don't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Shaman spell list, the spell is nonetheless a Shaman spell for you.
 
 
 #### Aspect Call
 You can use your bonus action to call forth one Elemental Aspect you know. The Elemental Aspect surrounds you and you gain benefits depending on the kind of aspect - Air, Earth, Fire, or Water - which are described in the [Elemental Aspect Calls overview page](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls). If a Aspect Call requires a spell attack or saving throw, use your spellcasting ability.
+While the Aspect surrounds you, you can't cast spells other than cantrips or the corresponding spells of the called Elemental Aspect. Calling the Aspect doesn't break your concentration on a spell you've already cast or prevent you from taking actions that are part of a spell, such as *Witch Bolt*, that you've already cast.
 The Elemental Aspect surrounds you for 1 minute, until you use your bonus action to dismiss it, until you use this feature again to call another aspect with an bonus action, or until you are incapacitated, fall unconscious, drop to 0 hit points, or die. 
 
 **Number of Uses.** You can use Aspect Call twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.
