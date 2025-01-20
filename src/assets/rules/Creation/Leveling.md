@@ -6,12 +6,12 @@ Erfahrungspunkte werden komplett außen vorgelassen und der Zeitpunkt des Level-
 ## Würfeln für Lebenspunkte
 Werden beim Level-Up die Lebenspunkte erhöht, würfelt jeder für seinen Charakter einen d6-Würfel, unabhängig welche Charakterklasse erhöht wird. Wird eine 1 gewürfelt, darf einmal erneut gewürfelt werden. Abhängig von der jeweiligen Charakterklasse wird dann aber die Differenz zum eigentlichen Hit Die aufaddiert. Dadurch ergibt sich für die jeweiligen Klassen folgende Bestimmung der Lebenspunkteerhöhung:
 
-| Klasse                                    |   HP bei Level-Up |
-| :---------------------------------------- | ----------------: |
-| Barbarian                                 | 1d6 + CON mod + 6 |
-| Fighter, Paladin, Ranger                  | 1d6 + CON mod + 4 |
-| Bard, Cleric, Druid, Monk, Rogue, Warlock | 1d6 + CON mod + 2 |
-| Sorcerer, Wizard                          |     1d6 + CON mod |
+| Klasse                                            |   HP bei Level-Up |
+| :------------------------------------------------ | ----------------: |
+| Barbarian                                         | 1d6 + CON mod + 6 |
+| Fighter, Paladin, Ranger                          | 1d6 + CON mod + 4 |
+| Bard, Cleric, Druid, Monk, Rogue, Shaman, Warlock | 1d6 + CON mod + 2 |
+| Sorcerer, Wizard                                  |     1d6 + CON mod |
 
 
 ## ASI

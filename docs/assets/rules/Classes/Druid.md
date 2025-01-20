@@ -4,6 +4,7 @@
 | :----------------------------- | :------------------------------------------------------------------------------------------ |
 | **Primary Ability**            | Wisdom                                                                                      |
 | **Hit Point Die**              | D8 per Shaman level                                                                         |
+| **Level Up Hit Point Gain**    | D6 + Constitution Modifier + 2                                                                     |
 | **Saving Throw Proficiencies** | Strength and Wisdom                                                                         |
 | **Skill Proficiencies**        | *Choose 2:* Arcana, Athletics, Insight, Medicine, Nature, Perception, Religion, or Survival |
 | **Weapon Proficiencies**       | Simple Weapons                                                                              |

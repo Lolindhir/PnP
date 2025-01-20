@@ -4,6 +4,7 @@
 | :----------------------------- | :------------------------------------------------------------------------------------------------------- |
 | **Primary Ability**            | Dexterity                                                                                                |
 | **Hit Point Die**              | D10 per Ranger level                                                                                     |
+| **Level Up Hit Point Gain**    | D6 + Constitution Modifier + 4                                                                           |
 | **Saving Throw Proficiencies** | Strength and Dexterity                                                                                   |
 | **Skill Proficiencies**        | *Choose 3:* Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival |
 | **Weapon Proficiencies**       | Simple and Martial weapons                                                                               |

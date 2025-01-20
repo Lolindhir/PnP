@@ -4,6 +4,7 @@
 | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | **Primary Ability**            | Wisdom or Charisma (spellcasting ability is chosen when selecting this class)                      |
 | **Hit Point Die**              | D8 per Shaman level                                                                                |
+| **Level Up Hit Point Gain**    | D6 + Constitution Modifier + 2                                                                     |
 | **Saving Throw Proficiencies** | Wisdom and Charisma                                                                                |
 | **Skill Proficiencies**        | *Choose 2:* Arcana, Athletics, Intimidation, Medicine, Nature, Perception, Persuasion, or Survival |
 | **Weapon Proficiencies**       | Simple Weapons                                                                                     |
@@ -61,8 +62,7 @@ Whenever you gain a Shaman level, you can replace one of your cantrips with anot
 You regain all expended slots when you finish a Long Rest.
 
 **Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two Level 1 spells from the Shaman spell list.
-The number of spells on your list increases as you gain Shaman levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from the Shaman spell list until the number of spells on your
-list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include four spells of levels 1, 2, and 3 in any combination.
+The number of spells on your list increases as you gain Shaman levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from the Shaman spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include four spells of levels 1, 2, and 3 in any combination.
 If another Shaman feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Shaman spells for you.
 
 ##### Prepared Spells Table

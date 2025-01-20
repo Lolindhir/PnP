@@ -2,6 +2,10 @@
   text-decoration: line-through;
 }
 
+.cdk-overlay-pane:has(>.custom-class){
+  min-width: fit-content;
+}
+
 .filter-select {
   // margin-left: 0.5rem;
   // margin-right: 0.5rem;

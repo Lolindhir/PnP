@@ -4,6 +4,7 @@
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | **Primary Ability**            | Strength or Dexterity                                                                                                   |
 | **Hit Point Die**              | D10 per Fighter level                                                                                                   |
+| **Level Up Hit Point Gain**    | D6 + Constitution Modifier + 4                                                                                          |
 | **Saving Throw Proficiencies** | Strength and Constitution                                                                                               |
 | **Skill Proficiencies**        | *Choose 2:* Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival |
 | **Weapon Proficiencies**       | Simple and Martial Weapons                                                                                              |

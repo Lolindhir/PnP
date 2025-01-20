@@ -60,7 +60,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Spell Level</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersLevel"
+            <mat-select [(ngModel)]="selectedFiltersLevel" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsLevel, selectedFiltersLevel)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersLevel.length}} selected</span>
@@ -74,7 +74,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Class</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersClass"
+            <mat-select [(ngModel)]="selectedFiltersClass" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsClass, selectedFiltersClass)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersClass.length}} selected</span>
@@ -88,7 +88,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Category</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersTag"
+            <mat-select [(ngModel)]="selectedFiltersTag" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsTag, selectedFiltersTag)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersTag.length}} selected</span>
@@ -102,7 +102,7 @@
         <div *ngIf="!characterSelected()" fxLayout="column" class="filter-select">
           <div>Preset</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersPreset"
+            <mat-select [(ngModel)]="selectedFiltersPreset" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
@@ -116,7 +116,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Casting Time</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersCastingTime"
+            <mat-select [(ngModel)]="selectedFiltersCastingTime" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsCastingTime, selectedFiltersCastingTime)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersCastingTime.length}} selected</span>
@@ -130,7 +130,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Attack\Save</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersAttackSave"
+            <mat-select [(ngModel)]="selectedFiltersAttackSave" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsAttackSave, selectedFiltersAttackSave)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersAttackSave.length}} selected</span>
@@ -166,7 +166,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Primary Targets</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersAffectedTargets"
+            <mat-select [(ngModel)]="selectedFiltersAffectedTargets" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsAffectedTargets, selectedFiltersAffectedTargets)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersAffectedTargets.length}} selected</span>
@@ -180,7 +180,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Range</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersRange"
+            <mat-select [(ngModel)]="selectedFiltersRange" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsRange, selectedFiltersRange)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersRange.length}} selected</span>
@@ -194,7 +194,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Subclass</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSubclass"
+            <mat-select [(ngModel)]="selectedFiltersSubclass" panelWidth="400px"
               (ngModelChange)="addFilterMulti(optionsSubclass, selectedFiltersSubclass)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSubclass.length}} selected</span>
@@ -208,7 +208,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Source</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSource"
+            <mat-select [(ngModel)]="selectedFiltersSource" panelWidth="500px"
               (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSource.length}} selected</span>
@@ -312,7 +312,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Spell School</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSchool"
+            <mat-select [(ngModel)]="selectedFiltersSchool" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsSchool, selectedFiltersSchool)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSchool.length}} selected</span>
@@ -326,7 +326,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Theme</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersTheme"
+            <mat-select [(ngModel)]="selectedFiltersTheme" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsTheme, selectedFiltersTheme)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersTheme.length}} selected</span>
@@ -340,7 +340,7 @@
         <div *ngIf="characterSelected()" fxLayout="column" class="filter-select">
           <div>Preset</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersPreset"
+            <mat-select [(ngModel)]="selectedFiltersPreset" panelWidth="500px"
               (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
@@ -354,7 +354,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Damage Type</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersDamageType"
+            <mat-select [(ngModel)]="selectedFiltersDamageType" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsDamageType, selectedFiltersDamageType)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersDamageType.length}} selected</span>
@@ -368,7 +368,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Condition</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersCondition"
+            <mat-select [(ngModel)]="selectedFiltersCondition" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsCondition, selectedFiltersCondition)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersCondition.length}} selected</span>
@@ -404,7 +404,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Number of Targets</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersNumberOfTargets"
+            <mat-select [(ngModel)]="selectedFiltersNumberOfTargets" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsNumberOfTargets, selectedFiltersNumberOfTargets)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersNumberOfTargets.length}} selected</span>
@@ -486,7 +486,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Required Save</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSave"
+            <mat-select [(ngModel)]="selectedFiltersSave" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsSave, selectedFiltersSave)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSave.length}} selected</span>
@@ -500,7 +500,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Attack Type</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersAttackType"
+            <mat-select [(ngModel)]="selectedFiltersAttackType" panelWidth="300px"
               (ngModelChange)="addFilterMulti(optionsAttackType, selectedFiltersAttackType)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersAttackType.length}} selected</span>
@@ -514,7 +514,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Duration</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersDuration"
+            <mat-select [(ngModel)]="selectedFiltersDuration" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsDuration, selectedFiltersDuration)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersDuration.length}} selected</span>
@@ -528,7 +528,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Single Class</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSingleClass"
+            <mat-select [(ngModel)]="selectedFiltersSingleClass" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsSingleClass, selectedFiltersSingleClass)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSingleClass.length}} selected</span>
@@ -542,7 +542,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Must-Class</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersMustClass"
+            <mat-select [(ngModel)]="selectedFiltersMustClass" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsMustClass, selectedFiltersMustClass)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersMustClass.length}} selected</span>
@@ -556,7 +556,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Not this Class</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersNotClass"
+            <mat-select [(ngModel)]="selectedFiltersNotClass" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsNotClass, selectedFiltersNotClass)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersNotClass.length}} selected</span>
@@ -570,7 +570,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Single Category</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSingleTag"
+            <mat-select [(ngModel)]="selectedFiltersSingleTag" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsSingleTag, selectedFiltersSingleTag)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSingleTag.length}} selected</span>
@@ -584,7 +584,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Must-Category</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersMustTag"
+            <mat-select [(ngModel)]="selectedFiltersMustTag" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsMustTag, selectedFiltersMustTag)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersMustTag.length}} selected</span>
@@ -598,7 +598,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Not this Category</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersNotTag"
+            <mat-select [(ngModel)]="selectedFiltersNotTag" panelWidth="200px"
               (ngModelChange)="addFilterMulti(optionsNotTag, selectedFiltersNotTag)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersNotTag.length}} selected</span>

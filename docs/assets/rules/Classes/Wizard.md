@@ -4,6 +4,7 @@
 | :----------------------------- | :--------------------------------------------------------------------------------- |
 | **Primary Ability**            | Intelligence                                                                       |
 | **Hit Point Die**              | D6 per Wizard level                                                                |
+| **Level Up Hit Point Gain**    | D6 + Constitution Modifier                                                         |
 | **Saving Throw Proficiencies** | Intelligence and Wisdom                                                            |
 | **Skill Proficiencies**        | *Choose 2:* Arcana, History, Insight, Investigation, Medicine, Nature, or Religion |
 | **Weapon Proficiencies**       | Simple Weapons                                                                     |
@@ -72,8 +73,7 @@ You regain all expended slots when you finish a Long Rest.
 When you reach Wizard level 4, the number of prepared cantrips increases to four. When you reach Wizard level 10, the number of prepared cantrips increases to five.
 
 **Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To do so, choose four spells from your spellbook. The chosen spells must be of a level for which you have spell slots.
-The number of spells on your list increases as you gain Wizard levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from your spellbook until the number of spells on your
-list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Wizard, your list of prepared spells can include six spells of levels 1 and 2 in any combination, choosen from your spellbook.
+The number of spells on your list increases as you gain Wizard levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from your spellbook until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Wizard, your list of prepared spells can include six spells of levels 1 and 2 in any combination, choosen from your spellbook.
 If another Wizard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Wizard spells for you.
 
 ##### Prepared Spells Table
