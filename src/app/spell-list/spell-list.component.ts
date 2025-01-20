@@ -2670,6 +2670,8 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       this.storageService.storeLocal('PrintSettings', JSON.stringify(printSettings));
       this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
+      console.log('Print requested, location href: ' + location.href);
+      console.log('Print requested, url tree: ' + this.router.createUrlTree(['spells-print']));
       window.open(this.router.serializeUrl(this.router.createUrlTree(['spells-print'])), '_blank');
       //window.open(location.href + '/print');
       

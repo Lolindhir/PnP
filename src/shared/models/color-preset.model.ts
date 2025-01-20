@@ -23,6 +23,7 @@ export class ColorPreset implements ColorPreset {
         defaultPresets.push(new ColorPreset('Druid Green', '#60b85d', false));
         defaultPresets.push(new ColorPreset('Paladin Blue', '#4986e7', true));
         defaultPresets.push(new ColorPreset('Ranger Brown', '#857056', true));
+        defaultPresets.push(new ColorPreset('Shaman Steel', '#b0c4de', false));
         defaultPresets.push(new ColorPreset('Sorcerer Orange', '#e67300', false));
         defaultPresets.push(new ColorPreset('Warlock Teal', '#008080', true));
         defaultPresets.push(new ColorPreset('Wizard Red', '#800000', true));
