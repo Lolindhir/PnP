@@ -14,6 +14,7 @@ import { ViewportScroller } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Character, CharacterData, ModeOption } from '@shared/models/character.model';
+import { PreparedSpellBlueprint, PreparedSpellsBlueprint } from '@shared/models/prepared-spells-blueprint.model';
 import { Preset } from '@shared/models/preset.model';
 import { SpellProperties } from '@shared/models/spell-properties.model';
 import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
@@ -26,7 +27,6 @@ import { ColorPreset } from '@shared/models/color-preset.model';
 
 import * as imagePaths from '@shared/imagePaths';
 import * as globals from '@shared/globals';
-import { PreparedSpellBlueprint, PreparedSpellsBlueprint } from '@shared/models/prepared-spells-blueprint.model';
 
 
 export interface SettingsData {
@@ -2670,9 +2670,10 @@ export class SpellListComponent implements OnInit, AfterViewInit {
 
       this.storageService.storeLocal('PrintSettings', JSON.stringify(printSettings));
       this.storageService.storeLocal('PrintSpells', JSON.stringify(printSpells));
-      console.log('Print requested, location href: ' + location.href);
-      console.log('Print requested, url tree: ' + this.router.createUrlTree(['spells-print']));
-      window.open(this.router.serializeUrl(this.router.createUrlTree(['spells-print'])), '_blank');
+      
+      window.open(window.location.origin + '/spells-print', '_blank');
+
+      //window.open(this.router.serializeUrl(this.router.createUrlTree(['spells-print'])), '_blank');
       //window.open(location.href + '/print');
       
     }
