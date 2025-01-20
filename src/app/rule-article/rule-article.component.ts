@@ -27,6 +27,18 @@ export class RuleArticleComponent {
         this.headline = rulesContent.name;
         if(rulesContent.filename.length > 0) this.markDownSource = './assets/rules/' + rulesContent.filename; 
 
+        //check if markdown file exists
+        fetch(this.markDownSource)
+          .then(response => {
+            if (!response.ok) {
+              this.markDownSource = './assets/rules/404.md';
+              //this.headline = '404 - Artikel nicht gefunden';
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+
         this.children = rulesContent.children;
 
         this.breadcrumbs = RulesContent.getBreadcrumb(rulesContent);

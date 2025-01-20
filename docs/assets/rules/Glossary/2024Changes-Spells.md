@@ -38,7 +38,7 @@
 **Rebalanced** = Veränderung des Zaubers um neues Balancing zu erzeugen (meist Buff & Nerf in einem)
 **Reworked** = Überarbeitung des Zaubers (quasi wie ein neuer Zauber)
 
-### Highlight Changes
+### List of Highlight Changes
 
 | Name                              |    Alteration    | Note                                                                                                                                                                       |
 | :-------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@
 
 
 
-### Rest of the Changes
+### List of Remaining Changes
 
 | Name                             |    Alteration    | Note                                                                                                                                            |
 | :------------------------------- | :--------------: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -111,7 +111,7 @@
 | [Flame Strike](https://lolindhir.github.io/PnP/spells/Flame%2520Strike)            |      Buffed      | Schaden um 2d6 erhöht                                                                                                                           |
 | [Forcecage](https://lolindhir.github.io/PnP/spells/Forcecage)               |      Nerfed      | Benötigt nun Concentration und verbraucht die Materialien im Wert von 1.500 GP                                                                  |
 | [Friends](https://lolindhir.github.io/PnP/spells/Friends)                 |    Rebalanced    | Nun ist Saving Throw für Charm nötig, aber dafür ist Ziel nicht feindlich nach Ende des Zaubers                                                 |
-| [Grasping Vine](https://lolindhir.github.io/PnP/spells/Grasping%2520Vine)           |      Buffed      | Erhöhte Reichweite, Ziel erhält nun Schaden und wird gegrappelt                                                                                 |
+| [Grasping Vine](https://lolindhir.github.io/PnP/spells/Grasping%2520Vine)           |      Buffed      | Erhöhte Reichweite, Ziel erhält nun Schaden und wird gegrappled                                                                                 |
 | [Hail of Thorns](https://lolindhir.github.io/PnP/spells/Hail%2520of%2520Thorns)          |     Changed      | Bonus Action wird nun genommen, wenn ein Ziel mit einem Fernkampfangriff getroffen wird                                                         |
 | [Heroes' Feast](https://lolindhir.github.io/PnP/spells/Heroes'%2520Feast)           |      Nerfed      | Ziele erhalten nun Resistance gegen Poison Damage anstatt Immunity                                                                              |
 | [Holy Aura](https://lolindhir.github.io/PnP/spells/Holy%2520Aura)               |    Rebalanced    | Nun alle Verbündete innerhalb des Radius betroffen anstatt nur die zum Zauberzeitpunkt, Gegner nun bis zum Ende seines nächsten Zuges geblendet |
