@@ -102,7 +102,7 @@
         <div *ngIf="!characterSelected()" fxLayout="column" class="filter-select">
           <div>Preset</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersPreset" panelWidth="350px"
+            <mat-select [(ngModel)]="selectedFiltersPreset" panelWidth="300px"
               (ngModelChange)="addFilterMulti(optionsPreset, selectedFiltersPreset)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersPreset.length}} selected</span>
@@ -208,7 +208,7 @@
         <div fxLayout="column" class="filter-select">
           <div>Source</div>
           <mat-form-field appearance="fill">
-            <mat-select [(ngModel)]="selectedFiltersSource" panelWidth="350px"
+            <mat-select [(ngModel)]="selectedFiltersSource" panelWidth="300px"
               (ngModelChange)="addFilterMulti(optionsSource, selectedFiltersSource)" multiple="true">
               <mat-select-trigger>
                 <span class="filter-selection-number">{{selectedFiltersSource.length}} selected</span>
