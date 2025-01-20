@@ -25,6 +25,37 @@
 | **20** |  4  |  3  |  3  |  3  |  3  |  2  |  2  |  1  |  1  |
 
 
-## Available Spells
 
-Look up the spells overview in this app and filter for the wizard class.
+## Features
+
+| Abbreviation | Feature                      |
+| :----------: | :--------------------------- |
+|     Prof     | Proficiency Bonus            |
+|     Cant     | Prepared Cantrips            |
+|     Prep     | Prepared Spells              |
+|     Slot     | Highest Available Spell Slot |
+
+| Level  | Prof | Cant | Prep | Slot |
+| :----: | :--: | :--: | :--: | :--: |
+| **1**  |  +2  |  3   |  4   | 1st  |
+| **2**  |  +2  |  3   |  5   | 1st  |
+| **3**  |  +2  |  3   |  6   | 2nd  |
+| **4**  |  +2  |  4   |  7   | 2nd  |
+| **5**  |  +3  |  4   |  9   | 3rd  |
+| **6**  |  +3  |  4   |  10  | 3rd  |
+| **7**  |  +3  |  4   |  11  | 4th  |
+| **8**  |  +3  |  4   |  12  | 4th  |
+| **9**  |  +4  |  4   |  14  | 5th  |
+| **10** |  +4  |  5   |  15  | 5th  |
+| **11** |  +4  |  5   |  16  | 6th  |
+| **12** |  +4  |  5   |  16  | 6th  |
+| **13** |  +5  |  5   |  17  | 7th  |
+| **14** |  +5  |  5   |  18  | 7th  |
+| **15** |  +5  |  5   |  19  | 8th  |
+| **16** |  +5  |  5   |  21  | 8th  |
+| **17** |  +6  |  5   |  22  | 9th  |
+| **18** |  +6  |  5   |  23  | 9th  |
+| **19** |  +6  |  5   |  24  | 9th  |
+| **20** |  +6  |  5   |  25  | 9th  |
+
+

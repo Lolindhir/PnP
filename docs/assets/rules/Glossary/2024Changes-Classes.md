@@ -1,4 +1,8 @@
 
+## Allgemein
+- alle Klassen bekommen nun ihre Subklasse auf Level 3
+
+
 ## Fighter
 - Combat Superiority der Battle Master Subklasse wird in Basisklasse integriert
     - Maneuvers auf Level 3, 7, 10 und 15
@@ -139,3 +143,15 @@
     - ab Level 18: Sage kann Genie rufen und Warrior kann sich in einen Genie verwandeln
 - Epic Boon auf Level 19 (neu für jede Klasse)
 - Level 20 - Avatar of the Elements: kostet nun 4 Aspect Calls (es ist ja nun einfacher, Aspect Calls zu generieren)
+
+
+
+## Wizard
+- Cantrips können ebenfalls prepared werden
+- Anzahl prepared Zauber ist fixe Anzahl und nicht mehr abhängig vom Spellcasting Ability Modifier
+- Neu: Expertise in Arcana, History, Investigation, Medicine, Nature, oder Religion ab Level 2
+- Neu: ab Level 5 kann am Ende einer Short Rest ein prepared Zauber mit einem Zauber aus dem Zauberbuch ausgetauscht werden (es muss nicht auf Long Rest gewartet werden)
+
+### Wizard Subklasse: Evoker
+- Evocation Savant gibt nun einen zusätzlichen Evocation-Zauber pro verfügbarem Spell Level
+- Sculpt Spells und Potent Cantrip wurden getauscht (Sculpt Spells jetzt erst ab Level 6 und Potent Cantrip bereits ab Level 3)
