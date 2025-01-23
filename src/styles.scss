@@ -52,6 +52,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-bottom: 0px solid lightgrey!important;
 }
 
+.markdown ul, .markdown ol {
+    padding-left: 10px;
+    margin-left: 7px;
+}
+
 .markdown .startgap {
     margin-top: 25px;
 }

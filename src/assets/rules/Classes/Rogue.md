@@ -45,7 +45,7 @@ You gain Expertise in two of your skill proficiencies of your choice. Sleight of
 At Rogue level 6, you gain Expertise in two more of your skill proficiencies of your choice.
 
 ### Level 1: Sneak Attack
-You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. The extra damage's type is the same as the weapon's type.
+You know how to strike subtly and exploit your foes distraction. On your turn, every time you hit a creature with an attack you had advantage on the attack roll, you can deal an extra 1d6 damage to that creature (only once per creature on the same turn). The attack must use a finesse or a ranged weapon. The extra damage's type is the same as the weapon's type.
 You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.
 The amount of the extra damage increases as you gain Rogue levels, as shown in the Sneak Attack table.
 

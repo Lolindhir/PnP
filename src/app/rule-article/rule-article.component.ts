@@ -34,6 +34,17 @@ export class RuleArticleComponent {
               this.markDownSource = './assets/rules/404.md';
               //this.headline = '404 - Artikel nicht gefunden';
             }
+            else{
+              //check if markdown file is empty
+              fetch(this.markDownSource)
+                .then(response => response.text())
+                .then(text => {
+                  if(text.length == 0){
+                    this.markDownSource = './assets/rules/404.md';
+                    //this.headline = '404 - Artikel nicht gefunden';
+                  }
+                });
+            }
           })
           .catch(error => {
             console.error('Error:', error);

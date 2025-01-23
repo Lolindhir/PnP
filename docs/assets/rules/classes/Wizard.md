@@ -53,18 +53,15 @@ As a student of arcane magic, you have learned to cast spells.
 
 **Free Cantrip.** You know the *[Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation)* cantrip and have it always prepared. It doesn't count against the number of Wizard cantrips you can prepare.
 
-**Spellbook.** Your wizardly apprenticeship culminated in the creation of a unique book: your spellbook. It is a Tiny object that weighs 3 pounds, contains 100 pages, and can be read only by you or someone casting ldentify.You determine the book's
-appearance and materials, such as a gilt-edged tome or a collection of vellum bound with twine.
+**Spellbook.** Your wizardly apprenticeship culminated in the creation of a unique book: your spellbook. It is a Tiny object that weighs 3 pounds, contains 100 pages, and can be read only by you or someone casting Identify. You determine the book's appearance and materials, such as a gilt-edged tome or a collection of vellum bound with twine.
 The book contains the spells you know. It starts with five Wizard cantrips and six level 1 Wizard spells of your choice.
 
 **Adding additional Spells to the Book.** Whenever you gain a Wizard level after 1, add two level 1+ Wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown in the [Wizard Features table](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_features_table). The spells are the culmination of arcane research you do regularly.
 
-**Copying a Spell into the Book.** When you find a Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50
-GP. A cantrip takes 1 hour and costs 20 GP. Afterward you can prepare the spell like the other spells in your spellbook.
+**Copying a Spell into the Book.** When you find a Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. A cantrip takes 1 hour and costs 20 GP. Afterward you can prepare the spell like the other spells in your spellbook.
 
-**Copying the Book.** You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level
-of the copied spell (30 minutes and 5 GP for a cantrip).
-If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.
+**Copying the Book.** You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell (30 minutes and 5 GP for a cantrip).
+If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many Wizards keep a backup spellbook.
 
 **Spell Slots.** The [Wizard Features table](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_features_table) shows how many spell slots you have to cast your level 1+ spells.
 You regain all expended slots when you finish a Long Rest.
