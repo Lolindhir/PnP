@@ -31,6 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatTreeModule } from '@angular/material/tree';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from '@components/main-header/main-header.component';
@@ -38,6 +39,7 @@ import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, 
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellDetailComponent } from '@components/spell-detail/spell-detail.component';
 import { RulesHomeComponent } from './rules-home/rules-home.component';
+import { RulesMenuComponent } from './rules-menu/rules-menu.component';
 import { RuleArticleComponent } from './rule-article/rule-article.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
@@ -60,6 +62,7 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     SpellPrintComponent,
     SpellDetailComponent,
     RulesHomeComponent,
+    RulesMenuComponent,
     RuleArticleComponent,
     SpellFilterPipe,
     ItemListComponent,
@@ -100,6 +103,7 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     MatTabsModule,
     MatCardModule,
     MatListModule,
+    MatTreeModule,
     ScrollingModule,
     AppRoutingModule,
     MarkdownModule.forRoot({ markedOptions: {

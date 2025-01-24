@@ -1,0 +1,15 @@
+.rules-menu {
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .example-tree-invisible {
+    display: none;
+  }

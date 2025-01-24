@@ -20,7 +20,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - kleine positive Veränderung in einer Szene/Kampfplatz hinzufügen (Cover auf Battlemap, positive Verbindung zu Händler, Ablenkung, einfaches Item finden usw.)
 
 #### Nur Weiß:
-- irgendeinen Wurf neu würfeln (außer Death Save)
+- [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) erhalten
 - „Geschäft mit dem Schicksal“: Spieler können die Regeln biegen in Verhandlung mit dem Dungeon Master, der einen Punktepreis festlegt, abhängig vom gewünschten Umfang der Regelbiegung
 
 

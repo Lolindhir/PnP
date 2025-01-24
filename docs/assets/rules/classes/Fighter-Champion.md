@@ -27,7 +27,7 @@ You gain another Fighting Style feat of your choice.
 
 
 ### Level 10: Heroic Warrior
-The thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.
+The thrill of battle drives you toward victory. During combat, you can give yourself [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) whenever you start your turn without it.
 
 
 ### Level 15: Superior Critical

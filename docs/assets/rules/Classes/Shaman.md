@@ -118,12 +118,12 @@ Additionally, you know Primordial, the language of the elementals.
 ### Level 1: Elemental Role
 While training with the elements, you have dedicated yourself to one of the following roles of your choice. Depending on your chosen role, you will gain additional features as you progress in this class.
 
-**Sage.**
+**Sage:**
 - You know one extra cantrip from the Shaman spell list.
 - You know the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
 - Your connection to the elements gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your spellcasting ability modifier (minimum bonus of +1).
 
-**Warrior.**
+**Warrior:**
 - Trained for battle, you gain proficiency with Shields.
 - You know the *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Acid, Cold, Fire, Lightning, or Thunder damage (your choice).
 - You know the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
@@ -192,13 +192,13 @@ You gain this feature again at Shaman levels 8, 12, and 16.
 ### Level 5: Elemental Specialization
 The might of the elements flows through you. You gain one of the following options depending on the role chosen at 1st level.
 
-**Sage.**
+**Sage:**
 - Add your spellcasting ability modifier to the damage you deal with any Shaman cantrip with a range of 10 feet or greater.
 - Add your spellcasting ability modifier to the damage you deal with each beam of your Fire Aspects Flaming Beam ability.
 - Add half your Shaman level to the healing of your Water Aspects Healing Flow.
 - For you, the die of the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* spell is now a d8 instead of a d4 and you add half your Shaman level to the amount of damage reduced.
 
-**Warrior.**
+**Warrior:**
 - You add your Strength modifier to the damage of your melee attacks you make using your spellcasting ability modifier and vice versa your spellcasting ability modifier to the damage of your melee attacks you make using your Strength modifier.
 - Once on each of your turns when you change the damage type of the weapon imbued by your *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* spell to Acid, Cold, Fire, Lightning, or Thunder damage, the damage die is doubled.
 - Once on each of your turns when you hit a creature with a melee attack roll, you can cause the target to take an extra 1d8 Acid, Cold, Fire, Lightning, or Thunder damage (choose when you hit).
@@ -234,12 +234,12 @@ You can expend two uses of Aspect Call at the same time to call forth two elemen
 ### Level 15: Improved Elemental Specialization
 The option you gained for your role for Elemental Fury grows more powerful, as detailed below.
 
-**Sage.**
+**Sage:**
 - Add your spellcasting ability modifier to the damage you deal with each ray of you Fire Aspects Flaming Rays ability.
 - When you use your Water Aspects Healing Flow, it's range is now 30 feet for you and the dice you roll are d10s instead of d8s.
 - For you, the die of the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* spell is now a d12 instead of a d4.
 
-**Warrior.**
+**Warrior:**
 - When your *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* damage die would be doubled, you instead triple it.
 - The once per turn extra damage of your melee attack roll increases to 2d8.
 - For you, the damage dice of the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell are now d12s instead of d6s.
@@ -253,7 +253,7 @@ When you cast your Elemental Manifestation spell using a spell slot of 9th level
 - Your game statistics are replaced by the statistics of the genie, but you retain your alignment, personality.
 - When you transform, you assume the genie's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to O hit points, any excess damage carries over to your normal form.
 - You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so.
-- You can't cast your spells, only the genie's.
+- You can cast your own spells using your spell slots and the genie's spells using its spell slots.
 - You keep your active Elemental Calls and can still use them.
 
 

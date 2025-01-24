@@ -1,6 +1,6 @@
 
 ## Allgemein
-- alle Klassen bekommen nun ihre Subklasse auf Level 3
+- alle Klassen bekommen nun ihre Subklasse auf Level 3, aber die restlichen Level für Subklassen-Features sind unverändert
 
 
 ## Fighter
@@ -36,6 +36,7 @@
 
 
 ## Rogue
+- Sneak Attack Damage kann nun auf mehrere unterschiedliche Ziele im gleichen Zug verübt werden, dafür entfällt die Möglichkeit außerhalb des eigenen Zuges diesen Schaden zu verteilen
 - zusätzliche Sprache zu Thieves' Cant und anstelle von Thieves' Cant kann auch weitere andere Sprache gewählt werden
 - neu: Weapon Mastery für zwei Waffentypen ab Level 1
 - neu: Steady Aim ab Level 3 (Advantage auf nächsten Angriff für Movement)

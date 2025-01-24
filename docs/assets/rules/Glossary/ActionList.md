@@ -1,8 +1,4 @@
 
-When you do something other than moving or communicating, you typically take an action. The Action table lists the game's main actions.
-
-##### Summary
-
 | Action    | Summary                                                                                                                                                                                                                  |
 | :-------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Attack    | Attack with a weapon or an Unarmed Strike.                                                                                                                                                                               |
@@ -18,22 +14,4 @@ When you do something other than moving or communicating, you typically take an 
 | Study     | Make an Intelligence (Arcana, History, Investigation, Nature, or Religion) check.                                                                                                                                        |
 | Utilize   | Use a nonmagical object.                                                                                                                                                                                                 |
 
-
-Player characters and monsters can also do things not covered by these actions. Many class features and other abilities provide additional action options, and you can improvise other actions. When you describe an action not detailed elsewhere in the rules, the Dungeon Master tells you whether that action is possible and what kind of D20 Test you need to make, if any.
-
-
-### One Thing at a Time
-The game uses actions to govern how much you can do at one time. You can take only one action at a time. This principle is most important in combat, as explained in "Combat".
-Actions can come up in other situations, too: in a social interaction, you can try to Influence a creature or use the Search action to read the creature's body, language, but you can't do both at the same time. And when you're exploring a dungeon, you can't simultaneously use the Search action to look for traps and use the Help action to aid another character who's trying to open a stuck door (with the Utilize action).
-
-
-### Bonus Actions
-Various class features, spells, and other abilities let you take an additional action on your turn called a Bonus Action. The Cunning Action feature, for example, allows a Rogue to take a Bonus Action. You can take a Bonus Action only when a special ability, a spell, or another feature of the game states that you can do something as a Bonus Action. You otherwise don't have a Bonus Action to take.
-You can take only one Bonus Action on your turn, so you must choose which Bonus Action to use if you have more than one available.
-You choose when to take a Bonus Action during your turn unless the Bonus Action's timing is specified. Anything that deprives you of your ability to take actions also prevents you from taking a Bonus Action.
-
-
-### Reactions
-Certain special abilities, spells, and situations allow you to take a special action called a Reaction. A Reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's. The Opportunity Attack is the most common type of Reaction.
-When you take a Reaction, you can't take another one until the start of your next turn. If the reaction interrupts another creature's turn, that creature can continue its turn right after the Reaction.
-In terms of timing, a Reaction takes place immediately after its trigger unless the Reaction's description says otherwise.
+*The actions are defined in more detail on the ["Actions Detailed" page](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed).*
