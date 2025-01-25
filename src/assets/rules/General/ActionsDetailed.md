@@ -1,30 +1,30 @@
-#### Attack
+### Attack
 When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.
 **Equipping and Unequipping Weapons.** You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it.
 **Moving between Attacks.** If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks.
 
 
-#### Dash
+### Dash
 When you take the Dash action, you gain extra movement for the current turn. The increase equals your Speed after applying any modifiers. With a Speed of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your Speed of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash.
 If you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it.
 
 
-#### Disengage
+### Disengage
 If you take the Disengage action, your movement doesn't provoke Opportunity Attacks for the rest of the current turn.
 
 
-#### Dodge
+### Dodge
 If you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.
 You lose these benefits if you have the Incapacitated condition or if your Speed is 0.
 
 
-#### Help
+### Help
 When you take the Help action, you do one of the following.
 **Assist an Ability Check.** Choose one of your skill or tool proficiencies and one ally who is near enough for you to assist verbally or physically when they make an ability check. That ally has Advantage on the next ability check they make with the chosen skill or tool. This benefit expires if the ally doesn't use it before the start of your next turn. The DM has final say on whether your assistance is possible.
 **Assist an Attack Roll.** You momentarily distract an enemy within 5 feet of you, giving Advantage to the next attack roll by one of your allies against that enemy. This benefit expires at the start of your next turn.
 
 
-#### Hide
+### Hide
 When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
 You can't hide from a creature that can see you. and if you make noise (such as shouting a warning or knocking over a vase), you give away your position. An invisible creature can't be seen, so it can always try to hide. Signs of its passage might still be noticed, however, and it still has to stay quiet.
 In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the Dungeon Master might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack before you are seen.
@@ -32,7 +32,7 @@ In combat, most creatures stay alert for signs of danger all around, so if you c
 **What Can You See?** One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be lightly or heavily obscured.
 
 
-#### Influence
+### Influence
 With the Influence action, you urge a monster to do something. Describe or roleplay how you're communicating with the monster. Are you trying to deceive, intimidate, amuse, or gently persuade? The DM then determines whether the monster feels willing, unwilling, or hesitant due to your interaction; this determination establishes whether an ability check is necessary, as explained below.
 **Willing.** If your urging aligns with the monster's desires, no ability check is necessary; the monster fulfills your request in a way it prefers.
 **Unwilling.** If your urging is repugnant to the monster or counter to its alignment, no ability check is necessary; it doesn't comply.
@@ -47,19 +47,19 @@ With the Influence action, you urge a monster to do something. Describe or rolep
 | Wisdom (Animal Handling) | Gently coaxing a Beast or Monstrosity     |
 
 
-#### Magic
+### Magic
 When you take the Magic action, you cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated.
 If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain Concentration while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot.
 
 
-#### Ready
+### Ready
 You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn.
 First, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your Speed in response to it. Examples include "If the cultist steps on the trapdoor, I'll pull the lever that opens it," and "If the zombie steps next to me, I move away."
 When the trigger occurs, you can either take your Reaction right after the trigger finishes or ignore the trigger.
 When you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires Concentration, which you can maintain up to the start of your next turn. If your Concentration is broken, the spell dissipates without taking effect.
 
 
-#### Search
+### Search
 When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.
 
 | Skill      | Thing to Detect                      |
@@ -70,7 +70,7 @@ When you take the Search action, you make a Wisdom check to discern something th
 | Survival   | Tracks or food                       |
 
 
-#### Study
+### Study
 When you take the Study action, you make an Intelligence check to study your memory, a book, a clue, or another source of knowledge and call to mind an important piece of information about it. The Areas of Knowledge table suggests which skills are applicable to various areas of knowledge.
 
 | Skill         | Areas                                                                                                                                                               |
@@ -82,5 +82,5 @@ When you take the Study action, you make an Intelligence check to study your mem
 | Religion      | Deities, religious hierarchies and rites, holy symbols, cults, and certain creatures (Celestials, Fiends, and Undead)                                               |
 
 
-#### Utilize
+### Utilize
 You normally interact with an object while doing something else, such as when you draw a sword as part of the Attack action. When an object requires an action for its use, you take the Utilize action.
