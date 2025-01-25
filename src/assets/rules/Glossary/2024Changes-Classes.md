@@ -1,6 +1,6 @@
 
 ## Allgemein
-- alle Klassen bekommen nun ihre Subklasse auf Level 3, aber die restlichen Level für Subklassen-Features sind unverändert
+- alle Klassen bekommen nun ihre Subklasse auf Level 3, die restlichen Level für Subklassen-Features sind unverändert
 
 
 ## Fighter

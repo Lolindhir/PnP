@@ -11,11 +11,19 @@
 - Regel, dass nur ein Level 1+ Zauber pro Zug gesprochen werden kann, wurde angepasst: jetzt kann nur ein Spell Slot pro Zug verbraucht werden, was bedeutet dass z.B. Zauber von Rassenfähigkeiten oder Magischen Items, die keine Spell Slots benutzen, in Kombination mit anderen Level 1+ Zaubern innerhalb eines Zuges gesprochen werden können
 - jeder Spellcaster ist nun ein Ritual Caster (Zauber müssen aber known oder prepared sein; außer für Wizard)
 - man muss keine freie Hand für eine Somantische Komponente (S) haben, wenn in mindestens einer Hand ein Spellcasting Focus ist
+- Emmanation ist neue AoE-Bezeichnung für Effekt, der vom Caster als Zentrum ausgeht
 
 ## Equipment
+
+### Inventory Interaction
+- Potion-Trinken ist nun eine Action anstatt Bonus Action
+- mit einem Angriff kann eine Waffe angelegt oder verstaut werden (for free)
 
 ### Weapons
 - Heavy-Property: dependent on Strength score 13 instead of size
 
 ### Armor
 - Schilde erlauben nun mit einer Reaktion einen Hit in einen Failure umzuformen, werden dafür aber beschädigt und verlieren 1 AC-Bonus
+
+### Consumables
+- Potions heilen nun die maximale Augenanzahl der angegebenen Würfel und können dafür als Bonus Action verwendet werden, wobei dann die Würfel wie gehabt gewürfelt werden

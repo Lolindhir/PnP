@@ -9,11 +9,12 @@ import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.
 })
 export class RuleArticleComponent {
 
-  headline: string = 'Artikel';
+  headline: string = 'Article not found';
   markDownSource: string = '';
   children: RulesContent[] = new Array();
   breadcrumbs: RulesNavigationRouteSimple[] = new Array();
   href: string = "";
+  sidebarOpen: boolean = false;
   
   constructor(private route: ActivatedRoute) { }
 
@@ -32,7 +33,7 @@ export class RuleArticleComponent {
           .then(response => {
             if (!response.ok) {
               this.markDownSource = './assets/rules/404.md';
-              //this.headline = '404 - Artikel nicht gefunden';
+              //this.headline = '404 - Article not found';
             }
             else{
               //check if markdown file is empty
@@ -41,7 +42,7 @@ export class RuleArticleComponent {
                 .then(text => {
                   if(text.length == 0){
                     this.markDownSource = './assets/rules/404.md';
-                    //this.headline = '404 - Artikel nicht gefunden';
+                    //this.headline = '404 - Article not found';
                   }
                 });
             }
