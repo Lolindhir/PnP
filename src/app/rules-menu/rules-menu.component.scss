@@ -1,15 +1,38 @@
-.rules-menu {
-    position: sticky;
-    right: 0;
-    top: 0;
-    width: 200px;
-    background-color: #f8f9fa;
-    border-left: 1px solid #ddd;
-    padding: 10px;
-    height: 100%;
-    overflow-y: auto;
-  }
-  
-  .example-tree-invisible {
-    display: none;
-  }
+
+.tree-invisible {
+  display: none;
+}
+
+.tree {
+  margin-right: 30px;
+}
+
+.active-node {
+  font-weight: bold;
+  color: #1976d2; /* Adjust the color as needed */
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s; //make it so that the node shows when it was clicked (in combination with node:active)
+}
+
+//styling that uses the node class and expands it when it is clicked
+.node:active {
+  background-color: #cbdff3; /* Adjust the color as needed */
+  border-radius: 10px;
+}
+
+.majorToC {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+//This padding sets alignment of the nested nodes.
+.tree .mat-nested-tree-node div[role=group] {
+  padding-left: 20px;
+}
+

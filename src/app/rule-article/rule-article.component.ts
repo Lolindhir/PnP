@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.model';
+import { RulesMenuComponent } from '@components/rules-menu/rules-menu.component';
 
 @Component({
   selector: 'app-rule-article',
@@ -8,6 +9,8 @@ import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.
   styleUrls: ['../app.component.scss', './rule-article.component.scss'],
 })
 export class RuleArticleComponent {
+
+  @ViewChild(RulesMenuComponent) rulesMenu: RulesMenuComponent;
 
   headline: string = 'Article not found';
   markDownSource: string = '';
@@ -18,6 +21,12 @@ export class RuleArticleComponent {
   isMobile: boolean = true;
   
   constructor(private route: ActivatedRoute) { }
+
+  triggerResetMenu(): void {
+    if (this.rulesMenu) {
+      this.rulesMenu.resetMenuEvent.emit();
+    }
+  }
 
   ngOnInit(): void {
       var articleId: string | null = this.route.snapshot.paramMap.get('article'); 
@@ -56,8 +65,6 @@ export class RuleArticleComponent {
 
         this.breadcrumbs = RulesContent.getBreadcrumb(rulesContent);
       }
-
-
   }
 
 }

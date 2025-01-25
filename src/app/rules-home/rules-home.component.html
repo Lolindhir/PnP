@@ -1,20 +1,22 @@
 <app-main-header></app-main-header>
 
-<div>
+<div class="page" fxLayout="row" fxLayoutAlign="center">
+  <div class="container"> 
 
+    <h1 style="margin-top: 10px;">Rules Table of Content</h1>
+    <app-rules-menu [majorMode]="true" [allExpanded]="false"></app-rules-menu>
 
-  <div fxLayout="column" fxLayoutAlign="start center" style="margin-top: 25px;">
+    <!-- <div fxLayout="column" fxLayoutAlign="start center" style="margin-top: 25px;">
 
-    <!-- <app-rules-menu></app-rules-menu> -->
+      <div *ngFor="let ruleNavigation of rulesList">
+          <mat-card routerLink="{{ruleNavigation.route}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link">
+              <mat-card-content>
+                    <mat-card-title>{{ruleNavigation.name}}</mat-card-title>
+              </mat-card-content>
+            </mat-card>
+      </div>
 
-    <div *ngFor="let ruleNavigation of rulesList">
-        <mat-card routerLink="{{ruleNavigation.route}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link">
-            <mat-card-content>
-                 <mat-card-title>{{ruleNavigation.name}}</mat-card-title>
-            </mat-card-content>
-          </mat-card>
-    </div>
+    </div>   -->
 
-  </div>  
-
+  </div>
 </div>

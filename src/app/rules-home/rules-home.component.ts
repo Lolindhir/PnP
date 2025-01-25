@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RulesContent, RulesNavigationRoute } from '@models/rules-content.model';
-
+import { RulesMenuComponent } from '@components/rules-menu/rules-menu.component';
 
 @Component({
   selector: 'app-rules-home',
@@ -8,6 +8,8 @@ import { RulesContent, RulesNavigationRoute } from '@models/rules-content.model'
   styleUrls: ['../app.component.scss', './rules-home.component.scss'],
 })
 export class RulesHomeComponent {
+
+  @ViewChild(RulesMenuComponent) rulesMenu: RulesMenuComponent
 
   rulesList: RulesNavigationRoute[] = new Array;
 
@@ -21,6 +23,7 @@ export class RulesHomeComponent {
       this.rulesList.push(ruleNav);
     }
 
+    this.rulesMenu.majorMode = true;
   }
 
 }
