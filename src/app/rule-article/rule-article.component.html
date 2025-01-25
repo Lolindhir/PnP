@@ -3,6 +3,13 @@
     
     <!-- sidenav for the rules menu -->
     <mat-sidenav mode="over" [autoFocus]="false" [opened]="sidebarOpen" (closed)="sidebarOpen = false" (closed)="triggerResetMenu()" class="sidenav-container">
+        
+        <button mat-icon-button (click)="sidebarOpen = false" style="margin-right: 5px; margin-top: -10px; position:absolute; right: 0;">
+            <mat-icon>close</mat-icon>
+        </button>
+
+        <h3>Rules - ToC</h3>
+
         <app-rules-menu></app-rules-menu>
     </mat-sidenav>
 
@@ -52,7 +59,11 @@
                 <!-- Rules content without existing markdown source -->
                 <div *ngIf="markDownSource.length < 1">
         
-                    <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">
+                    <!-- show table of contents for this sub structure -->
+                    <app-rules-menu [majorMode]="true" [allExpanded]="false" [subMenu]="rulesContent"></app-rules-menu>
+
+                    <!-- build Card Overview for all children -->
+                    <!-- <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">
         
                         <div *ngFor="let rulesContent of children">
                             <mat-card routerLink="{{rulesContent.path}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link-article">
@@ -62,7 +73,7 @@
                             </mat-card>
                         </div>   
                     
-                    </div>
+                    </div> -->
         
                 </div>           
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RulesContent, RulesNavigationRoute } from '@shared/models/rules-content.model';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
@@ -13,6 +13,7 @@ export class RulesMenuComponent implements OnInit {
 
   @Input() majorMode: boolean = false;
   @Input() allExpanded: boolean = false;
+  @Input() subMenu: RulesContent | undefined = undefined;
   @Output() resetMenuEvent = new EventEmitter<void>();
 
   treeControl = new NestedTreeControl<RulesNavigationRoute>(rule => rule.children);
@@ -23,7 +24,13 @@ export class RulesMenuComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.dataSource.data = RulesContent.getAllNavigation();
+    
+    //depending on the subMenu input, set the dataSource to the correct data
+    if (this.subMenu != undefined) {
+      this.dataSource.data = RulesContent.getSingleNavigation(this.subMenu).children;
+    } else {
+      this.dataSource.data = RulesContent.getAllNavigation();
+    }
     this.treeControl.dataNodes = this.dataSource.data;
     this.expandActiveNode();
 

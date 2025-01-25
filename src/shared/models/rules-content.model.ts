@@ -65,9 +65,13 @@ export class RulesContent {
 
     public static getAllNavigation(): RulesNavigationRoute[] {
         if(this.allRoutesNavigation.length < 1){
-            this.allRoutesNavigation = this.transformToNavigation(this.getAllRules());
+            this.allRoutesNavigation = this.transformToNavigationMass(this.getAllRules());
         }
         return this.allRoutesNavigation;
+    }
+
+    public static getSingleNavigation(targetRulesContent: RulesContent): RulesNavigationRoute {
+        return this.transformToNavigationSingle(targetRulesContent);
     }
 
     public static getBreadcrumb(targetRulesContent: RulesContent): RulesNavigationRouteSimple[] {
@@ -112,35 +116,46 @@ export class RulesContent {
         }
     }
 
-    private static transformToNavigation(rulesContent: RulesContent[]): RulesNavigationRoute[] {
+    private static transformToNavigationMass(rulesContent: RulesContent[]): RulesNavigationRoute[] {
 
         var returnArray: RulesNavigationRoute[] = new Array();
 
         for(var ruleContent of rulesContent){
 
-            //create navigation element (maybe we don't need it)
-            var ruleNavigation: RulesNavigationRoute = {
-                name: ruleContent.name,
-                route: ruleContent.path,
-                children: new Array()
-            }
+            var ruleNavigation: RulesNavigationRoute = this.transformToNavigationSingle(ruleContent);
 
-            //if it has children or file entry, create route and navigation
-            if(ruleContent.filename.length > 0 || ruleContent.children.length > 0){
-                
-                //if it has children, work them
-                if(ruleContent.children.length > 0){
-                    
-                    //create child navigation
-                    ruleNavigation.children = this.transformToNavigation(ruleContent.children);
-                }
-
-                //push complete navigation
-                returnArray.push(ruleNavigation);
-            }
+            //push complete navigation
+            returnArray.push(ruleNavigation);
+            
         }
 
         return returnArray;
+    }
+
+    private static transformToNavigationSingle(rulesContent: RulesContent): RulesNavigationRoute {
+
+        //create navigation element (maybe we don't need it)
+        var ruleNavigation: RulesNavigationRoute = {
+            name: rulesContent.name,
+            route: rulesContent.path,
+            children: new Array()
+        }
+
+        //if it has children or file entry, create route and navigation
+        if(rulesContent.filename.length > 0 || rulesContent.children.length > 0){
+            
+            //if it has children, work them
+            if(rulesContent.children.length > 0){
+                
+                //create child navigation
+                ruleNavigation.children = this.transformToNavigationMass(rulesContent.children);
+            }
+
+            //push complete navigation
+            return ruleNavigation;
+        }
+
+        return ruleNavigation;
     }
     
     private static transformRaw(rawContent: RawRulesContent[], parentPath: string, parent: RulesContent | null): RulesContent[]{

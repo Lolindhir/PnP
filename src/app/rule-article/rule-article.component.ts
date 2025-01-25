@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.model';
 import { RulesMenuComponent } from '@components/rules-menu/rules-menu.component';
@@ -14,6 +14,7 @@ export class RuleArticleComponent {
 
   headline: string = 'Article not found';
   markDownSource: string = '';
+  rulesContent: RulesContent | undefined = undefined;
   children: RulesContent[] = new Array();
   breadcrumbs: RulesNavigationRouteSimple[] = new Array();
   href: string = "";
@@ -32,11 +33,11 @@ export class RuleArticleComponent {
       var articleId: string | null = this.route.snapshot.paramMap.get('article'); 
       this.href = window.location.href;
 
-      var rulesContent: RulesContent | undefined = articleId != null ? RulesContent.getById(articleId) : undefined;
-      if(rulesContent != undefined){
+      this.rulesContent = articleId != null ? RulesContent.getById(articleId) : undefined;
+      if(this.rulesContent != undefined){
 
-        this.headline = rulesContent.name;
-        if(rulesContent.filename.length > 0) this.markDownSource = './assets/rules/' + rulesContent.filename; 
+        this.headline = this.rulesContent.name;
+        if(this.rulesContent.filename.length > 0) this.markDownSource = './assets/rules/' + this.rulesContent.filename; 
 
         //check if markdown file exists
         fetch(this.markDownSource)
@@ -61,9 +62,9 @@ export class RuleArticleComponent {
             console.error('Error:', error);
           });
 
-        this.children = rulesContent.children;
+        this.children = this.rulesContent.children;
 
-        this.breadcrumbs = RulesContent.getBreadcrumb(rulesContent);
+        this.breadcrumbs = RulesContent.getBreadcrumb(this.rulesContent);
       }
   }
 
