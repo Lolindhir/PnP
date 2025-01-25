@@ -14,9 +14,11 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
     margin-top: -0.5rem;        //on mobile necessary
-    margin-bottom: -0.5rem;     //on mobile necessary
+    //margin-bottom: -0.5rem;     //on mobile necessary
+    background-color: white;
+    //shadow at bottom
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .breadcrumbs-desktop {
@@ -32,6 +34,7 @@
 
 .h1-article-mobile {
     margin-top: 10px;
+    //margin-top: 0px; //removed because negative margin on breadcrumbs was removed
 }
 
 .nav-container {
@@ -51,3 +54,30 @@
     flex: 1;
     padding: 1rem;
 }
+
+.sidenav-header {
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.bookmark-close-button {
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    width: 50px;
+    height: 60px;
+    background-color: #3584d3; /* Adjust the color as needed */
+    color: white;
+    border: none;
+    border-radius: 0 0 22px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .bookmark-close-button mat-icon {
+    font-size: 24px;
+  }

@@ -4,11 +4,11 @@
     <!-- sidenav for the rules menu -->
     <mat-sidenav mode="over" [autoFocus]="false" [opened]="sidebarOpen" (closed)="sidebarOpen = false" (closed)="triggerResetMenu()" class="sidenav-container">
         
-        <button mat-icon-button (click)="sidebarOpen = false" style="margin-right: 5px; margin-top: -10px; position:absolute; right: 0;">
+        <button mat-icon-button (click)="sidebarOpen = false" class="bookmark-close-button">
             <mat-icon>close</mat-icon>
         </button>
 
-        <h3>Rules - ToC</h3>
+        <h3 class="sidenav-header">Rules - ToC</h3>
 
         <app-rules-menu></app-rules-menu>
     </mat-sidenav>
