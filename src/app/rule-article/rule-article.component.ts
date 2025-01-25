@@ -15,6 +15,7 @@ export class RuleArticleComponent {
   breadcrumbs: RulesNavigationRouteSimple[] = new Array();
   href: string = "";
   sidebarOpen: boolean = false;
+  isMobile: boolean = true;
   
   constructor(private route: ActivatedRoute) { }
 

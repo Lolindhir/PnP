@@ -15,10 +15,10 @@
             <div class="container">     
                     
                 <!-- Breadcrumb-Control -->
-                <div fxLayout="row" fxLayoutAlign="start center" class="breadcrumbs">
+                <div fxLayout="row" fxLayoutAlign="start center" [ngClass]="isMobile ? 'breadcrumbs-mobile' : 'breadcrumbs-desktop'">
                     
                     <!-- Sidebar toggle button -->
-                    <button mat-icon-button color="primary" (click)="sidebarOpen = !sidebarOpen" style="margin-left: -15px; margin-right: 5px;">
+                    <button *ngIf="isMobile" mat-icon-button color="primary" (click)="sidebarOpen = !sidebarOpen" style="margin-left: -15px; margin-right: 5px;">
                         <mat-icon>toc</mat-icon>
                     </button>
                     
@@ -34,7 +34,7 @@
                 </div>
         
                 <!-- Headline -->
-                <h1>{{headline}}</h1>
+                <h1 [ngClass]="{'h1-article-mobile' : isMobile}">{{headline}}</h1>
         
                 <!-- Rules content with existing markdown source -->
                 <div *ngIf="markDownSource.length > 0">

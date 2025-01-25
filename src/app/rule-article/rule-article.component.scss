@@ -9,16 +9,31 @@
     color: white;
 }
 
-.breadcrumbs {
+.breadcrumbs-mobile {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    //margin-bottom: 10px;
+    margin-top: -0.5rem;        //on mobile necessary
+    margin-bottom: -0.5rem;     //on mobile necessary
 }
+
+.breadcrumbs-desktop {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    padding-top: 0.5rem;      //on mobile not necessary
+    padding-bottom: 0.5rem;   //on mobile not necessary
+    margin-bottom: 10px;      //on mobile not necessary
+}
+
+.h1-article-mobile {
+    margin-top: 10px;
+}
+
 
 // .example-container {
 //     display: flex;
