@@ -58,12 +58,22 @@
 .sidenav-header {
     font-weight: bold;
     color: #1976d2;
+    cursor: pointer;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.5s; //make it so that the node shows when it was clicked (in combination with node:active)
 }
+//styling that uses the node class and expands it when it is clicked
+.sidenav-header:active {
+    background-color: #cbdff3; /* Adjust the color as needed */
+    border-radius: 10px;
+  }
 
 .bookmark-close-button {
     position: absolute;
     top: 0px;
-    right: 35px;
+    right: 40px;
     width: 50px;
     height: 60px;
     background-color: #3584d3; /* Adjust the color as needed */

@@ -37,14 +37,18 @@ export class RuleArticleComponent {
       if(this.rulesContent != undefined){
 
         this.headline = this.rulesContent.name;
-        if(this.rulesContent.filename.length > 0) this.markDownSource = './assets/rules/' + this.rulesContent.filename; 
+        if(this.rulesContent.filename.length > 0){
+          this.markDownSource = './assets/rules/' + this.rulesContent.filename;
+        }
+        else if (this.rulesContent.children.length === 0){
+          this.markDownSource = './assets/rules/404.md';
+        }
 
         //check if markdown file exists
         fetch(this.markDownSource)
           .then(response => {
             if (!response.ok) {
               this.markDownSource = './assets/rules/404.md';
-              //this.headline = '404 - Article not found';
             }
             else{
               //check if markdown file is empty
@@ -53,7 +57,6 @@ export class RuleArticleComponent {
                 .then(text => {
                   if(text.length == 0){
                     this.markDownSource = './assets/rules/404.md';
-                    //this.headline = '404 - Article not found';
                   }
                 });
             }
