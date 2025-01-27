@@ -7,7 +7,7 @@ With this rule, you have the option of gaining a level in a new class whenever y
 
 ### Prerequisites
 
-To qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one, as shown in the Multiclassing Prerequisites table. For example, a barbarian who decides to multiclass into the druid class must have both Strength and Wisdom scores of 13 or higher. Without the full training that a beginning character receives, you must be a quick study in your new class, having a natural aptitude that is reflected by higher- than-average ability scores.
+To qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one, as shown in the [Multiclassing Prerequisites table](https://lolindhir.github.io/PnP/rules/creation/multiclassing/multiclassing_prerequisites). For example, a barbarian who decides to multiclass into the druid class must have both Strength and Wisdom scores of 13 or higher. Without the full training that a beginning character receives, you must be a quick study in your new class, having a natural aptitude that is reflected by higher-than-average ability scores.
 
 
 ### Hit Points and Hit Dice
@@ -18,11 +18,11 @@ You add together the Hit Dice granted by all your classes to form your pool of H
 
 ### Proficiency Bonus
 
-Your proficiency bonus is always based on your total character level, as shown in the Character Advancement table in chapter 1, not your level in a particular class. For example, if you are a fighter 3/rogue 2, you have the proficiency bonus of a 5th- level character, which is +3.
+Your proficiency bonus is always based on your total character level, not your level in a particular class. For example, if you are a fighter 3/rogue 2, you have the proficiency bonus of a 5th- level character, which is +3.
 
 ### Proficiencies
 
-When you gain your first level in a class other than your initial class, you gain only some of new class's starting proficiencies, as shown in the Multiclassing Proficiencies table.
+When you gain your first level in a class other than your initial class, you gain only some of new class's starting proficiencies, as shown in the [Multiclassing Proficiencies table](https://lolindhir.github.io/PnP/rules/creation/multiclassing/multiclassing_proficiencies).
 
 
 ### Class Features
@@ -40,7 +40,7 @@ If you gain the Extra Attack class feature from more than one class, the feature
 
 #### Spellcasting
 
-Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules in the Spellcasting section. If you multiclass but have the Spellcasting feature from only one class, you follow the rules as described in that class.
+Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules in the [Spellcasting section](https://lolindhir.github.io/PnP/rules/creation/multiclassing/multiclassing_spellcasting). If you multiclass but have the Spellcasting feature from only one class, you follow the rules as described in that class.
 
 
 

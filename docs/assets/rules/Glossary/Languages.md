@@ -1,4 +1,3 @@
-
 ### Standard Languages
 
 The Standard Languages table lists languages that are widespread on D&D worlds. Every player character knows Common, which originated in the planar metropolis of Sigil, the hub of the multiverse. The other standard languages originated with the first members of the most prominent species in the worlds of D&D and have since spread widely.
@@ -19,6 +18,17 @@ The Standard Languages table lists languages that are widespread on D&D worlds. 
 **Every world has different regions with various regional languages depending on the specific campaign setting.*
 
 
+
+
+
+
+
+
+
+
+
+
+
 ### Rare Languages
 
 The Rare Languages table lists languages that are either secret or derived from other planes of existence and thus less widespread in the worlds of the Material Plane. Some features let a character learn a rare language.
@@ -36,3 +46,12 @@ The Rare Languages table lists languages that are either secret or derived from 
 | Undercommon   | The Underdark            |
 
 **Primordial includes the Aquan, Auran, Ignan, and Terran dialects. Creatures that know one of these dialects can communicate with those that know a different one.*
+
+
+
+
+
+
+
+
+

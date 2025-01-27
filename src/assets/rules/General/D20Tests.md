@@ -1,4 +1,8 @@
 
+
+
+
+
 When the outcome of an action is uncertain, the game uses a d20 roll to determine success or failure. These rolls are called D20 Tests, and they come in three kinds: ability checks, saving throws, and attack rolls. They follow these steps:
 
 1. **Roll 1d20.** You always want to roll high. If the roll has Advantage or Disadvantage, you roll two d20s, but you use the number from only one of them—the higher one if you have Advantage or the lower one if you have Disadvantage.

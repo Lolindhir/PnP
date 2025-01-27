@@ -17,7 +17,7 @@
 | :---------: | :---------------------------------- |
 |   Cantrip   | [Mold Earth](https://lolindhir.github.io/PnP/spells/Mold%2520Earth)                 |
 |     1st     | [Earth Tremor](https://lolindhir.github.io/PnP/spells/Earth%2520Tremor)               |
-|     2nd     | [Maximilian's Earthen Grasp](https://lolindhir.github.io/PnP/spells/Maximilian's%2520Earthen%2520Grasp) |
+|     2nd     | [Maximilian's Earthen Grasp](https://lolindhir.github.io/PnP/spells/Maximilian%27s%2520Earthen%2520Grasp) |
 |     3rd     | [Erupting Earth](https://lolindhir.github.io/PnP/spells/Erupting%2520Earth)             |
 |     4th     | [Stone Shape](https://lolindhir.github.io/PnP/spells/Stone%2520Shape)                |
 |     5th     | [Wall of Stone](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Stone)              |

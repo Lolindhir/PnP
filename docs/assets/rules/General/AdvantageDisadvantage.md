@@ -1,3 +1,7 @@
+
+
+
+
 Sometimes a D20 Test is modified by Advantage or Disadvantage. Advantage reflects the positive circumstances surrounding a d20 roll, while Disadvantage reflects negative circumstances. You usually acquire Advantage or Disadvantage through the use of special abilities and actions. The DM can also decide that circumstances grant Advantage or impose Disadvantage.
 
 ### Roll Two D20s

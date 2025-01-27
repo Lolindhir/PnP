@@ -5,6 +5,8 @@ export interface RawRulesContent {
     id: string;
     name: string;
     breadcrumb: string;
+    indexing: string;
+    indexname: string;
     filename: string;
     children: RawRulesContent[];
 }
@@ -13,6 +15,8 @@ export interface RulesContent {
     id: string;
     name: string;
     breadcrumb: string;
+    indexing: string;
+    indexname: string;
     filename: string;
     path: string;
     children: RulesContent[];
@@ -172,6 +176,8 @@ export class RulesContent {
                 id: rawRule.id,
                 name: rawRule.name,
                 breadcrumb: rawRule.breadcrumb,
+                indexing: rawRule.indexing,
+                indexname: rawRule.indexname,
                 filename: rawRule.filename,
                 path: newPath,
                 children: new Array(),

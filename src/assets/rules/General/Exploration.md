@@ -13,9 +13,13 @@ See the ["Equipment"](https://lolindhir.github.io/PnP/rules/equipment) section f
 ## Vision and Light
 Some adventuring tasks—such as noticing danger, hitting an enemy, and targeting certain spells—are affected by sight, so effects that obscure vision can hinder you, as explained below.
 
+
+
 ### Obscured Areas
 An area might be Lightly or Heavily Obscured. In a Lightly Obscured area—such as an area with Dim Light, patchy fog, or moderate foliage—you have Disadvantage on Wisdom (Perception) checks that rely on sight.
 A Heavily Obscured area — such as an area with Darkness, heavy fog, or dense foliage — is opaque. You have the Blinded condition (see ["Conditions"](https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions) in the rules glossary) when trying to see something there.
+
+
 
 ### Light
 The presence or absence of light determines the category of illumination in an area, as defined below.

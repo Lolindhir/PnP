@@ -1,4 +1,6 @@
 
+
+
 <div class="startgap"></div>
 
 When you do something other than moving or communicating, you typically take an action. The Action table lists the game's main actions, which are defined in more detail on the ["Actions Detailed"](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) page.

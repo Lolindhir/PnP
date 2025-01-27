@@ -1,3 +1,8 @@
+
+
+
+
+
 Schicksalspunkte symbolisieren die Strömungen von Ordnung, Chaos, Gut und Böse. Sie können sowohl von den Spielern als auch vom Dungeon Master verwendet werden, um diese Strömungen und den Zufall zu beeinflussen. Dabei können Spieler und Dungeon Master sie jeweils für unterschiedliche Dinge einsetzen (wird unten detailliert). 
 Es gibt zwei Arten von Schicksalspunkten – weiße und schwarze. Weiße Schicksalspunkte symbolisieren das positive Maß mit dem die Spieler ihr Schicksal bzw. ihre Bestimmung erfüllt haben und können deshalb nur von Spielern eingesetzt werden. Dagegen symbolisieren schwarze Schicksalspunkte den allgemeinen Zufall und den unbestimmbaren Verlauf des Schicksals und können sowohl von Spielern als auch vom Dungeon Master eingesetzt werden.
 
@@ -8,7 +13,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 
 ### Einsatzmöglichkeiten für Spieler
 
-#### Schwarz und Weiß:
+#### Schwarz und Weiß
 - einem Wurf 1d6 hinzufügen zu (vor oder nach dem Wurf)
     - D20-Test (außer Death Save)
     - Damage Roll (nur im Kampf, wird nicht durch Crit verdoppelt)\
@@ -19,7 +24,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 - zusätzliche Reaction erhalten (maximal einmal pro Runde)
 - kleine positive Veränderung in einer Szene/Kampfplatz hinzufügen (Cover auf Battlemap, positive Verbindung zu Händler, Ablenkung, einfaches Item finden usw.)
 
-#### Nur Weiß:
+#### Nur Weiß
 - [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) erhalten
 - „Geschäft mit dem Schicksal“: Spieler können die Regeln biegen in Verhandlung mit dem Dungeon Master, der einen Punktepreis festlegt, abhängig vom gewünschten Umfang der Regelbiegung
 
@@ -64,12 +69,12 @@ Weiße Schicksalspunkte verfallen nicht, sondern sind über eine Session hinaus 
 
 Am Ende einer Session wird ermittelt wie stark die Spieler innerhalb der Session ihr Schicksal bzw. ihre Bestimmung erfüllt oder beeinflusst haben. Abhängig davon erhalten sie eine bestimmte Anzahl an weißen Punkten. Dafür stellt sich die Gruppe als Ganzes und jeder Spieler einzeln jeweils 3 Aussagen. Wurde eine Aussage erfüllt, wird ein Strich (auf Notizzettel) gemacht und wurde eine Aussage mehrfach erfüllt, werden zwei Striche gemacht. Nachdem alle Aussagen durchgegangen wurden, erhalten die Spieler für je 2 Striche einen weißen Punkt (aufgerundet).
 
-#### Gruppenaussagen:
+#### Gruppenaussagen
 1.	Ihr wurdet im Kampf oder auf andere Weise herausgefordert oder auf die Probe gestellt.
 2.	Ihr habt eine euch gegebene Quest oder Aufgabe erfüllt.
 3.	Ihr habt euer Ansehen bei einer Gruppe (Fraktion, Organisation, Regierung usw.) oder einem wichtigen Individuum gesteigert.
 
-#### Spieleraussagen:
+#### Spieleraussagen
 1.	Du hast entsprechend deiner Gesinnung (alignment) gehandelt ohne einen direkten Nutzen daraus zu ziehen.
 2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zum Ausdruck gebracht.
 3.	Du hattest mit Problemen oder Auswirkungen zu kämpfen, die aufgrund deiner Fehler (flaws) oder deiner Gesinnung (alignment) entstanden sind.

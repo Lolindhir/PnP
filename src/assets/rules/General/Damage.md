@@ -28,6 +28,8 @@ Each instance of damage has a type, like Fire or Slashing. Damage types are list
 
 
 
+
+
 ## Resistance and Vulnerability
 Some creatures and objects have Resistance or Vulnerability to certain damage types. If you have Resistance to a damage type, damage of that type is halved against you (round down). If you have Vulnerability to a damage type, damage of that type is doubled against you. For example, if you have Resistance to Cold damage, such damage is halved against you, and if you have Vulnerability to Fire damage, such damage is doubled against you.
 

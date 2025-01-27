@@ -23,8 +23,8 @@
 | :---------: | :----------------------------------------------------- |
 |   Cantrip   | [Control Flames](https://lolindhir.github.io/PnP/spells/Control%2520Flames), [Fire Bolt](https://lolindhir.github.io/PnP/spells/Fire%2520Bolt)            |
 |     1st     | [Burning Hands](https://lolindhir.github.io/PnP/spells/Burning%2520Hands), [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke)        |
-|     2nd     | [Aganazzar's Scorcher](https://lolindhir.github.io/PnP/spells/Aganazzar's%2520Scorcher), [Flaming Sphere](https://lolindhir.github.io/PnP/spells/Flaming%2520Sphere) |
-|     3rd     | [Ashardalon's Stride](https://lolindhir.github.io/PnP/spells/Ashardalon's%2520Stride), [Fireball](https://lolindhir.github.io/PnP/spells/Fireball)        |
+|     2nd     | [Aganazzar's Scorcher](https://lolindhir.github.io/PnP/spells/Aganazzar%27s%2520Scorcher), [Flaming Sphere](https://lolindhir.github.io/PnP/spells/Flaming%2520Sphere) |
+|     3rd     | [Ashardalon's Stride](https://lolindhir.github.io/PnP/spells/Ashardalon%27s%2520Stride), [Fireball](https://lolindhir.github.io/PnP/spells/Fireball)        |
 |     4th     | [Fire Shield](https://lolindhir.github.io/PnP/spells/Fire%2520Shield), [Wall of Fire](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Fire)            |
 |     5th     | [Immolation](https://lolindhir.github.io/PnP/spells/Immolation), [Pyroclastic Lance](https://lolindhir.github.io/PnP/spells/Pyroclastic%2520Lance)        |
 

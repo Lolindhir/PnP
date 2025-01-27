@@ -34,5 +34,6 @@
 •	Potion of Recovery
 •	Fähigkeiten
 
+
 ### No Sleep for 24 Hours
 If a character does not long rest for 24 hours, they must make a DC 10 CON save or gain 1 level of exhaustion. For each consecutive day without sleep, the DC increases by 5.

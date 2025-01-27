@@ -1,4 +1,17 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 | Type        | Examples                             |
 | :---------- | :----------------------------------- |
 | Acid        | Corrosive liquids, digestive enzymes |

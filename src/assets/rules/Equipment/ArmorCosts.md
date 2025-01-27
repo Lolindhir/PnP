@@ -1,3 +1,5 @@
+{index}{Armor Slot}
+
 | Armor                 |   Cost | Weight | Slots |
 | :-------------------- | -----: | -----: | :---: |
 | ***Light Armor***     |        |        |       |

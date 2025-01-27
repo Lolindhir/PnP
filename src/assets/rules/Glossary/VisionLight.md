@@ -7,11 +7,19 @@
 | Full           | Can't be targeted directly                 | An object that covers the whole target                                |
 
 
+
+
+
 ### Obscured Areas
 | Area             | Effect                                                                   | Description                                          |
 | :--------------- | :----------------------------------------------------------------------- | :--------------------------------------------------- |
 | Lightly Obscured | Disadvantage on Wisdom (Perception) checks that rely on sight            | area with Dim Light, patchy fog, or moderate foliage |
 | Heavily Obscured | [Blinded condition](https://lolindhir.github.io/PnP/rules/glossary/condition_details) when trying to see something there | area with Darkness, heavy fog, or dense foliage      |
+
+
+
+
+
 
 
 ### Light
@@ -20,6 +28,8 @@
 | Bright Light | see normally          | Even gloomy days provide Bright Light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.                                                                        |
 | Dim Light    | Lightly Obscured area | Is usually a boundary between Bright Light and surrounding Darkness and also called shadows. The soft light of twilight and dawn also counts as Dim Light. A full moon might bathe the land in Dim Light. |
 | Darkness     | Heavily Obscured area | Characters face Darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon, or in an area of magical Darkness.                                                        |
+
+
 
 
 ### Blindsight

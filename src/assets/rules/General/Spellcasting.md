@@ -54,6 +54,7 @@ Certain spells—including a spell cast as a Ritual—require more time to cast:
 
 
 
+
 ## Range
 A spell's range indicates how far from the spellcaster the spell's effect can originate, and the spell's description specifies which part of the effect is limited by the range.
 A range usually takes one of the following forms:
@@ -79,6 +80,7 @@ A Somatic component is a forceful gesticulation or an intricate set of gestures.
 ### Material (M)
 A Material component is a particular material used in a spell's casting, as specified in parentheses in the Components entry. These materials aren't consumed by the spell unless the spell's description states otherwise. The spellcaster must have a hand free to access them, but it can be the same hand used to perform Somatic components, if any.
 If a spell doesn't consume its materials and doesn't specify a cost for them, a spellcaster can use a Component Pouch instead of providing the materials specified in the spell, or the spellcaster can substitute a Spellcasting Focus if the caster has a feature that allows that substitution. To use a Component Pouch, you must have a hand free to reach into it, and to use a Spellcasting Focus, you must hold it unless its description says otherwise.
+
 
 
 
