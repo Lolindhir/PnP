@@ -1,0 +1,1697 @@
+[
+	{
+		"term": "Ability",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Ability Check",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Ability Modifier",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Ability Modifier Overview",
+		"reference": "Ability Modifier Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/ability_modifiers"
+	},
+	{
+		"term": "Ability Score",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Ability Score Improvement (ASI)",
+		"reference": "Level Up",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling"
+	},
+	{
+		"term": "Abjuration",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Abjurer (Wizard)",
+		"reference": "Abjurer (Wizard)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard/abjurer"
+	},
+	{
+		"term": "Abyssal [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Acid",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Acid Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Action",
+		"reference": "Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
+	},
+	{
+		"term": "Action List",
+		"reference": "Action List",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/action_list"
+	},
+	{
+		"term": "Advantage",
+		"reference": "Advantage/Disadvantage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage"
+	},
+	{
+		"term": "Adventuring Equipment",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Adventuring Gear",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Alchemist's Fire",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Ambush [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Ammunition",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Ammunition [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Antitoxin",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Arcane Focus",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Arcane Trickster (Rogue)",
+		"reference": "Arcane Trickster (Rogue)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/arcane_trickster"
+	},
+	{
+		"term": "Area of Effect",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Armor",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Armor Class (AC)",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Armor Cost & Weight",
+		"reference": "Armor Cost & Weight",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs"
+	},
+	{
+		"term": "Armor Special Property",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Assassin (Rogue)",
+		"reference": "Assassin (Rogue)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/assassin"
+	},
+	{
+		"term": "Attack [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Attack Roll",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Attitude",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Bait and Switch [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Ball Bearings",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Battle Maneuvers",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Beispielaktivitäten",
+		"reference": "Downtime Activity",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/downtime_overview"
+	},
+	{
+		"term": "Blinded [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Blindsight",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Block [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Bludgeoning Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Bonus Action",
+		"reference": "Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
+	},
+	{
+		"term": "Boost Natural Healing",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Brace [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Breaking Objects",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Bright Light",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Burning",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Caltrops",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Carrying Objects",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Casting Time",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Casting Without Slots",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Casting in Armor",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Celestial [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Chain",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Champion (Fighter)",
+		"reference": "Champion (Fighter)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/champion"
+	},
+	{
+		"term": "Character Death",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Charmed [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Cleave [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Coins",
+		"reference": "Coins",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/coins"
+	},
+	{
+		"term": "Cold Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Combat",
+		"reference": "Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat"
+	},
+	{
+		"term": "Commander's Strike [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Commanding Presence [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Common [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Concentration",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Conditions",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions"
+	},
+	{
+		"term": "Cone [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Conjuration",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Controlling a Mount",
+		"reference": "Mounted Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
+	},
+	{
+		"term": "Cooking for Regeneration",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Cover",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Cover",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Crafting",
+		"reference": "Crafting",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting"
+	},
+	{
+		"term": "Creature Size",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Critical Hit",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Cube [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Cylinder [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "D20 Test",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Damage",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Damage Roll",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Damage Threshold (Object)",
+		"reference": "Object Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/objects_damage"
+	},
+	{
+		"term": "Damage Types",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Darkness",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Darkvision",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Dash [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Deafened [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Death Saving Throw",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Deep Speech [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Dehydration",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Difficult Terrain",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Difficulty Class (DC)",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Dim Light",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Disadvantage",
+		"reference": "Advantage/Disadvantage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage"
+	},
+	{
+		"term": "Disarming Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Disengage [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Dismounting",
+		"reference": "Mounted Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
+	},
+	{
+		"term": "Distracting Strike [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Divination",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Diviner (Wizard)",
+		"reference": "Diviner (Wizard)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard/diviner"
+	},
+	{
+		"term": "Dodge [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Donning/Doffing Armor",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Downtime Activity",
+		"reference": "Downtime Activity",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/downtime_overview"
+	},
+	{
+		"term": "Draconic [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Dropping Prone",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Dropping to 0 Hit Points",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Druidic [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Dwarvish [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Eignung für Training",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training"
+	},
+	{
+		"term": "Eldritch Knight (Fighter)",
+		"reference": "Eldritch Knight (Fighter)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight"
+	},
+	{
+		"term": "Elemental Aspect Calls",
+		"reference": "Elemental Aspect Calls",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls"
+	},
+	{
+		"term": "Elemental Aspect Spells - Sage",
+		"reference": "Elemental Aspect Spells - Sage",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage"
+	},
+	{
+		"term": "Elemental Aspect Spells - Warrior",
+		"reference": "Elemental Aspect Spells - Warrior",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior"
+	},
+	{
+		"term": "Elvish [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Emanation [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Enchantment",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Equipment",
+		"reference": "Equipment",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment"
+	},
+	{
+		"term": "Equipment Proficiency",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Evasive Footwork [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Evocation",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Evoker (Wizard)",
+		"reference": "Evoker (Wizard)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard/evoker"
+	},
+	{
+		"term": "Exhaustion",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion"
+	},
+	{
+		"term": "Exhaustion [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Exploration",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Falling",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Falling Unconscious",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Falling off a Mount",
+		"reference": "Mounted Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
+	},
+	{
+		"term": "Feeling",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Feinting Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Fighter",
+		"reference": "Fighter",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
+	},
+	{
+		"term": "Finesse [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Fire Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Food Needs",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Force Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Frightened [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Giant [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Gnomish [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Goading Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Goblin [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Grappled [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Graze [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Gritty Realism Times",
+		"reference": "Gritty Realism Times",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism"
+	},
+	{
+		"term": "Haggling",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Halfling [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Hardened Armor",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Hardened Weapon",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Hazards",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Healing",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Healing from 0 HP",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Heavily Obscured",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Heavy [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Heavy Armor",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Help [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Heroic Inspiration",
+		"reference": "Heroic Inspiration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration"
+	},
+	{
+		"term": "Hide [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Hit Points",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Identifying an Ongoing Spell",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Illusion",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Illusionist (Wizard)",
+		"reference": "Illusionist (Wizard)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard/illusionist"
+	},
+	{
+		"term": "Immunity",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Improvised Weapons",
+		"reference": "Weapon",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
+	},
+	{
+		"term": "Incapacitated [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Infernal [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Influence",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Influence [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Influence Check",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Initiative",
+		"reference": "Order of Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order"
+	},
+	{
+		"term": "Instant Death",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Instantaneous (Spell Duration)",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Interacting with Objects",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Invisible [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Knocking Out a Creature",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Languages",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Level Up",
+		"reference": "Level Up",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling"
+	},
+	{
+		"term": "Light",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Light [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Light Armor",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Lightly Obscured",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Lightning Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Lightweight Armor",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Lightweight Weapon",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Line [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Loading [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Long Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Lunging Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Magic [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Magical Tenacious Armor/Shield",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Magical Weapon",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Malnutrition",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Maneuvering Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Marching Order",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Martial Weapons",
+		"reference": "Weapon",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
+	},
+	{
+		"term": "Masterwork Armor/Shield",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Masterwork Weapon",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Material Spell Component (M)",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Medium Armor",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Melee Attack",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Menacing Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Milestone Leveling",
+		"reference": "Level Up",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling"
+	},
+	{
+		"term": "Mounted Combat",
+		"reference": "Mounted Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
+	},
+	{
+		"term": "Mounting",
+		"reference": "Mounted Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
+	},
+	{
+		"term": "Movement",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Movement Types",
+		"reference": "Movement Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/movement_types"
+	},
+	{
+		"term": "Moving Around Other Creatures",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Multiclassing",
+		"reference": "Multiclassing",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/multiclassing"
+	},
+	{
+		"term": "Necromancy",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Necrotic Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Neigung zu Training",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training"
+	},
+	{
+		"term": "Nick [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Night Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "No Sleep",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion"
+	},
+	{
+		"term": "Object Armor Class",
+		"reference": "Object Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/objects_damage"
+	},
+	{
+		"term": "Object Damage",
+		"reference": "Object Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/objects_damage"
+	},
+	{
+		"term": "Object Hit Points",
+		"reference": "Object Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/objects_damage"
+	},
+	{
+		"term": "Obscured Areas",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Opportunity Attack",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Orc [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Order of Combat",
+		"reference": "Order of Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order"
+	},
+	{
+		"term": "Paralyzed [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Parry [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Petrified [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Piercing Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Pillars of the Game",
+		"reference": "Pillars of the Game",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars"
+	},
+	{
+		"term": "Playing on a Grid",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
+		"term": "Poison Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Poisoned [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Precision Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Primordial [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Principle Rules",
+		"reference": "Principle Rules",
+		"link": "https://lolindhir.github.io/PnP/rules/general/principles"
+	},
+	{
+		"term": "Proficiency",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Proficiency Bonus",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Proficiency Bonus Overview",
+		"reference": "Proficiency Bonus Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/proficiency"
+	},
+	{
+		"term": "Prone [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Psy Warrior (Fighter)",
+		"reference": "Psy Warrior (Fighter)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/psy_warrior"
+	},
+	{
+		"term": "Psychic Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Push [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Pushing Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "QuEN-System",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training"
+	},
+	{
+		"term": "Qualität des Trainings",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training"
+	},
+	{
+		"term": "Quick Toss [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Radiant Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Rally [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Range [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Ranged Attack",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Ranged Attacks in Close Combat",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Ranks",
+		"reference": "Renown",
+		"link": "https://lolindhir.github.io/PnP/rules/general/renown"
+	},
+	{
+		"term": "Rare Languages",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Reach",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Reach [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Reaction",
+		"reference": "Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
+	},
+	{
+		"term": "Ready [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Regeneration Options",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Renown",
+		"reference": "Renown",
+		"link": "https://lolindhir.github.io/PnP/rules/general/renown"
+	},
+	{
+		"term": "Resistance",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Resistant Armor/Shield",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Resting",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Restrained [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Riposte [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Rogue",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
+		"term": "Sap [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Saving Throw",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests"
+	},
+	{
+		"term": "Saving Throw Damage Against Multiple Targets",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Saving Throw Proficiency",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Schicksalspunkte",
+		"reference": "Schicksalspunkte",
+		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte"
+	},
+	{
+		"term": "Schools of Magic",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Schwarze Schicksalspunkte",
+		"reference": "Schicksalspunkte",
+		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte"
+	},
+	{
+		"term": "Scout Training [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Search [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Self [Spell Range]",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Shaman",
+		"reference": "Shaman",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman"
+	},
+	{
+		"term": "Shield",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Shield Repair",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor"
+	},
+	{
+		"term": "Short Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Silver Standard",
+		"reference": "Coins",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/coins"
+	},
+	{
+		"term": "Simple Weapons",
+		"reference": "Weapon",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
+	},
+	{
+		"term": "Skill List",
+		"reference": "Skill List",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills"
+	},
+	{
+		"term": "Skill Proficiency",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Skills with Different Abilities",
+		"reference": "Abilities & Proficiency",
+		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Slashing Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Slow [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Social Interaction",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
+	},
+	{
+		"term": "Somatic Spell Component (S)",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Soulknife (Rogue)",
+		"reference": "Soulknife (Rogue)",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/soulknife"
+	},
+	{
+		"term": "Special Senses",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Spell Attack",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Component",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Duration",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Level",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Range",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Saving Throw",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Slot",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spell Targets",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spellcasting",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Sphere [Area of Effect]",
+		"reference": "Area of Effect",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Stabilize",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Standard Coin Exchange Rates",
+		"reference": "Coins",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/coins"
+	},
+	{
+		"term": "Standard Languages",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Strengthened Armor/Shield (+1/+2)",
+		"reference": "Armor Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
+	},
+	{
+		"term": "Strengthened Weapon (+1/+2/+3)",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Study [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Stunned [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Suffocation",
+		"reference": "Hazards",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Sweeping Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Sylvan [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Tactical Assessment [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Tea Brewing",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Temporary Hit Points",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Thieves' Cant [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Thrown [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Thunder Damage",
+		"reference": "Damage Types",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Topple [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Touch [Spell Range]",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Trained Body [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Training",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training"
+	},
+	{
+		"term": "Transmutation",
+		"reference": "Schools of Magic",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Travel",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Travel Pace",
+		"reference": "Travel",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/travel"
+	},
+	{
+		"term": "Treating Wounds",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Tremorsense",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Trip Attack [Maneuver]",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Truesight",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Two-Handed [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Unconscious [Condition]",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Undercommon [Language]",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Underwater Combat",
+		"reference": "Underwater Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater"
+	},
+	{
+		"term": "Unseen Attackers and Targets",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Using a Higher-Level Spell Slot",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Utilize [Action]",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Vehicle Travel",
+		"reference": "Exploration",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration"
+	},
+	{
+		"term": "Verbal Spell Component (V)",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Versatile [Weapon Property]",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Vex [Weapon Mastery]",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Vulnerability",
+		"reference": "Damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
+	},
+	{
+		"term": "Weapon",
+		"reference": "Weapon",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
+	},
+	{
+		"term": "Weapon Attack, Underwater",
+		"reference": "Underwater Combat",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater"
+	},
+	{
+		"term": "Weapon Cost & Weight",
+		"reference": "Weapon Cost & Weight",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_costs"
+	},
+	{
+		"term": "Weapon Mastery",
+		"reference": "Weapon Mastery",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Weapon Property",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
+	},
+	{
+		"term": "Weapon Special Property",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Weiße Schicksalspunkte",
+		"reference": "Schicksalspunkte",
+		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte"
+	},
+	{
+		"term": "Wizard",
+		"reference": "Wizard",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard"
+	}
+]

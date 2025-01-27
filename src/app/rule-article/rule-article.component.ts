@@ -1,7 +1,9 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { RulesContent, RulesNavigationRouteSimple } from '@models/rules-content.model';
 import { RulesMenuComponent } from '@components/rules-menu/rules-menu.component';
+import { RulesIndexSearchComponent } from '@components/rules-index-search/rules-index-search.component';
 
 @Component({
   selector: 'app-rule-article',
@@ -21,12 +23,27 @@ export class RuleArticleComponent {
   sidebarOpen: boolean = false;
   isMobile: boolean = true;
   
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, public dialog: MatDialog) { }
 
   triggerResetMenu(): void {
     if (this.rulesMenu) {
       this.rulesMenu.resetMenuEvent.emit();
     }
+  }
+
+  openSearchDialog(): void {
+    
+    //close sidebar
+    this.sidebarOpen = false;
+    
+    //open search dialog
+    this.dialog.open(RulesIndexSearchComponent, {
+      width: '80vw',
+      height: '90vh',
+      maxWidth: '600px',
+      maxHeight: '90vh'
+    });
+
   }
 
   ngOnInit(): void {

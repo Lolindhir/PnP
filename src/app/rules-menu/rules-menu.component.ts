@@ -41,10 +41,10 @@ export class RulesMenuComponent implements OnInit {
   hasChild = (_: number, route: RulesNavigationRoute) => !!route.children && route.children.length > 0;
 
   navigateTo(route: string): void {  
-      // reload the route to ensure same level navigation
-      this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-        this.router.navigate([route]);
-      });
+    // reload the route to ensure same level navigation
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([route]);
+    });
   }  
 
   resetTree(): void {

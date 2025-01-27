@@ -68,12 +68,10 @@
 .sidenav-header:active {
     background-color: #cbdff3; /* Adjust the color as needed */
     border-radius: 10px;
-  }
+}
 
-.bookmark-close-button {
+.bookmark {
     position: absolute;
-    top: 0px;
-    right: 40px;
     width: 50px;
     height: 60px;
     background-color: #3584d3; /* Adjust the color as needed */
@@ -86,8 +84,18 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-  }
-  
-  .bookmark-close-button mat-icon {
+}
+
+.bookmark mat-icon {
     font-size: 24px;
-  }
+}
+
+.bookmark-close {
+    top: 0px;
+    right: 40px;
+}
+
+.bookmark-search {
+    top: 0px;
+    right: 100px;
+}

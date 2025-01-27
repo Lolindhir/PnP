@@ -4,8 +4,12 @@
     <!-- sidenav for the rules menu -->
     <mat-sidenav mode="over" [autoFocus]="false" [opened]="sidebarOpen" (closed)="sidebarOpen = false" (closed)="triggerResetMenu()" class="sidenav-container">
         
-        <button mat-icon-button (click)="sidebarOpen = false" class="bookmark-close-button">
+        <button mat-icon-button (click)="sidebarOpen = false" class="bookmark bookmark-close">
             <mat-icon>close</mat-icon>
+        </button>
+
+        <button mat-icon-button (click)="openSearchDialog()" class="bookmark bookmark-search">
+            <mat-icon>search</mat-icon>
         </button>
 
         <h3 class="sidenav-header" routerLink="/rules">Rules - ToC</h3>

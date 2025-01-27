@@ -40,8 +40,10 @@ import { SpellPrintComponent } from '@components/spell-print/spell-print.compone
 import { SpellDetailComponent } from '@components/spell-detail/spell-detail.component';
 import { RulesHomeComponent } from './rules-home/rules-home.component';
 import { RulesMenuComponent } from './rules-menu/rules-menu.component';
+import { RulesIndexSearchComponent } from './rules-index-search/rules-index-search.component';
 import { RuleArticleComponent } from './rule-article/rule-article.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
+import { HighlightRulesSearchPipe } from '@shared/pipes/highlight-rules-search.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
 import { StorageService } from '@services/storage.service';
 import { HomeComponent } from './home/home.component';
@@ -63,8 +65,10 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     SpellDetailComponent,
     RulesHomeComponent,
     RulesMenuComponent,
+    RulesIndexSearchComponent,
     RuleArticleComponent,
     SpellFilterPipe,
+    HighlightRulesSearchPipe,
     ItemListComponent,
     HomeComponent,
     FeatListComponent,
