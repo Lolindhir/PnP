@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { RulesContent, RulesNavigationRoute } from '@models/rules-content.model';
+import { RulesIndexSearchComponent } from '@components/rules-index-search/rules-index-search.component';
 
 @Component({
   selector: 'app-rules-home',
@@ -10,7 +12,7 @@ export class RulesHomeComponent {
 
   rulesList: RulesNavigationRoute[] = new Array;
 
-  constructor() { } 
+  constructor(public dialog: MatDialog) { } 
 
   ngOnInit(): void {
 
@@ -20,6 +22,16 @@ export class RulesHomeComponent {
       this.rulesList.push(ruleNav);
     }
 
+  }
+
+  openSearchDialog(): void {
+    //open search dialog
+    this.dialog.open(RulesIndexSearchComponent, {
+      width: '80vw',
+      height: '90vh',
+      maxWidth: '600px',
+      maxHeight: '90vh'
+    });
   }
 
 }

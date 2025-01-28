@@ -10,7 +10,7 @@ export class HighlightRulesSearchPipe implements PipeTransform {
       return value;
     }
     const re = new RegExp(`(${search})`, 'gi');
-    return value.replace(re, '<strong>$1</strong>');
+    return value.replace(re, '<span class="highlight">$1</span>');
   }
 
 }

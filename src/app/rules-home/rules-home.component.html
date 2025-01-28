@@ -1,22 +1,25 @@
 <app-main-header></app-main-header>
 
 <div class="page" fxLayout="row" fxLayoutAlign="center">
-  <div class="container"> 
+  <div class="container" fxLayout="row" fxLayoutAlign="center"> 
 
-    <h1 style="margin-top: 10px;">Rules - Table of Content</h1>
-    <app-rules-menu [majorMode]="true"></app-rules-menu>
+    <div style="margin-top: 10px; width:100%; max-width: 600px;">
 
-    <!-- <div fxLayout="column" fxLayoutAlign="start center" style="margin-top: 25px;">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
 
-      <div *ngFor="let ruleNavigation of rulesList">
-          <mat-card routerLink="{{ruleNavigation.route}}" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link">
-              <mat-card-content>
-                    <mat-card-title>{{ruleNavigation.name}}</mat-card-title>
-              </mat-card-content>
-            </mat-card>
+        <h1>Rules - Table of Content</h1>
+  
+        <button mat-fab color="primary" (click)="openSearchDialog()">
+          <mat-icon>search</mat-icon>
+        </button>
+  
       </div>
+  
+      <app-rules-menu [majorMode]="true"></app-rules-menu>
 
-    </div>   -->
+    </div>
+
+    
 
   </div>
 </div>

@@ -7,14 +7,24 @@
 
 .results-container {
     width: 100%;
+    max-width: 400px;
     margin-top: 20px;
-    text-align: center;
+    //text-align: center;
 }
 
 .result-card {
     cursor: pointer;
     margin-bottom: 10px;
-    width: fit-content;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.result-title {
+    font-size: medium;
+}
+
+.result-content {
+    font-style: italic;
+    margin-bottom: -10px;
 }
