@@ -43,7 +43,7 @@ As a Wizard, you gain the following class features when you reach the specified 
 
 ### Level 1: Spellcasting
 As a student of arcane magic, you have learned to cast spells.
-The complete rules for your spellcasting are explained in the [Wizard Spellcasting](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) section. As an overview, listed below are the key features of your spellcasting:
+The complete rules for your spellcasting are explained in the [Wizard Spellcasting](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) section. As an overview, the key features of your spellcasting are listed below:
 
 | Key Feature            | Characteristic            |
 | :--------------------- | :------------------------ |

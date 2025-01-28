@@ -45,7 +45,7 @@ As a Shaman, you gain the following class features when you reach the specified 
 
 ### Level 1: Spellcasting
 Drawing on the elemental essence of nature itself, you can cast spells to shape that essence to your will.
-The complete rules for your spellcasting are explained in the [Shaman Spellcasting](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spellcasting) section. As an overview, listed below are the key features of your spellcasting:
+The complete rules for your spellcasting are explained in the [Shaman Spellcasting](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spellcasting) section. As an overview, the key features of your spellcasting are listed below:
 
 | Key Feature            | Characteristic        |
 | :--------------------- | :-------------------- |
