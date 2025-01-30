@@ -27,6 +27,7 @@
 | Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Armor Class (AC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Armor Cost & Weight | [Armor Cost & Weight](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs) |
+| Armor Slot | [Armor Cost & Weight](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs) |
 | Armor Special Property | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Assassin (Rogue) | [Assassin (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/assassin) |
 | Attack *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
@@ -69,8 +70,8 @@
 | Conjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Crafting | [Crafting](https://lolindhir.github.io/PnP/rules/crafting) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -203,6 +204,7 @@
 | Movement Types | [Movement Types](https://lolindhir.github.io/PnP/rules/glossary/movement_types) |
 | Moving Around Other Creatures | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Multiclassing | [Multiclassing](https://lolindhir.github.io/PnP/rules/creation/multiclassing) |
+| Nature Stone | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Necromancy | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Necrotic Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Neigung zu Training | [Training](https://lolindhir.github.io/PnP/rules/downtime/training) |
@@ -224,6 +226,7 @@
 | Playing on a Grid | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Prayer Bead | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Precision Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Primordial *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Principle Rules | [Principle Rules](https://lolindhir.github.io/PnP/rules/general/principles) |
@@ -288,9 +291,12 @@
 | Spell Level | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spell Range | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spell Saving Throw | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Spell Scroll | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Spell Slot | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spell Targets | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellcasting | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Spellhold | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
+| Spellhold Information | [Spellhold Information](https://lolindhir.github.io/PnP/rules/glossary/spellholds_information) |
 | Sphere *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Stabilize | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |

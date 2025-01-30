@@ -17,6 +17,7 @@
 
 ### Inventory Interaction
 - Potion-Trinken ist nun eine Action anstatt Bonus Action
+- Spellhold-Nutzung kann nur eine Action sein (Bonus Action Zauber erlaubt, aber verlängert, alle anderen nicht)
 - mit einem Angriff kann eine Waffe angelegt oder verstaut werden (for free)
 
 ### Weapons

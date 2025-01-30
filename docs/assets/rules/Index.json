@@ -135,6 +135,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs"
 	},
 	{
+		"term": "Armor Slot",
+		"reference": "Armor Cost & Weight",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs"
+	},
+	{
 		"term": "Armor Special Property",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -346,13 +351,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Crafting",
@@ -1015,6 +1020,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/creation/multiclassing"
 	},
 	{
+		"term": "Nature Stone",
+		"reference": "Spellhold",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
+	},
+	{
 		"term": "Necromancy",
 		"reference": "Schools of Magic",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
@@ -1118,6 +1128,11 @@
 		"term": "Poisoned [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Prayer Bead",
+		"reference": "Spellhold",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
 	},
 	{
 		"term": "Precision Attack [Maneuver]",
@@ -1440,6 +1455,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
 	},
 	{
+		"term": "Spell Scroll",
+		"reference": "Spellhold",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
+	},
+	{
 		"term": "Spell Slot",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
@@ -1453,6 +1473,16 @@
 		"term": "Spellcasting",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Spellhold",
+		"reference": "Spellhold",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
+	},
+	{
+		"term": "Spellhold Information",
+		"reference": "Spellhold Information",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/spellholds_information"
 	},
 	{
 		"term": "Sphere [Area of Effect]",
