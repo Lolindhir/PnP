@@ -17,10 +17,11 @@ There are different types of Spellholds depending on their source of magic and t
 
 **Using a Spellhold.** Spellholds are usable by anyone with proficiency in its corresponding skill as described in the Spellhold Types table. If you are proficient, you can use a Magic action and make an Spellhold check to try to release its magic.
 
-> Spellhold Check = Intelligence (corresponding skill) Check
-> Spellhold Check DC = 10 + spell level (Cantrips count as 0)
+> **Spellhold Check** = Intelligence (Arcana/Religion/Nature) Check
 
-**Successful Check.** On a success, you cast the Spellhold's spell with an Attack Bonus and Saving Throw depending on the spell's level (see below) and without having to provide any of the spell's components. The Spellhold disintegrates when the casting is completed and its magic is released.
+> **Spellhold Check DC** = 10 + spell level
+
+**Successful Check.** On a success, you cast the Spellhold's spell with an Attack Bonus and Saving Throw DC depending on the spell's level (see below) and without having to provide any of the spell's components. The Spellhold disintegrates when the casting is completed and its magic is released.
 
 ##### Spellhold Attacks and Saving Throw DCs
 | Spell Level | Attack Bonus | Save DC |

@@ -42,10 +42,13 @@ The book contains the spells you know. It starts with five Wizard cantrips and s
 
 **Adding additional Spells to the Book.** Whenever you gain a Wizard level after 1, add two level 1+ Wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown in the Available Spell Slots table above. The spells are the culmination of arcane research you do regularly.
 
-**Copying a Spell into the Book.** When you find a Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. A cantrip takes 1 hour and costs 20 GP. Afterward you can prepare the spell like the other spells in your spellbook.
+**Copying a Spell into the Book.** When you find a Wizard spell in any form (e.g. a spell scroll or another wizard's spellbook), you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. A cantrip takes 1 hour and costs 20 GP. Afterward you can prepare the spell like the other spells in your spellbook.
+
+
 
 **Copying the Book.** You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell (30 minutes and 5 GP for a cantrip).
 If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many Wizards keep a backup spellbook.
+
 
 **Spell Slots.** The Available Spell Slots table above shows how many spell slots you have to cast your level 1+ spells.
 You regain all expended slots when you finish a Long Rest.

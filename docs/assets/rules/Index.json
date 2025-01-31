@@ -351,13 +351,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Crafting",
@@ -1478,11 +1478,6 @@
 		"term": "Spellhold",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
-	},
-	{
-		"term": "Spellhold Information",
-		"reference": "Spellhold Information",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/spellholds_information"
 	},
 	{
 		"term": "Sphere [Area of Effect]",
