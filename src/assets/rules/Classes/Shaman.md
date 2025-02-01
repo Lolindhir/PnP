@@ -73,10 +73,13 @@ While training with the elements, you have dedicated yourself to one of the foll
 - You know the *[Resistance](https://lolindhir.github.io/PnP/spells/Resistance)* cantrip, which doesn't count against the number of Shaman cantrips you know. For you, it has a range of 30 feet, its die is a d6 instead of a d4, and you can cast it as a Bonus Action.
 - Your connection to the elements gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your spellcasting ability modifier (minimum bonus of +1).
 
+
+
 **Warrior:**
 - Trained for battle, you gain proficiency with Shields.
 - You know the *[Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)* cantrip, which doesn't count against the number of Shaman cantrips you know. Instead of dealing Force damage with the weapon imbued by this cantrip, you deal either Acid, Cold, Fire, Lightning, or Thunder damage (your choice).
 - You know the *[Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)* spell to ward yourself against the harmful nature of the elements, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. For you, its damage dice are d8s instead of d6s.
+
 
 
 

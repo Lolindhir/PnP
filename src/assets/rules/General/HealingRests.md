@@ -5,7 +5,7 @@
 
 **Fähigkeiten:** Short Rest Abilities oder Items (mit Recharge Short Rest) können rechargen, aber nur 2-mal pro Long Rest
 
-**Keine Regeneration:** keine Heilung und kein Reset von „Treating Wounds“ (siehe Regenerationsoptionen)
+**Keine Regeneration:** keine Heilung und kein Reset von „[Treating Wounds](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options)“
 
 
 
@@ -21,7 +21,7 @@
 
 - Einsatz Hit Dice zur Heilung möglich
 - 1 Exhaustion heilt automatisch (2 HD für 1 zusätzliche Exhaustion können eingesetzt werden)
-- „Treating Wounds“ resettet
+- „[Treating Wounds](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options)" resettet
 
 ### Umstände
 

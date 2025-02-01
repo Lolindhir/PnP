@@ -1,6 +1,7 @@
 
 ## Allgemein
 - alle Klassen bekommen nun ihre Subklasse auf Level 3, die restlichen Level für Subklassen-Features sind unverändert
+- Ability Score Improvement ist nun auch ein Feat und man erhält Feats anstatt ASIs beim Level Up auf bestimmten Leveln
 
 
 ## Fighter

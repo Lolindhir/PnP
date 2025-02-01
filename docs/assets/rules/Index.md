@@ -9,6 +9,7 @@
 | Abjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Abjurer (Wizard) | [Abjurer (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/abjurer) |
 | Abyssal *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Abyssal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Acid | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Acid Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Action | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
@@ -33,6 +34,9 @@
 | Attack *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Attack Roll | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Attitude | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
+| Available Classes | [Available Classes](https://lolindhir.github.io/PnP/rules/glossary/class_list) |
+| Available Races | [Available Races](https://lolindhir.github.io/PnP/rules/glossary/race_list) |
+| Background | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Bait and Switch *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ball Bearings | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Battle Maneuvers | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -57,6 +61,7 @@
 | Champion (Fighter) | [Champion (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/champion) |
 | Character Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Cleave *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Coins | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Cold Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
@@ -89,6 +94,7 @@
 | Death Saving Throw | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Deep Speech *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Dehydration | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
+| Desertborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Difficult Terrain | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Difficulty Class (DC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Dim Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -105,13 +111,19 @@
 | Draconic *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Dropping Prone | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Dropping to 0 Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Drow | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Druidic *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Dwarf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Dwarf | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf) |
 | Dwarvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Eignung für Training | [Training](https://lolindhir.github.io/PnP/rules/downtime/training) |
 | Eldritch Knight (Fighter) | [Eldritch Knight (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight) |
 | Elemental Aspect Calls | [Elemental Aspect Calls](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls) |
 | Elemental Aspect Spells - Sage | [Elemental Aspect Spells - Sage](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) |
 | Elemental Aspect Spells - Warrior | [Elemental Aspect Spells - Warrior](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior) |
+| Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
+| Elf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Elven Lineage | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Elvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Emanation *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Enchantment | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -128,11 +140,13 @@
 | Falling off a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Feeling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Feinting Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Fiendish Legacy | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Fighter | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Finesse *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Fire Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Food Needs | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Force Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
+| Forestborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Frightened *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Giant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Gnomish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -142,7 +156,9 @@
 | Graze *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Gritty Realism Times | [Gritty Realism Times](https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism) |
 | Haggling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
+| Halfling | [Halfling](https://lolindhir.github.io/PnP/rules/races/halfling) |
 | Halfling *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Halflings | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Hardened Armor | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Hardened Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Hazards | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
@@ -154,13 +170,18 @@
 | Help *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Heroic Inspiration | [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) |
 | Hide *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| High Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Human | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
+| Human Ancestry | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Identifying an Ongoing Spell | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Illusion | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Illusionist (Wizard) | [Illusionist (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/illusionist) |
 | Immunity | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Improvised Weapons | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Incapacitated *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Inferal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Infernal *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Influence | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Influence *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
@@ -198,6 +219,7 @@
 | Melee Attack | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Menacing Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Milestone Leveling | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
+| Mountainborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Mounted Combat | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Mounting | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Movement | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
@@ -223,6 +245,7 @@
 | Petrified *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Piercing Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Pillars of the Game | [Pillars of the Game](https://lolindhir.github.io/PnP/rules/general/pillars) |
+| Plainsborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Playing on a Grid | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
@@ -260,6 +283,7 @@
 | Restrained *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Riposte *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Rogue | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Sage (Shaman) | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Sap *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Saving Throw | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Saving Throw Damage Against Multiple Targets | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -268,6 +292,8 @@
 | Schools of Magic | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Schwarze Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Scout Training *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Sea Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
+| Seaborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Search *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Self *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Shaman | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
@@ -281,6 +307,7 @@
 | Skills with Different Abilities | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Slashing Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Slow *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
+| Snowborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Social Interaction | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Somatic Spell Component (S) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Soulknife (Rogue) | [Soulknife (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/soulknife) |
@@ -313,6 +340,8 @@
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
+| Tiefling | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Topple *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Touch *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Trained Body *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -336,6 +365,7 @@
 | Versatile *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Vex *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Vulnerability | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
+| Warrior (Shaman) | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Weapon | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Weapon Attack, Underwater | [Underwater Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater) |
 | Weapon Cost & Weight | [Weapon Cost & Weight](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_costs) |
@@ -344,3 +374,4 @@
 | Weapon Special Property | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Weiße Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Wizard | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
+| Wood Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |

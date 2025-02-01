@@ -1,0 +1,7 @@
+
+| Class                    | Subclasses                                                                                                         |
+| :----------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) | [Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion)<br>[Eldritch Knight](https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight)<br>[Psy Warrior](https://lolindhir.github.io/PnP/rules/classes/fighter/psy_warrior)         |
+| [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue)     | [Arcane Trickster](https://lolindhir.github.io/PnP/rules/classes/rogue/arcane_trickster)<br>[Assassin](https://lolindhir.github.io/PnP/rules/classes/rogue/assassin)<br>[Soulknife](https://lolindhir.github.io/PnP/rules/classes/rogue/soulknife)           |
+| [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman)   | Sage<br>Warrior<br>*(roles, no subclasses)*                                                                        |
+| [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard)   | [Abjurer](https://lolindhir.github.io/PnP/rules/classes/wizard/abjurer)<br>[Diviner](https://lolindhir.github.io/PnP/rules/classes/wizard/diviner)<br>[Evoker](https://lolindhir.github.io/PnP/rules/classes/wizard/evoker)<br>[Illusionist](https://lolindhir.github.io/PnP/rules/classes/wizard/illusionist) |

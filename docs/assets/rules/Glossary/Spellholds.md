@@ -1,9 +1,9 @@
 ### Spellhold Types
-| Type         | Proficiency | Spell List                      |
-| :----------- | :---------- | :------------------------------ |
-| Spell Scroll | Arcana      | Bard, Sorcerer, Warlock, Wizard |
-| Prayer Bead  | Religion    | Cleric, Paladin                 |
-| Nature Stone | Nature      | Druid, Ranger, Shaman           |
+| Type             | Proficiency | Spell List                      |
+| :--------------- | :---------- | :------------------------------ |
+| **Spell Scroll** | Arcana      | Bard, Sorcerer, Warlock, Wizard |
+| **Prayer Bead**  | Religion    | Cleric, Paladin                 |
+| **Nature Stone** | Nature      | Druid, Ranger, Shaman           |
 
 
 ### Spellhold Attacks and Saving Throw DCs

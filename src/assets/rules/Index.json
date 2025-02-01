@@ -45,6 +45,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
 	},
 	{
+		"term": "Abyssal Tiefling",
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+	},
+	{
 		"term": "Acid",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
@@ -165,6 +170,21 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
 	},
 	{
+		"term": "Available Classes",
+		"reference": "Available Classes",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/class_list"
+	},
+	{
+		"term": "Available Races",
+		"reference": "Available Races",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/race_list"
+	},
+	{
+		"term": "Background",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+	},
+	{
 		"term": "Bait and Switch [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
@@ -283,6 +303,11 @@
 		"term": "Charmed [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Chthonic Tiefling",
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Cleave [Weapon Mastery]",
@@ -445,6 +470,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
 	},
 	{
+		"term": "Desertborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+	},
+	{
 		"term": "Difficult Terrain",
 		"reference": "Movement",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
@@ -525,9 +555,24 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "Drow",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+	},
+	{
 		"term": "Druidic [Language]",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Dwarf",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+	},
+	{
+		"term": "Dwarf",
+		"reference": "Dwarf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
 	},
 	{
 		"term": "Dwarvish [Language]",
@@ -558,6 +603,21 @@
 		"term": "Elemental Aspect Spells - Warrior",
 		"reference": "Elemental Aspect Spells - Warrior",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior"
+	},
+	{
+		"term": "Elf",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+	},
+	{
+		"term": "Elf",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+	},
+	{
+		"term": "Elven Lineage",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
 	},
 	{
 		"term": "Elvish [Language]",
@@ -640,6 +700,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
 	},
 	{
+		"term": "Fiendish Legacy",
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+	},
+	{
 		"term": "Fighter",
 		"reference": "Fighter",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
@@ -663,6 +728,11 @@
 		"term": "Force Damage",
 		"reference": "Damage Types",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
+	},
+	{
+		"term": "Forestborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Frightened [Condition]",
@@ -710,9 +780,19 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
 	},
 	{
+		"term": "Halfling",
+		"reference": "Halfling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/halfling"
+	},
+	{
 		"term": "Halfling [Language]",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Halflings",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Hardened Armor",
@@ -770,9 +850,29 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
+		"term": "High Elf",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+	},
+	{
 		"term": "Hit Points",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
+	},
+	{
+		"term": "Human",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+	},
+	{
+		"term": "Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+	},
+	{
+		"term": "Human Ancestry",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Identifying an Ongoing Spell",
@@ -803,6 +903,11 @@
 		"term": "Incapacitated [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Inferal Tiefling",
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Infernal [Language]",
@@ -990,6 +1095,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling"
 	},
 	{
+		"term": "Mountainborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+	},
+	{
 		"term": "Mounted Combat",
 		"reference": "Mounted Combat",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
@@ -1113,6 +1223,11 @@
 		"term": "Pillars of the Game",
 		"reference": "Pillars of the Game",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars"
+	},
+	{
+		"term": "Plainsborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Playing on a Grid",
@@ -1300,6 +1415,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
+		"term": "Sage (Shaman)",
+		"reference": "Shaman",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman"
+	},
+	{
 		"term": "Sap [Weapon Mastery]",
 		"reference": "Weapon Mastery",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
@@ -1338,6 +1458,16 @@
 		"term": "Scout Training [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Sea Elf",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+	},
+	{
+		"term": "Seaborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Search [Action]",
@@ -1403,6 +1533,11 @@
 		"term": "Slow [Weapon Mastery]",
 		"reference": "Weapon Mastery",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Snowborn Human",
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Social Interaction",
@@ -1565,6 +1700,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
 	},
 	{
+		"term": "Tiefling",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+	},
+	{
+		"term": "Tiefling",
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+	},
+	{
 		"term": "Topple [Weapon Mastery]",
 		"reference": "Weapon Mastery",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
@@ -1680,6 +1825,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
 	},
 	{
+		"term": "Warrior (Shaman)",
+		"reference": "Shaman",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman"
+	},
+	{
 		"term": "Weapon",
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
@@ -1718,5 +1868,10 @@
 		"term": "Wizard",
 		"reference": "Wizard",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard"
+	},
+	{
+		"term": "Wood Elf",
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
 	}
 ]
