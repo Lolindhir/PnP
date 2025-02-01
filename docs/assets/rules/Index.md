@@ -4,6 +4,7 @@
 | Ability Check | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Ability Modifier | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Modifier Overview | [Ability Modifier Overview](https://lolindhir.github.io/PnP/rules/glossary/ability_modifiers) |
+| Ability Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Ability Score | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Score Improvement (ASI) | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Abjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -14,6 +15,7 @@
 | Acid Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Action | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Action List | [Action List](https://lolindhir.github.io/PnP/rules/glossary/action_list) |
+| Action Surge | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Advantage | [Advantage/Disadvantage](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage) |
 | Adventuring Equipment | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Adventuring Gear | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
@@ -23,6 +25,7 @@
 | Ammunition *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Antitoxin | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Arcane Focus | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
+| Arcane Recovery | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Arcane Trickster (Rogue) | [Arcane Trickster (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/arcane_trickster) |
 | Area of Effect | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
@@ -60,12 +63,14 @@
 | Chain | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Champion (Fighter) | [Champion (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/champion) |
 | Character Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Charisma Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Cleave *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Coins | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Cold Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Combat | [Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat) |
+| Combat Superiority | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Commander's Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Commanding Presence *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Common *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -73,14 +78,17 @@
 | Conditions | [Conditions](https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions) |
 | Cone *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Conjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
+| Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Crafting | [Crafting](https://lolindhir.github.io/PnP/rules/crafting) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Cube *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
+| Cunning Action | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Cunning Strike | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Cylinder *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | D20 Test | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Damage | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -95,6 +103,7 @@
 | Deep Speech *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Dehydration | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Desertborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
+| Dexterity Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Difficult Terrain | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Difficulty Class (DC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Dim Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -113,8 +122,8 @@
 | Dropping to 0 Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Drow | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Druidic *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
-| Dwarf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Dwarf | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf) |
+| Dwarf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Dwarvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Eignung für Training | [Training](https://lolindhir.github.io/PnP/rules/downtime/training) |
 | Eldritch Knight (Fighter) | [Eldritch Knight (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight) |
@@ -129,6 +138,7 @@
 | Enchantment | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Equipment | [Equipment](https://lolindhir.github.io/PnP/rules/equipment) |
 | Equipment Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
+| Evasion | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Evasive Footwork *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Evocation | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Evoker (Wizard) | [Evoker (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/evoker) |
@@ -163,6 +173,7 @@
 | Hardened Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Hazards | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Healing | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Healing Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Healing from 0 HP | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Heavily Obscured | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Heavy *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -181,6 +192,7 @@
 | Immunity | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Improvised Weapons | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Incapacitated *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Indomitable | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Inferal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Infernal *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Influence | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
@@ -189,6 +201,7 @@
 | Initiative | [Order of Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order) |
 | Instant Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Instantaneous (Spell Duration) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Intelligence Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Interacting with Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
@@ -249,6 +262,8 @@
 | Playing on a Grid | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Potion Overview | [Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potion_list) |
 | Prayer Bead | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Precision Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Primordial *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -276,13 +291,18 @@
 | Reaction | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Regeneration Options | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
+| Regeneration Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Reliable Talent | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Renown | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
 | Resistance | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Resistant Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Resting | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Restrained *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Riposte *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Ritual | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Ritual Adept | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Rogue | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Rogue Class Features | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Sage (Shaman) | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Sap *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Saving Throw | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
@@ -295,11 +315,13 @@
 | Sea Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Seaborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Search *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Second Wind | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Self *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Shaman | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Shield | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Shield Repair | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Short Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
+| Signature Spell | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Silver Standard | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Simple Weapons | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Skill List | [Skill List](https://lolindhir.github.io/PnP/rules/glossary/skills) |
@@ -307,6 +329,7 @@
 | Skills with Different Abilities | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Slashing Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Slow *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
+| Sneak Attack | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Snowborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Social Interaction | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Somatic Spell Component (S) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
@@ -327,11 +350,14 @@
 | Stabilize | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Standard Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Steady Aim | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Strength Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Strengthened Armor/Shield (+1/+2) | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Strengthened Weapon (+1/+2/+3) | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Study *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Stunned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Suffocation | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
+| Summoning Spell Restrictions | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Sweeping Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Sylvan *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Tactical Assessment *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -354,11 +380,13 @@
 | Trip Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Truesight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Two-Handed *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
+| Uncanny Dodge | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Unconscious *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Undercommon *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Underwater Combat | [Underwater Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater) |
 | Unseen Attackers and Targets | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Using a Higher-Level Spell Slot | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Using a Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Utilize *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Vehicle Travel | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Verbal Spell Component (V) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
@@ -373,5 +401,6 @@
 | Weapon Property | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Weapon Special Property | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Weiße Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
+| Wisdom Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Wizard | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Wood Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |

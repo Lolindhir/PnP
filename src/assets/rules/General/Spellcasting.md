@@ -14,6 +14,8 @@ There are several ways to cast a spell without expending a spell slot:
 **Special Abilities.** Some characters and monsters have special abilities that allow them to cast specific spells without a spell slot. This casting is usually limited in another way, such as being able to cast the spell a limited number of times per day.
 **Magic Items.** Spell Holds and some other magic items contain spells that can be cast without a spell slot. The description of such an item specifies how many times a spell can be cast from it.
 
+
+
 ### Using a Higher-Level Spell Slot
 When a spellcaster casts a spell using a slot that is of a higher level than the spell, the spell takes on the higher level for that casting. For instance, if a Wizard casts *Magic Missile* using a level 2 slot, that *Magic Missile* is level 2. Effectively, the spell expands to fill the slot it is put into.
 Some spells, such as Magic Missile and Cure Wounds, have more powerful effects when cast at a higher level, as detailed in a spell's description.
@@ -133,12 +135,13 @@ Some spells require the caster to make an attack roll to determine whether the s
 The effects of different spells add together while their durations overlap. In contrast, the effects of the same spell cast multiple times don't combine. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap. The most recent effect applies if the castings are equally potent and their durations overlap. For example, if two Clerics cast Bless on the same target, that target gains the spell's benefit only once; the target doesn't receive two bonus dice. But if the durations of the spells overlap, the effect continues until the duration of the second Bless ends.
 
 
+## Summoning Spell Restrictions
+Summoning spells possess unique characteristics that can significantly impact the balance and theme of a campaign. Therefore, it is essential that players consult with their Dungeon Master (DM) before selecting any summoning spells. These spells must align with the overarching narrative and thematic elements of the campaign. Additionally, summoning spells have the potential to disrupt the game's balance, introducing complexities that may affect the enjoyment and fairness for all players.
+To ensure a harmonious and engaging experience, the DM has the final say on the inclusion of summoning spells. Players are encouraged to discuss their intentions and seek approval from the DM. In the spell list, all summoning spells are tagged with the category "Summoning" for easy identification.
 
 
 ## Identifying an Ongoing Spell
 You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a Intelligence (Arcana) check.
-
-
 
 
 ## Casting in Armor

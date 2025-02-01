@@ -20,6 +20,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/ability_modifiers"
 	},
 	{
+		"term": "Ability Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Ability Score",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
@@ -70,6 +75,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/action_list"
 	},
 	{
+		"term": "Action Surge",
+		"reference": "Fighter",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
+	},
+	{
 		"term": "Advantage",
 		"reference": "Advantage/Disadvantage",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage"
@@ -113,6 +123,11 @@
 		"term": "Arcane Focus",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Arcane Recovery",
+		"reference": "Wizard",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard"
 	},
 	{
 		"term": "Arcane Trickster (Rogue)",
@@ -300,6 +315,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "Charisma Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Charmed [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
@@ -328,6 +348,11 @@
 		"term": "Combat",
 		"reference": "Combat",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat"
+	},
+	{
+		"term": "Combat Superiority",
+		"reference": "Fighter",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
 	},
 	{
 		"term": "Commander's Strike [Maneuver]",
@@ -365,6 +390,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
 	},
 	{
+		"term": "Constitution Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Controlling a Mount",
 		"reference": "Mounted Combat",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted"
@@ -376,13 +406,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Crafting",
@@ -403,6 +433,16 @@
 		"term": "Cube [Area of Effect]",
 		"reference": "Area of Effect",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
+	},
+	{
+		"term": "Cunning Action",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
+		"term": "Cunning Strike",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
 		"term": "Cylinder [Area of Effect]",
@@ -473,6 +513,11 @@
 		"term": "Desertborn Human",
 		"reference": "Human",
 		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+	},
+	{
+		"term": "Dexterity Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
 		"term": "Difficult Terrain",
@@ -566,13 +611,13 @@
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Dwarf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Dwarf",
-		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Dwarvish [Language]",
@@ -643,6 +688,11 @@
 		"term": "Equipment Proficiency",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Evasion",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
 		"term": "Evasive Footwork [Maneuver]",
@@ -815,6 +865,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "Healing Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Healing from 0 HP",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
@@ -905,6 +960,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
+		"term": "Indomitable",
+		"reference": "Fighter",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
+	},
+	{
 		"term": "Inferal Tiefling",
 		"reference": "Tiefling",
 		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
@@ -943,6 +1003,11 @@
 		"term": "Instantaneous (Spell Duration)",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Intelligence Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
 		"term": "Interacting with Objects",
@@ -1245,6 +1310,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
+		"term": "Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Potion Overview",
+		"reference": "Potion Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/potion_list"
+	},
+	{
 		"term": "Prayer Bead",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
@@ -1380,6 +1455,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
 	},
 	{
+		"term": "Regeneration Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Reliable Talent",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
 		"term": "Renown",
 		"reference": "Renown",
 		"link": "https://lolindhir.github.io/PnP/rules/general/renown"
@@ -1410,7 +1495,22 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
 	},
 	{
+		"term": "Ritual",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Ritual Adept",
+		"reference": "Wizard",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard"
+	},
+	{
 		"term": "Rogue",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
+		"term": "Rogue Class Features",
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
@@ -1475,6 +1575,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
+		"term": "Second Wind",
+		"reference": "Fighter",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter"
+	},
+	{
 		"term": "Self [Spell Range]",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
@@ -1498,6 +1603,11 @@
 		"term": "Short Rest",
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Signature Spell",
+		"reference": "Wizard",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/wizard"
 	},
 	{
 		"term": "Silver Standard",
@@ -1533,6 +1643,11 @@
 		"term": "Slow [Weapon Mastery]",
 		"reference": "Weapon Mastery",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
+	},
+	{
+		"term": "Sneak Attack",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
 		"term": "Snowborn Human",
@@ -1635,6 +1750,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
 	},
 	{
+		"term": "Steady Aim",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
+		"term": "Strength Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Strengthened Armor/Shield (+1/+2)",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -1658,6 +1783,11 @@
 		"term": "Suffocation",
 		"reference": "Hazards",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
+	},
+	{
+		"term": "Summoning Spell Restrictions",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
 	},
 	{
 		"term": "Sweeping Attack [Maneuver]",
@@ -1770,6 +1900,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties"
 	},
 	{
+		"term": "Uncanny Dodge",
+		"reference": "Rogue",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
 		"term": "Unconscious [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
@@ -1793,6 +1928,11 @@
 		"term": "Using a Higher-Level Spell Slot",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
+	},
+	{
+		"term": "Using a Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
 		"term": "Utilize [Action]",
@@ -1863,6 +2003,11 @@
 		"term": "Weiße Schicksalspunkte",
 		"reference": "Schicksalspunkte",
 		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte"
+	},
+	{
+		"term": "Wisdom Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
 		"term": "Wizard",

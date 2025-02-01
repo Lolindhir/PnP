@@ -32,6 +32,7 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells yo
 ***Otherworldly Presence.*** You know the *[Thaumaturgy](https://lolindhir.github.io/PnP/spells/Thaumaturgy)* cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.
 
 ***Fiendish Mastery.*** You gain the following benefits:
+<div class="listNoGap"></div>
 - Spells you cast ignore Resistance to damage of your Fiendish Legacy's type.
 - When you roll damage for a spell you cast that deals damage of your Fiendish Legacy's type, you can reroll any roll of 1 on the damage dice, but you must use the new roll, even if it is another 1.
 - Whenever you cast a spell that deals damage of your Fiendish Legacy's type, you can cause its magic to wreathe you until the end of your next turn. While the magic is present, any creature within 5 feet of you that hits you with a melee attack takes 1d4 damage of your Fiendish Legacy's type. This damage increases when you reach 5th level - 1d6-, 11th level - 1d8 -, and 17th level - 1d10 -.
