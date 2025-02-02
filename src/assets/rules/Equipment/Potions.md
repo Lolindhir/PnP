@@ -1,4 +1,7 @@
 
+<div class="startgap"></div>
+
+
 
 **Potion Usage.** As an Utilize action, you can drink a potion or administer it to another creature within 5 feet of yourself.
 
@@ -8,7 +11,6 @@
 **Long Rest Restriction.** Some potions have effect restrictions because the body can only tolerate a certain amount per Long Rest. The effect of such potions can only be received once per Long Rest.
 
 
-![image](assets/rules/UnderConstruction.png)
 
 
 
@@ -17,7 +19,8 @@
 
 
 
-### Ability Potion
+
+##### Ability Potion
 For 1 hour, the Ability Score (depending on the kind of potion) of the creature that drinks this potion increases by an amount based on the type of Ability Potion, as noted in the table below.
 **Effect Restriction.** A creature can only benefit from the effect of one Ability Potion per ability at the same time.
 | Type      | AS-Bonus |
@@ -25,6 +28,15 @@ For 1 hour, the Ability Score (depending on the kind of potion) of the creature 
 | Basic     |    +2    |
 | Excellent |    +4    |
 | Superb    |    +6    |
+
+
+##### Flying Potion
+The creature that drinks this potion gains a flying speed of 60 feet for an amount of time based on the type of Flying Potion, as noted in the table below. When the effect ends, the creature falls if it is still aloft, unless it can stop the fall.
+| Type      | Duration |
+| :-------- | -------: |
+| Basic     |    1 min |
+| Excellent |   10 min |
+| Superb    |      1 h |
 
 
 ##### Growth Potion
@@ -43,6 +55,15 @@ The creature that drinks this potion regains a number of Hit Points based on the
 | Ultimate |    100    |     15d4+40     |
 
 
+##### Recovery Potion
+The creature that drinks this potion reduces its exhaustion level by an amount based on the type of Recovery Potion, as noted in the table below.
+| Type      | Exhaustion |
+| :-------- | :--------: |
+| Basic     |     1      |
+| Excellent |     2      |
+| Superb    |     4      |
+
+
 ##### Regeneration Potion
 The creature that drinks this potion regains a number of Hit Dice based on the type of Regeneration Potion, as noted in the table below.
 **Long Rest Restriction.** After drinking a Regeneration Potion, a creature cannot benefit from the effect of another Regeneration Potion until it has completed a Long Rest.
@@ -55,6 +76,8 @@ The creature that drinks this potion regains a number of Hit Dice based on the t
 | Ultimate |     All      |
 
 
+##### Restoration Potion
+The creature that drinks this potion can end 1 condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned. Alternatively, it can restore 1 of its spent Hit Dice or reduce its exhaustion level by 1.
 
 
 

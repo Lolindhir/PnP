@@ -10,6 +10,9 @@
 | Dexterity, Basic        |   Rare    |    450 SP |
 | Dexterity, Excellent    | Very Rare |  4.500 SP |
 | Dexterity, Superb       | Legendary | 36.000 SP |
+| Flying, Basic           |   Rare    |  1.350 SP |
+| Flying, Excellent       |   Rare    |  2.250 SP |
+| Flying, Superb          | Very Rare |  9.100 SP |
 | Growth                  |   Rare    |    910 SP |
 | Healing, Basic          |  Common   |     50 SP |
 | Healing, Greater        | Uncommon  |    120 SP |
@@ -19,11 +22,15 @@
 | Intelligence, Basic     |   Rare    |    600 SP |
 | Intelligence, Excellent | Very Rare |  6.000 SP |
 | Intelligence, Superb    | Legendary | 48.000 SP |
+| Recovery, Basic         |  Common   |     50 SP |
+| Recovery, Excellent     | Uncommon  |    125 SP |
+| Recovery, Superb        |   Rare    |    675 SP |
 | Regeneration, Basic     |  Common   |     35 SP |
 | Regeneration, Greater   | Uncommon  |    100 SP |
 | Regeneration, Superior  |   Rare    |    750 SP |
 | Regeneration, Supreme   | Very Rare |  7.500 SP |
 | Regeneration, Ultimate  | Legendary | 55.000 SP |
+| Restoration             | Uncommon  |    195 SP |
 | Strength, Basic         | Uncommon  |    250 SP |
 | Strength, Excellent     |   Rare    |  2.500 SP |
 | Strength, Superb        | Very Rare | 25.000 SP |

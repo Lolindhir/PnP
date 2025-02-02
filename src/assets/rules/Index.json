@@ -25,11 +25,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
-		"term": "Ability Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
 		"term": "Ability Score",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
@@ -325,11 +320,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
-		"term": "Charisma Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
 		"term": "Charmed [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
@@ -398,11 +388,6 @@
 		"term": "Conjuration",
 		"reference": "Schools of Magic",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
-	},
-	{
-		"term": "Constitution Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Constitution Potion",
@@ -535,11 +520,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
-		"term": "Dexterity Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
 		"term": "Difficult Terrain",
 		"reference": "Movement",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
@@ -631,13 +611,13 @@
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Dwarf",
-		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Dwarf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
 	},
 	{
 		"term": "Dwarvish [Language]",
@@ -790,6 +770,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
 	},
 	{
+		"term": "Flying Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Food Needs",
 		"reference": "Hazards",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
@@ -846,11 +831,6 @@
 	},
 	{
 		"term": "Growth Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
-		"term": "Growth Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
@@ -898,16 +878,6 @@
 		"term": "Healing Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
-	},
-	{
-		"term": "Healing Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
-		"term": "Healing Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Healing from 0 HP",
@@ -971,13 +941,13 @@
 	},
 	{
 		"term": "Human",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Human",
-		"reference": "Human",
-		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Human Ancestry",
@@ -1063,11 +1033,6 @@
 		"term": "Intelligence Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
-	},
-	{
-		"term": "Intelligence Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Interacting with Objects",
@@ -1381,11 +1346,6 @@
 	},
 	{
 		"term": "Potion Effect Restriction",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
-		"term": "Potion Effect Restriction",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
@@ -1525,14 +1485,14 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
+		"term": "Recovery Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Regeneration Options",
 		"reference": "Regeneration Options",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
-	},
-	{
-		"term": "Regeneration Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Regeneration Potion",
@@ -1563,6 +1523,11 @@
 		"term": "Resting",
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Restoration Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
 		"term": "Restrained [Condition]",
@@ -1840,11 +1805,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
-		"term": "Strength Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
 		"term": "Strengthened Armor/Shield (+1/+2)",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -1916,13 +1876,13 @@
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Tiefling",
-		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Topple [Weapon Mastery]",
@@ -2016,11 +1976,6 @@
 	},
 	{
 		"term": "Using a Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
-	},
-	{
-		"term": "Using a Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
@@ -2098,11 +2053,6 @@
 		"term": "Wisdom Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
-	},
-	{
-		"term": "Wisdom Potion",
-		"reference": "Healing Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Wizard",

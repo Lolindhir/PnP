@@ -1,4 +1,6 @@
 
+For the potion descriptions, see the [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) section.
+
 ##### Ability Potions
 | Type      | AS-Bonus |
 | :-------- | :------: |
@@ -14,6 +16,13 @@
 | Superior |    40     |      8d4+8      |
 | Supreme  |    60     |     10d4+20     |
 | Ultimate |    100    |     15d4+40     |
+
+##### Recovery Potions
+| Type      | Exhaustion |
+| :-------- | :--------: |
+| Basic     |     1      |
+| Excellent |     2      |
+| Superb    |     4      |
 
 ##### Regeneration Potions
 | Type     | Number of HD |
