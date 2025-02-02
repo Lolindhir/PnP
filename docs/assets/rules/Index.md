@@ -5,6 +5,7 @@
 | Ability Modifier | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Modifier Overview | [Ability Modifier Overview](https://lolindhir.github.io/PnP/rules/glossary/ability_modifiers) |
 | Ability Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Ability Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Ability Score | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Score Improvement (ASI) | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Abjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -64,6 +65,7 @@
 | Champion (Fighter) | [Champion (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/champion) |
 | Character Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Charisma Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Charisma Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Cleave *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
@@ -78,11 +80,12 @@
 | Conditions | [Conditions](https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions) |
 | Cone *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Conjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
+| Constitution Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
+| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Crafting | [Crafting](https://lolindhir.github.io/PnP/rules/crafting) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -104,6 +107,7 @@
 | Dehydration | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Desertborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Dexterity Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Dexterity Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Difficult Terrain | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Difficulty Class (DC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Dim Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -130,8 +134,8 @@
 | Elemental Aspect Calls | [Elemental Aspect Calls](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls) |
 | Elemental Aspect Spells - Sage | [Elemental Aspect Spells - Sage](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) |
 | Elemental Aspect Spells - Warrior | [Elemental Aspect Spells - Warrior](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior) |
-| Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Elf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Elven Lineage | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Elvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Emanation *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
@@ -165,6 +169,8 @@
 | Grappled *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Graze *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Gritty Realism Times | [Gritty Realism Times](https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism) |
+| Growth Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
+| Growth Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Haggling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Halfling | [Halfling](https://lolindhir.github.io/PnP/rules/races/halfling) |
 | Halfling *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -174,6 +180,8 @@
 | Hazards | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Healing | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Healing Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Healing Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
+| Healing Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Healing from 0 HP | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Heavily Obscured | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Heavy *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -182,6 +190,9 @@
 | Heroic Inspiration | [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) |
 | Hide *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | High Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
+| Hit Dice Regeneration through Tea | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
+| Hit Dice during Night Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
+| Hit Dice to heal Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
 | Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Human | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
@@ -190,7 +201,7 @@
 | Illusion | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Illusionist (Wizard) | [Illusionist (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/illusionist) |
 | Immunity | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
-| Improvised Weapons | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Improvised Weapon | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Incapacitated *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Indomitable | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Inferal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
@@ -202,6 +213,7 @@
 | Instant Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Instantaneous (Spell Duration) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Intelligence Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Intelligence Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Interacting with Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
@@ -221,6 +233,7 @@
 | Magic *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Magical Tenacious Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Magical Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
+| Major Potion Overview | [Major Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potions_major) |
 | Malnutrition | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Maneuvering Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Marching Order | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
@@ -263,7 +276,9 @@
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
-| Potion Overview | [Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potion_list) |
+| Potion Effect Restriction | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
+| Potion Effect Restriction | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Potion Rarity & Cost | [Potion Rarity & Cost](https://lolindhir.github.io/PnP/rules/equipment/potions/potions_costs) |
 | Prayer Bead | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Precision Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Primordial *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -291,6 +306,7 @@
 | Reaction | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Regeneration Options | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
+| Regeneration Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Regeneration Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Reliable Talent | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Renown | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
@@ -352,6 +368,7 @@
 | Standard Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Steady Aim | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Strength Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Strength Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Strengthened Armor/Shield (+1/+2) | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Strengthened Weapon (+1/+2/+3) | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Study *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
@@ -386,6 +403,7 @@
 | Underwater Combat | [Underwater Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater) |
 | Unseen Attackers and Targets | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Using a Higher-Level Spell Slot | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Using a Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Using a Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Utilize *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Vehicle Travel | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
@@ -402,5 +420,6 @@
 | Weapon Special Property | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Weiße Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Wisdom Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Wisdom Potion | [Healing Potion](https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing) |
 | Wizard | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Wood Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |

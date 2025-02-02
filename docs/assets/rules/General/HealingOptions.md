@@ -27,6 +27,8 @@ Up to six creatures can drink from the tea and gain one of the following benefit
 - Force of Nature Tea (Naturkraft): The creature can make a Saving Throw (Constitution) against one disease (or poison). If the creature can already make a Saving Throw, it has advantage on the throw instead.
 
 
+
+
 ## Cooking and Eating
 With one hour of work or as part of a Night rest, you can prepare and serve a strengthening meal that helps creatures recover from the rigors of adventuring, provided you are proficient with cook's utensils and have them and suitable food, ingredients, and other supplies worth at least 2 SP for each partaking creature on hand. Each creature who eats from the meal regains one additional spent Hit Die at the end of the long rest, if it doesn’t already get this benefit from a comfortable or higher lifestyle or from another source (like drinking tea).
 

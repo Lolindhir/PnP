@@ -18,10 +18,13 @@
 
 **Regeneration:**
 <div class="listNoGap"></div>
-
 - Einsatz Hit Dice zur Heilung möglich
-- 1 Exhaustion heilt automatisch (2 HD für 1 zusätzliche Exhaustion können eingesetzt werden)
+- Exhaustion:
+    - 1 Exhaustion heilt automatisch
+    - 1 Exhaustion für 1 HD heilen (maximal zweimal)
 - „[Treating Wounds](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options)" resettet
+
+
 
 ### Umstände
 

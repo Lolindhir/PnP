@@ -1,4 +1,11 @@
 
+##### Ability Potions
+| Type      | AS-Bonus |
+| :-------- | :------: |
+| Basic     |    +2    |
+| Excellent |    +4    |
+| Superb    |    +6    |
+
 ##### Healing Potions
 | Type     | Action HP | Bonus Action HP |
 | :------- | :-------: | :-------------: |
@@ -8,18 +15,14 @@
 | Supreme  |    60     |     10d4+20     |
 | Ultimate |    100    |     15d4+40     |
 
-
 ##### Regeneration Potions
-| Type      | Number of HD |
-| :-------- | :----------: |
-| Basic     |      1       |
-| Superb    |      2       |
-| Excellent |      5       |
+| Type     | Number of HD |
+| :------- | :----------: |
+| Basic    |      1       |
+| Greater  |      2       |
+| Superior |      4       |
+| Supreme  |      10      |
+| Ultimate |     All      |
 
 
-##### Ability Potions
-| Type      | AS-Bonus |
-| :-------- | :------: |
-| Basic     |    +2    |
-| Superb    |    +4    |
-| Excellent |    +6    |
+

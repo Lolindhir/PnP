@@ -25,6 +25,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
+		"term": "Ability Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
 		"term": "Ability Score",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
@@ -320,6 +325,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
+		"term": "Charisma Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
 		"term": "Charmed [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
@@ -391,6 +401,11 @@
 	},
 	{
 		"term": "Constitution Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
+		"term": "Constitution Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
@@ -406,13 +421,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Crafting",
@@ -518,6 +533,11 @@
 		"term": "Dexterity Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Dexterity Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Difficult Terrain",
@@ -651,13 +671,13 @@
 	},
 	{
 		"term": "Elf",
-		"reference": "Elf",
-		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Elf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
 	},
 	{
 		"term": "Elven Lineage",
@@ -825,6 +845,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism"
 	},
 	{
+		"term": "Growth Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
+		"term": "Growth Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
 		"term": "Haggling",
 		"reference": "Social Interaction",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
@@ -870,6 +900,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
+		"term": "Healing Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
+		"term": "Healing Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
 		"term": "Healing from 0 HP",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
@@ -908,6 +948,21 @@
 		"term": "High Elf",
 		"reference": "Elf",
 		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+	},
+	{
+		"term": "Hit Dice Regeneration through Tea",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Hit Dice during Night Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests"
+	},
+	{
+		"term": "Hit Dice to heal Exhaustion",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion"
 	},
 	{
 		"term": "Hit Points",
@@ -950,7 +1005,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage"
 	},
 	{
-		"term": "Improvised Weapons",
+		"term": "Improvised Weapon",
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons"
 	},
@@ -1008,6 +1063,11 @@
 		"term": "Intelligence Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Intelligence Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Interacting with Objects",
@@ -1103,6 +1163,11 @@
 		"term": "Magical Weapon",
 		"reference": "Weapon Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Major Potion Overview",
+		"reference": "Major Potion Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/potions_major"
 	},
 	{
 		"term": "Malnutrition",
@@ -1315,9 +1380,19 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
-		"term": "Potion Overview",
-		"reference": "Potion Overview",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/potion_list"
+		"term": "Potion Effect Restriction",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
+		"term": "Potion Effect Restriction",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Potion Rarity & Cost",
+		"reference": "Potion Rarity & Cost",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potions_costs"
 	},
 	{
 		"term": "Prayer Bead",
@@ -1453,6 +1528,11 @@
 		"term": "Regeneration Options",
 		"reference": "Regeneration Options",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Regeneration Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Regeneration Potion",
@@ -1760,6 +1840,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
 	{
+		"term": "Strength Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
 		"term": "Strengthened Armor/Shield (+1/+2)",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -1931,6 +2016,11 @@
 	},
 	{
 		"term": "Using a Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
+	},
+	{
+		"term": "Using a Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
 	},
@@ -2008,6 +2098,11 @@
 		"term": "Wisdom Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Wisdom Potion",
+		"reference": "Healing Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions/potion_healing"
 	},
 	{
 		"term": "Wizard",

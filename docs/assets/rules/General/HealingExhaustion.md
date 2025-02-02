@@ -27,12 +27,13 @@
 <div class="listNoGap"></div>
 
 - in Night Rest 1 Level automatisch
-- 2 Hit Dice während Night Rest einsetzen für 1 Level (maximal einmal pro Rest)
+- 1 Hit Die während Night Rest einsetzen für 1 Level (maximal zwei pro Rest)
 - nach Long Rest alles regeneriert
 •	Greater Restoration für 1 Level
 •	speziellen Tee trinken
 •	Potion of Recovery
 •	Fähigkeiten
+
 
 
 ### No Sleep for 24 Hours
