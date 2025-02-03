@@ -715,7 +715,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
 	},
 	{
-		"term": "Essence {Material}",
+		"term": "Essence [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1180,7 +1180,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
-		"term": "Magical Ink",
+		"term": "Magical Ink [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1575,7 +1575,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
-		"term": "Reagent {Material}",
+		"term": "Reagent [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1605,7 +1605,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/renown"
 	},
 	{
-		"term": "Residuum",
+		"term": "Residuum [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1875,7 +1875,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
 	},
 	{
-		"term": "Spellhold Base {Material}",
+		"term": "Spellhold Base [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},

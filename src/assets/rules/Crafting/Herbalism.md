@@ -70,12 +70,12 @@ Kräuter können dazu verwendet werden um den Heilungsprozess in Form von Medizi
 - kein Check notwendig, aber Tool Proficiency
 - benötigt Herbalism Kit
 
-| Name                | Herbal Materials    |                                        Value |
-| :------------------ | :------------------ | -------------------------------------------: |
-| 10x Medicine Pack   | 2 common curative   |                          1 healer’s kit 2 SP |
-| Salvatory Night Tea | 2 common curative   |                      1 common reactive 15 SP |
-| Morning Dew Tea     | 1 uncommon curative | 1 uncommon reactive 2 common poisonous 50 SP |
-| Force of Nature Tea | 1 common curative   |                     1 common poisonous 10 SP |
+| Name                | Herbal Materials                                                 | Value |
+| :------------------ | :--------------------------------------------------------------- | ----: |
+| 10x Medicine Pack   | 2 common curative<br>1 healer’s kit                              |  2 SP |
+| Salvatory Night Tea | 2 common curative<br>1 common reactive                           | 15 SP |
+| Morning Dew Tea     | 1 uncommon curative<br>1 uncommon reactive<br>2 common poisonous | 50 SP |
+| Force of Nature Tea | 1 common curative<br>1 common poisonous                          | 10 SP |
 
 
 

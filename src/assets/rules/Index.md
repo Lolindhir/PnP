@@ -143,7 +143,7 @@
 | Enchantment | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Equipment | [Equipment](https://lolindhir.github.io/PnP/rules/equipment) |
 | Equipment Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
-| Essence {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Essence *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Evasion | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Evasive Footwork *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Evocation | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -236,7 +236,7 @@
 | Long Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Lunging Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Magic *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
-| Magical Ink | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Magical Ink *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Magical Materials | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Magical Tenacious Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Magical Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
@@ -315,13 +315,13 @@
 | Reaction | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Reactive Reagent | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
-| Reagent {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Reagent *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Recovery Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Regeneration Options | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Regeneration Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Reliable Talent | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Renown | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
-| Residuum | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Residuum *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Resistance | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Resistant Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Resting | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
@@ -375,7 +375,7 @@
 | Spell Targets | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellcasting | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellhold | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
-| Spellhold Base {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Spellhold Base *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Sphere *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Stabilize | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
