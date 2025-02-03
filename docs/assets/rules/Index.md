@@ -24,6 +24,8 @@
 | Ammunition | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Ammunition *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Antitoxin | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
+| Arc-Stone {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Arcane Essence | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Arcane Focus | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Arcane Recovery | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Arcane Trickster (Rogue) | [Arcane Trickster (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/arcane_trickster) |
@@ -43,6 +45,7 @@
 | Bait and Switch *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ball Bearings | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Battle Maneuvers | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Bead {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Beispielaktivitäten | [Downtime Activity](https://lolindhir.github.io/PnP/rules/downtime/downtime_overview) |
 | Blinded *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Blindsight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -81,14 +84,14 @@
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
-| Crafting | [Crafting](https://lolindhir.github.io/PnP/rules/crafting) |
+| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Cube *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Cunning Action | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Cunning Strike | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Curative Reagent | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Cylinder *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | D20 Test | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Damage | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -113,6 +116,7 @@
 | Dismounting | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Distracting Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Divination | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
+| Divine Essence | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Diviner (Wizard) | [Diviner (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/diviner) |
 | Dodge *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Donning/Doffing Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
@@ -138,6 +142,7 @@
 | Enchantment | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Equipment | [Equipment](https://lolindhir.github.io/PnP/rules/equipment) |
 | Equipment Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
+| Essence {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Evasion | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Evasive Footwork *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Evocation | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -224,6 +229,8 @@
 | Long Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Lunging Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Magic *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Magical Ink | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
+| Magical Materials | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Magical Tenacious Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Magical Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Major Potion Overview | [Major Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potions_major) |
@@ -260,6 +267,7 @@
 | Orc *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Order of Combat | [Order of Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order) |
 | Paralyzed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Parchment {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Parry *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Petrified *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Piercing Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
@@ -268,11 +276,13 @@
 | Playing on a Grid | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Poisonous Reagent | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Potion Effect Restriction | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Potion Rarity & Cost | [Potion Rarity & Cost](https://lolindhir.github.io/PnP/rules/equipment/potions/potions_costs) |
 | Prayer Bead | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Precision Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Primal Essence | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Primordial *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Principle Rules | [Principle Rules](https://lolindhir.github.io/PnP/rules/general/principles) |
 | Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
@@ -296,12 +306,15 @@
 | Reach | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Reach *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Reaction | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
+| Reactive Reagent | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Reagent {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Recovery Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Regeneration Options | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Regeneration Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Reliable Talent | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Renown | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
+| Residuum | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Resistance | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Resistant Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Resting | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
@@ -355,6 +368,7 @@
 | Spell Targets | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellcasting | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellhold | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
+| Spellhold Base {Material} | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Sphere *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Stabilize | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
@@ -375,8 +389,8 @@
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
-| Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Tiefling | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Topple *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Touch *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Trained Body *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |

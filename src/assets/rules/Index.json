@@ -120,6 +120,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
 	},
 	{
+		"term": "Arc-Stone {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
+		"term": "Arcane Essence",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Arcane Focus",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
@@ -213,6 +223,11 @@
 		"term": "Battle Maneuvers",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Bead {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Beispielaktivitäten",
@@ -406,18 +421,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
-	},
-	{
-		"term": "Cover",
 		"reference": "Cover, Vision & Light",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
-		"term": "Crafting",
-		"reference": "Crafting",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting"
+		"term": "Cover",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Creature Size",
@@ -443,6 +453,11 @@
 		"term": "Cunning Strike",
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
+	},
+	{
+		"term": "Curative Reagent",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Cylinder [Area of Effect]",
@@ -563,6 +578,11 @@
 		"term": "Divination",
 		"reference": "Schools of Magic",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
+	},
+	{
+		"term": "Divine Essence",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Diviner (Wizard)",
@@ -688,6 +708,11 @@
 		"term": "Equipment Proficiency",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Essence {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Evasion",
@@ -1120,6 +1145,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
+		"term": "Magical Ink",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
+		"term": "Magical Materials",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Magical Tenacious Armor/Shield",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -1300,6 +1335,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
+		"term": "Parchment {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Parry [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
@@ -1340,6 +1380,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
+		"term": "Poisonous Reagent",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
@@ -1363,6 +1408,11 @@
 		"term": "Precision Attack [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Primal Essence",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Primordial [Language]",
@@ -1480,9 +1530,19 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
 	},
 	{
+		"term": "Reactive Reagent",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Ready [Action]",
 		"reference": "Detailed Actions",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
+	},
+	{
+		"term": "Reagent {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Recovery Potion",
@@ -1508,6 +1568,11 @@
 		"term": "Renown",
 		"reference": "Renown",
 		"link": "https://lolindhir.github.io/PnP/rules/general/renown"
+	},
+	{
+		"term": "Residuum",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
 		"term": "Resistance",
@@ -1775,6 +1840,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds"
 	},
 	{
+		"term": "Spellhold Base {Material}",
+		"reference": "Magical Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
 		"term": "Sphere [Area of Effect]",
 		"reference": "Area of Effect",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/aoe"
@@ -1876,13 +1946,13 @@
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Tiefling",
-		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Topple [Weapon Mastery]",
