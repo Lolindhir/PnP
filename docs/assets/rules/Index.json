@@ -385,6 +385,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
 	},
 	{
+		"term": "Concentrating Natural Reagents",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
+	},
+	{
 		"term": "Concentration",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting"
@@ -421,13 +426,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Creature Size",
@@ -631,13 +636,13 @@
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Dwarf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
 	},
 	{
 		"term": "Dwarf",
-		"reference": "Dwarf",
-		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Dwarvish [Language]",
@@ -930,6 +935,26 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed"
 	},
 	{
+		"term": "Herbal Medicine",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
+	},
+	{
+		"term": "Herbal Medicine Crafting",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
+	},
+	{
+		"term": "Herbalism",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
+	},
+	{
+		"term": "Herbalism Recipes",
+		"reference": "Herbalism Recipes",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism/herbalism_recipes"
+	},
+	{
 		"term": "Heroic Inspiration",
 		"reference": "Heroic Inspiration",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration"
@@ -966,13 +991,13 @@
 	},
 	{
 		"term": "Human",
-		"reference": "Human",
-		"link": "https://lolindhir.github.io/PnP/rules/races/human"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Human",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Human",
+		"link": "https://lolindhir.github.io/PnP/rules/races/human"
 	},
 	{
 		"term": "Human Ancestry",
@@ -1008,6 +1033,11 @@
 		"term": "Incapacitated [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
+	},
+	{
+		"term": "Incense Crafting",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
 	},
 	{
 		"term": "Indomitable",
@@ -1118,6 +1148,11 @@
 		"term": "Lightweight Weapon",
 		"reference": "Weapon Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
+	},
+	{
+		"term": "Limited Potion Crafting",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
 	},
 	{
 		"term": "Line [Area of Effect]",
@@ -1920,9 +1955,19 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
 	},
 	{
+		"term": "Tea",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
+	},
+	{
 		"term": "Tea Brewing",
 		"reference": "Regeneration Options",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options"
+	},
+	{
+		"term": "Tea Crafting",
+		"reference": "Herbalism",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
 	},
 	{
 		"term": "Temporary Hit Points",
@@ -1946,13 +1991,13 @@
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Tiefling",
-		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Topple [Weapon Mastery]",

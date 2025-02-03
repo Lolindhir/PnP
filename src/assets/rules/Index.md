@@ -77,6 +77,7 @@
 | Commander's Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Commanding Presence *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Common *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Concentrating Natural Reagents | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Concentration | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Conditions | [Conditions](https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions) |
 | Cone *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
@@ -84,8 +85,8 @@
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
+| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Cube *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
@@ -126,8 +127,8 @@
 | Dropping to 0 Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Drow | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Druidic *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
-| Dwarf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Dwarf | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf) |
+| Dwarf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Dwarvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Eignung für Training | [Training](https://lolindhir.github.io/PnP/rules/downtime/training) |
 | Eldritch Knight (Fighter) | [Eldritch Knight (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/eldritch_knight) |
@@ -186,6 +187,10 @@
 | Heavy *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Heavy Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Help *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Herbal Medicine | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
+| Herbal Medicine Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
+| Herbalism | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
+| Herbalism Recipes | [Herbalism Recipes](https://lolindhir.github.io/PnP/rules/crafting/herbalism/herbalism_recipes) |
 | Heroic Inspiration | [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) |
 | Hide *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | High Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
@@ -193,8 +198,8 @@
 | Hit Dice during Night Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Hit Dice to heal Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
 | Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
-| Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Human | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Human Ancestry | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Identifying an Ongoing Spell | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Illusion | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -202,6 +207,7 @@
 | Immunity | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Improvised Weapon | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Incapacitated *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Incense Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Indomitable | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Inferal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Infernal *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -224,6 +230,7 @@
 | Lightning Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Lightweight Armor | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Lightweight Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
+| Limited Potion Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Line *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Loading *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Long Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
@@ -384,13 +391,15 @@
 | Sweeping Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Sylvan *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Tactical Assessment *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Tea | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Tea Brewing | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
+| Tea Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
-| Tiefling | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
+| Tiefling | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Topple *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Touch *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Trained Body *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
