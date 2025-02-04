@@ -233,6 +233,9 @@ export class SpellListComponent implements OnInit, AfterViewInit {
     //load settings
     this.loadSettings();    
 
+    //set presets after loading setting because of dmMode
+    this.optionsPreset = this.spellService.getPresetFilterOptions(this.settings.dmMode);
+
     //get screen width
     this.screenWidth = window.innerWidth;
     this.setSize();
