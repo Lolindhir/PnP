@@ -120,12 +120,12 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
 	},
 	{
-		"term": "Arc-Stone {Material}",
+		"term": "Arc-Stone [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
 	{
-		"term": "Arcane Essence",
+		"term": "Arcane Essence [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -225,7 +225,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
 	},
 	{
-		"term": "Bead {Material}",
+		"term": "Bead [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -426,13 +426,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Creature Size",
@@ -460,7 +460,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
-		"term": "Curative Reagent",
+		"term": "Curative Reagent [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -585,7 +585,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
 	},
 	{
-		"term": "Divine Essence",
+		"term": "Divine Essence [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -948,11 +948,6 @@
 		"term": "Herbalism",
 		"reference": "Herbalism",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism"
-	},
-	{
-		"term": "Herbalism Recipes",
-		"reference": "Herbalism Recipes",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism/herbalism_recipes"
 	},
 	{
 		"term": "Heroic Inspiration",
@@ -1365,7 +1360,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
-		"term": "Parchment {Material}",
+		"term": "Parchment [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1410,7 +1405,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
 	},
 	{
-		"term": "Poisonous Reagent",
+		"term": "Poisonous Reagent [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1445,7 +1440,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
 	},
 	{
-		"term": "Primal Essence",
+		"term": "Primal Essence [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1565,7 +1560,7 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
 	},
 	{
-		"term": "Reactive Reagent",
+		"term": "Reactive Reagent [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
 	},
@@ -1878,6 +1873,11 @@
 		"term": "Spellhold Base [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+	},
+	{
+		"term": "Spellhold Crafting",
+		"reference": "Spellhold Crafting",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/spellholdcrafting"
 	},
 	{
 		"term": "Sphere [Area of Effect]",

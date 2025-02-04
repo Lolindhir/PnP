@@ -235,7 +235,7 @@ export class Spell implements Spell {
     if(rawSpell.materials != ''){
         componentsDisplay += ' (' + rawSpell.materials + ')';
     }
-    this.componentsDisplay = componentsDisplay;
+    this.componentsDisplay = componentsDisplay.replace('1 sp', '10 cp').replace(' gp', ' sp'); //replace GP with SP and SP with CP
 
     //get component contains material
     this.hasMaterials = this.componentsDisplay.toLowerCase().includes('m');
