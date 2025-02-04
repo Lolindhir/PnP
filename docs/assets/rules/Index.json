@@ -122,12 +122,12 @@
 	{
 		"term": "Arc-Stone [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Arcane Essence [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Arcane Focus",
@@ -227,7 +227,7 @@
 	{
 		"term": "Bead [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Beispielaktivitäten",
@@ -435,6 +435,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
+		"term": "Crafting Materials",
+		"reference": "Crafting Materials",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials"
+	},
+	{
 		"term": "Creature Size",
 		"reference": "Movement",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
@@ -462,7 +467,7 @@
 	{
 		"term": "Curative Reagent [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Cylinder [Area of Effect]",
@@ -587,7 +592,7 @@
 	{
 		"term": "Divine Essence [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Diviner (Wizard)",
@@ -717,7 +722,7 @@
 	{
 		"term": "Essence [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Evasion",
@@ -1177,12 +1182,12 @@
 	{
 		"term": "Magical Ink [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Magical Materials",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Magical Tenacious Armor/Shield",
@@ -1362,7 +1367,7 @@
 	{
 		"term": "Parchment [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Parry [Maneuver]",
@@ -1407,7 +1412,7 @@
 	{
 		"term": "Poisonous Reagent [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Potion",
@@ -1442,7 +1447,7 @@
 	{
 		"term": "Primal Essence [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Primordial [Language]",
@@ -1562,7 +1567,7 @@
 	{
 		"term": "Reactive Reagent [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Ready [Action]",
@@ -1572,7 +1577,7 @@
 	{
 		"term": "Reagent [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Recovery Potion",
@@ -1602,7 +1607,7 @@
 	{
 		"term": "Residuum [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Resistance",
@@ -1872,7 +1877,7 @@
 	{
 		"term": "Spellhold Base [Material]",
 		"reference": "Magical Materials",
-		"link": "https://lolindhir.github.io/PnP/rules/crafting/materials_components"
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
 	},
 	{
 		"term": "Spellhold Crafting",
