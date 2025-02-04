@@ -15,6 +15,7 @@ ___
 ### Fertigung abhängig vom Typ
 Die Voraussetzungen und Materialien zum Herstellen eines Spellholds sind von dessen Typ abhängig (siehe Spellhold Type Auflistungen):
 <div class="listNoGap"></div>
+
 - Spell-Liste, auf der der zu speichernder Zauber sein muss
 - die benötigte Skill-Proficiency (wenn man nicht Proficiency in dem Skill hat, kann man den Spellhold nicht herstellen)
 - der für den Check verwendete Ability Modifier
@@ -50,6 +51,7 @@ Die Voraussetzungen und Materialien zum Herstellen eines Spellholds sind von des
 ### Voraussetzung während der Herstellung
 Der Zauber, der in den Spellhold eingebracht werden soll, muss während der gesamten Herstellungsdauer entweder:
 <div class="listNoGap"></div>
+
 - in deinem Zauberbuch stehen
 - in deinem Ritualbuch stehen
 - gelernt (known) sein

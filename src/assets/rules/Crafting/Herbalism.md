@@ -18,6 +18,7 @@ ___
 ## Concentrating Natural Reagents
 Es können mittels Konzentration Reagenzien einer niedrigeren Seltenheitsstufe in ein Reagenz der nächsthöheren Seltenheitsstufe umgewandelt werden (siehe Tabelle). Das Ergebnis ist dabei ein Konzentrat, welches aber trotzdem noch als pflanzliches Reagenz zählt.
 <div class="listNoGap"></div>
+
 - dauert 2 Stunden
 - kein Check notwendig, aber Tool Proficiency
 - benötigt Herbalism Kit
@@ -48,6 +49,7 @@ Mit Hilfe der Kräuterkunde können pflanzenbasierte Heiltränke, Gegengifte und
 ## Making Incense
 Incense werden für einige Zauber als materielle Komponente benötigt (z.B. Find Familiar oder Legend Lore). Aus einem Reactive Reagent können Incense hergestellt werden. Abhängig von der Seltenheit des Reagenzes, wird ein gewisser Wert an Incense produziert.
 <div class="listNoGap"></div>
+
 - dauert 1 Stunde
 - kein Check notwendig, aber Tool Proficiency
 - benötigt Herbalism Kit
@@ -66,6 +68,7 @@ Incense werden für einige Zauber als materielle Komponente benötigt (z.B. Find
 ## Making Herbal Medicine and Tea
 Kräuter können dazu verwendet werden um den Heilungsprozess in Form von Medizinbündeln zu unterstützen oder Tee herzustellen, der hilft, sich von den Strapazen der Abenteuer zu erholen.
 <div class="listNoGap"></div>
+
 - dauert 2 Stunden
 - kein Check notwendig, aber Tool Proficiency
 - benötigt Herbalism Kit
