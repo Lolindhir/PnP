@@ -1200,11 +1200,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special"
 	},
 	{
-		"term": "Major Potion Overview",
-		"reference": "Major Potion Overview",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/potions_major"
-	},
-	{
 		"term": "Malnutrition",
 		"reference": "Hazards",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards"
@@ -1428,6 +1423,11 @@
 		"term": "Potion Effect Restriction",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
+	},
+	{
+		"term": "Potion Overview",
+		"reference": "Potion Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/potions_overview"
 	},
 	{
 		"term": "Potion Rarity & Cost",

@@ -240,7 +240,6 @@
 | Magical Materials | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Magical Tenacious Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Magical Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
-| Major Potion Overview | [Major Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potions_major) |
 | Malnutrition | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Maneuvering Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Marching Order | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
@@ -286,6 +285,7 @@
 | Poisonous Reagent | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/materials_components) |
 | Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Potion Effect Restriction | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Potion Overview | [Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potions_overview) |
 | Potion Rarity & Cost | [Potion Rarity & Cost](https://lolindhir.github.io/PnP/rules/equipment/potions/potions_costs) |
 | Prayer Bead | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Precision Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |

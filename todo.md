@@ -1,5 +1,6 @@
 # Features
-- direkten Link auf Spells ermöglichen (wie spells/print)
+- Kampagnen-Infos als extra Seite
+- Item-Seite -> Informationen für Items in Seite und Rules aus CSV/JSON-Datenbestand befüllen (Preise, Rezepte, Beschreibungen usw.)
 
 # Bugs
 
