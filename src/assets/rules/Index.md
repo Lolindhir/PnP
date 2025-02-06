@@ -70,6 +70,8 @@
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Cleave *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
+| Cleaving through Creatures | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
+| Climb Onto a Bigger Creature | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Coins | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Cold Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Combat | [Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat) |
@@ -85,8 +87,8 @@
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
-| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
+| Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Crafting Materials | [Crafting Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -136,8 +138,8 @@
 | Elemental Aspect Calls | [Elemental Aspect Calls](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_aspect_calls) |
 | Elemental Aspect Spells - Sage | [Elemental Aspect Spells - Sage](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_sage) |
 | Elemental Aspect Spells - Warrior | [Elemental Aspect Spells - Warrior](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spells_warrior) |
-| Elf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
+| Elf | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
 | Elven Lineage | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Elvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Emanation *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
@@ -272,6 +274,7 @@
 | Opportunity Attack | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Orc *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Order of Combat | [Order of Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order) |
+| Overrun (Moving Through Other Creatures) *[Action]* | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Paralyzed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Parchment *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Parry *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -399,8 +402,8 @@
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
-| Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Tiefling | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Topple *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Touch *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Trained Body *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -412,6 +415,7 @@
 | Tremorsense | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Trip Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Truesight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Tumble (Moving Through Other Creatures) *[Action]* | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Two-Handed *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Uncanny Dodge | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Unconscious *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |

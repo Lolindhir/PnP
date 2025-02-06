@@ -350,6 +350,16 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
 	},
 	{
+		"term": "Cleaving through Creatures",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
+		"term": "Climb Onto a Bigger Creature",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
 		"term": "Coins",
 		"reference": "Coins",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/coins"
@@ -426,13 +436,13 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
 	},
 	{
 		"term": "Crafting Materials",
@@ -681,13 +691,13 @@
 	},
 	{
 		"term": "Elf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Elf",
+		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
 	},
 	{
 		"term": "Elf",
-		"reference": "Elf",
-		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Elven Lineage",
@@ -1360,6 +1370,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_order"
 	},
 	{
+		"term": "Overrun (Moving Through Other Creatures) [Action]",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
+	},
+	{
 		"term": "Paralyzed [Condition]",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details"
@@ -1996,13 +2011,13 @@
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Tiefling",
-		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Tiefling",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"reference": "Tiefling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
 		"term": "Topple [Weapon Mastery]",
@@ -2058,6 +2073,11 @@
 		"term": "Truesight",
 		"reference": "Cover, Vision & Light",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light"
+	},
+	{
+		"term": "Tumble (Moving Through Other Creatures) [Action]",
+		"reference": "Movement",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
 	},
 	{
 		"term": "Two-Handed [Weapon Property]",
