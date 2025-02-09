@@ -4,52 +4,53 @@
 
 
 
-## Elf
+## 3. Choose a Background
+Choose your character's background. You can choose any of the sample backgrounds detailed in the [Background section](https://lolindhir.github.io/PnP/rules/creation/backgrounds) or create a custom background for yourself.
+A background provides concrete benefits (features, proficiencies, languages, and feats).
 
-***Languages***. You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.
+**Background Feature.** Each background provides a unique feature that represents a special ability or benefit your character gains from their background. This feature can offer various advantages, such as special knowledge, connections, or abilities that can be used during your adventures.
 
+**Proficiencies.** Each background gives a character proficiency in two skills. In addition, most backgrounds give a character proficiency with one or more tools.
 
-***Elf Weapon Training***. You have proficiency with the longsword, shortsword, shortbow, and longbow.
+**Languages.** Each background gives you a number of languages you understand and can speak.
 
-***Extra Language***. You can speak, read, and write one extra language of your choice.
-
-***Sea Cunning.***
-
-
-## Dwarf
-
-***Dwarven Combat Training***. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.
-
-***Tool Proficiency***. You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.
-
-***Stonecunning***. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
-
-***Languages***. You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.
+**Feat.** A background gives you a feat, which grants your character particular capabilities.
 
 
 
-
-## Halflings
-
-***Languages***. You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.
+If a character would gain the same proficiency from two different sources, he or she can choose a different proficiency of the same kind (skill or tool) instead.
 
 
+### Suggested Characteristics
+A background contains suggested personal characteristics based on your background. You can pick characteristics, roll dice to determine them randomly, or use the suggestions as inspiration for characteristics of your own creation.
 
-## Tiefling
+### Customizing a Background
+You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in chapter 5. (If you spend coin, you can't also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can't find a feature that matches your desired background, work with your DM to create one.
 
-***Languages***. You can speak, read, and write Common and Infernal.
+
+
+**Note Proficiencies.** Your background gives proficiency in two skills and with one tool. Record this information on your character sheet. Your class also gives proficiencies. Check your class description in chapter 3 and note the proficiencies on your character sheet. On the sample character sheet, you can indicate proficiency in skills and saving throws by marking the circle next to them. The features table in your class description shows your Proficiency Bonus (described in chapter 1), which is +2 for a level 1 character. Note this number on your character sheet. You'll fill in other numbers connected to these proficiencies in step 5.
 
 
 
 
-## Human
 
-**Natural Trader.** You have proficiency in the Persuasion skill. Additionally, you have advantage on Charisma (Persuasion) checks when negotiating prices with others that aren't hostile toward you.
+### Sample Background
 
-**Children of the Wild.** You have proficiency in the Nature skill and you gain proficiency with the herbalism kit.
+### Custom Background
 
-**Stone Craftsmen.** You gain proficiency with the artisan's tools of your choice: smith's tools or mason's tools. You have proficiency with the light hammer and warhammer.
 
-**Versatile Culture.** You gain proficiency in one skill and one tool of your choice. Choose one of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.
 
-**Snowfolk.** You have proficiency in the Survival skill. You have proficiency with battleaxes, great axes, longswords and greatswords.
+
+## 6. Zusätzliches freies Feat (Talent) oder ASI
+Jeder Charakter erhält zusätzlich entweder ein Feat (keines mit Kosten von 2 Punkten) oder kann einen frei wählbaren Attributwert um 1 steigern. Am Ende der Charaktererstellung darf aber kein Attribut einen Wert von 17 übersteigen. Ich würde jedoch in den meisten Fällen zu einem Feat raten, da diese einem Charakter viel mehr Individualität verleihen können. Will ich beispielsweise einen Barbaren spielen, der mit zwei Kriegsäxten kämpft, kann ich das „Dual Wielder“-Feat nehmen, welches ihm erlaubt auch Waffen doppelt führen zu können, die nicht die Light-Property besitzen.
+Bei den Feats handelt es sich nicht 1-zu-1 um die Feats aus dem Player’s Handbook, sondern um kleinere Teile von den Feats, die im groben einem halben Feat aus dem Player’s Handbook entsprechen. Aus diesem Grund dürfen nur die Feats verwendet werden, die in dem Dokument im Verzeichnis zur Charaktererstellung beschrieben werden. Prinzipiell könnt ihr jedes Feat nehmen, solange ihr dessen Voraussetzung erfüllt, aber damit es für die Story auch Sinn macht, sprecht dies bitte mit mir im Vorhinein ab. Wir können uns auch gerne ein neues Feat ausdenken, falls euch etwas fehlt oder ihr ein bestimmtes Bild von eurem Charakter im Auge habt, der mit einem Feat vielleicht umgesetzt werden könnte.
+
+
+
+
+### Choosing Languages
+Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table. Knowledge of a language means your character can communicate in it, read it, and write it. Your class and other features might also give you languages.
+
+The Standard Languages table lists languages that are widespread on D&D worlds. Every player character knows Common, which originated in the planar metropolis of Sigil, the hub of the multiverse. The other standard languages originated with the first members of the most prominent species in the worlds of D&D and have since spread widely.
+The Rare Languages table lists languages that are either secret or derived from other planes of existence and thus less widespread in the worlds of the Material Plane. Some features let a character learn a rare language.

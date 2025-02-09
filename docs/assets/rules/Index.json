@@ -1,5 +1,15 @@
 [
 	{
+		"term": "4. Beschreibung des Charakters",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
+		"term": "5. Ausrüstung",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
 		"term": "Ability",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
@@ -28,6 +38,11 @@
 		"term": "Ability Score",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
+	},
+	{
+		"term": "Ability Score Array",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Ability Score Improvement (ASI)",
@@ -98,6 +113,11 @@
 		"term": "Alchemist's Fire",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
+	},
+	{
+		"term": "Alignment and Personality",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Ambush [Maneuver]",
@@ -195,16 +215,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social"
 	},
 	{
-		"term": "Available Classes",
-		"reference": "Available Classes",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/class_list"
-	},
-	{
-		"term": "Available Races",
-		"reference": "Available Races",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/race_list"
-	},
-	{
 		"term": "Background",
 		"reference": "Background",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
@@ -258,6 +268,11 @@
 		"term": "Bonus Action",
 		"reference": "Actions",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions"
+	},
+	{
+		"term": "Bonuses for Intelligence",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Boost Natural Healing",
@@ -345,14 +360,14 @@
 		"link": "https://lolindhir.github.io/PnP/rules/races/tiefling"
 	},
 	{
+		"term": "Class Overview",
+		"reference": "Class Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/class_list"
+	},
+	{
 		"term": "Cleave [Weapon Mastery]",
 		"reference": "Weapon Mastery",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries"
-	},
-	{
-		"term": "Cleaving through Creatures",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
 	},
 	{
 		"term": "Climb Onto a Bigger Creature",
@@ -420,6 +435,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
 	},
 	{
+		"term": "Considering Your Past and Present",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
 		"term": "Constitution Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
@@ -448,6 +468,11 @@
 		"term": "Crafting Materials",
 		"reference": "Crafting Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials"
+	},
+	{
+		"term": "Creating a Character",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Creature Size",
@@ -655,11 +680,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/races/dwarf"
 	},
 	{
-		"term": "Dwarf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
-	},
-	{
 		"term": "Dwarvish [Language]",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
@@ -693,11 +713,6 @@
 		"term": "Elf",
 		"reference": "Elf",
 		"link": "https://lolindhir.github.io/PnP/rules/races/elf"
-	},
-	{
-		"term": "Elf",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Elven Lineage",
@@ -895,11 +910,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
 	},
 	{
-		"term": "Halflings",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
-	},
-	{
 		"term": "Hardened Armor",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special"
@@ -998,11 +1008,6 @@
 		"term": "Hit Points",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
-	},
-	{
-		"term": "Human",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Human",
@@ -1118,6 +1123,11 @@
 		"term": "Languages",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
+	},
+	{
+		"term": "Level 1 Hit Points by Class",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Level Up",
@@ -1295,6 +1305,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement"
 	},
 	{
+		"term": "Mowing through Creatures",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack"
+	},
+	{
 		"term": "Multiclassing",
 		"reference": "Multiclassing",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/multiclassing"
@@ -1388,6 +1403,11 @@
 		"term": "Parry [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Personality Traits by Alignment",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Petrified [Condition]",
@@ -1528,6 +1548,11 @@
 		"term": "Quick Toss [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
+	},
+	{
+		"term": "Race Overview",
+		"reference": "Race Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/races/race_list"
 	},
 	{
 		"term": "Radiant Damage",
@@ -1925,6 +1950,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
 	},
 	{
+		"term": "Step 4: Choose an Alignment",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
 		"term": "Strength Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
@@ -1995,6 +2025,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "The Nine Alignments",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
 		"term": "Thieves' Cant [Language]",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
@@ -2008,11 +2043,6 @@
 		"term": "Thunder Damage",
 		"reference": "Damage Types",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types"
-	},
-	{
-		"term": "Tiefling",
-		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
 	},
 	{
 		"term": "Tiefling",
