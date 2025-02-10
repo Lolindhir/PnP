@@ -22,6 +22,7 @@ export class RuleArticleComponent {
   href: string = "";
   sidebarOpen: boolean = false;
   isMobile: boolean = true;
+  needStartGap: boolean = false;
   
   constructor(private route: ActivatedRoute, public dialog: MatDialog) { }
 
@@ -68,12 +69,19 @@ export class RuleArticleComponent {
               this.markDownSource = './assets/rules/404.md';
             }
             else{
-              //check if markdown file is empty
+              //check markdown file
               fetch(this.markDownSource)
                 .then(response => response.text())
                 .then(text => {
+                  
+                  //if markdown file is empty
                   if(text.length == 0){
                     this.markDownSource = './assets/rules/404.md';
+                  }
+
+                  //if markdown file doesn't starts with heading and the rule has children
+                  if(!text.trim().startsWith('#') && (this.rulesContent != undefined && this.rulesContent.children.length > 0)){
+                    this.needStartGap = true;
                   }
                 });
             }

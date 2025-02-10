@@ -1,4 +1,3 @@
-[Test](https://lolindhir.github.io/PnP/spells/Test)
 
 Here are the steps to make a character:
 <div class="listNoGap"></div>

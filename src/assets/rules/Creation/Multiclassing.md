@@ -1,5 +1,4 @@
 
-<div class="startgap"></div>
 
 Multiclassing allows you to gain levels in multiple classes. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in one of the standard class options.
 
