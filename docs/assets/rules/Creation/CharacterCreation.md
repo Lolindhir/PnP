@@ -1,3 +1,4 @@
+[Test](https://lolindhir.github.io/PnP/spells/Test)
 
 Here are the steps to make a character:
 <div class="listNoGap"></div>
@@ -26,16 +27,8 @@ You gain all the traits in the class' Core Traits table and the class' level 1 f
 
 
 ## Step 3: Choose a Background
-Choose your character's background. You can choose any of the sample backgrounds detailed in the [Background section](https://lolindhir.github.io/PnP/rules/creation/backgrounds) or create a custom background for yourself.
-A background provides concrete benefits (features, proficiencies, languages, and feats).
-
-**Background Feature.** Each background provides a unique feature that represents a special ability or benefit your character gains from their background. This feature can offer various advantages, such as special knowledge, connections, or abilities that can be used during your adventures.
-
-**Proficiencies.** Each background gives a character proficiency in two skills. In addition, most backgrounds give a character proficiency with one or more tools.
-
-**Languages.** Each background gives you a number of languages you understand and can speak.
-
-**Feat.** A background gives you a feat, which grants your character particular capabilities.
+Choose your character's background. You can choose any of the pre made backgrounds detailed in the [Sample Backgrounds section](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) or create a custom background for yourself, using the rules described in the [Backgrounds section](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds).
+You gain all the benefits a background provides (feature, proficiencies, languages, and starting feat).
 
 
 
@@ -46,13 +39,14 @@ To determine your ability scores, you will use a defined array of ability scores
 
 > 15  15  13  10  10  8
 > 15  14  14  10  10  8
-> 15  14  13  12  10  8
+> 15  14  13  12  10  8 (standard)
 > 14  14  14  12  10  8
 > 14  14  13  12  12  8
 
 
 
-### Adjust Ability Score
+
+### Adjust Ability Scores
 After assigning your ability scores, adjust them according to your race and possibly your background. 
 *Constraint: After adjusting, no ability score can exceed a value of 17.*
 
@@ -85,55 +79,48 @@ For positive Intelligence modifiers, you receive points that you can spend on ad
 
 ## Step 6: Determine Mechanical Details
 
+**Proficiency Bonus.** The [Proficiency bonus](https://lolindhir.github.io/PnP/rules/glossary/proficiency) table shows your Proficiency Bonus, which is +2 for a level 1 character.
 
-**Proficiency Bonus.** The features table in your class description shows your Proficiency Bonus (described in chapter 1), which is +2 for a level 1 character.
+**Saving Throws.** The modifier for saving throws you're not proficient in is the appropriate ability modifier. For the saving throws you have proficiency in, add your Proficiency Bonus to the appropriate ability modifier.
 
-**Saving Throws.** For the saving throws you have proficiency in, add your Proficiency Bonus to the appropriate ability modifier and note the total. Some players also like to note the modifier for saving throws they're not proficient in, which is just the relevant ability modifier.
+**Skills.** The modifier for skills you're not proficient in is the associated ability modifier, as described in the [Skills Overview](https://lolindhir.github.io/PnP/rules/glossary/skills). For skills you have proficiency in, add your Proficiency Bonus to the ability modifier associated with that skill.
 
-**Skills.** For skills you have proficiency in, add your Proficiency Bonus to the ability modifier associated with that skill, and note the total. You might also wish to note the modifier for skills you're not proficient in, which is just the relevant ability modifier.
+**Passive Insight, Investigation, and Perception.** Sometimes your DM will determine whether your character notices something without asking you to make a Wisdom (Insight) Intelligence (Investigation), or Wisdom (Perception) check; the DM uses your Passive scores instead. Use this formula to determine your Passive scores:
+> Passive Score = 10 + associated check modifier
+Include all modifiers that apply to the checks. For example, if your character has a Wisdom of 15 and proficiency in the Perception skill, you have a Passive Perception of 14 (10 + 2 for your Wisdom modifier + 2 for proficiency).
 
-**Passive Perception.** Sometimes your DM will determine whether your character notices something without asking you to make a Wisdom (Perception) check; the DM uses your Passive Perception instead. Passive Perception is a score that reflects a general awareness of your surroundings when you're not actively looking for something. Use this formula to determine your Passive Perception score:
-Passive Perception = 10 + Wisdom (Perception) check modifier
-Include all modifiers that apply to your Wisdom (Perception) checks. For example, if your character has a Wisdom of 15 and proficiency in the Perception skill, you have a Passive Perception of 14 (10 + 2 for your Wisdom modifier + 2 for proficiency).
+**Hit Points.** Your class and Constitution modifier determine your Hit Point maximum at level 1:
+> Starting Hit Points = maximum value of your class' hit point die + your Constitution modifier
 
-**Hit Points.** Your class and Constitution modifier determine your Hit Point maximum at level 1, as shown on the Level 1 Hit Points by Class table.
+**Hit Point Dice.** Your class's description tells you the die type of your character's Hit Point Dice (or Hit Dice for short). At level 1, your character has 1 Hit Die. You can spend Hit Dice during a Night Rest to recover Hit Points.
 
-#### Level 1 Hit Points by Class
-| Class                          | Hit Point Maximum            |
-| :----------------------------- | :--------------------------- |
-| Barbarian                      | 12 + Con. modifier           |
-| Fighter, Paladin, or Ranger    | 10 + Con. modifier           |
-| Bard, Cleric, Druid, Monk, Rogue, or Warlock | 8 + Con. modifier |
-| Sorcerer or Wizard             | 6 + Con. modifier            |
+**Initiative.** Your Dexterity modifier is your Initiative.
 
-The character sheet includes room to note your current Hit Points when you take damage, as well as any Temporary Hit Points you might gain. There's also space to track Death Saving Throws.
+**Armor Class.** Without armor or a shield, your base Armor Class is 10 plus your Dexterity modifier. If your starting equipment includes armor or a shield (or both), calculate your AC using the rules in the [Armor section](https://lolindhir.github.io/PnP/rules/equipment/armor). A class feature might give you a different way to calculate your AC.
 
-**Hit Point Dice.** Your class's description tells you the die type of your character's Hit Point Dice (or Hit Dice for short); write this on your character sheet. At level 1, your character has 1 Hit Die. You can spend Hit Dice during a Short Rest to recover Hit Points. Your character sheet also includes space to note how many Hit Dice you've spent.
+**Attacks.** The attack roll bonus for a weapon with which you have proficiency is one of the following unless a weapon's property says otherwise:
+<div class="listNoGap"></div>
 
-**Initiative.** Write your Dexterity modifier in the space for Initiative on your character sheet.
-
-**Armor Class.** Without armor or a shield, your base Armor Class is 10 plus your Dexterity modifier. If your starting equipment includes armor or a shield (or both), calculate your AC using the rules in chapter 6. A class feature might give you a different way to calculate your AC.
-
-**Attacks.** In the Weapons & Damage Cantrips section of the character sheet, write your starting weapons. The attack roll bonus for a weapon with which you have proficiency is one of the following unless a weapon's property says otherwise:
 - Melee attack bonus: Strength modifier + Proficiency Bonus
 - Ranged attack bonus: Dexterity modifier + Proficiency Bonus
+Look up the damage and properties of your weapons in the [Weapons section](https://lolindhir.github.io/PnP/rules/equipment/weapons). You add the same ability modifier you use for attacks with a weapon to your damage rolls with that weapon.
 
-Look up the damage and properties of your weapons in chapter 6. You add the same ability modifier you use for attacks with a weapon to your damage rolls with that weapon.
+**Spellcasting.**
+<div class="listNoGap"></div>
 
-**Spellcasting.** Note both the saving throw DC for your spells and the attack bonus for attacks you make with them, using these formulas:
 - Spell save DC = 8 + spellcasting ability modifier + Proficiency Bonus
 - Spell attack bonus = spellcasting ability modifier + Proficiency Bonus
-
 Your spellcasting ability modifier for a spell is determined by whatever feature gives you the ability to cast the spell.
 
-**Spell Slots, Cantrips, and Prepared Spells.** If your class gives you the Spellcasting or Pact Magic feature, your class features table shows the number of spell slots you have available, how many cantrips you know, and how many spells you can prepare. Choose your cantrips and prepared spells, and note them—along with your number of spell slots—on your character sheet.
+**Spell Slots, Cantrips, and Prepared Spells.** If your class gives you the Spellcasting or Pact Magic feature, your class features table shows the number of spell slots you have available, how many cantrips and spells you know, and how many spells you can prepare. Choose your known cantrips and spells and then prepare spells.
 
 
 
 ## Step 7: Describe your Character
 
-### Considering Your Past and Present
+### Considering your Past and Present
 Let your character's background and species inspire how you imagine their past. That past fed into the character's present. With that in mind, consider answers to the following questions as your character:
+<div class="listNoGap"></div>
 
 - Who raised you?
 - Who was your dearest childhood friend?
@@ -142,79 +129,15 @@ Let your character's background and species inspire how you imagine their past. 
 - Did you join an organization, such as a guild or religion? If so, are you still a member of it?
 - What elements of your past inspire you to go on adventures now?
 
+### Choose an Alignment
+Choose your character's alignment from the options described in the [Alignment Details](https://lolindhir.github.io/PnP/rules/creation/character_creation/alignment) page. D&D assumes that player characters aren't of an evil alignment. Check with your DM before making an evil character.
 
-
-### Step 4: Choose an Alignment
-Choose your character's alignment from the options below, and note it on your character sheet. D&D assumes that player characters aren't of an evil alignment. Check with your DM before making an evil character.
-
-#### The Nine Alignments
-A creature's alignment broadly describes its ethical attitudes and ideals. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward order (lawful, chaotic, or neutral). The summaries of the alignments below describe the typical behavior of a creature with that alignment; individuals can vary from that behavior.
-
-**Lawful Good (LG).** Lawful Good creatures endeavor to do the right thing as expected by society. Someone who fights injustice and protects the innocent without hesitation is probably Lawful Good.
-
-**Neutral Good (NG).** Neutral Good creatures do the best they can, working within rules but not feeling bound by them. A kindly person who helps others according to their needs is probably Neutral Good.
-
-**Chaotic Good (CG).** Chaotic Good creatures act as their conscience directs with little regard for what others expect. A rebel who waylays a cruel baron's tax collectors and uses the stolen money to help the poor is probably Chaotic Good.
-
-**Lawful Neutral (LN).** Lawful Neutral individuals act in accordance with law, tradition, or personal codes. Someone who follows a disciplined rule of life—and isn't swayed either by the demands of those in need or by the temptations of evil—is probably Lawful Neutral.
-
-**Neutral (N).** Neutral is the alignment of those who prefer to avoid moral questions and don't take sides, doing what seems best at the time. Someone who's bored by moral debate is probably Neutral.
-
-**Chaotic Neutral (CN).** Chaotic Neutral creatures follow their whims, valuing their personal freedom above all else. A scoundrel who wanders the land living by their wits is probably Chaotic Neutral.
-
-**Lawful Evil (LE).** Lawful Evil creatures methodically take what they want within the limits of a code of tradition, loyalty, or order. An aristocrat exploiting citizens while scheming for power is probably Lawful Evil.
-
-**Neutral Evil (NE).** Neutral Evil is the alignment of those who are untroubled by the harm they cause as they pursue their desires. A criminal who robs and murders as they please is probably Neutral Evil.
-
-**Chaotic Evil (CE).** Chaotic Evil creatures act with arbitrary violence, spurred by their hatred or bloodlust. A villain pursuing schemes of vengeance and havoc is probably Chaotic Evil.
-
-
-### Alignment and Personality
-Alignment can shape a character's personality, goals, and core beliefs. Looking at the two elements of an alignment, you can use the lists below to inspire details of your character's personality.
-
-### Personality Traits by Alignment
-| Alignment | d4 | Associated Trait |
-| :-------: | :-: | :--------------: |
-| Chaotic   |  1  | Boastful         |
-|           |  2  | Impulsive        |
-|           |  3  | Rebellious       |
-|           |  4  | Self-absorbed    |
-| Good      |  1  | Compassionate    |
-|           |  2  | Helpful          |
-|           |  3  | Honest           |
-|           |  4  | Kind             |
-| Evil      |  1  | Dishonest        |
-|           |  2  | Vengeful         |
-|           |  3  | Cruel            |
-|           |  4  | Greedy           |
-| Lawful    |  1  | Cooperative      |
-|           |  2  | Loyal            |
-|           |  3  | Judgmental       |
-|           |  4  | Methodical       |
-| Neutral   |  1  | Selfish          |
-|           |  2  | Disinterested    |
-|           |  3  | Laconic          |
-|           |  4  | Pragmatic        |
-
+### Choose your Character's Personality and Traits
+Depending on your character's alignment and past, determine you character's personality as described in the [Character Traits](https://lolindhir.github.io/PnP/rules/creation/character_creation/character_traits) section. 
 
 
 
 ## Step 8: Choose Equipment
-
-Starting Gold and look up
-
-
-
-
-
-
-
-## 4. Beschreibung des Charakters
-Es wird eine etwas abgewandelte Form des Inspirationssystems verwendet, welches im Verzeichnis zur Charaktererstellung erläutert wird. Dort findet sich auch eine Erklärung und Hilfestellung für die Vergabe von Alignment und Persönlichen Eigenschaften.
-Als Background darf jeder bisher offiziell Veröffentlichte (Übersicht im Verzeichnis) verwendet werden. Dabei muss sich, wie auch im Player’s Handbook als Möglichkeit angegeben, nicht stur an die Beschreibung gehalten werden, sondern Proficiencies, Sprachen, Features etc. können flexibel getauscht und vergeben werden. Auch wenn ihr eine Idee oder eine Vorstellung für einen neuen Background oder ein neues Background-Feature habt, dann können wir das gerne besprechen und einbauen.
-
-
-## 5. Ausrüstung
-Bei der Erstellung eines Level 1 Charakters werden die gleichen Regeln verwendet, die im Player’s Handbook beschrieben sind (entweder Verwendung des Starting Equipments oder Kauf mit einem Klassen-abhängigen Budgets). Ein neuer Charakter auf höherem Level hat aber in seiner Vergangenheit potentiell schon mehr Geld und auch Ausrüstung angesammelt. Je nach Höhe des Levels werde ich euch deshalb ein bestimmtes Budget und ggfs. auch schon eine Auswahl aus magischen Gegenständen geben. Dies ist aber unteranderem abhängig vom bisherigen Verlauf der Kampagne und deshalb kann ich hier noch keine konkreten Angaben für jedes Level machen. Eine Liste mit dem Startgeld, die insbesondere bei One-Shots eingesetzt werden kann, findet sich im Verzeichnis zur Charaktererstellung.
+You have 50 silver pieces (see [Coin section](https://lolindhir.github.io/PnP/rules/equipment/coins)) as your starting wealth. With these coins, you can buy [weapons](https://lolindhir.github.io/PnP/rules/equipment/weapons), [armor](https://lolindhir.github.io/PnP/rules/equipment/armor), [tools](https://lolindhir.github.io/PnP/rules/equipment/tools), and [adventuring gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear).
 
 

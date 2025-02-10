@@ -1,15 +1,5 @@
 [
 	{
-		"term": "4. Beschreibung des Charakters",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
-	},
-	{
-		"term": "5. Ausrüstung",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
-	},
-	{
 		"term": "Ability",
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency"
@@ -115,9 +105,9 @@
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear"
 	},
 	{
-		"term": "Alignment and Personality",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+		"term": "Alignment",
+		"reference": "Alignment",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/alignment"
 	},
 	{
 		"term": "Ambush [Maneuver]",
@@ -217,7 +207,12 @@
 	{
 		"term": "Background",
 		"reference": "Background",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/backgrounds"
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds"
+	},
+	{
+		"term": "Background Features",
+		"reference": "Background Features",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features"
 	},
 	{
 		"term": "Bait and Switch [Maneuver]",
@@ -345,6 +340,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "Character Traits",
+		"reference": "Character Traits",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/character_traits"
+	},
+	{
 		"term": "Charisma Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
@@ -435,11 +435,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/magic_schools"
 	},
 	{
-		"term": "Considering Your Past and Present",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
-	},
-	{
 		"term": "Constitution Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions"
@@ -503,6 +498,11 @@
 		"term": "Curative Reagent [Material]",
 		"reference": "Magical Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components"
+	},
+	{
+		"term": "Custom Background",
+		"reference": "Background",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds"
 	},
 	{
 		"term": "Cylinder [Area of Effect]",
@@ -1125,11 +1125,6 @@
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages"
 	},
 	{
-		"term": "Level 1 Hit Points by Class",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
-	},
-	{
 		"term": "Level Up",
 		"reference": "Level Up",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling"
@@ -1403,11 +1398,6 @@
 		"term": "Parry [Maneuver]",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers"
-	},
-	{
-		"term": "Personality Traits by Alignment",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Petrified [Condition]",
@@ -1935,6 +1925,11 @@
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
 	},
 	{
+		"term": "Standard Array",
+		"reference": "Creating a Character",
+		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
+	},
+	{
 		"term": "Standard Coin Exchange Rates",
 		"reference": "Coins",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/coins"
@@ -1948,11 +1943,6 @@
 		"term": "Steady Aim",
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue"
-	},
-	{
-		"term": "Step 4: Choose an Alignment",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Strength Potion",
@@ -2023,11 +2013,6 @@
 		"term": "Temporary Hit Points",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints"
-	},
-	{
-		"term": "The Nine Alignments",
-		"reference": "Creating a Character",
-		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation"
 	},
 	{
 		"term": "Thieves' Cant [Language]",

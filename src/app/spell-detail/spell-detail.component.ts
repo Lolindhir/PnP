@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Spell, SpellListCategory } from '@models/spell.model';
 import { SpellService } from '@services/spell.service';
 import { SpellClass } from '@models/spell-class.model';
@@ -22,14 +22,23 @@ export class SpellDetailComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private spellService: SpellService
+    private spellService: SpellService,
+    private router: Router // Inject the Router
   ) {
+    
+    //get
     this.route.params.subscribe(params => {
       var spellId: string = params['id'];
       this.spellIdName = decodeURI(spellId);
       this.spell = this.spellService.getSpellById(spellId);
       this.spellLoaded = this.spell != undefined;
     });
+
+    //if spell couldn't be loaded, go to spell list page
+    // If spell couldn't be loaded, navigate to spell list page
+    if (!this.spellLoaded) {
+      this.router.navigate(['/spell-list']);
+    }
   }
 
   onTranslation(spell: Spell){

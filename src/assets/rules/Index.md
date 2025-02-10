@@ -1,7 +1,5 @@
 | Term | Reference |
 |:-----|:----------|
-| 4. Beschreibung des Charakters | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
-| 5. Ausrüstung | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Ability | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Check | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Ability Modifier | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
@@ -23,7 +21,7 @@
 | Adventuring Equipment | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Adventuring Gear | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Alchemist's Fire | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
-| Alignment and Personality | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
+| Alignment | [Alignment](https://lolindhir.github.io/PnP/rules/creation/character_creation/alignment) |
 | Ambush *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ammunition | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Ammunition *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -43,7 +41,8 @@
 | Attack *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Attack Roll | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Attitude | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
-| Background | [Background](https://lolindhir.github.io/PnP/rules/creation/backgrounds) |
+| Background | [Background](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds) |
+| Background Features | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Bait and Switch *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ball Bearings | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Battle Maneuvers | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -69,6 +68,7 @@
 | Chain | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Champion (Fighter) | [Champion (Fighter)](https://lolindhir.github.io/PnP/rules/classes/fighter/champion) |
 | Character Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Character Traits | [Character Traits](https://lolindhir.github.io/PnP/rules/creation/character_creation/character_traits) |
 | Charisma Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
@@ -87,7 +87,6 @@
 | Conditions | [Conditions](https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions) |
 | Cone *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Conjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
-| Considering Your Past and Present | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
@@ -101,6 +100,7 @@
 | Cunning Action | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Cunning Strike | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Curative Reagent *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
+| Custom Background | [Background](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds) |
 | Cylinder *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | D20 Test | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Damage | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -225,7 +225,6 @@
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
-| Level 1 Hit Points by Class | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Level Up | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Light *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -281,7 +280,6 @@
 | Paralyzed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Parchment *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Parry *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
-| Personality Traits by Alignment | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Petrified *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Piercing Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Pillars of the Game | [Pillars of the Game](https://lolindhir.github.io/PnP/rules/general/pillars) |
@@ -387,10 +385,10 @@
 | Spellhold Crafting | [Spellhold Crafting](https://lolindhir.github.io/PnP/rules/crafting/spellholdcrafting) |
 | Sphere *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Stabilize | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Standard Array | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Standard Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Steady Aim | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
-| Step 4: Choose an Alignment | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Strength Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Strengthened Armor/Shield (+1/+2) | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Strengthened Weapon (+1/+2/+3) | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
@@ -405,7 +403,6 @@
 | Tea Brewing | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Tea Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
-| The Nine Alignments | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
