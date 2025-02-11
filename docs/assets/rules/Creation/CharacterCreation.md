@@ -36,11 +36,15 @@ You gain all the benefits a background provides (feature, proficiencies, languag
 ### Choose an Ability Score Combination
 To determine your ability scores, you will use a defined array of ability scores. These scores can then be freely assigned to the six abilities. You can choose from the following five combinations:
 
-> 15  15  13  10  10  8
-> 15  14  14  10  10  8
-> 15  14  13  12  10  8 (standard)
-> 14  14  14  12  10  8
-> 14  14  13  12  12  8
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
+| :------: | :------: | :------: | :------: | :------: | :------: |
+|    15    |    15    |    13    |    10    |    10    |    8     |
+|    15    |    14    |    14    |    10    |    10    |    8     |
+|    15    |    14    |    13    |    12    |    10    |    8     |
+|    14    |    14    |    14    |    12    |    10    |    8     |
+|    14    |    14    |    13    |    12    |    12    |    8     |
+
+*- [15, 14, 13, 12, 10, 8] is the standard array -*
 
 
 
@@ -85,10 +89,16 @@ For positive Intelligence modifiers, you receive points that you can spend on ad
 **Skills.** The modifier for skills you're not proficient in is the associated ability modifier, as described in the [Skills Overview](https://lolindhir.github.io/PnP/rules/glossary/skills). For skills you have proficiency in, add your Proficiency Bonus to the ability modifier associated with that skill.
 
 **Passive Insight, Investigation, and Perception.** Sometimes your DM will determine whether your character notices something without asking you to make a Wisdom (Insight) Intelligence (Investigation), or Wisdom (Perception) check; the DM uses your Passive scores instead. Use this formula to determine your Passive scores:
+<div class="listNoGap"></div>
+
 > Passive Score = 10 + associated check modifier
+<div class="listNoGap"></div>
+
 Include all modifiers that apply to the checks. For example, if your character has a Wisdom of 15 and proficiency in the Perception skill, you have a Passive Perception of 14 (10 + 2 for your Wisdom modifier + 2 for proficiency).
 
 **Hit Points.** Your class and Constitution modifier determine your Hit Point maximum at level 1:
+<div class="listNoGap"></div>
+
 > Starting Hit Points = maximum value of your class' hit point die + your Constitution modifier
 
 **Hit Point Dice.** Your class's description tells you the die type of your character's Hit Point Dice (or Hit Dice for short). At level 1, your character has 1 Hit Die. You can spend Hit Dice during a Night Rest to recover Hit Points.
@@ -100,8 +110,10 @@ Include all modifiers that apply to the checks. For example, if your character h
 **Attacks.** The attack roll bonus for a weapon with which you have proficiency is one of the following unless a weapon's property says otherwise:
 <div class="listNoGap"></div>
 
-- Melee attack bonus: Strength modifier + Proficiency Bonus
-- Ranged attack bonus: Dexterity modifier + Proficiency Bonus
+- Melee attack bonus = Strength modifier + Proficiency Bonus
+- Ranged attack bonus = Dexterity modifier + Proficiency Bonus
+<div class="listNoGap"></div>
+
 Look up the damage and properties of your weapons in the [Weapons section](https://lolindhir.github.io/PnP/rules/equipment/weapons). You add the same ability modifier you use for attacks with a weapon to your damage rolls with that weapon.
 
 **Spellcasting.**
@@ -109,6 +121,8 @@ Look up the damage and properties of your weapons in the [Weapons section](https
 
 - Spell save DC = 8 + spellcasting ability modifier + Proficiency Bonus
 - Spell attack bonus = spellcasting ability modifier + Proficiency Bonus
+<div class="listNoGap"></div>
+
 Your spellcasting ability modifier for a spell is determined by whatever feature gives you the ability to cast the spell.
 
 **Spell Slots, Cantrips, and Prepared Spells.** If your class gives you the Spellcasting or Pact Magic feature, your class features table shows the number of spell slots you have available, how many cantrips and spells you know, and how many spells you can prepare. Choose your known cantrips and spells and then prepare spells.

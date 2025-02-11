@@ -37,7 +37,15 @@ export class SpellDetailComponent {
     //if spell couldn't be loaded, go to spell list page
     // If spell couldn't be loaded, navigate to spell list page
     if (!this.spellLoaded) {
-      this.router.navigate(['/spell-list']);
+      var goToRoute: string = '/spells';
+
+      console.log(goToRoute);
+
+      // reload the route to ensure same level navigation
+      this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+        this.router.navigate([goToRoute]);
+      });
+
     }
   }
 

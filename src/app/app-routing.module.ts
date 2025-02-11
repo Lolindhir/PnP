@@ -20,6 +20,8 @@ export const standardRoutes: Routes = [
   { path: 'rules/:article', component: RuleArticleComponent, pathMatch: 'full'},
   //rules home
   { path: 'rules', component: RulesHomeComponent, pathMatch: 'full'},
+  //feat detail
+  { path:'feat/:id', component: FeatListComponent, pathMatch: 'full' },
   //feat list
   { path:'feats', component: FeatListComponent, pathMatch: 'full' },
   //spell print view
