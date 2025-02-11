@@ -1,0 +1,49 @@
+<app-main-header></app-main-header>
+
+<div  class="page" fxLayout="row" fxLayoutAlign="center">
+    <div class="container">
+
+        <div *ngIf="!featLoaded">
+            <span>Feat '{{featIdName}}' doesn't exist!</span>
+        </div>
+
+        <mat-card *ngIf="feat != undefined" style="margin-top: 10px;">
+
+           <mat-card-content>
+
+            <div>
+              <div style="font-weight: 500; font-size: larger; margin-bottom: 3px;" fxLayout="row" fxLayoutAlign="space-between">
+                  <div>
+                      <span style="font-size: larger;">{{feat.name}}</span>
+                      <span *ngIf="feat.cost > 1"> ({{feat.cost}})</span>
+                  </div>
+                  <div style="font-size: smaller; color: gray; text-align: right;">
+                      <span>{{feat.category}}</span>
+                      <span *ngIf="feat.subcategory.length > 0">: {{feat.subcategory}}</span>
+                  </div>                        
+              </div>
+              <div *ngIf="feat.prerequisite.length > 0" style="margin-bottom: 5px; font-style: italic; color: darkgoldenrod;">Prerequisite: {{feat.prerequisite}}</div>
+              <div [innerHTML]="feat.explanation"></div>
+              <div *ngIf="feat.multi != 1" style="margin-top: 10px; color: darkgreen;">
+                  <div *ngIf="feat.multi > 1" style="font-weight: 500;">You can select this feat {{feat.multi}} times.</div>
+                  <div *ngIf="feat.multi < 1" style="font-weight: 500;">You can select this feat multiple times.</div>
+                  <div *ngIf="feat.multiAppendix.length > 0">{{feat.multiAppendix}}</div>                
+              </div>
+              <mat-chip-set>
+                  <mat-chip *ngIf="feat.cost > 1" style="background: rgba(218, 167, 248, 0.4);" matTooltip="This feat counts as {{feat.cost}} feats. This means you have to invest {{feat.cost}} ability score improvements (ASI) instead of the usual 1.">
+                    <span class="chip-text">Costs {{feat.cost}}</span>
+                  </mat-chip>
+                  <mat-chip *ngIf="feat.starter === true" style="background: rgb(210, 224, 247);" matTooltip="This feat can't be taken at character creation.">
+                      <span class="chip-text">Starting Feat</span>
+                  </mat-chip>
+              </mat-chip-set>
+
+            </div>
+
+
+           </mat-card-content>         
+
+        </mat-card>
+
+    </div>
+</div>

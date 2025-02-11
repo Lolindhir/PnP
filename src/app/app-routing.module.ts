@@ -10,6 +10,7 @@ import { SpellDetailComponent } from './spell-detail/spell-detail.component';
 import { SpellPrintComponent } from './spell-print/spell-print.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FeatListComponent } from './feat-list/feat-list.component';
+import { FeatDetailComponent } from './feat-detail/feat-detail.component';
 import { RuleArticleComponent } from './rule-article/rule-article.component';
 import { RulesHomeComponent } from './rules-home/rules-home.component';
 
@@ -21,7 +22,7 @@ export const standardRoutes: Routes = [
   //rules home
   { path: 'rules', component: RulesHomeComponent, pathMatch: 'full'},
   //feat detail
-  { path:'feat/:id', component: FeatListComponent, pathMatch: 'full' },
+  { path:'feats/:id', component: FeatDetailComponent, pathMatch: 'full' },
   //feat list
   { path:'feats', component: FeatListComponent, pathMatch: 'full' },
   //spell print view

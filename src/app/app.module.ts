@@ -49,6 +49,7 @@ import { StorageService } from '@services/storage.service';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FeatListComponent } from './feat-list/feat-list.component';
+import { FeatDetailComponent } from './feat-detail/feat-detail.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
@@ -72,6 +73,7 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     ItemListComponent,
     HomeComponent,
     FeatListComponent,
+    FeatDetailComponent,
     SnackBarComponent,
     ItemListComponent,
   ],

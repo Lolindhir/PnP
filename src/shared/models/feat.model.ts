@@ -15,6 +15,7 @@ export interface RawFeat {
 }
 
 export interface Feat {
+    id: string;
     name: string;
     category: string;
     subcategory: string;
@@ -42,6 +43,9 @@ export class Feat implements Feat {
         this.multiAppendix = rawFeat.multiAppendix;
         this.starter = rawFeat.starter;
         this.explanation = rawFeat.explanation;
+
+        //build id from name
+        this.id = encodeURI(this.name);
 
         //build category text
         this.categoryText = Feat.getCategoryText(this.category, this.subcategory);

@@ -32,4 +32,10 @@ export class FeatService {
 
     }
 
+    public getFeatById(id: string): Feat | undefined {    
+    
+        return this.allFeats.find(feat => feat.id === id);
+    
+    }
+
 }

@@ -39,8 +39,6 @@ export class SpellDetailComponent {
     if (!this.spellLoaded) {
       var goToRoute: string = '/spells';
 
-      console.log(goToRoute);
-
       // reload the route to ensure same level navigation
       this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
         this.router.navigate([goToRoute]);

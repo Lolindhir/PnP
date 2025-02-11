@@ -165,14 +165,27 @@
                         <div *ngIf="element.multi < 1" style="font-weight: 500;">You can select this feat multiple times.</div>
                         <div *ngIf="element.multiAppendix.length > 0">{{element.multiAppendix}}</div>                
                     </div>
-                    <mat-chip-set>
-                        <mat-chip *ngIf="element.cost > 1" style="background: rgba(218, 167, 248, 0.4);" matTooltip="This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.">
-                          <span class="chip-text">Costs {{element.cost}}</span>
-                        </mat-chip>
-                        <mat-chip *ngIf="element.starter === true" style="background: rgb(210, 224, 247);" matTooltip="This feat can't be taken at character creation.">
-                            <span class="chip-text">Starting Feat</span>
-                        </mat-chip>
-                    </mat-chip-set>
+                    <div fxLayout="row wrap" fxLayoutAlign="space-between start">
+                        <mat-chip-set>
+                            <mat-chip *ngIf="element.cost > 1" style="background: rgba(218, 167, 248, 0.4);" matTooltip="This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.">
+                              <span class="chip-text">Costs {{element.cost}}</span>
+                            </mat-chip>
+                            <mat-chip *ngIf="element.starter === true" style="background: rgb(210, 224, 247);" matTooltip="This feat can't be taken at character creation.">
+                                <span class="chip-text">Starting Feat</span>
+                            </mat-chip>
+                        </mat-chip-set>
+
+                        <div *ngIf="!sharable">
+                            <button color="primary" mat-icon-button class="normal-icon-button" (click)="onCopyFeatLink(element)">
+                                <mat-icon>link</mat-icon>
+                            </button>
+                        </div>
+                        <div *ngIf="sharable">
+                            <button color="primary" mat-icon-button class="normal-icon-button" (click)="onShareFeat(element)">
+                                <mat-icon>share</mat-icon>
+                            </button>
+                        </div>
+                    </div>                
 
                     <!-- <div *ngIf="element.cost > 1" style="margin-top: 10px; font-style: italic; color: darkmagenta;">This feat counts as {{element.cost}} feats. This means you have to invest {{element.cost}} ability score improvements (ASI) instead of the usual 1.</div>
                     <div *ngIf="element.starter === false" style="margin-top: 10px; font-style: italic; color: darkred;">This feat can't be taken at character creation.</div>              -->

@@ -1,16 +1,23 @@
 //angular imports
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { NgNavigatorShareService } from 'ng-navigator-share';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { SnackBarComponent } from '@components/snack-bar/snack-bar.component';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ArrayUtilities } from '@utilities/array.utilities';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 //business imports
 import { Feat } from '@models/feat.model';
 import { FeatService } from '@services/feat.service';
 import { StorageService } from '@shared/services/storage.service';
 import { FeatCategory } from '@shared/models/feat-category.model';
+
+import * as globals from '@shared/globals';
 
 
 @Component({
@@ -35,6 +42,7 @@ export class FeatListComponent implements OnInit {
   expandedFeat: Feat | null;
   filterAll: string = "";
   defaultSort: string = "category";
+  sharable: boolean = false;
 
   //filter
   selectedCategories: string[] = new Array();
@@ -47,6 +55,10 @@ export class FeatListComponent implements OnInit {
 
   constructor(
     private featService: FeatService,
+    private router: Router,
+    private ngNavigatorShareService: NgNavigatorShareService,
+    private clipboard: Clipboard,
+    private snackBar: MatSnackBar,
     private storageService: StorageService
   ) {
    
@@ -75,6 +87,7 @@ export class FeatListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.sharable = this.ngNavigatorShareService.canShare();
   }
 
   ngAfterViewInit() {
@@ -230,5 +243,33 @@ export class FeatListComponent implements OnInit {
     this.saveSettings();
   }
   
+  onCopyFeatLink(feat: Feat){
+  
+    var sharedRoute = location.href + this.router.serializeUrl(this.router.createUrlTree(['', feat.id]));
+
+    this.clipboard.copy(sharedRoute);
+
+    this.snackBar.openFromComponent(SnackBarComponent, {
+      duration: globals.snackBarDuration,
+      data: {text: 'Link to feat copied!'}
+    });
+
+  }
+
+  async onShareFeat(feat: Feat) {
+    
+    var sharedRoute = location.href + this.router.serializeUrl(this.router.createUrlTree(['', feat.id]));
+
+    try{
+      const sharedResponse = await this.ngNavigatorShareService.share({
+        title:'Lolindhir\'s Homerules',
+        url: sharedRoute
+      });
+      console.log(sharedResponse);
+    } catch(error) {
+      console.log('Your feat is not shared, reason: ',error);
+    }
+    
+  }
 
 }
