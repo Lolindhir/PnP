@@ -58,7 +58,7 @@
             
                     <div *ngIf="needStartGap" class="gap"></div>
 
-                    <div *ngIf="markDownSource.length > 0" class="markdown" markdown [src]="markDownSource"></div>
+                    <div *ngIf="isContentLoaded && markDownSource.length > 0" class="markdown" markdown [src]="markDownSource"></div>
         
                 </div>
         

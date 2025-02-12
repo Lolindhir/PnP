@@ -176,12 +176,12 @@
                         </mat-chip-set>
 
                         <div *ngIf="!sharable">
-                            <button color="primary" mat-icon-button class="normal-icon-button" (click)="onCopyFeatLink(element)">
+                            <button mat-icon-button class="normal-icon-button" (click)="onCopyFeatLink(element)">
                                 <mat-icon>link</mat-icon>
                             </button>
                         </div>
                         <div *ngIf="sharable">
-                            <button color="primary" mat-icon-button class="normal-icon-button" (click)="onShareFeat(element)">
+                            <button mat-icon-button class="normal-icon-button" (click)="onShareFeat(element)">
                                 <mat-icon>share</mat-icon>
                             </button>
                         </div>

@@ -23,6 +23,7 @@ export class RuleArticleComponent {
   sidebarOpen: boolean = false;
   isMobile: boolean = true;
   needStartGap: boolean = false;
+  isContentLoaded: boolean = false;
   
   constructor(private route: ActivatedRoute, public dialog: MatDialog) { }
 
@@ -83,6 +84,9 @@ export class RuleArticleComponent {
                   if(!text.trim().startsWith('#') && (this.rulesContent != undefined && this.rulesContent.children.length > 0)){
                     this.needStartGap = true;
                   }
+
+                  // Set content loaded to true after all checks
+                  this.isContentLoaded = true;
                 });
             }
           })
