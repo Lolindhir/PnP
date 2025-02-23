@@ -22,6 +22,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
       *mehr Punkte möglich für größeren Würfel: ab 5th zwei für 1d10, ab 11th drei für 2d8, ab 17th vier für 2d12*
 - vor Turn die Reihenfolge mit anderem Spieler tauschen (darf noch nicht an der Reihe gewesen sein)
 - zusätzliche Reaction erhalten (maximal einmal pro Runde)
+- 5 Fuß extra Movement, wenn ein Feld entfernt von Gegner oder Ziel
 - kleine positive Veränderung in einer Szene/Kampfplatz hinzufügen (Cover auf Battlemap, positive Verbindung zu Händler, Ablenkung, einfaches Item finden usw.)
 
 #### Nur Weiß
@@ -32,7 +33,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 
 ### Einsatzmöglichkeiten für Dungeon Master
 - 1d6 hinzufügen zu Ability Check (vor oder nach dem Wurf, maximal einmal pro Wurf) abhängig von Tier of Play (ab 5 d8, ab 11 d10, ab 17 d12)
-- Damage Roll zusätzlichen Schadenswürfel hinzufügen abhängig von Tier of Play (ab 5 zwei, ab 11 drei, ab 17 vier)
+- Damage Roll zusätzlich d6 Schadenswürfel hinzufügen abhängig von Tier of Play (ab 5 zwei, ab 11 drei, ab 17 vier)
 - d20-Wurf neu würfeln
 - Reaction zurück erhalten
 - „Mini Legendary Action“ für Monster (normale Aktion oder Dash) – kostet 2 für Boss/Legendary Monster
@@ -49,10 +50,10 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 ## Diebstahl von Schicksalspunkten
 
 ### Spieler
-Wenn ein Monster eine Legendary Resistance verwendet, um einen Saving Throw automatisch zu bestehen, kann der Spieler, der den Saving Throw ausgelöst hat, einen D6 würfeln. Die Spieler stehlen die Hälfte der Augenzahl (aufgerundet) an schwarzen Würfeln vom Dungeon Master. Sollte der Dungeon Master nicht genügend schwarze Würfel besitzen, erhalten die Spieler anstelle weiße Würfel.
+Wenn ein Monster eine Legendary Resistance verwendet, um einen Saving Throw automatisch zu bestehen, kann der Spieler, der den Saving Throw ausgelöst hat, einen D6 würfeln. Die Spieler stehlen die Hälfte der Augenzahl (aufgerundet) an schwarzen Punkten vom Dungeon Master. Sollte der Dungeon Master nicht genügend schwarze Punkte besitzen, erhalten die Spieler anstelle temporäre schwarze Punkte.
 
 ### Dungeon Master
-Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen eigenen hinzufügen. Dafür existieren mehrere Möglichkeiten:
+Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen eigenen hinzufügen, wenn die Spieler gegen ein Boss Monster bzw. Monster mit Legendary Actions kämpfen. Dafür existieren mehrere Möglichkeiten:
 - Wenn die Spieler am Start einer Runde 3 oder mehr schwarze Schicksalspunkte haben, rollt einer der Spieler einen d6 und wenn das Ergebnis die Anzahl der schwarzen Schicksalspunkte oder weniger ist, verlieren die Spieler einen schwarzen Schicksalspunkt. (Beispiel: wenn sie 4 schwarze Schicksalspunkte haben, dann verlieren sie bei einem Wurf von 1, 2, 3 oder 4 einen dieser Schicksalspunkte)
 - Der DM kann jederzeit eine Legendary Action einsetzen, um einen Schicksalspunkt zu stehlen (bis zu drei bei Einsatz von drei Legendary Actions).
 - Wenn ein Monster eine Attack Action ausführt, kann der DM auf eine Anzahl an Attacken dieser Action verzichten (Multi Attack hat mehrere Attacken), um diese Anzahl an schwarzen Schicksalspunkten zu stehlen.
@@ -76,5 +77,4 @@ Am Ende einer Session wird ermittelt wie stark die Spieler innerhalb der Session
 
 #### Spieleraussagen
 1.	Du hast entsprechend deiner Gesinnung (alignment) gehandelt ohne einen direkten Nutzen daraus zu ziehen.
-2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zum Ausdruck gebracht.
-3.	Du hattest mit Problemen oder Auswirkungen zu kämpfen, die aufgrund deiner Fehler (flaws) oder deiner Gesinnung (alignment) entstanden sind.
+2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zum

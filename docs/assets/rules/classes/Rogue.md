@@ -100,7 +100,7 @@ As a Bonus Action, you give yourself Advantage on your next attack roll on the c
 
 
 ### Level 4: Ability Score Improvement
-You gain three feats of your choice, for which you qualify. You have to take the Ability Score Improvement feat at least once (two times is recommended).
+You gain three feats (see the [Feat list](https://lolindhir.github.io/PnP/feats/Feat%2520list)) of your choice, for which you qualify. You have to take the [Ability Score Improvement](https://lolindhir.github.io/PnP/feats/Ability%2520Score%2520Improvement) feat at least once (two times is recommended).
 You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 

@@ -7,7 +7,7 @@
 | **Level Up Hit Point Gain**    | D6 + Constitution Modifier                                                         |
 | **Saving Throw Proficiencies** | Intelligence and Wisdom                                                            |
 | **Skill Proficiencies**        | *Choose 2:* Arcana, History, Insight, Investigation, Medicine, Nature, or Religion |
-| **Weapon Proficiencies**       | Simple Weapons                                                                     |
+| **Weapon Proficiencies**       | Daggers, Darts, Quarterstaffs                                                                     |
 | **Armor Training**             | None                                                                               |
 ___
 
@@ -83,7 +83,7 @@ You gain a Wizard subclass of your choice. A subclass is a specialization that g
 
 
 ### Level 4: Ability Score Improvement
-You gain three feats of your choice, for which you qualify. You have to take the Ability Score Improvement feat at least once (two times is recommended).
+You gain three feats (see the [Feat list](https://lolindhir.github.io/PnP/feats/Feat%2520list)) of your choice, for which you qualify. You have to take the [Ability Score Improvement](https://lolindhir.github.io/PnP/feats/Ability%2520Score%2520Improvement) feat at least once (two times is recommended).
 You gain this feature again at Wizard levels 8, 12, and 16.
 
 
@@ -105,4 +105,4 @@ You gain an Epic Boon feat or three other feats of your choice for which you qua
 
 
 ### Level 20: Signature Spells
-Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.
+Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expen

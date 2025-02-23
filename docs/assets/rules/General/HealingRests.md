@@ -18,6 +18,7 @@
 
 **Regeneration:**
 <div class="listNoGap"></div>
+
 - Einsatz Hit Dice zur Heilung möglich
 - Exhaustion:
     - 1 Exhaustion heilt automatisch

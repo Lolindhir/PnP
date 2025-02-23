@@ -1,21 +1,25 @@
 
-## Milestone Leveling
-Erfahrungspunkte werden komplett außen vorgelassen und der Zeitpunkt des Level-Up wird durch den Dungeon Master kontrolliert. Charaktere steigen dann auf, wenn sie wichtige Ziele in der Kampagnengeschichte erreichen.
+
+**Story-Based Advancement.** Rather than gaining a level after a certain number of sessions, your advancement is tied to accomplishing particular goals in the campaign. When you achieve those goals, you level up.
 
 
-## Würfeln für Lebenspunkte
-Werden beim Level-Up die Lebenspunkte erhöht, würfelt jeder für seinen Charakter einen d6-Würfel, unabhängig welche Charakterklasse erhöht wird. Wird eine 1 gewürfelt, darf einmal erneut gewürfelt werden. Abhängig von der jeweiligen Charakterklasse wird dann aber die Differenz zum eigentlichen Hit Die aufaddiert. Dadurch ergibt sich für die jeweiligen Klassen folgende Bestimmung der Lebenspunkteerhöhung:
+**Gaining a Level.** When you gain a level, follow these steps:
 
-| Klasse                                            |   HP bei Level-Up |
+1. **Choose a Class.** Most characters advance in the same class. However, you might decide to gain a level in another class using the rules in the [Multiclassing section](https://lolindhir.github.io/PnP/rules/creation/multiclassing).
+
+2. **Adjust Hit Points and Hit Point Dice.** Each time you gain a level, you gain an additional Hit Die. Roll a d6 for your hit points. If you roll a 1, you can reroll once. Depending on your character class, the difference to the actual hit die is then added. This results in the following determination of Hit Point maximum increase for each class:
+
+##### Hit Point Increase by Class
+| Class                                             |    HP at Level-Up |
 | :------------------------------------------------ | ----------------: |
 | Barbarian                                         | 1d6 + CON mod + 6 |
 | Fighter, Paladin, Ranger                          | 1d6 + CON mod + 4 |
 | Bard, Cleric, Druid, Monk, Rogue, Shaman, Warlock | 1d6 + CON mod + 2 |
 | Sorcerer, Wizard                                  |     1d6 + CON mod |
 
+3. **Record New Class Features.** Look at your class features, and note the features you gain at your new level in that class. Make any choices offered by a new feature.
 
-## ASI
-Sollte ein Klassenlevel (bei den meisten Klassen Level 4, 8, 12, 16 und 19) erreicht werden, welches eine Ability Score Improvement (ASI) ermöglicht, dürfen nun 3 Feats ausgewählt werden. Erhöhung eines Attributs ist ebenfalls ein Feat. Dieses Ability Score Improvement Feat muss mindestens einmal beim Levelaufstieg genommen werden.
+4. **Adjust Proficiency Bonus.** A character's Proficiency Bonus increases at certain levels, as shown in the [Character Advancement table](https://lolindhir.github.io/PnP/rules/creation/leveling/leveling_advancement) and your class features table. When your Proficiency Bonus increases, increase all the numbers on your character sheet that include your Proficiency Bonus.
 
-Die meisten Klassen erlauben beim Erreichen eines ASI-Klassenlevels den Tausch bestimmter Klassenfähigkeiten (Fighting Style, Expertise, Cantrips usw.). Was genau ausgetauscht werden kann, ist in der Klassenbeschreibung bzw. in der Beschreibung der Klassenanpassungen nachzulesen.
+5. **Adjust Ability Modifiers.** If you choose the Ability Score Improvement feat, your ability modifier also changes if the new score is an even number. When that happens, adjust all the numbers on your character sheet that use that ability modifier. When your Constitution modifier increases by 1, your Hit Point maximum increases by 1 for each level you have attained. For example, if a character reaches level 8 and increases their Constitution score from 17 to 18, the Constitution modifier increases to +4. The character's Hit Point maximum then increases by 8, in addition to the Hit Points gained for reaching level 8.
 

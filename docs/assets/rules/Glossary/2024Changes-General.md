@@ -1,4 +1,7 @@
 
+## Character Creation
+- Rassen geben nun keine Sprachen und Proficiencies mehr
+- diese gibt es nun durch den Background, genauso wie zusätzliche Connections
 
 ## Races
 - Allgemein: Rassen-Zauber können auch mit Spell Slots gezaubert werden

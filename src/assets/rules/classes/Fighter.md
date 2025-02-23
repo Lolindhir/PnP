@@ -92,7 +92,7 @@ You gain an additional Superiority Die when you reach Fighter level 7 (four dice
 
 
 ### Level 4: Ability Score Improvement
-You gain three feats of your choice, for which you qualify. You have to take the Ability Score Improvement feat at least once (two times is recommended).
+You gain three feats (see the [Feat list](https://lolindhir.github.io/PnP/feats/Feat%2520list)) of your choice, for which you qualify. You have to take the [Ability Score Improvement](https://lolindhir.github.io/PnP/feats/Ability%2520Score%2520Improvement) feat at least once (two times is recommended).
 You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.
 
 

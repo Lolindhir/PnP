@@ -17,5 +17,7 @@
 
 ***Naturally Stealthy.*** You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.
 
+***Second Chance.*** When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't do so again until you finish a Short or Long Rest.
+
 ***Stout Resilience.*** Your Constitution score increases by 1.
 

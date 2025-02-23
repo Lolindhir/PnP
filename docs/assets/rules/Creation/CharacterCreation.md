@@ -27,7 +27,7 @@ You gain all the traits in the class' Core Traits table and the class' level 1 f
 
 ## Step 3: Choose a Background
 Choose your character's background. You can choose any of the pre made backgrounds detailed in the [Sample Backgrounds section](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) or create a custom background for yourself, using the rules described in the [Backgrounds section](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds).
-You gain all the benefits a background provides (feature, proficiencies, languages, and starting feat).
+You gain all the benefits a background provides (connection, feature, proficiencies, languages, and starting feat).
 
 
 
@@ -36,15 +36,15 @@ You gain all the benefits a background provides (feature, proficiencies, languag
 ### Choose an Ability Score Combination
 To determine your ability scores, you will use a defined array of ability scores. These scores can then be freely assigned to the six abilities. You can choose from the following five combinations:
 
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
-| :------: | :------: | :------: | :------: | :------: | :------: |
-|    15    |    15    |    13    |    10    |    10    |    8     |
-|    15    |    14    |    14    |    10    |    10    |    8     |
-|    15    |    14    |    13    |    12    |    10    |    8     |
-|    14    |    14    |    14    |    12    |    10    |    8     |
-|    14    |    14    |    13    |    12    |    12    |    8     |
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
+| :------: | :------: | :------: | :------: | :------: | :------: | :------- |
+|    15    |    15    |    13    |    10    |    10    |    8     |          |
+|    15    |    14    |    14    |    10    |    10    |    8     |          |
+|  **15**  |  **14**  |  **13**  |  **12**  |  **10**  |  **8**   | *        |
+|    14    |    14    |    14    |    12    |    10    |    8     |          |
+|    14    |    14    |    13    |    12    |    12    |    8     |          |
 
-*- [15, 14, 13, 12, 10, 8] is the standard array -*
+**standard array*
 
 
 

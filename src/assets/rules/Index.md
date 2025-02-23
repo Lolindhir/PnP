@@ -7,21 +7,24 @@
 | Ability Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Ability Score | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Ability Score Array | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
-| Ability Score Improvement (ASI) | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Abjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Abjurer (Wizard) | [Abjurer (Wizard)](https://lolindhir.github.io/PnP/rules/classes/wizard/abjurer) |
 | Abyssal *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Abyssal Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
 | Acid | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Acid Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
+| Acolyte *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Action | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Action List | [Action List](https://lolindhir.github.io/PnP/rules/glossary/action_list) |
 | Action Surge | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
+| Additional Connection *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Advantage | [Advantage/Disadvantage](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage) |
 | Adventuring Equipment | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Adventuring Gear | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Alchemist's Fire | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Alignment | [Alignment](https://lolindhir.github.io/PnP/rules/creation/character_creation/alignment) |
+| All Eyes on You *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
+| Ambassador *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Ambush *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ammunition | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Ammunition *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -37,11 +40,13 @@
 | Armor Cost & Weight | [Armor Cost & Weight](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs) |
 | Armor Slot | [Armor Cost & Weight](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_costs) |
 | Armor Special Property | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
+| Artisan *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Assassin (Rogue) | [Assassin (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/assassin) |
 | Attack *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Attack Roll | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Attitude | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Background | [Background](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds) |
+| Background Connections | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Background Features | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Bait and Switch *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ball Bearings | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
@@ -55,6 +60,7 @@
 | Bonus Action | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Bonuses for Intelligence | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Boost Natural Healing | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
+| Bounty Hunter *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Brace *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Breaking Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Bright Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -70,8 +76,10 @@
 | Character Death | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Character Traits | [Character Traits](https://lolindhir.github.io/PnP/rules/creation/character_creation/character_traits) |
 | Charisma Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Charlatan *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Charmed *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Chthonic Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
+| City Watch *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Class Overview | [Class Overview](https://lolindhir.github.io/PnP/rules/classes/class_list) |
 | Cleave *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Climb Onto a Bigger Creature | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
@@ -88,6 +96,7 @@
 | Cone *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Conjuration | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Constitution Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Contacts *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
@@ -95,6 +104,7 @@
 | Crafting Materials | [Crafting Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials) |
 | Creating a Character | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
+| Criminal *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Cube *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Cunning Action | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
@@ -147,6 +157,7 @@
 | Elvish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Emanation *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Enchantment | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
+| Entertainer *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Equipment | [Equipment](https://lolindhir.github.io/PnP/rules/equipment) |
 | Equipment Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Essence *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
@@ -157,9 +168,13 @@
 | Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
 | Exhaustion *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Exploration | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
+| Faction Member *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Falling | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Falling Unconscious | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Falling off a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
+| False Identity *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
+| Far Traveler *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
+| Farmer *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Feeling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Feinting Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Fiendish Legacy | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
@@ -171,7 +186,9 @@
 | Force Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Forestborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Frightened *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| From Money *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Giant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Gladiator *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Gnomish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Goading Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Goblin *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -179,6 +196,7 @@
 | Graze *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Gritty Realism Times | [Gritty Realism Times](https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism) |
 | Growth Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Guide *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Haggling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Halfling | [Halfling](https://lolindhir.github.io/PnP/rules/races/halfling) |
 | Halfling *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -192,6 +210,7 @@
 | Heavy *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Heavy Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Help *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Herb Witch *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Herbal Medicine | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Herbal Medicine Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Herbalism | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
@@ -201,7 +220,9 @@
 | Hit Dice Regeneration through Tea | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Hit Dice during Night Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Hit Dice to heal Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
+| Hit Point Increase by Class | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
+| Honed Role *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Human Ancestry | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Identifying an Ongoing Spell | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
@@ -222,7 +243,9 @@
 | Instantaneous (Spell Duration) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Intelligence Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Interacting with Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
+| Investigator *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Knight of the Order *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Level Up | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
@@ -247,13 +270,15 @@
 | Maneuvering Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Marching Order | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Martial Weapons | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Master of Caravans *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
+| Master of the Seas *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Masterwork Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Masterwork Weapon | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
 | Material Spell Component (M) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Medium Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Melee Attack | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Menacing Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
-| Milestone Leveling | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
+| Merchant *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Mountainborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Mounted Combat | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Mounting | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
@@ -269,6 +294,7 @@
 | Nick *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Night Rest | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | No Sleep | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
+| Noble *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Object Armor Class | [Object Damage](https://lolindhir.github.io/PnP/rules/glossary/objects_damage) |
 | Object Damage | [Object Damage](https://lolindhir.github.io/PnP/rules/glossary/objects_damage) |
 | Object Hit Points | [Object Damage](https://lolindhir.github.io/PnP/rules/glossary/objects_damage) |
@@ -288,6 +314,7 @@
 | Poison Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Poisoned *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Poisonous Reagent *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
+| Position of Privilege *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Potion Effect Restriction | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Potion Overview | [Potion Overview](https://lolindhir.github.io/PnP/rules/glossary/potions_overview) |
@@ -327,6 +354,7 @@
 | Regeneration Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Reliable Talent | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Renown | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
+| Researcher *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Residuum *[Material]* | [Magical Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Resistance | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Resistant Armor/Shield | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
@@ -338,7 +366,10 @@
 | Ritual Adept | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Rogue | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Rogue Class Features | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Rustic Hospitality *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Sage (Shaman) | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
+| Sage *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
+| Sailor *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Sap *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Saving Throw | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Saving Throw Damage Against Multiple Targets | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
@@ -347,6 +378,7 @@
 | Schools of Magic | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Schwarze Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Scout Training *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Scribe *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Sea Elf | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
 | Seaborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Search *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
@@ -367,6 +399,7 @@
 | Sneak Attack | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Snowborn Human | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Social Interaction | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
+| Soldier *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Somatic Spell Component (S) | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Soulknife (Rogue) | [Soulknife (Rogue)](https://lolindhir.github.io/PnP/rules/classes/rogue/soulknife) |
 | Special Senses | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
@@ -407,6 +440,7 @@
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder Damage | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Tiefling | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling) |
+| Tiers of Play | [Tiers of Play](https://lolindhir.github.io/PnP/rules/creation/leveling/tiers_of_play) |
 | Topple *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Touch *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Trained Body *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -416,6 +450,7 @@
 | Travel Pace | [Travel](https://lolindhir.github.io/PnP/rules/glossary/travel) |
 | Treating Wounds | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Tremorsense | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Tribe Member *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Trip Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Truesight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Tumble (Moving Through Other Creatures) *[Action]* | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
@@ -433,6 +468,7 @@
 | Versatile *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Vex *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Vulnerability | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
+| Wanderer *[Background Feature]* | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Warrior (Shaman) | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Weapon | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Weapon Attack, Underwater | [Underwater Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater) |
