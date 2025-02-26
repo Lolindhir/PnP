@@ -421,6 +421,8 @@
 | Standard Array | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Standard Coin Exchange Rates | [Coins](https://lolindhir.github.io/PnP/rules/equipment/coins) |
 | Standard Languages | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
+| Starting Equipment by Level | [Starting at Higher Levels](https://lolindhir.github.io/PnP/rules/creation/starting_higher_levels) |
+| Starting at Higher Levels | [Starting at Higher Levels](https://lolindhir.github.io/PnP/rules/creation/starting_higher_levels) |
 | Steady Aim | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Strength Potion | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Strengthened Armor/Shield (+1/+2) | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |

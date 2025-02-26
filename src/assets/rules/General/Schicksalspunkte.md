@@ -50,7 +50,7 @@ Weiße Schicksalspunkte können nur von Spielern eingesetzt werden und werden na
 ## Diebstahl von Schicksalspunkten
 
 ### Spieler
-Wenn ein Monster eine Legendary Resistance verwendet, um einen Saving Throw automatisch zu bestehen, kann der Spieler, der den Saving Throw ausgelöst hat, einen D6 würfeln. Die Spieler stehlen die Hälfte der Augenzahl (aufgerundet) an schwarzen Punkten vom Dungeon Master. Sollte der Dungeon Master nicht genügend schwarze Punkte besitzen, erhalten die Spieler anstelle temporäre schwarze Punkte.
+Wenn ein Monster eine Legendary Resistance verwendet, um einen Saving Throw automatisch zu bestehen, kann der Spieler, der den Saving Throw ausgelöst hat, einen D4 würfeln. Die Spieler stehlen die Augenzahl an schwarzen Punkten vom Dungeon Master. Sollte der Dungeon Master nicht genügend schwarze Punkte besitzen, erhalten die Spieler anstelle temporäre schwarze Punkte.
 
 ### Dungeon Master
 Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen eigenen hinzufügen, wenn die Spieler gegen ein Boss Monster bzw. Monster mit Legendary Actions kämpfen. Dafür existieren mehrere Möglichkeiten:
@@ -77,4 +77,4 @@ Am Ende einer Session wird ermittelt wie stark die Spieler innerhalb der Session
 
 #### Spieleraussagen
 1.	Du hast entsprechend deiner Gesinnung (alignment) gehandelt ohne einen direkten Nutzen daraus zu ziehen.
-2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zum
+2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zumeine Bindungen (bonds) zum

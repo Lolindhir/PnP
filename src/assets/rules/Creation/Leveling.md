@@ -2,6 +2,7 @@
 
 **Story-Based Advancement.** Rather than gaining a level after a certain number of sessions, your advancement is tied to accomplishing particular goals in the campaign. When you achieve those goals, you level up.
 
+___
 
 **Gaining a Level.** When you gain a level, follow these steps:
 
@@ -23,3 +24,7 @@
 
 5. **Adjust Ability Modifiers.** If you choose the Ability Score Improvement feat, your ability modifier also changes if the new score is an even number. When that happens, adjust all the numbers on your character sheet that use that ability modifier. When your Constitution modifier increases by 1, your Hit Point maximum increases by 1 for each level you have attained. For example, if a character reaches level 8 and increases their Constitution score from 17 to 18, the Constitution modifier increases to +4. The character's Hit Point maximum then increases by 8, in addition to the Hit Points gained for reaching level 8.
 
+
+___
+
+**Bonus Feats at Level 20.** A DM can use feats as a form of advancement after characters reach level 20 to provide greater power to characters who have no more levels to gain. With this approach, each character gains one feat of their choice for every level up the character gains above 20th level. Epic Boon feats are especially appropriate for these bonus feats, but a player can choose any feat for which their level 20 character qualifies.

@@ -68,6 +68,8 @@ export class RuleArticleComponent {
           .then(response => {
             if (!response.ok) {
               this.markDownSource = './assets/rules/404.md';
+              // Set content loaded to true
+              this.isContentLoaded = true;
             }
             else{
               //check markdown file
@@ -92,10 +94,9 @@ export class RuleArticleComponent {
           })
           .catch(error => {
             console.error('Error:', error);
-          });
+        });
 
         this.children = this.rulesContent.children;
-
         this.breadcrumbs = RulesContent.getBreadcrumb(this.rulesContent);
       }
   }
