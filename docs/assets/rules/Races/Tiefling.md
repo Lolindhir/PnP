@@ -16,8 +16,8 @@ You know the cantrip of the chosen legacy. When you reach character levels 3 and
 Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).
 
 ##### Fiendish Legacies
-| Legacy       | Damage   | Cantrip               | Level 3                  | Level 5                      |
-| :----------- | :------- | :-------------------- | :----------------------- | :--------------------------- |
+| Legacy       | Damage   | Cantrip                 | Level 3                    | Level 5                        |
+| :----------- | :------- | :---------------------- | :------------------------- | :----------------------------- |
 | **Abyssal**  | Poison   | [Poison Spray](https://lolindhir.github.io/PnP/spells/Poison%2520Spray) | [Ray of Sickness](https://lolindhir.github.io/PnP/spells/Ray%2520of%2520Sickness) | [Hold Person](https://lolindhir.github.io/PnP/spells/Hold%2520Person)         |
 | **Chthonic** | Necrotic | [Chill Touch](https://lolindhir.github.io/PnP/spells/Chill%2520Touch)  | [False Life](https://lolindhir.github.io/PnP/spells/False%2520Life)      | [Ray of Enfeeblement](https://lolindhir.github.io/PnP/spells/Ray%2520of%2520Enfeeblement) |
 | **Infernal** | Fire     | [Fire Bolt](https://lolindhir.github.io/PnP/spells/Fire%2520Bolt)    | [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke)  | [Darkness](https://lolindhir.github.io/PnP/spells/Darkness)            |

@@ -45,15 +45,15 @@ As a Wizard, you gain the following class features when you reach the specified 
 As a student of arcane magic, you have learned to cast spells.
 The complete rules for your spellcasting are explained in the [Wizard Spellcasting](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) section. As an overview, the key features of your spellcasting are listed below:
 
-| Key Feature            | Characteristic            |
-| :--------------------- | :------------------------ |
-| Spellcasting Ability   | Intelligence              |
-| Spellcasting Focus     | Arcane Focus              |
+| Key Feature            | Characteristic              |
+| :--------------------- | :-------------------------- |
+| Spellcasting Ability   | Intelligence                |
+| Spellcasting Focus     | Arcane Focus                |
 | Free Cantrip           | [Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation) |
-| Cantrips               | Prepared (from Spellbook) |
-| Spells 1+              | Prepared (from Spellbook) |
-| Spell Slot Progression | Full Caster               |
-| Specialty              | Spellbook                 |
+| Cantrips               | Prepared (from Spellbook)   |
+| Spells 1+              | Prepared (from Spellbook)   |
+| Spell Slot Progression | Full Caster                 |
+| Specialty              | Spellbook                   |
 
 
 

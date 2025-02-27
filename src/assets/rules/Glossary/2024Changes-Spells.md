@@ -1,7 +1,7 @@
 ## New Spells
 
-| Name                                  |  Level  | Classes                         | Note                                                                                                                  |
-| :------------------------------------ | :-----: | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
+| Name                                    |  Level  | Classes                         | Note                                                                                                                  |
+| :-------------------------------------- | :-----: | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
 | [Arcane Vigor](https://lolindhir.github.io/PnP/spells/Arcane%2520Vigor)                 |   2nd   | Sorcerer, Wizard                | Selbstheilungszauber, der unverbrauchte Hit Dice verwendet                                                            |
 | [Armor of the Elements](https://lolindhir.github.io/PnP/spells/Armor%2520of%2520the%2520Elements)        |   1st   | Shaman                          | Armor of Agathys-Variante mit mehr Elementen                                                                          |
 | [Conjure Animals](https://lolindhir.github.io/PnP/spells/Conjure%2520Animals)              |   3rd   | Druid, Ranger                   | AoE-Schaden an gewähltem, beweglichen Punkt über Zeitraum                                                             |
@@ -40,8 +40,8 @@
 
 ### List of Highlight Changes
 
-| Name                              |    Alteration    | Note                                                                                                                                                                       |
-| :-------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                |    Alteration    | Note                                                                                                                                                                       |
+| :---------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Armor of Agathys](https://lolindhir.github.io/PnP/spells/Armor%2520of%2520Agathys)         |      Buffed      | Bonus Action anstatt Action und neue temporäre HP können Zauber aufrecht halten                                                                                            |
 | [Barkskin](https://lolindhir.github.io/PnP/spells/Barkskin)                 |      Buffed      | Bonus Action anstatt Action, keine Concentration benötigt, AC erhöht                                                                                                       |
 | [Blade Ward](https://lolindhir.github.io/PnP/spells/Blade%2520Ward)               |     Reworked     | Gibt nun Minus 1d4 auf alle Angriffswürfe gegen Zaubernden                                                                                                                 |
@@ -79,8 +79,8 @@
 
 ### List of Remaining Changes
 
-| Name                             |    Alteration    | Note                                                                                                                                            |
-| :------------------------------- | :--------------: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                               |    Alteration    | Note                                                                                                                                            |
+| :--------------------------------- | :--------------: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Acid Splash](https://lolindhir.github.io/PnP/spells/Acid%2520Splash)             |     Changed      | AoE anstatt ein oder zwei bestimmter Ziele                                                                                                      |
 | [Alter Self](https://lolindhir.github.io/PnP/spells/Alter%2520Self)              |    Rebalanced    | Natural Weapons gibt keine +1 mehr, aber dafür kann Spellcasting Ability für Angriff und Schaden verwendet werden (also eher Buff)              |
 | [Animal Shapes](https://lolindhir.github.io/PnP/spells/Animal%2520Shapes)           |     Changed      | Ziele erhalten nun temporäre HP anstatt die HP der neuen Form anzunehmen und verwandeln sich zurück, wenn sie diese temporären HP verlieren     |
@@ -154,8 +154,8 @@
 
 ## New Spell Schools
 
-| Spell                               | New School    | Old School    |
-| :---------------------------------- | :------------ | :------------ |
+| Spell                                 | New School    | Old School    |
+| :------------------------------------ | :------------ | :------------ |
 | [Acid Splash](https://lolindhir.github.io/PnP/spells/Acid%2520Splash)                | Evocation     | Conjuration   |
 | [Aura of Vitality](https://lolindhir.github.io/PnP/spells/Aura%2520of%2520Vitality)           | Abjuration    | Evocation     |
 | [Banishing Smite](https://lolindhir.github.io/PnP/spells/Banishing%2520Smite)            | Conjuration   | Abjuration    |

@@ -47,15 +47,15 @@ As a Shaman, you gain the following class features when you reach the specified 
 Drawing on the elemental essence of nature itself, you can cast spells to shape that essence to your will.
 The complete rules for your spellcasting are explained in the [Shaman Spellcasting](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_spellcasting) section. As an overview, the key features of your spellcasting are listed below:
 
-| Key Feature            | Characteristic        |
-| :--------------------- | :-------------------- |
-| Spellcasting Ability   | Wisdom or Charisma    |
-| Spellcasting Focus     | Druidic Focus         |
+| Key Feature            | Characteristic          |
+| :--------------------- | :---------------------- |
+| Spellcasting Ability   | Wisdom or Charisma      |
+| Spellcasting Focus     | Druidic Focus           |
 | Free Cantrip           | [Elementalism](https://lolindhir.github.io/PnP/spells/Elementalism) |
-| Cantrips               | Known                 |
-| Spells 1+              | Prepared              |
-| Spell Slot Progression | Full Caster           |
-| Specialty              | -                     |
+| Cantrips               | Known                   |
+| Spells 1+              | Prepared                |
+| Spell Slot Progression | Full Caster             |
+| Specialty              | -                       |
 
 
 

@@ -2,7 +2,7 @@
 ### Acolyte
 **Connection:** [Religious Contacts](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections)
 **Background Feature:** [Additional Connection](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) ([Religious Faction Member](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections))
-**Feat:** [Magic Initiate](https://lolindhir.github.io/PnP/feats/Magic%2520Initiate) (Cleric)
+**Feat:** [Magic Initiate (Cleric)](https://lolindhir.github.io/PnP/feats/Magic%2520Initiate)
 **Skills:** Insight, Religion
 **Tools:** Calligrapher's Supplies
 **Weapons:** Mace
@@ -202,7 +202,7 @@
 ### Tribe Member
 **Connection:** [Tribal Faction Member](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections)
 **Background Feature:** [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features)
-**Feat:** [Magic Initiate](https://lolindhir.github.io/PnP/feats/Magic%2520Initiate) (Druid)
+**Feat:** [Magic Initiate (Druid)](https://lolindhir.github.io/PnP/feats/Magic%2520Initiate)
 **Skills:** Athletics, Survival
 **Tools:** 1 Artisan's Tools, 1 Instrument
 **Weapons:** Spear, Shortbow

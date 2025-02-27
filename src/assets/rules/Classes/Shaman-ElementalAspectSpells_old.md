@@ -1,7 +1,7 @@
 ### Aspect of Air
 
-| Spell Level | Spell                  |
-| :---------: | :--------------------- |
+| Spell Level | Spell                    |
+| :---------: | :----------------------- |
 |   Cantrip   | [Gust](https://lolindhir.github.io/PnP/spells/Gust)          |
 |     1st     | [Feather Fall](https://lolindhir.github.io/PnP/spells/Feather%2520Fall)  |
 |     2nd     | [Gust of Wind](https://lolindhir.github.io/PnP/spells/Gust%2520of%2520Wind)  |
@@ -13,8 +13,8 @@
 
 #### Aspect of Earth
 
-| Spell Level | Spell                               |
-| :---------: | :---------------------------------- |
+| Spell Level | Spell                                 |
+| :---------: | :------------------------------------ |
 |   Cantrip   | [Mold Earth](https://lolindhir.github.io/PnP/spells/Mold%2520Earth)                 |
 |     1st     | [Earth Tremor](https://lolindhir.github.io/PnP/spells/Earth%2520Tremor)               |
 |     2nd     | [Maximilian's Earthen Grasp](https://lolindhir.github.io/PnP/spells/Maximilian%27s%2520Earthen%2520Grasp) |
@@ -26,8 +26,8 @@
 
 #### Aspect of Fire
 
-| Spell Level | Spell                   |
-| :---------: | :---------------------- |
+| Spell Level | Spell                     |
+| :---------: | :------------------------ |
 |   Cantrip   | [Control Flames](https://lolindhir.github.io/PnP/spells/Control%2520Flames) |
 |     1st     | [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke) |
 |     2nd     | [Flaming Sphere](https://lolindhir.github.io/PnP/spells/Flaming%2520Sphere) |
@@ -39,8 +39,8 @@
 
 #### Aspect of Water
 
-| Spell Level | Spell                            |
-| :---------: | :------------------------------- |
+| Spell Level | Spell                              |
+| :---------: | :--------------------------------- |
 |   Cantrip   | [Shape Water](https://lolindhir.github.io/PnP/spells/Shape%2520Water)             |
 |     1st     | [Create or Destroy Water](https://lolindhir.github.io/PnP/spells/Create%2520or%2520Destroy%2520Water) |
 |     2nd     | [Dancing Wave](https://lolindhir.github.io/PnP/spells/Dancing%2520Wave)            |
