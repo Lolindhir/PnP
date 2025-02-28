@@ -9,7 +9,7 @@
 
 ## Special Traits
 
-***Resourceful.*** You gain Heroic Inspiration whenever you finish a Long Rest.
+***Resourceful.*** You gain [Heroic Inspiration](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration) whenever you finish a Long Rest.
 
 ***Skillful.*** You gain proficiency in one skill of your choice.
 

@@ -7,7 +7,7 @@
 | **Level Up Hit Point Gain**    | D6 + Constitution Modifier + 2                                                                     |
 | **Saving Throw Proficiencies** | Wisdom and Charisma                                                                                |
 | **Skill Proficiencies**        | *Choose 2:* Arcana, Athletics, Intimidation, Medicine, Nature, Perception, Persuasion, or Survival |
-| **Weapon Proficiencies**       | Simple Weapons                                                                                     |
+| **Weapon Proficiencies**       | Weapons that deal Bludgeoning damage                                                               |
 | **Armor Training**             | Light and Medium armor                                                                             |
 ___
 

@@ -1,5 +1,7 @@
 
-Under Construction		![image](assets/rules/UnderConstruction.png)
+Bild allgemein			<img src="assets/rules/AoECut.png" class="image">
+
+Under Construction		<img src="assets/rules/UnderConstructionBig.png" class="image">
 
 Start-Gap bei Unterseiten	<div class="startgap"></div>
 
