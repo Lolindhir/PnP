@@ -7,6 +7,7 @@
 
 
 
+
 | School        | Typical Effects                                              |
 | :------------ | :----------------------------------------------------------- |
 | Abjuration    | Prevents or reverses harmful effects                         |

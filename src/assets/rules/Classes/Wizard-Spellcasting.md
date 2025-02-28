@@ -26,7 +26,7 @@
 
 
 
-## Spellcasting 
+## Spellcasting
 
 **Spellcasting Ability.** Intelligence is your spellcasting ability for your Wizard spells.
 

@@ -1,5 +1,6 @@
 
 
+
 #### Light Armor
 
 | Armor                 | AC           | Stealth |
@@ -7,6 +8,11 @@
 | Padded Armor          | 11 + Dex mod | Disadv. |
 | Leather Armor         | 11 + Dex mod | -       |
 | Studded Leather Armor | 12 + Dex mod | -       |
+
+
+
+
+
 
 
 #### Medium Armor
@@ -19,6 +25,14 @@
 | Breastplate      | 14 + Dex mod (max 2) | -       |
 | Half Plate Armor | 15 + Dex mod (max 2) | Disadv. |
 
+
+
+
+
+
+
+
+
 #### Heavy Armor
 
 | Armor        | AC  | Strength | Stealth |
@@ -28,11 +42,18 @@
 | Splint Armor | 17  | Str 15   | Disadv. |
 | Plate Armor  | 18  | Str 15   | Disadv. |
 
+
+
+
+
+
+
 #### Shield
 
 | Armor  | AC  |
 | :----- | :-: |
 | Shield | +2  |
+
 
 
 ____
@@ -46,6 +67,8 @@ You gain the Armor Class benefit of a Shield only if you have training with it.
 **Special Reaction.** If you are hit by an attack roll and you have a shield with an armor bonus greater than 1 donned, you can use your reaction to turn the hit into a miss by interposing the shield. If you do so, the shield gets damaged and looses one on its armor class bonus.
 
 The cost to repair a shield depends on the armor class bonus you want to restore as you can see in the Shield Repair table below.
+
+
 ##### Shield Repair Table
 | Bonus to Restore to |      Cost |
 | :-----------------: | --------: |
@@ -57,6 +80,7 @@ The cost to repair a shield depends on the armor class bonus you want to restore
 
 ### Strength
 Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows "Str 13" or "Str 15" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score.
+
 
 
 ### Getting Into and Out of Armor

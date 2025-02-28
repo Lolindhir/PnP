@@ -36,13 +36,13 @@ You gain all the benefits a background provides (connection, feature, proficienc
 ### Choose an Ability Score Combination
 To determine your ability scores, you will use a defined array of ability scores. These scores can then be freely assigned to the six abilities. You can choose from the following five combinations:
 
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
-| :------: | :------: | :------: | :------: | :------: | :------: | :------- |
-|    15    |    15    |    13    |    10    |    10    |    8     |          |
-|    15    |    14    |    14    |    10    |    10    |    8     |          |
-|  **15**  |  **14**  |  **13**  |  **12**  |  **10**  |  **8**   | *        |
-|    14    |    14    |    14    |    12    |    10    |    8     |          |
-|    14    |    14    |    13    |    12    |    12    |    8     |          |
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
+| -------: | :------: | :------: | :------: | :------: | :------: | :------: | :------- |
+|          |    15    |    15    |    13    |    10    |    10    |    8     |          |
+|          |    15    |    14    |    14    |    10    |    10    |    8     |          |
+|        * |  **15**  |  **14**  |  **13**  |  **12**  |  **10**  |  **8**   | *        |
+|          |    14    |    14    |    14    |    12    |    10    |    8     |          |
+|          |    14    |    14    |    13    |    12    |    12    |    8     |          |
 
 **standard array*
 

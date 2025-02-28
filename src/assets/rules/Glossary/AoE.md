@@ -1,3 +1,5 @@
+
+
 ![image](assets/rules/AoE.png)
 
 An area of effect has a point of origin, a location from which the effect's energy erupts. The rules for each shape specify how to position its point of origin. If all straight lines extending from the point of origin to a location in the area of effect are blocked, that location isn't included in the area of effect. To block a line, an obstruction must provide Total Cover. See also ["Cover"](https://lolindhir.github.io/PnP/rules/glossary/vision_light).

@@ -1,4 +1,5 @@
 
+
 ## Simple Weapons
 
 ### Simple Melee Weapons
@@ -17,6 +18,17 @@
 | Spear        | 1d6 Piercing    | Thrown (20/60), Versatile (1d8) | Sap     |
 
 
+
+
+
+
+
+
+
+
+
+
+
 ### Simple Ranged Weapons
 
 | Name           | Damage          | Properties                                     | Mastery |
@@ -25,6 +37,12 @@
 | Light Crossbow | 1d8 Piercing    | Ammunition (80/320, Bolt), Loading, Two-Handed | Slow    |
 | Shortbow       | 1d6 Piercing    | Ammunition (80/320, Arrow), Two-Handed         | Vex     |
 | Sling          | 1d4 Bludgeoning | Ammunition (30/120, Bullet)                    | Slow    |
+
+
+
+
+
+
 
 
 ## Martial Weapons
@@ -53,6 +71,25 @@
 | Whip        | 1d4 Slashing    | Finesse, Reach                            | Slow    |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Martial Ranged Weapons
 
 | Name           | Damage        | Properties                                             | Mastery |
@@ -61,6 +98,12 @@
 | Hand Crossbow  | 1d6 Piercing  | Ammunition (30/120, Bolt), Light, Loading              | Vex     |
 | Heavy Crossbow | 1d10 Piercing | Ammunition (100/400, Bolt), Heavy, Loading, Two-Handed | Push    |
 | Longbow        | 1d8 Piercing  | Ammunition (150/600, Arrow), Heavy, Two-Handed         | Slow    |
+
+
+
+
+
+
 
 
 ## Improvised Weapons

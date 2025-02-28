@@ -1,3 +1,5 @@
+
+
 Je nachdem was trainiert werden soll, muss ein bestimmter Fortschritt beim Training erreicht werden, der in Fortschrittspunkten gemessen wird. Der Trainingsfortschritt ist dabei abhängig von den Bedingungen während des Trainings. Die Bedingungen setzen sich aus drei Bereichen zusammen – der Qualität, der Eignung & der Neigung – und werden über das QuEN-System abgebildet.
 
 ## Formel für den Fortschritt

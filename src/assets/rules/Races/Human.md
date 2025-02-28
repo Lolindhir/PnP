@@ -17,6 +17,7 @@
 
 ***Human Ancestry.*** Humans are divided by the environment in which their ancestors lived. Choose a ancestry from the Human Ancestries table. You gain the benefit of that ancestry.
 
+
 ##### Human Ancestries
 | Ancestry     | Benefit                                                                                                                                                       |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |

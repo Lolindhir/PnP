@@ -27,13 +27,13 @@ An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejewe
 
 **Arcane Focuses**
 
-| Focus          | Weight | Cost  |
-|----------------|--------|-------|
-| Crystal        | 1 lb.  | 10 CP |
-| Orb            | 3 lb.  | 20 CP |
-| Rod            | 2 lb.  | 10 CP |
+| Focus                       | Weight | Cost  |
+| --------------------------- | ------ | ----- |
+| Crystal                     | 1 lb.  | 10 CP |
+| Orb                         | 3 lb.  | 20 CP |
+| Rod                         | 2 lb.  | 10 CP |
 | Staff (also a Quarterstaff) | 4 lb.  | 5 CP  |
-| Wand           | 1 lb.  | 10 CP |
+| Wand                        | 1 lb.  | 10 CP |
 
 ### Backpack (2 GP)
 A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.

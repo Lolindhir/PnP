@@ -24,6 +24,7 @@
 When you reach character levels 3 and 5, you learn a higher level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
 Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).
 
+
 ##### Elven Lineages
 | Legacy       | Level 1                                                                                                                                                                                                     | Level 3                 | Level 5                       |
 | :----------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- | :---------------------------- |
@@ -31,7 +32,6 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells yo
 | **High Elf** | You know the [Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation) cantrip. Whenever you finish a Long Rest (Night Rest when using Gritty Realism), you can replace that cantrip with a different cantrip from the Wizard spell list. | [Detect Magic](https://lolindhir.github.io/PnP/spells/Detect%2520Magic) | [Misty Step](https://lolindhir.github.io/PnP/spells/Misty%2520Step)         |
 | **Sea Elf**  | You have a swimming speed of 30 feet, and you can breathe air and water. You also know the [Shape Water](https://lolindhir.github.io/PnP/spells/Shape%2520Water) cantrip.                                                                                  | [Fog Cloud](https://lolindhir.github.io/PnP/spells/Fog%2520Cloud)    | [Water Breathing](https://lolindhir.github.io/PnP/spells/Water%2520Breathing)    |
 | **Wood Elf** | Your Speed increases to 35 feet. You also know the [Druidcraft](https://lolindhir.github.io/PnP/spells/Druidcraft) cantrip.                                                                                                                           | [Longstrider](https://lolindhir.github.io/PnP/spells/Longstrider)  | [Pass without Trace](https://lolindhir.github.io/PnP/spells/Pass%2520without%2520Trace) |
-
 
 
 

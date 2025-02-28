@@ -5,6 +5,7 @@ export interface RawRulesIndex {
     term: string;
     reference: string;
     link: string;
+    category: string;
 }
 
 export interface RulesIndex {

@@ -4,8 +4,8 @@ A Spellhold bears the magic of a single spell determined by the scroll's creator
 There are different types of Spellholds depending on their source of magic and the spell list the spell is from as listed in the Spellhold Types table below.
 
 ##### Spellhold Types
-| Type         | Origin | Proficiency | Spell List                      |
-| :----------- | :----------- | :---------- | :------------------------------ |
+| Type             | Origin       | Proficiency | Spell List                      |
+| :--------------- | :----------- | :---------- | :------------------------------ |
 | **Spell Scroll** | Arcane Weave | Arcana      | Bard, Sorcerer, Warlock, Wizard |
 | **Prayer Bead**  | Divine Power | Religion    | Cleric, Paladin                 |
 | **Nature Stone** | Primal Force | Nature      | Druid, Ranger, Shaman           |
