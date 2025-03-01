@@ -163,15 +163,15 @@
 	},
 	{
 		"term": "Ammunition",
-		"reference": "Weapon Property",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
-		"category": "Weapon Property"
-	},
-	{
-		"term": "Ammunition",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
 		"category": "Consumable, Gear"
+	},
+	{
+		"term": "Ammunition",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
+		"category": "Weapon Property"
 	},
 	{
 		"term": "Animal Handling",
@@ -444,6 +444,12 @@
 		"category": ""
 	},
 	{
+		"term": "Casting in Armor",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
+		"category": ""
+	},
+	{
 		"term": "Casting Time",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
@@ -451,12 +457,6 @@
 	},
 	{
 		"term": "Casting Without Slots",
-		"reference": "Spellcasting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
-		"category": ""
-	},
-	{
-		"term": "Casting in Armor",
 		"reference": "Spellcasting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
 		"category": ""
@@ -661,14 +661,14 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
 		"category": ""
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
 		"category": ""
 	},
 	{
@@ -1075,15 +1075,15 @@
 	},
 	{
 		"term": "Exhaustion",
-		"reference": "Conditions",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
-		"category": "Condition"
-	},
-	{
-		"term": "Exhaustion",
 		"reference": "Exhaustion",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
 		"category": ""
+	},
+	{
+		"term": "Exhaustion",
+		"reference": "Conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
+		"category": "Condition"
 	},
 	{
 		"term": "Exploration",
@@ -1104,15 +1104,15 @@
 		"category": "Hazard"
 	},
 	{
-		"term": "Falling Unconscious",
-		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
-		"category": ""
-	},
-	{
 		"term": "Falling off a Mount",
 		"reference": "Mounted Combat",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
+	},
+	{
+		"term": "Falling Unconscious",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
 		"category": ""
 	},
 	{
@@ -1321,15 +1321,15 @@
 	},
 	{
 		"term": "Halfling",
-		"reference": "Halfling",
-		"link": "https://lolindhir.github.io/PnP/rules/races/halfling",
-		"category": "Race"
-	},
-	{
-		"term": "Halfling",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages",
 		"category": "Language"
+	},
+	{
+		"term": "Halfling",
+		"reference": "Halfling",
+		"link": "https://lolindhir.github.io/PnP/rules/races/halfling",
+		"category": "Race"
 	},
 	{
 		"term": "Hand Crossbow",
@@ -1368,16 +1368,16 @@
 		"category": ""
 	},
 	{
-		"term": "Healing Potion",
-		"reference": "Potion",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable, Potion"
-	},
-	{
 		"term": "Healing from 0 HP",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
 		"category": ""
+	},
+	{
+		"term": "Healing Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Heavily Obscured",
@@ -1464,15 +1464,15 @@
 		"category": "Skill"
 	},
 	{
-		"term": "Hit Dice Regeneration through Tea",
-		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
-	},
-	{
 		"term": "Hit Dice during Night Rest",
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"category": ""
+	},
+	{
+		"term": "Hit Dice Regeneration through Tea",
+		"reference": "Regeneration Options",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
 		"category": ""
 	},
 	{
@@ -1573,15 +1573,15 @@
 	},
 	{
 		"term": "Influence",
-		"reference": "Social Interaction",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social",
-		"category": ""
-	},
-	{
-		"term": "Influence",
 		"reference": "Detailed Actions",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
 		"category": "Action"
+	},
+	{
+		"term": "Influence",
+		"reference": "Social Interaction",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social",
+		"category": ""
 	},
 	{
 		"term": "Influence Check",
@@ -2286,12 +2286,6 @@
 		"category": "Maneuver"
 	},
 	{
-		"term": "QuEN-System",
-		"reference": "Training",
-		"link": "https://lolindhir.github.io/PnP/rules/downtime/training",
-		"category": "Training"
-	},
-	{
 		"term": "Qualität",
 		"reference": "Training",
 		"link": "https://lolindhir.github.io/PnP/rules/downtime/training",
@@ -2302,6 +2296,12 @@
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
 		"category": "Weapon"
+	},
+	{
+		"term": "QuEN-System",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training",
+		"category": "Training"
 	},
 	{
 		"term": "Quick Toss",
@@ -2365,15 +2365,15 @@
 	},
 	{
 		"term": "Reach",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
-		"category": ""
-	},
-	{
-		"term": "Reach",
 		"reference": "Weapon Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
 		"category": "Weapon Property"
+	},
+	{
+		"term": "Reach",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
+		"category": ""
 	},
 	{
 		"term": "Reaction",
@@ -2892,13 +2892,13 @@
 		"category": ""
 	},
 	{
-		"term": "Starting Equipment by Level",
+		"term": "Starting at Higher Levels",
 		"reference": "Starting at Higher Levels",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/starting_higher_levels",
 		"category": ""
 	},
 	{
-		"term": "Starting at Higher Levels",
+		"term": "Starting Equipment by Level",
 		"reference": "Starting at Higher Levels",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/starting_higher_levels",
 		"category": ""

@@ -355,14 +355,127 @@
 	},
 	{
 		"id": "pcs",
-		"name": "Index",
-		"breadcrumb": "Index",
+		"name": "Spielercharaktere",
+		"breadcrumb": "PCs",
 		"indexing": "none",
 		"indexname": "",
 		"indexCategory": "",
 		"indexSubCategory": "",
 		"filename": "",
 		"children": []
-	}	
+	},
+	{
+		"id": "npcs",
+		"name": "NPCs",
+		"breadcrumb": "NPCs",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": []
+	},
+	{
+		"id": "locations",
+		"name": "Orte",
+		"breadcrumb": "Orte",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "locations_cities",
+				"name": "Städte",
+				"breadcrumb": "Städte",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "cities_everlund",
+						"name": "Everlund",
+						"breadcrumb": "Everlund",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Ort, Stadt",
+						"indexSubCategory": "",
+						"filename": "/Locations/Everlund.md",
+						"children": []
+					},
+					{
+						"id": "cities_phandalin",
+						"name": "Phandalin",
+						"breadcrumb": "Phandalin",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Ort, Stadt",
+						"indexSubCategory": "",
+						"filename": "/Locations/Phandalin.md",
+						"children": []
+					},
+					{
+						"id": "cities_neverwinter",
+						"name": "Neverwinter",
+						"breadcrumb": "Neverwinter",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Ort, Stadt",
+						"indexSubCategory": "",
+						"filename": "/Locations/Neverwinter.md",
+						"children": []
+					},
+					{
+						"id": "cities_triboar",
+						"name": "Triboar",
+						"breadcrumb": "Triboar",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Ort, Stadt",
+						"indexSubCategory": "",
+						"filename": "/Locations/Triboar.md",
+						"children": []
+					},
+					{
+						"id": "cities_yartar",
+						"name": "Yartar",
+						"breadcrumb": "Yartar",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Ort, Stadt",
+						"indexSubCategory": "",
+						"filename": "/Locations/Yartar.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "locations_landmarks",
+				"name": "Landmarken",
+				"breadcrumb": "Landmarken",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "landmarks_shadowtop_cathedral",
+						"name": "Shadowtop Cathedral",
+						"breadcrumb": "Shadowtop",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Landmarke, Ort",
+						"indexSubCategory": "",
+						"filename": "/Locations/ShadowtopCathedral.md",
+						"children": []
+					}
+				]
+			}
+		]
+	}			
 ]
 

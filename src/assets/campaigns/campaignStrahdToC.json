@@ -1,0 +1,59 @@
+[
+	{
+		"id": "overviews",
+		"name": "Übersichten",
+		"breadcrumb": "Übersichten",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_sessions",
+				"name": "Sessionübersicht",
+				"breadcrumb": "Sessions",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Session.md",
+				"children": []
+			},
+			{
+				"id": "overview_npcs",
+				"name": "NPC-Übersicht",
+				"breadcrumb": "NPCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_NPC.md",
+				"children": []
+			},
+			{
+				"id": "overview_locations",
+				"name": "Ort-Übersicht",
+				"breadcrumb": "Orte",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Ort.md",
+				"children": []
+			},
+			{
+				"id": "overview_factions",
+				"name": "Fraktionen-Übersicht",
+				"breadcrumb": "Fraktionen",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Fraktion.md",
+				"children": []
+			}
+		]
+	}	
+]
+

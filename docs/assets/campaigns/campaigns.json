@@ -1,5 +1,6 @@
 [
 	{
+		"id": "starter",
 		"name": "Sturmkönigs Donner",
 		"breadcrumb": "Sturmkönig",
 		"alternateName": "Starter Set",
@@ -7,6 +8,7 @@
 		"toc": "campaignStarterToC.json"
 	},
 	{
+		"id": "strahd",
 		"name": "Curse of Strahd",
 		"breadcrumb": "Strahd",
 		"alternateName": "Fluch des Strahd",

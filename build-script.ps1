@@ -25,6 +25,13 @@ if ($processStarter.ExitCode -ne 0) {
     exit $process.ExitCode
 }
 
+# Führe MarkdownLinker aus für Strahd Kampagne
+$processStrahd = Start-Process -FilePath "D:\OneDrive\D&D\Website Content\MarkdownLinker\MarkdownLinker.exe" -ArgumentList "`"-t:D:\OneDrive\D&D\Website Content\Campaigns\campaignStrahdToC.json`" `"-r:src/assets/campaigns/Strahd`" `"-p:campaigns/strahd/`" -d -i" -NoNewWindow -Wait -PassThru
+if ($processStrahd.ExitCode -ne 0) {
+    Write-Error "MarkdownLinker failed with exit code $($processStrahd.ExitCode). Aborting build process."
+    exit $process.ExitCode
+}
+
 # Baue das Projekt
 ng build --base-href="https://lolindhir.github.io/PnP/"
 

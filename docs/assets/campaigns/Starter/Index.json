@@ -1,5 +1,11 @@
 [
 	{
+		"term": "Everlund",
+		"reference": "Everlund",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_everlund",
+		"category": "Ort, Stadt"
+	},
+	{
 		"term": "Felsschlundhöhle",
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
@@ -25,9 +31,21 @@
 	},
 	{
 		"term": "Neverwinter",
+		"reference": "Neverwinter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_neverwinter",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Neverwinter",
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
 		"category": "Ort"
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Phandalin",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_phandalin",
+		"category": "Ort, Stadt"
 	},
 	{
 		"term": "Phandalin",
@@ -54,6 +72,12 @@
 		"category": "Session"
 	},
 	{
+		"term": "Shadowtop Cathedral",
+		"reference": "Shadowtop Cathedral",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_landmarks/landmarks_shadowtop_cathedral",
+		"category": "Landmarke, Ort"
+	},
+	{
 		"term": "Sildar Hallwinter",
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
@@ -64,5 +88,17 @@
 		"reference": "Session 9",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
 		"category": "NPC"
+	},
+	{
+		"term": "Triboar",
+		"reference": "Triboar",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_triboar",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Yartar",
+		"reference": "Yartar",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_yartar",
+		"category": "Ort, Stadt"
 	}
 ]
