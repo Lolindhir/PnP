@@ -1,0 +1,368 @@
+[
+	{
+		"id": "overviews",
+		"name": "Übersichten",
+		"breadcrumb": "Übersichten",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_sessions",
+				"name": "Sessionübersicht",
+				"breadcrumb": "Sessions",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Session.md",
+				"children": []
+			},
+			{
+				"id": "overview_npcs",
+				"name": "NPC-Übersicht",
+				"breadcrumb": "NPCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_NPC.md",
+				"children": []
+			},
+			{
+				"id": "overview_locations",
+				"name": "Ort-Übersicht",
+				"breadcrumb": "Orte",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Ort.md",
+				"children": []
+			},
+			{
+				"id": "overview_factions",
+				"name": "Fraktionen-Übersicht",
+				"breadcrumb": "Fraktionen",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Fraktion.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "sessions",
+		"name": "Sessionnotizen",
+		"breadcrumb": "Sessions",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "session001",
+				"name": "Session 1 - Aufbruch ins Abenteuer",
+				"breadcrumb": "Session 1",
+				"indexing": "all",
+				"indexname": "Session 1",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/001.md",
+				"children": []
+			},
+			{
+				"id": "session002",
+				"name": "Session 2 - Geisel im Nebel",
+				"breadcrumb": "Session 2",
+				"indexing": "all",
+				"indexname": "Session 2",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/002.md",
+				"children": []
+			},
+			{
+				"id": "session003",
+				"name": "Session 3 - Höhlensäuberung",
+				"breadcrumb": "Session 3",
+				"indexing": "all",
+				"indexname": "Session 3",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/003.md",
+				"children": []
+			},
+			{
+				"id": "session004",
+				"name": "Session 4 - Ankunft in Phandalin",
+				"breadcrumb": "Session 4",
+				"indexing": "all",
+				"indexname": "Session 4",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/004.md",
+				"children": []
+			},
+			{
+				"id": "session005",
+				"name": "Session 5 - Shopping, Tiergeflüster und Pilzgefahr",
+				"breadcrumb": "Session 5",
+				"indexing": "all",
+				"indexname": "Session 5",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/005.md",
+				"children": []
+			},
+			{
+				"id": "session006",
+				"name": "Session 6 - Wurmangst",
+				"breadcrumb": "Session 6",
+				"indexing": "all",
+				"indexname": "Session 6",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/006.md",
+				"children": []
+			},
+			{
+				"id": "session007",
+				"name": "Session 7 - Bargespräch mit Konsequenzen",
+				"breadcrumb": "Session 7",
+				"indexing": "all",
+				"indexname": "Session 7",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/007.md",
+				"children": []
+			},
+			{
+				"id": "session008",
+				"name": "Session 8 - Rotbrandversteck",
+				"breadcrumb": "Session 8",
+				"indexing": "all",
+				"indexname": "Session 8",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/008.md",
+				"children": []
+			},
+			{
+				"id": "session009",
+				"name": "Session 9 - Fährten",
+				"breadcrumb": "Session 9",
+				"indexing": "all",
+				"indexname": "Session 9",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/009.md",
+				"children": []
+			},
+			{
+				"id": "session010",
+				"name": "Session 10 - Eine gelungene Mission!?",
+				"breadcrumb": "Session 10",
+				"indexing": "all",
+				"indexname": "Session 10",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/010.md",
+				"children": []
+			},
+			{
+				"id": "session011",
+				"name": "Session 11 - Flüchtige Erholung",
+				"breadcrumb": "Session 11",
+				"indexing": "all",
+				"indexname": "Session 11",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/011.md",
+				"children": []
+			},
+			{
+				"id": "session012",
+				"name": "Session 12 - Das Ritual",
+				"breadcrumb": "Session 12",
+				"indexing": "all",
+				"indexname": "Session 12",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/012.md",
+				"children": []
+			},
+			{
+				"id": "session013",
+				"name": "Session 13 - Abschied auf Zeit",
+				"breadcrumb": "Session 13",
+				"indexing": "all",
+				"indexname": "Session 13",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/013.md",
+				"children": []
+			},
+			{
+				"id": "session014",
+				"name": "Session 14 - Giftzahn",
+				"breadcrumb": "Session 14",
+				"indexing": "all",
+				"indexname": "Session 14",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/014.md",
+				"children": []
+			},
+			{
+				"id": "session015",
+				"name": "Session 15 - (Zeit-)Aufwendiger als gedacht",
+				"breadcrumb": "Session 15",
+				"indexing": "all",
+				"indexname": "Session 15",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/015.md",
+				"children": []
+			},
+			{
+				"id": "session016",
+				"name": "Session 16 - Das versteckte Wissen",
+				"breadcrumb": "Session 16",
+				"indexing": "all",
+				"indexname": "Session 16",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/016.md",
+				"children": []
+			},
+			{
+				"id": "session017",
+				"name": "Session 17 - Brutkönigin, Katzenjammer und Landhaie",
+				"breadcrumb": "Session 17",
+				"indexing": "all",
+				"indexname": "Session 17",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/017.md",
+				"children": []
+			},
+			{
+				"id": "session018",
+				"name": "Session 18 - Training à la Minka",
+				"breadcrumb": "Session 18",
+				"indexing": "all",
+				"indexname": "Session 18",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/018.md",
+				"children": []
+			},
+			{
+				"id": "session019",
+				"name": "Session 19 - Der Erdknoten",
+				"breadcrumb": "Session 19",
+				"indexing": "all",
+				"indexname": "Session 19",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/019.md",
+				"children": []
+			},
+			{
+				"id": "session020",
+				"name": "Session 20 - Triboar",
+				"breadcrumb": "Session 20",
+				"indexing": "all",
+				"indexname": "Session 20",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/020.md",
+				"children": []
+			},
+			{
+				"id": "session021",
+				"name": "Session 21 - Geburt der Riesenspalter",
+				"breadcrumb": "Session 21",
+				"indexing": "all",
+				"indexname": "Session 21",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/021.md",
+				"children": []
+			},
+			{
+				"id": "session022",
+				"name": "Session 22 - Wohl und Wehe",
+				"breadcrumb": "Session 22",
+				"indexing": "all",
+				"indexname": "Session 22",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/022.md",
+				"children": []
+			},
+			{
+				"id": "session023",
+				"name": "Session 23 - Erkundungen samt Beinahe-Fischfutter",
+				"breadcrumb": "Session 23",
+				"indexing": "all",
+				"indexname": "Session 23",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/023.md",
+				"children": []
+			},
+			{
+				"id": "session024",
+				"name": "Session 24 - Krakenübernahme vereitelt",
+				"breadcrumb": "Session 24",
+				"indexing": "all",
+				"indexname": "Session 24",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/024.md",
+				"children": []
+			},
+			{
+				"id": "session025",
+				"name": "Session 25 - Stadt, Fluss, Wald",
+				"breadcrumb": "Session 25",
+				"indexing": "all",
+				"indexname": "Session 25",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/025.md",
+				"children": []
+			},
+			{
+				"id": "session026",
+				"name": "Session 26 - Holz vom Großvaterbaum",
+				"breadcrumb": "Session 26",
+				"indexing": "all",
+				"indexname": "Session 26",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/026.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "pcs",
+		"name": "Index",
+		"breadcrumb": "Index",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": []
+	}	
+]
+

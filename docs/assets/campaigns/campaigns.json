@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Sturmkönigs Donner",
+		"breadcrumb": "Sturmkönig",
+		"alternateName": "Starter Set",
+		"directory": "Starter",
+		"toc": "campaignStarterToC.json"
+	},
+	{
+		"name": "Curse of Strahd",
+		"breadcrumb": "Strahd",
+		"alternateName": "Fluch des Strahd",
+		"directory": "Strahd",
+		"toc": "campaignStrahdToC.json"
+	}	
+]
+

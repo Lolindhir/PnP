@@ -27,7 +27,7 @@
 		"term": "Ability Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Ability Score",
@@ -69,7 +69,7 @@
 		"term": "Acid",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
-		"category": "Gear"
+		"category": "Consumable, Gear"
 	},
 	{
 		"term": "Acid",
@@ -135,7 +135,7 @@
 		"term": "Alchemist's Fire",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
-		"category": "Gear"
+		"category": "Consumable, Gear"
 	},
 	{
 		"term": "Alignment",
@@ -163,15 +163,15 @@
 	},
 	{
 		"term": "Ammunition",
-		"reference": "Adventuring Gear",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
-		"category": "Gear"
-	},
-	{
-		"term": "Ammunition",
 		"reference": "Weapon Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
 		"category": "Weapon Property"
+	},
+	{
+		"term": "Ammunition",
+		"reference": "Adventuring Gear",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
+		"category": "Consumable, Gear"
 	},
 	{
 		"term": "Animal Handling",
@@ -183,7 +183,7 @@
 		"term": "Antitoxin",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
-		"category": "Gear"
+		"category": "Consumable, Gear"
 	},
 	{
 		"term": "Arc-Stone",
@@ -321,7 +321,7 @@
 		"term": "Ball Bearings",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
-		"category": "Gear"
+		"category": "Consumable, Gear"
 	},
 	{
 		"term": "Battle Maneuvers",
@@ -507,7 +507,7 @@
 		"term": "Charisma Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Charlatan",
@@ -633,7 +633,7 @@
 		"term": "Constitution Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Contacts",
@@ -837,7 +837,7 @@
 		"term": "Dexterity Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Difficult Terrain",
@@ -1075,15 +1075,15 @@
 	},
 	{
 		"term": "Exhaustion",
-		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
-		"category": ""
-	},
-	{
-		"term": "Exhaustion",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
 		"category": "Condition"
+	},
+	{
+		"term": "Exhaustion",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"category": ""
 	},
 	{
 		"term": "Exploration",
@@ -1179,7 +1179,7 @@
 		"term": "Flying Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Food Needs",
@@ -1293,7 +1293,7 @@
 		"term": "Growth Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Guide",
@@ -1371,7 +1371,7 @@
 		"term": "Healing Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Healing from 0 HP",
@@ -1441,15 +1441,15 @@
 	},
 	{
 		"term": "Hide",
-		"reference": "Detailed Actions",
-		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
-		"category": "Action"
-	},
-	{
-		"term": "Hide",
 		"reference": "Armor",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor",
 		"category": "Armor"
+	},
+	{
+		"term": "Hide",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
+		"category": "Action"
 	},
 	{
 		"term": "High Elf",
@@ -1573,15 +1573,15 @@
 	},
 	{
 		"term": "Influence",
-		"reference": "Detailed Actions",
-		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
-		"category": "Action"
-	},
-	{
-		"term": "Influence",
 		"reference": "Social Interaction",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social",
 		"category": ""
+	},
+	{
+		"term": "Influence",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
+		"category": "Action"
 	},
 	{
 		"term": "Influence Check",
@@ -1617,7 +1617,7 @@
 		"term": "Intelligence Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Interacting with Objects",
@@ -1735,15 +1735,15 @@
 	},
 	{
 		"term": "Lightweight",
-		"reference": "Weapon Special Property",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special",
-		"category": "Weapon Special Property"
-	},
-	{
-		"term": "Lightweight",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special",
 		"category": "Armor Special Property"
+	},
+	{
+		"term": "Lightweight",
+		"reference": "Weapon Special Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special",
+		"category": "Weapon Special Property"
 	},
 	{
 		"term": "Limited Potion Crafting",
@@ -1983,7 +1983,7 @@
 		"term": "Nature Stone",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds",
-		"category": "Consumable"
+		"category": "Consumable, Spellhold"
 	},
 	{
 		"term": "Necromancy",
@@ -2187,7 +2187,7 @@
 		"term": "Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": ""
 	},
 	{
 		"term": "Potion Effect Restriction",
@@ -2211,7 +2211,7 @@
 		"term": "Prayer Bead",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds",
-		"category": "Consumable"
+		"category": "Consumable, Spellhold"
 	},
 	{
 		"term": "Precision Attack",
@@ -2403,7 +2403,7 @@
 		"term": "Recovery Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Regeneration Options",
@@ -2415,7 +2415,7 @@
 		"term": "Regeneration Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Reliable Talent",
@@ -2469,7 +2469,7 @@
 		"term": "Restoration Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Restrained",
@@ -2817,7 +2817,7 @@
 		"term": "Spell Scroll",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds",
-		"category": "Consumable"
+		"category": "Consumable, Spellhold"
 	},
 	{
 		"term": "Spell Slot",
@@ -2841,7 +2841,7 @@
 		"term": "Spellhold",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds",
-		"category": "Consumable"
+		"category": ""
 	},
 	{
 		"term": "Spellhold Base",
@@ -2919,7 +2919,7 @@
 		"term": "Strength Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Strengthened (+1/+2)",
@@ -3058,6 +3058,12 @@
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
 		"category": "Maneuver"
+	},
+	{
+		"term": "Training",
+		"reference": "Training",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/training",
+		"category": "Downtime"
 	},
 	{
 		"term": "Transmutation",
@@ -3279,7 +3285,7 @@
 		"term": "Wisdom Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
-		"category": "Consumable"
+		"category": "Consumable, Potion"
 	},
 	{
 		"term": "Wizard",

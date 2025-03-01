@@ -1,6 +1,4 @@
 
-<div class="startgap"></div>
-
 
 
 **Potion Usage.** As an Utilize action, you can drink a potion or administer it to another creature within 5 feet of yourself.

@@ -1,16 +1,18 @@
 The Adventuring Gear table in this section includes gear that adventurers often find useful. These items are described here in alphabetical order, with an item's price appearing after its name.
 
+
 ### Acid (25 CP)
 When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.
 
+
 ### Alchemist's Fire (50 GP)
 When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see the rules glossary).
+
 
 ### Ammunition (Varies)
 Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.
 
 **Ammunition**
-
 | Type            | Amount | Storage | Weight | Cost |
 |-----------------|--------|---------|--------|------|
 | Arrows          | 20     | Quiver  | 1 lb.  | 1 CP |
@@ -19,6 +21,7 @@ Ammunition is required by a weapon that has the Ammunition property. A weapon's 
 | Bullets, Sling  | 20     | Pouch   | 1½ lb. | 4 CP |
 | Needles         | 50     | Pouch   | 1 lb.  | 1 CP |
 
+
 ### Antitoxin (50 GP)
 As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.
 
@@ -26,7 +29,6 @@ As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving
 An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.
 
 **Arcane Focuses**
-
 | Focus                       | Weight | Cost  |
 | --------------------------- | ------ | ----- |
 | Crystal                     | 1 lb.  | 10 CP |
@@ -37,6 +39,7 @@ An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejewe
 
 ### Backpack (2 GP)
 A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.
+
 
 ### Ball Bearings (1 GP)
 As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.

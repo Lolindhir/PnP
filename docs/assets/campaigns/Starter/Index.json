@@ -1,0 +1,68 @@
+[
+	{
+		"term": "Felsschlundhöhle",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Gundren Steinsucher",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Gundren Steinsucher",
+		"reference": "Session 9",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "NPC"
+	},
+	{
+		"term": "Klarg",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Neverwinter",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Session 9",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "Ort"
+	},
+	{
+		"term": "Session 1",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Session"
+	},
+	{
+		"term": "Session 9",
+		"reference": "Session 9",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "Session"
+	},
+	{
+		"term": "Sildar Hallwinter",
+		"reference": "Session 1",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Sildar Hallwinter",
+		"reference": "Session 9",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "NPC"
+	}
+]

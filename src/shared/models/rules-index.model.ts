@@ -11,6 +11,7 @@ export interface RawRulesIndex {
 export interface RulesIndex {
     term: string;
     reference: string;
+    termAndCategory: string;
     route: string;
 }
 
@@ -41,11 +42,13 @@ export class RulesIndex {
         rawIndex.forEach(rawRule => {
 
             var generatedRoute = rawRule.link.split('/rules');
+            var generatedTermAndCategory: string = rawRule.category.length > 0 ? rawRule.term + ' [' + rawRule.category + ']' : rawRule.term;
 
             //create fresh rules index
             var freshRulesContent: RulesIndex = {
                 term: rawRule.term,
                 reference: rawRule.reference,
+                termAndCategory: generatedTermAndCategory,
                 route: '/rules' + generatedRoute[1]
             };
 

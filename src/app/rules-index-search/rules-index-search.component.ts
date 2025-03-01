@@ -22,7 +22,7 @@ export class RulesIndexSearchComponent implements OnInit {
   onSearchChange(): void {
     if (this.searchTerm.length >= 2) {
       this.searchResults = RulesIndex.getAllRules().filter(rule =>
-        rule.term.toLowerCase().includes(this.searchTerm.toLowerCase())
+        rule.termAndCategory.toLowerCase().includes(this.searchTerm.toLowerCase())
       );
     } else {
       this.searchResults = [];

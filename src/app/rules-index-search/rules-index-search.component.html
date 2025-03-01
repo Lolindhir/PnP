@@ -6,7 +6,7 @@
   
     <div *ngIf="searchResults.length > 0" class="results-container" fxLayout="column" fxLayoutAlign="start start" >
         <mat-card *ngFor="let result of searchResults" (click)="navigateTo(result.route)" class="result-card">
-            <mat-card-title [innerHTML]="result.term | highlightRulesSearch:searchTerm" class="result-title"></mat-card-title>
+            <mat-card-title [innerHTML]="result.termAndCategory | highlightRulesSearch:searchTerm" class="result-title"></mat-card-title>
             <mat-card-content class="result-content">{{ result.reference }}</mat-card-content>
         </mat-card>
     </div>
