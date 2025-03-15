@@ -52,42 +52,36 @@
             </mat-form-field>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="space-between end" style="margin-top: 10px;">
+        <div *ngIf="selectedCategories.length + selectedAttributes.length > 0" fxLayout="row wrap" fxLayoutAlign="left center" style="margin-top: 10px;">
 
-            <div *ngIf="selectedCategories.length + selectedAttributes.length === 0"></div>
+            <mat-chip-set>
+                <mat-chip-option *ngFor="let category of selectedCategories" [selectable]=false [removable]=true (removed)="onCategoryFilterRemoved(category)">
+                    <span class="chip-text">{{category}}</span>
+                    <mat-icon matChipRemove>cancel</mat-icon>
+                </mat-chip-option>
+            </mat-chip-set>
+        
+            <mat-chip-set>
+                <mat-chip-option *ngFor="let attribute of selectedAttributes" [selectable]=false [removable]=true (removed)="onAttributeFilterRemoved(attribute)">
+                    <span class="chip-text">{{attribute}}</span>
+                    <mat-icon matChipRemove>cancel</mat-icon>
+                </mat-chip-option>
+            </mat-chip-set>
 
-            <div *ngIf="selectedCategories.length + selectedAttributes.length > 0" fxLayout="row wrap" fxLayoutAlign="left center" style="margin-bottom: 25px">
-
-                <mat-chip-set>
-                    <mat-chip-option *ngFor="let category of selectedCategories" [selectable]=false [removable]=true (removed)="onCategoryFilterRemoved(category)">
-                        <span class="chip-text">{{category}}</span>
-                        <mat-icon matChipRemove>cancel</mat-icon>
-                    </mat-chip-option>
-                </mat-chip-set>
-            
-                <mat-chip-set>
-                    <mat-chip-option *ngFor="let attribute of selectedAttributes" [selectable]=false [removable]=true (removed)="onAttributeFilterRemoved(attribute)">
-                        <span class="chip-text">{{attribute}}</span>
-                        <mat-icon matChipRemove>cancel</mat-icon>
-                    </mat-chip-option>
-                </mat-chip-set>
-
-                <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
-
-            </div>            
+            <button mat-button color="primary" (click)="onAllFiltersRemoved()">Clear all Filters <mat-icon iconPositionEnd>filter_alt_off</mat-icon></button>
       
-            <div>
-                <div fxLayout="row" fxLayoutAlign="right center">
-                    <mat-slide-toggle color="primary" style="margin-right: 10px;" [(ngModel)]="onlyStarter" (ngModelChange)="onFilterChanged()">Only Starter</mat-slide-toggle>
-                    <mat-icon fontIcon="swap_vert"></mat-icon>
-                    <mat-button-toggle-group hideSingleSelectionIndicator="true" value="{{defaultSort}}" (change)="onSortChanged($event)">
-                        <mat-button-toggle value="category" style="font-size: 14px">Category</mat-button-toggle>
-                        <mat-button-toggle value="name" style="font-size: 14px">Name</mat-button-toggle>
-                    </mat-button-toggle-group>
-                </div>                
-            </div>
-
-        </div>         
+        </div>
+        
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="margin-top: 10px">
+            <mat-slide-toggle color="primary" style="margin-right: 10px;" [(ngModel)]="onlyStarter" (ngModelChange)="onFilterChanged()">Only Starter</mat-slide-toggle>
+            <div fxLayout="row" fxLayoutAlign="right center">
+                <mat-icon fontIcon="swap_vert"></mat-icon>
+                <mat-button-toggle-group hideSingleSelectionIndicator="true" value="{{defaultSort}}" (change)="onSortChanged($event)">
+                    <mat-button-toggle value="category" style="font-size: 14px">Category</mat-button-toggle>
+                    <mat-button-toggle value="name" style="font-size: 14px">Name</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>            
+        </div>                
 
         <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort class="mat-elevation-z8">
 
