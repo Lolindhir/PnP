@@ -1,0 +1,1450 @@
+[
+	{
+		"id": "general",
+		"name": "General Rules",
+		"breadcrumb": "General",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "principles",
+				"name": "Principle Rules",
+				"breadcrumb": "Principles",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/Principles.md",
+				"children": []
+			},
+			{
+				"id": "abilities_proficiency",
+				"name": "Abilities & Proficiency",
+				"breadcrumb": "Abilities/Proficiency",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/AbilitiesProficiency.md",
+				"children": []
+			},
+			{
+				"id": "d20tests_actions",
+				"name": "D20 Tests & Actions",
+				"breadcrumb": "Tests/Actions",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "d20tests",
+						"name": "D20 Tests",
+						"breadcrumb": "D20 Tests",
+						"indexing": "all",
+						"indexname": "D20 Test",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/D20Tests.md",
+						"children": []
+					},
+					{
+						"id": "advantage",
+						"name": "Advantage/Disadvantage",
+						"breadcrumb": "Advantage",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/AdvantageDisadvantage.md",
+						"children": []
+					},
+					{
+						"id": "inspiration",
+						"name": "Heroic Inspiration",
+						"breadcrumb": "Inspiration",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/HeroicInspiration.md",
+						"children": []
+					},
+					{
+						"id": "actions",
+						"name": "Actions",
+						"breadcrumb": "Actions",
+						"filename": "/General/Actions.md",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"children": [
+							{
+								"id": "actions_detailed",
+								"name": "Detailed Actions",
+								"breadcrumb": "Details",
+								"indexing": "content",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "Action",
+								"filename": "/General/ActionsDetailed.md",
+								"children": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "pillars",
+				"name": "The 3 Game Pillars",
+				"breadcrumb": "Game Pillars",
+				"indexing": "title",
+				"indexname": "Pillars of the Game",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "social",
+						"name": "Social Interaction",
+						"breadcrumb": "Social",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/SocialInteraction.md",
+						"children": []
+					},
+					{
+						"id": "exploration",
+						"name": "Exploration",
+						"breadcrumb": "Exploration",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/Exploration.md",
+						"children": []
+					},
+					{
+						"id": "combat",
+						"name": "Combat & Damage",
+						"breadcrumb": "Combat/Damage",
+						"indexing": "title",
+						"indexname": "Combat",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "",
+						"children": [
+							{
+								"id": "combat_order",
+								"name": "Order of Combat",
+								"breadcrumb": "Order",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatOrder.md",
+								"children": []
+							},
+							{
+								"id": "combat_movement",
+								"name": "Movement & Position",
+								"breadcrumb": "Movement",
+								"indexing": "all",
+								"indexname": "Movement",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatMovement.md",
+								"children": []
+							},
+							{
+								"id": "combat_attack",
+								"name": "Making an Attack",
+								"breadcrumb": "Attack",
+								"indexing": "content",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatAttack.md",
+								"children": []
+							},
+							{
+								"id": "combat_mounted",
+								"name": "Mounted Combat",
+								"breadcrumb": "Mounted",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatMounted.md",
+								"children": []
+							},
+							{
+								"id": "combat_underwater",
+								"name": "Underwater Combat",
+								"breadcrumb": "Underwater",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatUnderwater.md",
+								"children": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "damage_recovery",
+				"name": "Damage & Recovery",
+				"breadcrumb": "Damage/Recovery",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "damage",
+						"name": "Damage",
+						"breadcrumb": "Damage",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/Damage.md",
+						"children": []
+					},
+					{
+						"id": "hitpoints",
+						"name": "Hit Points",
+						"breadcrumb": "Hit Points",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/HitPoints.md",
+						"children": []
+					},
+					{
+						"id": "conditions",
+						"name": "Conditions",
+						"breadcrumb": "Conditions",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/Conditions.md",
+						"children": []
+					},
+					{
+						"id": "exhaustion",
+						"name": "Exhaustion",
+						"breadcrumb": "Exhaustion",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/HealingExhaustion.md",
+						"children": []
+					},
+					{
+						"id": "rests",
+						"name": "Rests",
+						"breadcrumb": "Rests",
+						"indexing": "all",
+						"indexname": "Resting",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/HealingRests.md",
+						"children": []
+					},
+					{
+						"id": "gritty_realism",
+						"name": "Gritty Realism Times",
+						"breadcrumb": "Gritty Realism",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/GrittyRealism.md",
+						"children": []
+					},
+					{
+						"id": "regeneration_options",
+						"name": "Regeneration Options",
+						"breadcrumb": "Regen. Options",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/General/HealingOptions.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "spellcasting",
+				"name": "Spellcasting",
+				"breadcrumb": "Spellcasting",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/Spellcasting.md",
+				"children": []
+			},
+			{
+				"id": "schicksalspunkte",
+				"name": "Schicksalspunkte",
+				"breadcrumb": "Schicksalspunkte",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/Schicksalspunkte.md",
+				"children": []
+			},
+			{
+				"id": "renown",
+				"name": "Renown",
+				"breadcrumb": "Renown",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/Renown.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "creation",
+		"name": "Character Creation & Leveling",
+		"breadcrumb": "Creation & Leveling",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "character_creation",
+				"name": "Creating a Character",
+				"breadcrumb": "Creation Rules",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Creation/CharacterCreation.md",
+				"children": [
+					{
+						"id": "backgrounds",
+						"name": "Backgrounds",
+						"breadcrumb": "Backgrounds",
+						"indexing": "all",
+						"indexname": "Background",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Backgrounds.md",
+						"children": [					
+							{
+								"id": "backgrounds_samples",
+								"name": "Background Samples",
+								"breadcrumb": "Samples",
+								"indexing": "content",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "Background Sample",
+								"filename": "/Creation/BackgroundsSamples.md",
+								"children": []
+							},
+							{
+								"id": "backgrounds_connections",
+								"name": "Background Connections",
+								"breadcrumb": "Connections",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "Background Connection",
+								"filename": "/Creation/BackgroundsConnections.md",
+								"children": []
+							},
+							{
+								"id": "backgrounds_features",
+								"name": "Background Features",
+								"breadcrumb": "Features",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "Background Feature",
+								"filename": "/Creation/BackgroundsFeatures.md",
+								"children": []
+							}
+						]
+					},
+					{
+						"id": "alignment",
+						"name": "Alignment",
+						"breadcrumb": "Alignment",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Alignment.md",
+						"children": []
+					},
+					{
+						"id": "character_traits",
+						"name": "Character Traits",
+						"breadcrumb": "Traits",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/CharacterTraits.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "leveling",
+				"name": "Level Up",
+				"breadcrumb": "Level Up",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Creation/Leveling.md",
+				"children": [
+					{
+						"id": "leveling_advancement",
+						"name": "Advancement Table",
+						"breadcrumb": "Advancement",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Leveling-CharacterAdvancement.md",
+						"children": []
+					},
+					{
+						"id": "tiers_of_play",
+						"name": "Tiers of Play",
+						"breadcrumb": "Tiers of Play",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/TiersOfPlay.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "multiclassing",
+				"name": "Multiclassing",
+				"breadcrumb": "Multiclassing",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Creation/Multiclassing.md",
+				"children": [
+					{
+						"id": "multiclassing_prerequisites",
+						"name": "Multiclassing Prerequisites",
+						"breadcrumb": "Prerequisites",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Multiclassing-Prerequisites.md",
+						"children": []
+					},
+					{
+						"id": "multiclassing_proficiencies",
+						"name": "Multiclassing Proficiencies",
+						"breadcrumb": "Proficiencies",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Multiclassing-Proficiencies.md",
+						"children": []
+					},
+					{
+						"id": "multiclassing_spellcasting",
+						"name": "Multiclassing Spellcasting",
+						"breadcrumb": "Spellcasting",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Creation/Multiclassing-Spellcasting.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "starting_higher_levels",
+				"name": "Starting at Higher Levels",
+				"breadcrumb": "Higher Levels",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Creation/StartingHigherLevels.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "classes",
+		"name": "Character Classes",
+		"breadcrumb": "Classes",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "class_list",
+				"name": "Class Overview",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Classes/Classes.md",
+				"children": []
+			},
+			{
+				"id": "fighter",
+				"name": "Fighter",
+				"breadcrumb": "Fighter",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Fighter",
+				"filename": "/Classes/Fighter.md",
+				"children": [
+					{
+						"id": "fighter_features_table",
+						"name": "Features Table",
+						"breadcrumb": "Features",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Fighter-FeaturesTable.md",
+						"children": []
+					},
+					{
+						"id": "maneuvers",
+						"name": "Battle Maneuvers",
+						"breadcrumb": "Maneuvers",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "Maneuver",
+						"filename": "/Classes/Fighter-Maneuvers.md",
+						"children": []
+					},
+					{
+						"id": "champion",
+						"name": "Subclass: Champion",
+						"breadcrumb": "Champion",
+						"indexing": "title",
+						"indexname": "Champion",
+						"indexCategory": "Fighter",
+						"indexSubCategory": "Fighter",
+						"filename": "/Classes/Fighter-Champion.md",
+						"children": []
+					},
+					{
+						"id": "eldritch_knight",
+						"name": "Subclass: Eldritch Knight",
+						"breadcrumb": "Eldritch Knight",
+						"indexing": "title",
+						"indexname": "Eldritch Knight",
+						"indexCategory": "Fighter",
+						"indexSubCategory": "Fighter",
+						"filename": "/Classes/Fighter-EldritchKnight.md",
+						"children": []
+					},
+					{
+						"id": "psy_warrior",
+						"name": "Subclass: Psy Warrior",
+						"breadcrumb": "Psy Warrior",
+						"indexing": "title",
+						"indexname": "Psy Warrior",
+						"indexCategory": "Fighter",
+						"indexSubCategory": "Fighter",
+						"filename": "/Classes/Fighter-PsyWarrior.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "rogue",
+				"name": "Rogue",
+				"breadcrumb": "Rogue",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Rogue",
+				"filename": "/Classes/Rogue.md",
+				"children": [
+					{
+						"id": "arcane_trickster",
+						"name": "Subclass: Arcane Trickster",
+						"breadcrumb": "Arcane Trickster",
+						"indexing": "title",
+						"indexname": "Arcane Trickster",
+						"indexCategory": "Rogue",
+						"indexSubCategory": "Rogue",
+						"filename": "/Classes/Rogue-ArcaneTrickster.md",
+						"children": []
+					},
+					{
+						"id": "assassin",
+						"name": "Subclass: Assassin",
+						"breadcrumb": "Assassin",
+						"indexing": "title",
+						"indexname": "Assassin",
+						"indexCategory": "Rogue",
+						"indexSubCategory": "Rogue",
+						"filename": "/Classes/Rogue-Assassin.md",
+						"children": []
+					},
+					{
+						"id": "soulknife",
+						"name": "Subclass: Soulknife",
+						"breadcrumb": "Soulknife",
+						"indexing": "title",
+						"indexname": "Soulknife",
+						"indexCategory": "Rogue",
+						"indexSubCategory": "Rogue",
+						"filename": "/Classes/Rogue-Soulknife.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "shaman",
+				"name": "Shaman",
+				"breadcrumb": "Shaman",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Shaman",
+				"filename": "/Classes/Shaman.md",
+				"children": [
+					{
+						"id": "shaman_spellcasting",
+						"name": "Spellcasting",
+						"breadcrumb": "Spellcasting",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Shaman-Spellcasting.md",
+						"children": []
+					},
+					{
+						"id": "shaman_features_table",
+						"name": "Features Table",
+						"breadcrumb": "Features",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Shaman-FeaturesTable.md",
+						"children": []
+					},
+					{
+						"id": "shaman_aspect_calls",
+						"name": "Elemental Aspect Calls",
+						"breadcrumb": "Aspect Calls",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Shaman",
+						"indexSubCategory": "",
+						"filename": "/Classes/Shaman-ElementalAspects.md",
+						"children": []
+					},
+					{
+						"id": "shaman_spells_sage",
+						"name": "Elemental Aspect Spells - Sage",
+						"breadcrumb": "Sage Spells",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Shaman",
+						"indexSubCategory": "",
+						"filename": "/Classes/Shaman-SpellsSage.md",
+						"children": []
+					},
+					{
+						"id": "shaman_spells_warrior",
+						"name": "Elemental Aspect Spells - Warrior",
+						"breadcrumb": "Warrior Spells",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Shaman",
+						"indexSubCategory": "",
+						"filename": "/Classes/Shaman-SpellsWarrior.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "wizard",
+				"name": "Wizard",
+				"breadcrumb": "Wizard",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Wizard",
+				"filename": "/Classes/Wizard.md",
+				"children": [
+					{
+						"id": "wizard_spellcasting",
+						"name": "Spellcasting",
+						"breadcrumb": "Spellcasting",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "Wizard",
+						"filename": "/Classes/Wizard-Spellcasting.md",
+						"children": []
+					},
+					{
+						"id": "wizard_features_table",
+						"name": "Features Table",
+						"breadcrumb": "Features",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Wizard-FeaturesTable.md",
+						"children": []
+					},
+					{
+						"id": "abjurer",
+						"name": "Subclass: Abjurer",
+						"breadcrumb": "Abjurer",
+						"indexing": "title",
+						"indexname": "Abjurer",
+						"indexCategory": "Wizard",
+						"indexSubCategory": "Wizard",
+						"filename": "/Classes/Wizard-Abjurer.md",
+						"children": []
+					},
+					{
+						"id": "diviner",
+						"name": "Subclass: Diviner",
+						"breadcrumb": "Diviner",
+						"indexing": "title",
+						"indexname": "Diviner",
+						"indexCategory": "Wizard",
+						"indexSubCategory": "Wizard",
+						"filename": "/Classes/Wizard-Diviner.md",
+						"children": []
+					},
+					{
+						"id": "evoker",
+						"name": "Subclass: Evoker",
+						"breadcrumb": "Evoker",
+						"indexing": "title",
+						"indexname": "Evoker",
+						"indexCategory": "Wizard",
+						"indexSubCategory": "Wizard",
+						"filename": "/Classes/Wizard-Evoker.md",
+						"children": []
+					},
+					{
+						"id": "illusionist",
+						"name": "Subclass: Illusionist",
+						"breadcrumb": "Illusionist",
+						"indexing": "title",
+						"indexname": "Illusionist",
+						"indexCategory": "Wizard",
+						"indexSubCategory": "Wizard",
+						"filename": "/Classes/Wizard-Illusionist.md",
+						"children": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "races",
+		"name": "Character Races",
+		"breadcrumb": "Races",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "race_list",
+				"name": "Race Overview",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Races/Races.md",
+				"children": []
+			},
+			{
+				"id": "dwarf",
+				"name": "Dwarf",
+				"breadcrumb": "Dwarf",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Dwarf.md",
+				"children": []
+			},
+			{
+				"id": "elf",
+				"name": "Elf",
+				"breadcrumb": "Elf",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Elf.md",
+				"children": []
+			},
+			{
+				"id": "halfling",
+				"name": "Halfling",
+				"breadcrumb": "Halfling",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Halfling.md",
+				"children": []
+			},
+			{
+				"id": "human",
+				"name": "Human",
+				"breadcrumb": "Human",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Human.md",
+				"children": []
+			},
+			{
+				"id": "tiefling",
+				"name": "Tiefling",
+				"breadcrumb": "Tiefling",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Tiefling.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "equipment",
+		"name": "Equipment",
+		"breadcrumb": "Equipment",
+		"indexing": "all",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "inventory_interactions",
+				"name": "Inventory Interactions",
+				"breadcrumb": "Inventory",
+				"indexing": "all",
+				"indexname": "Inventory",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Equipment/InventoryInteractions.md",
+				"children": []
+			},
+			{
+				"id": "coins",
+				"name": "Coins",
+				"breadcrumb": "Coins",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Equipment/Coins.md",
+				"children": []
+			},
+			{
+				"id": "weapons",
+				"name": "Weapons",
+				"breadcrumb": "Weapons",
+				"indexing": "all",
+				"indexname": "Weapon",
+				"indexCategory": "",
+				"indexSubCategory": "Weapon",
+				"filename": "/Equipment/Weapons.md",
+				"children": [
+					{
+						"id": "weapons_properties",
+						"name": "Properties",
+						"breadcrumb": "Properties",
+						"indexing": "all",
+						"indexname": "Weapon Property",
+						"indexCategory": "",
+						"indexSubCategory": "Weapon Property",
+						"filename": "/Equipment/WeaponsProperties.md",
+						"children": []
+					},
+					{
+						"id": "weapons_properties_special",
+						"name": "Special Properties",
+						"breadcrumb": "Spec. Prop.",
+						"indexing": "all",
+						"indexname": "Weapon Special Property",
+						"indexCategory": "",
+						"indexSubCategory": "Weapon Special Property",
+						"filename": "/Equipment/WeaponsPropertiesSpecial.md",
+						"children": []
+					},
+					{
+						"id": "weapons_masteries",
+						"name": "Masteries",
+						"breadcrumb": "Masteries",
+						"indexing": "all",
+						"indexname": "Weapon Mastery",
+						"indexCategory": "",
+						"indexSubCategory": "Weapon Mastery",
+						"filename": "/Equipment/WeaponsMasteries.md",
+						"children": []
+					},
+					{
+						"id": "weapons_costs",
+						"name": "Costs & Weights",
+						"breadcrumb": "Cost/Weight",
+						"indexing": "all",
+						"indexname": "Weapon Cost & Weight",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Equipment/WeaponsCosts.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "armor",
+				"name": "Armor",
+				"breadcrumb": "Armor",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Armor",
+				"filename": "/Equipment/Armor.md",
+				"children": [
+					{
+						"id": "armor_properties_special",
+						"name": "Special Properties",
+						"breadcrumb": "Spec. Prop.",
+						"indexing": "all",
+						"indexname": "Armor Special Property",
+						"indexCategory": "",
+						"indexSubCategory": "Armor Special Property",
+						"filename": "/Equipment/ArmorPropertiesSpecial.md",
+						"children": []
+					},
+					{
+						"id": "armor_costs",
+						"name": "Costs & Weights",
+						"breadcrumb": "Cost/Weight",
+						"indexing": "all",
+						"indexname": "Armor Cost & Weight",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Equipment/ArmorCosts.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "tools",
+				"name": "Tools",
+				"breadcrumb": "Tools",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Tool",
+				"filename": "/Equipment/Tools.md",
+				"children": []
+			},
+			{
+				"id": "adventuring_gear",
+				"name": "Adventuring Gear",
+				"breadcrumb": "Gear",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Gear",
+				"filename": "/Equipment/AdventuringGear.md",
+				"children": []
+			},
+			{
+				"id": "potions",
+				"name": "Potions",
+				"breadcrumb": "Potions",
+				"indexing": "all",
+				"indexname": "Potion",
+				"indexCategory": "",
+				"indexSubCategory": "Consumable,Potion",
+				"filename": "/Equipment/Potions.md",
+				"children": [
+					{
+						"id": "potions_costs",
+						"name": "Rarities & Costs",
+						"breadcrumb": "Rarity/Cost",
+						"indexing": "all",
+						"indexname": "Potion Rarity & Cost",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Equipment/PotionsCosts.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "spellholds",
+				"name": "Spellholds",
+				"breadcrumb": "Spellholds",
+				"indexing": "all",
+				"indexname": "Spellhold",
+				"indexCategory": "",
+				"indexSubCategory": "Consumable,Spellhold",
+				"filename": "/Equipment/Spellholds.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "downtime",
+		"name": "Downtime Activities",
+		"breadcrumb": "Downtime",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "downtime_overview",
+				"name": "Overview",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "Downtime Activity",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Downtime/Overview.md",
+				"children": []
+			},		
+			{
+				"id": "training",
+				"name": "Training",
+				"breadcrumb": "Training",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Downtime",
+				"indexSubCategory": "Training",
+				"filename": "/Downtime/Training.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "crafting",
+		"name": "Crafting",
+		"breadcrumb": "Crafting",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "crafting_overview",
+				"name": "Overview",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "Crafting Overview",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Crafting/Overview.md",
+				"children": []
+			},
+			{
+				"id": "crafting_materials",
+				"name": "Materials",
+				"breadcrumb": "Materials",
+				"indexing": "all",
+				"indexname": "Crafting Materials",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "materials_components",
+						"name": "Magical Materials",
+						"breadcrumb": "Magical Materials",
+						"indexing": "all",
+						"indexname": "Magical Material",
+						"indexCategory": "Material",
+						"indexSubCategory": "Material",
+						"filename": "/Crafting/MagicalComponents.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "crafting_gathering",
+				"name": "Gathering & Harvesting",
+				"breadcrumb": "Gather/Harvest",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": []
+			},
+			{
+				"id": "crafting_crafted",
+				"name": "Crafted Items",
+				"breadcrumb": "Crafts",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": []
+			},
+			{
+				"id": "herbalism",
+				"name": "Herbalism",
+				"breadcrumb": "Herbalism",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Crafting/Herbalism.md",
+				"children": [
+					{
+						"id": "herbalism_recipes",
+						"name": "Herbalism Recipes",
+						"breadcrumb": "Recipes",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Crafting/HerbalismRecipes.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "spellholdcrafting",
+				"name": "Spellhold Crafting",
+				"breadcrumb": "Spellholds",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Crafting/SpellholdCrafting.md",
+				"children": [
+					{
+						"id": "spellholdcrafting_recipes",
+						"name": "Spellhold Crafting Recipes",
+						"breadcrumb": "Recipes",
+						"indexing": "content",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Crafting/SpellholdCraftingRecipes.md",
+						"children": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "glossary",
+		"name": "Glossary",
+		"breadcrumb": "Glossary",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "2024_changes",
+				"name": "2024 Changes",
+				"breadcrumb": "2024 Changes",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "2024_changes_general",
+						"name": "2024 General Changes",
+						"breadcrumb": "General",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Glossary/2024Changes-General.md",
+						"children": []
+					},
+					{
+						"id": "2024_changes_classes",
+						"name": "2024 Class Changes",
+						"breadcrumb": "Classes",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Glossary/2024Changes-Classes.md",
+						"children": []
+					},
+					{
+						"id": "2024_changes_spells",
+						"name": "2024 Spell Changes",
+						"breadcrumb": "Spells",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Glossary/2024Changes-Spells.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "ability_modifiers",
+				"name": "Ability Modifiers",
+				"breadcrumb": "Ability Mods",
+				"indexing": "all",
+				"indexname": "Ability Modifier Overview",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/AbilityModifiers.md",
+				"children": []
+			},
+			{
+				"id": "skills",
+				"name": "Skills",
+				"breadcrumb": "Skills",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Skill",
+				"filename": "/Glossary/Skills.md",
+				"children": []
+			},
+			{
+				"id": "proficiency",
+				"name": "Proficiency Bonus",
+				"breadcrumb": "Proficiency",
+				"indexing": "all",
+				"indexname": "Proficiency Bonus Overview",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/Proficiency.md",
+				"children": []
+			},
+			{
+				"id": "action_list",
+				"name": "Actions",
+				"breadcrumb": "Actions",
+				"indexing": "all",
+				"indexname": "Action List",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/ActionList.md",
+				"children": []
+			},
+			{
+				"id": "condition_details",
+				"name": "Conditions",
+				"breadcrumb": "Conditions",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Condition",
+				"filename": "/Glossary/Conditions.md",
+				"children": []
+			},
+			{
+				"id": "languages",
+				"name": "Languages",
+				"breadcrumb": "Languages",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Language",
+				"filename": "/Glossary/Languages.md",
+				"children": []
+			},
+			{
+				"id": "vision_light",
+				"name": "Cover, Vision & Light",
+				"breadcrumb": "Vision",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/VisionLight.md",
+				"children": []
+			},
+			{
+				"id": "travel",
+				"name": "Travel",
+				"breadcrumb": "Travel",
+				"indexing": "content",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/Travel.md",
+				"children": []
+			},
+			{
+				"id": "movement_types",
+				"name": "Movement Types",
+				"breadcrumb": "Movement",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/MovementTypes.md",
+				"children": []
+			},
+			{
+				"id": "magic_schools",
+				"name": "Schools of Magic",
+				"breadcrumb": "Magic Schools",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "School of Magic",
+				"filename": "/Glossary/MagicSchools.md",
+					"children": []
+			},
+			{
+				"id": "aoe",
+				"name": "Area of Effect",
+				"breadcrumb": "AoE",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Area of Effect",
+				"filename": "/Glossary/AoE.md",
+				"children": []
+			},
+			{
+				"id": "damage_types",
+				"name": "Damage Types",
+				"breadcrumb": "Damage",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Damage Type",
+				"filename": "/Glossary/DamageTypes.md",
+				"children": []
+			},
+			{
+				"id": "objects_damage",
+				"name": "Object Damage",
+				"breadcrumb": "Object Damage",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/Objects.md",
+				"children": []
+			},
+			{
+				"id": "hazards",
+				"name": "Hazards",
+				"breadcrumb": "Hazards",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Hazard",
+				"filename": "/Glossary/Hazards.md",
+				"children": []
+			},
+			{
+				"id": "monster_types",
+				"name": "Monster Types",
+				"breadcrumb": "Monsters",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Monster Type",
+				"filename": "/Glossary/MonsterTypes.md",
+				"children": []
+			},
+			{
+				"id": "spellholds_overview",
+				"name": "Spellholds",
+				"breadcrumb": "Spellholds",
+				"indexing": "content",
+				"indexname": "Spellhold Overview",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/Spellholds.md",
+				"children": []
+			},
+			{
+				"id": "potions_overview",
+				"name": "Potion Overview",
+				"breadcrumb": "Potions",
+				"indexing": "title",
+				"indexname": "Potion Overview",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Glossary/Potions.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "index",
+		"name": "Index",
+		"breadcrumb": "Index",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "/Index.md",
+		"children": []
+	}	
+]
+

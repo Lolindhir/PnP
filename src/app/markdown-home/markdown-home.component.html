@@ -1,0 +1,31 @@
+<app-main-header></app-main-header>
+
+<div class="page" fxLayout="row" fxLayoutAlign="center">
+  <div class="container" fxLayout="row" fxLayoutAlign="center"> 
+
+    <div style="margin-top: 10px; width:100%; max-width: 600px;">
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+
+        <div fxLayout="row" fxLayoutAlign="start top">
+          <h1>{{tocName}}</h1>
+  
+          <mat-chip *ngIf="handle != undefined" [style.background]="handleColor" style="margin-left: 15px;">
+            <span [style.color]="handleTextColor">{{handle}}</span>
+          </mat-chip>
+        </div>        
+  
+        <button mat-fab color="primary" (click)="openSearchDialog()" style="margin-left: 15px">
+          <mat-icon>search</mat-icon>
+        </button>
+  
+      </div>
+  
+      <app-markdown-menu [majorMode]="true" [mainMenu]="markdownList"></app-markdown-menu>
+
+    </div>
+
+    
+
+  </div>
+</div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RulesMenuComponent } from './rules-menu.component';
+import { MarkdownArticleComponent } from './markdown-article.component';
 
-describe('RulesMenuComponent', () => {
-  let component: RulesMenuComponent;
-  let fixture: ComponentFixture<RulesMenuComponent>;
+describe('MarkdownArticleComponent', () => {
+  let component: MarkdownArticleComponent;
+  let fixture: ComponentFixture<MarkdownArticleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RulesMenuComponent]
+      imports: [MarkdownArticleComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(RulesMenuComponent);
+    fixture = TestBed.createComponent(MarkdownArticleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,23 +1,24 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { RulesContent, RulesNavigationRoute } from '@shared/models/rules-content.model';
+import { MarkdownContent, MarkdownNavigationRoute } from '@shared/models/markdown-content.model';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { NestedTreeControl } from '@angular/cdk/tree';
 
 @Component({
-  selector: 'app-rules-menu',
-  templateUrl: './rules-menu.component.html',
-  styleUrls: ['../app.component.scss', './rules-menu.component.scss'],
+  selector: 'app-markdown-menu',
+  templateUrl: './markdown-menu.component.html',
+  styleUrls: ['../app.component.scss', './markdown-menu.component.scss'],
 })
-export class RulesMenuComponent implements OnInit {
+export class MarkdownMenuComponent implements OnInit {
 
   @Input() majorMode: boolean = false;
   @Input() allExpanded: boolean = false;
-  @Input() subMenu: RulesContent | undefined = undefined;
+  @Input() mainMenu: MarkdownContent[] | undefined = undefined;
+  @Input() subMenu: MarkdownContent | undefined = undefined;
   @Output() resetMenuEvent = new EventEmitter<void>();
 
-  treeControl = new NestedTreeControl<RulesNavigationRoute>(rule => rule.children);
-  dataSource = new MatTreeNestedDataSource<RulesNavigationRoute>();
+  treeControl = new NestedTreeControl<MarkdownNavigationRoute>(markdown => markdown.children);
+  dataSource = new MatTreeNestedDataSource<MarkdownNavigationRoute>();
 
 
 
@@ -27,9 +28,10 @@ export class RulesMenuComponent implements OnInit {
     
     //depending on the subMenu input, set the dataSource to the correct data
     if (this.subMenu != undefined) {
-      this.dataSource.data = RulesContent.getSingleNavigation(this.subMenu).children;
-    } else {
-      this.dataSource.data = RulesContent.getAllNavigation();
+      this.dataSource.data = MarkdownContent.getSingleNavigation(this.subMenu).children;
+    }
+    else if (this.mainMenu != undefined) {
+      this.dataSource.data = MarkdownContent.getAllNavigation(this.mainMenu);
     }
     this.treeControl.dataNodes = this.dataSource.data;
     this.expandActiveNode();
@@ -38,7 +40,7 @@ export class RulesMenuComponent implements OnInit {
     this.resetMenuEvent.subscribe(() => this.resetTree());
   }
 
-  hasChild = (_: number, route: RulesNavigationRoute) => !!route.children && route.children.length > 0;
+  hasChild = (_: number, route: MarkdownNavigationRoute) => !!route.children && route.children.length > 0;
 
   navigateTo(route: string): void {  
     // reload the route to ensure same level navigation
@@ -57,7 +59,7 @@ export class RulesMenuComponent implements OnInit {
     this.expandActiveNode();
   }
 
-  private resetTreeRecursively(node: RulesNavigationRoute): void {
+  private resetTreeRecursively(node: MarkdownNavigationRoute): void {
     this.treeControl.collapse(node);
     node.children.forEach(child => {
       this.resetTreeRecursively(child);
@@ -70,11 +72,11 @@ export class RulesMenuComponent implements OnInit {
     });
   }
 
-  private expandActiveNodeRecursively(node: RulesNavigationRoute): void {
+  private expandActiveNodeRecursively(node: MarkdownNavigationRoute): void {
     
-    //check if the node is active but not the exact active node
+    //check if the node is active
     //if allExpanded ist active, expand all nodes without checking the active node
-    if (this.allExpanded || (this.isPartOfActiveNode(node.route) && !this.isActiveNode(node.route))) {
+    if (this.allExpanded || this.isPartOfActiveNode(node.route)) {
 
       //expand the node
       this.treeControl.expand(node);

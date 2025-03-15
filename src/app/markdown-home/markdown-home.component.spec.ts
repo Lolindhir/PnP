@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RulesHomeComponent } from './rules-home.component';
+import { MarkdownHomeComponent } from './markdown-home.component';
 
 describe('RulesHomeComponent', () => {
-  let component: RulesHomeComponent;
-  let fixture: ComponentFixture<RulesHomeComponent>;
+  let component: MarkdownHomeComponent;
+  let fixture: ComponentFixture<MarkdownHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RulesHomeComponent]
+      imports: [MarkdownHomeComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(RulesHomeComponent);
+    fixture = TestBed.createComponent(MarkdownHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

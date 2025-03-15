@@ -53,6 +53,7 @@
     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
     flex: 1;
     padding: 1rem;
+    min-width: 300px;
 }
 
 .sidenav-header {

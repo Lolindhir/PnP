@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RuleArticleComponent } from './rule-article.component';
+import { CampaignsHomeComponent } from './campaigns-home.component';
 
-describe('RuleArticleComponent', () => {
-  let component: RuleArticleComponent;
-  let fixture: ComponentFixture<RuleArticleComponent>;
+describe('CampaignsHomeComponent', () => {
+  let component: CampaignsHomeComponent;
+  let fixture: ComponentFixture<CampaignsHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RuleArticleComponent]
+      imports: [CampaignsHomeComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(RuleArticleComponent);
+    fixture = TestBed.createComponent(CampaignsHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

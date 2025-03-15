@@ -1,4 +1,4 @@
-import { NgModule, SecurityContext } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -16,7 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatSelectModule } from '@angular/material/select'; 
+import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -26,8 +26,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatTooltipModule } from '@angular/material/tooltip'; 
-import { MatDialogModule } from '@angular/material/dialog'; 
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -38,10 +38,10 @@ import { MainHeaderComponent } from '@components/main-header/main-header.compone
 import { SpellListComponent, SpellListSettingsDialog, SpellListCharacterDialog, SpellListBlueprintDialog, SpellListInfoDialog } from '@components/spell-list/spell-list.component';
 import { SpellPrintComponent } from '@components/spell-print/spell-print.component';
 import { SpellDetailComponent } from '@components/spell-detail/spell-detail.component';
-import { RulesHomeComponent } from './rules-home/rules-home.component';
-import { RulesMenuComponent } from './rules-menu/rules-menu.component';
-import { RulesIndexSearchComponent } from './rules-index-search/rules-index-search.component';
-import { RuleArticleComponent } from './rule-article/rule-article.component';
+import { CampaignsHomeComponent } from './campaigns-home/campaigns-home.component';
+import { MarkdownHomeComponent } from './markdown-home/markdown-home.component';
+import { MarkdownMenuComponent } from './markdown-menu/markdown-menu.component';
+import { MarkdownIndexSearchComponent } from './markdown-index-search/markdown-index-search.component';
 import { SpellFilterPipe } from '@pipes/spell-filter.pipe';
 import { HighlightRulesSearchPipe } from '@shared/pipes/highlight-rules-search.pipe';
 import { ItemListComponent } from './item-list/item-list.component';
@@ -52,6 +52,8 @@ import { FeatListComponent } from './feat-list/feat-list.component';
 import { FeatDetailComponent } from './feat-detail/feat-detail.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { MarkdownArticleComponent } from './markdown-article/markdown-article.component';
+
 
 @NgModule({
   declarations: [
@@ -64,10 +66,11 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     SpellListInfoDialog,
     SpellPrintComponent,
     SpellDetailComponent,
-    RulesHomeComponent,
-    RulesMenuComponent,
-    RulesIndexSearchComponent,
-    RuleArticleComponent,
+    CampaignsHomeComponent,
+    MarkdownHomeComponent,
+    MarkdownMenuComponent,
+    MarkdownIndexSearchComponent,
+    MarkdownArticleComponent,
     SpellFilterPipe,
     HighlightRulesSearchPipe,
     ItemListComponent,
@@ -122,7 +125,7 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
   ],
   providers: [
     CookieService,
-    StorageService,
+    StorageService
   ],
   bootstrap: [AppComponent]
 })

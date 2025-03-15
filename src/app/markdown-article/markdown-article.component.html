@@ -12,12 +12,12 @@
             <mat-icon>search</mat-icon>
         </button>
 
-        <h3 class="sidenav-header" routerLink="/rules">Rules - ToC</h3>
+        <h3 class="sidenav-header" routerLink="{{breadcrumbRootRoute}}">{{tocName}} - ToC</h3>
 
-        <app-rules-menu></app-rules-menu>
+        <app-markdown-menu [mainMenu]="completeContent"></app-markdown-menu>
     </mat-sidenav>
 
-    <!-- Rules content -->
+    <!-- Article content -->
     <mat-sidenav-content>
 
         <app-main-header></app-main-header>
@@ -26,33 +26,42 @@
             <div class="container">     
                     
                 <!-- Breadcrumb-Control -->
-                <div fxLayout="row" fxLayoutAlign="start center" [ngClass]="isMobile ? 'breadcrumbs-mobile' : 'breadcrumbs-desktop'">
+                <div fxLayout="row" fxLayoutAlign="space-between center" [ngClass]="isMobile ? 'breadcrumbs-mobile' : 'breadcrumbs-desktop'">
                     
-                    <!-- Sidebar toggle button -->
-                    <button *ngIf="isMobile" mat-icon-button color="primary" (click)="sidebarOpen = !sidebarOpen" style="margin-left: -15px; margin-right: 5px;">
-                        <mat-icon>toc</mat-icon>
-                    </button>
-                    
-                    <!-- Breadcrumbs -->
-                    <div fxLayout="row wrap" fxLayoutAlign="start center">
-                        <a routerLink="/rules">Rules</a>
-                        <div *ngFor="let breadcrumb of breadcrumbs" fxLayout="row" fxLayoutAlign="start center">
-                            <div style="margin-left: 5px; margin-right: 5px;">></div>
-                            <a routerLink="{{breadcrumb.route}}">{{breadcrumb.name}}</a>
+                    <div fxLayout="row" fxLayoutAlign="start center">
+
+                        <!-- Sidebar toggle button -->
+                        <button *ngIf="isMobile" mat-icon-button color="primary" (click)="sidebarOpen = !sidebarOpen" style="margin-left: -15px; margin-right: 5px;">
+                            <mat-icon>toc</mat-icon>
+                        </button>
+                        
+                        <!-- Breadcrumbs -->
+                        <div fxLayout="row wrap" fxLayoutAlign="start center">
+                            <a routerLink="{{breadcrumbRootRoute}}">{{breadcrumbRootName}}</a>
+                            <div *ngFor="let breadcrumb of breadcrumbs" fxLayout="row" fxLayoutAlign="start center">
+                                <div style="margin-left: 5px; margin-right: 5px;">></div>
+                                <a routerLink="{{breadcrumb.route}}">{{breadcrumb.name}}</a>
+                            </div>
                         </div>
-                    </div>
+
+                    </div>                    
+
+                    <!-- round campaign marker -->
+                    <mat-chip *ngIf="handle != undefined" [style.background]="handleColor" [matTooltip]="handleTooltip">
+                        <span [style.color]="handleTextColor">{{handle}}</span>
+                    </mat-chip>
                     
                 </div>
-        
+
                 <!-- Headline -->
                 <h1 [ngClass]="{'h1-article-mobile' : isMobile}">{{headline}}</h1>
         
-                <!-- Rules content with existing markdown source -->
+                <!-- article content with existing markdown source -->
                 <div *ngIf="markDownSource.length > 0">
         
                     <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutAlign="start center" style="margin-bottom: -15px;">
-                        <div *ngFor="let rulesContent of children">
-                            <a routerLink="{{rulesContent.path}}" mat-button color="primary" style="text-decoration: underline;">{{rulesContent.name}}</a>
+                        <div *ngFor="let articleContent of children">
+                            <a routerLink="{{articleContent.path}}" mat-button color="primary" style="text-decoration: underline;">{{articleContent.name}}</a>
                         </div> 
                     </div>              
             
@@ -62,11 +71,11 @@
         
                 </div>
         
-                <!-- Rules content without existing markdown source -->
+                <!-- article content without existing markdown source -->
                 <div *ngIf="markDownSource.length < 1">
         
                     <!-- show table of contents for this sub structure -->
-                    <app-rules-menu [majorMode]="true" [allExpanded]="false" [subMenu]="rulesContent"></app-rules-menu>
+                    <app-markdown-menu [majorMode]="true" [allExpanded]="false" [subMenu]="content"></app-markdown-menu>
 
                     <!-- build Card Overview for all children -->
                     <!-- <div *ngIf="children.length > 0" fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">

@@ -9,6 +9,7 @@ Remove-Item "src/assets/campaigns/*" -Recurse -Force
 Copy-Item -Path "D:\OneDrive\D&D\Website Content\Zauber\Spell Images\*" -Destination "src/assets/spellImages" -Force -Recurse
 Copy-Item -Path "D:\OneDrive\D&D\Karten - Items\_Images\*" -Destination "src/assets/itemImages" -Force -Recurse
 Copy-Item -Path "D:\OneDrive\D&D\Website Content\Rules\*" -Destination "src/assets/rules" -Force -Recurse
+Copy-Item -Path "D:\OneDrive\D&D\Website Content\rulesToC.json" -Destination "src/assets/rules" -Force
 Copy-Item -Path "D:\OneDrive\D&D\Website Content\Campaigns\*" -Destination "src/assets/campaigns" -Force -Recurse
 
 # Führe MarkdownLinker aus für Rules

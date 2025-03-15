@@ -39,7 +39,7 @@
     "@angular/compiler-cli": "^17.3.8",
     "@types/file-saver": "^2.0.7",
     "@types/jasmine": "~5.1.4",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.17.22",
     "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~5.1.2",
     "karma": "~6.4.3",

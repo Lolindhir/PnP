@@ -88,6 +88,6 @@ body {
 }
 
 .markdown .image {
-    max-width: 100%;
+    max-width: min(100%, 800px);
     height: auto;
 }

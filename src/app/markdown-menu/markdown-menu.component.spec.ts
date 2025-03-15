@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IndexSearchComponent } from './rules-index-search.component';
+import { MarkdownMenuComponent } from './markdown-menu.component';
 
-describe('IndexSearchComponent', () => {
-  let component: IndexSearchComponent;
-  let fixture: ComponentFixture<IndexSearchComponent>;
+describe('MarkdownMenuComponent', () => {
+  let component: MarkdownMenuComponent;
+  let fixture: ComponentFixture<MarkdownMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IndexSearchComponent]
+      imports: [MarkdownMenuComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(IndexSearchComponent);
+    fixture = TestBed.createComponent(MarkdownMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

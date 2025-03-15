@@ -1,0 +1,20 @@
+
+<app-main-header></app-main-header>
+
+<div class="page" fxLayout="row" fxLayoutAlign="center">
+    <div class="container" fxLayout="row" fxLayoutAlign="center"> 
+  
+        <div fxLayout="column" fxLayoutAlign="start center" style="margin-top: 25px;">
+
+            <div *ngFor="let campaign of campaigns">
+                <mat-card routerLink="{{campaign.id}}" [style.background]="campaign.color" routerLinkActive="menu-linkactive" style="cursor: pointer;" class="card-link">
+                    <mat-card-content>
+                        <mat-card-title [style.color]="campaign.textColor">{{campaign.name}}</mat-card-title>
+                    </mat-card-content>
+                </mat-card>
+            </div> 
+    
+        </div> 
+      
+    </div>
+  </div>

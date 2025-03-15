@@ -1,6 +1,6 @@
 <div class="search-container">
     <mat-form-field appearance="outline">
-      <mat-label>Search Rules</mat-label>
+      <mat-label>Search {{searchTitle}}</mat-label>
       <input matInput [(ngModel)]="searchTerm" (ngModelChange)="onSearchChange()" />
     </mat-form-field>
   
@@ -10,4 +10,6 @@
             <mat-card-content class="result-content">{{ result.reference }}</mat-card-content>
         </mat-card>
     </div>
+
+    <div *ngIf="searchResults.length == 0 && searchTerm.length > 1" style="margin-top: 20px;">No results found</div>
 </div>
