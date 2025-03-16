@@ -1,0 +1,32 @@
+{
+  "name": "Kathra",
+  "knownSpells": [],
+  "knownCantrips": [],
+  "preparedSpells": [],
+  "preparedCantrips": [],
+  "alwaysSpells": [
+    "Sacred Flame",
+    "Word of Radiance"
+  ],
+  "ritualSpells": [],
+  "limitedSpells": [
+    "Find Familiar",
+    "Gift of Alacrity"
+  ],
+  "usedSpells": [],
+  "knownCasting": false,
+  "maxKnown": 0,
+  "knownCantripCasting": false,
+  "maxCantripsKnown": 0,
+  "preparedCasting": false,
+  "maxPrepared": 0,
+  "preparedCantripCasting": false,
+  "maxCantripsPrepared": 0,
+  "ritualCastingUnprepared": false,
+  "ritualCaster": false,
+  "preparedOnTop": false,
+  "knownOnTop": false,
+  "dontShowUsed": false,
+  "ritualsAtBottom": false,
+  "allSpellsInOverview": false
+}

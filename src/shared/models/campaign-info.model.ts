@@ -50,10 +50,10 @@ export class CampaignInfo {
             this.campaignsContent.push({
                 info: {
                     id: 'starter',
-                    name: "Sturmkönigs Donner",
-                    breadcrumb: "Sturmkönig",
+                    name: "Riesenspalter",
+                    breadcrumb: "Riesenspalter",
                     alternateName: "Starter Set",
-                    abbreviation: "SKT",
+                    abbreviation: "RIE",
                     directory: "Starter",
                     toc: "campaignStarterToC.json",
                     color: "forestgreen",

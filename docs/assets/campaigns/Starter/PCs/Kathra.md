@@ -1,11 +1,11 @@
 
 | <!-- -->       | <!-- -->                                                                                            |
 | :------------- | :-------------------------------------------------------------------------------------------------- |
-| **Name**       | Kathra vom Clan der Steinsucher                                                                     |
+| **Name**       | Kathra vom Klan der Steinsucher                                                                     |
 | **Bio**        | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf), female, 64                                                                    |
 | **Class**      | [Level 8 Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) ([Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion))                                       |
 | **Stats**      | STR: 20 (+5)<br>DEX: 14 (+2)<br>CON: 14 (+2)<br>INT: 10 (+0)<br>WIS: 14 (+2)<br>CHA: 8 (-1)         |
-| **Hit Points** | 80 + Lvl. 8? (HD: 8d10)                                                                              |
+| **Hit Points** | 80 + Lvl. 8? (HD: 8d10)                                                                             |
 | **Speed**      | 35 ft.                                                                                              |
 | **Skills**     | Athletics, Insight, Nature, Perception (Expertise), Survival (Expertise)                            |
 | **Background** | [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Gauntlgrym](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
@@ -19,14 +19,10 @@ ___
 ## Fähigkeiten
 
 ### Feats
-- [Magic Pundite](https://lolindhir.github.io/PnP/feats/Magic%2520Pundite):
-    - [Find Familiar](https://lolindhir.github.io/PnP/spells/Find%2520Familiar)
-    - [Gift of Alacrity](https://lolindhir.github.io/PnP/spells/Gift%2520of%2520Alacrity)
-- [Prodigy](https://lolindhir.github.io/PnP/feats/Prodigy):
-    - Perception -> Expertise
-    - Survival -> Expertise
+- [Magic Pundite](https://lolindhir.github.io/PnP/feats/Magic%2520Pundite): [Find Familiar](https://lolindhir.github.io/PnP/spells/Find%2520Familiar), [Gift of Alacrity](https://lolindhir.github.io/PnP/spells/Gift%2520of%2520Alacrity)
+- [Prodigy](https://lolindhir.github.io/PnP/feats/Prodigy): Perception Expertise, Survival Expertise
 - [Mage Slayer](https://lolindhir.github.io/PnP/feats/Mage%2520Slayer)
-- [Great Weapon Master](https://lolindhir.github.io/PnP/feats/Great%2520Weapon%2520Master)
+- [Great Weapon Master](https://lolindhir.github.io/PnP/feats/Great%2520Weapon%2520Master)???
 
 ### Klassenfähigkeiten
 
@@ -93,7 +89,7 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 | **7** |  4   | +4 (Class), +2 (Con), +1 (Dwarf) |   80   |
 | **8** |  ?   | +4 (Class), +2 (Con), +1 (Dwarf) |   ?    |
 
-### Stats
+### Stats-Entwicklung
 | Level | STR | DEX | CON | INT | WIS | CHA |
 | :---: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **1** | 16  | 14  | 14  | 10  | 14  |  8  |
