@@ -362,7 +362,52 @@
 		"indexCategory": "",
 		"indexSubCategory": "",
 		"filename": "",
-		"children": []
+		"children": [
+			{
+				"id": "athanya",
+				"name": "Athanya",
+				"breadcrumb": "Athanya",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/PCs/Athanya.md",
+				"children": []
+			},
+			{
+				"id": "aurrdan",
+				"name": "Aurrdan",
+				"breadcrumb": "Aurrdan",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/PCs/Aurrdan.md",
+				"children": []
+			},
+			{
+				"id": "azoth",
+				"name": "Azoth",
+				"breadcrumb": "Azoth",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/PCs/Azoth.md",
+				"children": []
+			},
+			{
+				"id": "kathra",
+				"name": "Kathra",
+				"breadcrumb": "Kathra",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/PCs/Kathra.md",
+				"children": []
+			}
+		]
 	},
 	{
 		"id": "npcs",

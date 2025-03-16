@@ -2478,6 +2478,12 @@
 		"category": "Condition"
 	},
 	{
+		"term": "Retreat",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
+		"category": "Action"
+	},
+	{
 		"term": "Ring Mail",
 		"reference": "Armor",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor",

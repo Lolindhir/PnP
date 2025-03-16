@@ -1,5 +1,23 @@
 [
 	{
+		"term": "Athanya",
+		"reference": "Athanya",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya",
+		"category": ""
+	},
+	{
+		"term": "Aurrdan",
+		"reference": "Aurrdan",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/aurrdan",
+		"category": ""
+	},
+	{
+		"term": "Azoth",
+		"reference": "Azoth",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/azoth",
+		"category": ""
+	},
+	{
 		"term": "Everlund",
 		"reference": "Everlund",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_everlund",
@@ -22,6 +40,12 @@
 		"reference": "Session 9",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
 		"category": "NPC"
+	},
+	{
+		"term": "Kathra",
+		"reference": "Kathra",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/kathra",
+		"category": ""
 	},
 	{
 		"term": "Klarg",

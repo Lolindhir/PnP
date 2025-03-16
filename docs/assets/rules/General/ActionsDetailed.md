@@ -7,10 +7,10 @@ When you take the Attack action, you can make one attack roll with a weapon or a
 When you take the Dash action, you gain extra movement for the current turn. The increase equals your Speed after applying any modifiers. With a Speed of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your Speed of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash.
 If you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it.
 
-### Disengage
+### Disengage (only in Battle)
 If you take the Disengage action, your movement doesn't provoke Opportunity Attacks for the rest of the current turn.
 
-### Dodge
+### Dodge (only in Battle)
 If you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.
 You lose these benefits if you have the Incapacitated condition or if your Speed is 0.
 
@@ -44,11 +44,14 @@ With the Influence action, you urge a monster to do something. Describe or rolep
 When you take the Magic action, you cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated.
 If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain Concentration while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot.
 
-### Ready
+### Ready (only in Battle)
 You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn.
 First, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your Speed in response to it. Examples include "If the cultist steps on the trapdoor, I'll pull the lever that opens it," and "If the zombie steps next to me, I move away."
 When the trigger occurs, you can either take your Reaction right after the trigger finishes or ignore the trigger.
 When you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires Concentration, which you can maintain up to the start of your next turn. If your Concentration is broken, the spell dissipates without taking effect.
+
+### Retreat (only in Battle)
+Retreating is a party action. On any player's turn, any player can propose that all the characters retreat from the fight. If all players agree, the initiative order ends and the DM sets the challenge or challenges for the characters to retreat successfully.
 
 ### Search
 When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.

@@ -413,6 +413,7 @@
 | Resting | [Resting](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests) |
 | Restoration Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Restrained *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Retreat *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Ring Mail *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Riposte *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ritual | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
