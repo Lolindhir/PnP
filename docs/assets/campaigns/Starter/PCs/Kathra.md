@@ -1,15 +1,15 @@
 
-| <!-- -->       | <!-- -->                                                                                            |
-| :------------- | :-------------------------------------------------------------------------------------------------- |
-| **Name**       | Kathra vom Clan der Steinsucher                                                                     |
-| **Bio**        | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf), female, 64                                                                    |
-| **Class**      | [Level 8 Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) ([Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion))                                       |
-| **Background** | [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Gauntlgrym](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
-| **Stats**      | STR 20 (+5)<br>DEX 14 (+2)<br>CON 14 (+2)<br>INT 10 (+2)<br>WIS 14 (+2)<br>CHA 8 (-1)               |
-| **Hit Points** | 80 (Level 8 noch offen)                                                                             |
-| **Speed**      | 35 ft.                                                                                              |
-| **Skills**     | Athletics, Insight, Nature, Perception (Expertise), Survival (Expertise)                            |
-| **Languages**  | Common, Dwarvish                                                                                    |
+| <!-- -->       | <!-- -->                                                                                                      |
+| :------------- | :------------------------------------------------------------------------------------------------------------ |
+| **Name**       | Kathra vom Clan der Steinsucher                                                                               |
+| **Bio**        | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf), female, 64                                                                              |
+| **Class**      | [Level 8 Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) ([Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion))                                                 |
+| **Stats**      | STR - 20 - (+5)<br>DEX - 14 - (+2)<br>CON - 14 - (+2)<br>INT - 10 - (+0)<br>WIS - 14 - (+2)<br>CHA - 8 - (-1) |
+| **Hit Points** | 80 (Level 8 noch offen)                                                                                       |
+| **Speed**      | 35 ft.                                                                                                        |
+| **Skills**     | Athletics, Insight, Nature, Perception (Expertise), Survival (Expertise)                                      |
+| **Background** | [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Gauntlgrym](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections)           |
+| **Languages**  | Common, Dwarvish                                                                                              |
 
 <img src="assets/campaigns/Starter/PCs/Kathra.png" class="image">
 
