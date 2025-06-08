@@ -374,6 +374,17 @@
 				"filename": "/PCs/Athanya.md",
 				"children": [
 					{
+						"id": "athanya_spells",
+						"name": "Athanyas Spells",
+						"breadcrumb": "Spells",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/AthanyaSpells.md",
+						"children": []
+					},
+					{
 						"id": "athanya_necromancer",
 						"name": "Path of the Necromancer",
 						"breadcrumb": "Necromancer",

@@ -3,14 +3,21 @@
 
 The Path of the Necromancer is a journey of personal growth and mastery, structured as a progression through 12 steps. At each step, you may choose a new training goal, allowing you to forge your own unique path by selecting features from three distinct cults: the Cult of Life Manipulation, the Cult of Necrotic Power, and the Cult of Undead Control.
 
+### The Three Cults
+
 **Cult of Life Manipulation.** This cult focuses on harnessing and manipulating the vital energies of living creatures. Its practitioners master the art of reaping life force from the dying, healing themselves and others, and even transferring life energy between creatures. Their magic is rooted in the balance between death and restoration, allowing them to walk the line between harm and healing.
 
 **Cult of Necrotic Power.** Devotees of this cult embrace the destructive and corrupting aspects of necromancy. They sacrifice their own life force to empower their spells, inflicting devastating necrotic damage on their foes. Through pain and sacrifice, they unlock greater magical potency, specializing in overwhelming force and the manipulation of death energy to enhance their offensive capabilities.
 
 **Cult of Undead Control.** This cult is dedicated to the mastery and command of undead creatures. Its members excel at animating corpses, enhancing their undead minions, and exerting control over even the most willful undead. Their path is one of domination and utility, transforming the dead into loyal servants and unleashing their full potential in battle and beyond.
 
+### Features, Tiers and Prerequisites
+
 Each cult offers a series of features, organized into four tiers (Tier 1 to Tier 4), representing increasing power and specialization. To select a feature from a given tier within a cult, you must have already acquired at least one feature from each previous tier of that cult. For example, to take a Tier 3 feature from the Cult of Necrotic Power, you must already possess at least the Tier 1 and one Tier 2 feature from that cult. This ensures a logical progression and deepening of your chosen magical discipline.
+
 In addition to the cult-specific features, there are powerful combination features. These require you to have at least one Tier 2 feature from each of the involved cults, reflecting your broad expertise and ability to blend different necromantic arts.
+
+### Training and Higher Tier Mentorship
 
 Advancement along the path is not only a matter of choice but also of training and mentorship:
 - To gain your Base abilities and your first Tier 1 feature, you must study from the Grimoire of a Red Wizard.
@@ -19,9 +26,11 @@ Advancement along the path is not only a matter of choice but also of training a
 - Achieving a Tier 4 feature demands tutelage from a true master of the cult.
 
 
-##### Feature Tree (starting at the Base)
+### Feature Tree
+
 <img src="assets/campaigns/Starter/PCs/PathOfNecromancer_compact.png" class="image">
 
+*choose your own path, starting at the base*
 
 
 
@@ -144,6 +153,10 @@ You can enhance your Reanimated Corpse with one additional enhancement and you c
 **Double Enhancement.** You can enhance your Reanimated Corpse with one additional enhancement and you can now choose enhancements twice, doubling their effects or enhancing them even further.
 **Command Undead.** In addition, as an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your Wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.
 Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free.
+
+
+
+
 
 
 

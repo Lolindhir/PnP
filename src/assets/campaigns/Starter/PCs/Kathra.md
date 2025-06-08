@@ -5,9 +5,10 @@
 | **Bio**        | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf), female, 64                                                                    |
 | **Class**      | [Level 8 Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) ([Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion))                                       |
 | **Stats**      | STR: 20 (+5)<br>DEX: 14 (+2)<br>CON: 14 (+2)<br>INT: 10 (+0)<br>WIS: 14 (+2)<br>CHA: 8 (-1)         |
-| **Hit Points** | 80 + Lvl. 8? (HD: 8d10)                                                                             |
+| **Hit Points** | 91 (HD: 8d10)                                                                                       |
 | **Speed**      | 35 ft.                                                                                              |
 | **Skills**     | Athletics, Insight, Nature, Perception (Expertise), Survival (Expertise)                            |
+| **Tools**      | Brewer's supplies, Herbalism kit                                                                    |
 | **Background** | [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Gauntlgrym](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | **Languages**  | Common, Dwarvish                                                                                    |
 
@@ -91,23 +92,19 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 ### HP-Würfe
 | Level | Wurf | Zusatz HP                        | Max HP |
 | :---: | :--: | :------------------------------- | :----: |
-| **1** |  -   | +2 (Con), +1 (Dwarf)             |   13   |
-| **2** |  6   | +4 (Class), +2 (Con), +1 (Dwarf) |   26   |
-| **3** |  5   | +4 (Class), +2 (Con), +1 (Dwarf) |   38   |
-| **4** |  3   | +4 (Class), +2 (Con), +1 (Dwarf) |   48   |
-| **5** |  5   | +4 (Class), +2 (Con), +1 (Dwarf) |   60   |
-| **6** |  2   | +4 (Class), +2 (Con), +1 (Dwarf) |   69   |
-| **7** |  4   | +4 (Class), +2 (Con), +1 (Dwarf) |   80   |
-| **8** |  ?   | +4 (Class), +2 (Con), +1 (Dwarf) |   ?    |
+| **1** |  -   | +2 (Con)                         |   12   |
+| **2** |  6   | +4 (Class), +2 (Con)             |   24   |
+| **3** |  5   | +4 (Class), +2 (Con)             |   35   |
+| **4** |  3   | +4 (Class), +2 (Con)             |   44   |
+| **5** |  5   | +4 (Class), +2 (Con)             |   55   |
+| **6** |  2   | +4 (Class), +2 (Con)             |   63   |
+| **7** |  4   | +4 (Class), +2 (Con)             |   73   |
+| **8** |  4   | +4 (Class), +2 (Con), +8 (Dwarf) |   91   |
 
 ### Stats-Entwicklung
 | Level | STR | DEX | CON | INT | WIS | CHA |
 | :---: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **1** | 16  | 14  | 14  | 10  | 14  |  8  |
-| **2** | 16  | 14  | 14  | 10  | 14  |  8  |
-| **3** | 16  | 14  | 14  | 10  | 14  |  8  |
 | **4** | 18  | 14  | 14  | 10  | 14  |  8  |
-| **5** | 18  | 14  | 14  | 10  | 14  |  8  |
 | **6** | 20  | 14  | 14  | 10  | 14  |  8  |
-| **7** | 20  | 14  | 14  | 10  | 14  |  8  |
 | **8** | 20  | 14  | 14  | 10  | 14  |  8  |
