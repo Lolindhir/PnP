@@ -1,16 +1,17 @@
 ## Always Prepared
 
-|  Level  | Spell                       | Origin                                               |
-| :-----: | :-------------------------- | :--------------------------------------------------- |
-| Cantrip | [Chill Touch](https://lolindhir.github.io/PnP/spells/Chill%2520Touch)      | Path of the Necromancer |
-| Cantrip | [Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation) | [Wizard, Free Cantrip](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting)    |
-| Cantrip | [Spare the Dying](https://lolindhir.github.io/PnP/spells/Spare%2520the%2520Dying)* | Path of the Necromancer |
-| Cantrip | [Thaumaturgy](https://lolindhir.github.io/PnP/spells/Thaumaturgy)      | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                           |
-| Cantrip | [Toll the Dead](https://lolindhir.github.io/PnP/spells/Toll%2520the%2520Dead)    | Path of the Necromancer |
-|   1st   | [Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)     | Path of the Necromancer |
-|   1st   | [Magic Missile](https://lolindhir.github.io/PnP/spells/Magic%2520Missile)    | Item, Evocation Brooch                               |
-|   1st   | [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke)   | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                           |
-|   3rd   | [Darkness](https://lolindhir.github.io/PnP/spells/Darkness)         | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                           |
+|  Level  | Spell                       | Origin                                            |
+| :-----: | :-------------------------- | :------------------------------------------------ |
+| Cantrip | [Chill Touch](https://lolindhir.github.io/PnP/spells/Chill%2520Touch)      | Path of the Necromancer                           |
+| Cantrip | [Fire Bolt](https://lolindhir.github.io/PnP/spells/Fire%2520Bolt)        | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+| Cantrip | [Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation) | [Wizard, Free Cantrip](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) |
+| Cantrip | [Spare the Dying](https://lolindhir.github.io/PnP/spells/Spare%2520the%2520Dying)* | Path of the Necromancer                           |
+| Cantrip | [Thaumaturgy](https://lolindhir.github.io/PnP/spells/Thaumaturgy)      | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+| Cantrip | [Toll the Dead](https://lolindhir.github.io/PnP/spells/Toll%2520the%2520Dead)    | Path of the Necromancer                           |
+|   1st   | [Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)     | Path of the Necromancer                           |
+|   1st   | [Magic Missile](https://lolindhir.github.io/PnP/spells/Magic%2520Missile)    | Item, Evocation Brooch                            |
+|   1st   | [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke)   | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+|   3rd   | [Darkness](https://lolindhir.github.io/PnP/spells/Darkness)         | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
 
 
 ## Spellbook
@@ -18,11 +19,9 @@
 |  Level  | Spell                             |
 | :-----: | :-------------------------------- |
 | Cantrip | [Create Bonfire](https://lolindhir.github.io/PnP/spells/Create%2520Bonfire)         |
-| Cantrip | [Fire Bolt](https://lolindhir.github.io/PnP/spells/Fire%2520Bolt)              |
 | Cantrip | [Frostbite](https://lolindhir.github.io/PnP/spells/Frostbite)              |
 | Cantrip | [Mage Hand](https://lolindhir.github.io/PnP/spells/Mage%2520Hand)              |
 | Cantrip | [Shocking Grasp](https://lolindhir.github.io/PnP/spells/Shocking%2520Grasp)         |
-| Cantrip | [Toll the Dead](https://lolindhir.github.io/PnP/spells/Toll%2520the%2520Dead)          |
 |   1st   | [Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)        |
 |   1st   | [Alarm](https://lolindhir.github.io/PnP/spells/Alarm)                  |
 |   1st   | [Bad Blood](https://lolindhir.github.io/PnP/spells/Bad%2520Blood)              |

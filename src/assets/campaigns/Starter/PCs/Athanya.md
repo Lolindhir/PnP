@@ -26,8 +26,8 @@ ___
 
 | <!-- -->                  | <!-- --> |
 | :------------------------ | :------: |
-| **Spell save DC**         | 17*      |
-| **Spell attack modifier** | +9*      |
+| **Spell save DC**         | 17 *      |
+| **Spell attack modifier** | +9 *      |
 | **Prepared Cantrips**     | 4        |
 | **Prepared Spells**       | 12       |
 
