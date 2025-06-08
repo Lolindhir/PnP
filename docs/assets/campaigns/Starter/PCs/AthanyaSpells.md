@@ -61,7 +61,7 @@
 |   3rd   | [Flame Arrows](https://lolindhir.github.io/PnP/spells/Flame%2520Arrows)           |
 |   3rd   | [Haste](https://lolindhir.github.io/PnP/spells/Haste)                  |
 |   3rd   | [Lightning Bolt](https://lolindhir.github.io/PnP/spells/Lightning%2520Bolt)         |
-|   3rd   | [Melf’s Minute Meteors](https://lolindhir.github.io/PnP/spells/Melf%E2%80%99s%2520Minute%2520Meteors)  |
+|   3rd   | [Melf's Minute Meteors](https://lolindhir.github.io/PnP/spells/Melf%27s%2520Minute%2520Meteors)  |
 |   3rd   | [Phantom Steed](https://lolindhir.github.io/PnP/spells/Phantom%2520Steed)          |
 |   3rd   | [Protection from Energy](https://lolindhir.github.io/PnP/spells/Protection%2520from%2520Energy) |
 |   3rd   | [Sending](https://lolindhir.github.io/PnP/spells/Sending)                |

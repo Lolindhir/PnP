@@ -4,9 +4,9 @@
 | **Name**       | Athanya aus dem Hause Asmodai (Asmorthon)                                                                               |
 | **Bio**        | [Infernal Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling), female, Age ??                                                                     |
 | **Class**      | [Level 8 Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) ([Evoker](https://lolindhir.github.io/PnP/rules/classes/wizard/evoker))                                                                 |
-| **Stats**      | STR: 8 (-1)<br>DEX: 16 (+3)<br>CON: 12 (+1)<br>INT: 20 (+5)<br>WIS: 10 (+0)<br>CHA: 14 (+2)                             |
-| **Hit Points** | 41 (HD: 8d6)                                                                                                 |
+| **Hit Points** | 41 (HD: 8d6)                                                                                                            |
 | **Speed**      | 30 ft.                                                                                                                  |
+| **Stats**      | STR: 8 (-1)<br>DEX: 16 (+3)<br>CON: 12 (+1)<br>INT: 20 (+5)<br>WIS: 10 (+0)<br>CHA: 14 (+2)                             |
 | **Skills**     | Arcana (Expertise), Deception, Insight, Intimidation, Sleight of Hand                                                   |
 | **Tools**      | Disguise kit, Forgery kit                                                                                               |
 | **Background** | [False Identity](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Akademie von Neverwinter](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |

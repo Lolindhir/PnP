@@ -4,9 +4,9 @@
 | **Name**       | Kathra vom Klan der Steinsucher                                                                     |
 | **Bio**        | [Dwarf](https://lolindhir.github.io/PnP/rules/races/dwarf), female, 64                                                                    |
 | **Class**      | [Level 8 Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) ([Champion](https://lolindhir.github.io/PnP/rules/classes/fighter/champion))                                       |
-| **Stats**      | STR: 20 (+5)<br>DEX: 14 (+2)<br>CON: 14 (+2)<br>INT: 10 (+0)<br>WIS: 14 (+2)<br>CHA: 8 (-1)         |
 | **Hit Points** | 91 (HD: 8d10)                                                                                       |
 | **Speed**      | 35 ft.                                                                                              |
+| **Stats**      | STR: 20 (+5)<br>DEX: 14 (+2)<br>CON: 14 (+2)<br>INT: 10 (+0)<br>WIS: 14 (+2)<br>CHA: 8 (-1)         |
 | **Skills**     | Athletics, Insight, Nature, Perception (Expertise), Survival (Expertise)                            |
 | **Tools**      | Brewer's supplies, Herbalism kit                                                                    |
 | **Background** | [Wanderer](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features), [Faction Member: Gauntlgrym](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
