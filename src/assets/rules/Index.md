@@ -139,6 +139,7 @@
 | Deep Speech *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Dehydration *[Hazard]* | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Desertborn Human *[Race]* | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
+| Devil's Sight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Dexterity Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Difficult Terrain | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Difficulty Class (DC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |

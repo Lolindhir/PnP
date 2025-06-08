@@ -26,6 +26,17 @@ ___
 
 ### Klassenfähigkeiten
 
+| <!-- -->               | <!-- --> |
+| :--------------------- | :------- |
+| **Attacks**            | 2        |
+| **Second Wind uses**   | 3        |
+| **Weapon Masteries**   | 4        |
+| **Action Surges**      | 1        |
+| **Superiority Points** | 6        |
+| **Superiority Dice**   | d8       |
+| **Battle Maneuvers**   | 6 + 1    |
+| **Indomitable uses**   | 0        |
+
 #### Fighting Styles
 siehe [Fighting Style Feat](https://lolindhir.github.io/PnP/feats/Fighting%2520Style)
 <div class="listNoGap"></div>

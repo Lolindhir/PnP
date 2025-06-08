@@ -18,6 +18,36 @@
 		"category": ""
 	},
 	{
+		"term": "Cult of Life Manipulation",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Cult of Necrotic Power",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Cult of Undead Control",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Enhanced Animation",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Enhancement through Sacrifice",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
 		"term": "Everlund",
 		"reference": "Everlund",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_everlund",
@@ -28,6 +58,18 @@
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
 		"category": "Ort"
+	},
+	{
+		"term": "Grim Harvest",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Grim Rising",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
 	},
 	{
 		"term": "Gundren Steinsucher",
@@ -42,9 +84,27 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Inured to Undeath",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Jolt to Life",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
 		"term": "Kathra",
 		"reference": "Kathra",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/kathra",
+		"category": ""
+	},
+	{
+		"term": "Keeper of Souls",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
 		"category": ""
 	},
 	{
@@ -52,6 +112,24 @@
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
 		"category": "NPC"
+	},
+	{
+		"term": "Life to Damage",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Necromancy Scribe",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Necrotic Conduit",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
 	},
 	{
 		"term": "Neverwinter",
@@ -64,6 +142,24 @@
 		"reference": "Session 1",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
 		"category": "Ort"
+	},
+	{
+		"term": "Overflow",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Overwhelming Power",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Path of the Necromancer",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
 	},
 	{
 		"term": "Phandalin",
@@ -82,6 +178,12 @@
 		"reference": "Session 9",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
 		"category": "Ort"
+	},
+	{
+		"term": "Pull of Death",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
 	},
 	{
 		"term": "Session 1",
@@ -114,10 +216,22 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Transfer Life Force",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
 		"term": "Triboar",
 		"reference": "Triboar",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_triboar",
 		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Twinned Death",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
 	},
 	{
 		"term": "Yartar",

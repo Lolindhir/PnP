@@ -372,7 +372,19 @@
 				"indexCategory": "",
 				"indexSubCategory": "",
 				"filename": "/PCs/Athanya.md",
-				"children": []
+				"children": [
+					{
+						"id": "athanya_necromancer",
+						"name": "Path of the Necromancer",
+						"breadcrumb": "Necromancer",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/AthanyaNecromancer.md",
+						"children": []
+					}
+				]
 			},
 			{
 				"id": "aurrdan",

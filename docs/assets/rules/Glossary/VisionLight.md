@@ -39,6 +39,8 @@ If you have Blindsight, you can see within a specific range without relying on p
 ### Darkvision
 If you have Darkvision, you can see in Dim Light within a specified range as if it were Bright Light and in Darkness within that range as if it were Dim Light. You discern colors in that Darkness only as shades of gray.
 
+### Devil's Sight
+If you have Devil's Sight, you can see normally in Dim Light and Darkness - both magical and nonmagical.
 
 ### Tremorsense
 A creature with Tremorsense can pinpoint the location of creatures and moving objects within a specific range, provided that the creature with Tremorsense and anything it is detecting are both in contact with the same surface (such as the ground, a wall, or a ceiling) or the same liquid.
