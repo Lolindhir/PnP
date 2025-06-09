@@ -375,8 +375,8 @@
 				"children": [
 					{
 						"id": "athanya_spells",
-						"name": "Athanyas Spells",
-						"breadcrumb": "Spells",
+						"name": "Athanyas Spellbook",
+						"breadcrumb": "Spellbook",
 						"indexing": "none",
 						"indexname": "",
 						"indexCategory": "",

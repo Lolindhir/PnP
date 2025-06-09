@@ -2,7 +2,7 @@
 | <!-- -->       | <!-- -->                                                                                                                |
 | :------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | **Name**       | Athanya aus dem Hause Asmodai (Asmorthon)                                                                               |
-| **Bio**        | [Infernal Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling), female, Age ??                                                                     |
+| **Bio**        | [Infernal Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling), female, 26                                                                         |
 | **Class**      | [Level 8 Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) ([Evoker](https://lolindhir.github.io/PnP/rules/classes/wizard/evoker))                                                                 |
 | **Hit Points** | 41 (HD: 8d6)                                                                                                            |
 | **Speed**      | 30 ft.                                                                                                                  |
@@ -25,13 +25,13 @@ ___
 ### Klassenfähigkeiten
 
 | <!-- -->                  | <!-- --> |
-| :------------------------ | :------: |
-| **Spell save DC**         | 17 *      |
-| **Spell attack modifier** | +9 *      |
+| :------------------------ | :------- |
+| **Spell save DC**         | 17 *     |
+| **Spell attack modifier** | +9 *     |
 | **Prepared Cantrips**     | 4        |
 | **Prepared Spells**       | 12       |
 
-**with item*
+**with grimoire in hand*
 
 #### Available Spell Slots
 
@@ -43,12 +43,33 @@ ___
 | **4th**  |    2     |
 
 #### Available Spells
-Zauberliste (siehe Detailseite) mit allen Zaubern, die immer prepared sind, und den Zaubern, die im Zauberbuch stehen.
+
+##### Always Prepared or Items
+|  Level  | Spell                            | Origin                                            |
+| :-----: | :------------------------------- | :------------------------------------------------ |
+| Cantrip | [Chill Touch](https://lolindhir.github.io/PnP/spells/Chill%2520Touch)           | Path of the Necromancer                           |
+| Cantrip | [Fire Bolt](https://lolindhir.github.io/PnP/spells/Fire%2520Bolt)             | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+| Cantrip | [Prestidigitation](https://lolindhir.github.io/PnP/spells/Prestidigitation)      | [Wizard, Free Cantrip](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) |
+| Cantrip | [Spare the Dying](https://lolindhir.github.io/PnP/spells/Spare%2520the%2520Dying)       | Path of the Necromancer                           |
+| Cantrip | [Thaumaturgy](https://lolindhir.github.io/PnP/spells/Thaumaturgy)           | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+| Cantrip | [Toll the Dead](https://lolindhir.github.io/PnP/spells/Toll%2520the%2520Dead)         | Path of the Necromancer                           |
+|   1st   | [Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)          | Path of the Necromancer                           |
+|   1st   | [Mage Armor](https://lolindhir.github.io/PnP/spells/Mage%2520Armor)            | Item: Staff of Defense                            |
+|   1st   | [Magic Missile](https://lolindhir.github.io/PnP/spells/Magic%2520Missile)         | Item: Evocation Brooch                            |
+|   1st   | [Hellish Rebuke](https://lolindhir.github.io/PnP/spells/Hellish%2520Rebuke)        | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+|   1st   | [Shield](https://lolindhir.github.io/PnP/spells/Shield)                | Item: Staff of Defense                            |
+|   3rd   | [Leomund's Instant Hut](https://lolindhir.github.io/PnP/spells/Leomund%27s%2520Instant%2520Hut) | Item: Staff of Defense                            |
+|   3rd   | [Darkness](https://lolindhir.github.io/PnP/spells/Darkness)              | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
+
+##### Spellbook
+Die Zauber im Spellbook müssen prepared werden. Die Zauber sind auf der Detailseite aufgelistet.
 
 
 ### Path of the Necromancer
 
 Das Buch ihres Vaters hat sie auf den Pfad des Nekromanten (siehe Detailseite) geführt, über den sie zusätzliche Fähigkeiten erlangen kann.
+
+<img src="assets/campaigns/Starter/PCs/AthanyaGrimoire.png" class="image">
 
 | Step | Feature      |  Tier  | Cult              |
 | :--: | :----------- | :----: | :---------------- |
@@ -93,11 +114,11 @@ Das Buch ihres Vaters hat sie auf den Pfad des Nekromanten (siehe Detailseite) g
 | **8** |  4   | +1 (Con)  |   41   |
 
 ### Stats-Entwicklung
-| Level | STR | DEX | CON | INT | WIS | CHA |
-| :---: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **1** |  8  | 16  | 12  | 16  | 10  | 14  |
-| **4** |  8  | 16  | 12  | 18  | 10  | 14  |
-| **8** |  8  | 16  | 12  | 20  | 10  | 14  |
+| Level | STR | DEX | CON |  INT   | WIS | CHA |
+| :---: | :-: | :-: | :-: | :----: | :-: | :-: |
+| **1** |  8  | 16  | 12  |   16   | 10  | 14  |
+| **4** |  8  | 16  | 12  | **18** | 10  | 14  |
+| **8** |  8  | 16  | 12  | **20** | 10  | 14  |
 
 
 

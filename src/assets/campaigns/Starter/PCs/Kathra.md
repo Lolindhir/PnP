@@ -58,6 +58,18 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 - Scout Training (von Special Training)
 
 
+### Available Spells
+
+|  Level  | Spell                       | Origin                       |
+| :-----: | :-------------------------- | :--------------------------- |
+| Cantrip | [Light](https://lolindhir.github.io/PnP/spells/Light)            | Item: Pfadbrenner Handschuhe |
+|   1st   | [Find Familiar](https://lolindhir.github.io/PnP/spells/Find%2520Familiar)    | Feat: Magic Pundite          |
+|   1st   | [Gift of Alacrity](https://lolindhir.github.io/PnP/spells/Gift%2520of%2520Alacrity) | Feat: Magic Pundite          |
+|   1st   | [Searing Smite](https://lolindhir.github.io/PnP/spells/Searing%2520Smite)    | Item: Pfadbrenner Handschuhe |
+|   2nd   | [Heat Metal](https://lolindhir.github.io/PnP/spells/Heat%2520Metal)       | Item: Pfadbrenner Handschuhe |
+
+
+
 ### Spezielle Proficiencies
 - Animal Handling um Pferde auf Abruf zu trainieren
 
@@ -65,6 +77,10 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 | Training                     | Fortschritt | Gesamt | Prozent |
 | :--------------------------- | ----------: | -----: | :-----: |
 | Feat: [Guarded Mind](https://lolindhir.github.io/PnP/feats/Guarded%2520Mind) |         160 |  5.000 |   3%    |
+
+
+### Besondere Items
+<img src="assets/campaigns/Starter/PCs/KathraTridem.png" class="image">
 
 
 
@@ -102,9 +118,9 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 | **8** |  4   | +4 (Class), +2 (Con), +8 (Dwarf) |   91   |
 
 ### Stats-Entwicklung
-| Level | STR | DEX | CON | INT | WIS | CHA |
-| :---: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **1** | 16  | 14  | 14  | 10  | 14  |  8  |
-| **4** | 18  | 14  | 14  | 10  | 14  |  8  |
-| **6** | 20  | 14  | 14  | 10  | 14  |  8  |
-| **8** | 20  | 14  | 14  | 10  | 14  |  8  |
+| Level |  STR   | DEX | CON | INT | WIS | CHA |
+| :---: | :----: | :-: | :-: | :-: | :-: | :-: |
+| **1** |   16   | 14  | 14  | 10  | 14  |  8  |
+| **4** | **18** | 14  | 14  | 10  | 14  |  8  |
+| **6** | **20** | 14  | 14  | 10  | 14  |  8  |
+| **8** |   20   | 14  | 14  | 10  | 14  |  8  |
