@@ -2286,6 +2286,12 @@
 		"category": "Weapon Mastery"
 	},
 	{
+		"term": "Push your Body",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"category": ""
+	},
+	{
 		"term": "Pushing Attack",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",

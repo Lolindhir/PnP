@@ -25,11 +25,13 @@ ___
 
 ### Klassenfähigkeiten
 
-| <!-- -->                | <!-- --> |
-| :---------------------- | :------- |
-| **Sneak Attack Damage** | 4d6      |
-| **Weapon Masteries**    | 2        |
-| **Spells Known**        | 6        |
+| <!-- -->                  | <!-- --> |
+| :------------------------ | :------- |
+| **Sneak Attack Damage**   | 4d6      |
+| **Weapon Masteries**      | 2        |
+| **Spell save DC**         | 13       |
+| **Spell attack modifier** | +5       |
+| **Spells Known**          | 6        |
 
 #### Available Spell Slots
 

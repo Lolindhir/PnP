@@ -23,6 +23,8 @@
   - 1 Exhaustion für 1 zusätzliche Reaction (nur einmal pro Runde)
   - … je nach Situation in Absprache mit DM
 
+
+
 ### Exhaustion regenerieren
 <div class="listNoGap"></div>
 

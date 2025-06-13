@@ -381,6 +381,7 @@
 | Psy Warrior *[Fighter]* | [Psy Warrior](https://lolindhir.github.io/PnP/rules/classes/fighter/psy_warrior) |
 | Psychic *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Push *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
+| Push your Body | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
 | Pushing Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Qualität *[Training]* | [Training](https://lolindhir.github.io/PnP/rules/downtime/training) |
 | Quarterstaff *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
