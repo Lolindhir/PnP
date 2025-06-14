@@ -63,31 +63,33 @@ ___
 
 |  Level  | Spell                               | Origin                 |
 | :-----: | :---------------------------------- | :--------------------- |
-| Cantrip | [Elementalism](https://lolindhir.github.io/PnP/spells/Elementalism)             | Shaman Free Cantrip    |
-| Cantrip | [Freezing Grip](https://lolindhir.github.io/PnP/spells/Freezing%2520Grip)            | Water Aspect (Warrior) |
-| Cantrip | [Mold Earth](https://lolindhir.github.io/PnP/spells/Mold%2520Earth)               | Earth Aspect (Warrior) |
-| Cantrip | [Rock Slam](https://lolindhir.github.io/PnP/spells/Rock%2520Slam)                | Earth Aspect (Warrior) |
-| Cantrip | [Shape Water](https://lolindhir.github.io/PnP/spells/Shape%2520Water)              | Water Aspect (Warrior) |
-| Cantrip | [Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)               | Shaman Warrior         |
-|   1st   | [Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)          | Shaman Warrior         |
-|   1st   | [Crashing Wave](https://lolindhir.github.io/PnP/spells/Crashing%2520Wave)            | Water Aspect (Warrior) |
-|   1st   | [Create or Destroy Water](https://lolindhir.github.io/PnP/spells/Create%2520or%2520Destroy%2520Water)  | Water Aspect (Warrior) |
-|   1st   | [Earth Tremor](https://lolindhir.github.io/PnP/spells/Earth%2520Tremor)             | Earth Aspect (Warrior) |
-|   1st   | [Spiny Shield](https://lolindhir.github.io/PnP/spells/Spiny%2520Shield)             | Earth Aspect (Warrior) |
-|   1st   | [Water Blast](https://lolindhir.github.io/PnP/spells/Water%2520Blast)              | Water Aspect (Warrior) |
-|   2nd   | [Earth Ripple](https://lolindhir.github.io/PnP/spells/Earth%2520Ripple)             | Earth Aspect (Warrior) |
-|   2nd   | [Instant Bulwark](https://lolindhir.github.io/PnP/spells/Instant%2520Bulwark)          | Earth Aspect (Warrior) |
-|   2nd   | [Rime's Binding Ice](https://lolindhir.github.io/PnP/spells/Rime%27s%2520Binding%2520Ice)       | Water Aspect (Warrior) |
-|   2nd   | [Wither and Bloom](https://lolindhir.github.io/PnP/spells/Wither%2520and%2520Bloom)         | Water Aspect (Warrior) |
-|   3rd   | [Conjure Minor Elementals](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals) | Shaman Warrior         |
-|   3rd   | [Erode](https://lolindhir.github.io/PnP/spells/Erode)                    | Earth Aspect (Warrior) |
-|   3rd   | [Tidal Wave](https://lolindhir.github.io/PnP/spells/Tidal%2520Wave)               | Water Aspect (Warrior) |
-|   3rd   | [Wall of Sand](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Sand)             | Earth Aspect (Warrior) |
-|   3rd   | [Wall of Water](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Water)            | Water Aspect (Warrior) |
-|   4th   | [Control Water](https://lolindhir.github.io/PnP/spells/Control%2520Water)            | Water Aspect (Warrior) |
-|   4th   | [Ice Spike](https://lolindhir.github.io/PnP/spells/Ice%2520Spike)                | Water Aspect (Warrior) |
+| Cantrip | [Elementalism](https://lolindhir.github.io/PnP/spells/Elementalism)             | Shaman Free            |
+| Cantrip | [Freezing Grip](https://lolindhir.github.io/PnP/spells/Freezing%2520Grip)            | Water Warrior          |
+| Cantrip | [Mold Earth](https://lolindhir.github.io/PnP/spells/Mold%2520Earth)               | Earth Warrior          |
+| Cantrip | [Rock Slam](https://lolindhir.github.io/PnP/spells/Rock%2520Slam)                | Earth Warrior          |
+| Cantrip | [Shape Water](https://lolindhir.github.io/PnP/spells/Shape%2520Water)              | Water Warrior, Sea Elf |
+| Cantrip | [Shillelagh](https://lolindhir.github.io/PnP/spells/Shillelagh)               | Warrior                |
+|   1st   | [Absorb Elements](https://lolindhir.github.io/PnP/spells/Absorb%2520Elements)          | Warrior                |
+|   1st   | [Crashing Wave](https://lolindhir.github.io/PnP/spells/Crashing%2520Wave)            | Water Warrior          |
+|   1st   | [Create or Destroy Water](https://lolindhir.github.io/PnP/spells/Create%2520or%2520Destroy%2520Water)  | Water Warrior          |
+|   1st   | [Earth Tremor](https://lolindhir.github.io/PnP/spells/Earth%2520Tremor)             | Earth Warrior          |
+|   1st   | [Fog Cloud](https://lolindhir.github.io/PnP/spells/Fog%2520Cloud)                | Sea Elf                |
+|   1st   | [Spiny Shield](https://lolindhir.github.io/PnP/spells/Spiny%2520Shield)             | Earth Warrior          |
+|   1st   | [Water Blast](https://lolindhir.github.io/PnP/spells/Water%2520Blast)              | Water Warrior          |
+|   2nd   | [Earth Ripple](https://lolindhir.github.io/PnP/spells/Earth%2520Ripple)             | Earth Warrior          |
+|   2nd   | [Instant Bulwark](https://lolindhir.github.io/PnP/spells/Instant%2520Bulwark)          | Earth Warrior          |
+|   2nd   | [Rime's Binding Ice](https://lolindhir.github.io/PnP/spells/Rime%27s%2520Binding%2520Ice)       | Water Warrior          |
+|   2nd   | [Wither and Bloom](https://lolindhir.github.io/PnP/spells/Wither%2520and%2520Bloom)         | Water Warrior          |
+|   3rd   | [Erode](https://lolindhir.github.io/PnP/spells/Erode)                    | Earth Warrior          |
+|   3rd   | [Tidal Wave](https://lolindhir.github.io/PnP/spells/Tidal%2520Wave)               | Water Warrior          |
+|   3rd   | [Wall of Sand](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Sand)             | Earth Warrior          |
+|   3rd   | [Wall of Water](https://lolindhir.github.io/PnP/spells/Wall%2520of%2520Water)            | Water Warrior          |
+|   3rd   | [Water Breathing](https://lolindhir.github.io/PnP/spells/Water%2520Breathing)          | Sea Elf                |
+|   4th   | [Conjure Minor Elementals](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals) | Shaman Warrior         |
+|   4th   | [Control Water](https://lolindhir.github.io/PnP/spells/Control%2520Water)            | Water Warrior          |
+|   4th   | [Ice Spike](https://lolindhir.github.io/PnP/spells/Ice%2520Spike)                | Water Warrior          |
 |   4th   | [Orbital Stones](https://lolindhir.github.io/PnP/spells/Orbital%2520Stones)           | Earth Aspect (Warrior) |
-|   4th   | [Stone Coffin](https://lolindhir.github.io/PnP/spells/Stone%2520Coffin)             | Earth Aspect (Warrior) |
+|   4th   | [Stone Coffin](https://lolindhir.github.io/PnP/spells/Stone%2520Coffin)             | Earth Warrior          |
 
 
 
