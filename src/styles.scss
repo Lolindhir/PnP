@@ -87,6 +87,30 @@ body {
     margin-top: -12px;
 }
 
+.markdown .subheading2 {
+    margin-top: -11px;
+    margin-bottom: 13px;
+    font-style: italic;
+}
+
+.markdown .subheading3 {
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.markdown .subheading4 {
+    margin-top: -5px;
+    margin-bottom: 7px;
+    font-style: italic;
+}
+
+.markdown .subheading5 {
+    margin-top: -5px;
+    margin-bottom: 3px;
+    font-style: italic;
+}
+
 .markdown .image {
     max-width: min(100%, 800px);
     height: auto;

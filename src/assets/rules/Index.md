@@ -22,6 +22,7 @@
 | Advantage | [Advantage/Disadvantage](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage) |
 | Adventuring Equipment | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Adventuring Gear | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
+| Agonizing Pain *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Alchemist's Fire *[Consumable, Gear]* | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Alignment | [Alignment](https://lolindhir.github.io/PnP/rules/creation/character_creation/alignment) |
 | All Eyes on You *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
@@ -116,10 +117,12 @@
 | Creating a Character | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Criminal *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
+| Crippling Strike *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Critical Hit | [Damage](https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage) |
 | Cube *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
 | Cunning Action *[Rogue]* | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Cunning Strike *[Rogue]* | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Cunning Strikes | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Curative Reagent *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Custom Background | [Background](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds) |
 | Cylinder *[Area of Effect]* | [Area of Effect](https://lolindhir.github.io/PnP/rules/glossary/aoe) |
@@ -133,6 +136,7 @@
 | Darkvision | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Dart *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Dash *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
+| Daze *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Deafened *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Death Saving Throw | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Deception *[Skill]* | [Skills](https://lolindhir.github.io/PnP/rules/glossary/skills) |
@@ -144,10 +148,13 @@
 | Difficult Terrain | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Difficulty Class (DC) | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
 | Dim Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Dirty Strike *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Disadvantage | [Advantage/Disadvantage](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage) |
+| Disarm *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Disarming Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Disengage *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Dismounting | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
+| Distracting Hit *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Distracting Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Divination *[School of Magic]* | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Divine Essence *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
@@ -176,6 +183,7 @@
 | Equipment | [Equipment](https://lolindhir.github.io/PnP/rules/equipment) |
 | Equipment Proficiency | [Abilities & Proficiency](https://lolindhir.github.io/PnP/rules/general/abilities_proficiency) |
 | Essence *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
+| Evaluate *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Evasion *[Rogue]* | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Evasive Footwork *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Evocation *[School of Magic]* | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
@@ -183,6 +191,7 @@
 | Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) |
 | Exhaustion *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Exploration | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
+| Exposing Strike *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Faction Member *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Falling *[Hazard]* | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Falling off a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
@@ -207,6 +216,7 @@
 | Giant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Gladiator *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Glaive *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Glancing Blow *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Gnomish *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Goading Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Goblin *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -278,6 +288,7 @@
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Javelin *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Knight of the Order *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
+| Knock Out *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Lance *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Language | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
@@ -322,6 +333,7 @@
 | Merchant *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Monster Types | [Monster Types](https://lolindhir.github.io/PnP/rules/glossary/monster_types) |
 | Morningstar *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Mortal Blow *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Mountainborn Human *[Race]* | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Mounted Combat | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Mounting | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
@@ -358,6 +370,7 @@
 | Piercing *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
 | Pike *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Pillars of the Game | [Pillars of the Game](https://lolindhir.github.io/PnP/rules/general/pillars) |
+| Pinning Blow *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Plainsborn Human *[Race]* | [Human](https://lolindhir.github.io/PnP/rules/races/human) |
 | Plate *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Playing on a Grid | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
@@ -441,6 +454,7 @@
 | Search *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Second Wind *[Fighter]* | [Fighter](https://lolindhir.github.io/PnP/rules/classes/fighter) |
 | Self *[Spell Range]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
+| Setup *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Shaman | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Shield *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Shield Repair | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
@@ -489,6 +503,7 @@
 | Starting Equipment by Level | [Starting at Higher Levels](https://lolindhir.github.io/PnP/rules/creation/starting_higher_levels) |
 | Steady Aim *[Rogue]* | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
 | Stealth *[Skill]* | [Skills](https://lolindhir.github.io/PnP/rules/glossary/skills) |
+| Stealth Attack *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Strength Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Strengthened (+1/+2) *[Armor Special Property]* | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
 | Strengthened (+1/+2/+3) *[Weapon Special Property]* | [Weapon Special Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special) |
@@ -501,9 +516,11 @@
 | Sweeping Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Sylvan *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Tactical Assessment *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Taunting Strike *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Tea | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Tea Brewing | [Regeneration Options](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options) |
 | Tea Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
+| Temporäre Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints) |
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
@@ -521,6 +538,7 @@
 | Tremorsense | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Tribe Member *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Trident *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Trip *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Trip Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Truesight | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
 | Tumble (Moving Through Other Creatures) <Action> | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
@@ -551,5 +569,6 @@
 | Weiße Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Whip *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Wisdom Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
+| Withdraw *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Wizard | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Wood Elf *[Race]* | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |

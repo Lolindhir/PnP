@@ -604,6 +604,17 @@
 				"filename": "/Classes/Rogue.md",
 				"children": [
 					{
+						"id": "cunning_strikes",
+						"name": "Cunning Strikes",
+						"breadcrumb": "Cunning Strikes",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "Cunning Strike",
+						"filename": "/Classes/Rogue-CunningStrikes.md",
+						"children": []
+					},
+					{
 						"id": "arcane_trickster",
 						"name": "Subclass: Arcane Trickster",
 						"breadcrumb": "Arcane Trickster",

@@ -132,6 +132,12 @@
 		"category": ""
 	},
 	{
+		"term": "Agonizing Pain",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Alchemist's Fire",
 		"reference": "Adventuring Gear",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear",
@@ -696,6 +702,12 @@
 		"category": "Background Sample"
 	},
 	{
+		"term": "Crippling Strike",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Critical Hit",
 		"reference": "Damage",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
@@ -718,6 +730,12 @@
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue",
 		"category": "Rogue"
+	},
+	{
+		"term": "Cunning Strikes",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": ""
 	},
 	{
 		"term": "Curative Reagent",
@@ -798,6 +816,12 @@
 		"category": "Action"
 	},
 	{
+		"term": "Daze",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Deafened",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
@@ -864,10 +888,22 @@
 		"category": ""
 	},
 	{
+		"term": "Dirty Strike",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Disadvantage",
 		"reference": "Advantage/Disadvantage",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/advantage",
 		"category": ""
+	},
+	{
+		"term": "Disarm",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Disarming Attack",
@@ -886,6 +922,12 @@
 		"reference": "Mounted Combat",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
 		"category": ""
+	},
+	{
+		"term": "Distracting Hit",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Distracting Strike",
@@ -1056,6 +1098,12 @@
 		"category": "Material"
 	},
 	{
+		"term": "Evaluate",
+		"reference": "Detailed Actions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed",
+		"category": "Action"
+	},
+	{
 		"term": "Evasion",
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue",
@@ -1096,6 +1144,12 @@
 		"reference": "Exploration",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration",
 		"category": ""
+	},
+	{
+		"term": "Exposing Strike",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Faction Member",
@@ -1240,6 +1294,12 @@
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
 		"category": "Weapon"
+	},
+	{
+		"term": "Glancing Blow",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Gnomish",
@@ -1668,6 +1728,12 @@
 		"category": "Background Sample"
 	},
 	{
+		"term": "Knock Out",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Knocking Out a Creature",
 		"reference": "Making an Attack",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
@@ -1932,6 +1998,12 @@
 		"category": "Weapon"
 	},
 	{
+		"term": "Mortal Blow",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Mountainborn Human",
 		"reference": "Human",
 		"link": "https://lolindhir.github.io/PnP/rules/races/human",
@@ -2146,6 +2218,12 @@
 		"reference": "Pillars of the Game",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars",
 		"category": ""
+	},
+	{
+		"term": "Pinning Blow",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Plainsborn Human",
@@ -2646,6 +2724,12 @@
 		"category": "Spell Range"
 	},
 	{
+		"term": "Setup",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Shaman",
 		"reference": "Shaman",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman",
@@ -2934,6 +3018,12 @@
 		"category": "Skill"
 	},
 	{
+		"term": "Stealth Attack",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Strength Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
@@ -3006,6 +3096,12 @@
 		"category": "Maneuver"
 	},
 	{
+		"term": "Taunting Strike",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
+	},
+	{
 		"term": "Tea",
 		"reference": "Herbalism",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism",
@@ -3021,6 +3117,12 @@
 		"term": "Tea Crafting",
 		"reference": "Herbalism",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/herbalism",
+		"category": ""
+	},
+	{
+		"term": "Temporäre Schicksalspunkte",
+		"reference": "Schicksalspunkte",
+		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte",
 		"category": ""
 	},
 	{
@@ -3124,6 +3226,12 @@
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
 		"category": "Weapon"
+	},
+	{
+		"term": "Trip",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Trip Attack",
@@ -3304,6 +3412,12 @@
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
 		"category": "Consumable, Potion"
+	},
+	{
+		"term": "Withdraw",
+		"reference": "Cunning Strikes",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
+		"category": "Cunning Strike"
 	},
 	{
 		"term": "Wizard",

@@ -189,9 +189,9 @@ Additionally, you also have resistance against the necrotic damage of your Wizar
 
 
 ### Combo - Necrotic Conduit (Necrotic Power & Undead Control)
-<div class="listNoGap"></div>
 
-*(Prerequisite: Tier 2 Necrotic Power and Tier 2 Undead Control)*
+<div class="subheading">(Prerequisite: Tier 2 Necrotic Power and Tier 2 Undead Control)</div>
+
 
 **Persistent Swipes.** The Necrotic damage dealt by your *[Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)* spell's Reanimated Corpse ignores Resistance.
 **Necrotic Surge.** Additionally, you can add your Intelligence modifier to the damage of your Reanimated Corpse's Death Burst.

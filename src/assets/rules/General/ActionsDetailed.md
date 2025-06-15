@@ -1,4 +1,4 @@
-### Attack
+### Attack (only in Battle)
 When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.
 **Equipping and Unequipping Weapons.** You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it.
 **Moving between Attacks.** If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks.
@@ -13,6 +13,22 @@ If you take the Disengage action, your movement doesn't provoke Opportunity Atta
 ### Dodge (only in Battle)
 If you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.
 You lose these benefits if you have the Incapacitated condition or if your Speed is 0.
+
+### Evaluate
+When you take the Evaluate action, you make an ability check, depending on what you're trying to evaluate, to discern the potential of a creature. You learn if it is your equal, superior, or inferior in one of the attributes listed in the following table.
+
+| Attribute          | Ability Check                |
+| :----------------- | :--------------------------- |
+| Armor Class        | Intelligence (Investigation) |
+| Current Hit Points | Intelligence (Investigation) |
+| Hit Point Maximum  | Intelligence (Investigation) |
+| Walking Speed      | Intelligence (Investigation) |
+| Strength Score     | Intelligence (Investigation) |
+| Dexterity Score    | Intelligence (Investigation) |
+| Constitution Score | Intelligence (Investigation) |
+| Intelligence Score | Wisdom (Insight)             |
+| Wisdom Score       | Wisdom (Insight)             |
+| Charisma Score     | Wisdom (Insight)             |
 
 ### Help
 When you take the Help action, you do one of the following.

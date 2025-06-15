@@ -88,7 +88,7 @@ ___
 |   4th   | [Conjure Minor Elementals](https://lolindhir.github.io/PnP/spells/Conjure%2520Minor%2520Elementals) | Shaman Warrior         |
 |   4th   | [Control Water](https://lolindhir.github.io/PnP/spells/Control%2520Water)            | Water Warrior          |
 |   4th   | [Ice Spike](https://lolindhir.github.io/PnP/spells/Ice%2520Spike)                | Water Warrior          |
-|   4th   | [Orbital Stones](https://lolindhir.github.io/PnP/spells/Orbital%2520Stones)           | Earth Aspect (Warrior) |
+|   4th   | [Orbital Stones](https://lolindhir.github.io/PnP/spells/Orbital%2520Stones)           | Earth Warrior          |
 |   4th   | [Stone Coffin](https://lolindhir.github.io/PnP/spells/Stone%2520Coffin)             | Earth Warrior          |
 
 
