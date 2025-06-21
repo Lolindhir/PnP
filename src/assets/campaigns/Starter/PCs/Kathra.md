@@ -27,16 +27,16 @@ ___
 
 ### Klassenfähigkeiten
 
-| <!-- -->               | <!-- --> |
-| :--------------------- | :------- |
-| **Attacks**            | 2        |
-| **Second Wind uses**   | 3        |
-| **Weapon Masteries**   | 4        |
-| **Action Surges**      | 1        |
-| **Superiority Points** | 6        |
-| **Superiority Dice**   | d8       |
-| **Battle Maneuvers**   | 6 + 1    |
-| **Indomitable uses**   | 0        |
+| <!-- -->                  | <!-- --> |
+| :------------------------ | :------- |
+| **Attacks**               | 2        |
+| **Second Wind uses**      | 3        |
+| **Weapon Masteries**      | 4        |
+| **Action Surges**         | 1        |
+| **Superiority Dice**      | 6        |
+| **Superiority Dice Size** | d8       |
+| **Battle Maneuvers**      | 7 + 4    |
+| **Indomitable uses**      | 0        |
 
 #### Fighting Styles
 siehe [Fighting Style Feat](https://lolindhir.github.io/PnP/feats/Fighting%2520Style)
@@ -49,13 +49,17 @@ siehe [Fighting Style Feat](https://lolindhir.github.io/PnP/feats/Fighting%2520S
 siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 <div class="listNoGap"></div>
 
-- Ambush
-- Bait and Switch
-- Block oder Evasive Footwork
-- Parry
-- Precision Attack
-- Rally
-- Scout Training (von Special Training)
+- *Fighter:* Ambush (Utility)
+- *Fighter:* Bait and Switch (Defense, Support)
+- *Fighter:* Block oder Evasive Footwork oder Defensive Stance (Defense)
+- *Fighter:* Parry (Defense)
+- *Fighter:* Precision Attack (Offense)
+- *Fighting Style:* Rally (Support)
+- *Fighting Style:* Scout Training oder Cunning Instinct (Utility)
+- *Champion:* Heroic Fortitude (Defense)
+- *Champion:* Lunging Attack (Offense, Utility)
+- *Champion:* Ruthless Strike (Offense)
+- *Champion:* Trained Body (Utility)
 
 
 ### Available Spells

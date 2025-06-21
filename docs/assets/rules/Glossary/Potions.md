@@ -15,6 +15,11 @@
 | Healing, Superior      | Heals 40 HP (8d4+8)                                                        |
 | Healing, Supreme       | Heals 60 HP (10d4+20)                                                      |
 | Healing, Ultimate      | Heals 100 HP (15d4+40)                                                     |
+| Mana                   | Restores 1 Spell Slot                                                      |
+| Mana, Greater          | Restores 2 Spell Slots                                                     |
+| Mana, Superior         | Restores 3 Spell Slots                                                     |
+| Mana, Supreme          | Restores 5 Spell Slots                                                     |
+| Mana, Ultimate         | Restores 8 Spell Slots                                                     |
 | Recovery               | Reduces 1 Exhaustion                                                       |
 | Recovery, Excellent    | Reduces 2 Exhaustion                                                       |
 | Recovery, Superb       | Reduces 4 Exhaustion                                                       |

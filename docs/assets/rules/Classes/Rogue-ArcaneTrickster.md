@@ -19,7 +19,7 @@ You have learned to cast spells.
 **Cantrips.** You learn three cantrips: *[Mage Hand](https://lolindhir.github.io/PnP/spells/Mage%2520Hand)* and two other cantrips of your choice from the wizard spell list.
 You learn an additional wizard cantrip of your choice at 10th Rogue level.
 
-**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. You regain all expended spell slots when you finish a long rest.
+**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher per Adventuring Period.
 
 ##### Arcane Trickster Spellcasting
 
@@ -70,4 +70,4 @@ Additionally, when you use the Trip option of your Cunning Strike on a creature,
 You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.
 Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make an Intelligence saving throw. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least level 1 and of a level you can cast (it doesn't need to be a Wizard spell). For the next 8 hours, you have the spell prepared. The creature
 can't cast it until the 8 hours have passed.
-Once you steal a spell with this feature, you can't use this feature again until you finish a Long Rest.
+You can steal a spell with this feature once during an Adventuring Period. If the creature succeeds on its save, you can still use this feature.

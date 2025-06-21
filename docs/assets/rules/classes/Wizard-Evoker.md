@@ -34,4 +34,4 @@ Whenever you cast a Wizard spell from the Evocation school, you can add your Int
 
 ### Level 14: Overchannel
 You can increase the power of your spells. When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage, you can deal maximum damage with that spell on the turn you cast it.
-The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a Long Rest, you take 2d12 Necrotic damage for each level of the spell slot immediately after you cast it. This damage ignores Resistance and Immunity. Each time you use this feature again before finishing a Long Rest, the Necrotic damage per spell level increases by 1d12.
+The first time you do so, you suffer no adverse effect. If you use this feature again before you start a new Adventuring Period, you take 2d12 Necrotic damage for each level of the spell slot immediately after you cast it. This damage ignores Resistance and Immunity. Each time you use this feature again before starting the new Adventuring Period, the Necrotic damage per spell level increases by 1d12.

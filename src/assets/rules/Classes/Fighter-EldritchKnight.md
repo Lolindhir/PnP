@@ -4,14 +4,24 @@ Eldritch Knights combine the martial mastery common to all Fighters with a caref
 
 ## Subclass Features
 
-| Level | Subclass Features      |
-| :---: | :--------------------- |
-|   3   | Spellcasting, War Bond |
-|   7   | War Magic              |
-|  10   | Eldritch Strike        |
-|  15   | Arcane Charge          |
-|  18   | Improved War Magic     |
+| Level | Subclass Features                 |
+| :---: | :-------------------------------- |
+|   3   | Maneuvers, Spellcasting, War Bond |
+|   7   | War Magic                         |
+|  10   | Eldritch Strike                   |
+|  15   | Arcane Charge                     |
+|  18   | Improved War Magic                |
 
+
+
+### Level 3: Eldritch Knight Maneuvers
+You learn four Battle Maneuvers. They don't count against your total number of Maneuvers known and can't be replaced upon gaining a Fighter level.
+<div class="listNoGap"></div>
+
+- [Arresting Strike (Offense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Brace Up (Defense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Rally (Support)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Scholarly Recall (Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) 
 
 
 ### Level 3: Spellcasting
@@ -21,7 +31,7 @@ You augment your martial prowess with the ability to cast spells.
 **Cantrips.** You learn two cantrips of your choice from the wizard spell list. Whenever you gain a Fighter level, you can replace one of these cantrips with another cantrip of your choice from the Wizard spell list.
 You learn an additional wizard cantrip of your choice at 10th Fighter level.
 
-**Spell Slots.** The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. You regain all expended spell slots when you finish a long rest.
+**Spell Slots.** The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher per Adventuring Period.
 
 ##### Eldritch Knight Spellcasting
 
@@ -60,7 +70,7 @@ The spells you learn at 8th, 14th, and 20th level can come from any school of ma
 
 ### Level 3: War Bond
 
-You learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond. The bond fails if another Fighter is bonded to the weapon or if the weapon is a magic item to which someone else is attuned.
+You learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done while short resting. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond. The bond fails if another Fighter is bonded to the weapon or if the weapon is a magic item to which someone else is attuned.
 Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.
 You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.
 

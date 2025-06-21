@@ -100,6 +100,17 @@
 				]
 			},
 			{
+				"id": "periods",
+				"name": "The 2 Phases of Play",
+				"breadcrumb": "Phases",
+				"indexing": "all",
+				"indexname": "Phases of Play",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/AdventuringDowntime.md",
+				"children": []
+			},
+			{
 				"id": "pillars",
 				"name": "The 3 Game Pillars",
 				"breadcrumb": "Game Pillars",
@@ -173,37 +184,15 @@
 								"indexSubCategory": "",
 								"filename": "/General/CombatAttack.md",
 								"children": []
-							},
-							{
-								"id": "combat_mounted",
-								"name": "Mounted Combat",
-								"breadcrumb": "Mounted",
-								"indexing": "all",
-								"indexname": "",
-								"indexCategory": "",
-								"indexSubCategory": "",
-								"filename": "/General/CombatMounted.md",
-								"children": []
-							},
-							{
-								"id": "combat_underwater",
-								"name": "Underwater Combat",
-								"breadcrumb": "Underwater",
-								"indexing": "all",
-								"indexname": "",
-								"indexCategory": "",
-								"indexSubCategory": "",
-								"filename": "/General/CombatUnderwater.md",
-								"children": []
-							}
+							}							
 						]
 					}
 				]
 			},
 			{
-				"id": "damage_recovery",
-				"name": "Damage & Recovery",
-				"breadcrumb": "Damage/Recovery",
+				"id": "damage_healing",
+				"name": "Damage & Healing",
+				"breadcrumb": "Damage/Healing",
 				"indexing": "none",
 				"indexname": "",
 				"indexCategory": "",
@@ -264,28 +253,6 @@
 						"indexSubCategory": "",
 						"filename": "/General/HealingRests.md",
 						"children": []
-					},
-					{
-						"id": "gritty_realism",
-						"name": "Gritty Realism Times",
-						"breadcrumb": "Gritty Realism",
-						"indexing": "all",
-						"indexname": "",
-						"indexCategory": "",
-						"indexSubCategory": "",
-						"filename": "/General/GrittyRealism.md",
-						"children": []
-					},
-					{
-						"id": "regeneration_options",
-						"name": "Regeneration Options",
-						"breadcrumb": "Regen. Options",
-						"indexing": "all",
-						"indexname": "",
-						"indexCategory": "",
-						"indexSubCategory": "",
-						"filename": "/General/HealingOptions.md",
-						"children": []
 					}
 				]
 			},
@@ -309,6 +276,17 @@
 				"indexCategory": "",
 				"indexSubCategory": "",
 				"filename": "/General/Schicksalspunkte.md",
+				"children": []
+			},
+			{
+				"id": "gritty_realism",
+				"name": "Gritty Realism Times",
+				"breadcrumb": "Gritty Realism",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/General/GrittyRealism.md",
 				"children": []
 			},
 			{
@@ -875,6 +853,131 @@
 		]
 	},
 	{
+		"id": "adventuring",
+		"name": "Adventuring Activities",
+		"breadcrumb": "Adventuring",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [		
+			{
+				"id": "fighting",
+				"name": "Fighting",
+				"breadcrumb": "Fighting",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Adventuring",
+				"indexSubCategory": "Fighting",
+				"filename": "/Adventuring/Fighting.md",
+				"children": [
+					{
+						"id": "combat_mounted",
+						"name": "Mounted Combat",
+						"breadcrumb": "Mounted",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Fighting",
+						"indexSubCategory": "Fighting",
+						"filename": "/Adventuring/CombatMounted.md",
+						"children": []
+					},
+					{
+						"id": "combat_underwater",
+						"name": "Underwater Combat",
+						"breadcrumb": "Underwater",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Fighting",
+						"indexSubCategory": "Fighting",
+						"filename": "/Adventuring/CombatUnderwater.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "recovering",
+				"name": "Recovering",
+				"breadcrumb": "Recovering",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "Adventuring",
+				"indexSubCategory": "Recovering",
+				"filename": "",
+				"children": [
+					{
+						"id": "resting",
+						"name": "Resting",
+						"breadcrumb": "Resting",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Recovering",
+						"indexSubCategory": "Resting",
+						"filename": "/Adventuring/Resting.md",
+						"children": []
+					},
+					{
+						"id": "regeneration_options",
+						"name": "Regeneration Options",
+						"breadcrumb": "Regen. Options",
+						"indexing": "all",
+						"indexname": "",
+						"indexCategory": "Recovering",
+						"indexSubCategory": "Regeneration",
+						"filename": "/Adventuring/HealingOptions.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "traveling",
+				"name": "Traveling",
+				"breadcrumb": "Traveling",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Adventuring",
+				"indexSubCategory": "Traveling",
+				"filename": "/Adventuring/Traveling.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "downtime",
+		"name": "Downtime Activities",
+		"breadcrumb": "Downtime",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "downtime_overview",
+				"name": "Overview",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "Downtime Activity",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Downtime/Overview.md",
+				"children": []
+			},		
+			{
+				"id": "training",
+				"name": "Training",
+				"breadcrumb": "Training",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Downtime",
+				"indexSubCategory": "Training",
+				"filename": "/Downtime/Training.md",
+				"children": []
+			}
+		]
+	},
+	{
 		"id": "equipment",
 		"name": "Equipment",
 		"breadcrumb": "Equipment",
@@ -1050,40 +1153,6 @@
 				"indexCategory": "",
 				"indexSubCategory": "Consumable,Spellhold",
 				"filename": "/Equipment/Spellholds.md",
-				"children": []
-			}
-		]
-	},
-	{
-		"id": "downtime",
-		"name": "Downtime Activities",
-		"breadcrumb": "Downtime",
-		"indexing": "none",
-		"indexname": "",
-		"indexCategory": "",
-		"indexSubCategory": "",
-		"filename": "",
-		"children": [
-			{
-				"id": "downtime_overview",
-				"name": "Overview",
-				"breadcrumb": "Overview",
-				"indexing": "all",
-				"indexname": "Downtime Activity",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "/Downtime/Overview.md",
-				"children": []
-			},		
-			{
-				"id": "training",
-				"name": "Training",
-				"breadcrumb": "Training",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Downtime",
-				"indexSubCategory": "Training",
-				"filename": "/Downtime/Training.md",
 				"children": []
 			}
 		]

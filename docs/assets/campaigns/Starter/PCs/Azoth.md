@@ -25,18 +25,17 @@ ___
 
 ### Klassenfähigkeiten
 
-| <!-- -->                  | <!-- --> |
-| :------------------------ | :------- |
-| **Sneak Attack Damage**   | 4d6      |
-| **Cunning Action**        | 1        |
-| **Cunning Strike Degree** | 2nd      |
-| **Cunning Strikes**       | 3        |
-| **Cunning Strike DC**     | 16       |
-| **Weapon Masteries**      | 2        |
-| **Blindsense**            | -        |
-| **Spell save DC**         | 13       |
-| **Spell attack modifier** | +5       |
-| **Spells Known**          | 6        |
+| <!-- -->                   | <!-- --> |
+| :------------------------- | :------- |
+| **Weapon Masteries**       | 2        |
+| **Sneak Attack Damage**    | 4d6      |
+| **Cunning Actions**        | 1        |
+| **Cunning Strike Options** | 4        |
+| **Cunning Strike DC**      | 16       |
+| **Blindsense**             | -        |
+| **Spell save DC**          | 13       |
+| **Spell attack modifier**  | +5       |
+| **Spells Known**           | 6        |
 
 #### Available Spell Slots
 

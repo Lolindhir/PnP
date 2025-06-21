@@ -6,7 +6,7 @@
 
 **Simultaneous Restrictions.** A creature can only benefit from one effect of the same potion type at a time.
 
-**Long Rest Restriction.** Some potions have effect restrictions because the body can only tolerate a certain amount per Long Rest. The effect of such potions can only be received once per Long Rest.
+**Adventuring Period Restriction.** Some potions have effect restrictions because the body can only tolerate a certain amount of them or they can only enhance the body to a certain level. The effect of such potions can only be received once per Adventuring Period.
 
 
 
@@ -53,6 +53,19 @@ The creature that drinks this potion regains a number of Hit Points based on the
 | Ultimate |    100    |     15d4+40     |
 
 
+### Mana Potion
+The creature that drinks this potion regains expended spell slots up to a number of combined spell slots based on the type of Mana Potion, as noted in the table below. It can choose which expended spell slots to recover. For example, if it recovers up to two levels' worth of spell slots, it regains either one level 2 spell slot or two level 1 spell slots.
+Because the potion multiplicates the remaining magic in the creature's body, the creature has to have at least one available non expended spell slot to benefit from this potion's effect.
+**Adventuring Period Restriction.** After drinking a Mana Potion, a creature cannot benefit from the effect of another Mana Potion for the remainder of the current Adventuring Period.
+| Type     | Spell Slots |
+| :------- | :---------: |
+| Basic    |      1      |
+| Greater  |      2      |
+| Superior |      3      |
+| Supreme  |      5      |
+| Ultimate |      8      |
+
+
 ### Recovery Potion
 The creature that drinks this potion reduces its exhaustion level by an amount based on the type of Recovery Potion, as noted in the table below.
 | Type      | Exhaustion |
@@ -64,7 +77,7 @@ The creature that drinks this potion reduces its exhaustion level by an amount b
 
 ### Regeneration Potion
 The creature that drinks this potion regains a number of Hit Dice based on the type of Regeneration Potion, as noted in the table below.
-**Long Rest Restriction.** After drinking a Regeneration Potion, a creature cannot benefit from the effect of another Regeneration Potion until it has completed a Long Rest.
+**Adventuring Period Restriction.** After drinking a Regeneration Potion, a creature cannot benefit from the effect of another Regeneration Potion for the remainder of the current Adventuring Period.
 | Type     | Number of HD |
 | :------- | :----------: |
 | Basic    |      1       |

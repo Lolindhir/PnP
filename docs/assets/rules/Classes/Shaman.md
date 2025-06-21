@@ -108,7 +108,7 @@ You can use your bonus action to call forth one Elemental Aspect you know. The E
 While the Aspect surrounds you, you can't cast spells other than cantrips, spells granted by your Elemental Role, and the corresponding spells of the called Elemental Aspect. Calling the Aspect doesn't break your concentration on a spell you've already cast or prevent you from taking actions that are part of a spell, such as *Witch Bolt*, that you've already cast.
 The Elemental Aspect surrounds you for 1 minute, until you use your bonus action to dismiss it, until you use this feature again to call another aspect with an bonus action, or until you are incapacitated, fall unconscious, drop to 0 hit points, or die. 
 
-**Number of Uses.** You can use Aspect Call twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.
+**Number of Uses.** You can use Aspect Call twice per Adventuring Period. Also twice during that time, you can recover one expended use when you finish a Short Rest.
 You gain additional uses when you reach certain Shaman levels, as shown in the Aspect Calls table.
 
 ##### Aspect Calls
@@ -168,7 +168,7 @@ You gain the ability to physically manifest the elements from the Elemental Plan
 
 **Ability instead of Casting.** Casting the spell doesn't count as casting or concentrating for such things as *Counterspell*, the Earth Aspects casting constraint, Barbarian Rage and so on. You still have to concentrate on it and have to make concentration checks as usual.
 
-**Free Usage.** You can cast the spell once at 4th level without expending a spell slot, and you must finish a Long Rest before you can do so again. The level at which you cast the spell increases as you reach certain Shaman levels as described in the Free Elemental Manifestation Level table below.
+**Free Usage.** You can cast the spell once per Adventuring Day at 4th level without expending a spell slot. The level at which you cast the spell increases as you reach certain Shaman levels as described in the Free Elemental Manifestation Level table below.
 
 ##### Free Elemental Manifestation Level
 | Shaman Level | Spell Level |

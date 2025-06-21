@@ -4,7 +4,7 @@ Whenever you take damage, subtract it from your Hit Points. Hit Point loss has n
 If you have half your Hit Points or fewer, you're Bloodied, which has no game effect on its own but which might trigger other game effects.
 
 ## Healing
-Hit Points can be restored by magic, such as the *Cure Wounds* spell or a Potion of Healing, or by a Night or Long Rest (see the [Resting rules](https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests)).
+Hit Points can be restored by magic, such as the *Cure Wounds* spell or a Potion of Healing, or by a Night or Long Rest (see the [Resting rules](https://lolindhir.github.io/PnP/rules/general/damage_healing/rests)).
 When you receive healing, add the restored Hit Points to your current Hit Points. Your Hit Points can't exceed your Hit Point maximum, so any Hit Points regained in excess of the maximum are lost. For example, if you receive 8 Hit Points of healing and have 14 Hit Points and a Hit Point maximum of 20, you regain 6 Hit Points, not 8.
 
 
@@ -31,7 +31,7 @@ The successes and failures don't need to be consecutive; keep track of both unti
 **Damage at 0 Hit Points.** If you take any damage while you have 0 Hit Points, you suffer a Death Saving Throw failure. If the damage is from a Critical Hit, you suffer two failures instead. If the damage equals or exceeds your Hit Point maximum, you die.
 
 ### Gaining Exhaustion
-If you are healed from 0 Hit Points, you may gain a level of [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion) in consequence of the straining experience. Make a Constitution Saving throw. The DC equals 12 plus 4 times the number of your failed Death Saves at the moment you were healed.
+If you are healed from 0 Hit Points, you may gain a level of [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion) in consequence of the straining experience. Make a Constitution Saving throw. The DC equals 12 plus 4 times the number of your failed Death Saves at the moment you were healed.
 
 > Constitution Save DC = 12 + 4 * number of failed Death Saves
 

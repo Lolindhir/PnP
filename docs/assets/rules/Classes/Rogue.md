@@ -16,28 +16,28 @@ ___
 ## Rogue Class Features
 As a Rogue, you gain the following class features when you reach the specified Rogue levels. These features are listed in the Rogue Features table.
 
-| Level | Class Features                                                     |
-| :---: | :----------------------------------------------------------------- |
-|   1   | Expertise, Sneak Attack (1d6), Thieves' Cant, Weapon Mastery       |
-|   2   | Cunning Action (1), Second-Story Work                              |
-|   3   | Rogue Subclass, Steady Aim, Sneak Attack (2d6)                     |
-|   4   | Ability Score Improvement                                          |
-|   5   | Cunning Strike, Uncanny Dodge, Sneak Attack (3d6)                  |
-|   6   | Expertise, Fast Assessment                                         |
-|   7   | Evasion, Reliable Talent, Sneak Attack (4d6)                       |
-|   8   | Ability Score Improvement                                          |
-|   9   | Subclass feature, Sneak Attack (5d6)                               |
-|  10   | Ability Score Improvement                                          |
-|  11   | Improved Cunning Strike, Additional Attunement, Sneak Attack (6d6) |
-|  12   | Ability Score Improvement                                          |
-|  13   | Subclass feature, Cunning Action (2), Sneak Attack (7d6)           |
-|  14   | Devious Strikes, Blindsense (10 feet)                              |
-|  15   | Slippery Mind, Magic Item Expert, Sneak Attack (8d6)               |
-|  16   | Ability Score Improvement                                          |
-|  17   | Subclass feature, Blindsense (20 feet), Sneak Attack (9d6)         |
-|  18   | Elusive, Thief's Reflexes                                          |
-|  19   | Epic Boon, Sneak Attack (10d6)                                     |
-|  20   | Stroke of Luck, Blindsense (30 feet)                               |
+| Level | Class Features                                                                 |
+| :---: | :----------------------------------------------------------------------------- |
+|   1   | Expertise, Sneak Attack (1d6), Thieves' Cant, Weapon Mastery                   |
+|   2   | Cunning Action (1), Second-Story Work                                          |
+|   3   | Rogue Subclass, Steady Aim, Sneak Attack (2d6)                                 |
+|   4   | Ability Score Improvement                                                      |
+|   5   | Cunning Strike (4), Uncanny Dodge, Sneak Attack (3d6)                          |
+|   6   | Expertise, Fast Assessment                                                     |
+|   7   | Evasion, Reliable Talent, Sneak Attack (4d6)                                   |
+|   8   | Ability Score Improvement                                                      |
+|   9   | Subclass feature, Sneak Attack (5d6)                                           |
+|  10   | Ability Score Improvement                                                      |
+|  11   | Improved Cunning Strike, Cunning Strike (6), Sneak Attack (6d6)                |
+|  12   | Ability Score Improvement                                                      |
+|  13   | Subclass feature, Sneak Attack (7d6)                                           |
+|  14   | Magic Item Expert, Cunning Action (2), Blindsense (10 feet)                    |
+|  15   | Slippery Mind, Sneak Attack (8d6)                                              |
+|  16   | Ability Score Improvement                                                      |
+|  17   | Subclass feature, Cunning Strike (8), Blindsense (20 feet), Sneak Attack (9d6) |
+|  18   | Elusive, Thief's Reflexes                                                      |
+|  19   | Epic Boon, Sneak Attack (10d6)                                                 |
+|  20   | Stroke of Luck, Blindsense (30 feet)                                           |
 
 
 ### Level 1: Expertise
@@ -71,7 +71,7 @@ Alternatively, you can forgo knowing Thieves' Cant and pick up another language 
 
 ### Level 1: Weapon Mastery
 Your training with weapons allows you to use the mastery properties ([Weapon Overview](https://lolindhir.github.io/PnP/rules/equipment/weapons)) of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.
-Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.
+Whenever you start an Adventuring Period, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.
 
 ### Level 2: Cunning Action
 Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action:
@@ -81,7 +81,7 @@ Your quick thinking and agility allow you to move and act quickly. On your turn,
 - **Sleight of Hand.** Make a Dexterity (Sleight of Hand) check to pick a lock or disarm a trap with Thieves' Tools or to pick a pocket.
 - **Use an Object.** Take the utilize action, or take the Magic action to use a magic item that requires that action.
 
-At 13th level, you gain a second Cunning Action each turn, but you can only use each option once per turn.
+At 14th level, you gain a second Cunning Action each turn, but you can only use each option once per turn.
 
 
 ### Level 2: Second-Story Work
@@ -107,14 +107,16 @@ You gain this feature again at Rogue levels 8, 10, 12, and 16.
 
 
 ### Level 5: Cunning Strike
-You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add
-the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Distraction Pain effect, remove 1d6 from the Sneak Attack's damage before rolling.
-If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.
-- **Disarm (Cost: 1d6).** The target must succeed on a Dexterity saving throw, or it drops one item of your choice that it's holding.
-- **Distracting Pain (Cost:1d6).** The target must make a Constitution saving throw. On a failed save, the target has disadvantage on attack rolls and ability checks for 1 minute. At the end of each of its turns, the target can repeat the save, ending the effect on itself on a success.
-- **Stealth Attack (Cost: 1d6).** If you are hidden, this attack doesn't reveal your location if you end the turn behind Three-Quarters Cover or Total Cover.
-- **Trip (Cost: 1d6).** If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.
-- **Withdraw (Cost: 1d6).** Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.
+
+You've developed cunning ways to use your Sneak Attack.
+
+**Cunning Strikes.** You learn four Cunning Strike effects of your choice from the [Cunning Strikes section](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes). You can only learn effects once you reach the noted required Rogue level. You learn two additional Cunning Strikes of your choice at 11th and 17th level. Each time you reach a new Rogue level, you can also replace one Cunning Strike you know with a different one (regarding the required level).
+
+**Cunning Strike Effects.** When you deal Sneak Attack damage, you can add one Cunning Strike effect. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Distraction Pain effect, remove 1d6 from the Sneak Attack's damage before rolling.
+
+**Saving Throws.** Some of your Cunning Strikes require your target to make a saving throw to resist the strike's effect. The saving throw DC is calculated as follows:
+
+> Cunning Strike save DC = 8 + your Proficiency Bonus + your Dexterity modifier
 
 
 ### Level 5: Uncanny Dodge
@@ -131,16 +133,13 @@ You can nimbly dodge out of the way of certain area effects, such as a red drago
 Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
 
 ### Level 11: Improved Cunning Strike
-You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.
+**Double Strike.** You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.
+**Enhanced Strike.** If you use a Cunning Strike effect that forces the target to make a saving throw, you can reduce your Sneak Attack damage bonus by an additional number of d6s equal to the effects cost and force the target to make its saving throw with disadvantage.
 
-### Level 11: Additional Attunement
-You've learned how to maximize use of magic items, you can attune to up to four magic items at once.
-
-### Level 14: Devious Strikes
-You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
-- **Daze (Cost:2d6).** The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.
-- **Knock Out (Cost: 6d6).** The target must succeed on a Constitution saving throw or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.
-- **Obscure (Cost: 3d6).** The target must succeed on a Dexterity saving throw or it has the Blinded condition until the end of its next turn.
+### Level 14: Magic Item Expert
+You've learned how to maximize use of magic items, granting you the following benefits
+**Additional Attunement.** You can attune to up to four magic items at once.
+**Free Charges.** Whenever you use a magic item property that expends charges, roll 1d6. On a roll of 6, you use the property without expending the charges.
 
 ### Level 14: Blindsense
 Your senses have been honed to supernatural levels. If you can hear, you are aware of the location of any invisible or hidden creature within 10 feet of you.
@@ -148,9 +147,6 @@ The radius of Blindsense increases again when you reach 17th level (20 feet) and
 
 ### Level 15: Slippery Mind
 You have acquired greater mental strength. You gain proficiency in Wisdom and Charisma saving throws.
-
-### Level 15: Magic Item Expert
-Whenever you use a magic item property that expends charges, roll 1d6. On a roll of 6, you use the property without expending the charges.
 
 ### Level 18: Elusive
 You are so evasive that attackers rarely gain the upper hand against you. No attack roll can have advantage against you while you aren't incapacitated.
@@ -163,4 +159,4 @@ You gain an Epic Boon feat or three other feats of your choice for which you qua
 
 ### Level 20: Stroke of Luck
 You have an uncanny knack for succeeding when you need to. If you fail a D20 Test (Attack Roll, Ability Check, Saving Throw), you can turn the roll into a 20.
-Once you use this feature, you can't use it again until you finish a Short or Long rest.
+You can use this feature once per Adventuring Period. Also twice during that time, you can restore your use of it when you finish a Short Rest.

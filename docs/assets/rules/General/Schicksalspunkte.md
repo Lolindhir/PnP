@@ -68,7 +68,7 @@ Der Dungeon Master kann schwarze Schicksalspunkte der Spieler stehlen und seinen
 ### Schwarze Punkte
 
 #### Normale
-Schwarze Schicksalspunkte sind nur für den Zeitraum zwischen zwei Long Rests vorhanden und werden am Ende einer Long Rest neu verteilt (so wie der Zufall will). Am Ende einer Long Rest rollt jeder Spieler und der Dungeon Master einen d6 und abhängig vom Würfelwurf erhalten entweder die Spieler, 4-6, oder der Dungeon Master, 1-3, einen schwarzen Schicksalspunkt.
+Schwarze Schicksalspunkte sind nur für den Zeitraum zwischen zwei Long Rests, also in der Adventuring Period, vorhanden und werden zu Beginn einer neuen Adventuring Period neu verteilt (so wie der Zufall will). Zum Start einer Adventuring Period rollt jeder Spieler und der Dungeon Master einen d6 und abhängig vom Würfelwurf erhalten entweder die Spieler, 4-6, oder der Dungeon Master, 1-3, einen schwarzen Schicksalspunkt.
 Darüber hinaus können die Spieler einen schwarzen Punkt erhalten, wenn in einer wichtigen Situation eine natürliche 1 gewürfelt wird (nach Ermessen des Dungeon Masters nachdem die Spieler ihn darauf hinweisen).
 
 #### Temporäre

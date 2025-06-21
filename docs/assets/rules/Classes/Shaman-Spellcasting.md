@@ -40,8 +40,7 @@
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
 Whenever you gain a Shaman level, you can replace one of your cantrips with another cantrip of your choice from the Shaman spell list.
 
-**Spell Slots.** The [Shaman Features Table](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_features_table) shows how many spell slots you have to cast your level 1+ spells.
-You regain all expended slots when you finish a Long Rest.
+**Spell Slots.** The [Shaman Features Table](https://lolindhir.github.io/PnP/rules/classes/shaman/shaman_features_table) shows how many spell slots you have to cast your level 1+ spells per Adventuring Period.
 
 **Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two Level 1 spells from the Shaman spell list.
 The number of spells on your list increases as you gain Shaman levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from the Shaman spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include four spells of levels 1, 2, and 3 in any combination.
@@ -85,7 +84,7 @@ If another Shaman feature gives you spells that you always have prepared, those 
 |      20      |       15        |
 -->
 
-**Changing Your Prepared Spells.** Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
+**Changing Your Prepared Spells.** Whenever you start an Adventuring Period, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
 If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared.
 
 

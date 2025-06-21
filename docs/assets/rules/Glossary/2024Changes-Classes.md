@@ -44,10 +44,11 @@
 - neu: Cunning Strikes
     - Grundoptionen auf Level 5
     - Improved Cunning Strike auf Level 11 (zwei Optionen wählbar)
-    - Devious Strikes (stärkere Optionen) auf Level 14
+    - stärkere Optionen auf späterem Level
 - neu: Fast Assessment ab Level 6 (Bonus Action um zu versuchen Immunities, Resistances oder Vulnerabilities zu erkennen)
+- neu: zweite Cunning Action ab Level 14
 - Reliable Talent schon ab Level 7 anstatt ab Level 11
-- Blindsight bleibt ab Level 14 (in 2024 eigentlich entfernt)
+- Blindsight bleibt ab Level 14 (in 2024 eigentlich entfernt) und skaliert sogar bis 30 ft
 - Slippery Mind gibt nun auch Proficiency auf Charisma Saving Throws
 - Epic Boon auf Level 19 (neu für jede Klasse)
 - Stroke of Luck kann nun auch für Saving Throws verwendet werden
@@ -55,8 +56,8 @@
     - zwei weitere Aktionen als Bonus Action durch Cunning Action: "Lock Picking" und "Use an Item"
     - Second-Story Work auf Level 2 für Climb Speed und Springen mit Dexterity
     - Stealth Attack als Cunning Strike Option
-    - Additional Attunement ab Level 11
-    - Magic Device Expert ab Level 15 (Chance keine Charges von Items zu verbrauchen)
+    - Additional Attunement ab Level 14
+    - Magic Device Expert ab Level 14 (Chance keine Charges von Items zu verbrauchen)
     - Thief's Reflexes ab Level 18 (zusätzlicher Zug in erster Kampfrunde)
 
 ### Rogue Subklasse: Arcane Trickster

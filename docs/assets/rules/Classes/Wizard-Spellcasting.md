@@ -50,8 +50,7 @@ The book contains the spells you know. It starts with five Wizard cantrips and s
 If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many Wizards keep a backup spellbook.
 
 
-**Spell Slots.** The Available Spell Slots table above shows how many spell slots you have to cast your level 1+ spells.
-You regain all expended slots when you finish a Long Rest.
+**Spell Slots.** The Available Spell Slots table above shows how many spell slots you have to cast your level 1+ spells per Adventuring Period.
 
 **Prepared Cantrips.** You prepare three cantrips from your spellbook to cast with this feature.
 When you reach Wizard level 4, the number of prepared cantrips increases to four. When you reach Wizard level 10, the number of prepared cantrips increases to five.
@@ -84,7 +83,7 @@ If another Wizard feature gives you spells that you always have prepared, those 
 |      19      |         5         |         24         |
 |      20      |         5         |         25         |
 
-**Changing Your Prepared Spells.** Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with spells from your spellbook.
+**Changing Your Prepared Spells.** Whenever you start an Adventuring Period, you can change your list of prepared spells, replacing any of the spells there with spells from your spellbook.
 If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared.
 
 

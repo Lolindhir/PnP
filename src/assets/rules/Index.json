@@ -132,6 +132,12 @@
 		"category": ""
 	},
 	{
+		"term": "Adventuring Period",
+		"reference": "Phases of Play",
+		"link": "https://lolindhir.github.io/PnP/rules/general/periods",
+		"category": ""
+	},
+	{
 		"term": "Agonizing Pain",
 		"reference": "Cunning Strikes",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
@@ -264,6 +270,12 @@
 		"category": ""
 	},
 	{
+		"term": "Arresting Strike",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Artisan",
 		"reference": "Background Samples",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples",
@@ -360,6 +372,12 @@
 		"category": "Condition"
 	},
 	{
+		"term": "Blinding Debris",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Blindsight",
 		"reference": "Cover, Vision & Light",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
@@ -398,8 +416,8 @@
 	{
 		"term": "Boost Natural Healing",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Regeneration"
 	},
 	{
 		"term": "Bounty Hunter",
@@ -408,7 +426,7 @@
 		"category": "Background Feature"
 	},
 	{
-		"term": "Brace",
+		"term": "Brace Up",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
 		"category": "Maneuver"
@@ -500,7 +518,7 @@
 	{
 		"term": "Character Death",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -620,7 +638,7 @@
 	{
 		"term": "Conditions",
 		"reference": "Conditions",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/conditions",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/conditions",
 		"category": ""
 	},
 	{
@@ -650,14 +668,14 @@
 	{
 		"term": "Controlling a Mount",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
+		"category": "Fighting"
 	},
 	{
 		"term": "Cooking for Regeneration",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Regeneration"
 	},
 	{
 		"term": "Copying Spells",
@@ -710,7 +728,7 @@
 	{
 		"term": "Critical Hit",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -724,6 +742,12 @@
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue",
 		"category": "Rogue"
+	},
+	{
+		"term": "Cunning Instinct",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Cunning Strike",
@@ -770,13 +794,13 @@
 	{
 		"term": "Damage",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
 		"term": "Damage Roll",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -830,7 +854,7 @@
 	{
 		"term": "Death Saving Throw",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -844,6 +868,12 @@
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages",
 		"category": "Language"
+	},
+	{
+		"term": "Defensive Stance",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Dehydration",
@@ -920,8 +950,8 @@
 	{
 		"term": "Dismounting",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
+		"category": "Fighting"
 	},
 	{
 		"term": "Distracting Hit",
@@ -972,6 +1002,12 @@
 		"category": ""
 	},
 	{
+		"term": "Downtime Period",
+		"reference": "Phases of Play",
+		"link": "https://lolindhir.github.io/PnP/rules/general/periods",
+		"category": ""
+	},
+	{
 		"term": "Draconic",
 		"reference": "Languages",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages",
@@ -986,7 +1022,7 @@
 	{
 		"term": "Dropping to 0 Hit Points",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -1130,7 +1166,7 @@
 	{
 		"term": "Exhaustion",
 		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
 		"category": ""
 	},
 	{
@@ -1166,13 +1202,13 @@
 	{
 		"term": "Falling off a Mount",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
+		"category": "Fighting"
 	},
 	{
 		"term": "Falling Unconscious",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -1352,7 +1388,7 @@
 	{
 		"term": "Gritty Realism Times",
 		"reference": "Gritty Realism Times",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/gritty_realism",
+		"link": "https://lolindhir.github.io/PnP/rules/general/gritty_realism",
 		"category": ""
 	},
 	{
@@ -1430,13 +1466,13 @@
 	{
 		"term": "Healing",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
 		"term": "Healing from 0 HP",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -1500,10 +1536,22 @@
 		"category": ""
 	},
 	{
+		"term": "Heroic Fortitude",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Heroic Inspiration",
 		"reference": "Heroic Inspiration",
 		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/inspiration",
 		"category": ""
+	},
+	{
+		"term": "Heroic Will",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Hide",
@@ -1532,19 +1580,25 @@
 	{
 		"term": "Hit Dice during Night Rest",
 		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
+		"category": "Resting"
+	},
+	{
+		"term": "Hit Dice during Night Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
 		"category": ""
 	},
 	{
 		"term": "Hit Dice Regeneration through Tea",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Regeneration"
 	},
 	{
 		"term": "Hit Dice to heal Exhaustion",
 		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
 		"category": ""
 	},
 	{
@@ -1556,7 +1610,7 @@
 	{
 		"term": "Hit Points",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -1576,6 +1630,12 @@
 		"reference": "Human",
 		"link": "https://lolindhir.github.io/PnP/rules/races/human",
 		"category": ""
+	},
+	{
+		"term": "Hurl",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Identifying an Ongoing Spell",
@@ -1598,7 +1658,7 @@
 	{
 		"term": "Immunity",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -1662,6 +1722,12 @@
 		"category": ""
 	},
 	{
+		"term": "Inquisitor Training",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Insight",
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",
@@ -1670,7 +1736,7 @@
 	{
 		"term": "Instant Death",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -1806,6 +1872,12 @@
 		"category": "Damage Type"
 	},
 	{
+		"term": "Lightstep",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Lightweight",
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special",
@@ -1838,7 +1910,13 @@
 	{
 		"term": "Long Rest",
 		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
+		"category": "Resting"
+	},
+	{
+		"term": "Long Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
 		"category": ""
 	},
 	{
@@ -1902,16 +1980,28 @@
 		"category": "Hazard"
 	},
 	{
-		"term": "Maneuvering Attack",
+		"term": "Mana Potion",
+		"reference": "Potion",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
+		"category": "Consumable, Potion"
+	},
+	{
+		"term": "Maneuvering Command",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
 		"category": "Maneuver"
 	},
 	{
 		"term": "Marching Order",
-		"reference": "Exploration",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration",
-		"category": ""
+		"reference": "Traveling",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/traveling",
+		"category": "Traveling"
+	},
+	{
+		"term": "Mark",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Martial Weapon",
@@ -1986,6 +2076,12 @@
 		"category": "Background Sample"
 	},
 	{
+		"term": "Mighty Leap",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Monster Types",
 		"reference": "Monster Types",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/monster_types",
@@ -2012,14 +2108,14 @@
 	{
 		"term": "Mounted Combat",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
+		"category": "Fighting"
 	},
 	{
 		"term": "Mounting",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
+		"category": "Fighting"
 	},
 	{
 		"term": "Movement",
@@ -2090,13 +2186,19 @@
 	{
 		"term": "Night Rest",
 		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
+		"category": "Resting"
+	},
+	{
+		"term": "Night Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
 		"category": ""
 	},
 	{
 		"term": "No Sleep",
 		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
 		"category": ""
 	},
 	{
@@ -2178,6 +2280,12 @@
 		"category": "Maneuver"
 	},
 	{
+		"term": "Passive Check",
+		"reference": "D20 Test",
+		"link": "https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests",
+		"category": ""
+	},
+	{
 		"term": "Perception",
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",
@@ -2200,6 +2308,12 @@
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
 		"category": "Condition"
+	},
+	{
+		"term": "Phases of Play",
+		"reference": "Phases of Play",
+		"link": "https://lolindhir.github.io/PnP/rules/general/periods",
+		"category": ""
 	},
 	{
 		"term": "Piercing",
@@ -2366,7 +2480,7 @@
 	{
 		"term": "Push your Body",
 		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
 		"category": ""
 	},
 	{
@@ -2496,10 +2610,16 @@
 		"category": "Consumable, Potion"
 	},
 	{
+		"term": "Redirect",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Regeneration Options",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Recovering"
 	},
 	{
 		"term": "Regeneration Potion",
@@ -2518,6 +2638,12 @@
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",
 		"category": "Skill"
+	},
+	{
+		"term": "Rending Strike",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Renown",
@@ -2540,7 +2666,7 @@
 	{
 		"term": "Resistance",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -2552,7 +2678,13 @@
 	{
 		"term": "Resting",
 		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
+		"category": "Recovering"
+	},
+	{
+		"term": "Resting",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
 		"category": ""
 	},
 	{
@@ -2610,6 +2742,18 @@
 		"category": "Background Connection"
 	},
 	{
+		"term": "Rustic Intuition",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
+		"term": "Ruthless Strike",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Sage",
 		"reference": "Shaman",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman",
@@ -2642,7 +2786,7 @@
 	{
 		"term": "Saving Throw Damage Against Multiple Targets",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -2662,6 +2806,12 @@
 		"reference": "Schicksalspunkte",
 		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte",
 		"category": ""
+	},
+	{
+		"term": "Scholarly Recall",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Schools of Magic",
@@ -2750,7 +2900,13 @@
 	{
 		"term": "Short Rest",
 		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/rests",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
+		"category": "Resting"
+	},
+	{
+		"term": "Short Rest",
+		"reference": "Resting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
 		"category": ""
 	},
 	{
@@ -2794,6 +2950,12 @@
 		"reference": "Abilities & Proficiency",
 		"link": "https://lolindhir.github.io/PnP/rules/general/abilities_proficiency",
 		"category": ""
+	},
+	{
+		"term": "Skilled Rider",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Skills",
@@ -2972,7 +3134,7 @@
 	{
 		"term": "Stabilize",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -3060,6 +3222,12 @@
 		"category": "Condition"
 	},
 	{
+		"term": "Subtle Con",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Suffocation",
 		"reference": "Hazards",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards",
@@ -3110,8 +3278,8 @@
 	{
 		"term": "Tea Brewing",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Regeneration"
 	},
 	{
 		"term": "Tea Crafting",
@@ -3128,7 +3296,7 @@
 	{
 		"term": "Temporary Hit Points",
 		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/hitpoints",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{
@@ -3192,22 +3360,22 @@
 		"category": "School of Magic"
 	},
 	{
-		"term": "Travel",
-		"reference": "Exploration",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration",
-		"category": ""
-	},
-	{
 		"term": "Travel Pace",
 		"reference": "Travel",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/travel",
 		"category": ""
 	},
 	{
+		"term": "Traveling",
+		"reference": "Traveling",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/traveling",
+		"category": "Adventuring"
+	},
+	{
 		"term": "Treating Wounds",
 		"reference": "Regeneration Options",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options",
+		"category": "Regeneration"
 	},
 	{
 		"term": "Tremorsense",
@@ -3278,8 +3446,8 @@
 	{
 		"term": "Underwater Combat",
 		"reference": "Underwater Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_underwater",
+		"category": "Fighting"
 	},
 	{
 		"term": "Unseen Attackers and Targets",
@@ -3307,9 +3475,9 @@
 	},
 	{
 		"term": "Vehicle Travel",
-		"reference": "Exploration",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/exploration",
-		"category": ""
+		"reference": "Traveling",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/traveling",
+		"category": "Traveling"
 	},
 	{
 		"term": "Verbal Spell Component (V)",
@@ -3330,9 +3498,15 @@
 		"category": "Weapon Mastery"
 	},
 	{
+		"term": "Volley",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
+	},
+	{
 		"term": "Vulnerability",
 		"reference": "Damage",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_recovery/damage",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/damage",
 		"category": ""
 	},
 	{
@@ -3346,6 +3520,12 @@
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
 		"category": "Weapon"
+	},
+	{
+		"term": "Warding Strike",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Warhammer",
@@ -3368,8 +3548,8 @@
 	{
 		"term": "Weapon Attack, Underwater",
 		"reference": "Underwater Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater",
-		"category": ""
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_underwater",
+		"category": "Fighting"
 	},
 	{
 		"term": "Weapon Cost & Weight",
@@ -3406,6 +3586,12 @@
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
 		"category": "Weapon"
+	},
+	{
+		"term": "Whirlwind Attack",
+		"reference": "Battle Maneuvers",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
+		"category": "Maneuver"
 	},
 	{
 		"term": "Wisdom Potion",

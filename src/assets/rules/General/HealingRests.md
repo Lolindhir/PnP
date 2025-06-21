@@ -5,7 +5,7 @@
 
 **Fähigkeiten:** Short Rest Abilities oder Items (mit Recharge Short Rest) können rechargen, aber nur 2-mal pro Long Rest
 
-**Keine Regeneration:** keine Heilung und kein Reset von „[Treating Wounds](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options)“
+**Keine Regeneration:** keine Heilung und kein Reset von „[Treating Wounds](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options)“
 
 
 
@@ -23,7 +23,7 @@
 - Exhaustion:
     - 1 Exhaustion heilt automatisch
     - 1 Exhaustion für 1 HD heilen (maximal zweimal)
-- „[Treating Wounds](https://lolindhir.github.io/PnP/rules/general/damage_recovery/regeneration_options)" resettet
+- „[Treating Wounds](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options)" resettet
 
 
 

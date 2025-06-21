@@ -1,0 +1,32 @@
+
+You can use this feature once per Adventuring Period. Also twice during that time, you can restore your use of it when you finish a Short Rest.
+
+You can use this feature twice per Adventuring Period. Also twice during that time, you can recover one expended use when you finish a Short Rest.
+
+Per Adventuring Period, you have two Superiority Dice, which are d6s. You gain additional Superiority Dice for that time when you reach certain Fighter levels as shown in the table below.
+A Superiority Die is expended when you use it. Twice during an Adventuring Period, you can recover all expended Superiority Dice when you finish a Short Rest.
+
+Per Adventuring Period, you can use this feature once, twice starting at level 13, and three times starting at level 17.
+
+Twice during an Adventuring Period, you can recover one expended Psionic Energy Die when you finish a Short Rest.
+
+Per Adventuring Period, you can take this action once. Also twice during that time, you can restore your use of it when you finish a Short Rest. Alternatively, you can expend a Psionic Energy Die (no action required) to restore your use of it.
+
+Per Adventuring Period, you can take this Bonus Action once. Also twice during that time, you can restore your use of it when you finish a Short Rest.
+
+You can use this feature once during an Adventuring Period unless you expend a Psionic Energy Die (no action required) to restore your use of it.
+
+
+
+The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher per Adventuring Period.
+
+Whenever you start an Adventuring Period, you can change your list of prepared spells, replacing any of the spells with other Shaman spells for which you have spell slots.
+If you are using the Gritty Realism variant, you can change your list whenever you finish a Night Rest, but spells with currently active effects have to remain prepared
+
+
+
+Whenever you start an Adventuring Period, you can change the kinds of weapons you chose.
+
+
+
+

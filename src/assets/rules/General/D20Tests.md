@@ -46,7 +46,11 @@ An ability check represents a creature using talent and training to try to overc
 | Nearly impossible | 30  |
 
 
+### Passive Checks
+Passive Checks are used when a creature is not actively engaged in a test or it's a test over a longer period, like Downtime.
+For example, Passive Perception is a score that reflects a creature's general awareness of its surroundings. The DM uses this score when determining whether a creature notices something without consciously making a Wisdom (Perception) check.
 
+A creature's Passive Check equals 10 plus the creature's Ability (Skill) check bonus. If the creature has Advantage on such checks, increase the score by 5. If the creature has Disadvantage on them, decrease the score by 5. For example, a level 1 character with a Wisdom of 15 and proficiency in Perception has a Passive Perception of 14 (10 + 2 * 2).lf that character has Advantage on Wisdom (Perception) checks, the score becomes 19.
 
 
 ## Saving Throws

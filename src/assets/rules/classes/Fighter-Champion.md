@@ -4,13 +4,24 @@ A Champion focuses on the development of martial prowess in a relentless pursuit
 
 ## Subclass Features
 
-| Level | Subclass Features                             |
-| :---: | :-------------------------------------------- |
-|   3   | Improved Critical (19-20), Remarkable Athlete |
-|   7   | Additional Fighting Style                     |
-|  10   | Heroic Warrior                                |
-|  15   | Superior Critical (18-20)                     |
-|  18   | Survivor                                      |
+| Level | Subclass Features                                        |
+| :---: | :------------------------------------------------------- |
+|   3   | Maneuvers, Improved Critical (19-20), Remarkable Athlete |
+|   7   | Additional Fighting Style                                |
+|  10   | Heroic Warrior                                           |
+|  15   | Superior Critical (18-20)                                |
+|  18   | Survivor                                                 |
+
+
+
+### Level 3: Champion Maneuvers
+You learn four Battle Maneuvers. They don't count against your total number of Maneuvers known and can't be replaced upon gaining a Fighter level.
+<div class="listNoGap"></div>
+
+- [Heroic Fortitude (Defense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Lunging Attack (Offense, Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Ruthless Strike (Offense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
+- [Trained Body (Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) 
 
 
 ### Level 3: Improved Critical
@@ -18,7 +29,7 @@ Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a
 
 
 ### Level 3: Remarkable Athlete
-Thanks to your athleticism, you have Advantage on Initiative roll and Strength (Athletics) checks.
+Thanks to your athleticism, you have Advantage on Initiative rolls and Strength (Athletics) checks.
 In addition, immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.
 
 

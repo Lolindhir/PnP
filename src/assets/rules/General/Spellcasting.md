@@ -3,9 +3,8 @@
 Every spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote — are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.
 
 ### Spell Slots
-Spellcasting is taxing, so a spellcaster can cast only a limited number of level 1+ spells before resting. Spell slots are the main way a spellcaster's magical potential is represented. Each spellcasting class gives its members a limited number of spell slots of certain spell levels. For example, a level 3 Wizard has four level 1 spell slots and two level 2 slots.
+Spellcasting is taxing, so a spellcaster can cast only a limited number of level 1+ spells per Adventuring Period. Spell slots are the main way a spellcaster's magical potential is represented. Each spellcasting class gives its members a limited number of spell slots of certain spell levels for an Adventuring Period. For example, a level 3 Wizard has four level 1 spell slots and two level 2 slots available for an Adventuring Period.
 When you cast a spell, you expend a slot of that spell's level or higher, effectively "filling" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 5 Wizard casts *Magic Missile*, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining.
-Finishing a Long Rest restores any expended spell slots.
 
 ### Casting Without Slots
 There are several ways to cast a spell without expending a spell slot:

@@ -163,18 +163,14 @@ Intelligent undead are harder to control in this way. If the target has an Intel
 ## Combined Cult Features
 
 ### Combo - Inured To Undeath (Life Manipulation & Necrotic Power)
-<div class="listNoGap"></div>
-
-*(Prerequisite: Tier 2 Life Manipulation and Tier 2 Necrotic Power)*
+<div class="subheading3">(Prerequisites: Tier 2 Life Manipulation and Tier 2 Necrotic Power)</div>
 
 You have spent so much time enhancing your magic with necrotic power and manipulating life essences that you have become inured to some of the worst effects of necromancy. You have resistance to necrotic damage, and your hit point maximum can't be reduced.
 Additionally, you also have resistance against the necrotic damage of your Wizard or Necromancer's Paths features (including the improved Death Burst of your corpse raised by the *[Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)* spell) that can't be reduced and ignore resistance and immunity.
 
 
 ### Combo - Grim Rising (Life Manipulation & Undead Control)
-<div class="listNoGap"></div>
-
-*(Prerequisite: Tier 2 Life Manipulation and Tier 2 Undead Control)*
+<div class="subheading3">(Prerequisites: Tier 2 Life Manipulation and Tier 2 Undead Control)</div>
 
 **Reaction Cast.** When you kill one or more enemies or an enemy marked by your Grim Harvest dies, you can cast the [Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead) spell with no casting time using the dead material of the killed.
 **Corpse Transfer.** Additionally, when the Reanimated Corpse of your [Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead) spell dies, you regain hit points depending on its sized (see the the following table).
@@ -189,9 +185,7 @@ Additionally, you also have resistance against the necrotic damage of your Wizar
 
 
 ### Combo - Necrotic Conduit (Necrotic Power & Undead Control)
-
-<div class="subheading">(Prerequisite: Tier 2 Necrotic Power and Tier 2 Undead Control)</div>
-
+<div class="subheading3">(Prerequisites: Tier 2 Necrotic Power and Tier 2 Undead Control)</div>
 
 **Persistent Swipes.** The Necrotic damage dealt by your *[Animate Dead](https://lolindhir.github.io/PnP/spells/Animate%2520Dead)* spell's Reanimated Corpse ignores Resistance.
 **Necrotic Surge.** Additionally, you can add your Intelligence modifier to the damage of your Reanimated Corpse's Death Burst.

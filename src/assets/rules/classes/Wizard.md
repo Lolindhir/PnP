@@ -64,7 +64,7 @@ You can cast any spell as a Ritual if that spell has the Ritual tag and the spel
 
 ### Level 1: Arcane Recovery
 You can regain some of your magical energy by studying your spellbook. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Wizard level (round up), and none of the slots can be level 6 or higher. For example, if you're a level 4 Wizard, you can recover up to two levels' worth of spell slots, regaining either one level 2 spell slot or two level 1 spell slots.
-Once you use this feature, you can't do so again until you finish a Long Rest.
+You can use this feature once during an Adventuring Period.
 
 
 
@@ -95,7 +95,7 @@ Whenever you finish a Short Rest, you can study your spellbook and replace one o
 
 ### Level 18: Spell Mastery
 You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.
-Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from the book.
+Whenever you start an Adventuring Period, you can study your spellbook and replace one of those spells with an eligible spell of the same level from the book.
 
 
 
@@ -105,4 +105,5 @@ You gain an Epic Boon feat or three other feats of your choice for which you qua
 
 
 ### Level 20: Signature Spells
-Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expen
+Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once per Adventuring Day at level 3 without expending a spell slot. Also twice during that time, you can restore your free casting of them when you finish a Short Rest.
+To cast either spell at a higher level, you must expend a spell slot.

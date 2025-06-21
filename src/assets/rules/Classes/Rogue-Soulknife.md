@@ -13,7 +13,7 @@ A Soulknife strikes with the mind, cutting through barriers both physical and ps
 
 
 ### Level 3: Psionic Power
-You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel certain powers you have from this subclass. The Soulknife Energy Dice table shows the number of these dice you have when you reach certain Rogue levels, and the table shows the die size.
+You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel certain powers you have from this subclass. The Soulknife Energy Dice table shows the number of these dice you have per Adventuring Period when you reach certain Rogue levels, and the table shows the die size.
 
 ##### Soulknife Energy Dice
 
@@ -27,12 +27,12 @@ You harbor a wellspring of psionic energy within yourself. It is represented by 
 |  17   |   d12    |   12   |
 
 Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend a Psionic Energy Die, as specified in a power's description, and you can't use a power if it requires you to use a die when your Psionic Energy Dice are all expended.
-You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
+Twice during an Adventuring Period, you can recover one expended Psionic Energy Die when you finish a Short Rest.
 
 **Psi-Bolstered Knack.** If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.
 
 **Psychic Whispers.** You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).
-The first time you use this power after each Long Rest, you don't expend the Psionic Energy Die. All other times you use the power, you expend the die.
+The first time you use this power during an Adventuring Period, you don't expend the Psionic Energy Die. All other times you use the power, you expend the die.
 
 
 ### Level 3: Psychic Blades
@@ -56,10 +56,10 @@ You can now use the following powers with your Psychic Blades.
 
 ### Level 13: Psychic Veil
 You can weave a veil of psychic static to mask yourself. As a Magic action, you gain the Invisible condition for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.
-Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.
+You can use this feature once during an Adventuring Period unless you expend a Psionic Energy Die (no action required) to restore your use of it.
 
 
 ### Level 17: Rend Mind
 You can sweep your Psychic Blades through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC 8 plus your Dexterity modifier and Proficiency
 Bonus). If the save fails, the target has the Stunned condition for 1 minute. The Stunned target repeats the save at the end of each of its turns, ending the effect on itself on a success.
-Once you use this feature, you can't do so again until you finish a Long Rest unless you expend three Psionic Energy Dice (no action required) to restore your use of it.
+You can use this feature once during an Adventuring Period unless you expend three Psionic Energy Die (no action required) to restore your use of it.
