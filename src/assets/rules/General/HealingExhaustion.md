@@ -30,7 +30,7 @@
 
 - in Night Rest 1 Level automatisch
 - 1 Hit Die während Night Rest einsetzen für 1 Level (maximal zwei pro Rest)
-- nach Long Rest alles regeneriert
+- nach Long Rest/zu Beginn einer Adventuring Period alles regeneriert
 •	Greater Restoration für 1 Level
 •	speziellen Tee trinken
 •	Potion of Recovery

@@ -1,5 +1,5 @@
-
 # Baue Markdown über das Skript
+$ErrorActionPreference = "Stop"
 .\build-markdown.ps1
 
 # Baue das Projekt

@@ -3,7 +3,7 @@
 
 **Dauer:** 10 min
 
-**Fähigkeiten:** Short Rest Abilities oder Items (mit Recharge Short Rest) können rechargen, aber nur 2-mal pro Long Rest
+**Fähigkeiten:** Short Rest Abilities oder Items (mit Recharge Short Rest) können rechargen (aber in der Regel nur 2-mal während einer Adventuring Period)
 
 **Keine Regeneration:** keine Heilung und kein Reset von „[Treating Wounds](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options)“
 
@@ -24,6 +24,7 @@
     - 1 Exhaustion heilt automatisch
     - 1 Exhaustion für 1 HD heilen (maximal zweimal)
 - „[Treating Wounds](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options)" resettet
+
 
 
 
@@ -68,22 +69,20 @@ Faktoren, die den Constitution Saving Throw beeinflussen:
 
 
 
-## Long Rest (mind. 3 Tage)
+## Long Rest (Downtime Period)
 
 **Dauer:**
 <div class="listNoGap"></div>
 
 - dauert mindestens 3 Tage in “sicherem Hafen“ (keine Kämpfe oder Befürchtung von Kämpfen)
 - bei schlechten Konditionen, dauert es länger (poor = 4 Tage, squalid = 5 Tage, wretched = 7 Tage)
-- nur leichte oder Downtime-Aktivitäten währenddessen möglich
+- nur Downtime-Aktivitäten währenddessen möglich
 
 **Fähigkeiten:**
 <div class="listNoGap"></div>
 
-- Long Rest Abilities resetten (ebenso Short Rest Abilities)
-- Spell Slots füllen sich wieder auf
-- prepared Zauber können geändert werden (aktuell aktive Zauber müssen prepared bleiben)
-- Items, die „at dawn“ oder „at dusk“ rechargen, rechargen nun
+- Fähigkeiten, Spell Slots, Ressourcen resetten für nächste Adventuring Period
+- Items, die „at dawn“ oder „at dusk“ rechargen, rechargen für nächste Adventuring Period
 
 **Regeneration:**
 <div class="listNoGap"></div>

@@ -1,5 +1,7 @@
+
+
 ## Treating Wounds
-A character can take 1 minute and spend one use of a healer’s kit to tend to a creature (can be itself) and restore 1d4 hit points. The creature can’t regain hit points from this "Treating Wounds" again until it finishes a Night or Long rest.
+A character can take 1 minute and spend one use of a healer’s kit to tend to a creature (can be itself) and restore 1d4 hit points. The creature can’t regain hit points from this "Treating Wounds" again until it finishes a Night Rest or starts a new Adventuring Period.
 If the character is proficient in the Medicine skill, the creature regains additional hit points equal to the character’s proficiency bonus.
 If the character also has the ‘Healer’ feat, they add double their proficiency bonus and the creature regains additional hit points equal to its maximum number of Hit Dice.
 

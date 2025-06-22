@@ -240,6 +240,12 @@
 		"category": ""
 	},
 	{
+		"term": "Aristocratic",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
 		"term": "Armor",
 		"reference": "Armor",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor",
@@ -309,6 +315,18 @@
 		"term": "Attitude",
 		"reference": "Social Interaction",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/social",
+		"category": ""
+	},
+	{
+		"term": "Attunement",
+		"reference": "Magic Item",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/magic_items",
+		"category": ""
+	},
+	{
+		"term": "Attunement Maximum",
+		"reference": "Magic Item",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/magic_items",
 		"category": ""
 	},
 	{
@@ -400,6 +418,12 @@
 		"reference": "Damage Types",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/damage_types",
 		"category": "Damage Type"
+	},
+	{
+		"term": "Bonus",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
 	},
 	{
 		"term": "Bonus Action",
@@ -606,6 +630,12 @@
 		"category": "Fighter"
 	},
 	{
+		"term": "Comfortable",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
 		"term": "Commander's Strike",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
@@ -668,8 +698,8 @@
 	{
 		"term": "Controlling a Mount",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
 	},
 	{
 		"term": "Cooking for Regeneration",
@@ -950,8 +980,8 @@
 	{
 		"term": "Dismounting",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
 	},
 	{
 		"term": "Distracting Hit",
@@ -1202,8 +1232,8 @@
 	{
 		"term": "Falling off a Mount",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
 	},
 	{
 		"term": "Falling Unconscious",
@@ -1288,6 +1318,12 @@
 		"reference": "Hazards",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/hazards",
 		"category": "Hazard"
+	},
+	{
+		"term": "Food, Drink, and Lodging",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": "Service"
 	},
 	{
 		"term": "Force",
@@ -1572,6 +1608,12 @@
 		"category": "Race"
 	},
 	{
+		"term": "Hirelings",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": "Service"
+	},
+	{
 		"term": "History",
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",
@@ -1582,12 +1624,6 @@
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
 		"category": "Resting"
-	},
-	{
-		"term": "Hit Dice during Night Rest",
-		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
-		"category": ""
 	},
 	{
 		"term": "Hit Dice Regeneration through Tea",
@@ -1636,6 +1672,12 @@
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
 		"category": "Maneuver"
+	},
+	{
+		"term": "Identifying a Magic Item",
+		"reference": "Magic Item",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/magic_items",
+		"category": ""
 	},
 	{
 		"term": "Identifying an Ongoing Spell",
@@ -1782,6 +1824,12 @@
 		"category": "Condition"
 	},
 	{
+		"term": "Item Slot",
+		"reference": "Magic Item",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/magic_items",
+		"category": ""
+	},
+	{
 		"term": "Javelin",
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
@@ -1828,6 +1876,18 @@
 		"reference": "Level Up",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/leveling",
 		"category": ""
+	},
+	{
+		"term": "Lifestyle Expenses",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
+		"term": "Lifestyle Expenses",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": "Service"
 	},
 	{
 		"term": "Light",
@@ -1914,12 +1974,6 @@
 		"category": "Resting"
 	},
 	{
-		"term": "Long Rest",
-		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
-		"category": ""
-	},
-	{
 		"term": "Longbow",
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
@@ -1950,6 +2004,12 @@
 		"category": "Action"
 	},
 	{
+		"term": "Magic Item",
+		"reference": "Magic Item",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/magic_items",
+		"category": ""
+	},
+	{
 		"term": "Magical",
 		"reference": "Weapon Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties_special",
@@ -1972,6 +2032,12 @@
 		"reference": "Armor Special Property",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special",
 		"category": "Armor Special Property"
+	},
+	{
+		"term": "Maintaining a Lifestyle",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Downtime"
 	},
 	{
 		"term": "Malnutrition",
@@ -2082,6 +2148,12 @@
 		"category": "Maneuver"
 	},
 	{
+		"term": "Modest",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
 		"term": "Monster Types",
 		"reference": "Monster Types",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/monster_types",
@@ -2108,14 +2180,14 @@
 	{
 		"term": "Mounted Combat",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
 	},
 	{
 		"term": "Mounting",
 		"reference": "Mounted Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_mounted",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted",
+		"category": ""
 	},
 	{
 		"term": "Movement",
@@ -2188,12 +2260,6 @@
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
 		"category": "Resting"
-	},
-	{
-		"term": "Night Rest",
-		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
-		"category": ""
 	},
 	{
 		"term": "No Sleep",
@@ -2286,6 +2352,12 @@
 		"category": ""
 	},
 	{
+		"term": "Penalty",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
 		"term": "Perception",
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",
@@ -2374,6 +2446,12 @@
 		"reference": "Magical Material",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components",
 		"category": "Material"
+	},
+	{
+		"term": "Poor",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
 	},
 	{
 		"term": "Position of Privilege",
@@ -2604,6 +2682,12 @@
 		"category": "Material"
 	},
 	{
+		"term": "Recovering",
+		"reference": "Recovering",
+		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering",
+		"category": "Adventuring"
+	},
+	{
 		"term": "Recovery Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
@@ -2680,12 +2764,6 @@
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
 		"category": "Recovering"
-	},
-	{
-		"term": "Resting",
-		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
-		"category": ""
 	},
 	{
 		"term": "Restoration Potion",
@@ -2874,6 +2952,12 @@
 		"category": "Spell Range"
 	},
 	{
+		"term": "Services",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": ""
+	},
+	{
 		"term": "Setup",
 		"reference": "Cunning Strikes",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes",
@@ -2902,12 +2986,6 @@
 		"reference": "Resting",
 		"link": "https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting",
 		"category": "Resting"
-	},
-	{
-		"term": "Short Rest",
-		"reference": "Resting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/rests",
-		"category": ""
 	},
 	{
 		"term": "Shortbow",
@@ -3102,6 +3180,12 @@
 		"category": ""
 	},
 	{
+		"term": "Spellcasting",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": "Service"
+	},
+	{
 		"term": "Spellhold",
 		"reference": "Spellhold",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/spellholds",
@@ -3130,6 +3214,12 @@
 		"reference": "Armor",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor",
 		"category": "Armor"
+	},
+	{
+		"term": "Squalid",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
 	},
 	{
 		"term": "Stabilize",
@@ -3360,10 +3450,10 @@
 		"category": "School of Magic"
 	},
 	{
-		"term": "Travel Pace",
-		"reference": "Travel",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/travel",
-		"category": ""
+		"term": "Travel",
+		"reference": "Services",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
+		"category": "Service"
 	},
 	{
 		"term": "Traveling",
@@ -3446,8 +3536,8 @@
 	{
 		"term": "Underwater Combat",
 		"reference": "Underwater Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_underwater",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater",
+		"category": ""
 	},
 	{
 		"term": "Unseen Attackers and Targets",
@@ -3540,6 +3630,12 @@
 		"category": "Shaman"
 	},
 	{
+		"term": "Wealthy",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
+	},
+	{
 		"term": "Weapon",
 		"reference": "Weapon",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons",
@@ -3548,8 +3644,8 @@
 	{
 		"term": "Weapon Attack, Underwater",
 		"reference": "Underwater Combat",
-		"link": "https://lolindhir.github.io/PnP/rules/adventuring/fighting/combat_underwater",
-		"category": "Fighting"
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_underwater",
+		"category": ""
 	},
 	{
 		"term": "Weapon Cost & Weight",
@@ -3616,5 +3712,11 @@
 		"reference": "Elf",
 		"link": "https://lolindhir.github.io/PnP/rules/races/elf",
 		"category": "Race"
+	},
+	{
+		"term": "Wretched",
+		"reference": "Maintaining a Lifestyle",
+		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
+		"category": "Lifestyle"
 	}
 ]

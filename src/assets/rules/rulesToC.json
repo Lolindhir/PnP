@@ -101,7 +101,7 @@
 			},
 			{
 				"id": "periods",
-				"name": "The 2 Phases of Play",
+				"name": "Periods - The 2 Phases of Play",
 				"breadcrumb": "Phases",
 				"indexing": "all",
 				"indexname": "Phases of Play",
@@ -144,8 +144,8 @@
 					},
 					{
 						"id": "combat",
-						"name": "Combat & Damage",
-						"breadcrumb": "Combat/Damage",
+						"name": "Combat",
+						"breadcrumb": "Combat",
 						"indexing": "title",
 						"indexname": "Combat",
 						"indexCategory": "",
@@ -184,7 +184,29 @@
 								"indexSubCategory": "",
 								"filename": "/General/CombatAttack.md",
 								"children": []
-							}							
+							},
+							{
+								"id": "combat_mounted",
+								"name": "Mounted Combat",
+								"breadcrumb": "Mounted",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatMounted.md",
+								"children": []
+							},
+							{
+								"id": "combat_underwater",
+								"name": "Underwater Combat",
+								"breadcrumb": "Underwater",
+								"indexing": "all",
+								"indexname": "",
+								"indexCategory": "",
+								"indexSubCategory": "",
+								"filename": "/General/CombatUnderwater.md",
+								"children": []
+							}						
 						]
 					}
 				]
@@ -241,17 +263,6 @@
 						"indexCategory": "",
 						"indexSubCategory": "",
 						"filename": "/General/HealingExhaustion.md",
-						"children": []
-					},
-					{
-						"id": "rests",
-						"name": "Rests",
-						"breadcrumb": "Rests",
-						"indexing": "all",
-						"indexname": "Resting",
-						"indexCategory": "",
-						"indexSubCategory": "",
-						"filename": "/General/HealingRests.md",
 						"children": []
 					}
 				]
@@ -863,44 +874,10 @@
 		"filename": "",
 		"children": [		
 			{
-				"id": "fighting",
-				"name": "Fighting",
-				"breadcrumb": "Fighting",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Adventuring",
-				"indexSubCategory": "Fighting",
-				"filename": "/Adventuring/Fighting.md",
-				"children": [
-					{
-						"id": "combat_mounted",
-						"name": "Mounted Combat",
-						"breadcrumb": "Mounted",
-						"indexing": "all",
-						"indexname": "",
-						"indexCategory": "Fighting",
-						"indexSubCategory": "Fighting",
-						"filename": "/Adventuring/CombatMounted.md",
-						"children": []
-					},
-					{
-						"id": "combat_underwater",
-						"name": "Underwater Combat",
-						"breadcrumb": "Underwater",
-						"indexing": "all",
-						"indexname": "",
-						"indexCategory": "Fighting",
-						"indexSubCategory": "Fighting",
-						"filename": "/Adventuring/CombatUnderwater.md",
-						"children": []
-					}
-				]
-			},
-			{
 				"id": "recovering",
 				"name": "Recovering",
 				"breadcrumb": "Recovering",
-				"indexing": "none",
+				"indexing": "title",
 				"indexname": "",
 				"indexCategory": "Adventuring",
 				"indexSubCategory": "Recovering",
@@ -962,6 +939,17 @@
 				"indexCategory": "",
 				"indexSubCategory": "",
 				"filename": "/Downtime/Overview.md",
+				"children": []
+			},		
+			{
+				"id": "lifestyle",
+				"name": "Maintaining a Lifestyle",
+				"breadcrumb": "Lifestyle",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Downtime",
+				"indexSubCategory": "Lifestyle",
+				"filename": "/Downtime/Lifestyle.md",
 				"children": []
 			},		
 			{
@@ -1154,7 +1142,18 @@
 				"indexSubCategory": "Consumable,Spellhold",
 				"filename": "/Equipment/Spellholds.md",
 				"children": []
-			}
+			},
+			{
+				"id": "magic_items",
+				"name": "Magic Items",
+				"breadcrumb": "Magic Items",
+				"indexing": "all",
+				"indexname": "Magic Item",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Equipment/MagicItems.md",
+				"children": []
+			}			
 		]
 	},
 	{
@@ -1404,17 +1403,6 @@
 				"children": []
 			},
 			{
-				"id": "travel",
-				"name": "Travel",
-				"breadcrumb": "Travel",
-				"indexing": "content",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "/Glossary/Travel.md",
-				"children": []
-			},
-			{
 				"id": "movement_types",
 				"name": "Movement Types",
 				"breadcrumb": "Movement",
@@ -1511,6 +1499,17 @@
 				"indexCategory": "",
 				"indexSubCategory": "",
 				"filename": "/Glossary/Potions.md",
+				"children": []
+			},
+			{
+				"id": "services",
+				"name": "Services",
+				"breadcrumb": "Services",
+				"indexing": "all",
+				"indexname": "Services",
+				"indexCategory": "",
+				"indexSubCategory": "Service",
+				"filename": "/Glossary/Services.md",
 				"children": []
 			}
 		]

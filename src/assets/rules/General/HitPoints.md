@@ -4,7 +4,7 @@ Whenever you take damage, subtract it from your Hit Points. Hit Point loss has n
 If you have half your Hit Points or fewer, you're Bloodied, which has no game effect on its own but which might trigger other game effects.
 
 ## Healing
-Hit Points can be restored by magic, such as the *Cure Wounds* spell or a Potion of Healing, or by a Night or Long Rest (see the [Resting rules](https://lolindhir.github.io/PnP/rules/general/damage_healing/rests)).
+Hit Points can be restored by magic, such as the *Cure Wounds* spell or a Potion of Healing, or by a Night or Long Rest (see the [Resting rules](https://lolindhir.github.io/PnP/rules/adventuring/recovering/resting)).
 When you receive healing, add the restored Hit Points to your current Hit Points. Your Hit Points can't exceed your Hit Point maximum, so any Hit Points regained in excess of the maximum are lost. For example, if you receive 8 Hit Points of healing and have 14 Hit Points and a Hit Point maximum of 20, you regain 6 Hit Points, not 8.
 
 
