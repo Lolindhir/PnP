@@ -13,8 +13,8 @@ Wearing or experimenting with an item can also offer hints about its properties.
 Some magic items require a creature to form a bond — called Attunement — with them before the creature can use an item's magical properties.
 Without becoming attuned to an item that requires Attunement, you gain only its nonmagical benefits unless its description states otherwise. For example, a magic Shield that requires Attunement provides the benefits of a normal Shield if you aren't attuned to it, but none of its magical properties.
 
-### Attuning During a Short Rest
-Attuning to an item requires you to spend a Short Rest focused on only that item while being in physical contact with it (this can't be the same Short Rest used to learn the item's properties). This focus can take the form of weapon practice (for a weapon), meditation (for a wand), or some other appropriate activity. If the Short Rest is interrupted, the Attunement attempt fails. Otherwise, at the end of the Short Rest, you're attuned to the magic item and can access its full magical capabilities.
+### Attuning During a Long or Night Rest
+Attuning to an item requires you to spend a Long Rest (Night Rest if using Gritty Realism) while being in physical contact with it. This focus can take the form of weapon practice (for a weapon), meditation (for a wand), or some other appropriate activity. If the Long Rest is interrupted, the Attunement attempt fails. Otherwise, at the end of the Long Rest, you're attuned to the magic item and can access its full magical capabilities.
 
 ### Attunement Maximum
 
@@ -22,6 +22,7 @@ Attuning to an item requires you to spend a Short Rest focused on only that item
 
 **Additional Attunements.** In addition to the standard limit of three attuned magic items, your character can attune to additional items as they gain experience:
 <div class="listNoGap"></div>
+
 - At 5th level: You can attune to one extra Common magic item.
 - At 11th level: You can attune to one extra Uncommon or lower rarity magic item.
 - At 17th level: You can attune to one extra Rare or lower rarity magic item.

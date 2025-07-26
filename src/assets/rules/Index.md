@@ -301,6 +301,7 @@
 | Intelligence Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Interacting with Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Intimidation *[Skill]* | [Skills](https://lolindhir.github.io/PnP/rules/glossary/skills) |
+| Inventory | [Inventory](https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions) |
 | Investigation *[Skill]* | [Skills](https://lolindhir.github.io/PnP/rules/glossary/skills) |
 | Investigator *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |

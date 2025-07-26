@@ -8,7 +8,7 @@ ___
 
 1. **Choose a Class.** Most characters advance in the same class. However, you might decide to gain a level in another class using the rules in the [Multiclassing section](https://lolindhir.github.io/PnP/rules/creation/multiclassing).
 
-2. **Adjust Hit Points and Hit Point Dice.** Each time you gain a level, you gain an additional Hit Die. Roll a d6 for your hit points. If you roll a 1, you can reroll once. Depending on your character class, the difference to the actual hit die is then added. This results in the following determination of Hit Point maximum increase for each class:
+2. **Adjust Hit Points and Hit Point Dice.** Each time you gain a level, you gain an additional Hit Die. Roll a d6 for your hit points. If you roll a 1, you can reroll but gain a -1 penalty for each time rerolled. Depending on your character class, the difference to the actual hit die is then added. This results in the following determination of Hit Point maximum increase for each class:
 
 ##### Hit Point Increase by Class
 | Class                                             |    HP at Level-Up |

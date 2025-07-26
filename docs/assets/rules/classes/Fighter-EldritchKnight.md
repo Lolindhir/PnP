@@ -19,7 +19,6 @@ You learn four Battle Maneuvers. They don't count against your total number of M
 <div class="listNoGap"></div>
 
 - [Arresting Strike (Offense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
-- [Brace Up (Defense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Rally (Support)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Scholarly Recall (Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) 
 

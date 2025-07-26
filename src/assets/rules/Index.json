@@ -1806,6 +1806,12 @@
 		"category": "Skill"
 	},
 	{
+		"term": "Inventory",
+		"reference": "Inventory",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions",
+		"category": ""
+	},
+	{
 		"term": "Investigation",
 		"reference": "Skills",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/skills",

@@ -51,6 +51,6 @@ Depending on the duration spent in a certain lifestyle during your Downtime Peri
 | 1 Jahr            | 1 Monat                      |
 
 
-#### Penalties
+## Penalties
 
 If you live a lifestyle below Modest, the minimum duration of a Downtime Period is extended (Poor = 4 days, Squalid = 5 days, Wretched = 7 days), and at the DM's discretion, it may take longer or be more difficult to fully recover all your resources.

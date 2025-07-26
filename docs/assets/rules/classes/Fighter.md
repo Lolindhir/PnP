@@ -19,22 +19,22 @@ As a Fighter, you gain the following class features when you reach the specified
 | Level | Class Features                                                                                |
 | :---: | :-------------------------------------------------------------------------------------------- |
 |   1   | Fighting Style, Second Wind (2 uses), Weapon Mastery (3)                                      |
-|   2   | Combat Superiority (2d6), Maneuvers (3), Tactical Mind                                        |
+|   2   | Combat Superiority (2d6), Maneuvers (2), Tactical Mind                                        |
 |   3   | Fighter Subclass                                                                              |
 |   4   | Ability Score Improvement, Combat Superiority (3d6), Second Wind (3 uses), Weapon Mastery (4) |
-|   5   | Extra Attack, Action Surge (1 use), Tactical Shift, Combat Superiority (3d8), Maneuvers (4)   |
+|   5   | Extra Attack, Action Surge (1 use), Tactical Shift, Combat Superiority (3d8), Maneuvers (3)   |
 |   6   | Ability Score Improvement                                                                     |
 |   7   | Subclass feature                                                                              |
-|   8   | Ability Score Improvement, Combat Superiority (4d8), Maneuvers (5)                            |
+|   8   | Ability Score Improvement, Combat Superiority (4d8), Maneuvers (4)                            |
 |   9   | Indomitable (1 use), Tactical Master                                                          |
 |  10   | Subclass feature, Second Wind (4 uses), Weapon Mastery (5)                                    |
-|  11   | Two Extra Attacks, Combat Superiority (4d10), Maneuvers (6)                                   |
+|  11   | Two Extra Attacks, Combat Superiority (4d10), Maneuvers (5)                                   |
 |  12   | Ability Score Improvement, Combat Superiority (5d10)                                          |
 |  13   | Unbreakable, Indomitable (2 uses), Studied Attacks                                            |
-|  14   | Ability Score Improvement, Maneuvers (7)                                                      |
+|  14   | Ability Score Improvement, Maneuvers (6)                                                      |
 |  15   | Subclass feature                                                                              |
 |  16   | Ability Score Improvement, Combat Superiority (6d10), Weapon Mastery (6)                      |
-|  17   | Three Extra Attacks, Indomitable (3 uses), Combat Superiority (6d12), Maneuvers (8)           |
+|  17   | Three Extra Attacks, Indomitable (3 uses), Combat Superiority (6d12), Maneuvers (7)           |
 |  18   | Subclass feature                                                                              |
 |  19   | Epic Boon                                                                                     |
 |  20   | Relentless, Action Surge (2 uses)                                                             |
@@ -64,12 +64,12 @@ You learn an additional maneuver at certain Fighter levels as shown in the table
 
 | Level | Maneuvers |
 | :---: | :-------: |
-|   2   |     3     |
-|   5   |     4     |
-|   8   |     5     |
-|  11   |     6     |
-|  14   |     7     |
-|  17   |     8     |
+|   2   |     2     |
+|   5   |     3     |
+|   8   |     4     |
+|  11   |     5     |
+|  14   |     6     |
+|  17   |     7     |
 
 **Superiority Dice.** Per Adventuring Period, you have two Superiority Dice, which are d6s. You gain additional Superiority Dice for that time when you reach certain Fighter levels as shown in the table below.
 A Superiority Die is expended when you use it. Twice during an Adventuring Period, you can recover all expended Superiority Dice when you finish a Short Rest.

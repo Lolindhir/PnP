@@ -3,7 +3,7 @@
 | Armor                 |   Cost | Weight | Slots |
 | :-------------------- | -----: | -----: | :---: |
 | ***Light Armor***     |        |        |       |
-| Padded Armor          |   5 SP |  8 lb. |   1   |
+| Padded Armor          |   5 SP |  8 lb. |   0   |
 | Leather Armor         |  10 SP | 10 lb. |   1   |
 | Studded Leather Armor |  45 SP | 13 lb. |   2   |
 | ***Medium Armor***    |        |        |       |
@@ -18,4 +18,4 @@
 | Splint Armor          | 200 SP | 60 lb. |   8   |
 | Plate Armor           | 750 SP | 65 lb. |   8   |
 | ***Shield***          |        |        |       |
-| Shield                |  10 SP |  6 lb. |   -   |
+| Shield                |  10 SP |  6 lb. |   2   |

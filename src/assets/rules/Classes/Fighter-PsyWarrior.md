@@ -20,7 +20,6 @@ You learn four Battle Maneuvers. They don't count against your total number of M
 
 - [Commanding Presence (Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Heroic Will (Defense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
-- [Maneuvering Command (Support)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Pushing Attack (Offense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 
 

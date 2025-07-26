@@ -42,10 +42,10 @@ ___
 
 | <!-- -->       | <!-- --> | <!-- -->       |
 | :------------- | :------: | :------------- |
-| 2nd level      |   -->    | 1 Aspect Call  |
-| 4th level      |   -->    | 2 Aspect Calls |
-| 1 Aspect Call  |   -->    | 1st level      |
-| 2 Aspect Calls |   -->    | 2nd level      |
+| 2nd level slot |   -->    | 1 Aspect Call  |
+| 4th level slot |   -->    | 2 Aspect Calls |
+| 1 Aspect Call  |   -->    | 1st level slot |
+| 2 Aspect Calls |   -->    | 2nd level slot |
 
 
 #### Available Spell Slots

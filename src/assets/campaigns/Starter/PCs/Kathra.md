@@ -35,7 +35,7 @@ ___
 | **Action Surges**         | 1        |
 | **Superiority Dice**      | 6        |
 | **Superiority Dice Size** | d8       |
-| **Battle Maneuvers**      | 7 + 4    |
+| **Battle Maneuvers**      | 6 + 3    |
 | **Indomitable uses**      | 0        |
 
 #### Fighting Styles
@@ -51,13 +51,11 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 
 - *Fighter:* Ambush (Utility)
 - *Fighter:* Bait and Switch (Defense, Support)
-- *Fighter:* Block oder Evasive Footwork oder Defensive Stance (Defense)
-- *Fighter:* Parry (Defense)
-- *Fighter:* Precision Attack (Offense)
+- *Fighter:* Block oder Defensive Stance oder Evasive Footwork oder Parry (Defense)
+- *Fighter:* Precision Attack (Offense) oder Lunging Attack (Offense, Utility)
 - *Fighting Style:* Rally (Support)
 - *Fighting Style:* Scout Training oder Cunning Instinct (Utility)
 - *Champion:* Heroic Fortitude (Defense)
-- *Champion:* Lunging Attack (Offense, Utility)
 - *Champion:* Ruthless Strike (Offense)
 - *Champion:* Trained Body (Utility)
 

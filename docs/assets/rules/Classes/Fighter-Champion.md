@@ -19,7 +19,6 @@ You learn four Battle Maneuvers. They don't count against your total number of M
 <div class="listNoGap"></div>
 
 - [Heroic Fortitude (Defense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
-- [Lunging Attack (Offense, Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Ruthless Strike (Offense)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers)
 - [Trained Body (Utility)](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) 
 
