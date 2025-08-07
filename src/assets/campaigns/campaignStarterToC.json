@@ -406,7 +406,19 @@
 				"indexCategory": "",
 				"indexSubCategory": "",
 				"filename": "/PCs/Aurrdan.md",
-				"children": []
+				"children": [
+					{
+						"id": "aurrdan_elementarmaske",
+						"name": "Elementarmaske",
+						"breadcrumb": "Elementarmaske",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/AurrdanElementarmaske.md",
+						"children": []
+					}
+				]
 			},
 			{
 				"id": "azoth",

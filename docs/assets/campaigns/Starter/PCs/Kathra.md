@@ -23,7 +23,7 @@ ___
 - [Magic Pundite](https://lolindhir.github.io/PnP/feats/Magic%2520Pundite): [Find Familiar](https://lolindhir.github.io/PnP/spells/Find%2520Familiar), [Gift of Alacrity](https://lolindhir.github.io/PnP/spells/Gift%2520of%2520Alacrity)
 - [Prodigy](https://lolindhir.github.io/PnP/feats/Prodigy): Perception Expertise, Survival Expertise
 - [Mage Slayer](https://lolindhir.github.io/PnP/feats/Mage%2520Slayer)
-- [Great Weapon Master](https://lolindhir.github.io/PnP/feats/Great%2520Weapon%2520Master)???
+- [Great Weapon Master](https://lolindhir.github.io/PnP/feats/Great%2520Weapon%2520Master)
 
 ### Klassenfähigkeiten
 
@@ -51,10 +51,10 @@ siehe [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/m
 
 - *Fighter:* Ambush (Utility)
 - *Fighter:* Bait and Switch (Defense, Support)
-- *Fighter:* Block oder Defensive Stance oder Evasive Footwork oder Parry (Defense)
-- *Fighter:* Precision Attack (Offense) oder Lunging Attack (Offense, Utility)
+- *Fighter:* Block (Defense)
+- *Fighter:* Precision Attack (Offense)
 - *Fighting Style:* Rally (Support)
-- *Fighting Style:* Scout Training oder Cunning Instinct (Utility)
+- *Fighting Style:* Scout Training (Utility)
 - *Champion:* Heroic Fortitude (Defense)
 - *Champion:* Ruthless Strike (Offense)
 - *Champion:* Trained Body (Utility)
