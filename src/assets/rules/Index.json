@@ -420,6 +420,12 @@
 		"category": "Damage Type"
 	},
 	{
+		"term": "Boni und Mali durch Unter-/Überladung",
+		"reference": "Inventory",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions",
+		"category": ""
+	},
+	{
 		"term": "Bonus",
 		"reference": "Maintaining a Lifestyle",
 		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
@@ -472,6 +478,12 @@
 		"reference": "Cover, Vision & Light",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
 		"category": ""
+	},
+	{
+		"term": "Buckler",
+		"reference": "Armor",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/armor",
+		"category": "Armor"
 	},
 	{
 		"term": "Burning",
@@ -1842,6 +1854,12 @@
 		"category": "Weapon"
 	},
 	{
+		"term": "Kein Rucksack getragen",
+		"reference": "Inventory",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions",
+		"category": ""
+	},
+	{
 		"term": "Knight of the Order",
 		"reference": "Background Samples",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples",
@@ -2817,6 +2835,12 @@
 		"term": "Rogue",
 		"reference": "Rogue",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/rogue",
+		"category": ""
+	},
+	{
+		"term": "Rucksack getragen",
+		"reference": "Inventory",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions",
 		"category": ""
 	},
 	{

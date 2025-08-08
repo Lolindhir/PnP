@@ -18,4 +18,5 @@
 | Splint Armor          | 200 SP | 60 lb. |   8   |
 | Plate Armor           | 750 SP | 65 lb. |   8   |
 | ***Shield***          |        |        |       |
-| Shield                |  10 SP |  6 lb. |   2   |
+| Buckler               |  10 SP |  6 lb. |   0   |
+| Shield                |  10 SP |  6 lb. |   1   |

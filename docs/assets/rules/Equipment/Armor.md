@@ -50,9 +50,11 @@
 
 #### Shield
 
-| Armor  | AC  |
-| :----- | :-: |
-| Shield | +2  |
+| Armor   | AC  |
+| :------ | :-: |
+| Buckler | +1  |
+| Shield  | +2  |
+
 
 
 

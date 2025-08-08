@@ -70,6 +70,7 @@
 | Block *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Blowgun *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Bludgeoning *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
+| Boni und Mali durch Unter-/Überladung | [Inventory](https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions) |
 | Bonus *[Lifestyle]* | [Maintaining a Lifestyle](https://lolindhir.github.io/PnP/rules/downtime/lifestyle) |
 | Bonus Action | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Bonuses for Intelligence | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
@@ -79,6 +80,7 @@
 | Breaking Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Breastplate *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Bright Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Buckler *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Burning *[Hazard]* | [Hazards](https://lolindhir.github.io/PnP/rules/glossary/hazards) |
 | Caltrops *[Gear]* | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
 | Carrying Objects | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
@@ -307,6 +309,7 @@
 | Invisible *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
 | Item Slot | [Magic Item](https://lolindhir.github.io/PnP/rules/equipment/magic_items) |
 | Javelin *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
+| Kein Rucksack getragen | [Inventory](https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions) |
 | Knight of the Order *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Knock Out *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Knocking Out a Creature | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
@@ -470,6 +473,7 @@
 | Ritual | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Ritual Adept *[Wizard]* | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Rogue | [Rogue](https://lolindhir.github.io/PnP/rules/classes/rogue) |
+| Rucksack getragen | [Inventory](https://lolindhir.github.io/PnP/rules/equipment/inventory_interactions) |
 | Rustic Hospitality *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Rustic Intuition *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ruthless Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
