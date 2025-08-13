@@ -3408,15 +3408,15 @@
 		"category": ""
 	},
 	{
-		"term": "Temporäre Schicksalspunkte",
-		"reference": "Schicksalspunkte",
-		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte",
-		"category": ""
-	},
-	{
 		"term": "Temporary Hit Points",
 		"reference": "Hit Points",
 		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
+		"category": ""
+	},
+	{
+		"term": "Temporäre Schicksalspunkte",
+		"reference": "Schicksalspunkte",
+		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte",
 		"category": ""
 	},
 	{

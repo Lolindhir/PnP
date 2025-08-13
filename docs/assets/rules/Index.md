@@ -568,8 +568,8 @@
 | Tea | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Tea Brewing *[Regeneration]* | [Regeneration Options](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options) |
 | Tea Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
-| Temporäre Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints) |
+| Temporäre Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |

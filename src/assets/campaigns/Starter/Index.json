@@ -1,59 +1,5 @@
 [
 	{
-		"term": "🌀 Aurrdan:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "🌊 Weitere Informationen:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "🌳 Reise zum Großvaterbaum",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "🍵 Kathra:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "🏛️ Downtime in der Shadowtop Cathedral",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "🐍 Reidoht:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "📌 Nächste Schritte der Gruppe (Spielerentscheidung)",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "📚 Athanya:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
-		"term": "Am Großvaterbaum:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
 		"term": "Athanya",
 		"reference": "Athanya",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya",
@@ -102,58 +48,10 @@
 		"category": ""
 	},
 	{
-		"term": "Erkenntnisse und Ereignisse:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
 		"term": "Everlund",
 		"reference": "Everlund",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_everlund",
 		"category": "Ort, Stadt"
-	},
-	{
-		"term": "Everlund",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Evermoor",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Far Realm",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Felsschlundhöhle",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "Ort"
-	},
-	{
-		"term": "Giftzahn",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "NPC"
-	},
-	{
-		"term": "Glimmerwood",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Graypeak Mountains",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
 	},
 	{
 		"term": "Grim Harvest",
@@ -166,42 +64,6 @@
 		"reference": "Path of the Necromancer",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
 		"category": ""
-	},
-	{
-		"term": "Großvaterbaum",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Gundren Steinsucher",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "NPC"
-	},
-	{
-		"term": "Gundren Steinsucher",
-		"reference": "Session 9",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
-		"category": "NPC"
-	},
-	{
-		"term": "Hamun Kost",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "NPC"
-	},
-	{
-		"term": "Harschnag",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "NPC"
-	},
-	{
-		"term": "High Forest",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
 	},
 	{
 		"term": "Inured to Undeath",
@@ -228,22 +90,10 @@
 		"category": ""
 	},
 	{
-		"term": "Klarg",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "NPC"
-	},
-	{
 		"term": "Life to Damage",
 		"reference": "Path of the Necromancer",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
 		"category": ""
-	},
-	{
-		"term": "Luskan",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
 	},
 	{
 		"term": "Necromancy Scribe",
@@ -262,12 +112,6 @@
 		"reference": "Neverwinter",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_neverwinter",
 		"category": "Ort, Stadt"
-	},
-	{
-		"term": "Neverwinter",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "Ort"
 	},
 	{
 		"term": "Overflow",
@@ -294,33 +138,9 @@
 		"category": "Ort, Stadt"
 	},
 	{
-		"term": "Phandalin",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "Ort"
-	},
-	{
-		"term": "Phandalin",
-		"reference": "Session 9",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
-		"category": "Ort"
-	},
-	{
 		"term": "Pull of Death",
 		"reference": "Path of the Necromancer",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
-		"category": ""
-	},
-	{
-		"term": "Reidoht",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "NPC"
-	},
-	{
-		"term": "Rückreise:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
 		"category": ""
 	},
 	{
@@ -348,36 +168,6 @@
 		"category": "Landmarke, Ort"
 	},
 	{
-		"term": "Shadowtop Cathedral",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Sildar Hallwinter",
-		"reference": "Session 1",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
-		"category": "NPC"
-	},
-	{
-		"term": "Sildar Hallwinter",
-		"reference": "Session 9",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
-		"category": "NPC"
-	},
-	{
-		"term": "Silverymoon",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
-		"term": "Stadt der Rubine",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
-	},
-	{
 		"term": "Transfer Life Force",
 		"reference": "Path of the Necromancer",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
@@ -396,21 +186,9 @@
 		"category": ""
 	},
 	{
-		"term": "Unterwegs begegnete ihnen:",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": ""
-	},
-	{
 		"term": "Yartar",
 		"reference": "Yartar",
 		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_cities/cities_yartar",
 		"category": "Ort, Stadt"
-	},
-	{
-		"term": "Zymorven Hall",
-		"reference": "Session 26",
-		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
-		"category": "Ort"
 	}
 ]
