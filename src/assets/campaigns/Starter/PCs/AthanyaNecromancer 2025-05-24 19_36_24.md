@@ -7,7 +7,7 @@ The gold and time you must spend to copy an necromancy spell into your spellbook
 Additionally, you can add spells available to the Necromancy Wizard Subclass to your spell book, even if they are no Wizard spells. For you, they count as Wizard spells.
 
 ### Necromancy Cantrips
-You know the [Chill Touch](https://lolindhir.github.io/PnP/spells/Chill%2520Touch), [Spare the Dying](https://lolindhir.github.io/PnP/spells/Spare%2520the%2520Dying), and [Toll the Dead](https://lolindhir.github.io/PnP/spells/Toll%2520the%2520Dead) cantrips and have them always prepared. They don't count against the number of cantrips you can prepare.
+You know the {spell}[Chill Touch](), {spell}[Spare the Dying](), and {spell}[Toll the Dead]() cantrips and have them always prepared. They don't count against the number of cantrips you can prepare.
 
 ### Necromancy Spells
 Know Animate Dead
@@ -39,7 +39,7 @@ When you hit an enemy with a spell of 1st level or higher but do not kill him, y
 
 *(Cost: 3 Points, Prerequisite: 8th Level)*
 
-When you cast [Spare the Dying](https://lolindhir.github.io/PnP/spells/Spare%2520the%2520Dying), you can modify the spell so that it sends a jolt of necrotic energy through the target, reviving it. The target regains 1 Hit Point, and each creature in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking Necrotic damage equal to 1d4 plus half your Wizard level (round up) on a failed save or half as much damage on a successful one.
+When you cast {spell}[Spare the Dying](), you can modify the spell so that it sends a jolt of necrotic energy through the target, reviving it. The target regains 1 Hit Point, and each creature in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking Necrotic damage equal to 1d4 plus half your Wizard level (round up) on a failed save or half as much damage on a successful one.
 You can modify the spell this way a number of times equal to half your Proficiency bonus (round up), and you regain all expended uses when you finish a Long Rest.
 
 ### Tier 2 - Transfer Life Force

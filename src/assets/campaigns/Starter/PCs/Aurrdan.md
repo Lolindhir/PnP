@@ -99,7 +99,7 @@ ___
 | Tool Proficiency: Herbalism kit |         144 |  1.000 |   14%   |
 
 ### Besondere Items
-
+- [Elementarmaske](https://lolindhir.github.io/PnP/campaigns/starter/pcs/aurrdan/aurrdan_elementarmaske)
 
 
 ## Verbindungen

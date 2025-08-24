@@ -727,20 +727,26 @@
 	},
 	{
 		"term": "Cover",
-		"reference": "Making an Attack",
-		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
+		"reference": "Cover, Vision & Light",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
 		"category": ""
 	},
 	{
 		"term": "Cover",
-		"reference": "Cover, Vision & Light",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
+		"reference": "Making an Attack",
+		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
 		"category": ""
 	},
 	{
 		"term": "Crafting Materials",
 		"reference": "Crafting Materials",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials",
+		"category": ""
+	},
+	{
+		"term": "Crafting Overview",
+		"reference": "Crafting Overview",
+		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_overview",
 		"category": ""
 	},
 	{
@@ -1207,15 +1213,15 @@
 	},
 	{
 		"term": "Exhaustion",
-		"reference": "Exhaustion",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
-		"category": ""
-	},
-	{
-		"term": "Exhaustion",
 		"reference": "Conditions",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/condition_details",
 		"category": "Condition"
+	},
+	{
+		"term": "Exhaustion",
+		"reference": "Exhaustion",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion",
+		"category": ""
 	},
 	{
 		"term": "Exploration",
@@ -1471,15 +1477,15 @@
 	},
 	{
 		"term": "Halfling",
-		"reference": "Languages",
-		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages",
-		"category": "Language"
-	},
-	{
-		"term": "Halfling",
 		"reference": "Halfling",
 		"link": "https://lolindhir.github.io/PnP/rules/races/halfling",
 		"category": "Race"
+	},
+	{
+		"term": "Halfling",
+		"reference": "Languages",
+		"link": "https://lolindhir.github.io/PnP/rules/glossary/languages",
+		"category": "Language"
 	},
 	{
 		"term": "Hand Crossbow",
@@ -1915,15 +1921,15 @@
 	},
 	{
 		"term": "Light",
-		"reference": "Weapon Property",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
-		"category": "Weapon Property"
-	},
-	{
-		"term": "Light",
 		"reference": "Cover, Vision & Light",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/vision_light",
 		"category": ""
+	},
+	{
+		"term": "Light",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
+		"category": "Weapon Property"
 	},
 	{
 		"term": "Light Armor",
@@ -2671,15 +2677,15 @@
 	},
 	{
 		"term": "Reach",
-		"reference": "Weapon Property",
-		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
-		"category": "Weapon Property"
-	},
-	{
-		"term": "Reach",
 		"reference": "Making an Attack",
 		"link": "https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack",
 		"category": ""
+	},
+	{
+		"term": "Reach",
+		"reference": "Weapon Property",
+		"link": "https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties",
+		"category": "Weapon Property"
 	},
 	{
 		"term": "Reaction",
@@ -2863,15 +2869,15 @@
 	},
 	{
 		"term": "Sage",
-		"reference": "Shaman",
-		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman",
-		"category": "Shaman"
-	},
-	{
-		"term": "Sage",
 		"reference": "Background Samples",
 		"link": "https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples",
 		"category": "Background Sample"
+	},
+	{
+		"term": "Sage",
+		"reference": "Shaman",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/shaman",
+		"category": "Shaman"
 	},
 	{
 		"term": "Sailor",
@@ -3205,15 +3211,15 @@
 	},
 	{
 		"term": "Spellcasting",
-		"reference": "Spellcasting",
-		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
-		"category": ""
-	},
-	{
-		"term": "Spellcasting",
 		"reference": "Services",
 		"link": "https://lolindhir.github.io/PnP/rules/glossary/services",
 		"category": "Service"
+	},
+	{
+		"term": "Spellcasting",
+		"reference": "Spellcasting",
+		"link": "https://lolindhir.github.io/PnP/rules/general/spellcasting",
+		"category": ""
 	},
 	{
 		"term": "Spellhold",
@@ -3408,15 +3414,15 @@
 		"category": ""
 	},
 	{
-		"term": "Temporary Hit Points",
-		"reference": "Hit Points",
-		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
-		"category": ""
-	},
-	{
 		"term": "Temporäre Schicksalspunkte",
 		"reference": "Schicksalspunkte",
 		"link": "https://lolindhir.github.io/PnP/rules/general/schicksalspunkte",
+		"category": ""
+	},
+	{
+		"term": "Temporary Hit Points",
+		"reference": "Hit Points",
+		"link": "https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints",
 		"category": ""
 	},
 	{

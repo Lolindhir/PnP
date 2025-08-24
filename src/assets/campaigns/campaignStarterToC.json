@@ -28,7 +28,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Index_NPC.md",
+				"filename": "Glossary_NPC.md",
 				"children": []
 			},
 			{
@@ -39,7 +39,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Index_Ort.md",
+				"filename": "Glossary_Ort.md",
 				"children": []
 			},
 			{
@@ -50,7 +50,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Index_Fraktion.md",
+				"filename": "Glossary_Fraktion.md",
 				"children": []
 			}
 		]
@@ -70,7 +70,7 @@
 				"name": "Session 1 - Aufbruch ins Abenteuer",
 				"breadcrumb": "Session 1",
 				"indexing": "title",
-				"indexname": "Session 1",
+				"indexname": "Session 01",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/001.md",
@@ -81,7 +81,7 @@
 				"name": "Session 2 - Geisel im Nebel",
 				"breadcrumb": "Session 2",
 				"indexing": "title",
-				"indexname": "Session 2",
+				"indexname": "Session 02",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/002.md",
@@ -92,7 +92,7 @@
 				"name": "Session 3 - Höhlensäuberung",
 				"breadcrumb": "Session 3",
 				"indexing": "title",
-				"indexname": "Session 3",
+				"indexname": "Session 03",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/003.md",
@@ -103,7 +103,7 @@
 				"name": "Session 4 - Ankunft in Phandalin",
 				"breadcrumb": "Session 4",
 				"indexing": "title",
-				"indexname": "Session 4",
+				"indexname": "Session 04",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/004.md",
@@ -114,7 +114,7 @@
 				"name": "Session 5 - Shopping, Tiergeflüster und Pilzgefahr",
 				"breadcrumb": "Session 5",
 				"indexing": "title",
-				"indexname": "Session 5",
+				"indexname": "Session 05",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/005.md",
@@ -125,7 +125,7 @@
 				"name": "Session 6 - Wurmangst",
 				"breadcrumb": "Session 6",
 				"indexing": "title",
-				"indexname": "Session 6",
+				"indexname": "Session 06",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/006.md",
@@ -136,7 +136,7 @@
 				"name": "Session 7 - Bargespräch mit Konsequenzen",
 				"breadcrumb": "Session 7",
 				"indexing": "title",
-				"indexname": "Session 7",
+				"indexname": "Session 07",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/007.md",
@@ -147,7 +147,7 @@
 				"name": "Session 8 - Rotbrandversteck",
 				"breadcrumb": "Session 8",
 				"indexing": "title",
-				"indexname": "Session 8",
+				"indexname": "Session 08",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/008.md",
@@ -158,7 +158,7 @@
 				"name": "Session 9 - Fährten",
 				"breadcrumb": "Session 9",
 				"indexing": "title",
-				"indexname": "Session 9",
+				"indexname": "Session 09",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/009.md",
@@ -453,10 +453,77 @@
 		"indexCategory": "",
 		"indexSubCategory": "",
 		"filename": "",
-		"children": []
+		"children": [
+			{
+				"id": "giftzahn",
+				"name": "Giftzahn",
+				"breadcrumb": "Giftzahn",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/Giftzahn.md",
+				"children": []				
+			},
+			{
+				"id": "hamun_kost",
+				"name": "Hamun Kost",
+				"breadcrumb": "Hamun",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/HamunKost.md",
+				"children": []				
+			},
+			{
+				"id": "harschnag",
+				"name": "Harschnag",
+				"breadcrumb": "Harschnag",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/Harschnag.md",
+				"children": []				
+			},
+			{
+				"id": "reidoht",
+				"name": "Reidoht",
+				"breadcrumb": "Reidoht",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/Reidoht.md",
+				"children": []
+			},
+			{
+				"id": "sildar_hallwinter",
+				"name": "Sildar Hallwinter",
+				"breadcrumb": "Sildar",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/SildarHallwinter.md",
+				"children": []				
+			},
+			{
+				"id": "surina_grünschuppe",
+				"name": "Surina Grünschuppe",
+				"breadcrumb": "Surina",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "NPC",
+				"indexSubCategory": "",
+				"filename": "/NPCs/SurinaGrünschuppe.md",
+				"children": []
+			}
+		]
 	},
 	{
-		"id": "fractions",
+		"id": "factions",
 		"name": "Fraktionen",
 		"breadcrumb": "Fraktionen",
 		"indexing": "none",
@@ -477,7 +544,30 @@
 		"filename": "",
 		"children": [
 			{
-				"id": "locations_cities",
+				"id": "regions",
+				"name": "Regionen",
+				"breadcrumb": "Regionen",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "high_forest",
+						"name": "High Forest",
+						"breadcrumb": "High Forest",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Ort, Region",
+						"indexSubCategory": "",
+						"filename": "/Locations/HighForest.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "cities",
 				"name": "Städte",
 				"breadcrumb": "Städte",
 				"indexing": "none",
@@ -487,10 +577,10 @@
 				"filename": "",
 				"children": [
 					{
-						"id": "cities_everlund",
+						"id": "everlund",
 						"name": "Everlund",
 						"breadcrumb": "Everlund",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "Ort, Stadt",
 						"indexSubCategory": "",
@@ -498,10 +588,10 @@
 						"children": []
 					},
 					{
-						"id": "cities_phandalin",
+						"id": "phandalin",
 						"name": "Phandalin",
 						"breadcrumb": "Phandalin",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "Ort, Stadt",
 						"indexSubCategory": "",
@@ -509,10 +599,10 @@
 						"children": []
 					},
 					{
-						"id": "cities_neverwinter",
+						"id": "neverwinter",
 						"name": "Neverwinter",
 						"breadcrumb": "Neverwinter",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "Ort, Stadt",
 						"indexSubCategory": "",
@@ -520,10 +610,10 @@
 						"children": []
 					},
 					{
-						"id": "cities_triboar",
+						"id": "triboar",
 						"name": "Triboar",
 						"breadcrumb": "Triboar",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "Ort, Stadt",
 						"indexSubCategory": "",
@@ -531,10 +621,10 @@
 						"children": []
 					},
 					{
-						"id": "cities_yartar",
+						"id": "yartar",
 						"name": "Yartar",
 						"breadcrumb": "Yartar",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "Ort, Stadt",
 						"indexSubCategory": "",
@@ -544,7 +634,7 @@
 				]
 			},
 			{
-				"id": "locations_landmarks",
+				"id": "landmarks",
 				"name": "Landmarken",
 				"breadcrumb": "Landmarken",
 				"indexing": "none",
@@ -554,12 +644,12 @@
 				"filename": "",
 				"children": [
 					{
-						"id": "landmarks_shadowtop_cathedral",
+						"id": "shadowtop_cathedral",
 						"name": "Shadowtop Cathedral",
 						"breadcrumb": "Shadowtop",
-						"indexing": "all",
+						"indexing": "title",
 						"indexname": "",
-						"indexCategory": "Landmarke, Ort",
+						"indexCategory": "Ort, Landmarke",
 						"indexSubCategory": "",
 						"filename": "/Locations/ShadowtopCathedral.md",
 						"children": []

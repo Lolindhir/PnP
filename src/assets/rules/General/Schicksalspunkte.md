@@ -87,4 +87,5 @@ Am Ende einer Session wird ermittelt wie stark die Spieler innerhalb der Session
 
 #### Spieleraussagen
 1.	Du hast entsprechend deiner Gesinnung (alignment) gehandelt ohne einen direkten Nutzen daraus zu ziehen.
-2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zumeine Bindungen (bonds) zum
+2.	Du hast dein Persönlichkeitsmerkmal (personality trait), deine Ideale (ideals) oder deine Bindungen (bonds) zumeine Bindungen (bonds) zum Ausdruck gebracht.
+3.  Du hattest mit Problemen oder Auswirkungen zu kämpfen, die aufgrund deiner Fehler (flaws) oder deiner Gesinnung (alignment) entstanden sind.

@@ -22,14 +22,14 @@ if ($processRules.ExitCode -ne 0) {
 }
 
 # Führe MarkdownLinker aus für Starter Kampagne
-$processStarter = Start-Process -FilePath "src/markdownLinker/MarkdownLinker.exe" -ArgumentList "`"-t:src/assets/campaigns/campaignStarterToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Starter`" `"-p:campaigns/starter/`" -d -i" -NoNewWindow -Wait -PassThru
+$processStarter = Start-Process -FilePath "src/markdownLinker/MarkdownLinker.exe" -ArgumentList "`"-t:src/assets/campaigns/campaignStarterToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Starter`" `"-p:campaigns/starter/`" `"-g:src/assets/campaigns/Starter/GlossaryStarter.md`" -d -i -m" -NoNewWindow -Wait -PassThru
 if ($processStarter.ExitCode -ne 0) {
     Write-Error "MarkdownLinker failed with exit code $($processStarter.ExitCode). Aborting build process."
     exit $process.ExitCode
 }
 
 # Führe MarkdownLinker aus für Strahd Kampagne
-$processStrahd = Start-Process -FilePath "src/markdownLinker/MarkdownLinker.exe" -ArgumentList "`"-t:src/assets/campaigns/campaignStrahdToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Strahd`" `"-p:campaigns/strahd/`" -d -i" -NoNewWindow -Wait -PassThru
+$processStrahd = Start-Process -FilePath "src/markdownLinker/MarkdownLinker.exe" -ArgumentList "`"-t:src/assets/campaigns/campaignStrahdToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Strahd`" `"-p:campaigns/strahd/`" `"-g:src/assets/campaigns/Strahd/GlossaryStrahd.md`" -d -i -m" -NoNewWindow -Wait -PassThru
 if ($processStrahd.ExitCode -ne 0) {
     Write-Error "MarkdownLinker failed with exit code $($processStrahd.ExitCode). Aborting build process."
     exit $process.ExitCode

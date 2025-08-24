@@ -121,9 +121,10 @@
 | Controlling a Mount | [Mounted Combat](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_mounted) |
 | Cooking for Regeneration *[Regeneration]* | [Regeneration Options](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options) |
 | Copying Spells *[Wizard]* | [Spellcasting](https://lolindhir.github.io/PnP/rules/classes/wizard/wizard_spellcasting) |
-| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Cover | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Cover | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
 | Crafting Materials | [Crafting Materials](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials) |
+| Crafting Overview | [Crafting Overview](https://lolindhir.github.io/PnP/rules/crafting/crafting_overview) |
 | Creating a Character | [Creating a Character](https://lolindhir.github.io/PnP/rules/creation/character_creation) |
 | Creature Size | [Movement](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_movement) |
 | Criminal *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
@@ -201,8 +202,8 @@
 | Evasive Footwork *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Evocation *[School of Magic]* | [Schools of Magic](https://lolindhir.github.io/PnP/rules/glossary/magic_schools) |
 | Evoker *[Wizard]* | [Evoker](https://lolindhir.github.io/PnP/rules/classes/wizard/evoker) |
-| Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion) |
 | Exhaustion *[Condition]* | [Conditions](https://lolindhir.github.io/PnP/rules/glossary/condition_details) |
+| Exhaustion | [Exhaustion](https://lolindhir.github.io/PnP/rules/general/damage_healing/exhaustion) |
 | Exploration | [Exploration](https://lolindhir.github.io/PnP/rules/general/pillars/exploration) |
 | Exposing Strike *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Faction Member *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
@@ -245,8 +246,8 @@
 | Haggling | [Social Interaction](https://lolindhir.github.io/PnP/rules/general/pillars/social) |
 | Halberd *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Half Plate *[Armor]* | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
-| Halfling *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Halfling *[Race]* | [Halfling](https://lolindhir.github.io/PnP/rules/races/halfling) |
+| Halfling *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Hand Crossbow *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Handaxe *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Hardened *[Armor Special Property]* | [Armor Special Property](https://lolindhir.github.io/PnP/rules/equipment/armor/armor_properties_special) |
@@ -319,8 +320,8 @@
 | Level Up | [Level Up](https://lolindhir.github.io/PnP/rules/creation/leveling) |
 | Lifestyle Expenses *[Lifestyle]* | [Maintaining a Lifestyle](https://lolindhir.github.io/PnP/rules/downtime/lifestyle) |
 | Lifestyle Expenses *[Service]* | [Services](https://lolindhir.github.io/PnP/rules/glossary/services) |
-| Light *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Light | [Cover, Vision & Light](https://lolindhir.github.io/PnP/rules/glossary/vision_light) |
+| Light *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Light Armor | [Armor](https://lolindhir.github.io/PnP/rules/equipment/armor) |
 | Light Crossbow *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Light Hammer *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
@@ -445,8 +446,8 @@
 | Ranks | [Renown](https://lolindhir.github.io/PnP/rules/general/renown) |
 | Rapier *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Rare Language | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
-| Reach *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Reach | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
+| Reach *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Reaction | [Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions) |
 | Reactive Reagent *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
@@ -477,8 +478,8 @@
 | Rustic Hospitality *[Background Connection]* | [Background Connections](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_connections) |
 | Rustic Intuition *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ruthless Strike *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
-| Sage *[Shaman]* | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Sage *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
+| Sage *[Shaman]* | [Shaman](https://lolindhir.github.io/PnP/rules/classes/shaman) |
 | Sailor *[Background Sample]* | [Background Samples](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_samples) |
 | Sap *[Weapon Mastery]* | [Weapon Mastery](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_masteries) |
 | Saving Throw | [D20 Test](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/d20tests) |
@@ -534,8 +535,8 @@
 | Spell Scroll *[Consumable, Spellhold]* | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Spell Slot | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spell Targets | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
-| Spellcasting | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellcasting *[Service]* | [Services](https://lolindhir.github.io/PnP/rules/glossary/services) |
+| Spellcasting | [Spellcasting](https://lolindhir.github.io/PnP/rules/general/spellcasting) |
 | Spellhold | [Spellhold](https://lolindhir.github.io/PnP/rules/equipment/spellholds) |
 | Spellhold Base *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Spellhold Crafting | [Spellhold Crafting](https://lolindhir.github.io/PnP/rules/crafting/spellholdcrafting) |
@@ -568,8 +569,8 @@
 | Tea | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
 | Tea Brewing *[Regeneration]* | [Regeneration Options](https://lolindhir.github.io/PnP/rules/adventuring/recovering/regeneration_options) |
 | Tea Crafting | [Herbalism](https://lolindhir.github.io/PnP/rules/crafting/herbalism) |
-| Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints) |
 | Temporäre Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
+| Temporary Hit Points | [Hit Points](https://lolindhir.github.io/PnP/rules/general/damage_healing/hitpoints) |
 | Thieves' Cant *[Language]* | [Languages](https://lolindhir.github.io/PnP/rules/glossary/languages) |
 | Thrown *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Thunder *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |

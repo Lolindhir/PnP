@@ -62,12 +62,12 @@ ___
 |   3rd   | [Darkness](https://lolindhir.github.io/PnP/spells/Darkness)              | [Tiefling](https://lolindhir.github.io/PnP/rules/races/tiefling)                        |
 
 ##### Spellbook
-Die Zauber im Spellbook müssen prepared werden. Die Zauber sind auf der Detailseite aufgelistet.
+Die Zauber im Spellbook müssen prepared werden. Die Zauber sind auf der [Detailseite](https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_spells) aufgelistet.
 
 
 ### Path of the Necromancer
 
-Das Buch ihres Vaters hat sie auf den Pfad des Nekromanten (siehe Detailseite) geführt, über den sie zusätzliche Fähigkeiten erlangen kann.
+Das Buch ihres Vaters hat sie auf den Pfad des Nekromanten (siehe [Detailseite](https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer)) geführt, über den sie zusätzliche Fähigkeiten erlangen kann.
 
 <img src="assets/campaigns/Starter/PCs/AthanyaGrimoire.png" class="image">
 

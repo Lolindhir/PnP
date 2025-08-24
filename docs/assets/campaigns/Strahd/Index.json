@@ -1,2 +1,278 @@
 [
+	{
+		"term": "Argynvost",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Argynvostholt",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Barovia",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Region"
+	},
+	{
+		"term": "Berez",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Bergvolk",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Bergvolk",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Chronik von Barovia",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": ""
+	},
+	{
+		"term": "Dämmerelfen",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Die drei Herrinnen",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	},
+	{
+		"term": "Fall der Nebel",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": ""
+	},
+	{
+		"term": "Giorgio",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung"
+	},
+	{
+		"term": "Herrinnen des Waldes",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	},
+	{
+		"term": "Ireena Koljanovich",
+		"reference": "Ireena Koljanovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovich",
+		"category": "NPC"
+	},
+	{
+		"term": "Jägerin der Berge",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	},
+	{
+		"term": "Jennar",
+		"reference": "Jennar",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jennar_sunblessed",
+		"category": ""
+	},
+	{
+		"term": "Jona",
+		"reference": "Jona",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona_halvarson",
+		"category": ""
+	},
+	{
+		"term": "König Barov",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Königin Ravenovia",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Krezk",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Lathander",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Gott"
+	},
+	{
+		"term": "Magierzirkel",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Mortu",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung"
+	},
+	{
+		"term": "Naturgöttinnen",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	},
+	{
+		"term": "Naturvölker",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Orden des Silberdrachens",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Rauni",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung"
+	},
+	{
+		"term": "Remaniu",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung"
+	},
+	{
+		"term": "Rowena",
+		"reference": "Rowena",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/rowena",
+		"category": ""
+	},
+	{
+		"term": "Schloss Ravenloft",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Session 01",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Session"
+	},
+	{
+		"term": "Session 02",
+		"reference": "Session 02",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Session"
+	},
+	{
+		"term": "Session 03",
+		"reference": "Session 03",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Session"
+	},
+	{
+		"term": "Session 04",
+		"reference": "Session 04",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "Session"
+	},
+	{
+		"term": "Strahd von Zarovich",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Strahd von Zarovich",
+		"reference": "Strahd von Zarovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd_zarovich",
+		"category": "NPC"
+	},
+	{
+		"term": "Strahd-Gefolgschaft",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Sucherin des Waldes",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	},
+	{
+		"term": "Vallaki",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Vettel",
+		"reference": "Vettelzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
+		"category": ""
+	},
+	{
+		"term": "Vettelzirkel",
+		"reference": "Vettelzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Vistana",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung"
+	},
+	{
+		"term": "Vistani",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Fraktion, Bezeichnung"
+	},
+	{
+		"term": "Vistani",
+		"reference": "Vistani",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
+		"category": "Bezeichnung, Fraktion"
+	},
+	{
+		"term": "Waldvolk",
+		"reference": "Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Waldvolk",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Weberin des Sumpfes",
+		"reference": "Naturvölker",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": ""
+	}
 ]

@@ -1,3 +1,3 @@
 | Landmarke | Verweis |
 |:------------|:-----------------|
-| [Shadowtop Cathedral](https://lolindhir.github.io/PnP/campaigns/starter/locations/locations_landmarks/landmarks_shadowtop_cathedral) |  |
+| [Shadowtop Cathedral](https://lolindhir.github.io/PnP/campaigns/starter/locations/landmarks/shadowtop_cathedral) | [Session 26](https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026) |

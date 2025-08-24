@@ -31,3 +31,4 @@ For example, if an object has a damage threshold of 10, the object takes no dama
 
 **No Ability Scores.** An object lacks ability scores unless a rule assigns scores to the object. Without ability scores, an object can't make ability checks, and it fails all saving throws.
 
+

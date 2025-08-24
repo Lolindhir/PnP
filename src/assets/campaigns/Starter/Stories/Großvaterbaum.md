@@ -3,7 +3,7 @@
 Die Shadowtop Cathedral, eine riesige Lichtung im High Forest und Heimat der Smaragdenklave, lag im stillen Morgenlicht. Über ihnen spannten uralte Baumriesen ihre Äste wie ein gewaltiges Dach, durch das nur vereinzelte Sonnenstrahlen fielen. Der Boden war weich von Moos, und zwischen den großen Lagerfeuerstellen bewegten sich die Mitglieder der Smaragdenklave – Druiden, Waldläufer und ihre Verbündeten.
 Die Luft roch nach frischen Kräutern, nassem Laub und dem Rauch eines langsam verglimmenden Feuers. Kein metallisches Klirren hallte hier wie in den Städten der Zivilisation – die Geräusche waren das Rascheln von Stoff, das Knacken von Holz, das Summen leiser Stimmen.
 
-Kathra, eine wildniserprobte Zwergin mit wettergegerbtem Gesicht, zog den Lederriemen um den Griff ihrer Axt fester. „Also gut… wir wissen, was zu tun ist.“
+Kathra, eine wildniserprobte Zwergin, zog den Lederriemen um den Griff ihrer Axt fester. „Also gut… wir wissen, was zu tun ist.“
 „Befreien wir den Großvaterbaum, trennen wir ihre Allianz, und dann holen wir, was uns versprochen wurde,“ erwiderte Aurrdan, der Seeelb, und stützte sich auf seinen Stab.
 Athanya, die Tiefling-Zauberin, ließ ein kleines Flämmchen zwischen ihren Fingern tanzen. „Ich hoffe, die Dryaden mögen Feuer.“
 „Ich hoffe, sie sehen mich nicht kommen,“ fügte Azoth, der Halbling-Schurke, mit einem schiefen Grinsen hinzu, während er den Dolch in seiner Hand verschwinden ließ.
@@ -31,7 +31,7 @@ Was die vier nicht wussten: Für diese Versteinerungen war ein Gorgon verantwort
 Die Tage waren hart. Die Vorräte schwanden, und ihre Füße waren wund von dem ständigen Marsch.
 „Noch ein paar Meilen, dann eine Pause,“ stöhnte Athanya.
 „Halt durch… wir kommen schon noch ans Ziel,“ antwortete Kathra, die von der Gruppe am wenigstens gezeichnet vom Marsch schien und sich nach essbaren Pflanzen und dem möglichst sichersten Pfad umsah.
-Athanya warf einen spektischen Blick zu Kathra. „Wenn wir Glück haben, finden wir ein Wasserloch, sonst seh ich uns morgen noch umfallen.“
+Athanya warf einen skeptischen Blick zu Kathra. „Wenn wir Glück haben, finden wir ein Wasserloch, sonst seh ich uns morgen noch umfallen.“
 Aurrdan schnaubte leise. „Zur Not kann ich Wasser entstehen lassen – wenn’s wirklich hart auf hart kommt. Kostet mich allerdings wertvolle Zauberenergie, also lieber erst, wenn wir keine andere Wahl haben.“
 
 Eines Nachts, unter dem kalten Schein der Sterne, hörte Aurrdan ein Flüstern. „Komm…“
@@ -48,7 +48,7 @@ Mit einem Schrei, der eher Wind als Stimme war, zerrann schließlich die Schaman
 Hinterher erzählte Aurrdan leise: „Ich… ich weiß nicht, wie ihr es geschafft habt. Ich wäre verloren gewesen, hätte der Geist mich weiter in den Wald geführt.“
 Kathra nickte. „Es war eine Vision… mein Gott hat mich geweckt. Ich habe Azoth und Athanya alarmiert, und wir sind dir gefolgt, bevor es zu spät war.“
 
-Am fünften Tag fanden sie eine heilige Quelle, deren Wasser selbst alte Wunden heilte. Sie ruhten dort, bis die Müdigkeit wich und die Schritte wieder leicht wurden.
+Nach weit über einer Woche im Wald fanden sie eine heilige Quelle, deren Wasser selbst alte Wunden heilte. Sie ruhten dort, bis die Müdigkeit wich und die Schritte wieder leicht wurden.
 „Ich schwöre, so gut und sauber habe ich mich seit Wochen nicht mehr gefühlt“, sagte Athanya, während sie ihre Hände im klaren Wasser wusch.
 „Dann füll’ deine Schläuche, bevor es wieder nur nach Moos schmeckt,“ grinste Azoth und lehnte sich zurück.
 
