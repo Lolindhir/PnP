@@ -22,7 +22,7 @@
 | Gundren Steinsucher | - |
 | [Hamun Kost](https://lolindhir.github.io/PnP/campaigns/starter/npcs/hamun_kost) | - |
 | [Harschnag](https://lolindhir.github.io/PnP/campaigns/starter/npcs/harschnag) | - |
-| [High Forest](https://lolindhir.github.io/PnP/locations/regions/high_forest) | Riesiger Urwald im Zentrum der Schwertküste |
+| [High Forest](https://lolindhir.github.io/PnP/campaigns/starter/locations/regions/high_forest) | Riesiger Urwald im Zentrum der Schwertküste |
 | Inured to Undeath | - |
 | Jolt to Life | - |
 | [Kathra](https://lolindhir.github.io/PnP/campaigns/starter/pcs/kathra) | - |

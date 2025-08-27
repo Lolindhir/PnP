@@ -2,7 +2,7 @@
 |:------------|:----------------|
 | Amphail | Ziel der Reise bevor im Nebel verschwunden (Schwertküste) |
 | Argynvostholt | Festungsruine des Ordens des Silberdrachen |
-| [Barovia](https://lolindhir.github.io/PnP/locations/barovia) | Abgeschottetes Land im ständigen Nebel, besteht hauptsächlich aus kleineren Dörfern und Siedlungen |
+| [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) | Abgeschottetes Land im ständigen Nebel, besteht hauptsächlich aus kleineren Dörfern und Siedlungen |
 | Barovia-Stadt | Dorf ähnlich einer Geisterstadt, erste besuchte Siedlung in Barovia; PoI: Taverne „Blutrote Rebe“, Kirche, Abenteurerausrüstung, Kuriositätenladen für magische Gegenstände, Koljanovic Anwesen |
 | Berez | Siedlung oder Stadt, Infos fehlen noch; wurde in Vergangenheit von Flutwelle Strahds getroffen |
 | Durst-Mühle | Behausung eines Vettel-Zirkels |

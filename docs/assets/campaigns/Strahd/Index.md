@@ -12,7 +12,7 @@
 | Fall der Nebel | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
 | Giorgio *[Bezeichnung]* | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Herrinnen des Waldes | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
-| Ireena Koljanovich *[NPC]* | [Ireena Koljanovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovich) |
+| Ireena Koljanovic *[NPC]* | [Ireena Koljanovic](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovic) |
 | Jägerin der Berge | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | Jennar | [Jennar](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jennar_sunblessed) |
 | Jona | [Jona](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona_halvarson) |

@@ -12,8 +12,7 @@
 | Dragomir | Besitzer des Kuriositätenladens in Barovia-Stadt |
 | Familie Durst | Kinder: Roswalda, Thornbold, Walter; Eltern: Gustav, Elizabeth |
 | Freg und Myrtel | Von Vetteln gerettete Kinder (Junge und Mädchen) aus Barovia-Stadt |
-| Ireena Koljanovic | Ziel von Strahd, Schwester von Ismark |
-| [Ireena Koljanovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovich) | - |
+| [Ireena Koljanovic](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovic) | Ziel von Strahd, Schwester von Ismark |
 | Ismark Koljanovic | Bürgermeister von Barovia-Stadt, Bruder von Ireena |
 | König Barov | Vater von Strahd, von Dämmerelfen getötet, Barovia nach ihm benannt |
 | Königin Ravenovia | Mutter von Strahd, Schloss Ravenloft nach ihr benannt |
