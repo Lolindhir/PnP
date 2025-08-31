@@ -67,9 +67,9 @@
 		]
 	},
 	{
-		"id": "compendium",
-		"name": "Kampagnenkompendium",
-		"breadcrumb": "Kompendium",
+		"id": "compass",
+		"name": "Plotkompass",
+		"breadcrumb": "Kompass",
 		"indexing": "none",
 		"indexname": "",
 		"indexCategory": "",
@@ -95,7 +95,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "/Compendium/Goals.md",
+				"filename": "/Main/Goals.md",
 				"children": []
 			},
 			{
@@ -106,7 +106,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "/Compendium/Questions.md",
+				"filename": "/Main/Questions.md",
 				"children": []
 			},
 			{
@@ -117,7 +117,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "/Compendium/Schicksalsfäden.md",
+				"filename": "/Main/Schicksalsfäden.md",
 				"children": []
 			}
 		]
@@ -143,8 +143,8 @@
 				"filename": "",
 				"children": [
 					{
-						"id": "jennar_sunblessed",
-						"name": "Jennar",
+						"id": "jennar",
+						"name": "Jennar Sunblessed",
 						"breadcrumb": "Jennar",
 						"indexing": "title",
 						"indexname": "",
@@ -154,8 +154,8 @@
 						"children": []
 					},
 					{
-						"id": "jona_halvarson",
-						"name": "Jona",
+						"id": "jona",
+						"name": "Jona Halvarson",
 						"breadcrumb": "Jona",
 						"indexing": "title",
 						"indexname": "",
@@ -188,25 +188,36 @@
 				"filename": "",
 				"children": [
 					{
-						"id": "ireena_koljanovic",
-						"name": "Ireena Koljanovic",
+						"id": "ireena",
+						"name": "Ireena Koljanovich",
 						"breadcrumb": "Ireena",
 						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
-						"filename": "/NPCs/IreenaKoljanovic.md",
+						"filename": "/NPCs/Ireena.md",
 						"children": []				
 					},
 					{
-						"id": "strahd_zarovich",
+						"id": "rabe",
+						"name": "Rabe",
+						"breadcrumb": "Rabe",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Rabe.md",
+						"children": []				
+					},
+					{
+						"id": "strahd",
 						"name": "Strahd von Zarovich",
 						"breadcrumb": "Strahd",
 						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
-						"filename": "/NPCs/StrahdVonZarovich.md",
+						"filename": "/NPCs/Strahd.md",
 						"children": []				
 					}
 				]
@@ -224,6 +235,17 @@
 		"filename": "",
 		"children": [
 			{
+				"id": "magierzirkel",
+				"name": "Magierzirkel",
+				"breadcrumb": "Magierzirkel",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Magierzirkel.md",
+				"children": []
+			},
+			{
 				"id": "naturvölker",
 				"name": "Naturvölker",
 				"breadcrumb": "Naturvölker",
@@ -232,6 +254,17 @@
 				"indexCategory": "Fraktion",
 				"indexSubCategory": "",
 				"filename": "/Factions/Naturvölker.md",
+				"children": []
+			},
+			{
+				"id": "silberorden",
+				"name": "Orden des Silberdrachens",
+				"breadcrumb": "Silberdrachen",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Silberorden.md",
 				"children": []
 			},
 			{
@@ -269,15 +302,128 @@
 		"filename": "",
 		"children": [
 			{
-				"id": "barovia",
-				"name": "Barovia",
-				"breadcrumb": "Barovia",
+				"id": "barovia_stadt",
+				"name": "Barovia Stadt",
+				"breadcrumb": "Barovia Stadt",
 				"indexing": "title",
 				"indexname": "",
-				"indexCategory": "Ort, Region",
+				"indexCategory": "Ort, Stadt",
 				"indexSubCategory": "",
-				"filename": "/Locations/Barovia.md",
+				"filename": "/Locations/BaroviaStadt.md",
 				"children": []
+			},
+			{
+				"id": "berez",
+				"name": "Berez",
+				"breadcrumb": "Berez",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/Berez.md",
+				"children": []
+			},
+			{
+				"id": "krezk",
+				"name": "Krezk",
+				"breadcrumb": "Krezk",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/Krezk.md",
+				"children": []
+			},
+			{
+				"id": "vallaki",
+				"name": "Vallaki",
+				"breadcrumb": "Vallaki",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/Vallaki.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "compendium",
+		"name": "Kompendium",
+		"breadcrumb": "Kompendium",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "lore",
+				"name": "Lore",
+				"breadcrumb": "Lore",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "chronicles_barovia",
+						"name": "Chroniken von Barovia",
+						"breadcrumb": "Chroniken",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Lore",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Chroniken.md",
+						"children": []
+					},
+					{
+						"id": "deities",
+						"name": "Gottheiten",
+						"breadcrumb": "Götter",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Lore",
+						"indexSubCategory": "",
+						"filename": "GlossaryIndex_Gott.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "monsters",
+				"name": "Monster",
+				"breadcrumb": "Monster",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Monster.md",
+				"children": [
+					{
+						"id": "vampir",
+						"name": "Vampir",
+						"breadcrumb": "Vampir",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Monster",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Vampir.md",
+						"children": []
+					},
+					{
+						"id": "vettel",
+						"name": "Vettel",
+						"breadcrumb": "Vettel",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Monster",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Vettel.md",
+						"children": []
+					}
+				]
 			}
 		]
 	},

@@ -2,37 +2,40 @@
 
 
 
+- [Vettel-Monster-Details](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vettel)
+- stellen aus Kindern **verzauberte Pasteten** her, die süchtig machen
+- Opfer verkaufen oder verschenken schließlich alles, sogar ihre eigenen Kinder
+- Mitglieder:
+ - "Mütterchen" = Ober-Vettel
+ - Bella = blaue Vettel
+- Sitz: Durst-Mühle
 
 
-## 🕯 Wissen über die Vetteln von Barovia
 
-### Ursprung & Natur
-- Unterweltler (**Fiends**), die in die Welt der Sterblichen eingreifen.  
-- Wirken oft wie gewöhnliche alte Frauen, können ihr Äußeres aber durch **Illusion** oder **Transformation** verbergen.  
 
-### Zirkel
-- Vetteln schließen sich **immer in Dreiergruppen** zusammen.  
-- Erst im **vollen Zirkel** erlangen sie ihre größte Macht.  
-- Wird eine Vettel getötet, ist der Zirkel geschwächt – doch die Überlebenden suchen oft nach Ersatz oder üben Rache.  
 
-### Fähigkeiten
-- Können **Kinder sehen** und sie in **Albträumen heimsuchen**.  
-- Manche besitzen **Anti-Magie-Fähigkeiten**, die Zauber und magische Effekte unterdrücken.  
-- Verfügen über **dunkle Beschwörungen**, rufen dämonische oder teuflische Kreaturen herbei.  
 
-### Praktiken
-- Essen das Fleisch von Kindern.  
-- Stellen daraus **verzauberte Pasteten** her, die süchtig machen.  
-- Die Opfer verkaufen oder verschenken schließlich alles, sogar ihre eigenen Kinder.  
 
-### Vermehrung
-- Eine Vettel verschlingt ein Kind und bringt nach **einer Woche** eine Tochter zur Welt.  
-- Dieses „Kind“ wird als **Kuckuckskind** in eine Familie gegeben.  
-- Am **13. Geburtstag** verwandelt es sich in eine neue Vettel.  
-- So entstehen neue Zirkel – doch nur, wenn **alle drei** Vetteln überleben.  
+
+
 
 ---
 
-### 🔮 Fazit
-Die Bedrohung durch einen Zirkel endet **nur**, wenn **alle drei Vetteln getötet** werden.  
-Lässt man auch nur eine am Leben, kann sich der Zirkel früher oder später erneuern. 
+## Interaktionen
+
+### Session 03 - Schicksal und Pasteten
+
+- Ankunft an Mühle der Dursts  
+  - Gruppe erkennt, dass alte Damen mit Magie verschleiert sind → Herstellung von Pasteten  
+  - Jona erkennt durch Detect Magic und Detect Evil and Good, dass es sich um Vetteln handelt (Art Hexen, Kinderfresser)  
+  - Kinderwimmern wird vernommen, Verdacht bestätigt sich  
+- Angriff und Rettung  
+  - Vetteln setzen teufelsartige/dämonische Kreaturen aus Topf ein  
+  - Grüne Vettel schwächt sich, wird teilweise unsichtbar und flieht  
+  - Blaue Vettel (Bella) kämpft unten im Erdgeschoss  
+- Flucht und Befreiung  
+  - Jennar und Rowena attackieren gezielt aus Fenstern  
+  - Ireena rettet heimlich zwei Kinder aus Dachgeschoss  
+  - Gruppe flieht über Dachfenster und Seile, sammelt Kinder ein  
+  - Jona verfolgt grüne Vettel, tötet sie nach schemenhafter Erkennung  
+  - Rabe unterstützt indirekt, zeigt sicheren Fluchtweg zum Heuschober  

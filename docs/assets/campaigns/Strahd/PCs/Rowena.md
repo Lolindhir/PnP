@@ -1,0 +1,12 @@
+
+- Geister-Bardin  
+- legt gerne Karten, um Zukunft und Mitmenschen lesen zu können (funktioniert das wirklich?)  
+- einem kleinen Betrug nicht abgeneigt?  
+- kommt aus Barovia  
+- ist eine Vistani, die durch Nebel wandern können, kann sich aber nicht erinnern, da noch Kind gewesen  
+- sucht Eltern und Zugehörigkeit  
+- Adeline Stoian ist Name, den ihr ihre Eltern gegeben haben  
+- hat in Verkleidung den Namen „Jalina“ verwendet  
+- scheint mehr Energie zu haben, seitdem wir in Barovia sind (!?)  
+- hat sich selber die Karten gelegt und kam in Trance → Ergebnis: scheinen auf dem richtigen Weg zu sein  
+- andere Vistani kennen sie bisher nicht

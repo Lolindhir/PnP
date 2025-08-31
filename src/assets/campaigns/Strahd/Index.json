@@ -1,32 +1,140 @@
 [
 	{
+		"term": "Aasspringer",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Monster"
+	},
+	{
+		"term": "Ahrja",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Alenta, Mirabell, Sormia Mortu",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Alenta, Mirabell, Sormia Mortu",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Amphail",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Animierte Rüstung",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Monster"
+	},
+	{
+		"term": "Arabelle",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
 		"term": "Argynvost",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Argynvost",
+		"reference": "Orden des Silberdrachens",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
 		"category": "NPC"
 	},
 	{
 		"term": "Argynvostholt",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Ort, Landmarke"
 	},
 	{
+		"term": "Argynvostholt",
+		"reference": "Orden des Silberdrachens",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Arigal",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Arik",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Arik",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
 		"term": "Barovia",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
-		"category": "Ort, Region"
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Barovia Stadt",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Barovia-Stadt",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Barovia-Stadt",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Bella",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Bella",
+		"reference": "Vettelzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
+		"category": "NPC"
 	},
 	{
 		"term": "Berez",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Berez",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/berez",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Berez",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Ort, Stadt"
 	},
 	{
 		"term": "Bergvolk",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Fraktion"
 	},
 	{
@@ -36,15 +144,27 @@
 		"category": "Fraktion"
 	},
 	{
-		"term": "Chronik von Barovia",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
-		"category": ""
+		"term": "Bilderaht Kandemir",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Chroniken von Barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": "Lore"
 	},
 	{
 		"term": "Dämmerelfen",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Dämmerelfen",
+		"reference": "Orden des Silberdrachens",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
 		"category": "Fraktion"
 	},
 	{
@@ -54,10 +174,118 @@
 		"category": ""
 	},
 	{
-		"term": "Fall der Nebel",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"term": "Doru",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Doru",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Dragomir",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Dragomir",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Durst Besitzurkunde + Testament",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Durst-Mühle",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Durst-Mühle",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Durst-Mühle",
+		"reference": "Vettelzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Durst-Villa",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Elbengräber",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Fäden des Schicksals",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
 		"category": ""
+	},
+	{
+		"term": "Fall der Nebel",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": ""
+	},
+	{
+		"term": "Familie Durst",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Fleischmonster",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Monster"
+	},
+	{
+		"term": "Freg",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Geist",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Monster"
+	},
+	{
+		"term": "Gertruda",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Geschichte Barovias",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Ghul",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Monster"
 	},
 	{
 		"term": "Giorgio",
@@ -66,64 +294,154 @@
 		"category": "Bezeichnung"
 	},
 	{
+		"term": "Gottheiten",
+		"reference": "Gottheiten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/deities",
+		"category": "Lore"
+	},
+	{
 		"term": "Herrinnen des Waldes",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
 		"category": ""
 	},
 	{
-		"term": "Ireena Koljanovic",
-		"reference": "Ireena Koljanovic",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovic",
+		"term": "Ireena Koljanovich",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
+	},
+	{
+		"term": "Ireena Koljanovich",
+		"reference": "Ireena Koljanovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena",
+		"category": "NPC"
+	},
+	{
+		"term": "Ireena Koljanovich",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Ismark Koljanovich",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Ismark Koljanovich",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Ivlis",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Ort, Weg"
 	},
 	{
 		"term": "Jägerin der Berge",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
+		"category": "Gott"
+	},
+	{
+		"term": "Jennar Sunblessed",
+		"reference": "Jennar Sunblessed",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jennar",
 		"category": ""
 	},
 	{
-		"term": "Jennar",
-		"reference": "Jennar",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jennar_sunblessed",
-		"category": ""
-	},
-	{
-		"term": "Jona",
-		"reference": "Jona",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona_halvarson",
+		"term": "Jona Halvarson",
+		"reference": "Jona Halvarson",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona",
 		"category": ""
 	},
 	{
 		"term": "König Barov",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "NPC"
 	},
 	{
 		"term": "Königin Ravenovia",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "NPC"
 	},
 	{
 		"term": "Krezk",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Ort, Stadt"
 	},
 	{
+		"term": "Krezk",
+		"reference": "Krezk",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/krezk",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Lady Petrovna",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Lasuo Strassnier",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "NPC"
+	},
+	{
 		"term": "Lathander",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Gott"
 	},
 	{
+		"term": "Leeres Stundenglas",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Madame Eva",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Madame Eva",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
 		"term": "Magierzirkel",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Fraktion"
+	},
+	{
+		"term": "Magierzirkel",
+		"reference": "Magierzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/magierzirkel",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Marie",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Monster",
+		"reference": "Monster",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters",
+		"category": ""
 	},
 	{
 		"term": "Mortu",
@@ -132,10 +450,52 @@
 		"category": "Bezeichnung"
 	},
 	{
+		"term": "Mumifizierter Apfel",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Mütterchen",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Mütterchen",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Mütterchen",
+		"reference": "Vettelzirkel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
+		"category": "NPC"
+	},
+	{
+		"term": "Myrtel",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
 		"term": "Naturgöttinnen",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
-		"category": ""
+		"category": "Gott"
+	},
+	{
+		"term": "Naturgöttinnen",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Gott"
+	},
+	{
+		"term": "Naturvölker",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": "Fraktion"
 	},
 	{
 		"term": "Naturvölker",
@@ -144,10 +504,34 @@
 		"category": "Fraktion"
 	},
 	{
+		"term": "Obsidiankelch",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Gegenstand"
+	},
+	{
 		"term": "Orden des Silberdrachens",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Fraktion"
+	},
+	{
+		"term": "Orden des Silberdrachens",
+		"reference": "Orden des Silberdrachens",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Rabe",
+		"reference": "Rabe",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rabe",
+		"category": "NPC"
+	},
+	{
+		"term": "Rabe",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
 	},
 	{
 		"term": "Rauni",
@@ -162,6 +546,18 @@
 		"category": "Bezeichnung"
 	},
 	{
+		"term": "Rina",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "NPC"
+	},
+	{
+		"term": "Ritual-Brief Petrovna",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Gegenstand"
+	},
+	{
 		"term": "Rowena",
 		"reference": "Rowena",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/rowena",
@@ -169,8 +565,8 @@
 	},
 	{
 		"term": "Schloss Ravenloft",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Ort, Landmarke"
 	},
 	{
@@ -198,40 +594,124 @@
 		"category": "Session"
 	},
 	{
+		"term": "Strahd Brief ",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "Gegenstand"
+	},
+	{
 		"term": "Strahd von Zarovich",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
+		"category": "NPC"
+	},
+	{
+		"term": "Strahd von Zarovich",
+		"reference": "Session 01 - Todesvilla",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Strahd von Zarovich",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
 		"category": "NPC"
 	},
 	{
 		"term": "Strahd von Zarovich",
 		"reference": "Strahd von Zarovich",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd_zarovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd",
 		"category": "NPC"
 	},
 	{
 		"term": "Strahd-Gefolgschaft",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Fraktion"
 	},
 	{
 		"term": "Sucherin des Waldes",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
-		"category": ""
+		"category": "Gott"
+	},
+	{
+		"term": "Svalich-Straße",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Ort, Weg"
+	},
+	{
+		"term": "Tser See",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Tser See",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Ort, Landmarke"
 	},
 	{
 		"term": "Vallaki",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Ort, Stadt"
 	},
 	{
+		"term": "Vallaki",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Vampir",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Monster"
+	},
+	{
+		"term": "Vampir",
+		"reference": "Vampir",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vampir",
+		"category": "Monster"
+	},
+	{
+		"term": "Vater Donnovan",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "NPC"
+	},
+	{
+		"term": "Vater Donnovan",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "NPC"
+	},
+	{
+		"term": "Verzauberte Pasteten",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Gegenstand"
+	},
+	{
 		"term": "Vettel",
-		"reference": "Vettelzirkel",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
-		"category": ""
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Monster"
+	},
+	{
+		"term": "Vettel",
+		"reference": "Vettel",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vettel",
+		"category": "Monster"
+	},
+	{
+		"term": "Vettel Dämonenwesen",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Monster"
 	},
 	{
 		"term": "Vettelzirkel",
@@ -259,8 +739,8 @@
 	},
 	{
 		"term": "Waldvolk",
-		"reference": "Barovia",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia",
+		"reference": "Chroniken von Barovia",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
 		"category": "Fraktion"
 	},
 	{
@@ -273,6 +753,30 @@
 		"term": "Weberin des Sumpfes",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
-		"category": ""
+		"category": "Gott"
+	},
+	{
+		"term": "Wolf",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Monster"
+	},
+	{
+		"term": "Zauberer der Weine",
+		"reference": "Barovia Stadt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
+		"category": "Ort"
+	},
+	{
+		"term": "Zauberer der Weine",
+		"reference": "Session 02 - Die erste Begegnung",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
+		"category": "Ort"
+	},
+	{
+		"term": "Zombie",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Monster"
 	}
 ]

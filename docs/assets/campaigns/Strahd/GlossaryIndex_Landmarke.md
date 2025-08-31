@@ -1,8 +1,8 @@
 | Landmarke | Beschreibung | Verweis |
 |:------------|:----------------|:----------------|
-| Argynvostholt | Festungsruine des Ordens des Silberdrachen | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Durst-Mühle | Behausung eines Vettel-Zirkels | - |
-| Durst-Villa | Verwunschenes Haus | - |
-| Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Tser See | Lagerplatz der Vistani um Madame Eva | - |
-| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde | - |
+| Argynvostholt | Festungsruine des Ordens des Silberdrachen | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden)<br>[Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Durst-Mühle | Behausung des Vettel-Zirkels | [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel)<br>[Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Elbengräber | alte, überwucherte Gräber - Illusion von erhängten Menschen am Galgen, darunter Jennar | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Tser See | Lagerplatz der Vistani um Madame | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |

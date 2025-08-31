@@ -1,3 +1,3 @@
 | Region | Beschreibung | Verweis |
 |:------------|:----------------|:----------------|
-| [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) | Abgeschottetes Land im ständigen Nebel, besteht hauptsächlich aus kleineren Dörfern und Siedlungen | - |
+| Barovia | Abgeschottetes Land im ständigen Nebel, besteht hauptsächlich aus kleineren Dörfern und Siedlungen | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |

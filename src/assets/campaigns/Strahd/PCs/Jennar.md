@@ -1,0 +1,12 @@
+
+- Licht-Klerikerin von Pelor (Gott der Sonne, des Sommers, der Zeit und der Landwirtschaft)  
+- kommt aus Kloster der ewigen Morgenröte  
+- wollte nach Amphail, um dort die Ernte zu segnen  
+- rechtschaffend und immer versucht das Richtige zu tun  
+- hat Namen im Kloster bekommen, kennt ihre Eltern nicht (Waise?)  
+- Strahd nennt sie Tatjana (Verwechslung? kennt er sie? ähnelt sie jemandem?)  
+- nach erster Begegnung mit Strahd betet sie und er spricht zu ihr im Gebet, außerdem hat sie in der folgenden Nacht einen Traum: (Session 02)  
+  - ist in schönem Gewand an sonnigem Tag  
+  - junger Mann in Rüstung, anscheinend in sie verguckt, kommt rein (ist das Strahd???)  
+  - er muss mit Bruder zu Soldaten sprechen  
+- spürt die Verbindung zu ihrem Gott nur noch schwammig

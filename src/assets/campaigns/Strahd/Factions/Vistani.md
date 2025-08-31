@@ -30,3 +30,24 @@
 
 
 
+
+
+---
+
+## Interaktionen
+
+### Session 03 - Schicksal und Pasteten
+
+- PCs erreichen das Vistani-Lager am Tser See  
+  - werden gastfreundlich aufgenommen, mit Speis und Trank versorgt  
+  - Austausch von Geschichten und allgemeinen Informationen  
+- Wissen über Strahd  
+  - Strahd schuldet den Vistani etwas, da ihre Vorfahren ihn nach einer Kriegsverletzung heilten  
+  - Vistani können die Nebel öffnen, Strahd entscheidet aber immer über Reisende selbst  
+- Begegnung mit Madame Eva  
+  - legt Karten und offenbart die „Fäden des Schicksals“  
+  - gibt Vorhersagen für die ganze Gruppe und individuell für PCs  
+  - bricht danach erschöpft zusammen und ist nicht mehr ansprechbar  
+- Abschied  
+  - PCs übernachten im Lager und brechen am nächsten Morgen auf  
+  - treffen auf den Vistani-Reiter Arigal, der sie um einen Botendienst bittet (Spielzeug für Tochter besorgen und ins Lager bei Vallaki bringen)

@@ -1,25 +1,29 @@
 | NPC | Beschreibung | Verweis |
 |:------------|:----------------|:----------------|
-| “Mütterchen” | Vettel (stärkste) aus der Mühle, verkauft verzauberte Pasteten in Barovia-Stadt | - |
-| Ahrja | Vistana aus Gruppe von Madame Eva | - |
-| Alenta, Mirabell, Sormia Mortu | Besitzerinnen der “Blutroten Rebe“ in Barovia-Stadt | - |
-| Argynvost | Ritter, Gründer des Ordens des Silberdrachens | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Arik | Wirt der “Blutroten Rebe” in Barovia-Stadt | - |
-| Arrigal | Vistana aus Gruppe bei Vallaki, Nichte ist Arabelle | - |
-| Bella | Vettel (blaue) aus der Mühle | - |
-| Bilderaht Kandemir | Besitzer des Ausrüstungsladens in Barovia-Stadt | - |
-| Doru | Vampir von Strahd, Sohn von Vater Donnovan, 10 Jahre verwandelt und eingesperrt, nun frei? | - |
-| Dragomir | Besitzer des Kuriositätenladens in Barovia-Stadt | - |
-| Familie Durst | Kinder: Roswalda, Thornbold, Walter; Eltern: Gustav, Elizabeth | - |
-| Freg und Myrtel | Von Vetteln gerettete Kinder (Junge und Mädchen) aus Barovia-Stadt | - |
-| [Ireena Koljanovic](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena_koljanovic) | Ziel von Strahd, Schwester von Ismark | - |
-| Ismark Koljanovic | Bürgermeister von Barovia-Stadt, Bruder von Ireena | - |
-| König Barov | Vater von Strahd, von Dämmerelfen getötet, Barovia nach ihm benannt | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Königin Ravenovia | Mutter von Strahd, Schloss Ravenloft nach ihr benannt | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Lady Petrovna | Unterstützte Elizabeth Durst bei Ritualen und Experimenten | - |
-| Lasuo Strassnier | Wirt im Gasthaus vor dem Nebel | - |
-| Madame Eva | Ehrwürdige Vistana-Seherin, lagert am Tser See | - |
-| Marie | Verrückte aus Barovia-Stadt, vermisst Tochter Gertruda, besitzt Hund Lanzelot | - |
-| Rina | Vistana aus Gruppe von Madame Eva | - |
-| [Strahd von Zarovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd_zarovich) | BBEG, Vampir | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Vater Donnovan | Priester von Barovia-Stadt, Vater von Doru (Vampir von Strahd) | - |
+| Ahrja | Vistana aus Gruppe von Madame Eva | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Alenta, Mirabell, Sormia Mortu | Besitzerinnen der “Blutroten Rebe“ in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Arabelle | Nichte von Arigal | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Argynvost | Ritter, Gründer des Ordens des Silberdrachens | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden)<br>[Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Arigal | Vistana aus Gruppe bei Vallaki, Nichte ist Arabelle | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Arik | Wirt der “Blutroten Rebe” in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Bella | blaue Vettel aus der Mühle | [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Bilderaht Kandemir | Besitzer des Ausrüstungsladens in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt) |
+| Doru | Vampir von Strahd, Sohn von Vater Donnovan, 10 Jahre verwandelt und eingesperrt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Dragomir | Besitzer des Kuriositätenladens in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Familie Durst | Kinder: Roswalda, Thornbold, Walter; Eltern: Gustav, Elizabeth | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| Freg | Vor Vetteln geretteter Junge aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Gertruda | Tochter von Marie, verschwunden | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| [Ireena Koljanovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena) | Ziel von Strahd, Schwester von Ismark | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Ismark Koljanovich | Bürgermeister von Barovia-Stadt, Bruder von Ireena | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| König Barov | Vater von Strahd, von Dämmerelfen getötet, Barovia nach ihm benannt | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Königin Ravenovia | Mutter von Strahd, Schloss Ravenloft nach ihr benannt | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Lady Petrovna | Unterstützte Elizabeth Durst bei Ritualen und Experimenten | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| Lasuo Strassnier | Wirt im Gasthaus vor dem Nebel | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| Madame Eva | Ehrwürdige Vistana-Seherin, lagert am Tser See | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Marie | Verrückte aus Barovia-Stadt, vermisst Tochter Gertruda, besitzt Hund Lanzelot | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Mütterchen | stärkste Vettel aus der Mühle, verkauft verzauberte Pasteten in Barovia-Stadt | [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Myrtel | Vor Vetteln gerettetes Mädchen aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| [Rabe](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rabe) | Mysteriöser Vogel, der Gruppe verfolgt und ihnen hilft | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Rina | Vistana aus Gruppe von Madame Eva | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| [Strahd von Zarovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd) | BBEG, Vampir | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia)<br>[Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Vater Donnovan | Priester von Barovia-Stadt, Vater von Doru | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |

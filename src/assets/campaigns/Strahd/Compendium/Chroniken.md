@@ -1,12 +1,6 @@
 
 
-
-
-
-
-## Chronik von Barovia
-
-### Vor dem Nebel
+## Vor dem Nebel
 - erste Talbewohner: druidische Stämme in Wäldern (Waldvolk) und Bergen (Bergvolk)  
 - Anbetung der Naturgöttinnen, die über Tal wachten  
 
@@ -14,7 +8,7 @@
 
 
 
-### Erste Siedlungen
+## Erste Siedlungen
 - Vermischung Waldvolk und Siedler aus anderen Tälern  
 - Vorgänger der Dörfer und Städte bilden sich: Vallaki, Krezk, Berez  
 - meisten Leute, ob sesshaft oder nicht, verehren die drei Herrinnen  
@@ -24,7 +18,8 @@
 
 
 
-### Ankunft der Magier
+## Ankunft der Magier
+
 
 
 
@@ -33,7 +28,10 @@
 - lebten abseits der Siedlungen (blieben unter sich), aber trotzdem wirtschaftlicher und zivilisatorischer Aufschwung  
 - Magier verschwanden plötzlich und geheimnisvoll, wie einst gekommen  
 
-### Strahds Ankunft
+## Strahds Ankunft
+
+
+
 
 
 
@@ -55,7 +53,8 @@
 
 
 
-### Der Fall der Nebel
+
+## Der Fall der Nebel
 - wenig bekannt zu Tag außer Gerücht: Vorfall im Schloss, bei dem Adlige und Wachen zu Tode kamen  
 - seit dem Tag magischer Nebel um Tal, der Verlassen des Tals verhindert und Sonne verdeckt  
 - Grässlichkeiten zogen ins Tal ein (Geister, Monster, Kinder entführt oder emotionslos geboren)  
