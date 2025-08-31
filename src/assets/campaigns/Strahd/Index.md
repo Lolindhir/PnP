@@ -29,10 +29,10 @@
 | Remaniu *[Bezeichnung]* | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Rowena | [Rowena](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/rowena) |
 | Schloss Ravenloft *[Ort, Landmarke]* | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
-| Session 01 *[Session]* | [Session 01](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
-| Session 02 *[Session]* | [Session 02](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
-| Session 03 *[Session]* | [Session 03](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Session 04 *[Session]* | [Session 04](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Session 01 - Todesvilla *[Session]* | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| Session 02 - Die erste Begegnung *[Session]* | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Session 03 - Schicksal und Pasteten *[Session]* | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Session 04 - Austreibungen *[Session]* | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Strahd von Zarovich *[NPC]* | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |
 | Strahd von Zarovich *[NPC]* | [Strahd von Zarovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd_zarovich) |
 | Strahd-Gefolgschaft *[Fraktion]* | [Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia) |

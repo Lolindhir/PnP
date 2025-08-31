@@ -56,10 +56,10 @@
 | Ritual-Brief Petrovna | Brief von Elizabeth Durst an Lady Petrovna, die ihr offenbar Tipps für das Ritual mit Kind gegeben hat |
 | [Rowena](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/rowena) | - |
 | Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen |
-| [Session 01](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) | Nebel nach Barovia und Durst-Villa |
-| [Session 02](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) | Barovia-Stadt, Ireena und Ismark Koljanovich, Vampir-Sohn des Pfarrers und erste Begegnung mit Strahd |
-| [Session 03](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) | Zum Tser See mit Zombies und Wölfen, Madame Eva Weissagung „Fäden des Schicksals“, Vistani-Reiter Richtung Vallaki, Kinderrettung vor Mühlen-Vetteln |
-| [Session 04](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) | - |
+| [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) | Nebel nach Barovia und Durst-Villa |
+| [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) | Barovia-Stadt, Ireena und Ismark Koljanovich, Vampir-Sohn des Pfarrers und erste Begegnung mit Strahd |
+| [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) | Zum Tser See mit Zombies und Wölfen, Madame Eva Weissagung „Fäden des Schicksals“, Vistani-Reiter Richtung Vallaki, Kinderrettung vor Mühlen-Vetteln |
+| [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) | - |
 | Strahd Brief | Brief von Strahd an Gustav Durst, offenbart sich als skrupelloser Herrscher und erwähnt Unsterblichkeit |
 | [Strahd von Zarovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd_zarovich) | BBEG, Vampir |
 | Strahd-Gefolgschaft | Strahd und seine Untergebenen und Kreaturen |

@@ -17,7 +17,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Glossary_NPC.md",
+				"filename": "GlossaryIndex_NPC.md",
 				"children": []
 			},
 			{
@@ -28,7 +28,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Glossary_Fraktion.md",
+				"filename": "GlossaryIndex_Fraktion.md",
 				"children": []
 			},
 			{
@@ -39,7 +39,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Glossary_Ort.md",
+				"filename": "GlossaryIndex_Ort.md",
 				"children": []
 			},
 			{
@@ -50,7 +50,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Glossary_Gegenstand.md",
+				"filename": "GlossaryIndex_Gegenstand.md",
 				"children": []
 			},
 			{
@@ -61,7 +61,7 @@
 				"indexname": "",
 				"indexCategory": "",
 				"indexSubCategory": "",
-				"filename": "Index_Session.md",
+				"filename": "Glossary_Session.md",
 				"children": []
 			}
 		]
@@ -296,7 +296,7 @@
 				"name": "Session 1 - Todesvilla",
 				"breadcrumb": "Session 1",
 				"indexing": "title",
-				"indexname": "Session 01",
+				"indexname": "Session 01 - Todesvilla",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/001.md",
@@ -307,7 +307,7 @@
 				"name": "Session 2 - Die erste Begegnung",
 				"breadcrumb": "Session 2",
 				"indexing": "title",
-				"indexname": "Session 02",
+				"indexname": "Session 02 - Die erste Begegnung",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/002.md",
@@ -318,7 +318,7 @@
 				"name": "Session 3 - Schicksal und Pasteten",
 				"breadcrumb": "Session 3",
 				"indexing": "title",
-				"indexname": "Session 03",
+				"indexname": "Session 03 - Schicksal und Pasteten",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/003.md",
@@ -329,7 +329,7 @@
 				"name": "Session 4 - Austreibungen",
 				"breadcrumb": "Session 4",
 				"indexing": "title",
-				"indexname": "Session 04",
+				"indexname": "Session 04 - Austreibungen",
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/004.md",
