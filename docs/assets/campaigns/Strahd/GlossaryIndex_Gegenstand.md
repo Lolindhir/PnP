@@ -5,6 +5,7 @@
 | Leeres Stundenglas | Dragomirs verfluchter Gegenstand, Jona, entweiht | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Mumifizierter Apfel | Dragomirs verfluchter Gegenstand, Jennar, entweiht | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Obsidiankelch | Dragomirs verfluchter Gegenstand, Rowena | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Puppe mit Wechselköpfen | für Arigals Nichte aus Blinskis Spielzeugladen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Ritual-Brief Petrovna | Brief von Elizabeth Durst an Lady Petrovna, die ihr offenbar Tipps für das Ritual mit Kind gegeben hat | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Strahd Brief  | Brief von Strahd an Gustav Durst, offenbart sich als skrupelloser Herrscher und erwähnt Unsterblichkeit | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Verzauberte Pasteten | Von „Mütterchen“ mit Enchantment belegt, umsonst erhalten | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |

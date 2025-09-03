@@ -24,3 +24,17 @@
   - Ismark Koljanovich bittet PCs, Ireena nach Vallaki zur Kirche Lathanders zu bringen  
   - PCs planen Schutzmaßnahmen und Vorbereitung der Reise  
   - Beobachtung der Auswirkungen von Strahds Präsenz auf Ireena
+
+### Session 03 - Schicksal und Pasteten
+
+- Begleitung der Gruppe zur Brücke über den Ivlis und zum Tser-See
+- Unterweisung von Jennar über lokale Kräuter während der Reise  
+- Beteiligung an Rettungsaktion der Waisenkinder Freg und Myrtel aus der Mühle der Vetteln  
+
+### Session 04 - Austreibungen
+
+- Gruppe geleitet Ireena nach Vallaki und dort zur Kirche St. Andrals
+- dort verbleibt sie 
+- Gibt Hinweise zur Stadt und stellt Kontakte her
+- Bemüht sich um Termin beim Bürgermeister Vargas Vallakovich am nächsten Tag
+- Könnte Zugang zu Bibliothek erhalten, um Informationen zu recherchieren

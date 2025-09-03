@@ -21,3 +21,20 @@
   - benutzt von Vetteln, die Kinder essen und Pasteten, die Menschen süchtig machen, herstellen
   - zwei Kinder gerettet, eine Vettel getötet
   - erfolgreich geflohen bevor dritte Vettel (Mütterchen) angekommen war
+- Ankunft in Vallaki
+- Blinskis Spielzeugladen -> Puppe für Vistani-Reiter
+- Kirche St. Andral mit Vater Lucian, Waisenhaus daneben (Frau Belasko)
+  - Knochen gestohlen, Ritual in 3 Tagen wiederholen
+  - Ireena in Kirche gebracht
+  - Heinrich, besessen von Dämon, besiegt
+  - Verweis auf Hendrick van der Vaart, der Knochendiebstahl beauftragt hat
+- Blauwasser Gasthaus:
+  - Infos von Wirtin Danrika und Urwin Martikoff zum Zauberer der Weine und Bitte dort nachzusehen, warum Lieferungen ausbleiben
+  - Infos zu Van Richten und Jägern am Zarovich-See
+  - Halbelb Rektario gibt viele Informationen
+  - Einladung zu wichtiger Unterredung von Fiona Wachter am nächsten Tag
+- Hendrick van der Vaart und Vampirin:
+  - Sargbauer, hat Knochen beauftragt zu stehlen, Vampirin auf Dachboden
+  - Vampirin will Kirche zerstören, Jennar töten → Kampf, flieht über Dächer
+  - Knochen können zurückgebracht werden, Ritual „Hallow“ erneuerbar
+- Aufbruch zum Vistani-Lager nahe Vallaki, während Ireena Audienz beim Bürgermeister ersucht

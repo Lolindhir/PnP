@@ -210,6 +210,17 @@
 						"children": []				
 					},
 					{
+						"id": "rektario",
+						"name": "Rektario",
+						"breadcrumb": "Rektario",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Rektario.md",
+						"children": []				
+					},
+					{
 						"id": "strahd",
 						"name": "Strahd von Zarovich",
 						"breadcrumb": "Strahd",
@@ -218,6 +229,17 @@
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
 						"filename": "/NPCs/Strahd.md",
+						"children": []				
+					},
+					{
+						"id": "totenkopfvampirin",
+						"name": "Vampirin mit Totenkopfmaske",
+						"breadcrumb": "Totenkopfvampirin",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Totenkopfvampirin.md",
 						"children": []				
 					}
 				]

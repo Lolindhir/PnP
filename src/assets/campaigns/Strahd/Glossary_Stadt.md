@@ -5,4 +5,4 @@
 | Barovia-Stadt | - |
 | [Berez](https://lolindhir.github.io/PnP/campaigns/strahd/locations/berez) | Siedlung oder Stadt, Infos fehlen noch; wurde in Vergangenheit von Flutwelle Strahds getroffen |
 | [Krezk](https://lolindhir.github.io/PnP/campaigns/strahd/locations/krezk) | Weitere große Stadt |
-| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | Große Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Waisenhaus; Vistani-Lager in der Nähe |
+| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | größte Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Vistani-Lager in der Nähe |

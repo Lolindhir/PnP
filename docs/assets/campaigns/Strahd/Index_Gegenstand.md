@@ -5,6 +5,7 @@
 | Leeres Stundenglas | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Mumifizierter Apfel | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Obsidiankelch | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Puppe mit Wechselköpfen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Ritual-Brief Petrovna | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Strahd Brief  | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Verzauberte Pasteten | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |

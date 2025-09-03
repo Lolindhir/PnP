@@ -19,6 +19,7 @@
 | Bilderaht Kandemir | Besitzer des Ausrüstungsladens in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt) |
 | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) | - | - |
 | Dämmerelfen | Mit Strahd verfeindete und von ihm ausgelöschte Armee, die seinen Vater getötet hat | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden)<br>[Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Darnika Martikoff | Wirtin des Blauwasser Gasthauses, Tochter Besitzer Weingut Zauberer der Weine | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Die drei Herrinnen | - | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | Doru | Vampir von Strahd, Sohn von Vater Donnovan, 10 Jahre verwandelt und eingesperrt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Dragomir | Besitzer des Kuriositätenladens in Barovia-Stadt | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
@@ -29,22 +30,29 @@
 | [Fäden des Schicksals](https://lolindhir.github.io/PnP/campaigns/strahd/compass/schicksalsfäden) | - | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Fall der Nebel | - | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | Familie Durst | Kinder: Roswalda, Thornbold, Walter; Eltern: Gustav, Elizabeth | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| Fiona Wachter | Oberhaupt der Wachter Familie aus Vallaki, Einladung an Gruppe/Jona | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Fleischmonster | - | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
-| Freg | Vor Vetteln geretteter Junge aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Frau Belasko | Leiterin des Waisenhauses in Vallaki | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Freg | Vor Vetteln geretteter Junge aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Geist | - | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Gertruda | Tochter von Marie, verschwunden | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Geschichte Barovias | Hunderte Jahre alte Chronik aus Durst-Haus, beginnt sofort zu zerfallen | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Ghul | - | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | Giorgio | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | [Gottheiten](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/deities) | - | - |
+| Heinrich | Kind aus Waisenhaus, zeitweise von Dämon besessen, verantwortlich für negative Magie-Runen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Hendrick van der Vaart | Sargbauer, beauftragte Millivoi, Knochen zu stehlen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Herrinnen des Waldes | - | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | Hexenzirkel | (Name?) Gerücht, dass einer bei Berez existieren soll | - |
-| [Ireena Koljanovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena) | Ziel von Strahd, Schwester von Ismark | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| [Ireena Koljanovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/ireena) | Ziel von Strahd, Schwester von Ismark | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Ismark Koljanovich | Bürgermeister von Barovia-Stadt, Bruder von Ireena | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Ivlis | Fluss, der durch Barovia fließt | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Izek Straski | Chef der Vallaki-Stadtwache, roter Tiefling-Arm, hartes und oft ungerechtes Vorgehen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Jägerin der Berge | Naturgöttin | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | [Jennar Sunblessed](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jennar) | - | - |
+| Jevgeni Kruschkin | Jäger am Zarovich-See, arbeitet mit Solda Soldarovich zusammen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | [Jona Halvarson](https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona) | - | - |
+| Karl Wachter | Sohn von Stella Wachter | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | König Barov | Vater von Strahd, von Dämmerelfen getötet, Barovia nach ihm benannt | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | Königin Ravenovia | Mutter von Strahd, Schloss Ravenloft nach ihr benannt | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | [Krezk](https://lolindhir.github.io/PnP/campaigns/strahd/locations/krezk) | Weitere große Stadt | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
@@ -55,19 +63,23 @@
 | Madame Eva | Ehrwürdige Vistana-Seherin, lagert am Tser See | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | [Magierzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/magierzirkel) | Vor 1000 Jahren im Tal gelebt, dann plötzlich wieder verschwunden | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | Marie | Verrückte aus Barovia-Stadt, vermisst Tochter Gertruda, besitzt Hund Lanzelot | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Millivoi | Bewohner des Waisenhauses, hat Knochen für Hendrick gestohlen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | [Monster](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters) | - | - |
 | Mortu | Ausgestoßene Vistani, haben Narbe unter Auge | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Mumifizierter Apfel | Dragomirs verfluchter Gegenstand, Jennar, entweiht | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Mütterchen | stärkste Vettel aus der Mühle, verkauft verzauberte Pasteten in Barovia-Stadt | [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Myrtel | Vor Vetteln gerettetes Mädchen aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Myrtel | Vor Vetteln gerettetes Mädchen aus Barovia-Stadt | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Naturgöttinnen | Drei Gottheiten angebetet durch Naturvölker, auch bekannt als "Herrinnen des Waldes" oder "Die drei Herrinnen" | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker)<br>[Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) | Waldvolk & Bergvolk, Anhänger der drei Naturgöttinnen, leben zurückgezogen in der Wildnis, gelten als feindselig und vogelfrei | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
-| Nebelberührte/Sonnenberührte | Bezeichnung für Menschen ohne bzw. mit Emotionen | - |
+| Nebelberührte, Sonnenberührte | Bezeichnung für Menschen ohne bzw. mit Emotionen | - |
+| Niederer Dämon | - | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Normale Bevölkerung | Eher bäuerlich, sehr gläubig, Vorurteile gegenüber Fremden und Vistani, eifersüchtig auf deren Reisefähigkeit | - |
 | Obsidiankelch | Dragomirs verfluchter Gegenstand, Rowena | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden) | Ritterorden, gegründet von Argynvost, ausgelöscht durch Strahd | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
-| [Rabe](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rabe) | Mysteriöser Vogel, der Gruppe verfolgt und ihnen hilft | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
+| Puppe mit Wechselköpfen | für Arigals Nichte aus Blinskis Spielzeugladen | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| [Rabe](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rabe) | Mysteriöser Vogel, der Gruppe verfolgt und ihnen hilft | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Rauni | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
+| [Rektario](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rektario) | Halbelb, Reisender, besitzt magischen Hut und Ring, ehemaliger Gefährte der Vistani | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Remaniu | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Rina | Vistana aus Gruppe von Madame Eva | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Ritual-Brief Petrovna | Brief von Elizabeth Durst an Lady Petrovna, die ihr offenbar Tipps für das Ritual mit Kind gegeben hat | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
@@ -76,24 +88,33 @@
 | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) | Nebel nach Barovia und Durst-Villa | - |
 | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) | Barovia-Stadt, Ireena und Ismark Koljanovich, Vampir-Sohn des Pfarrers und erste Begegnung mit Strahd | - |
 | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) | Zum Tser See mit Zombies und Wölfen, Madame Eva Weissagung „Fäden des Schicksals“, Vistani-Reiter Richtung Vallaki, Kinderrettung vor Mühlen-Vetteln | - |
-| [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) | - | - |
+| [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) | Vallaki, Kirche St. Andral, Waisenhaus, Blinskis Spielzeugladen, Sargbauer Hendrick van der Vaart, Vampirin mit goldener Totenkopfmaske | - |
+| Solda Soldarovich | Erfahrener Jäger am Zarovich-See, spezialisiert auf Wölfe | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Stella Wachter | Adlige aus Vallaki | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Strahd Brief  | Brief von Strahd an Gustav Durst, offenbart sich als skrupelloser Herrscher und erwähnt Unsterblichkeit | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
 | [Strahd von Zarovich](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/strahd) | BBEG, Vampir | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia)<br>[Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | Strahd-Gefolgschaft | Strahd und seine Untergebenen und Kreaturen | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | Sucherin des Waldes | Naturgöttin | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | Svalich-Straße | Straße, die Barovia-Stadt und Vallaki verbindet | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Tser See | Lagerplatz der Vistani um Madame | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | Große Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Waisenhaus; Vistani-Lager in der Nähe | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
-| [Vampir](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vampir) | - | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Urwin Martikoff | Ehemann von Darnika, Mitbetreiber des Blauwasser Gasthauses | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | größte Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Vistani-Lager in der Nähe | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| [Vampir](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vampir) | - | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| [Vampirin mit Totenkopfmaske](https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/totenkopfvampirin) | Unbekannte Vampirin, Auftraggeberin von Hendrick, will Kirche zerstören und Jennar töten | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Van Richten | Legendärer Monsterjäger, bekannt auch an der Schwertküste, lebt möglicherweise noch, keine direkten Begegnungen in Barovia | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Vargas Vallakovich | Langjähriger Bürgermeister von Vallaki, überwacht städtisches Glück, setzt Feste durch, glaubt Glück hält Strahd vom Einfluss ab | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Vater Donnovan | Priester von Barovia-Stadt, Vater von Doru | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Vater Lucian | Priester der Kirche St. Andral | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Verzauberte Pasteten | Von „Mütterchen“ mit Enchantment belegt, umsonst erhalten | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
 | [Vettel](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vettel) | - | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Vettel Dämonenwesen | - | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel) | 3 Vetteln, die Kinder in Durst-Mühle zu Pasteten verarbeitet haben | - |
+| [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel) | 3 Vetteln, die Kinder in Durst-Mühle zu Pasteten verarbeitet haben | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Vistana | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
-| [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) | Volksgruppe Barovias, kann durch den Nebel reisen, nicht-sesshaft in der Nähe von Siedlungen | - |
+| [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) | Volksgruppe Barovias, kann durch den Nebel reisen, nicht-sesshaft in der Nähe von Siedlungen | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
 | Waldvolk | Naturvolk der Wälder, hat sich mit ersten Siedlern vermischt | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker)<br>[Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
 | Weberin des Sumpfes | Naturgöttin | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) |
 | Wolf | - | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Zarovich-See | Großer See in Barovia, nördlich von Vallaki | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Zauberer der Kleinigkeiten | Besitzer von Blinskis Spielzeugladen, seltsame, gruselige Spielzeuge, Narrenkostüm | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
 | Zombie | - | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |

@@ -14,5 +14,6 @@
 | Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen |
 | Svalich-Straße | Straße, die Barovia-Stadt und Vallaki verbindet |
 | Tser See | Lagerplatz der Vistani um Madame |
-| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | Große Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Waisenhaus; Vistani-Lager in der Nähe |
+| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | größte Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Vistani-Lager in der Nähe |
+| Zarovich-See | Großer See in Barovia, nördlich von Vallaki |
 | Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde |

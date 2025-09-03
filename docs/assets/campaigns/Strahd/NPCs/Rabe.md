@@ -15,3 +15,7 @@
 - wird von den Vetteln attackiert und schwer verletzt, bleibt jedoch standhaft  
 - nach Rettung der Kinder führt er die PCs zu einem sicheren Heuschober  
 - fliegt schwer verletzt davon; Jona erkennt, dass er nicht magisch ist
+
+### Session 04 - Austreibungen
+
+- Raben sitzen auf Dachfürst des Blauwasser Gasthauses in Vallaki
