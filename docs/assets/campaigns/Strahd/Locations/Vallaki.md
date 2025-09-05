@@ -85,7 +85,6 @@
 - **Zauberer der Kleinigkeiten** – Besitzer Blinskis Spielzeugladen  
 - Adlige Häuser: Wachter, Vallakovich  
 
----
 
 
 ---

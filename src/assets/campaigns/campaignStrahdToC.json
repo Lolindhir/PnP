@@ -1,72 +1,5 @@
 [
 	{
-		"id": "overviews",
-		"name": "Übersichten",
-		"breadcrumb": "Übersichten",
-		"indexing": "none",
-		"indexname": "",
-		"indexCategory": "",
-		"indexSubCategory": "",
-		"filename": "",
-		"children": [
-			{
-				"id": "overview_npcs",
-				"name": "NPC-Übersicht",
-				"breadcrumb": "NPCs",
-				"indexing": "none",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "GlossaryIndex_NPC.md",
-				"children": []
-			},
-			{
-				"id": "overview_factions",
-				"name": "Fraktionen-Übersicht",
-				"breadcrumb": "Fraktionen",
-				"indexing": "none",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "GlossaryIndex_Fraktion.md",
-				"children": []
-			},
-			{
-				"id": "overview_locations",
-				"name": "Ort-Übersicht",
-				"breadcrumb": "Orte",
-				"indexing": "none",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "GlossaryIndex_Ort.md",
-				"children": []
-			},
-			{
-				"id": "overview_items",
-				"name": "Gegenstands-Übersicht",
-				"breadcrumb": "Gegenstände",
-				"indexing": "none",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "GlossaryIndex_Gegenstand.md",
-				"children": []
-			},
-			{
-				"id": "overview_sessions",
-				"name": "Sessionübersicht",
-				"breadcrumb": "Sessions",
-				"indexing": "none",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "Glossary_Session.md",
-				"children": []
-			}
-		]
-	},
-	{
 		"id": "compass",
 		"name": "Plotkompass",
 		"breadcrumb": "Kompass",
@@ -132,6 +65,17 @@
 		"indexSubCategory": "",
 		"filename": "",
 		"children": [
+			{
+				"id": "overview_npcs",
+				"name": "NPC-Übersicht",
+				"breadcrumb": "NPCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_NPC.md",
+				"children": []
+			},
 			{
 				"id": "pcs",
 				"name": "Spielercharaktere",
@@ -257,6 +201,17 @@
 		"filename": "",
 		"children": [
 			{
+				"id": "overview_factions",
+				"name": "Fraktionen-Übersicht",
+				"breadcrumb": "Fraktionen",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Fraktion.md",
+				"children": []
+			},
+			{
 				"id": "magierzirkel",
 				"name": "Magierzirkel",
 				"breadcrumb": "Magierzirkel",
@@ -324,6 +279,17 @@
 		"filename": "",
 		"children": [
 			{
+				"id": "overview_locations",
+				"name": "Ort-Übersicht",
+				"breadcrumb": "Orte",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Ort.md",
+				"children": []
+			},
+			{
 				"id": "barovia_stadt",
 				"name": "Barovia Stadt",
 				"breadcrumb": "Barovia Stadt",
@@ -380,6 +346,17 @@
 		"filename": "",
 		"children": [
 			{
+				"id": "overview_items",
+				"name": "Gegenstands-Übersicht",
+				"breadcrumb": "Gegenstände",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Gegenstand.md",
+				"children": []
+			},
+			{
 				"id": "lore",
 				"name": "Lore",
 				"breadcrumb": "Lore",
@@ -389,6 +366,17 @@
 				"indexSubCategory": "",
 				"filename": "",
 				"children": [
+					{
+						"id": "denominations",
+						"name": "Bezeichnungs-Übersicht",
+						"breadcrumb": "Bezeichnungen",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "GlossaryIndex_Bezeichnung.md",
+						"children": []
+					},
 					{
 						"id": "chronicles_barovia",
 						"name": "Chroniken von Barovia",
@@ -459,6 +447,17 @@
 		"indexSubCategory": "",
 		"filename": "",
 		"children": [
+			{
+				"id": "overview_sessions",
+				"name": "Sessionübersicht",
+				"breadcrumb": "Sessions",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Glossary_Session.md",
+				"children": []
+			},
 			{
 				"id": "session001",
 				"name": "Session 1 - Todesvilla",

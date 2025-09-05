@@ -3,7 +3,7 @@
 | :---------------------------- | :------------- | :------------------------------------------------------------------------------------------------------------ |
 | Hexenzirkel                   | Fraktion       | (Name?) Gerücht, dass einer bei Berez existieren soll                                                         |
 | Mortu                         | Fraktion       | Ausgestoßene Vistani, haben Narbe unter Auge                                                                  |
-| Nebelberührte, Sonnenberührte | Fraktion       | Bezeichnung für Menschen ohne bzw. mit Emotionen                                                              |
+| Nebelberührte, Sonnenberührte | Bezeichnung    | Bezeichnung für Menschen ohne bzw. mit Emotionen                                                              |
 | Normale Bevölkerung           | Fraktion       | Eher bäuerlich, sehr gläubig, Vorurteile gegenüber Fremden und Vistani, eifersüchtig auf deren Reisefähigkeit |
 | Strahd-Gefolgschaft           | Fraktion       | Strahd und seine Untergebenen und Kreaturen                                                                   |
 | Amphail                       | Ort, Stadt     | Ziel der Reise bevor im Nebel verschwunden (Schwertküste)                                                     |

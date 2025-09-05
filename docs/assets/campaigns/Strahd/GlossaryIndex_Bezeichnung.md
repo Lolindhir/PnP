@@ -1,6 +1,7 @@
 | Bezeichnung | Beschreibung | Verweis |
 |:------------|:----------------|:----------------|
 | Giorgio | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
+| Nebelberührte, Sonnenberührte | Bezeichnung für Menschen ohne bzw. mit Emotionen | - |
 | Rauni | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Remaniu | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |
 | Vistana | - | [Vistani](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani) |

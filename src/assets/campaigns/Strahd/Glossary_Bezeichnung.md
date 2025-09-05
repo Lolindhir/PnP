@@ -1,6 +1,7 @@
 | Bezeichnung | Beschreibung |
 |:------------|:----------------|
 | Giorgio | - |
+| Nebelberührte, Sonnenberührte | Bezeichnung für Menschen ohne bzw. mit Emotionen |
 | Rauni | - |
 | Remaniu | - |
 | Vistana | - |

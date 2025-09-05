@@ -6,7 +6,6 @@
 | [Magierzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/magierzirkel) | Vor 1000 Jahren im Tal gelebt, dann plötzlich wieder verschwunden |
 | Mortu | Ausgestoßene Vistani, haben Narbe unter Auge |
 | [Naturvölker](https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker) | Waldvolk & Bergvolk, Anhänger der drei Naturgöttinnen, leben zurückgezogen in der Wildnis, gelten als feindselig und vogelfrei |
-| Nebelberührte, Sonnenberührte | Bezeichnung für Menschen ohne bzw. mit Emotionen |
 | Normale Bevölkerung | Eher bäuerlich, sehr gläubig, Vorurteile gegenüber Fremden und Vistani, eifersüchtig auf deren Reisefähigkeit |
 | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden) | Ritterorden, gegründet von Argynvost, ausgelöscht durch Strahd |
 | Strahd-Gefolgschaft | Strahd und seine Untergebenen und Kreaturen |
