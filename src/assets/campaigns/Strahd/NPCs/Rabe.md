@@ -1,5 +1,11 @@
 
 
+
+
+---
+
+## Interaktionen
+
 ### Session 02 - Die erste Begegnung
 
 - PCs treffen auf einem Baum in Barovia-Stadt einen auffälligen schwarzen Raben  

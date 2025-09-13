@@ -31,7 +31,7 @@
 
 ### Session 04 - Austreibungen
 
-- Rektario gibt Infos über lokale Gegebenheiten und Gerüchte
+- Rictavio gibt Infos über lokale Gegebenheiten und Gerüchte
 - Kennt Vistani und deren Lager, hat längere Zeit in Barovia verbracht
 - Magischer Hut und Ring, Tiger im Wager als Sicherheit
 - Erzählt über potentielle Verbindung von Adligen zur Vergangenheit Strahds

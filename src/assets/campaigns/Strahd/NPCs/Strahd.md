@@ -5,7 +5,7 @@
 - ist unsterblich und vermag es andere ebenfalls unsterblich zu machen
 - [Vampir](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/monsters/vampir)
 - kontrolliert den Nebel
-- kontrolliert die Natur (bspw. Flutwelle auf [Berez](https://lolindhir.github.io/PnP/campaigns/strahd/locations/berez))
+- kontrolliert die Natur (bspw. Flutwelle auf Berez)
 - benutzt Bevölkerung quasi als Vieh
 - viele verstecken ihre schönen Töchter und Söhne vor ihm, sodass sie kaum das Haus verlassen
 - Kreaturen unter seiner Kontrolle:

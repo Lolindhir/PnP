@@ -1,9 +1,10 @@
 | Landmarke | Beschreibung |
 |:------------|:----------------|
-| Argynvostholt | Festungsruine des Ordens des Silberdrachen |
-| Durst-Mühle | Behausung des Vettel-Zirkels |
-| Elbengräber | alte, überwucherte Gräber - Illusion von erhängten Menschen am Galgen, darunter Jennar |
-| Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen |
+| Baratok See | See in der Nähe Vallakis |
+| Berg Baratok | Berg im Norden Barovias, berüchtigt wegen des dort angeblich stehenden Magierturms |
+| Berg Ghakis | im Süden Barovias, möglicher Standort des Bernsteintempels |
+| Ivlis | Fluss, der durch Barovia fließt |
+| Luna | Fluss, der durch Barovia fließt |
+| Luna See | See südlich von Berez, möglicher Zugangspunkt/Trampelpfade zum Bergsockel von Berg Ghakis |
 | Tser See | Lagerplatz der Vistani um Madame |
-| Zarovich-See | Großer See in Barovia, nördlich von Vallaki |
-| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde |
+| Zarovich See | Großer See in Barovia, nördlich von Vallaki |

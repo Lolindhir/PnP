@@ -60,6 +60,7 @@
 | Background Features | [Background Features](https://lolindhir.github.io/PnP/rules/creation/character_creation/backgrounds/backgrounds_features) |
 | Bait and Switch *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Ball Bearings *[Consumable, Gear]* | [Adventuring Gear](https://lolindhir.github.io/PnP/rules/equipment/adventuring_gear) |
+| Barbarian | [Barbarian](https://lolindhir.github.io/PnP/rules/classes/barbarian) |
 | Battle Maneuvers | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Battleaxe *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Bead *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
@@ -439,6 +440,7 @@
 | Quick Toss *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Race Overview | [Race Overview](https://lolindhir.github.io/PnP/rules/races/race_list) |
 | Radiant *[Damage Type]* | [Damage Types](https://lolindhir.github.io/PnP/rules/glossary/damage_types) |
+| Rage *[Barbarian]* | [Barbarian](https://lolindhir.github.io/PnP/rules/classes/barbarian) |
 | Rally *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
 | Range *[Weapon Property]* | [Weapon Property](https://lolindhir.github.io/PnP/rules/equipment/weapons/weapons_properties) |
 | Ranged Attack | [Making an Attack](https://lolindhir.github.io/PnP/rules/general/pillars/combat/combat_attack) |
@@ -452,6 +454,7 @@
 | Reactive Reagent *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
 | Ready *[Action]* | [Detailed Actions](https://lolindhir.github.io/PnP/rules/general/d20tests_actions/actions/actions_detailed) |
 | Reagent *[Material]* | [Magical Material](https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components) |
+| Reckless Attack *[Barbarian]* | [Barbarian](https://lolindhir.github.io/PnP/rules/classes/barbarian) |
 | Recovering *[Adventuring]* | [Recovering](https://lolindhir.github.io/PnP/rules/adventuring/recovering) |
 | Recovery Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Redirect *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
@@ -621,8 +624,11 @@
 | Weiße Schicksalspunkte | [Schicksalspunkte](https://lolindhir.github.io/PnP/rules/general/schicksalspunkte) |
 | Whip *[Weapon]* | [Weapon](https://lolindhir.github.io/PnP/rules/equipment/weapons) |
 | Whirlwind Attack *[Maneuver]* | [Battle Maneuvers](https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers) |
+| Wild Heart *[Barbarian]* | [Wild Heart](https://lolindhir.github.io/PnP/rules/classes/barbarian/wild_heart) |
 | Wisdom Potion *[Consumable, Potion]* | [Potion](https://lolindhir.github.io/PnP/rules/equipment/potions) |
 | Withdraw *[Cunning Strike]* | [Cunning Strikes](https://lolindhir.github.io/PnP/rules/classes/rogue/cunning_strikes) |
 | Wizard | [Wizard](https://lolindhir.github.io/PnP/rules/classes/wizard) |
 | Wood Elf *[Race]* | [Elf](https://lolindhir.github.io/PnP/rules/races/elf) |
+| World Tree *[Barbarian]* | [World Tree](https://lolindhir.github.io/PnP/rules/classes/barbarian/world_tree) |
 | Wretched *[Lifestyle]* | [Maintaining a Lifestyle](https://lolindhir.github.io/PnP/rules/downtime/lifestyle) |
+| Zealot *[Barbarian]* | [Zealot](https://lolindhir.github.io/PnP/rules/classes/barbarian/zealot) |

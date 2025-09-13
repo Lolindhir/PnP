@@ -1,9 +1,10 @@
 | Landmarke | Beschreibung | Verweis |
 |:------------|:----------------|:----------------|
-| Argynvostholt | Festungsruine des Ordens des Silberdrachen | [Orden des Silberdrachens](https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden)<br>[Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
-| Durst-Mühle | Behausung des Vettel-Zirkels | [Vettelzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel)<br>[Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Elbengräber | alte, überwucherte Gräber - Illusion von erhängten Menschen am Galgen, darunter Jennar | [Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Schloss Ravenloft | Sitz von Strahd und seinen Untergebenen | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| Baratok See | See in der Nähe Vallakis | [Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |
+| Berg Baratok | Berg im Norden Barovias, berüchtigt wegen des dort angeblich stehenden Magierturms | [Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |
+| Berg Ghakis | im Süden Barovias, möglicher Standort des Bernsteintempels | [Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |
+| Ivlis | Fluss, der durch Barovia fließt | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| Luna | Fluss, der durch Barovia fließt | [Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |
+| Luna See | See südlich von Berez, möglicher Zugangspunkt/Trampelpfade zum Bergsockel von Berg Ghakis | [Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |
 | Tser See | Lagerplatz der Vistani um Madame | [Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 03 - Schicksal und Pasteten](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003) |
-| Zarovich-See | Großer See in Barovia, nördlich von Vallaki | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
-| Zauberer der Weine | Weingut weit im Westen, Herkunft des Weins, der in Taverne vor dem Nebel getrunken wurde | [Barovia Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |
+| Zarovich See | Großer See in Barovia, nördlich von Vallaki | [Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004) |

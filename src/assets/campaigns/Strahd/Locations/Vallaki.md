@@ -25,7 +25,7 @@
 ## Stadtverwaltung
 
 - Bürgermeister: **Vargas Vallakovich**, regiert 10–15 Jahre, will Glück in der Bevölkerung zur Abschirmung gegen Strahd.  
-- Stadtwache durchsetzt strenge Kontrolle, Hauptquartier: **Haus der Vernunft**, Chef: **Izek Straski** (roter Tiefling-Arm, „Teufelsarm“).  
+- Stadtwache durchsetzt strenge Kontrolle, Hauptquartier + Kerker: **Haus der Vernunft**, Chef: **Izek Straski** (roter Tiefling-Arm, „Teufelsarm“).  
 - Gut ausgestattete Bibliothek vorhanden.  
 - Adlige Häuser: Wachter, Vallakovich.  
 
@@ -62,7 +62,13 @@
 
 ### Dämmerlichtladen
 
-- Krämerladen, kleinere Versorgungsgeschäfte.
+- Krämerladen
+- kleineres Versorgungsgeschäft
+
+### Kuss der Schlange
+
+- Besitzerin Halbelfin + Vistani
+- verkauft Tränke
 
 ---
 
@@ -75,15 +81,82 @@
 
 ## Wichtige NPCs (Fakten)
 
-- **Vargas Vallakovich** – Bürgermeister  
+- **Vargas Vallakovich** – Bürgermeister von Vallaki, setzt Glücksfeste durch  
+- **Lydia Vallakovich** – Ehefrau des Bürgermeisters  
+- **Viktor Vallakovich** – Sohn, experimentiert mit Magie (Teleportation)  
 - **Izek Straski** – Chef der Stadtwache, roter Tiefling-Arm  
-- **Vater Lucian** – Kirche St. Andral  
-- **Frau Belasko** – Waisenhausleitung  
-- **Millivoi** – Bewohner Waisenhaus, krank  
-- **Darnika Martikoff** – Wirtin Blauwasser Gasthaus  
-- **Urwin Martikoff** – Ehemann Wirtin  
-- **Zauberer der Kleinigkeiten** – Besitzer Blinskis Spielzeugladen  
-- Adlige Häuser: Wachter, Vallakovich  
+- **Vater Lucian** – Priester der Kirche St. Andral  
+- **Frau Belasko** – Leiterin des Waisenhauses  
+- **Millivoi** – Bewohner des Waisenhauses, hat Knochen gestohlen  
+- **Heinrich** – Kind aus Waisenhaus, besessen von Dämon  
+- **Hendrick van der Vaart** – Sargbauer, beauftragte Knochendiebstahl  
+- **Darnika Martikoff** – Wirtin des Blauwasser Gasthauses  
+- **Urwin Martikoff** – Ehemann der Wirtin, Mitbetreiber  
+- **Blinski** – „Zauberer der Kleinigkeiten“, Besitzer von Blinskis Spielzeugladen  
+- **Bluto** – Fischer/Tagelöhner, von Gruppe getötet bei Arabells Rettung  
+- **Solda Soldarovich** – erfahrener Jäger, spezialisiert auf Wölfe  
+- **Jevgeni Kruschkin** – Jäger, arbeitet mit Solda zusammen  
+- **Fiona Wachter** – Oberhaupt der Familie Wachter, politische Gegenspielerin  
+- **Stella Wachter** – Tochter von Fiona  
+- **Karl Wachter** – Sohn von Fiona  
+- **Nikolai Wachter** – Sohn von Fiona  
+
+### Adlige Häuser
+- **Haus Vallakovich** – Bürgermeisterfamilie, Fokus auf Glücksfeste  
+- **Haus Wachter** – Opposition, Strahd-freundlich, Prophezeiung über „Sonne in Barovia“  
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,6 +171,6 @@
 - Besuch der Kirche St. Andral: Übergabe von Ireena an Vater Lucian, Informationen über gestohlene Knochen und bevorstehendes Ritual erhalten  
 - Besuch des Waisenhauses: Treffen mit Frau Belasko, Verteilung von Geld an Kinder, Untersuchung von Millivois Zimmer und Aufdeckung der dämonischen Besessenheit von Heinrich  
 - Konfrontation mit Heinrich, Dämon wird ausgetrieben, Millivoi wieder bei Sinnen  
-- Erkundigungen in der Stadt: Informationen über die beiden Jäger am Zarovich-See, Van Richten, Stadtbibliothek, Gerüchte über Bürgermeister und Stadtwache  
+- Erkundigungen in der Stadt: Informationen über die beiden Jäger am Zarovich See, Van Richten, Stadtbibliothek, Gerüchte über Bürgermeister und Stadtwache  
 - Aufenthalt im Blauwasser Gasthaus: Austausch von Informationen, Vorbereitung auf zukünftige Aufgaben und Aufträge  
 - Planungen für weitere Aktionen: Termin bei Bürgermeister, Vistani-Lager, Überprüfung von Lieferungen Zauberer der Weine, Einladung Lady Wachter

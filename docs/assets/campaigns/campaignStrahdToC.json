@@ -132,6 +132,17 @@
 				"filename": "",
 				"children": [
 					{
+						"id": "fiona",
+						"name": "Fiona Wachter",
+						"breadcrumb": "Fiona",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Fiona.md",
+						"children": []				
+					},
+					{
 						"id": "ireena",
 						"name": "Ireena Koljanovich",
 						"breadcrumb": "Ireena",
@@ -140,6 +151,17 @@
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
 						"filename": "/NPCs/Ireena.md",
+						"children": []				
+					},
+					{
+						"id": "kasimir",
+						"name": "Kasimir",
+						"breadcrumb": "Kasimir",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Kasimir.md",
 						"children": []				
 					},
 					{
@@ -154,14 +176,25 @@
 						"children": []				
 					},
 					{
-						"id": "rektario",
-						"name": "Rektario",
-						"breadcrumb": "Rektario",
+						"id": "rictavio",
+						"name": "Rictavio",
+						"breadcrumb": "Rictavio",
 						"indexing": "title",
 						"indexname": "",
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
-						"filename": "/NPCs/Rektario.md",
+						"filename": "/NPCs/Rictavio.md",
+						"children": []				
+					},
+					{
+						"id": "van_richten",
+						"name": "Rudolph Van Richten",
+						"breadcrumb": "Van Richten",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/VanRichten.md",
 						"children": []				
 					},
 					{
@@ -184,6 +217,17 @@
 						"indexCategory": "NPC",
 						"indexSubCategory": "",
 						"filename": "/NPCs/Totenkopfvampirin.md",
+						"children": []				
+					},
+					{
+						"id": "vargas",
+						"name": "Vargas Vallakovich",
+						"breadcrumb": "Vargas",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Vargas.md",
 						"children": []				
 					}
 				]
@@ -290,25 +334,25 @@
 				"children": []
 			},
 			{
+				"id": "argynvosthold",
+				"name": "Argynvostholt",
+				"breadcrumb": "Argynvostholt",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/Argynvostholt.md",
+				"children": []
+			},
+			{
 				"id": "barovia_stadt",
-				"name": "Barovia Stadt",
-				"breadcrumb": "Barovia Stadt",
+				"name": "Barovia-Stadt",
+				"breadcrumb": "Barovia-Stadt",
 				"indexing": "title",
 				"indexname": "",
 				"indexCategory": "Ort, Stadt",
 				"indexSubCategory": "",
 				"filename": "/Locations/BaroviaStadt.md",
-				"children": []
-			},
-			{
-				"id": "berez",
-				"name": "Berez",
-				"breadcrumb": "Berez",
-				"indexing": "title",
-				"indexname": "",
-				"indexCategory": "Ort, Stadt",
-				"indexSubCategory": "",
-				"filename": "/Locations/Berez.md",
 				"children": []
 			},
 			{
@@ -323,6 +367,17 @@
 				"children": []
 			},
 			{
+				"id": "ravenloft",
+				"name": "Schloss Ravenloft",
+				"breadcrumb": "Ravenloft",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/Ravenloft.md",
+				"children": []
+			},
+			{
 				"id": "vallaki",
 				"name": "Vallaki",
 				"breadcrumb": "Vallaki",
@@ -331,6 +386,28 @@
 				"indexCategory": "Ort, Stadt",
 				"indexSubCategory": "",
 				"filename": "/Locations/Vallaki.md",
+				"children": []
+			},
+			{
+				"id": "lager_luwasch",
+				"name": "Lager von Luwasch",
+				"breadcrumb": "Luwasch Lager",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Lager",
+				"indexSubCategory": "",
+				"filename": "/Locations/LuwaschLager.md",
+				"children": []
+			},
+			{
+				"id": "zauberer_der_weine",
+				"name": "Zauberer der Weine",
+				"breadcrumb": "Zauberer der Weine",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/ZaubererDerWeine.md",
 				"children": []
 			}
 		]
@@ -500,6 +577,17 @@
 				"indexCategory": "Session",
 				"indexSubCategory": "",
 				"filename": "/Sessions/004.md",
+				"children": []
+			},
+			{
+				"id": "session005",
+				"name": "Session 5 - Wer ist der Böse?",
+				"breadcrumb": "Session 5",
+				"indexing": "title",
+				"indexname": "Session 05 - Wer ist der Böse?",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/005.md",
 				"children": []
 			}
 		]

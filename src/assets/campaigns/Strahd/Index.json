@@ -12,8 +12,20 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Aleksei",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "NPC"
+	},
+	{
+		"term": "Aleksei",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Alenta, Mirabell, Sormia Mortu",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -36,12 +48,24 @@
 		"category": "Monster"
 	},
 	{
-		"term": "Arabelle",
+		"term": "Arabell",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "NPC"
+	},
+	{
+		"term": "Arabell",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
 		"category": "NPC"
 	},
 	{
+		"term": "Arabell",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Argynvost",
 		"reference": "Chroniken von Barovia",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
@@ -55,15 +79,33 @@
 	},
 	{
 		"term": "Argynvostholt",
+		"reference": "Argynvostholt",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/argynvosthold",
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Argynvostholt",
 		"reference": "Chroniken von Barovia",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Argynvostholt",
 		"reference": "Orden des Silberdrachens",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Argynvostholt",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Arigal",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "NPC"
 	},
 	{
 		"term": "Arigal",
@@ -72,8 +114,14 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Arigal",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Arik",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -84,14 +132,20 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Baratok See",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
 		"term": "Barovia",
 		"reference": "Session 01 - Todesvilla",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
 		"category": "Ort"
 	},
 	{
-		"term": "Barovia Stadt",
-		"reference": "Barovia Stadt",
+		"term": "Barovia-Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "Ort, Stadt"
 	},
@@ -121,15 +175,21 @@
 	},
 	{
 		"term": "Berez",
-		"reference": "Berez",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/berez",
-		"category": "Ort, Stadt"
-	},
-	{
-		"term": "Berez",
 		"reference": "Chroniken von Barovia",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
-		"category": "Ort, Stadt"
+		"category": "Ort"
+	},
+	{
+		"term": "Berg Baratok",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
+		"term": "Berg Ghakis",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
 	},
 	{
 		"term": "Bergvolk",
@@ -144,10 +204,52 @@
 		"category": "Fraktion"
 	},
 	{
+		"term": "Bernsteintempel",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
 		"term": "Bilderaht Kandemir",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
+	},
+	{
+		"term": "Blinski",
+		"reference": "Session 04 - Austreibungen",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Blinski",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Blinski",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Bluto",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Bluto",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Champagne du le Stom",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Gegenstand"
 	},
 	{
 		"term": "Chroniken von Barovia",
@@ -163,14 +265,32 @@
 	},
 	{
 		"term": "Dämmerelfen",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Dämmerelfen",
 		"reference": "Orden des Silberdrachens",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Dämmerelfen",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
 		"category": "Fraktion"
 	},
 	{
 		"term": "Darnika Martikoff",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Darnika Martikoff",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -181,7 +301,7 @@
 	},
 	{
 		"term": "Doru",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -193,7 +313,7 @@
 	},
 	{
 		"term": "Dragomir",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -213,36 +333,42 @@
 		"term": "Durst-Mühle",
 		"reference": "Session 01 - Todesvilla",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Durst-Mühle",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Durst-Mühle",
 		"reference": "Vettelzirkel",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vettelzirkel",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Durst-Villa",
 		"reference": "Session 01 - Todesvilla",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
-		"category": "Ort"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Elbengräber",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Fäden des Schicksals",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": ""
+	},
+	{
+		"term": "Fäden des Schicksals",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
 		"category": ""
 	},
 	{
@@ -259,8 +385,26 @@
 	},
 	{
 		"term": "Fiona Wachter",
+		"reference": "Fiona Wachter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/fiona",
+		"category": "NPC"
+	},
+	{
+		"term": "Fiona Wachter",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Fiona Wachter",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Fiona Wachter",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -273,6 +417,12 @@
 		"term": "Frau Belasko",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Frau Belasko",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -330,9 +480,21 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Heinrich",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
 		"term": "Hendrick van der Vaart",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Hendrick van der Vaart",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -342,8 +504,14 @@
 		"category": ""
 	},
 	{
+		"term": "Ireena",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Ireena Koljanovich",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -373,7 +541,7 @@
 	},
 	{
 		"term": "Ismark Koljanovich",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -396,6 +564,18 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Izek Straski",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Izek Straski",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
 		"term": "Jägerin der Berge",
 		"reference": "Naturvölker",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/naturvölker",
@@ -414,6 +594,18 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Jevgeni Kruschkin",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Jevgeni Kruschkin",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
 		"term": "Jona Halvarson",
 		"reference": "Jona Halvarson",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/pcs/jona",
@@ -421,9 +613,63 @@
 	},
 	{
 		"term": "Karl Wachter",
+		"reference": "Fiona Wachter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/fiona",
+		"category": "NPC"
+	},
+	{
+		"term": "Karl Wachter",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
 		"category": "NPC"
+	},
+	{
+		"term": "Karl Wachter",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Karl Wachter",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Kasimir",
+		"reference": "Kasimir",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/kasimir",
+		"category": "NPC"
+	},
+	{
+		"term": "Kasimir",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "NPC"
+	},
+	{
+		"term": "Kasimir",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Katherina",
+		"reference": "Kasimir",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/kasimir",
+		"category": "NPC"
+	},
+	{
+		"term": "Katherina",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Khazans Buch",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Gegenstand"
 	},
 	{
 		"term": "König Barov",
@@ -456,6 +702,24 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Lager von Luwasch",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "Ort, Lager"
+	},
+	{
+		"term": "Lager von Luwasch",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort, Lager"
+	},
+	{
+		"term": "Lager von Madame Eva",
+		"reference": "Session 03 - Schicksal und Pasteten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Ort"
+	},
+	{
 		"term": "Lasuo Strassnier",
 		"reference": "Session 01 - Todesvilla",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001",
@@ -474,6 +738,48 @@
 		"category": "Gegenstand"
 	},
 	{
+		"term": "Luna",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
+		"term": "Luna See",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
+		"term": "Luwasch",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "NPC"
+	},
+	{
+		"term": "Luwasch",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Lydia Vallakovich",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Lydia Vallakovich",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Lydia Vallakovich",
+		"reference": "Vargas Vallakovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/vargas",
+		"category": "NPC"
+	},
+	{
 		"term": "Madame Eva",
 		"reference": "Session 02 - Die erste Begegnung",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
@@ -484,6 +790,18 @@
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
 		"category": "NPC"
+	},
+	{
+		"term": "Magierturm am Baratok See",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
+	},
+	{
+		"term": "Magierturm am Berg Baratok",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
 	},
 	{
 		"term": "Magierzirkel",
@@ -498,6 +816,12 @@
 		"category": "Fraktion"
 	},
 	{
+		"term": "Manuskript eines Jägers",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Gegenstand"
+	},
+	{
 		"term": "Marie",
 		"reference": "Session 02 - Die erste Begegnung",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
@@ -507,6 +831,12 @@
 		"term": "Millivoi",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Millivoi",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -588,6 +918,24 @@
 		"category": "Monster"
 	},
 	{
+		"term": "Nikolai Wachter",
+		"reference": "Fiona Wachter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/fiona",
+		"category": "NPC"
+	},
+	{
+		"term": "Nikolai Wachter",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Nikolai Wachter",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
 		"term": "Obsidiankelch",
 		"reference": "Session 02 - Die erste Begegnung",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
@@ -604,6 +952,12 @@
 		"reference": "Orden des Silberdrachens",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/silberorden",
 		"category": "Fraktion"
+	},
+	{
+		"term": "Piddlewick II",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Gegenstand"
 	},
 	{
 		"term": "Puppe mit Wechselköpfen",
@@ -642,28 +996,52 @@
 		"category": "Bezeichnung"
 	},
 	{
-		"term": "Rektario",
-		"reference": "Rektario",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rektario",
-		"category": "NPC"
-	},
-	{
-		"term": "Rektario",
-		"reference": "Session 04 - Austreibungen",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
-		"category": "NPC"
-	},
-	{
 		"term": "Remaniu",
 		"reference": "Vistani",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
 		"category": "Bezeichnung"
 	},
 	{
+		"term": "Rictavio",
+		"reference": "Rictavio",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/rictavio",
+		"category": "NPC"
+	},
+	{
+		"term": "Rictavio",
+		"reference": "Session 04 - Austreibungen",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Rictavio",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Rina",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
 		"category": "NPC"
+	},
+	{
+		"term": "Ring der Wärme",
+		"reference": "Kasimir",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/kasimir",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Ring der Wärme",
+		"reference": "Lager von Luwasch",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/lager_luwasch",
+		"category": "Gegenstand"
+	},
+	{
+		"term": "Ring der Wärme",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Gegenstand"
 	},
 	{
 		"term": "Ritual-Brief Petrovna",
@@ -678,10 +1056,28 @@
 		"category": ""
 	},
 	{
+		"term": "Rudolph Van Richten",
+		"reference": "Rudolph Van Richten",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/van_richten",
+		"category": "NPC"
+	},
+	{
 		"term": "Schloss Ravenloft",
 		"reference": "Chroniken von Barovia",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Schloss Ravenloft",
+		"reference": "Schloss Ravenloft",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/ravenloft",
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Schloss Ravenloft",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Session 01 - Todesvilla",
@@ -708,15 +1104,51 @@
 		"category": "Session"
 	},
 	{
+		"term": "Session 05 - Wer ist der Böse?",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Session"
+	},
+	{
 		"term": "Solda Soldarovich",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
 		"category": "NPC"
 	},
 	{
+		"term": "Solda Soldarovich",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Solda Soldarovich",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Stella Wachter",
+		"reference": "Fiona Wachter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/fiona",
+		"category": "NPC"
+	},
+	{
 		"term": "Stella Wachter",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Stella Wachter",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Stella Wachter",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -765,7 +1197,7 @@
 		"term": "Svalich-Straße",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
-		"category": "Ort, Weg"
+		"category": "Ort"
 	},
 	{
 		"term": "Tser See",
@@ -786,6 +1218,18 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Urwin Martikoff",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Urwin Martikoff",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
 		"term": "Vallaki",
 		"reference": "Chroniken von Barovia",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia",
@@ -795,6 +1239,12 @@
 		"term": "Vallaki",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Vallaki",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
 		"category": "Ort, Stadt"
 	},
 	{
@@ -840,14 +1290,38 @@
 		"category": "NPC"
 	},
 	{
+		"term": "Van Richten",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
 		"term": "Vargas Vallakovich",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
 		"category": "NPC"
 	},
 	{
+		"term": "Vargas Vallakovich",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Vargas Vallakovich",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Vargas Vallakovich",
+		"reference": "Vargas Vallakovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/vargas",
+		"category": "NPC"
+	},
+	{
 		"term": "Vater Donnovan",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
 		"category": "NPC"
 	},
@@ -861,6 +1335,12 @@
 		"term": "Vater Lucian",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
+		"category": "NPC"
+	},
+	{
+		"term": "Vater Lucian",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
 		"category": "NPC"
 	},
 	{
@@ -900,6 +1380,24 @@
 		"category": "Fraktion"
 	},
 	{
+		"term": "Viktor Vallakovich",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "NPC"
+	},
+	{
+		"term": "Viktor Vallakovich",
+		"reference": "Vallaki",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki",
+		"category": "NPC"
+	},
+	{
+		"term": "Viktor Vallakovich",
+		"reference": "Vargas Vallakovich",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/persons/npcs/vargas",
+		"category": "NPC"
+	},
+	{
 		"term": "Vistana",
 		"reference": "Vistani",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/factions/vistani",
@@ -909,6 +1407,12 @@
 		"term": "Vistani",
 		"reference": "Session 03 - Schicksal und Pasteten",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session003",
+		"category": "Fraktion, Bezeichnung"
+	},
+	{
+		"term": "Vistani",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
 		"category": "Fraktion, Bezeichnung"
 	},
 	{
@@ -948,34 +1452,40 @@
 		"category": "Monster"
 	},
 	{
-		"term": "Zarovich-See",
+		"term": "Zarovich See",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
-		"category": "Ort, Landmarke"
+		"category": "Ort"
 	},
 	{
-		"term": "Zauberer der Kleinigkeiten",
-		"reference": "Session 04 - Austreibungen",
-		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
-		"category": "NPC"
+		"term": "Zarrovich See",
+		"reference": "Session 05 - Wer ist der Böse?",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005",
+		"category": "Ort"
 	},
 	{
 		"term": "Zauberer der Weine",
-		"reference": "Barovia Stadt",
+		"reference": "Barovia-Stadt",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Zauberer der Weine",
 		"reference": "Session 02 - Die erste Begegnung",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Zauberer der Weine",
 		"reference": "Session 04 - Austreibungen",
 		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004",
-		"category": "Ort, Landmarke"
+		"category": "Ort, Dungeon"
+	},
+	{
+		"term": "Zauberer der Weine",
+		"reference": "Zauberer der Weine",
+		"link": "https://lolindhir.github.io/PnP/campaigns/strahd/locations/zauberer_der_weine",
+		"category": "Ort, Dungeon"
 	},
 	{
 		"term": "Zombie",

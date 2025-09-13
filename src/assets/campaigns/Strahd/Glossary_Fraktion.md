@@ -1,7 +1,7 @@
 | Fraktion | Beschreibung |
 |:------------|:----------------|
 | Bergvolk | Naturvolk der Berge |
-| Dämmerelfen | Mit Strahd verfeindete und von ihm ausgelöschte Armee, die seinen Vater getötet hat |
+| Dämmerelfen | Mit Strahd verfeindete und von ihm ausgelöschte Armee, fast ausgestorben, ursprünglich aus dem Feywild |
 | Hexenzirkel | (Name?) Gerücht, dass einer bei Berez existieren soll |
 | [Magierzirkel](https://lolindhir.github.io/PnP/campaigns/strahd/factions/magierzirkel) | Vor 1000 Jahren im Tal gelebt, dann plötzlich wieder verschwunden |
 | Mortu | Ausgestoßene Vistani, haben Narbe unter Auge |

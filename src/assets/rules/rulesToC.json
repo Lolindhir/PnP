@@ -516,6 +516,62 @@
 				"children": []
 			},
 			{
+				"id": "barbarian",
+				"name": "Barbarian",
+				"breadcrumb": "Barbarian",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Barbarian",
+				"filename": "/Classes/Barbarian.md",
+				"children": [
+					{
+						"id": "barbarian_features_table",
+						"name": "Features Table",
+						"breadcrumb": "Features",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Barbarian-FeaturesTable.md",
+						"children": []
+					},
+					{
+						"id": "wild_heart",
+						"name": "Subclass: Path of the Wild Heart",
+						"breadcrumb": "Wild Heart",
+						"indexing": "title",
+						"indexname": "Wild Heart",
+						"indexCategory": "Barbarian",
+						"indexSubCategory": "Barbarian",
+						"filename": "/Classes/Barbarian-WildHeart.md",
+						"children": []
+					},
+					{
+						"id": "world_tree",
+						"name": "Subclass: Path of the World Tree",
+						"breadcrumb": "World Tree",
+						"indexing": "title",
+						"indexname": "World Tree",
+						"indexCategory": "Barbarian",
+						"indexSubCategory": "Barbarian",
+						"filename": "/Classes/Barbarian-WorldTree.md",
+						"children": []
+					},
+					{
+						"id": "zealot",
+						"name": "Subclass: Path of the Zealot",
+						"breadcrumb": "Zealot",
+						"indexing": "title",
+						"indexname": "Zealot",
+						"indexCategory": "Barbarian",
+						"indexSubCategory": "Barbarian",
+						"filename": "/Classes/Barbarian-Zealot.md",
+						"children": []
+					}
+				]
+			},
+			{
 				"id": "fighter",
 				"name": "Fighter",
 				"breadcrumb": "Fighter",

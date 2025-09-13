@@ -360,6 +360,12 @@
 		"category": "Consumable, Gear"
 	},
 	{
+		"term": "Barbarian",
+		"reference": "Barbarian",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian",
+		"category": ""
+	},
+	{
 		"term": "Battle Maneuvers",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
@@ -2634,6 +2640,12 @@
 		"category": "Damage Type"
 	},
 	{
+		"term": "Rage",
+		"reference": "Barbarian",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian",
+		"category": "Barbarian"
+	},
+	{
 		"term": "Rally",
 		"reference": "Battle Maneuvers",
 		"link": "https://lolindhir.github.io/PnP/rules/classes/fighter/maneuvers",
@@ -2710,6 +2722,12 @@
 		"reference": "Magical Material",
 		"link": "https://lolindhir.github.io/PnP/rules/crafting/crafting_materials/materials_components",
 		"category": "Material"
+	},
+	{
+		"term": "Reckless Attack",
+		"reference": "Barbarian",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian",
+		"category": "Barbarian"
 	},
 	{
 		"term": "Recovering",
@@ -3726,6 +3744,12 @@
 		"category": "Maneuver"
 	},
 	{
+		"term": "Wild Heart",
+		"reference": "Wild Heart",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian/wild_heart",
+		"category": "Barbarian"
+	},
+	{
 		"term": "Wisdom Potion",
 		"reference": "Potion",
 		"link": "https://lolindhir.github.io/PnP/rules/equipment/potions",
@@ -3750,9 +3774,21 @@
 		"category": "Race"
 	},
 	{
+		"term": "World Tree",
+		"reference": "World Tree",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian/world_tree",
+		"category": "Barbarian"
+	},
+	{
 		"term": "Wretched",
 		"reference": "Maintaining a Lifestyle",
 		"link": "https://lolindhir.github.io/PnP/rules/downtime/lifestyle",
 		"category": "Lifestyle"
+	},
+	{
+		"term": "Zealot",
+		"reference": "Zealot",
+		"link": "https://lolindhir.github.io/PnP/rules/classes/barbarian/zealot",
+		"category": "Barbarian"
 	}
 ]
