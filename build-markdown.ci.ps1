@@ -13,16 +13,16 @@ function Copy-IfExists($source, $dest, $recurse=$true) {
 }
 
 # Assets kopieren
-$spellsSrc = "D:\assets_raw\Zauber\spells.json"
-$spellPropertiesSrc = "D:\assets_raw\Zauber\spellProperties.json"
-$spellImagesSrc = "D:\assets_raw\Zauber\Spell Images\*"
-$itemsSrc = "D:\assets_raw\Items\items.json"
-$itemImagesSrc = "D:\assets_raw\Items\Item Images\*"
-$featsSrc = "D:\assets_raw\feats.json"
-$featPropertiesSrc = "D:\assets_raw\featProperties.json"
-$rulesSrc = "D:\assets_raw\Rules\*"
-$rulesToCSrc = "D:\assets_raw\rulesToC.json"
-$campaignsSrc = "D:\assets_raw\Campaigns\*"
+$spellsSrc = "src\assets_raw\Zauber\spells.json"
+$spellPropertiesSrc = "src\assets_raw\Zauber\spellProperties.json"
+$spellImagesSrc = "src\assets_raw\Zauber\Spell Images\*"
+$itemsSrc = "src\assets_raw\Items\items.json"
+$itemImagesSrc = "src\assets_raw\Items\Item Images\*"
+$featsSrc = "src\assets_raw\feats.json"
+$featPropertiesSrc = "src\assets_raw\featProperties.json"
+$rulesSrc = "src\assets_raw\Rules\*"
+$rulesToCSrc = "src\assets_raw\rulesToC.json"
+$campaignsSrc = "src\assets_raw\Campaigns\*"
 
 Copy-IfExists $spellsSrc "src/assets/spells.json"
 Copy-IfExists $spellPropertiesSrc "src/assets/spellProperties.json"
