@@ -31,7 +31,7 @@ You gain one of the following options of your choice. Whenever you finish a Long
 
 
 ### Level 10: Nature Speaker
-You can cast the *{spell}[Commune with Nature]* spell, but only as a Ritual. Wisdom is your spellcasting ability for it.  
+You can cast the *{spell}[Commune with Nature]()* spell, but only as a Ritual. Wisdom is your spellcasting ability for it.  
 
 
 ### Level 14: Power of the Wilds
