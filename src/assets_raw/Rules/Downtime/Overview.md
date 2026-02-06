@@ -1,0 +1,26 @@
+
+Zwischen den Reisen zu Gewölben und Kämpfen gegen uraltes Böses benötigen Abenteurer Zeit, um sich auszuruhen, zu erholen und sich auf ihre nächsten Abenteuer vorzubereiten. Viele nutzen diese Zeit auch, um andere Aufgaben zu erledigen, wie etwa Waffen und Rüstungen herzustellen, Forschungen zu betreiben oder das hart erarbeitete Geld auszugeben. Der Fantasie des Spielers stehen dabei alle Türen offen.
+
+## Beispielaktivitäten
+
+| Aktivität                                   | Beschreibung                                                                                                                                                                 |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Beruf ausüben                               | Normale, mondäne Arbeit (vom Holz schlagen im Wald, über das Bewachen von Gebäuden, bis hin zum professionellen Musizieren in der Taverne), um Lebensunterhalt zu verdienen. |
+| {rule}[Crafting](crafting)                  | Herstellung von (magischen) Gegenständen, Rüstungen, Waffen, Tränken, Schritfrollen usw.                                                                                     |
+| Diebstahl                                   | Einfache Ziele (z.B. Händler oder niedere Politiker) bestehlen. Dazu gehört es Informationen über das Ziel bzw. den Job zu sammeln und daraufhin den Diebstahl auszuführen.  |
+| Eigentum erlangen                           | Häuser, Geschäfte, Farmen, Festungen, Schiffe usw. kaufen oder erbauen.                                                                                                      |
+| Erholung                                    | Entspannung, Auszeit, Erholung von Krankheiten und Verletzungen                                                                                                              |
+| Gerüchte streuen                            | Verbreiten von Gerüchten, um ein Individuum oder eine Organisation zu begünstigen oder zu schädigen.                                                                         |
+| Geschäft führen                             | Sollten Werkstätten, Gasthäuser, Farmen, Läden, Schiffe etc. im Besitz sein, können diese unterhalten werden, um ihre Effektivität zu steigern oder beizubehalten.           |
+| Gilde führen                                | Gründen, Verwalten, Aufträge vergeben, Mitglieder rekrutieren usw.                                                                                                           |
+| Glücksspiel                                 | Geld setzen und mit etwas Glück und Geschick gewinnen.                                                                                                                       |
+| Gott ehren                                  | Meditieren, Beten und Zeremonien oder Gottesdienste in einem Tempel eines Gottes, dem der Charakter verbunden ist, abzuhalten, um seine Gunst zu erhalten.                   |
+| Jagen, Sammeln, Ernten                      | Zutaten für (magische) Items von Monstern oder Pflanzen gewinnen.                                                                                                            |
+| Kontakte knüpfen                            | Gutes Essen, gutes Trinken, gute Zeit in Tavernen verbringen. Abhängig von der sozialen Klasse erhält man bestimmte Kontakte, die einmal aushelfen können.                   |
+| Lernen                                      | Sprache oder Tool-Proficiency erlernen                                                                                                                                       |
+| Magische Items suchen, kaufen und verkaufen | Bestimmte Items suchen und Verkäufer bzw. Käufer finden.                                                                                                                     |
+| Nachforschungen                             | Informationen über Monster, Orte, magische Items oder andere spezifische Themen sammeln. Arkane Nachforschungen um neue Zauber zu erlernen (Wizard).                         |
+| Religiöser Dienst                           | Im Dienst eines Tempels arbeiten, z.B. Missionierungen durchführen oder Gottesdienste abhalten (Charaktere mit religiösem Hintergrund) um Gefallen eines Gottes zu erhalten. |
+| Ringkämpfe                                  | Boxen, Wrestling und andere nichttödliche Kampfarten in organisierten Duellen                                                                                                |
+| {rule}[Ruf steigern](renown)                | Ansehen in einer Organisation, Gilde oder Fraktion erhöhen, indem kleine Aufgaben erledigt und Kontakte zu höherrangigen Mitgliedern geschlossen werden                      |
+| {rule}[Training](training)                  | Feat oder Skill erlangen                                                                                                                                                     |

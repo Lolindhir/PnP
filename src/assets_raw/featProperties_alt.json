@@ -1,0 +1,30 @@
+{
+  "categories":
+	[
+		{
+			"name": "General",
+			"subcategories": [],
+			"orderByPrerequisite": false
+		},
+    {
+			"name": "Martial",
+			"subcategories": ["General", "Offense - General", "Offense - Melee", "Offense - Ranged", "Defense"],
+			"orderByPrerequisite": false
+		},
+    {
+			"name": "Spellcasting",
+			"subcategories": ["General", "Learning"],
+			"orderByPrerequisite": false
+		},
+    {
+			"name": "Proficiency",
+			"subcategories": ["Skill", "Tool"],
+			"orderByPrerequisite": true
+		},
+    {
+			"name": "Racial",
+			"subcategories": [],
+			"orderByPrerequisite": true
+		}
+	]
+}

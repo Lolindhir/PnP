@@ -1,0 +1,51 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run markdown build (PowerShell)
+        run: pwsh -NoProfile -ExecutionPolicy Bypass -File ./build-markdown.ps1
+
+      - name: Setup git for commit
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Commit generated assets
+        run: |
+          git add -A src/assets || true
+          git add -A src/markdownLinker || true
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "chore(ci): update generated assets from markdown build [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
+
+      - name: Build Angular app
+        env:
+          BASE_HREF: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        run: npm run build -- --base-href="${{ env.BASE_HREF }}"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

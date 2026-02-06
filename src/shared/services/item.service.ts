@@ -3,7 +3,7 @@ import { Item, RawItem } from "@models/item.model";
 import { ArrayUtilities } from "@utilities/array.utilities";
 
 //import data
-import itemsData from 'D:/OneDrive/D&D/Karten - Items/items.json'; 
+import itemsData from '../../assets/items.json'; 
 
 
 @Injectable({

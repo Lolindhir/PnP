@@ -1,0 +1,97 @@
+Themes:
+*******
+Anti-Caster
+Animals
+Plants
+Curse
+Witch (Occult, Eldritch, Spirit, Totem)
+Chromatic
+Elemental - Air
+Elemental - Earth
+Elemental - Fire
+Elemental - Ice
+Elemental - Water
+Gish/Spellblade
+Secretive
+Light
+Darkness/Shadow
+Mind Manipulation
+Telekinesis
+Randomness
+Sound
+Storm
+Wall(s)
+Planes of Existence
+Draconic
+Necromancy
+Summons
+
+
+
+Spell Category:
+***************
+Ward (viele Buffs, ein paar Controls)
+Damage
+Buff
+Debuff
+Control/CC -> Aufteilen in Area/Indirect Control und Enemy/Target/Direct Control
+Healing
+Social
+Special Movement -> Abgrenzung zu Utility?
+Knowledge
+Summoning
+Negation
+Shapechanging/Transformation
+Illusion
+Utility
+-------
+Thematic (Type)
+
+
+Spell Properties:
+*****************
+Damage Type (Type)
+Condition Inducing (Type)
+Save Required (Attribute)
+Attack Required (Ranged Martial/Ranged Spell/Melee Martial/Ranged Spell)
+Casting Ability (dependant/independant)
+Targets (Single, Multiple, AoE)
+Area
+Tags
+
+
+Extensive Categories:
+*********************
+Damage (Type)
+	Acid
+	Bludgeoning
+	...
+	Weapon
+Thematic <Type>
+	Fire
+	Air
+	Water
+	Earth
+	Storm
+	Ice
+	Social
+	Evil
+	...
+Healing/Restoring
+Buff	
+Debuff
+CC/Control
+Enemy Control
+Terrain Control
+Movement/Teleport
+Knowledge/Intelligence/Investigation/Detection/Information Gathering
+Utility
+Summoning
+
+Social
+Warding/Protection
+Communication
+Charme
+Negation
+Shapechanging/Transformation
+Illusion

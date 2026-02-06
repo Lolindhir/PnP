@@ -1,0 +1,12 @@
+Zauberplatz = Zauberslot
+Sparwurf = Rettungswurf
+Sparwürfen = Rettungswürfen
+Zauberspruch-Slot = Zauberslot
+Zauberspeicher-DC= Rettungswurf-DC
+Speichern = Rettungswurf
+Speicherung = Parade
+wirfst = wirkst
+Flugzeug = Ebene
+Halbflugzeug = Demisphäre
+Bei höheren Stufen = Auf höheren Stufen
+Auf höheren Ebenen = Auf höheren Stufen

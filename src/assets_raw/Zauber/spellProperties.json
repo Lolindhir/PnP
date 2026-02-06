@@ -1,0 +1,324 @@
+{
+	"classes": [ "Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Shaman", "Sorcerer", "Warlock", "Wizard" ],
+	"subclasses": [ "Artificer (Alchemist)", "Artificer (Armorer)", "Artificer (Artillerist)", "Artificer (Battle Smith)", "Bard (Spirits)", "Cleric (Arcana)", "Cleric (Death)", "Cleric (Forge)", "Cleric (Grave)", "Cleric (Knowledge)", "Cleric (Life)", "Cleric (Light)", "Cleric (Nature)", "Cleric (Order)", "Cleric (Peace)", "Cleric (Tempest)", "Cleric (Trickery)", "Cleric (Twilight)", "Cleric (War)", "Druid (Land Arctic)", "Druid (Land Coast)", "Druid (Land Desert)", "Druid (Land Forest)", "Druid (Land Grassland)", "Druid (Land Mountain)", "Druid (Land Swamp)", "Druid (Land Underdark)", "Druid (Spores)", "Druid (Stars)", "Druid (Wildfire)", "Paladin (Ancients)", "Paladin (Conquest)", "Paladin (Crown)", "Paladin (Devotion)", "Paladin (Glory)", "Paladin (Oathbreaker)", "Paladin (Redemption)", "Paladin (Vengeance)", "Paladin (Watchers)", "Ranger (Fey Wanderer)", "Ranger (Gloom Stalker)", "Ranger (Horizon Walker)", "Ranger (Monster Slayer)", "Ranger (Primeval Guardian)", "Ranger (Swarmkeeper)", "Shaman (Sage Air)", "Shaman (Sage Earth)", "Shaman (Sage Fire)", "Shaman (Sage Water)", "Shaman (Warrior Air)", "Shaman (Warrior Earth)", "Shaman (Warrior Fire)", "Shaman (Warrior Water)", "Sorcerer (Aberrant Mind)", "Sorcerer (Clockwork Soul)", "Sorcerer (Divine Chaos)", "Sorcerer (Divine Evil)", "Sorcerer (Divine Good)", "Sorcerer (Divine Law)", "Sorcerer (Divine Neutrality)", "Sorcerer (Draconic Black/Copper)", "Sorcerer (Draconic Blue/Bronze)", "Sorcerer (Draconic Green)", "Sorcerer (Draconic Red/Gold/Brass)", "Sorcerer (Draconic White/Silver)", "Sorcerer (Shadow Magic)", "Sorcerer (Storm Sorcery)", "Sorcerer (Wild Magic)", "Warlock (Archfey)", "Warlock (Celestial)", "Warlock (Fathomless)", "Warlock (Fiend)", "Warlock (Genie Dao)", "Warlock (Genie Djinni)", "Warlock (Genie Efreeti)", "Warlock (Genie Marid)", "Warlock (Great Old One)", "Warlock (Hexblade)", "Warlock (Seeker)", "Warlock (Undead)", "Warlock (Undying)", "Wizard (Conjuration)", "Wizard (Divination)", "Wizard (Necromancy)" ],
+	"allowedClasses": [ "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Shaman", "Sorcerer", "Warlock", "Wizard" ],
+	"allowedSubclasses": [ "Bard (Spirits)", "Cleric (Forge)", "Cleric (Grave)", "Cleric (Knowledge)", "Cleric (Life)", "Cleric (Light)", "Cleric (Nature)", "Cleric (Order)", "Cleric (Tempest)", "Cleric (Trickery)", "Cleric (War)", "Druid (Land Arctic)", "Druid (Land Coast)", "Druid (Land Desert)", "Druid (Land Forest)", "Druid (Land Grassland)", "Druid (Land Mountain)", "Druid (Land Swamp)", "Druid (Land Underdark)", "Druid (Spores)", "Druid (Stars)", "Druid (Wildfire)", "Paladin (Ancients)", "Paladin (Conquest)", "Paladin (Crown)", "Paladin (Devotion)", "Paladin (Glory)", "Paladin (Redemption)", "Paladin (Vengeance)", "Paladin (Watchers)", "Ranger (Fey Wanderer)", "Ranger (Gloom Stalker)", "Ranger (Horizon Walker)", "Ranger (Monster Slayer)", "Ranger (Primeval Guardian)", "Ranger (Swarmkeeper)", "Shaman (Sage Air)", "Shaman (Sage Earth)", "Shaman (Sage Fire)", "Shaman (Sage Water)", "Shaman (Warrior Air)", "Shaman (Warrior Earth)", "Shaman (Warrior Fire)", "Shaman (Warrior Water)", "Sorcerer (Aberrant Mind)", "Sorcerer (Clockwork Soul)", "Sorcerer (Divine Chaos)", "Sorcerer (Divine Evil)", "Sorcerer (Divine Good)", "Sorcerer (Divine Law)", "Sorcerer (Divine Neutrality)", "Sorcerer (Draconic Black/Copper)", "Sorcerer (Draconic Blue/Bronze)", "Sorcerer (Draconic Green)", "Sorcerer (Draconic Red/Gold/Brass)", "Sorcerer (Draconic White/Silver)", "Sorcerer (Shadow Magic)", "Sorcerer (Storm Sorcery)", "Sorcerer (Wild Magic)", "Warlock (Archfey)", "Warlock (Celestial)", "Warlock (Fathomless)", "Warlock (Fiend)", "Warlock (Genie Dao)", "Warlock (Genie Djinni)", "Warlock (Genie Efreeti)", "Warlock (Genie Marid)", "Warlock (Great Old One)", "Warlock (Hexblade)", "Warlock (Seeker)", "Warlock (Undead)", "Warlock (Undying)", "Wizard (Conjuration)", "Wizard (Divination)", "Wizard (Necromancy)" ],
+	"castingTimes": [ "1 Action", "1 Bonus Action", "1 Reaction", "1 Minute", "10 Minutes", "1 Hour", "8 Hours", "12 Hours", "24 Hours" ],
+	"durations": [ "Instantaneous", "1 Round", "1 Minute", "10 Minutes", "1 Hour", "2 Hours", "8 Hours", "24 Hours", "1 Day", "3 Days", "7 Days", "10 Days", "30 Days", "Until Dispelled", "Until Dispelled or Triggered", "Special" ],
+	"damageTypes": [ "Acid", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Poison", "Psychic", "Radiant", "Thunder", "Bludgeoning", "Piercing", "Slashing", "Weapon" ],
+	"conditions": [ "Blinded", "Charmed", "Deafened", "Displaced", "Exhaustion", "Frightened", "Grappled", "Incapacitated", "Invisible", "Paralyzed", "Petrified", "Poisoned", "Prone", "Restrained", "Slowed", "Stunned", "Unconscious" ],
+	"saves": [ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ],
+	"attackTypes": [ "Melee Spell Attack", "Ranged Spell Attack", "Melee Weapon Attack", "Ranged Weapon Attack", "Ability Check" ],
+	"targets": [ "None", "Self", "AllySingle", "AllyMultiple (Upcast)", "AllyMultiple", "EnemySingle", "EnemyMultiple (Upcast)", "EnemyMultiple", "SpellSingle", "SpellMultiple", "ObjectSingle", "ObjectMultiple (Upcast)", "ObjectMultiple", "AoE", "AoEAlly", "AoEEnemy", "AoEObject", "AoESpell", "AoECaster" ],
+	"themes": [ "Animals", "Anti-Caster", "Chromatic", "Communication", "Curse", "Darkness", "Divine", "Draconic", "Elemental - Air", "Elemental - Earth", "Elemental - Fire", "Elemental - Ice", "Elemental - Water", "Flying", "Food", "Gish", "Infernal", "Lifesteal", "Light", "Mind Manipulation", "Moon", "Nature", "Necromantic", "Planes of Existence", "Plants", "Randomness", "Scrying", "Secretive", "Smite", "Sound", "Special Senses", "Storm", "Summons", "Telekinesis", "Teleportation", "Temp. HP", "Trapping", "Wall(s)", "Witch" ],
+	"tags":
+	[
+		{
+			"name": "Damage",
+			"colorCode": "#8B0000",
+			"fontColor": "white",
+			"description": "Direkt oder indirekt verursachter Schaden",
+			"abbreviation": "DMG"
+		},
+		{
+			"name": "Debuff",
+			"colorCode": "#000000",
+			"fontColor": "white",
+			"description": "Einschränkung der Fähigkeiten, Attribute und Stats",
+			"abbreviation": "DBU"
+		},
+		{
+			"name": "Buff",
+			"colorCode": "#FFD700",
+			"fontColor": "black",
+			"description": "Verstärkung der Fähigkeiten, Attribute und Stats",
+			"abbreviation": "BU"
+		},
+		{
+			"name": "Protection",
+			"colorCode": "#B0E0E6",
+			"fontColor": "black",
+			"description": "Direkter oder indirekter Schutz vor Schaden, Effekten und Feinden",
+			"abbreviation": "DEF"
+		},
+		{
+			"name": "Crowd Control",
+			"colorCode": "#e67e00",
+			"fontColor": "white",
+			"description": "Beeinflussung der Position und Einschränkung der Handlungsoptionen und Bewegungsmöglichkeiten",
+			"abbreviation": "CC"
+		},
+		{
+			"name": "Area Control",
+			"colorCode": "#FF7F50",
+			"fontColor": "black",
+			"description": "Indirekte Steuerung der Bewegung und Aktionen durch Bereiche mit negativen oder einschränkenden Auswirkungen",
+			"abbreviation": "AC"
+		},
+		{
+			"name": "Healing",
+			"colorCode": "#228B22",
+			"fontColor": "white",
+			"description": "Heilung, Wiederbelebung, Entfernung von negativen Zuständen und Effekten",
+			"abbreviation": "HEA"
+		},
+		{
+			"name": "Summoning",
+			"colorCode": "#66CDAA",
+			"fontColor": "black",
+			"description": "Beschwörung von Kreaturen und Animation von leblosen Objekten",
+			"abbreviation": "SUM"
+		},
+		{
+			"name": "Social",
+			"colorCode": "#FF1493",
+			"fontColor": "white",
+			"description": "Unterstützung in sozialen Situationen",
+			"abbreviation": "SOC"
+		},
+		{
+			"name": "Utility",
+			"colorCode": "#00BFFF",
+			"fontColor": "black",
+			"description": "Erschaffung magischer Hilfen zur Erleichterung des (Abenteurer-)Lebens",
+			"abbreviation": "UTL"
+		},
+		{
+			"name": "Information",
+			"colorCode": "#0000CD",
+			"fontColor": "white",
+			"description": "Beschaffung und Erkennung von Informationen über Orte, Gegenstände, Kreaturen",
+			"abbreviation": "INF"
+		},
+		{
+			"name": "Special Movement",
+			"colorCode": "#9400D3",
+			"fontColor": "white",
+			"description": "Bewegung mit besonderer Movement",
+			"abbreviation": "SPM"
+		},
+		{
+			"name": "Illusion",
+			"colorCode": "#708090",
+			"fontColor": "white",
+			"description": "Erzeugung illusorischer Effekte",
+			"abbreviation": "ILU"
+		},
+		{
+			"name": "Shapechanging",
+			"colorCode": "#A0522D",
+			"fontColor": "white",
+			"description": "Verwandlung oder Veränderung von Aspekten einer Kreatur",
+			"abbreviation": "SHC"
+		},
+		{
+			"name": "Negation",
+			"colorCode": "#F08080",
+			"fontColor": "black",
+			"description": "Verhinderung und Beendigung magischer Effekte",
+			"abbreviation": "NEG"
+		},
+		{
+			"name": "Side-Effect",
+			"colorCode": "#FFDAB9",
+			"fontColor": "black",
+			"description": "(Potentiell) negative Nebenwirkung für den Zaubernden",
+			"abbreviation": "S-E"
+		}
+	],
+	"presets":
+	[
+		{
+			"name": "Athanya",
+			"template": true,
+			"publishingDate": "1970-01-01T00:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Create Bonfire", "Fire Bolt", "Frostbite", "Mage Hand", "Shocking Grasp", "Toll the Dead", "Alarm", "Absorb Elements", "Burning Hands", "Catapult", "Cause Fear", "Charm Person", "Chromatic Orb", "Comprehend Languages", "Detect Magic", "Entomb", "False Life", "Grease", "Identify", "Mage Armor", "Magic Missile", "Shield", "Sleep", "Stone Fist", "Witch Bolt", "Aganazzar's Scorcher", "Dragon's Breath", "Dust Devil", "Enhance Ability", "Knock", "Mirror Image", "Misty Step", "Shatter", "Spider Climb", "Animate Dead", "Blink", "Counterspell", "Fireball", "Flame Arrows", "Haste", "Lightning Bolt", "Melf's Minute Meteors", "Phantom Steed", "Sending", "Slow", "Thunder Step", "Protection from Energy", "Levitate", "Elemental Bane", "Bad Blood", "Enlarge/Reduce", "Wall of Fire", "Dimension Door" ],
+			"alwaysKnownSpells": [ "Prestidigitation", "Thaumaturgy", "Hellish Rebuke", "Darkness" ],
+			"limitedKnownSpells": [ "Hellish Rebuke", "Darkness" ]
+		},
+		{
+			"name": "Aurrdan",
+			"template": true,
+			"publishingDate": "1970-01-01T00:00:00Z",
+			"classes": [ "Shaman" ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [ "Shaman (Warrior Earth)", "Shaman (Warrior Water)" ],
+			"levels": [ 0, 1, 2, 3, 4 ],
+			"spells": [ "Elemental Whip", "Lightning Dart" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Azoth",
+			"template": true,
+			"publishingDate": "1970-01-01T00:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Booming Blade", "Mage Hand", "Minor Illusion", "Charm Person", "Disguise Self", "Tasha's Hideous Laughter", "Invisibility", "Misty Step" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [ "Thunderous Smite" ]
+		},
+		{
+			"name": "Kathra",
+			"template": true,
+			"publishingDate": "1970-01-01T00:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [  ],
+			"alwaysKnownSpells": [ "Light", "Sacred Flame", "Word of Radiance" ],
+			"limitedKnownSpells": [ "Find Familiar", "Gift of Alacrity", "Searing Smite", "Heat Metal" ]
+		},
+		{
+			"name": "Longsaddle - Elatian Ellindil",
+			"template": false,
+			"publishingDate": "2023-07-28T00:05:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Force Bolt", "Light", "Mage Hand", "Message", "Detect Magic", "Mage Armor", "Magic Missile", "Shield", "Misty Step", "Calm Emotions", "Earthbind", "Magic Weapon", "Tasha's Mind Whip", "Fly", "Clairvoyance", "Flame Arrows", "Haste", "Protection from Energy", "Greater Invisibility", "Locate Creature", "Scrying" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Neverwinter - Shops",
+			"template": false,
+			"publishingDate": "1970-01-01T00:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Heroism", "Mirror Image", "Tongues", "Light", "Spare the Dying", "Mending", "Guidance", "Inflict Wounds", "Heroism", "Bless", "Zone of Truth", "Gentle Repose", "Aid", "Dispel Magic", "Daylight", "Guardian of Faith", "Control Flames", "Lightning Dart", "Dancing Lights", "Minor Illusion", "Feather Fall", "Detect Magic", "Magic Missile", "Alarm", "Comprehend Languages", "Color Spray", "Identify", "Spider Climb", "Melf's Acid Arrow", "Continual Flame", "Water Breathing", "Nondetection", "Blink", "Hallucinatory Terrain", "Evard's Black Tentacles", "Immolation" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Phandalin - Iarno",
+			"template": false,
+			"publishingDate": "2022-10-15T12:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Friends", "Light", "Mage Hand", "Shocking Grasp", "Charm Person", "Magic Missile", "Sleep", "Hold Person", "Misty Step", "Suggestion", "Fireball", "Haste", "Tongues", "Dimension Door", "Stoneskin", "Hold Monster", "Alarm", "Ice Knife", "Blur", "Magic Mouth" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Phandalin - Löwenschild",
+			"template": false,
+			"publishingDate": "2022-10-15T12:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Mage Hand", "Thunderwave", "Sleep", "Jump", "Detect Magic" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Shadowtop Cathedral - Dryads",
+			"template": false,
+			"publishingDate": "2030-01-01T00:05:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Dispel Magic", "Entangle", "Plant Growth", "Spike Growth", "Moonbeam", "Grasping Vine", "Wall of Thorns", "Barkskin", "Pass Without Trace", "Shillelagh" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Shadowtop Cathedral - Shaman",
+			"template": false,
+			"publishingDate": "2030-01-01T00:05:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Poison Spray", "Thorn Whip", "Shillelagh", "Cure Wounds", "Entangle", "Ray of Sickness", "Pass Without Trace", "Ray of Enfeeblement", "Spike Growth", "Animate Dead", "Dispel Magic", "Plant Growth", "Blight", "Giant Insect", "Tree Stride" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Shadowtop Cathedral - Shops",
+			"template": false,
+			"publishingDate": "2023-10-28T20:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Zephyr Strike", "Hunter's Mark", "Fog Cloud", "Cure Wounds", "Summon Beast", "Pass Without Trace", "Enhance Ability", "Barkskin", "Summon Plant", "Revivify", "Bramble Barrier", "Vital Surge", "Charm Monster", "Wrath of Nature" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Triboar - Ohtovir",
+			"template": false,
+			"publishingDate": "2022-11-12T00:05:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Blade Ward", "Fire Bolt", "Mending", "Prestidigitation", "Mage Armor", "Hex", "Inflict Wounds", "Shield", "Witch Bolt", "Pass Without Trace", "Shadow Blade", "Misty Step", "Darkness" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Triboar - Shops",
+			"template": false,
+			"publishingDate": "2022-11-11T20:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Friends", "Faerie Fire", "Burning Hands", "Magnify Gravity", "Hold Person", "Melf's Acid Arrow", "Daylight", "Hypnotic Pattern" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Triboar - Urgala Meltimer",
+			"template": false,
+			"publishingDate": "2022-11-11T20:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Green-Flame Blade", "Light", "Lightning Lure", "Minor Illusion", "Ray of Frost", "Thunderclap", "Guided Blade", "Absorb Elements", "Alarm", "Bad Blood", "Expeditious Retreat", "Feather Fall", "Fog Cloud", "Jump", "Shield", "Thunder Punch", "Thunderwave", "Alacrity", "Darkvision", "Enlarge/Reduce", "Kinetic Jaunt", "Levitate", "Mirror Image", "Spider Climb", "Steel Wind Strike", "Ashardalon's Stride", "Blink", "Corrosive Moisture", "Intellect Fortress", "Protection from Energy", "Thunder Step", "Echoing Lance", "Elemental Bane" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Yartar - Pow Ming",
+			"template": false,
+			"publishingDate": "2030-07-28T00:05:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Light", "Mage Hand", "Message", "Prestidigitation", "Ray of Frost", "Befuddling Swap", "Comprehend Languages", "Detect Magic", "Identify", "Mage Armor", "Shadow Bind", "Shield", "Detect Thoughts", "Locate Object", "Mind Spike", "Misty Step", "See Invisibility", "Counterspell", "Ghost Step", "Lightning Bolt", "Slow", "Arcane Eye", "Evard's Black Tentacles", "Locate Creature", "Rary's Telepathic Bond", "Scrying" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		},
+		{
+			"name": "Yartar - Shops",
+			"template": false,
+			"publishingDate": "2023-10-27T20:00:00Z",
+			"classes": [  ],
+			"subclasses": [  ],
+			"alwaysKnownSubclasses": [  ],
+			"levels": [  ],
+			"spells": [ "Poison Spray", "Guidance", "Spare the Dying", "Entomb", "Frost Fingers", "Compelled Duel", "Pyrotechnics", "Inflict Wounds", "Shield of Faith", "Healing Word", "Darkness", "Melf's Acid Arrow", "Gentle Repose", "Lesser Restoration", "Glimpse the Future", "Sleet Storm", "Thunder Pulse", "Spirit Guardians" ],
+			"alwaysKnownSpells": [  ],
+			"limitedKnownSpells": [  ]
+		}
+	]
+}

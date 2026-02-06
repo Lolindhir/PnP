@@ -1,0 +1,39 @@
+
+Änderungen: https://rpgbot.net/dnd-2024-5e-transition-guide-and-change-log-everything-thats-different-in-the-new-players-handbook/#spell-changes
+Texte: https://www.aidedd.org/spell/
+
+Etherealness
+Find Familiar
+Find Steed
+Foresight
+Magic Jar
+Mass Suggestion
+Maze
+Minor Illusion
+Mislead
+Mordenkainen's Faithful Hound
+Move Earth
+Nystul's Magic Aura
+Otto's Irresistible Dance
+Pass Without Trace
+Prismatic Spray
+Prismatic Wall
+Project Image
+Protection from Poison
+Raise Dead
+Rary's Telepathic Bond
+Shapechange
+Speak with Animals
+Speak with Plants
+Spike Growth
+Stinking Cloud
+Storm of Vengeance
+Suggestion
+Summon Spells (nur Statblocks)
+Symbol
+Swift Quiver
+Telekinesis
+Telepathy
+Teleport (neue Tabelle, Text gleich)
+True Polymorph
+Wish

@@ -1,0 +1,13 @@
+
+2d10 + 1d8 + 4 + ?
+
+2d12 + 8
+
+
+Level 20
+Shillelagh	6d6 + 2d8 + 5 + ? = 35-40
+Flame Beam	4d10 + 20 = 42
+Fighter		4d12 + 20 = 46
+Shillelagh x2	12d6 + 2d8 + 10 + 2x? = 61-71
+Shillelagh 1R	8d6 + 2d8 + 10 + 2x? = 47-57
+

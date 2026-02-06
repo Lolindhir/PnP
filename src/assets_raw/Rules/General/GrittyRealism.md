@@ -1,0 +1,8 @@
+Beim Gritty Realism Ansatz wird die Zeitdauer für Rests verlängert, um das Balancing besser auf längere Reisen mit weniger Kämpfen pro Tag einstellen zu können. An der Schwierigkeit wird sich nichts ändern, sondern nur am zeitlichen Pacing des sogenannten Adventuring Day. Es macht es etwas realistischer vom zeitlichen Ablauf, da mehr Downtime zwischen Abenteuern bzw. Kämpfen natürlich eingebaut wird. Heilung und Regeneration ist nicht mehr innerhalb weniger Minuten oder Stunden möglich, was realistischer ist.
+
+Eine Long Rest dauert nun mehrere Tage und kann nur an einem sicheren Ort durchgeführt werden. Natürliche Heilung mit Hit Dice ist nun nur über Nacht bzw. über einen Zeitraum von 8 Stunden möglich (Night Rest). Die Short Rest-Fähigkeiten können weiterhin innerhalb von 10 Minuten wiederhergestellt werden (Short Rest ohne Heilung durch Hit Dice), um Dungeons oder Zeitkritisches angehen zu können.
+
+Die Zeitdauer von Zaubern sind auf einen Adventuring Day von ca. 8 Stunden ausgerichtet. Für Gritty Realism müssen daher die Wirkdauern einiger Zauber verlängert werden, z.B. hält Mage Armor jetzt 3 Tage (anstatt 8 Stunden). In der Zauber-App können die Zeiten in den Einstellungen auf Gritty Realism umgeschaltet werden:
+<img src="assets/rules/General/GrittyRealismSetting.png" class="image">
+
+Neben den Zauber sind auch die Charges der meisten Magic Items darauf ausgerichtet, dass der Adventuring Day grob einen Tag umspannt. Items die sich „at dawn“ oder „at dusk” wieder aufladen, sollten quasi einmal pro Adventuring Day und damit pro Long Rest verwendbar sein. Deshalb wird bei Gritty Realism „at dawn” und “at dusk“ wie „nach einer Long Rest“ behandelt.

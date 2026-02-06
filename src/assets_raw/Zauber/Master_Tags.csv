@@ -1,0 +1,17 @@
+Name;Abbrevation;Color Code;Font Color;Old Name;Description;;
+Damage;DMG;#8B0000;white;;Direkt oder indirekt verursachter Schaden;;
+Debuff;DBU;#000000;white;;Einschränkung der Fähigkeiten, Attribute und Stats;(über eine bestimmte Zeitdauer);
+Buff;BU;#FFD700;black;;Verstärkung der Fähigkeiten, Attribute und Stats;(über eine bestimmte Zeitdauer);"auch ""schützende"" Effekte, die aber immer helfen (Temporäre HP, erhöhte AC, etc.)"
+Protection;DEF;#B0E0E6;black;;Direkter oder indirekter Schutz vor Schaden, Effekten und Feinden;Effekte, die vor etwas schützen, das nicht unbedingt eintreten muss (Resistenz, Angriffe, usw.);
+Crowd Control;CC;#e67e00;white;;Beeinflussung der Position und Einschränkung der Handlungsoptionen und Bewegungsmöglichkeiten;<--- Aufteilung in Area Control, Enemy Control und Positional Control?;
+Area Control;AC;#FF7F50;black;Zone Control;Indirekte Steuerung der Bewegung und Aktionen durch Bereiche mit negativen oder einschränkenden Auswirkungen;;
+Healing;HEA;#228B22;white;;Heilung, Wiederbelebung, Entfernung von negativen Zuständen und Effekten;;
+Summoning;SUM;#66CDAA;black;;Beschwörung von Kreaturen und Animation von leblosen Objekten;;
+Social;SOC;#FF1493;white;;Unterstützung in sozialen Situationen;;
+Utility;UTL;#00BFFF;black;;Erschaffung magischer Hilfen zur Erleichterung des (Abenteurer-)Lebens;(könnte umständlicher auch auf mundänem Wege erfolgen);
+Information;INF;#0000CD;white;;Beschaffung und Erkennung von Informationen über Orte, Gegenstände, Kreaturen;;
+Special Movement;SPM;#9400D3;white;;Bewegung mit besonderer Movement;;
+Illusion;ILU;#708090;white;;Erzeugung illusorischer Effekte;;
+Shapechanging;SHC;#A0522D;white;;Verwandlung oder Veränderung von Aspekten einer Kreatur;<--- Transformation besserer Begriff?;
+Negation;NEG;#F08080;black;;Verhinderung und Beendigung magischer Effekte;<--- ggfs. zu Control integrieren?;
+Side-Effect;S-E;#FFDAB9;black;;(Potentiell) negative Nebenwirkung für den Zaubernden;;
