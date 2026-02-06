@@ -20,7 +20,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Run markdown build (PowerShell)
-        run: pwsh -NoProfile -ExecutionPolicy Bypass -File ./build-markdown.ps1
+        run: pwsh -NoProfile -ExecutionPolicy Bypass -File ./build-markdown.ci.ps1
 
       - name: Setup git for commit
         run: |
