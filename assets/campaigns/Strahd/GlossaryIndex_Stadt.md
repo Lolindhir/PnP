@@ -1,0 +1,6 @@
+| Stadt | Beschreibung | Verweis |
+|:------------|:----------------|:----------------|
+| Amphail | Ziel der Reise bevor im Nebel verschwunden (Schwertküste) | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001) |
+| [Barovia-Stadt](https://lolindhir.github.io/PnP/campaigns/strahd/locations/barovia_stadt) | Dorf ähnlich einer Geisterstadt, erste besuchte Siedlung in Barovia | [Session 01 - Todesvilla](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session001)<br>[Session 02 - Die erste Begegnung](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session002) |
+| [Krezk](https://lolindhir.github.io/PnP/campaigns/strahd/locations/krezk) | zweitgrößte Stadt Barovias | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia) |
+| [Vallaki](https://lolindhir.github.io/PnP/campaigns/strahd/locations/vallaki) | größte Stadt mit St. Andrals Kirche Lathanders, Blinskis Spielzeugladen, Vistani-Lager in der Nähe | [Chroniken von Barovia](https://lolindhir.github.io/PnP/campaigns/strahd/compendium/lore/chronicles_barovia)<br>[Session 04 - Austreibungen](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session004)<br>[Session 05 - Wer ist der Böse?](https://lolindhir.github.io/PnP/campaigns/strahd/sessions/session005) |

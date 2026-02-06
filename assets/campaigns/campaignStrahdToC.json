@@ -1,0 +1,596 @@
+[
+	{
+		"id": "compass",
+		"name": "Plotkompass",
+		"breadcrumb": "Kompass",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "main_story",
+				"name": "Haupthandlung",
+				"breadcrumb": "Haupthandlung",
+				"indexing": "indexonly",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Sessions/000_Haupthandlung.md",
+				"children": []
+			},
+			{
+				"id": "goals",
+				"name": "Ziele und Things of Interest",
+				"breadcrumb": "Ziele & ToI",
+				"indexing": "indexonly",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Main/Goals.md",
+				"children": []
+			},
+			{
+				"id": "questions",
+				"name": "Ungereimtheiten und offene Fragen",
+				"breadcrumb": "Fragen",
+				"indexing": "indexonly",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Main/Questions.md",
+				"children": []
+			},
+			{
+				"id": "schicksalsfäden",
+				"name": "Fäden des Schicksals",
+				"breadcrumb": "Schicksalsfäden",
+				"indexing": "indexonly",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Main/Schicksalsfäden.md",
+				"children": []
+			}
+		]
+	},	
+	{
+		"id": "persons",
+		"name": "Personen",
+		"breadcrumb": "Personen",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_npcs",
+				"name": "NPC-Übersicht",
+				"breadcrumb": "NPCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_NPC.md",
+				"children": []
+			},
+			{
+				"id": "pcs",
+				"name": "Spielercharaktere",
+				"breadcrumb": "PCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "jennar",
+						"name": "Jennar Sunblessed",
+						"breadcrumb": "Jennar",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/Jennar.md",
+						"children": []
+					},
+					{
+						"id": "jona",
+						"name": "Jona Halvarson",
+						"breadcrumb": "Jona",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/Jona.md",
+						"children": []
+					},
+					{
+						"id": "rowena",
+						"name": "Rowena",
+						"breadcrumb": "Rowena",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/PCs/Rowena.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "npcs",
+				"name": "NPCs",
+				"breadcrumb": "NPCs",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "fiona",
+						"name": "Fiona Wachter",
+						"breadcrumb": "Fiona",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Fiona.md",
+						"children": []				
+					},
+					{
+						"id": "ireena",
+						"name": "Ireena Koljanovich",
+						"breadcrumb": "Ireena",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Ireena.md",
+						"children": []				
+					},
+					{
+						"id": "kasimir",
+						"name": "Kasimir",
+						"breadcrumb": "Kasimir",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Kasimir.md",
+						"children": []				
+					},
+					{
+						"id": "rabe",
+						"name": "Rabe",
+						"breadcrumb": "Rabe",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Rabe.md",
+						"children": []				
+					},
+					{
+						"id": "rictavio",
+						"name": "Rictavio",
+						"breadcrumb": "Rictavio",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Rictavio.md",
+						"children": []				
+					},
+					{
+						"id": "van_richten",
+						"name": "Rudolph Van Richten",
+						"breadcrumb": "Van Richten",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/VanRichten.md",
+						"children": []				
+					},
+					{
+						"id": "strahd",
+						"name": "Strahd von Zarovich",
+						"breadcrumb": "Strahd",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Strahd.md",
+						"children": []				
+					},
+					{
+						"id": "totenkopfvampirin",
+						"name": "Vampirin mit Totenkopfmaske",
+						"breadcrumb": "Totenkopfvampirin",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Totenkopfvampirin.md",
+						"children": []				
+					},
+					{
+						"id": "vargas",
+						"name": "Vargas Vallakovich",
+						"breadcrumb": "Vargas",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "NPC",
+						"indexSubCategory": "",
+						"filename": "/NPCs/Vargas.md",
+						"children": []				
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "factions",
+		"name": "Fraktionen",
+		"breadcrumb": "Fraktionen",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_factions",
+				"name": "Fraktionen-Übersicht",
+				"breadcrumb": "Fraktionen",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Fraktion.md",
+				"children": []
+			},
+			{
+				"id": "magierzirkel",
+				"name": "Magierzirkel",
+				"breadcrumb": "Magierzirkel",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Magierzirkel.md",
+				"children": []
+			},
+			{
+				"id": "naturvölker",
+				"name": "Naturvölker",
+				"breadcrumb": "Naturvölker",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Naturvölker.md",
+				"children": []
+			},
+			{
+				"id": "silberorden",
+				"name": "Orden des Silberdrachens",
+				"breadcrumb": "Silberdrachen",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Silberorden.md",
+				"children": []
+			},
+			{
+				"id": "vettelzirkel",
+				"name": "Vettelzirkel",
+				"breadcrumb": "Vettelzirkel",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Vettelzirkel.md",
+				"children": []
+			},
+			{
+				"id": "vistani",
+				"name": "Vistani",
+				"breadcrumb": "Vistani",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Fraktion",
+				"indexSubCategory": "",
+				"filename": "/Factions/Vistani.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "locations",
+		"name": "Orte",
+		"breadcrumb": "Orte",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_locations",
+				"name": "Ort-Übersicht",
+				"breadcrumb": "Orte",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Ort.md",
+				"children": []
+			},
+			{
+				"id": "argynvostholt",
+				"name": "Argynvostholt",
+				"breadcrumb": "Argynvostholt",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/Argynvostholt.md",
+				"children": []
+			},
+			{
+				"id": "barovia_stadt",
+				"name": "Barovia-Stadt",
+				"breadcrumb": "Barovia-Stadt",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/BaroviaStadt.md",
+				"children": []
+			},
+			{
+				"id": "krezk",
+				"name": "Krezk",
+				"breadcrumb": "Krezk",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/Krezk.md",
+				"children": []
+			},
+			{
+				"id": "ravenloft",
+				"name": "Schloss Ravenloft",
+				"breadcrumb": "Ravenloft",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/Ravenloft.md",
+				"children": []
+			},
+			{
+				"id": "vallaki",
+				"name": "Vallaki",
+				"breadcrumb": "Vallaki",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Stadt",
+				"indexSubCategory": "",
+				"filename": "/Locations/Vallaki.md",
+				"children": []
+			},
+			{
+				"id": "lager_luwasch",
+				"name": "Lager von Luwasch",
+				"breadcrumb": "Luwasch Lager",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Lager",
+				"indexSubCategory": "",
+				"filename": "/Locations/LuwaschLager.md",
+				"children": []
+			},
+			{
+				"id": "zauberer_der_weine",
+				"name": "Zauberer der Weine",
+				"breadcrumb": "Zauberer der Weine",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "Ort, Dungeon",
+				"indexSubCategory": "",
+				"filename": "/Locations/ZaubererDerWeine.md",
+				"children": []
+			}
+		]
+	},
+	{
+		"id": "compendium",
+		"name": "Kompendium",
+		"breadcrumb": "Kompendium",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_items",
+				"name": "Gegenstands-Übersicht",
+				"breadcrumb": "Gegenstände",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "GlossaryIndex_Gegenstand.md",
+				"children": []
+			},
+			{
+				"id": "lore",
+				"name": "Lore",
+				"breadcrumb": "Lore",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "",
+				"children": [
+					{
+						"id": "denominations",
+						"name": "Bezeichnungs-Übersicht",
+						"breadcrumb": "Bezeichnungen",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "GlossaryIndex_Bezeichnung.md",
+						"children": []
+					},
+					{
+						"id": "chronicles_barovia",
+						"name": "Chroniken von Barovia",
+						"breadcrumb": "Chroniken",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Lore",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Chroniken.md",
+						"children": []
+					},
+					{
+						"id": "deities",
+						"name": "Gottheiten",
+						"breadcrumb": "Götter",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Lore",
+						"indexSubCategory": "",
+						"filename": "GlossaryIndex_Gott.md",
+						"children": []
+					}
+				]
+			},
+			{
+				"id": "monsters",
+				"name": "Monster",
+				"breadcrumb": "Monster",
+				"indexing": "title",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Index_Monster.md",
+				"children": [
+					{
+						"id": "vampir",
+						"name": "Vampir",
+						"breadcrumb": "Vampir",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Monster",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Vampir.md",
+						"children": []
+					},
+					{
+						"id": "vettel",
+						"name": "Vettel",
+						"breadcrumb": "Vettel",
+						"indexing": "title",
+						"indexname": "",
+						"indexCategory": "Monster",
+						"indexSubCategory": "",
+						"filename": "/Compendium/Vettel.md",
+						"children": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "sessions",
+		"name": "Sessionnotizen",
+		"breadcrumb": "Sessions",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "overview_sessions",
+				"name": "Sessionübersicht",
+				"breadcrumb": "Sessions",
+				"indexing": "none",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "Glossary_Session.md",
+				"children": []
+			},
+			{
+				"id": "session001",
+				"name": "Session 1 - Todesvilla",
+				"breadcrumb": "Session 1",
+				"indexing": "title",
+				"indexname": "Session 01 - Todesvilla",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/001.md",
+				"children": []
+			},
+			{
+				"id": "session002",
+				"name": "Session 2 - Die erste Begegnung",
+				"breadcrumb": "Session 2",
+				"indexing": "title",
+				"indexname": "Session 02 - Die erste Begegnung",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/002.md",
+				"children": []
+			},
+			{
+				"id": "session003",
+				"name": "Session 3 - Schicksal und Pasteten",
+				"breadcrumb": "Session 3",
+				"indexing": "title",
+				"indexname": "Session 03 - Schicksal und Pasteten",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/003.md",
+				"children": []
+			},
+			{
+				"id": "session004",
+				"name": "Session 4 - Austreibungen",
+				"breadcrumb": "Session 4",
+				"indexing": "title",
+				"indexname": "Session 04 - Austreibungen",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/004.md",
+				"children": []
+			},
+			{
+				"id": "session005",
+				"name": "Session 5 - Wer ist der Böse?",
+				"breadcrumb": "Session 5",
+				"indexing": "title",
+				"indexname": "Session 05 - Wer ist der Böse?",
+				"indexCategory": "Session",
+				"indexSubCategory": "",
+				"filename": "/Sessions/005.md",
+				"children": []
+			}
+		]
+	}		
+]
+

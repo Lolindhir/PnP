@@ -1,0 +1,530 @@
+[
+	{
+		"term": "Athanya",
+		"reference": "Athanya",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya",
+		"category": ""
+	},
+	{
+		"term": "Aurrdan",
+		"reference": "Aurrdan",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/aurrdan",
+		"category": ""
+	},
+	{
+		"term": "Azoth",
+		"reference": "Azoth",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/azoth",
+		"category": ""
+	},
+	{
+		"term": "Cult of Life Manipulation",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Cult of Necrotic Power",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Cult of Undead Control",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Drachenkult",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Enhanced Animation",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Enhancement through Sacrifice",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Everlund",
+		"reference": "Everlund",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/cities/everlund",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Everlund",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Far Realm",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Felsschlundhöhle",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort"
+	},
+	{
+		"term": "Giftzahn",
+		"reference": "Giftzahn",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/giftzahn",
+		"category": "NPC"
+	},
+	{
+		"term": "Giftzahn",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "NPC"
+	},
+	{
+		"term": "Glimmerwood",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Graypeak Mountains",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Grim Harvest",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Grim Rising",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Großvaterbaum",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Gundren Steinsucher",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Gundren Steinsucher",
+		"reference": "Session 09",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "NPC"
+	},
+	{
+		"term": "Hamun Kost",
+		"reference": "Hamun Kost",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/hamun_kost",
+		"category": "NPC"
+	},
+	{
+		"term": "Hamun Kost",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "NPC"
+	},
+	{
+		"term": "Harschnag",
+		"reference": "Harschnag",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/harschnag",
+		"category": "NPC"
+	},
+	{
+		"term": "Harschnag",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "NPC"
+	},
+	{
+		"term": "High Forest",
+		"reference": "High Forest",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/regions/high_forest",
+		"category": "Ort, Region"
+	},
+	{
+		"term": "High Forest",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort, Region"
+	},
+	{
+		"term": "Inured to Undeath",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Jolt to Life",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Kathra",
+		"reference": "Kathra",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/kathra",
+		"category": ""
+	},
+	{
+		"term": "Keeper of Souls",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Klarg",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Life to Damage",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Luskan",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Maskenmacher",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "NPC"
+	},
+	{
+		"term": "Necromancy Scribe",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Necrotic Conduit",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Neverwinter",
+		"reference": "Neverwinter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/cities/neverwinter",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Neverwinter",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Overflow",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Overwhelming Power",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Path of the Necromancer",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Phandalin",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/cities/phandalin",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Phandalin",
+		"reference": "Session 09",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Pull of Death",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Reidoht",
+		"reference": "Reidoht",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/reidoht",
+		"category": "NPC"
+	},
+	{
+		"term": "Reidoht",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "NPC"
+	},
+	{
+		"term": "Session 01",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "Session"
+	},
+	{
+		"term": "Session 02",
+		"reference": "Session 02",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session002",
+		"category": "Session"
+	},
+	{
+		"term": "Session 03",
+		"reference": "Session 03",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session003",
+		"category": "Session"
+	},
+	{
+		"term": "Session 04",
+		"reference": "Session 04",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session004",
+		"category": "Session"
+	},
+	{
+		"term": "Session 05",
+		"reference": "Session 05",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session005",
+		"category": "Session"
+	},
+	{
+		"term": "Session 06",
+		"reference": "Session 06",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session006",
+		"category": "Session"
+	},
+	{
+		"term": "Session 07",
+		"reference": "Session 07",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session007",
+		"category": "Session"
+	},
+	{
+		"term": "Session 08",
+		"reference": "Session 08",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session008",
+		"category": "Session"
+	},
+	{
+		"term": "Session 09",
+		"reference": "Session 09",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "Session"
+	},
+	{
+		"term": "Session 10",
+		"reference": "Session 10",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session010",
+		"category": "Session"
+	},
+	{
+		"term": "Session 11",
+		"reference": "Session 11",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session011",
+		"category": "Session"
+	},
+	{
+		"term": "Session 12",
+		"reference": "Session 12",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session012",
+		"category": "Session"
+	},
+	{
+		"term": "Session 13",
+		"reference": "Session 13",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session013",
+		"category": "Session"
+	},
+	{
+		"term": "Session 14",
+		"reference": "Session 14",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session014",
+		"category": "Session"
+	},
+	{
+		"term": "Session 15",
+		"reference": "Session 15",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session015",
+		"category": "Session"
+	},
+	{
+		"term": "Session 16",
+		"reference": "Session 16",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session016",
+		"category": "Session"
+	},
+	{
+		"term": "Session 17",
+		"reference": "Session 17",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session017",
+		"category": "Session"
+	},
+	{
+		"term": "Session 18",
+		"reference": "Session 18",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session018",
+		"category": "Session"
+	},
+	{
+		"term": "Session 19",
+		"reference": "Session 19",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session019",
+		"category": "Session"
+	},
+	{
+		"term": "Session 20",
+		"reference": "Session 20",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session020",
+		"category": "Session"
+	},
+	{
+		"term": "Session 21",
+		"reference": "Session 21",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session021",
+		"category": "Session"
+	},
+	{
+		"term": "Session 22",
+		"reference": "Session 22",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session022",
+		"category": "Session"
+	},
+	{
+		"term": "Session 23",
+		"reference": "Session 23",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session023",
+		"category": "Session"
+	},
+	{
+		"term": "Session 24",
+		"reference": "Session 24",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session024",
+		"category": "Session"
+	},
+	{
+		"term": "Session 25",
+		"reference": "Session 25",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session025",
+		"category": "Session"
+	},
+	{
+		"term": "Session 26",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Session"
+	},
+	{
+		"term": "Shadowtop Cathedral",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Shadowtop Cathedral",
+		"reference": "Shadowtop Cathedral",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/landmarks/shadowtop_cathedral",
+		"category": "Ort, Landmarke"
+	},
+	{
+		"term": "Sildar Hallwinter",
+		"reference": "Session 01",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session001",
+		"category": "NPC"
+	},
+	{
+		"term": "Sildar Hallwinter",
+		"reference": "Session 09",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session009",
+		"category": "NPC"
+	},
+	{
+		"term": "Sildar Hallwinter",
+		"reference": "Sildar Hallwinter",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/sildar_hallwinter",
+		"category": "NPC"
+	},
+	{
+		"term": "Smaragdenklave",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Stadt der Rubine",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Ort"
+	},
+	{
+		"term": "Surina Grünschuppe",
+		"reference": "Surina Grünschuppe",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/npcs/surina_grünschuppe",
+		"category": "NPC"
+	},
+	{
+		"term": "Transfer Life Force",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Triboar",
+		"reference": "Triboar",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/cities/triboar",
+		"category": "Ort, Stadt"
+	},
+	{
+		"term": "Twinned Death",
+		"reference": "Path of the Necromancer",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/pcs/athanya/athanya_necromancer",
+		"category": ""
+	},
+	{
+		"term": "Uhtgardt-Barbaren",
+		"reference": "Session 26",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/sessions/session026",
+		"category": "Fraktion"
+	},
+	{
+		"term": "Yartar",
+		"reference": "Yartar",
+		"link": "https://lolindhir.github.io/PnP/campaigns/starter/locations/cities/yartar",
+		"category": "Ort, Stadt"
+	}
+]

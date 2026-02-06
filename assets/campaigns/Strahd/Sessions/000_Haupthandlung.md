@@ -1,0 +1,40 @@
+
+- Hochernte vorbei, Herbst → Winter naht
+- sind durch Nebel nach Barovia gekommen und kommen nicht wieder raus (Barovia liegt auf anderer Ebene der Existenz/Taschensphäre)
+- in Durst-Villa schnell gelernt, dass in Barovia alles etwas anders und abscheulicher läuft und erste Begegnung mit der Präsenz von Fürst Strahd durch Nebel und Briefe
+- Strahd von Zarovich ist tyrannischer Vampir-Herrscher über Barovia und den Nebel
+- in Barovia-Stadt auf Ireena und Ismark Koljanovich getroffen, die auch unter Strahd leiden
+  - hat Ireena schon zweimal gebissen und sie als seine neue Braut auserkoren
+  - hat Haus terrorisiert und daran ist Vater gestorben
+  - Ismark bittet uns darum, Ireena nach Vallakir zur Kirche Lathanders zu bringen
+- Doru, Vampir und Sohn des Priesters Donnovan, der von Strahd verwandelt und seit 10 Jahren im Keller eingesperrt wurde, besiegt und verschont (liefert viele Informationen zu Vampiren und Strahd)
+- Strahd besucht Haus der Koljanovichs
+  - spricht nicht Ireena, sondern Jennar an
+  - „Tatjana, wie habe ich dich vermisst“ → „endlich seid ihr da, hatte bereits Vorfreude“
+  - beißt Jona, als dieser Gegenwehr leisten will, und verschwindet „wir werden uns wieder sehen“
+- Reise zum Tser See und Vistani Lager von Madame Eva
+  - Gastfreundschaft genossen
+  - Informationen zu Strahd und Vistani erhalten
+  - unsere „Fäden des Schicksals“ durch Madame Eva gelesen mit kryptischen Hinweisen auf Hilfe und Unterstützung
+- Vistani-Reiter auf Weg nach Vallaki getroffen, der uns zu ihrem Lager bei Vallaki einlädt und um Erledigung für ihn bittet
+- Durst-Windmühle
+  - benutzt von Vetteln, die Kinder essen und Pasteten, die Menschen süchtig machen, herstellen
+  - zwei Kinder gerettet, eine Vettel getötet
+  - erfolgreich geflohen bevor dritte Vettel (Mütterchen) angekommen war
+- Ankunft in Vallaki
+- Blinskis Spielzeugladen -> Puppe für Vistani-Reiter
+- Kirche St. Andral mit Vater Lucian, Waisenhaus daneben (Frau Belasko)
+  - Knochen gestohlen, Ritual in 3 Tagen wiederholen
+  - Ireena in Kirche gebracht
+  - Heinrich, besessen von Dämon, besiegt
+  - Verweis auf Hendrick van der Vaart, der Knochendiebstahl beauftragt hat
+- Blauwasser Gasthaus:
+  - Infos von Wirtin Danrika und Urwin Martikoff zum Zauberer der Weine und Bitte dort nachzusehen, warum Lieferungen ausbleiben
+  - Infos zu Van Richten und Jägern am Zarovich-See
+  - Halbelb Rektario gibt viele Informationen
+  - Einladung zu wichtiger Unterredung von Fiona Wachter am nächsten Tag
+- Hendrick van der Vaart und Vampirin:
+  - Sargbauer, hat Knochen beauftragt zu stehlen, Vampirin auf Dachboden
+  - Vampirin will Kirche zerstören, Jennar töten → Kampf, flieht über Dächer
+  - Knochen können zurückgebracht werden, Ritual „Hallow“ erneuerbar
+- Aufbruch zum Vistani-Lager nahe Vallaki, während Ireena Audienz beim Bürgermeister ersucht
