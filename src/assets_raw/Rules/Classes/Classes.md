@@ -6,4 +6,5 @@
 | Ranger                       |                                                                                                                                | Strength or Dexterity |
 | {rule}[Rogue](rogue)         | {rule}[Arcane Trickster](arcane_trickster)<br>{rule}[Assassin](assassin)<br>{rule}[Soulknife](soulknife)                       | Dexterity             |
 | {rule}[Shaman](shaman)       | Sage *(role, no subclass)*<br>Warrior *(role, no subclass)*                                                                    | Wisdom or Charisma    |
+| Sorcerer                     |                                                                                                                                | Charisma              |
 | {rule}[Wizard](wizard)       | {rule}[Abjurer](abjurer)<br>{rule}[Diviner](diviner)<br>{rule}[Evoker](evoker)<br>{rule}[Illusionist](illusionist)             | Intelligence          |
