@@ -1,18 +1,18 @@
-# CI-freundliche Version von build-markdown
+# CI-friendly version of build-markdown
 $ErrorActionPreference = "Stop"
 
 function Copy-IfExists($source, $dest, $recurse=$true) {
     if (Test-Path $source) {
         if (-not (Test-Path $dest)) { New-Item -ItemType Directory -Path $dest -Force | Out-Null }
+        Write-Host "Copying: $source -> $dest"
         if ($recurse) { Copy-Item -Path $source -Destination $dest -Force -Recurse } else { Copy-Item -Path $source -Destination $dest -Force }
-        return $true
     } else {
-        Write-Host "Quelle nicht gefunden: $source - überspringe Kopieren"
-        return $false
+        Write-Error "Source not found: $source — Aborting. All required assets must be present."
+        exit 1
     }
 }
 
-# Assets kopieren
+# Copy assets
 $spellsSrc = "src\assets_raw\Zauber\spells.json"
 $spellPropertiesSrc = "src\assets_raw\Zauber\spellProperties.json"
 $spellImagesSrc = "src\assets_raw\Zauber\Spell Images\*"
@@ -35,10 +35,10 @@ Copy-IfExists $rulesSrc "src/assets/rules"
 Copy-IfExists $rulesToCSrc "src/assets/rules"
 Copy-IfExists $campaignsSrc "src/assets/campaigns"
 
-# Führe MarkdownLinker aus, falls vorhanden
+# Run MarkdownLinker if present
 $mdLinkerExe = "src/markdownLinker/MarkdownLinker.exe"
 if (Test-Path $mdLinkerExe) {
-    Write-Host "Starte MarkdownLinker..."
+    Write-Host "Starting MarkdownLinker..."
     $processRules = Start-Process -FilePath $mdLinkerExe -ArgumentList "`"-t:src/assets/rules/rulesToC.json`" `"-r:src/assets/rules`" `"-p:rules/`"" -NoNewWindow -Wait -PassThru
     if ($processRules.ExitCode -ne 0) { Write-Error "MarkdownLinker (rules) failed with exit code $($processRules.ExitCode). Aborting build process."; exit $processRules.ExitCode }
 
@@ -48,5 +48,5 @@ if (Test-Path $mdLinkerExe) {
     $processStrahd = Start-Process -FilePath $mdLinkerExe -ArgumentList "`"-t:src/assets/campaigns/campaignStrahdToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Strahd`" `"-p:campaigns/strahd/`" `"-g:src/assets/campaigns/Strahd/GlossaryStrahd.md`" -d -i -m" -NoNewWindow -Wait -PassThru
     if ($processStrahd.ExitCode -ne 0) { Write-Error "MarkdownLinker (strahd) failed with exit code $($processStrahd.ExitCode). Aborting build process."; exit $processStrahd.ExitCode }
 } else {
-    Write-Host "MarkdownLinker.exe nicht gefunden (src/markdownLinker). Linker-Lauf wird übersprungen."
+    Write-Host "MarkdownLinker.exe not found (src/markdownLinker). Skipping linker run."
 }
