@@ -73,10 +73,16 @@ Starting at 13th level, your mastery of the hunt allows you to draw greater bene
 - **Multiattack Defense Stance.** While this stance is active, whenever a creature hits you with an attack roll, you gain a +1 bonus to AC against subsequent attacks made by that creature until the end of the current turn, increasing by +1 for each additional attack that creature makes against you this turn.
 
 ### Level 13: Relentless Hunter
+At 13th level, your focus on the hunt becomes unbreakable in the chaos of battle.
+When you are concentrating on a ranger spell, taking damage cannot break your concentration on that spell. You still lose concentration as normal if you are incapacitated, cast another spell that requires concentration, or choose to end the effect.
+
+### Level 13: Relentless Hunter
 The damage die of your *Hunter's Mark* is a d10 rather than a d6.
 
-### Level 20: Foe Slayer
-Nice feature in the working...
+### Level 20: Apex of the Hunt
+At 20th level, you embody the ultimate predator, seamlessly maintaining multiple magical effects while relentlessly pursuing your quarry.
+All ranger spells you cast no longer require concentration. If a spell would normally end when your concentration is broken, it instead lasts for its full duration, unless ended early by its own conditions.
+In addition, when you cast Hunter’s Mark, or move it to a new creature, you can do so without using a bonus action.
 
 
 
