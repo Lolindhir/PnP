@@ -39,14 +39,20 @@ Copy-IfExists $campaignsSrc "src/assets/campaigns"
 $mdLinkerExe = "src/markdownLinker/MarkdownLinker.exe"
 if (Test-Path $mdLinkerExe) {
     Write-Host "Starting MarkdownLinker..."
-    $processRules = Start-Process -FilePath $mdLinkerExe -ArgumentList "`"-t:src/assets/rules/rulesToC.json`" `"-r:src/assets/rules`" `"-p:rules/`"" -NoNewWindow -Wait -PassThru
-    if ($processRules.ExitCode -ne 0) { Write-Error "MarkdownLinker (rules) failed with exit code $($processRules.ExitCode). Aborting build process."; exit $processRules.ExitCode }
+    
+    Write-Host "`n--- Processing Rules ---"
+    & $mdLinkerExe "-t:src/assets/rules/rulesToC.json" "-r:src/assets/rules" "-p:rules/"
+    if ($LASTEXITCODE -ne 0) { Write-Error "MarkdownLinker (rules) failed with exit code $LASTEXITCODE. Semantic errors in markdown files. Aborting build process."; exit $LASTEXITCODE }
 
-    $processStarter = Start-Process -FilePath $mdLinkerExe -ArgumentList "`"-t:src/assets/campaigns/campaignStarterToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Starter`" `"-p:campaigns/starter/`" `"-g:src/assets/campaigns/Starter/GlossaryStarter.md`" -d -i -m" -NoNewWindow -Wait -PassThru
-    if ($processStarter.ExitCode -ne 0) { Write-Error "MarkdownLinker (starter) failed with exit code $($processStarter.ExitCode). Aborting build process."; exit $processStarter.ExitCode }
+    Write-Host "`n--- Processing Starter Campaign ---"
+    & $mdLinkerExe "-t:src/assets/campaigns/campaignStarterToC.json" "-c:src/assets/rules/rulesToC.json" "-r:src/assets/campaigns/Starter" "-p:campaigns/starter/" "-g:src/assets/campaigns/Starter/GlossaryStarter.md" "-d" "-i" "-m"
+    if ($LASTEXITCODE -ne 0) { Write-Error "MarkdownLinker (starter campaign) failed with exit code $LASTEXITCODE. Semantic errors in markdown files. Aborting build process."; exit $LASTEXITCODE }
 
-    $processStrahd = Start-Process -FilePath $mdLinkerExe -ArgumentList "`"-t:src/assets/campaigns/campaignStrahdToC.json`" `"-c:src/assets/rules/rulesToC.json`" `"-r:src/assets/campaigns/Strahd`" `"-p:campaigns/strahd/`" `"-g:src/assets/campaigns/Strahd/GlossaryStrahd.md`" -d -i -m" -NoNewWindow -Wait -PassThru
-    if ($processStrahd.ExitCode -ne 0) { Write-Error "MarkdownLinker (strahd) failed with exit code $($processStrahd.ExitCode). Aborting build process."; exit $processStrahd.ExitCode }
+    Write-Host "`n--- Processing Strahd Campaign ---"
+    & $mdLinkerExe "-t:src/assets/campaigns/campaignStrahdToC.json" "-c:src/assets/rules/rulesToC.json" "-r:src/assets/campaigns/Strahd" "-p:campaigns/strahd/" "-g:src/assets/campaigns/Strahd/GlossaryStrahd.md" "-d" "-i" "-m"
+    if ($LASTEXITCODE -ne 0) { Write-Error "MarkdownLinker (strahd campaign) failed with exit code $LASTEXITCODE. Semantic errors in markdown files. Aborting build process."; exit $LASTEXITCODE }
+    
+    Write-Host "`nMarkdownLinker completed successfully.`n"
 } else {
     Write-Host "MarkdownLinker.exe not found (src/markdownLinker). Skipping linker run."
 }
