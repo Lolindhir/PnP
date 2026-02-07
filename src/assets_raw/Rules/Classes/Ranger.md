@@ -51,6 +51,20 @@ You always have the *Hunter's Mark* spell prepared.
 You can cast it twice at 2nd level without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.
 Additionally, the level at which you cast the spell increases when you reach certain Ranger levels: 3rd at 5th level, 4th at 9th level, and 5th at 13th level.
 
+### Level 6: Hunter’s Stance
+Starting at 6th level, you can deliberately shift your combat posture to embody different aspects of the hunt.
+During combat, you can enter a Hunter’s Stance as a bonus action, or as a reaction when you make an attack or when a creature makes an attack against you. A Hunter’s Stance represents a focused battle stance that blends offensive hunting techniques and defensive adaptations.
+You can have only one Hunter’s Stance active at a time. Entering a new Hunter’s Stance immediately ends your current stance. A Hunter’s Stance can be entered only during combat and ends automatically at the end of combat.
+
+When you gain this feature at 6th level, you have access to all of the following Hunter’s Stances:
+- **Colossus Slayer Stance.** You focus on wearing down wounded prey. Once per turn, when you hit a creature with a weapon attack, the attack deals an extra 1d8 damage if the target is missing any of its Hit Points.
+- **Horde Breaker Stance.** You position yourself to strike through clustered enemies. Once on each of your turns, when you make a weapon attack, you can make one additional attack with the same weapon against a different creature that is within 5 feet of the original target, within the weapon’s range, and that you have not attacked this turn.
+- **Escape the Horde Stance.** You stay in constant motion, avoiding surrounding threats. Opportunity attacks against you are made with disadvantage.
+- **Multiattack Defense Stance.** You anticipate follow-up strikes and adjust your defenses accordingly. When a creature hits you with an attack roll, that creature has disadvantage on all other attack rolls it makes against you until the end of the current turn.
+
+As you gain levels in this class, your mastery of Hunter’s Stances may deepen, allowing existing stances to improve or additional stances to be introduced, reflecting your growing expertise as an adaptable and relentless hunter.
+
+
 ### Level 13: Relentless Hunter
 The damage die of your *Hunter's Mark* is a d10 rather than a d6.
 
