@@ -49,7 +49,7 @@ As a Ranger, you gain the following class features when you reach the specified 
 ### Level 1: Favored Enemy
 You always have the *Hunter's Mark* spell prepared.
 You can cast it twice at 2nd level without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.
-Additionally, the level at which you cast the spell increases when you reach certain Ranger levels: 3rd at 5th level, 4th at 11th level, and 5th at 17th level.
+Additionally, the level at which you cast the spell increases when you reach certain Ranger levels: 3rd at 5th level, 4th at 9th level, and 5th at 13th level.
 
 ### Level 13: Relentless Hunter
 The damage die of your *Hunter's Mark* is a d10 rather than a d6.
