@@ -79,6 +79,10 @@ When you are concentrating on a ranger spell, taking damage cannot break your co
 ### Level 13: Relentless Hunter
 The damage die of your *Hunter's Mark* is a d10 rather than a d6.
 
+### Level 18: Master of the Hunt
+At 18th level, your mastery of the hunt allows you to strike with devastating precision.
+Whenever you deal damage with Hunter’s Mark, all of its damage dice are doubled.
+
 ### Level 20: Apex of the Hunt
 At 20th level, you embody the ultimate predator, seamlessly maintaining multiple magical effects while relentlessly pursuing your quarry.
 All ranger spells you cast no longer require concentration. If a spell would normally end when your concentration is broken, it instead lasts for its full duration, unless ended early by its own conditions.
