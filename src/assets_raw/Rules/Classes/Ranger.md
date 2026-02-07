@@ -65,6 +65,13 @@ When you gain this feature at 6th level, you have access to all of the following
 As you gain levels in this class, your mastery of Hunter’s Stances may deepen, allowing existing stances to improve or additional stances to be introduced, reflecting your growing expertise as an adaptable and relentless hunter.
 
 
+### Level 13: Improved Hunter’s Stance
+Starting at 13th level, your mastery of the hunt allows you to draw greater benefits from your chosen Hunter’s Stance. While a Hunter’s Stance is active, it gains the following additional effects.
+- **Colossus Slayer Stance.** The extra damage dealt by this stance increases to 2d8.
+- **Horde Breaker Stance.** When you use this stance, you can make two additional attacks instead of one when its conditions are met. Each additional attack must target a different creature that is within 5 feet of the original target, within the weapon’s range, and that you have not attacked this turn.
+- **Escape the Horde Stance.** When you enter this stance, you can immediately take the Disengage action as part of the same action or reaction used to enter the stance.
+- **Multiattack Defense Stance.** While this stance is active, whenever a creature hits you with an attack roll, you gain a +1 bonus to AC against subsequent attacks made by that creature until the end of the current turn, increasing by +1 for each additional attack that creature makes against you this turn.
+
 ### Level 13: Relentless Hunter
 The damage die of your *Hunter's Mark* is a d10 rather than a d6.
 
