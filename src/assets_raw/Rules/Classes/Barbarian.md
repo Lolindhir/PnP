@@ -12,7 +12,7 @@
 ___
 
 
-## Barbarian(s) Class Features [none]
+## Barbarian Class Features [none]
 
 As a Barbarian, you gain the following class features when you reach the specified Barbarian levels. These features are listed on the Barbarian Features table.
 
