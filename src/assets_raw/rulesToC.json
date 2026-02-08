@@ -639,6 +639,62 @@
 				]
 			},
 			{
+				"id": "ranger",
+				"name": "Ranger",
+				"breadcrumb": "Ranger",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Ranger",
+				"filename": "/Classes/Ranger.md",
+				"children": [
+					{
+						"id": "ranger_features_table",
+						"name": "Features Table",
+						"breadcrumb": "Features",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Ranger-FeaturesTable.md",
+						"children": []
+					},
+					{
+						"id": "beast_master",
+						"name": "Subclass: Beast Master",
+						"breadcrumb": "Beast Master",
+						"indexing": "title",
+						"indexname": "Beast Master",
+						"indexCategory": "Ranger",
+						"indexSubCategory": "Ranger",
+						"filename": "/Classes/Ranger-BeastMaster.md",
+						"children": []
+					},
+					{
+						"id": "fey_wanderer",
+						"name": "Subclass: Fey Wanderer",
+						"breadcrumb": "Fey Wanderer",
+						"indexing": "title",
+						"indexname": "Fey Wanderer",
+						"indexCategory": "Ranger",
+						"indexSubCategory": "Ranger",
+						"filename": "/Classes/Ranger-FeyWanderer.md",
+						"children": []
+					},
+					{
+						"id": "gloom_stalker",
+						"name": "Subclass: Gloom Stalker",
+						"breadcrumb": "Gloom Stalker",
+						"indexing": "title",
+						"indexname": "Gloom Stalker",
+						"indexCategory": "Ranger",
+						"indexSubCategory": "Ranger",
+						"filename": "/Classes/Ranger-GloomStalker.md",
+						"children": []
+					}
+				]
+			},
+			{
 				"id": "rogue",
 				"name": "Rogue",
 				"breadcrumb": "Rogue",
