@@ -21,12 +21,12 @@ As a Ranger, you gain the following class features when you reach the specified 
 | Level | Class Features                                                   |
 | :---: | :--------------------------------------------------------------- |
 |   1   | Spellcasting, Favored Enemy (2nd), Weapon Mastery                |
-|   2   | Deft Explorer, Fighting Style                                    |
-|   3   | Ranger Subclass, Hunter's Lore                                   |
+|   2   | Deft Explorer, Fighting Style, Hunter's Lore                                    |
+|   3   | Ranger Subclass                                   |
 |   4   | Ability Score Improvement                                        |
 |   5   | Extra Attack, Favored Enemy (3rd)                                |
 |   6   | Hunter's Stance, Roving                                          |
-|   7   | Subclass feature, Defensive Tactics                              |
+|   7   | Subclass feature                             |
 |   8   | Ability Score Improvement                                        |
 |   9   | Expertise, Favored Enemy (4th)                                   |
 |  10   | Tireless                                                         |
@@ -69,7 +69,7 @@ You gain a Fighting Style feat of your choice (see chapter 5). Instead of choosi
 **Druidic Warrior.** You learn two Druid cantrips of your choice (see the Druid class's section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
 
 
-### Level 3: Hunter's Lore [none]
+### Level 2: Hunter's Lore [none]
 You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your *{spell}[Hunter's Mark]()*, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are.
 
 
