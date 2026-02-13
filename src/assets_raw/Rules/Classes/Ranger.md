@@ -61,7 +61,6 @@ Thanks to your travels, you gain the following benefits:
 **Expertise.** Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
 
 **Wanderer’s Adaptation.** Your experience surviving in distant lands has shaped your body and senses. Choose one of the following options:
-
 - **Languages.** You learn two languages of your choice from the language tables in chapter 2.
 - **Darkvision.** You gain Darkvision out to a range of 30 feet. If you already have Darkvision, its range increases by 30 feet, to a maximum of 60 feet.
 - **Swim Speed.** You gain a swim speed equal to your Speed. If you already have a swim speed, it increases by 10 feet.
@@ -135,9 +134,6 @@ Starting at 13th level, your mastery of the hunt allows you to draw greater bene
 ### Level 13: Relentless Hunter [none]
 At 13th level, your focus on the hunt becomes unbreakable in the chaos of battle.
 When you are concentrating on a ranger spell, taking damage cannot break your concentration on that spell. You still lose concentration as normal if you are incapacitated, cast another spell that requires concentration, or choose to end the effect.
-
-### Level 13: Relentless Hunter [none]
-The damage die of your *Hunter's Mark* is a d10 rather than a d6.
 
 
 ### Level 14: Nature's Veil [none]
