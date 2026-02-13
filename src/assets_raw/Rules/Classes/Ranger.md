@@ -107,7 +107,8 @@ As you gain levels in this class, your mastery of Hunter’s Stances may deepen,
 
 
 ### Level 6: Roving [none]
-Your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.
+Your Speed increases by 10 feet while you aren't wearing Heavy armor.
+You, and creatures of your choice traveling with you, do not suffer penalties for traveling at a Normal or Fast pace.
 
 
 ### Level 9: Expertise [none]
@@ -118,6 +119,9 @@ Choose two of your skill proficiencies with which you lack Expertise. You gain E
 Primal forces now help fuel you on your journeys, granting you the following benefits.
 
 **Temporary Hit Points.** As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+
+**Endurance.** Whenever you would gain one or more levels of Exhaustion, you can expend a spell slot to steel yourself against the strain. Reduce the levels of Exhaustion gained by a number equal to the level of the spell slot expended (minimum of 1).
+You cannot reduce the Exhaustion gained below 0.
 
 **Decrease Exhaustion.** Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
 
