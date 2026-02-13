@@ -21,12 +21,12 @@ As a Ranger, you gain the following class features when you reach the specified 
 | Level | Class Features                                                   |
 | :---: | :--------------------------------------------------------------- |
 |   1   | Spellcasting, Favored Enemy (2nd), Weapon Mastery                |
-|   2   | Deft Explorer, Fighting Style, Hunter's Lore                                    |
-|   3   | Ranger Subclass                                   |
+|   2   | Deft Explorer, Fighting Style, Hunter's Lore                     |
+|   3   | Ranger Subclass                                                  |
 |   4   | Ability Score Improvement                                        |
 |   5   | Extra Attack, Favored Enemy (3rd)                                |
 |   6   | Hunter's Stance, Roving                                          |
-|   7   | Subclass feature                             |
+|   7   | Subclass feature                                                 |
 |   8   | Ability Score Improvement                                        |
 |   9   | Expertise, Favored Enemy (4th)                                   |
 |  10   | Tireless                                                         |
@@ -41,6 +41,20 @@ As a Ranger, you gain the following class features when you reach the specified 
 |  19   | Epic Boon                                                        |
 |  20   | Apex of the Hunt                                                 |
 
+
+### Level 1: Spellcasting [none]
+You have learned to channel the magical essence of nature to cast spells.
+The complete rules for your spellcasting are explained in the {rule}[Ranger Spellcasting](ranger_spellcasting) section. As an overview, the key features of your spellcasting are listed below:
+
+| Key Feature            | Characteristic |
+| :--------------------- | :------------- |
+| Spellcasting Ability   | Wisdom         |
+| Spellcasting Focus     | Druidic Focus  |
+| Free Cantrip           | -              |
+| Cantrips               | -              |
+| Spells 1+              | Prepared       |
+| Spell Slot Progression | Half Caster    |
+| Specialty              | -              |
 
 
 ### Level 1: Favored Enemy [none]

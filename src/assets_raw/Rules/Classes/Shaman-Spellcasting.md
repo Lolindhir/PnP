@@ -40,7 +40,7 @@
 **Known Cantrips.** You know two cantrips of your choice from the Shaman spell list.
 Whenever you gain a Shaman level, you can replace one of your cantrips with another cantrip of your choice from the Shaman spell list.
 
-**Spell Slots.** The {rule}[Shaman Features Table](shaman_features_table) shows how many spell slots you have to cast your level 1+ spells per Adventuring Period.
+**Spell Slots.** The Available Spell Slots table above shows how many spell slots you have to cast your level 1+ spells per Adventuring Period.
 
 **Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two Level 1 spells from the Shaman spell list.
 The number of spells on your list increases as you gain Shaman levels, as shown in the the Prepared Spells table. Whenever that number increases, choose additional spells from the Shaman spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shaman, your list of prepared spells can include four spells of levels 1, 2, and 3 in any combination.

@@ -649,6 +649,17 @@
 				"filename": "/Classes/Ranger.md",
 				"children": [
 					{
+						"id": "ranger_spellcasting",
+						"name": "Spellcasting",
+						"breadcrumb": "Spellcasting",
+						"indexing": "none",
+						"indexname": "",
+						"indexCategory": "",
+						"indexSubCategory": "",
+						"filename": "/Classes/Ranger-Spellcasting.md",
+						"children": []
+					},
+					{
 						"id": "ranger_features_table",
 						"name": "Features Table",
 						"breadcrumb": "Features",
