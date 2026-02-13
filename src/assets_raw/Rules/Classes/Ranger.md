@@ -32,8 +32,8 @@ As a Ranger, you gain the following class features when you reach the specified 
 |  10   | Tireless                                                         |
 |  11   | Subclass feature                                                 |
 |  12   | Ability Score Improvement                                        |
-|  13   | Improved Hunter's Stance, Relentless Hunter, Favored Enemy (5th) |
-|  14   | Nature's Veil                                                    |
+|  13   | Improved Hunter's Stance, Favored Enemy (5th) |
+|  14   | Nature's Veil, Relentless Hunter                                                    |
 |  15   | Subclass feature                                                 |
 |  16   | Ability Score Improvement                                        |
 |  17   | Precise Hunter                                                   |
@@ -145,16 +145,15 @@ Starting at 13th level, your mastery of the hunt allows you to draw greater bene
 - **Escape the Horde Stance.** When you enter this stance, you can immediately take the Disengage action as part of the same action or reaction used to enter the stance.
 - **Multiattack Defense Stance.** While this stance is active, whenever a creature hits you with an attack roll, you gain a +1 bonus to AC against subsequent attacks made by that creature until the end of the current turn, increasing by +1 for each additional attack that creature makes against you this turn.
 
-### Level 13: Relentless Hunter [none]
-At 13th level, your focus on the hunt becomes unbreakable in the chaos of battle.
-When you are concentrating on a ranger spell, taking damage cannot break your concentration on that spell. You still lose concentration as normal if you are incapacitated, cast another spell that requires concentration, or choose to end the effect.
-
-
 ### Level 14: Nature's Veil [none]
 You invoke spirits of nature to magically hide yourself. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.
 You may extend your Nature's Veil for another round by taking an Action to extend it, in which case it lasts until the end of your next turn. You can maintain Nature's Veil for up to 10 minutes.
 
 You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+
+### Level 14: Relentless Hunter [none]
+At 14th level, your focus on the hunt becomes unbreakable in the chaos of battle.
+When you are concentrating on a ranger spell, taking damage cannot break your concentration on that spell. You still lose concentration as normal if you are incapacitated, cast another spell that requires concentration, or choose to end the effect.
 
 
 ### Level 17: Precise Hunter [none]
