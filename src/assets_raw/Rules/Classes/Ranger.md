@@ -56,11 +56,16 @@ Whenever you finish a Long Rest, you can change the kinds of weapons you chose. 
 
 
 ### Level 2: Deft Explorer [none]
-Thanks to your travels, you gain the following benefits.
+Thanks to your travels, you gain the following benefits:
 
 **Expertise.** Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
 
-**Languages.** You know two languages of your choice from the language tables in chapter 2.
+**Wanderer’s Adaptation.** Your experience surviving in distant lands has shaped your body and senses. Choose one of the following options:
+
+- **Languages.** You learn two languages of your choice from the language tables in chapter 2.
+- **Darkvision.** You gain Darkvision out to a range of 30 feet. If you already have Darkvision, its range increases by 30 feet, to a maximum of 60 feet.
+- **Swim Speed.** You gain a swim speed equal to your Speed. If you already have a swim speed, it increases by 10 feet.
+- **Climb Speed.** You gain a climb speed equal to your Speed. If you already have a climb speed, it increases by 10 feet.
 
 
 ### Level 2: Fighting Style [none]
