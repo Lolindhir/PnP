@@ -111,7 +111,7 @@ During combat, you can enter a Hunter’s Stance as a bonus action, or as a reac
 You can have only one Hunter’s Stance active at a time. Entering a new Hunter’s Stance immediately ends your current stance. A Hunter’s Stance can be entered only during combat and ends automatically at the end of combat.
 
 When you gain this feature at 6th level, you have access to all of the following Hunter’s Stances:
-- **Colossus Slayer Stance.** You focus on wearing down wounded prey. Once per turn, when you hit a creature with a weapon attack, the attack deals an extra 1d8 damage if the target is missing any of its Hit Points.
+- **Colossus Slayer Stance.** You focus on wearing down wounded prey. Once per turn, when you hit a creature with a weapon attack, the attack deals an extra 1d6 damage if the target is missing any of its Hit Points.
 - **Horde Breaker Stance.** You position yourself to strike through clustered enemies. Once on each of your turns, when you make a weapon attack, you can make one additional attack with the same weapon against a different creature that is within 5 feet of the original target, within the weapon’s range, and that you have not attacked this turn.
 - **Escape the Horde Stance.** You stay in constant motion, avoiding surrounding threats. Opportunity attacks against you are made with disadvantage.
 - **Multiattack Defense Stance.** You anticipate follow-up strikes and adjust your defenses accordingly. When a creature hits you with an attack roll, that creature has disadvantage on all other attack rolls it makes against you until the end of the current turn.
@@ -140,7 +140,7 @@ You cannot reduce the Exhaustion gained below 0.
 
 ### Level 13: Improved Hunter’s Stance [none]
 Starting at 13th level, your mastery of the hunt allows you to draw greater benefits from your chosen Hunter’s Stance. While a Hunter’s Stance is active, it gains the following additional effects.
-- **Colossus Slayer Stance.** The extra damage dealt by this stance increases to 2d8.
+- **Colossus Slayer Stance.** The extra damage dealt by this stance increases to 2d6.
 - **Horde Breaker Stance.** When you use this stance, you can make two additional attacks instead of one when its conditions are met. Each additional attack must target a different creature that is within 5 feet of the original target, within the weapon’s range, and that you have not attacked this turn.
 - **Escape the Horde Stance.** When you enter this stance, you can immediately take the Disengage action as part of the same action or reaction used to enter the stance.
 - **Multiattack Defense Stance.** While this stance is active, whenever a creature hits you with an attack roll, you gain a +1 bonus to AC against subsequent attacks made by that creature until the end of the current turn, increasing by +1 for each additional attack that creature makes against you this turn.
