@@ -92,13 +92,15 @@ You can call on the forces of nature to reveal certain strengths and weaknesses 
 
 
 ### Level 3: Ranger Subclass [none]
-You gain a Ranger subclass of your choice. The Beast Master, Fey Wanderer, Gloom Stalker, and Hunter subclasses are detailed after this class's description.
-
-A subclass is a specialization that grants you features at certain Ranger levels. For the rest of your career, you gain each of your subclass's features that are of your Ranger level or lower.
+You gain a Ranger subclass of your choice. A subclass is a specialization that grants you features at certain Ranger levels. For the rest of your career, you gain each of your subclass's features that are of your Ranger level or lower.
+- {rule}[Beast Master](beast_master)
+- {rule}[Fey Wanderer](fey_wanderer)
+- {rule}[Gloom Stalker](gloom_stalker)
 
 
 ### Level 4: Ability Score Improvement [none]
-You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.
+You gain three feats (see the {feat}[Feat list]()) of your choice, for which you qualify. You have to take the {feat}[Ability Score Improvement]() feat at least once (two times is recommended).
+You gain this feature again at Ranger levels 8, 12, and 16.  
 
 
 ### Level 5: Extra Attack [none]
@@ -168,9 +170,8 @@ Your connection to the forces of nature grants you Blindsight with a range of 30
 At 18th level, your mastery of the hunt allows you to strike with devastating precision.
 Whenever you deal damage with Hunter’s Mark, all of its damage dice are doubled.
 
-
 ### Level 19: Epic Boon [none]
-You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.
+You gain an Epic Boon feat or three other feats of your choice for which you qualify. Boon of Dimensional Travel is recommended.
 
 ### Level 20: Apex of the Hunt [none]
 At 20th level, you embody the ultimate predator, seamlessly maintaining multiple magical effects while relentlessly pursuing your quarry.
