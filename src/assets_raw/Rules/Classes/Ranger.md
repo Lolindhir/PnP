@@ -64,8 +64,7 @@ Additionally, the level at which you cast the spell increases when you reach cer
 
 
 ### Level 1: Weapon Mastery [none]
-Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.
-
+Your training with weapons allows you to use the Mastery property ({rule}[Weapon Overview](weapons)) of two kinds of Simple or Martial weapons of your choice.
 Whenever you start a new Adventuring Period, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.
 
 
