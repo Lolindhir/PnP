@@ -84,7 +84,7 @@ Thanks to your travels, you gain the following benefits:
 ### Level 2: Fighting Style [none]
 You gain a Fighting Style feat of your choice (see chapter 5). Instead of choosing one of those feats, you can choose the option below.
 
-**Druidic Warrior.** You learn two Druid cantrips of your choice (see the Druid class's section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
+**Druidic Warrior.** You learn two Druid cantrips of your choice. *{spell}[Guidance]()* and *{spell}[Starry Wisp]()* are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
 
 
 ### Level 2: Hunter's Lore [none]
@@ -161,7 +161,7 @@ When you are concentrating on a ranger spell, taking damage cannot break your co
 
 
 ### Level 17: Precise Hunter [none]
-You have Advantage on attack rolls against the creature currently marked by your Hunter's Mark.
+You have Advantage on attack rolls against the creature currently marked by your *{spell}[Hunter's Mark]()*.
 
 
 ### Level 18: Feral Senses [none]
@@ -169,7 +169,7 @@ Your connection to the forces of nature grants you Blindsight with a range of 30
 
 ### Level 18: Master of the Hunt [none]
 At 18th level, your mastery of the hunt allows you to strike with devastating precision.
-Whenever you deal damage with Hunter’s Mark, all of its damage dice are doubled.
+Whenever you deal damage with *{spell}[Hunter's Mark]()*, all of its damage dice are doubled.
 
 ### Level 19: Epic Boon [none]
 You gain an Epic Boon feat or three other feats of your choice for which you qualify. Boon of Dimensional Travel is recommended.
@@ -177,6 +177,6 @@ You gain an Epic Boon feat or three other feats of your choice for which you qua
 ### Level 20: Apex of the Hunt [none]
 At 20th level, you embody the ultimate predator, seamlessly maintaining multiple magical effects while relentlessly pursuing your quarry.
 All ranger spells you cast no longer require concentration. If a spell would normally end when your concentration is broken, it instead lasts for its full duration, unless ended early by its own conditions.
-In addition, when you cast Hunter’s Mark, or move it to a new creature, you can do so without using a bonus action.
+In addition, when you cast *{spell}[Hunter's Mark]()*, or move it to a new creature, you can do so without using a bonus action.
 
 
