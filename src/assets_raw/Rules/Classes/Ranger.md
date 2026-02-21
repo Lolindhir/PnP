@@ -81,7 +81,7 @@ Thanks to your travels, you gain the following benefits:
 
 
 ### Level 2: Fighting Style [none]
-You gain a Fighting Style feat of your choice (see chapter 5). Instead of choosing one of those feats, you can choose the option below.
+You gain the {feat}[Fighting Style]() feat. Instead of the feat, you can choose the option below.
 
 **Druidic Warrior.** You gain the {feat}[Magic Initiate (Druid)](Magic Initiate) feat.
 
