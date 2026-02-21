@@ -84,7 +84,7 @@ Thanks to your travels, you gain the following benefits:
 ### Level 2: Fighting Style [none]
 You gain a Fighting Style feat of your choice (see chapter 5). Instead of choosing one of those feats, you can choose the option below.
 
-**Druidic Warrior.** You learn two Druid cantrips of your choice. *{spell}[Guidance]()* and *{spell}[Starry Wisp]()* are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.
+**Druidic Warrior.** You gain the {feat}[Magic Initiate (Druid)](Magic Initiate) feat.
 
 
 ### Level 2: Hunter's Lore [none]
