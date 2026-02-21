@@ -143,6 +143,7 @@ Starting at 13th level, your mastery of the hunt allows you to draw greater bene
 - **Colossus Slayer Stance.** The extra damage dealt by this stance increases to 2d6.
 - **Horde Breaker Stance.** When you use this stance, you can make two additional attacks instead of one when its conditions are met. Each additional attack must target a different creature that is within 5 feet of the original target, within the weapon’s range, and that you have not attacked this turn.
 - **Escape the Horde Stance.** When you enter this stance, you can immediately take the Disengage action as part of the same action or reaction used to enter the stance.
+While this stance is active, you can take the Disengage action as a bonus action on each of your turns.
 - **Multiattack Defense Stance.** While this stance is active, whenever a creature hits you with an attack roll, you gain a +1 bonus to AC against subsequent attacks made by that creature until the end of the current turn, increasing by +1 for each additional attack that creature makes against you this turn.
 
 ### Level 14: Nature's Veil [none]
