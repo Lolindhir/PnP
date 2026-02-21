@@ -59,14 +59,14 @@ The complete rules for your spellcasting are explained in the {rule}[Ranger Spel
 
 ### Level 1: Favored Enemy [none]
 You always have the *{spell}[Hunter's Mark]()* spell prepared.
-You can cast it twice at 2nd level without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.
+You can cast it twice at 2nd level without expending a spell slot, and you regain all expended uses of this ability when you start a new Adventuring Period.
 Additionally, the level at which you cast the spell increases when you reach certain Ranger levels: 3rd at 5th level, 4th at 9th level, and 5th at 13th level.
 
 
 ### Level 1: Weapon Mastery [none]
 Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.
 
-Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.
+Whenever you start a new Adventuring Period, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.
 
 
 ### Level 2: Deft Explorer [none]
@@ -133,12 +133,12 @@ Choose two of your skill proficiencies with which you lack Expertise. You gain E
 ### Level 10: Tireless [none]
 Primal forces now help fuel you on your journeys, granting you the following benefits.
 
-**Temporary Hit Points.** As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+**Temporary Hit Points.** As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you start a new Adventuring Period.
 
 **Endurance.** Whenever you would gain one or more levels of Exhaustion, you can expend a spell slot to steel yourself against the strain. Reduce the levels of Exhaustion gained by a number equal to the level of the spell slot expended (minimum of 1).
 You cannot reduce the Exhaustion gained below 0.
 
-**Decrease Exhaustion.** Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
+**Decrease Exhaustion.** At the end of a Short Rest, you can reduce your Exhaustion level by 1. You can use this benefit up to twice per Adventuring Period.
 
 ### Level 13: Improved Hunter’s Stance [none]
 Starting at 13th level, your mastery of the hunt allows you to draw greater benefits from your chosen Hunter’s Stance. While a Hunter’s Stance is active, it gains the following additional effects.
@@ -152,7 +152,8 @@ While this stance is active, you can take the Disengage action as a bonus action
 You invoke spirits of nature to magically hide yourself. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.
 You may extend your Nature's Veil for another round by taking an Action to extend it, in which case it lasts until the end of your next turn. You can maintain Nature's Veil for up to 10 minutes.
 
-You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you start a new Adventuring Period.
+
 
 ### Level 14: Relentless Hunter [none]
 At 14th level, your focus on the hunt becomes unbreakable in the chaos of battle.
