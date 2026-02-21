@@ -18,28 +18,28 @@ Thanks to their connection with nature, Rangers can also cast spells that harnes
 
 As a Ranger, you gain the following class features when you reach the specified Ranger levels. These features are listed in the Ranger Features table.
 
-| Level | Class Features                                                   |
-| :---: | :--------------------------------------------------------------- |
-|   1   | Spellcasting, Favored Enemy (2nd), Weapon Mastery                |
-|   2   | Deft Explorer, Fighting Style, Hunter's Lore                     |
-|   3   | Ranger Subclass                                                  |
-|   4   | Ability Score Improvement                                        |
-|   5   | Extra Attack, Favored Enemy (3rd)                                |
-|   6   | Hunter's Stance, Roving                                          |
-|   7   | Subclass feature                                                 |
-|   8   | Ability Score Improvement                                        |
-|   9   | Expertise, Favored Enemy (4th)                                   |
-|  10   | Tireless                                                         |
-|  11   | Subclass feature                                                 |
-|  12   | Ability Score Improvement                                        |
-|  13   | Improved Hunter's Stance, Favored Enemy (5th) |
-|  14   | Nature's Veil, Relentless Hunter                                                    |
-|  15   | Subclass feature                                                 |
-|  16   | Ability Score Improvement                                        |
-|  17   | Precise Hunter                                                   |
-|  18   | Feral Senses, Master of the Hunt                                 |
-|  19   | Epic Boon                                                        |
-|  20   | Apex of the Hunt                                                 |
+| Level | Class Features                                    |
+| :---: | :------------------------------------------------ |
+|   1   | Spellcasting, Favored Enemy (2nd), Weapon Mastery |
+|   2   | Deft Explorer, Fighting Style, Hunter's Lore      |
+|   3   | Ranger Subclass                                   |
+|   4   | Ability Score Improvement                         |
+|   5   | Extra Attack, Favored Enemy (3rd)                 |
+|   6   | Hunter's Stance, Roving                           |
+|   7   | Subclass feature                                  |
+|   8   | Ability Score Improvement                         |
+|   9   | Expertise, Favored Enemy (4th)                    |
+|  10   | Tireless                                          |
+|  11   | Subclass feature                                  |
+|  12   | Ability Score Improvement                         |
+|  13   | Improved Hunter's Stance, Favored Enemy (5th)     |
+|  14   | Nature's Veil, Relentless Hunter                  |
+|  15   | Subclass feature                                  |
+|  16   | Ability Score Improvement                         |
+|  17   | Precise Hunter                                    |
+|  18   | Feral Senses, Master of the Hunt                  |
+|  19   | Epic Boon                                         |
+|  20   | Apex of the Hunt                                  |
 
 
 ### Level 1: Spellcasting [none]
