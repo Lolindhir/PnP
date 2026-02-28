@@ -4,24 +4,25 @@ A Beast Master forms a mystical bond with a special animal, drawing on primal ma
 
 ## Subclass Features
 
-| Level | Subclass Features                 |
-| :---: | :-------------------------------- |
+| Level | Subclass Features                     |
+| :---: | :------------------------------------ |
 |   3   | Beast Master Spells, Primal Companion |
-|   7   | Exceptional Training, Primal Steed               |
-|  11  | Bestial Fury                    |
-|  15   | Shared Spells                |
+|   7   | Exceptional Training, Primal Steed    |
+|  11   | Bestial Fury                          |
+|  15   | Shared Spells                         |
 
 ### Level 3: Beast Master Spells [none]
 
 Your bond grants you access to additional spells. These spells are always prepared for you and do not count against the number of Ranger spells you prepare.
 
-| Ranger Level | Spells               |
-|:-------------:|:--------------------|
-| 3            | Animal Friendship    |
-| 5            | Animal Messenger     |
-| 9            | Conjure Animals      |
-| 13           | Dominate Beast       |
-| 17           | Commune with Nature  |
+| Ranger Level | Spells                         |
+| :----------: | :----------------------------- |
+|      3       | {spell}[Animal Friendship]()   |
+|      5       | {spell}[Animal Messenger]()    |
+|      9       | {spell}[Conjure Animals]()     |
+|      13      | {spell}[Dominate Beast]()      |
+|      17      | {spell}[Commune with Nature]() |
+
 
 
 ### Level 3: Primal Companion [none]
@@ -53,6 +54,12 @@ While your Primal Companion is within 100 feet of you:
 If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its Hit Points restored.  
 Whenever you finish a Long Rest, you can summon a different primal beast in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.
 
+<img src="assets/rules/Classes/Ranger_BeastMaster_Land.png" class="image">
+<img src="assets/rules/Classes/Ranger_BeastMaster_Sky.png" class="image">
+<img src="assets/rules/Classes/Ranger_BeastMaster_Sea.png" class="image">
+
+
+
 ### Level 7: Exceptional Training [none]
 
 Your companion’s discipline improves.
@@ -60,26 +67,26 @@ When you use a Bonus Action to command your Primal Companion to take an action, 
 In addition, whenever the beast hits with an attack roll, it can deal your choice of Force damage or its normal damage type.
 
 
+
 ### Level 7: Primal Steed [none]
 
 Your bond deepens, allowing your companion to manifest as a true primal war-mount.
 Whenever you summon your Primal Companion, you can choose for it to appear in its Steed Form.  
-At 7th level, only a **Beast of the Land** or a **Beast of the Sea** can assume Steed Form.  
-Starting at 11th level, a **Beast of the Sky** can also assume this form.
+At 7th level, only a **Beast of the Land** or a **Beast of the Sea** can assume Steed Form. Starting at 11th level, a **Beast of the Sky** can also assume this form.
 
 While in Steed Form:
-- The beast’s size increases by one category (to a maximum of Large).  
-- It gains additional maximum Hit Points equal to twice your Ranger level.  
+- The beast’s size increases by one category (to a maximum of Large). Starting at 15th level, your **Beast of the Sky** can increase it's size by two categories (to a maximum of Large) (your choice).
+- It gains additional maximum Hit Points equal to your Ranger level.  
 - Its weapon attacks deal an extra 1d4 damage.  
-- The beast is considered a suitable mount for you.
+- If the beast is at least one size larger than you, the beast is considered a suitable mount for you.
 
-The Steed Form lasts until the beast is reduced to 0 Hit Points or dismissed.
 
 
 ### Level 11: Bestial Fury [none]
 Your companion’s ferocity grows alongside your own.
 When you command your Primal Companion to take the **Beast’s Strike** action, the beast can make two Beast’s Strike attacks instead of one.  
 In addition, the first time each turn the beast hits a creature affected by your **Hunter’s Mark**, it deals extra Force damage equal to the bonus damage of that spell.
+
 
 
 ### Level 15: Shared Spells [none]
