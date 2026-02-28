@@ -6,10 +6,22 @@ A Beast Master forms a mystical bond with a special animal, drawing on primal ma
 
 | Level | Subclass Features                 |
 | :---: | :-------------------------------- |
-|   3   | Primal Companion, Beast Master Spells |
+|   3   | Beast Master Spells, Primal Companion |
 |   7   | Exceptional Training, Primal Steed               |
 |  11  | Bestial Fury                    |
 |  15   | Shared Spells                |
+
+### Level 3: Beast Master Spells [none]
+
+Your bond grants you access to additional spells. These spells are always prepared for you and do not count against the number of Ranger spells you prepare.
+
+| Ranger Level | Spells               |
+|--------------|----------------------|
+| 3            | Animal Friendship    |
+| 5            | Animal Messenger     |
+| 9            | Conjure Animals      |
+| 13           | Dominate Beast       |
+| 17           | Commune with Nature  |
 
 
 ### Level 3: Primal Companion [none]
@@ -47,19 +59,6 @@ While your Primal Companion is within 100 feet of you:
 If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its Hit Points restored.  
 
 Whenever you finish a Long Rest, you can summon a different primal beast in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.
-
-
-### Level 3: Beast Master Spells [none]
-
-Your bond grants you access to additional spells. These spells are always prepared for you and do not count against the number of Ranger spells you prepare.
-
-| Ranger Level | Spells               |
-|--------------|----------------------|
-| 3            | Animal Friendship    |
-| 5            | Animal Messenger     |
-| 9            | Conjure Animals      |
-| 13           | Dominate Beast       |
-| 17           | Commune with Nature  |
 
 
 ### Level 7: Exceptional Training [none]
