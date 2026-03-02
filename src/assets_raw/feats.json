@@ -701,6 +701,6 @@
     "multi": 1,
     "multiAppendix": "",
     "starter": true,
-    "explanation": "<b>Mastery Property.</b> Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind."
+    "explanation": "<b>Mastery Property.</b> Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.<br><b>Handling Mastery.</b> For the chosen weapon type, you can ignore the Heavy or Loading property (your choice)."
   }
 ]
