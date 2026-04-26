@@ -828,6 +828,17 @@
 					}
 				]
 			},
+      {
+        "id": "sorcerer",
+				"name": "Sorcerer",
+				"breadcrumb": "Sorcerer",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "Sorcerer",
+				"filename": "/Classes/Sorcerer.md",
+				"children": []
+      },
 			{
 				"id": "wizard",
 				"name": "Wizard",
