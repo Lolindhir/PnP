@@ -4,12 +4,12 @@
 **Creature Type:** Humanoid
 **Size:** Medium (about 4-7 feet tall)
 **Speed:** 30 feet
-**Age.** Reach adulthood in late teens and live less than a century
+**Age:** Reach adulthood in late teens and live less than a century
 
 
 ## Special Traits [none]
 
-***Resourceful.*** You gain {rule}[Heroic Inspiration](inspiration) whenever you finish a Long Rest.
+***Resourceful.*** You gain {rule}[Heroic Inspiration](inspiration) whenever you're starting an Adventuring Period.
 
 ***Skillful.*** You gain proficiency in one skill of your choice.
 
