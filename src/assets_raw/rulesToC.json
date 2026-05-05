@@ -495,6 +495,84 @@
 		]
 	},
 	{
+		"id": "races",
+		"name": "Character Races",
+		"breadcrumb": "Races",
+		"indexing": "none",
+		"indexname": "",
+		"indexCategory": "",
+		"indexSubCategory": "",
+		"filename": "",
+		"children": [
+			{
+				"id": "race_list",
+				"name": "Race Overview & Half-Races",
+				"breadcrumb": "Overview",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "",
+				"indexSubCategory": "",
+				"filename": "/Races/Races.md",
+				"children": []
+			},
+			{
+				"id": "dwarf",
+				"name": "Dwarf",
+				"breadcrumb": "Dwarf",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Dwarf.md",
+				"children": []
+			},
+			{
+				"id": "elf",
+				"name": "Elf",
+				"breadcrumb": "Elf",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Elf.md",
+				"children": []
+			},
+			{
+				"id": "halfling",
+				"name": "Halfling",
+				"breadcrumb": "Halfling",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Halfling.md",
+				"children": []
+			},
+			{
+				"id": "human",
+				"name": "Human",
+				"breadcrumb": "Human",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Human.md",
+				"children": []
+			},
+			{
+				"id": "tiefling",
+				"name": "Tiefling",
+				"breadcrumb": "Tiefling",
+				"indexing": "all",
+				"indexname": "",
+				"indexCategory": "Race",
+				"indexSubCategory": "Race",
+				"filename": "/Races/Tiefling.md",
+				"children": []
+			}
+		]
+	},
+	{
 		"id": "classes",
 		"name": "Character Classes",
 		"breadcrumb": "Classes",
@@ -916,84 +994,6 @@
 						"children": []
 					}
 				]
-			}
-		]
-	},
-	{
-		"id": "races",
-		"name": "Character Races",
-		"breadcrumb": "Races",
-		"indexing": "none",
-		"indexname": "",
-		"indexCategory": "",
-		"indexSubCategory": "",
-		"filename": "",
-		"children": [
-			{
-				"id": "race_list",
-				"name": "Race Overview & Half-Races",
-				"breadcrumb": "Overview",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "",
-				"indexSubCategory": "",
-				"filename": "/Races/Races.md",
-				"children": []
-			},
-			{
-				"id": "dwarf",
-				"name": "Dwarf",
-				"breadcrumb": "Dwarf",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Race",
-				"indexSubCategory": "Race",
-				"filename": "/Races/Dwarf.md",
-				"children": []
-			},
-			{
-				"id": "elf",
-				"name": "Elf",
-				"breadcrumb": "Elf",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Race",
-				"indexSubCategory": "Race",
-				"filename": "/Races/Elf.md",
-				"children": []
-			},
-			{
-				"id": "halfling",
-				"name": "Halfling",
-				"breadcrumb": "Halfling",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Race",
-				"indexSubCategory": "Race",
-				"filename": "/Races/Halfling.md",
-				"children": []
-			},
-			{
-				"id": "human",
-				"name": "Human",
-				"breadcrumb": "Human",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Race",
-				"indexSubCategory": "Race",
-				"filename": "/Races/Human.md",
-				"children": []
-			},
-			{
-				"id": "tiefling",
-				"name": "Tiefling",
-				"breadcrumb": "Tiefling",
-				"indexing": "all",
-				"indexname": "",
-				"indexCategory": "Race",
-				"indexSubCategory": "Race",
-				"filename": "/Races/Tiefling.md",
-				"children": []
 			}
 		]
 	},
