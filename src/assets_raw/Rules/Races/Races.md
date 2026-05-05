@@ -1,6 +1,6 @@
 
 | Race                       | Subrace                                                                       | Main Abilities                            |
-| :------------------------- | :---------------------------------------------------------------------------- | ----------------------------------------- |
+| :------------------------- | :---------------------------------------------------------------------------- | :---------------------------------------- |
 | {rule}[Dwarf](dwarf)       |                                                                               | Strength, Constitution, Wisdom            |
 | {rule}[Elf](elf)           | Drow<br>High Elf<br>Sea Elf<br>Wood Elf                                       | Dexterity, Intelligence, Wisdom, Charisma |
 | {rule}[Halfling](halfling) |                                                                               | Dexterity, Constitution, Charisma         |
@@ -34,8 +34,8 @@ You can then choose a number of Minor and Major Traits up to these limits. These
 
 ##### Number of Traits Overview [none]
 
-| Race                       | Major Traits                                                                       | Minor Traits                           |
-| :------------------------- | :---------------------------------------------------------------------------- | ----------------------------------------- |
+| Race                       | Major                                                                       | Minor                          |
+| :------------------------- | :---------------------------------------------------------------------------: | :---------------------------------------: |
 | {rule}[Dwarf](dwarf)       |   ?                                                                            | ?           |
 | {rule}[Elf](elf)           | 2                                     | 4 |
 | {rule}[Halfling](halfling) |    ?                                                                           | ?         |
