@@ -5,9 +5,17 @@
 **Size:** Medium (about 4-7 feet tall)
 **Speed:** 30 feet
 **Age:** Reach adulthood in late teens and live less than a century
+**Human Ancestry (Subrace):** Humans are divided by the environment in which their ancestors lived. Choose a ancestry from the options below.
+- Desertborn
+- Forestborn
+- Mountainborn
+- Plainsborn
+- Seaborn
+- Snowborn
 
+{index}[Human Ancestry](---)
 
-## Special Traits [none]
+## Major Traits [none]
 
 ***Resourceful.*** You gain {rule}[Heroic Inspiration](inspiration) whenever you're starting an Adventuring Period.
 
@@ -15,10 +23,8 @@
 
 ***Versatile.*** You gain a Starting feat of your choice. Prodigy is recommended.
 
-***Human Ancestry.*** Humans are divided by the environment in which their ancestors lived. Choose a ancestry from the Human Ancestries table. You gain the benefit of that ancestry.
+***Human Ancestry.*** You gain the benefit of your human ancestry.
 
-{index}[Human Ancestry](---)
-##### Human Ancestries [none]
 | Ancestry     | Benefit                                                                                                                                                       |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Desertborn   | You have Resistance to fire damage and advantage on saving throws against the effects of extreme heat.                                                        |
