@@ -15,6 +15,14 @@
 
 {index}[Human Ancestry](---)
 
+{index}[Desertborn Human]()
+{index}[Forestborn Human]()
+{index}[Mountainborn Human]()
+{index}[Plainsborn Human]()
+{index}[Seaborn Human]()
+{index}[Snowborn Human]()
+
+
 ## Major Traits [none]
 
 ***Resourceful.*** You gain {rule}[Heroic Inspiration](inspiration) whenever you're starting an Adventuring Period.
@@ -34,10 +42,4 @@
 | Seaborn      | You have proficiency in the Acrobatics skill and you have a swimming speed of 30 feet.                                                                        |
 | Snowborn     | You have Resistance to cold damage and advantage on saving throws against the effects of extreme cold.                                                        |
 
-{index}[Desertborn Human]()
-{index}[Forestborn Human]()
-{index}[Mountainborn Human]()
-{index}[Plainsborn Human]()
-{index}[Seaborn Human]()
-{index}[Snowborn Human]()
 
