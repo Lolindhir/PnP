@@ -931,7 +931,7 @@
 		"children": [
 			{
 				"id": "race_list",
-				"name": "Race Overview",
+				"name": "Race Overview & Half-Races",
 				"breadcrumb": "Overview",
 				"indexing": "all",
 				"indexname": "",
