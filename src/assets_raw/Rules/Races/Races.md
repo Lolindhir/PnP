@@ -18,7 +18,7 @@ When you create a Half-Race character, you can freely determine its physical app
 You also choose which race determines your character’s lifespan, or you may define an appropriate lifespan based on both ancestries.
 
 
-### Traits
+### Traits [none]
 
 Each race provides a number of traits, which are divided into two categories:
 
@@ -32,8 +32,18 @@ When creating a Half-Race character, determine your available traits as follows:
 
 You can then choose a number of Minor and Major Traits up to these limits. These traits can be selected freely from either of the two parent races and can be combined in any way.
 
+##### Number of Traits Overview [none]
 
-### Restrictions
+| Race                       | Major Traits                                                                       | Minor Traits                           |
+| :------------------------- | :---------------------------------------------------------------------------- | ----------------------------------------- |
+| {rule}[Dwarf](dwarf)       |   ?                                                                            | ?           |
+| {rule}[Elf](elf)           | 2                                     | 4 |
+| {rule}[Halfling](halfling) |    ?                                                                           | ?         |
+| {rule}[Human](human)       | 4 | 0                             |
+| {rule}[Tiefling](tiefling) | ?                                               | ?            |
+
+
+### Restrictions [none]
 
 - You can select each trait only once unless a trait explicitly states otherwise.  
 - If two traits would overlap or conflict, the DM determines how they function together or whether one must be chosen instead.  
